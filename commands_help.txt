@@ -1,0 +1,7 @@
+1. To start a project
+    run the following cmd line in the project dir in the terminal
+    - docker-compose run --rm django_docker_app sh -c "django-admin startproject code_review_mining ."
+
+2. To start an app
+    run the following cmd line in the project dir in the terminal
+    - docker-compose run --rm django_docker_app sh -c "python manage.py startapp patchwork"
