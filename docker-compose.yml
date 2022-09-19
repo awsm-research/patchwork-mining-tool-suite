@@ -12,8 +12,8 @@ services:
     container_name: django_docker_container
     command: >
       sh -c "python manage.py wait_for_db &&
-             python manage.py makemigrations &&
-             python manage.py migrate &&
+             python manage.py makemigrations patchwork&&
+             python manage.py migrate patchwork&&
              python manage.py runserver 0.0.0.0:8000"
     environment:
       - DB_HOST=mongodb://mongodb:27017

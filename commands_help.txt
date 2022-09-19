@@ -5,3 +5,13 @@
 2. To start an app
     run the following cmd line in the project dir in the terminal
     - docker-compose run --rm django_docker_app sh -c "python manage.py startapp patchwork"
+
+3. mongodb dump & restore
+
+    mongodb dump
+    - docker exec -i mongodb_docker_container /usr/bin/mongodump --db code_review_db --out /dump
+    - docker cp mongodb_docker_container:/dump /Users/mingzhaoliang/projects_data/msr_data
+
+    mongodb restore
+    - docker cp /Users/mingzhaoliang/projects_data/msr_data/dump mongodb_docker_container:/dump
+    - docker exec -i mongodb_docker_container /usr/bin/mongorestore --db code_review_db /dump/code_review_db
