@@ -143,4 +143,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-UPLOADED_FILES_USE_URL = True
+# UPLOADED_FILES_USE_URL = True

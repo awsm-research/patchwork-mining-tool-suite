@@ -8,6 +8,8 @@ from django.http.response import JsonResponse, HttpResponse
 from rest_framework import status
 from rest_framework.decorators import api_view
 
+SIZE_LIMIT = 16793600
+
 # Create your views here.
 def example_view(request):
     return render(request, 'patchwork/example.html')
@@ -16,175 +18,223 @@ def example_view(request):
 def account_list(request):
     if request.method == 'POST':
         account_data = JSONParser().parse(request)
-        account_serializer = AccountSerializer(data=account_data)
+        if type(account_data) != list:
+            account_data = [account_data]
+        account_serializer = AccountSerializer(data=account_data, many=True)
         if account_serializer.is_valid():
             account_serializer.save()
-            return JsonResponse(account_serializer.data, status=status.HTTP_201_CREATED)
-        return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse(account_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+        
+        return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
 
 @api_view(['POST'])
 def project_list(request):
     if request.method == 'POST':
         project_data = JSONParser().parse(request)
-        project_serializer = ProjectSerializer(data=project_data)
+        if type(project_data) != list:
+            project_data = [project_data]
+        project_serializer = ProjectSerializer(data=project_data, many=True)
         if project_serializer.is_valid():
             project_serializer.save()
-            return JsonResponse(project_serializer.data, status=status.HTTP_201_CREATED)
-        return JsonResponse(project_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse(project_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+        return JsonResponse(project_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
 
 @api_view(['POST'])
 def series_list(request):
     if request.method == 'POST':
         series_data = JSONParser().parse(request)
-        
-        series_cover_letter = series_data['cover_letter_content']
-        
-        idx = Series.objects.count() + 1
-        series_obj = Series(
-            id = idx,
-            original_id = series_data['original_id'],
-            name = series_data['name'],
-            created_date = series_data['created_date'],
-            version = series_data['version'],
-            total = series_data['total'],
-            received_total = series_data['received_total'],
-            # cover_letter_content = series_data['cover_letter_content'],
-            api_url = series_data['api_url'],
-            web_url = series_data['web_url'],
-            project_original_id = series_data['project_original_id'],
-            submitter_account_original_id = series_data['submitter_account_original_id'],
-            submitter_user_id = series_data['submitter_user_id']
-        )
 
-        if series_cover_letter and len(series_cover_letter) > 16793600:
-            with open(f"temp_file-series_cover_letter.txt", "w") as f:
-                f.write(series_cover_letter)
-            with open(f"temp_file-series_cover_letter.txt", "rb") as f:
-                series_obj.cover_letter_content = TextFile(f, name=f"{series_data['original_id']}-cover_letter_content.txt")
-                series_obj.save()
+        if type(series_data) == list:
+            small_series_data = list()
+            large_series_data = list()
+
+            for i in range(len(series_data)):
+                
+                item_date = datetime.strptime(series_data[i]['date'], '%Y-%m-%d %H:%M:%S')
+                new_item_date = item_date.replace(tzinfo=timezone.utc)
+                series_data[i]['date'] = new_item_date
+
+                series_cover_letter = series_data[i]['cover_letter_content']
+
+                if series_cover_letter and len(series_cover_letter) > SIZE_LIMIT:
+                    large_series_data.append(series_data[i])
+                else:
+                    small_series_data.append(series_data[i])
+
+            # insert small patch data
+            series_serializer = SeriesStandardSerializer(data=small_series_data, many=True)
+            if series_serializer.is_valid():
+                series_serializer.save()
+
+                # if large comments exist, return them back and the layer will then post them separately
+                return JsonResponse(large_series_data, status=status.HTTP_201_CREATED, safe=False)
+            else:
+                return JsonResponse(series_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         else:
-            series_obj.cover_letter_content = series_cover_letter
-            series_obj.save()
+            series_cover_letter = series_data['cover_letter_content']
 
-        return HttpResponse("series post success")
+            if series_cover_letter and len(series_cover_letter) > SIZE_LIMIT:
+                with open(f"temp_file-series_cover_letter.txt", "w") as f:
+                    f.write(series_cover_letter)
+                with open(f"temp_file-series_cover_letter.txt", "rb") as f:
+                    series_data['cover_letter_content'] = TextFile(f, name=f"{series_data['original_id']}-cover_letter_content")
+                    # series_obj.save()
+
+                    series_serializer = SeriesContentFileSerializer(data=series_data)
+                    if series_serializer.is_valid():
+                        series_serializer.save()
+                        return JsonResponse(series_serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                series_serializer = SeriesStandardSerializer(data=series_data)
+                if series_serializer.is_valid():
+                    series_serializer.save()
+                    return JsonResponse(series_serializer.data, status=status.HTTP_201_CREATED)
+
+            return JsonResponse(series_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 
 @api_view(['POST'])
 def patch_list(request):
+
     if request.method == 'POST':
         patch_data = JSONParser().parse(request)
 
-        item_date = datetime.strptime(patch_data['date'], '%Y-%m-%d %H:%M:%S')
-        new_item_date = item_date.replace(tzinfo=timezone.utc)
+        # separate small patch data and large patch data
+        if type(patch_data) == list:
+            small_patch_data = list()
+            large_patch_data = list()
 
-        patch_msg_content = patch_data['msg_content']
-        patch_code_diff = patch_data['code_diff']
+            for i in range(len(patch_data)):
+                item_date = datetime.strptime(patch_data[i]['date'], '%Y-%m-%d %H:%M:%S')
+                new_item_date = item_date.replace(tzinfo=timezone.utc)
+                patch_data[i]['date'] = new_item_date
 
-        idx = Patches.objects.count() + 1
-        patch_obj = Patches(
-            id = idx,
-            original_id = patch_data['original_id'],
-            name = patch_data['name'],
-            state = patch_data['state'],
-            date = new_item_date,
-            msg_id = patch_data['msg_id'],
-            # msg_content = patch_data['msg_content'],
-            # code_diff = patch_data['code_diff'],
-            api_url = patch_data['api_url'],
-            web_url = patch_data['web_url'],
-            commit_ref = patch_data['commit_ref'],
-            change_id1 = None,
-            change_id2 = None,
-            mailing_list_id = None,
-            series_original_id = patch_data['series_original_id'],
-            submitter_account_original_id = patch_data['submitter_account_original_id'],
-            submitter_user_id = None,
-            project_original_id = patch_data['project_original_id'],
-        )
+                patch_msg_content = patch_data[i]['msg_content']
+                patch_code_diff = patch_data[i]['code_diff']
 
-        if (patch_msg_content and len(patch_msg_content) > 16793600) and (patch_code_diff and len(patch_code_diff) > 16793600):
-            with open(f"temp_file-patch_msg_content.txt", "w") as f:
-                f.write(patch_msg_content)
+                if (patch_msg_content and len(patch_msg_content) > SIZE_LIMIT) or (patch_code_diff and len(patch_code_diff) > SIZE_LIMIT):
+                    large_patch_data.append(patch_data[i])
+                else:
+                    small_patch_data.append(patch_data[i])
 
-            with open(f"tmp_file-patch_code_diff.txt", "w") as f:
-                f.write(patch_code_diff)
+            # insert small patch data
+            patch_serializer = PatchStandardSerializer(data=small_patch_data, many=True)
+            if patch_serializer.is_valid():
 
-            f_msg = open(f"temp_file-patch_msg_content.txt", "rb")
-            patch_obj.msg_content = TextFile(f_msg, name=f"{patch_data['original_id']}-msg_content")
+                patch_serializer.save()
 
-            f_code = open(f"tmp_file-patch_code_diff.txt", "rb")
-            patch_obj.code_diff = TextFile(f_code, name=f"{patch_data['original_id']}-code_diff")
-
-            patch_obj.save()
-
-            f_msg.close()
-            f_code.close()
-
-        elif patch_msg_content and len(patch_msg_content) > 16793600:
-            patch_obj.code_diff = patch_code_diff
-
-            with open(f"tmp_file-patch_msg_content.txt", "w") as f:
-                f.write(patch_msg_content)
-            with open(f"tmp_file-patch_msg_content.txt", "rb") as f:
-                patch_obj.msg_content = TextFile(f, name=f"{patch_data['original_id']}-msg_content")
-                patch_obj.save()
-
-        elif patch_code_diff and len(patch_code_diff) > 16793600:
-            patch_obj.msg_content = patch_msg_content
-
-            with open(f"tmp_file-patch_code_diff.txt", "w") as f:
-                f.write(patch_code_diff)
-            with open(f"tmp_file-patch_code_diff.txt", "rb") as f:
-                patch_obj.code_diff = TextFile(f, name=f"{patch_data['original_id']}-code_diff")
-                patch_obj.save()
-
+                # if large patches exist, return them back and the layer will then post them separately
+                return JsonResponse(large_patch_data, status=status.HTTP_201_CREATED, safe=False)
+            else:
+                return JsonResponse(patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
         else:
-            patch_obj.msg_content = patch_msg_content
-            patch_obj.code_diff = patch_code_diff
-            patch_obj.save()
+            patch_msg_content = patch_data['msg_content']
+            patch_code_diff = patch_data['code_diff']
 
-        return HttpResponse("patch post success")
+            if (patch_msg_content and len(patch_msg_content) > SIZE_LIMIT) and (patch_code_diff and len(patch_code_diff) > SIZE_LIMIT):
+                with open(f"temp_file-patch_msg_content.txt", "w") as f:
+                    f.write(patch_msg_content)
+
+                with open(f"tmp_file-patch_code_diff.txt", "w") as f:
+                    f.write(patch_code_diff)
+
+                f_msg = open(f"temp_file-patch_msg_content.txt", "rb")
+                patch_data['msg_content'] = TextFile(f_msg, name=f"{patch_data['original_id']}-msg_content")
+
+                f_code = open(f"tmp_file-patch_code_diff.txt", "rb")
+                patch_data['code_diff'] = TextFile(f_code, name=f"{patch_data['original_id']}-code_diff")
+
+                patch_serializer = PatchFileSerializer(data=patch_data)
+                if patch_serializer.is_valid():
+                    patch_serializer.save()
+                    f_msg.close()
+                    f_code.close()
+                    return HttpResponse('post completed', status=201)
+
+            elif patch_msg_content and len(patch_msg_content) > SIZE_LIMIT:
+                with open(f"tmp_file-patch_msg_content.txt", "w") as f:
+                    f.write(patch_msg_content)
+                with open(f"tmp_file-patch_msg_content.txt", "rb") as f:
+                    patch_data['msg_content'] = TextFile(f, name=f"{patch_data['original_id']}-msg_content")
+                    
+                    patch_serializer = PatchContentFileSerializer(data=patch_data)
+                    if patch_serializer.is_valid():
+                        patch_serializer.save()
+                        return HttpResponse('post completed', status=201)
+
+            elif patch_code_diff and len(patch_code_diff) > SIZE_LIMIT:
+                with open(f"tmp_file-patch_code_diff.txt", "w") as f:
+                    f.write(patch_code_diff)
+                with open(f"tmp_file-patch_code_diff.txt", "rb") as f:
+                    patch_data['code_diff'] = TextFile(f, name=f"{patch_data['original_id']}-code_diff")
+
+                    patch_serializer = PatchDiffFileSerializer(data=patch_data)
+                    if patch_serializer.is_valid():
+                        patch_serializer.save()
+                        return HttpResponse('post completed', status=201)
+            else:
+                patch_serializer = PatchStandardSerializer(data=patch_data)
+                if patch_serializer.is_valid():
+                    patch_serializer.save()
+                    return HttpResponse('post completed', status=201)
+
+            return JsonResponse(patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['POST'])
 def comment_list(request):
     if request.method == 'POST':
         comment_data = JSONParser().parse(request)
 
-        item_date = datetime.strptime(comment_data['date'], '%Y-%m-%d %H:%M:%S')
-        new_item_date = item_date.replace(tzinfo=timezone.utc)
+        if type(comment_data) == list:
+            small_comment_data = list()
+            large_comment_data = list()
 
-        comment_msg_content = comment_data['msg_content']
+            for i in range(len(comment_data)):
+                item_date = datetime.strptime(comment_data[i]['date'], '%Y-%m-%d %H:%M:%S')
+                new_item_date = item_date.replace(tzinfo=timezone.utc)
+                comment_data[i]['date'] = new_item_date
 
-        idx = Comments.objects.count() + 1
-        comment_obj = Comments(
-            id = idx,
-            original_id = comment_data['original_id'],
-            msg_id = comment_data['msg_id'],
-            # msg_content = comment_data['msg_content'],
-            date = new_item_date,
-            subject = comment_data['subject'],
-            reply_to_msg_id = comment_data['reply_to_msg_id'],
-            web_url = comment_data['web_url'],
-            change_id1 = None,
-            change_id2 = None,
-            mailing_list_id = None,
-            submitter_account_original_id = comment_data['submitter_account_original_id'],
-            submitter_user_id = None,
-            patch_original_id = comment_data['patch_original_id'],
-            project_original_id = comment_data['project_original_id'],
-        )
+                comment_msg_content = comment_data[i]['msg_content']
 
-        if comment_msg_content and len(comment_msg_content) > 16793600:
-            with open(f"tmp_file-comment_msg_content.txt", "w") as f:
-                f.write(comment_msg_content)
-            with open(f"tmp_file-comment_msg_content.txt", "rb") as f:
-                comment_obj.msg_content = TextFile(f, name=f"{comment_data['original_id']}-msg_content")
-                comment_obj.save()
+                if comment_msg_content and len(comment_msg_content) > SIZE_LIMIT:
+                    large_comment_data.append(comment_data[i])
+                else:
+                    small_comment_data.append(comment_data[i])
+
+            # insert small patch data
+            comment_serializer = CommentStandardSerializer(data=small_comment_data, many=True)
+            if comment_serializer.is_valid():
+                comment_serializer.save()
+
+                # if large comments exist, return them back and the layer will then post them separately
+                return JsonResponse(large_comment_data, status=status.HTTP_201_CREATED, safe=False)
+            else:
+                return JsonResponse(comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         else:
-            comment_obj.msg_content = comment_msg_content
-            comment_obj.save()
-        
-        return HttpResponse("comment post success")
+            item_date = datetime.strptime(comment_data['date'], '%Y-%m-%d %H:%M:%S')
+            new_item_date = item_date.replace(tzinfo=timezone.utc)
+            comment_data['date'] = new_item_date
+            
+            comment_msg_content = comment_data['msg_content']
+
+            if comment_msg_content and len(comment_msg_content) > SIZE_LIMIT:
+                with open(f"tmp_file-comment_msg_content.txt", "w") as f:
+                    f.write(comment_msg_content)
+                with open(f"tmp_file-comment_msg_content.txt", "rb") as f:
+                    comment_data['msg_content'] = TextFile(f, name=f"{comment_data['original_id']}-msg_content")
+
+                    comment_serializer = CommentContentFileSerializer(data=comment_data)
+                    if comment_serializer.is_valid():
+                        comment_serializer.save()
+                        return HttpResponse('post completed', status=201)
+            else:
+                comment_serializer = CommentStandardSerializer(data=comment_data)
+                if comment_serializer.is_valid():
+                    comment_serializer.save()
+                    HttpResponse('post completed', status=201)
+            
+            return JsonResponse(comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
