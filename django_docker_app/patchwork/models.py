@@ -79,12 +79,12 @@ class Changes2(models.Model):
 
     
 class MailingLists(models.Model):
-    web_url = models.CharField(max_length=255, blank=True, null=True)
-    date = models.DateTimeField(blank=True, null=True)
-    sender_email = models.CharField(max_length=255, blank=True, null=True)
+    msg_id = models.TextField(blank=True, null=True)
     subject = models.TextField(blank=True, null=True)
     content = models.FileField(blank=True, null=True, upload_to='mailing_list_email_content', storage=grid_fs_storage)
-    
+    date = models.DateTimeField(blank=True, null=True)
+    sender_name = models.CharField(max_length=255, blank=True, null=True)
+    web_url = models.CharField(max_length=255, blank=True, null=True)
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
 
     

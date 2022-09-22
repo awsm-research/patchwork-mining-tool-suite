@@ -1,11 +1,26 @@
 version: "3.9"
 
 services:
+  scrapy_docker_app:
+    build:
+      context: .
+    working_dir: /home/code_review_mining/scrapy_docker_app
+    volumes:
+      - ./scrapy_docker_app:/home/code_review_mining/scrapy_docker_app
+    ports:
+      - "6800:6800"
+    image: scrapy_docker_app:latest
+    container_name: scrapy_docker_container
+    command: >
+      sh -c "scrapyd"
+
+
   django_docker_app:
     build:
       context: .
+    working_dir: /home/code_review_mining/django_docker_app
     volumes:
-      - ./django_docker_app:/django_docker_app
+      - ./django_docker_app:/home/code_review_mining/django_docker_app
     ports:
       - "8000:8000"
     image: django_docker_app:latest
