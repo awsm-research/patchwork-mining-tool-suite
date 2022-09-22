@@ -12,6 +12,16 @@ class PatchworkCrawlerItem(scrapy.Item):
     pass
 
 
+class MailingListItem(scrapy.Item):
+    msg_id = scrapy.Field()
+    subject = scrapy.Field()
+    content = scrapy.Field()
+    date = scrapy.Field()
+    sender_name = scrapy.Field()
+    web_url = scrapy.Field()
+    project_original_id = scrapy.Field()
+    
+
 class AccountItem(scrapy.Item):
     original_id = scrapy.Field()
     email = scrapy.Field()

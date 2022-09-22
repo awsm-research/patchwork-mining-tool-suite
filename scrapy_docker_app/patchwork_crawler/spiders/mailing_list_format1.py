@@ -67,7 +67,7 @@ class MailingListFormat1Spider(scrapy.Spider):
 
 
     def parse(self, response):
-        for subject_href in response.xpath("//a[contains(text(), 'Subject')]/@href").getall()[:1]:
+        for subject_href in response.xpath("//a[contains(text(), 'Subject')]/@href").getall():
             
             yield response.follow(subject_href, callback=self.parse_subject)
 
@@ -76,7 +76,7 @@ class MailingListFormat1Spider(scrapy.Spider):
         email_list_sel = response.xpath("(//ul)[2]")
 
         # traverse emails in current subject page
-        for email in email_list_sel.xpath("./li")[:5]:
+        for email in email_list_sel.xpath("./li"):
 
             email_href = email.xpath("./a[@href]/@href").get()
             yield response.follow(email_href, callback=self.parse_email)
