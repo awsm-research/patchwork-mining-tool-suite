@@ -33,16 +33,16 @@ curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-na
 
 Each spider crawls patchwork api web page by item id (e.g. patch id -> https://patchwork.ffmpeg.org/api/patches/1). It automatically increases the item id to crawl the next web page util the id number reaches the default limit or the specified limit.
 
-To specify the maximum item id to be crawled, pass an argument when running the command. You can also specify the start id and the endpoint to be crawled. (Currently the supported endpoint include kernel, ozlabs, and ffmpeg)
+To specify the maximum item id to be crawled, pass an argument when running the command. You can also specify the start id and the endpoint to be crawled. (Currently the supported endpoints include kernel, ozlabs, and ffmpeg)
 ```command
 # crawl projects
-curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_project_id=<specified-id> -d end_project_id=<specified-id> -d org=<endpoint>
+curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_project_id=<specified-id> -d end_project_id=<specified-id> -d org=<endpoint-name>
 
 # crawl series
-curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_series_id=<specified-id> -d end_series_id=<specified-id> -d org=<endpoint>
+curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_series_id=<specified-id> -d end_series_id=<specified-id> -d org=<endpoint-name>
 
 # crawl patches
-curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_patch_id=<specified-id> -d end_patch_id=<specified-id> -d org=<endpoint>
+curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_patch_id=<specified-id> -d end_patch_id=<specified-id> -d org=<endpoint-name>
 ```
 
 The retrieved data will be stored under /docker/scrapy_docker_app/retrieved_data
