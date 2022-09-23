@@ -37,7 +37,11 @@ To specify the maximum item id to be crawled, pass an argument when running the 
 ```command
 # crawl projects
 curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_project_id=<specified-id> -d end_project_id=<specified-id> -d org=<endpoint>
+
+# crawl series
 curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_series_id=<specified-id> -d end_series_id=<specified-id> -d org=<endpoint>
+
+# crawl patches
 curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_patch_id=<specified-id> -d end_patch_id=<specified-id> -d org=<endpoint>
 ```
 
