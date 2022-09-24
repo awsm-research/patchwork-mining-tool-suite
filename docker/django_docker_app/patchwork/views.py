@@ -18,14 +18,14 @@ def example_view(request):
 def account_list(request):
     if request.method == 'POST':
         account_data = JSONParser().parse(request)
-        if type(account_data) != list:
-            account_data = [account_data]
-        account_serializer = AccountSerializer(data=account_data, many=True)
+        # if type(account_data) != list:
+        #     account_data = [account_data]
+        account_serializer = AccountSerializer(data=account_data)
         if account_serializer.is_valid():
             account_serializer.save()
-            return JsonResponse(account_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+            return HttpResponse('post completed', status=201)
         
-        return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+        return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['POST'])
@@ -37,7 +37,7 @@ def project_list(request):
         project_serializer = ProjectSerializer(data=project_data, many=True)
         if project_serializer.is_valid():
             project_serializer.save()
-            return JsonResponse(project_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+            return HttpResponse('post completed', status=201)
         return JsonResponse(project_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
 
@@ -85,12 +85,12 @@ def series_list(request):
                     series_serializer = SeriesContentFileSerializer(data=series_data)
                     if series_serializer.is_valid():
                         series_serializer.save()
-                        return JsonResponse(series_serializer.data, status=status.HTTP_201_CREATED)
+                        return HttpResponse('post completed', status=201)
             else:
                 series_serializer = SeriesStandardSerializer(data=series_data)
                 if series_serializer.is_valid():
                     series_serializer.save()
-                    return JsonResponse(series_serializer.data, status=status.HTTP_201_CREATED)
+                    return JsonResponse('post completed', status=201)
 
             return JsonResponse(series_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
