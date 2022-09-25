@@ -56,10 +56,7 @@ class PatchworkProjectSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        if response.status == 500:
-            raise CloseSpider(f"server error: {response.url}")
-        
-        elif response.status == 200:
+        if response.status == 200:
             item = self.base_func.get_page_json(response)
             
             maintainers = item['maintainers']
@@ -101,6 +98,9 @@ class PatchworkProjectSpider(scrapy.Spider):
 
         elif response.status == 404:
             print(f'invalid page: {response.url}')
+
+        elif response.status == 500:
+            print(f"server error: {response.url}")
 
         if self.current_project_id < self.max_project_id:
             self.current_project_id += 1
@@ -149,10 +149,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        if response.status == 500:
-            raise CloseSpider(f"server error: {response.url}")
-        
-        elif response.status == 200:
+        if response.status == 200:
 
             # get a single series json
             item = self.base_func.get_page_json(response)
@@ -207,6 +204,9 @@ class PatchworkSeriesSpider(scrapy.Spider):
         
         elif response.status == 404:
             print(f'invalid page: {response.url}')
+
+        elif response.status == 500:
+            print(f"server error: {response.url}")
         
         
         if self.current_series_id < self.max_series_id:
@@ -249,10 +249,7 @@ class PatchworkPatchSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        if response.status == 500:
-            raise CloseSpider(f"server error: {response.url}")
-        
-        elif response.status == 200:
+        if response.status == 200:
 
             # get a single series json
             item = self.base_func.get_page_json(response)
@@ -283,7 +280,7 @@ class PatchworkPatchSpider(scrapy.Spider):
             else:
                 patch_series_original_id = None
             
-            patch_original_id = '-'.join([self.endpoint, 'series', str(item['id'])])
+            patch_original_id = '-'.join([self.endpoint, 'patch', str(item['id'])])
 
             patch_reply_to_msg_id = None
             if 'In-Reply-To' in item['headers'].keys():
@@ -365,6 +362,9 @@ class PatchworkPatchSpider(scrapy.Spider):
         elif response.status == 404:
             print(f'invalid page: {response.url}')
 
+        elif response.status == 500:
+            print(f"server error: {response.url}")
+
         
         if self.current_patch_id < self.max_patch_id:
             self.current_patch_id += 1
@@ -374,22 +374,22 @@ class PatchworkPatchSpider(scrapy.Spider):
             )
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    configure_logging()
-    runner = CrawlerRunner(settings={
-        'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
-        'HTTPERROR_ALLOWED_CODES': [404],
-        'SPIDER_MODULES': ['patchwork_crawler.spiders'],
-        'NEWSPIDER_MODULE': 'patchwork_crawler.spiders'
-    })
+#     configure_logging()
+#     runner = CrawlerRunner(settings={
+#         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
+#         'HTTPERROR_ALLOWED_CODES': [404],
+#         'SPIDER_MODULES': ['patchwork_crawler.spiders'],
+#         'NEWSPIDER_MODULE': 'patchwork_crawler.spiders'
+#     })
 
-    @defer.inlineCallbacks
-    def crawl():
-        yield runner.crawl(PatchworkProjectSpider)
-        yield runner.crawl(PatchworkSeriesSpider)
-        yield runner.crawl(PatchworkPatchSpider)
-        reactor.stop()
+#     @defer.inlineCallbacks
+#     def crawl():
+#         yield runner.crawl(PatchworkProjectSpider)
+#         yield runner.crawl(PatchworkSeriesSpider)
+#         yield runner.crawl(PatchworkPatchSpider)
+#         reactor.stop()
 
-    crawl()
-    reactor.run()
+#     crawl()
+#     reactor.run()
