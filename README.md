@@ -19,10 +19,10 @@ docker-compose up
 #### Patchwork data
 **1. Introduction**
 
-There are three spiders for crawling patchwork data: PatchworkProjectSpider, PatchworkSeriesSpider, and PatchworkPatchSpider
-- PatchworkProjectSpider (spider name: **patchwork_project**) crawls patchwork projects and corresponding maintainer accounts data
-- PatchworkSeriesSpider (spider name: **patchwork_series**) crawls patchwork series and corresponding series submitter accounts data
-- PatchworkPatchSpider (spider name: **patchwork_patch**) crawls patchwork patches, comments and corresponding submitter accounts data
+There are three spiders for crawling patchwork data. Their **spider names** are **patchwork_project**, **patchwork_series**, and **patchwork_patch**.
+- *patchwork_project crawls patchwork projects and corresponding maintainer accounts data.*
+- *patchwork_series crawls patchwork series and corresponding series submitter accounts data.*
+- *patchwork_patch crawls patchwork patches, comments and corresponding submitter accounts data.*
 
 To crawl data, open the terminal and run the following command to schedule a spider in scapyd
 ```command
