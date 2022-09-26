@@ -1,7 +1,7 @@
 # Code-Review-Mining
 This project consists of two parts: Django REST framework for accessing data and scrapy framework for crawling data.
 
-## Tutorial
+## How to use
 
 ### How to deploy docker
 Open the terminal and go to the directory where you clone the project
@@ -31,7 +31,7 @@ curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-na
 
 **2. Customise spiders**
 
-Each spider crawls patchwork api web page by item id (e.g. patch id -> https://patchwork.ffmpeg.org/api/patches/1). It automatically increases the item id to crawl the next web page util the id number reaches the default limit or the specified limit.
+Each spider crawls patchwork api web page by item id (e.g. patch id -> https://patchwork.ffmpeg.org/api/patches/1). It automatically increases the item id to crawl the next web page until the id number reaches the default limit or the specified limit.
 
 To specify the maximum item id to be crawled, pass an argument when running the command. You can also specify the start id and the endpoint to be crawled. (Currently the supported endpoints include kernel, ozlabs, and ffmpeg)
 ```command
