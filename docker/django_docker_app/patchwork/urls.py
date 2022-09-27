@@ -2,11 +2,13 @@ from django.urls import path
 from . import views
 from django.conf.urls import url
 
+app_name = "patchwork"
+
 urlpatterns = [
-    path('', views.example_view),
-    url(r'^accounts$', views.account_list),
-    url(r'^projects$', views.project_list),
-    url(r'^series$', views.series_list),
-    url(r'^patches$', views.patch_list),
-    url(r'^comments$', views.comment_list)
+    path('', views.home_view, name="home"),
+    path('accounts/', views.AccountList.as_view(), name="account_list"),
+    path('projects/', views.ProjectList.as_view()),
+    path('series/', views.SeriesList.as_view()),
+    path('patches/', views.PatchList.as_view()),
+    path('comments/', views.CommentList.as_view())
 ]

@@ -1,8 +1,9 @@
 # from django.db import models
+from code_review_mining import settings
 from djongo import models
 from djongo.storage import GridFSStorage
 
-grid_fs_storage = GridFSStorage(collection='textfiles', base_url='https://127.0.0.1:8000/textfiles/')
+grid_fs_storage = GridFSStorage(collection='textfiles', base_url=''.join([settings.BASE_URL, 'textfiles/']))
 
 # Create your models here.
 class Accounts(models.Model):
@@ -12,9 +13,11 @@ class Accounts(models.Model):
     api_url = models.CharField(max_length=255, blank=True, null=True)
     user_id = models.IntegerField(blank=True, null=True)
     
+    
 class Users(models.Model):
     account_original_id = models.JSONField(blank=True, null=True)
     
+
 class Projects(models.Model):
     original_id = models.CharField(max_length=255, unique=True)
     name = models.CharField(max_length=255, blank=True, null=True)

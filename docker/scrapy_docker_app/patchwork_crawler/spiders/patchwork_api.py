@@ -25,7 +25,7 @@ MAX_PROJECT_ID = BUFFER + 413
 MAX_SERIES_ID = BUFFER + 678657
 MAX_PATCH_ID = BUFFER + 12982205
 
-ENDPOINT = 'kernel'
+ENDPOINT_TYPE = 'kernel'
 
 class PatchworkProjectSpider(scrapy.Spider):
     name = "patchwork_project"
@@ -43,16 +43,16 @@ class PatchworkProjectSpider(scrapy.Spider):
     }
 
 
-    def __init__(self, start_project_id=1, end_project_id=MAX_PROJECT_ID, org=ENDPOINT, *args, **kwargs):
+    def __init__(self, start_project_id=1, end_project_id=MAX_PROJECT_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.current_project_id = int(start_project_id)
         self.max_project_id = int(end_project_id)
-        self.endpoint = org
+        self.endpoint_type = endpoint_type
 
         self.base_func = PatchworkCrawlerBase()
 
-        self.start_urls = [f"https://patchwork.{self.endpoint}.org/api/projects/{self.current_project_id}"]
+        self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/projects/{self.current_project_id}"]
 
 
     def parse(self, response):
@@ -68,7 +68,7 @@ class PatchworkProjectSpider(scrapy.Spider):
 
             # current_account_list = list()
             for maintainer in maintainers:
-                maintainer_original_id = '-'.join([self.endpoint, 'account', str(maintainer['id'])])
+                maintainer_original_id = '-'.join([self.endpoint_type, 'account', str(maintainer['id'])])
                 maintainer_api_url = maintainer['url']
                 maintainer_email = maintainer['email']
                 maintainer_username = maintainer['username']
@@ -87,7 +87,7 @@ class PatchworkProjectSpider(scrapy.Spider):
                 
 
             project_item = ProjectItem(
-                original_id = '-'.join([self.endpoint, 'project', str(item['id'])]),
+                original_id = '-'.join([self.endpoint_type, 'project', str(item['id'])]),
                 name = item['name'],
                 repository_url = item['webscm_url'],
                 api_url = item['url'],
@@ -109,7 +109,7 @@ class PatchworkProjectSpider(scrapy.Spider):
         if self.current_project_id < self.max_project_id:
             self.current_project_id += 1
             yield scrapy.Request(
-                url = f"https://patchwork.{self.endpoint}.org/api/projects/{self.current_project_id}",
+                url = f"https://patchwork.{self.endpoint_type}.org/api/projects/{self.current_project_id}",
                 callback=self.parse
             )
 
@@ -123,19 +123,16 @@ class PatchworkSeriesSpider(scrapy.Spider):
         'HTTPERROR_ALLOWED_CODES': [404]
     }
 
-    # start_urls = [f"https://patchwork.{ENDPOINT}.org/api/series/1"]
-
-
-    def __init__(self, start_series_id=1, end_series_id=MAX_SERIES_ID, org=ENDPOINT, *args, **kwargs):
+    def __init__(self, start_series_id=1, end_series_id=MAX_SERIES_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.current_series_id = int(start_series_id)
         self.max_series_id = int(end_series_id)
-        self.endpoint = org
+        self.endpoint_type = endpoint_type
 
         self.base_func = PatchworkCrawlerBase()
 
-        self.start_urls = [f"https://patchwork.{self.endpoint}.org/api/series/{self.current_series_id}"]
+        self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}"]
 
     # def start_requests(self):
     #     start_series_id = getattr(self, 'start_series_id', None)
@@ -147,8 +144,8 @@ class PatchworkSeriesSpider(scrapy.Spider):
     #     if end_series_id is not None:
     #         self.max_series_id = int(end_series_id)
     #     if org is not None:
-    #         self.endpoint = org
-    #     url = f"https://patchwork.{self.endpoint}.org/api/series/{self.current_series_id}"
+    #         self.endpoint_type = endpoint_type
+    #     url = f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}"
     #     yield scrapy.Request(url, self.parse)
 
 
@@ -164,7 +161,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
             submitter = item['submitter']
 
-            submitter_original_id = '-'.join([self.endpoint, 'account', str(submitter['id'])])
+            submitter_original_id = '-'.join([self.endpoint_type, 'account', str(submitter['id'])])
             submitter_api_url = submitter['url']
             submitter_email = submitter['email']
             submitter_username = submitter['name']
@@ -180,7 +177,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
             yield account_item
 
-            series_project_original_id = '-'.join([self.endpoint, 'project', str(item['project']['id'])])
+            series_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
             
             series_cover_letter_msg_id = None
             series_cover_letter_content = None
@@ -193,7 +190,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
                 
 
             series_item = SeriesItem(
-                original_id = '-'.join([self.endpoint, 'series', str(item['id'])]),
+                original_id = '-'.join([self.endpoint_type, 'series', str(item['id'])]),
                 name = item['name'],
                 date = item['date'],
                 version = item['version'],
@@ -220,7 +217,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
         if self.current_series_id < self.max_series_id:
             self.current_series_id += 1
             yield scrapy.Request(
-                url = f"https://patchwork.{self.endpoint}.org/api/series/{self.current_series_id}",
+                url = f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}",
                 callback=self.parse
             )
 
@@ -248,16 +245,16 @@ class PatchworkPatchSpider(scrapy.Spider):
     }
     
 
-    def __init__(self, start_patch_id=1, end_patch_id=MAX_PATCH_ID, org=ENDPOINT, *args, **kwargs):
+    def __init__(self, start_patch_id=1, end_patch_id=MAX_PATCH_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.current_patch_id = int(start_patch_id)
         self.max_patch_id = int(end_patch_id)
-        self.endpoint = org
+        self.endpoint_type = endpoint_type
 
         self.base_func = PatchworkCrawlerBase()
 
-        self.start_urls = [f"https://patchwork.{self.endpoint}.org/api/patches/{self.current_patch_id}"]
+        self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/patches/{self.current_patch_id}"]
 
 
     def parse(self, response):
@@ -272,7 +269,7 @@ class PatchworkPatchSpider(scrapy.Spider):
 
             submitter = item['submitter']
 
-            submitter_original_id = '-'.join([self.endpoint, 'account', str(submitter['id'])])
+            submitter_original_id = '-'.join([self.endpoint_type, 'account', str(submitter['id'])])
             submitter_api_url = submitter['url']
             submitter_email = submitter['email']
             submitter_username = submitter['name']
@@ -288,15 +285,15 @@ class PatchworkPatchSpider(scrapy.Spider):
 
             yield account_item
 
-            patch_project_original_id = '-'.join([self.endpoint, 'project', str(item['project']['id'])])
+            patch_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
             
             if item['series']:
                 patch_series_api_id = item['series'][0]['id']
-                patch_series_original_id = '-'.join([self.endpoint, 'series', str(patch_series_api_id)])
+                patch_series_original_id = '-'.join([self.endpoint_type, 'series', str(patch_series_api_id)])
             else:
                 patch_series_original_id = None
             
-            patch_original_id = '-'.join([self.endpoint, 'patch', str(item['id'])])
+            patch_original_id = '-'.join([self.endpoint_type, 'patch', str(item['id'])])
 
             patch_reply_to_msg_id = None
             if 'In-Reply-To' in item['headers'].keys():
@@ -340,7 +337,7 @@ class PatchworkPatchSpider(scrapy.Spider):
 
                     comment_submitter = comment['submitter']
 
-                    comment_submitter_original_id = '-'.join([self.endpoint, 'account', str(comment_submitter['id'])])
+                    comment_submitter_original_id = '-'.join([self.endpoint_type, 'account', str(comment_submitter['id'])])
                     comment_submitter_api_url = comment_submitter['url']
                     comment_submitter_email = comment_submitter['email']
                     comment_submitter_username = comment_submitter['name']
@@ -357,7 +354,7 @@ class PatchworkPatchSpider(scrapy.Spider):
 
 
                     comment_item = CommentItem(
-                        original_id = '-'.join([self.endpoint, 'comment', str(comment['id'])]),
+                        original_id = '-'.join([self.endpoint_type, 'comment', str(comment['id'])]),
                         msg_id = comment['msgid'],
                         msg_content = comment['content'],
                         date = comment['date'],
@@ -385,7 +382,7 @@ class PatchworkPatchSpider(scrapy.Spider):
         if self.current_patch_id < self.max_patch_id:
             self.current_patch_id += 1
             yield scrapy.Request(
-                url = f"https://patchwork.{self.endpoint}.org/api/patches/{self.current_patch_id}",
+                url = f"https://patchwork.{self.endpoint_type}.org/api/patches/{self.current_patch_id}",
                 callback=self.parse
             )
 
