@@ -6,246 +6,55 @@ from django.db import connections
 from gridfs import GridFS
 from code_review_mining import settings
 from bson import ObjectId
+from patchwork.static.utils import TextFile
 
 
 class AccountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Accounts
-        fields = (
-            'id',
-            'original_id',
-            'email',
-            'username',
-            'api_url',
-            'user_id'
-        )
+        fields = '__all__'
 
 
 class ProjectSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Projects
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'repository_url',
-            'api_url',
-            'web_url',
-            'list_id',
-            'list_address',
-            'maintainer_account_original_id',
-            'maintainer_user_id'
-        )
+        fields = '__all__'
 
 
 class SeriesStandardSerializer(serializers.ModelSerializer):
-    cover_letter_content = serializers.CharField(allow_blank=True, allow_null=True)
+
+    def to_internal_value(self, data):
+        data['cover_letter_content'] = TextFile(data['cover_letter_content'].encode(), name=f"{data['original_id']}-cover_letter_content.txt")
+        return super().to_internal_value(data)
 
     class Meta:
         model = Series
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'date',
-            'version',
-            'total',
-            'received_total',
-            'cover_letter_msg_id',
-            'cover_letter_content',
-            'api_url',
-            'web_url',
-            'project_original_id',
-            'submitter_account_original_id',
-            'submitter_user_id'
-        )
-
-
-class SeriesContentFileSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Series
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'date',
-            'version',
-            'total',
-            'received_total',
-            'cover_letter_msg_id',
-            'cover_letter_content',
-            'api_url',
-            'web_url',
-            'project_original_id',
-            'submitter_account_original_id',
-            'submitter_user_id'
-        )
+        fields = '__all__'
 
 
 class PatchStandardSerializer(serializers.ModelSerializer):
-    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
-    code_diff = serializers.CharField(allow_blank=True, allow_null=True)
+
+    def to_internal_value(self, data):
+        data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
+        data['code_diff'] = TextFile(data['code_diff'].encode(), name=f"{data['original_id']}-code_diff.txt")
+        return super().to_internal_value(data)
 
     class Meta:
         model = Patches
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'state',
-            'date',
-            'msg_id',
-            'msg_content',
-            'code_diff',
-            'api_url',
-            'web_url',
-            'commit_ref',
-            'reply_to_msg_id',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
-            'series_original_id',
-            'new_series_id',
-            'submitter_account_original_id',
-            'submitter_user_id',
-            'project_original_id'
-        )
-
-
-class PatchContentFileSerializer(serializers.ModelSerializer):
-    code_diff = serializers.CharField(allow_blank=True, allow_null=True)
-
-    class Meta:
-        model = Patches
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'state',
-            'date',
-            'msg_id',
-            'msg_content',
-            'code_diff',
-            'api_url',
-            'web_url',
-            'commit_ref',
-            'reply_to_msg_id',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
-            'series_original_id',
-            'new_series_id',
-            'submitter_account_original_id',
-            'submitter_user_id',
-            'project_original_id'
-        )
-
-
-class PatchDiffFileSerializer(serializers.ModelSerializer):
-    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
-
-    class Meta:
-        model = Patches
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'state',
-            'date',
-            'msg_id',
-            'msg_content',
-            'code_diff',
-            'api_url',
-            'web_url',
-            'commit_ref',
-            'reply_to_msg_id',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
-            'series_original_id',
-            'new_series_id',
-            'submitter_account_original_id',
-            'submitter_user_id',
-            'project_original_id'
-        )
-
-class PatchFileSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Patches
-        fields = (
-            'id',
-            'original_id',
-            'name',
-            'state',
-            'date',
-            'msg_id',
-            'msg_content',
-            'code_diff',
-            'api_url',
-            'web_url',
-            'commit_ref',
-            'reply_to_msg_id',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
-            'series_original_id',
-            'new_series_id',
-            'submitter_account_original_id',
-            'submitter_user_id',
-            'project_original_id'
-        )
-
+        fields = '__all__'
 
 
 class CommentStandardSerializer(serializers.ModelSerializer):
-    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
+
+    def to_internal_value(self, data):
+        data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
+        return super().to_internal_value(data)
 
     class Meta:
         model = Comments
-        fields = (
-            'id',
-            'original_id',
-            'msg_id',
-            'msg_content',
-            'date',
-            'subject',
-            'reply_to_msg_id',
-            'web_url',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
-            'submitter_account_original_id',
-            'submitter_user_id',
-            'patch_original_id',
-            'project_original_id'
-        )
-
-
-class CommentContentFileSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Comments
-        fields = (
-            'id',
-            'original_id',
-            'msg_id',
-            'msg_content',
-            'date',
-            'subject',
-            'reply_to_msg_id',
-            'web_url',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
-            'submitter_account_original_id',
-            'submitter_user_id',
-            'patch_original_id',
-            'project_original_id'
-        )
+        fields = '__all__'
 
 
 class GetSeriesSerializer(SeriesStandardSerializer):
@@ -253,13 +62,12 @@ class GetSeriesSerializer(SeriesStandardSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
-        if data['cover_letter_content'] == f"series_cover_letter_content/{data['original_id']}-cover_letter_content.txt":
-            db = connections['default'].connection
+        db = connections['default'].connection
+        fs = GridFS(db, 'textfiles.series_cover_letter_content')
 
-            fs = GridFS(db, 'textfiles.series_cover_letter_content')
-
-            file_content = fs.find_one({"filename": f"{data['original_id']}-cover_letter_content.txt"}).read().decode()
-            data['cover_letter_content'] = file_content
+        file_obj_id = data['cover_letter_content'].split("/")[-1]
+        file_content = fs.get(ObjectId(file_obj_id)).read().decode()
+        data['cover_letter_content'] = file_content
 
         return data
 
@@ -269,21 +77,17 @@ class GetPatchSerializer(PatchStandardSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
-        if data['msg_content'] == f"patch_msg_content/{data['original_id']}-msg_content.txt":
-            db = connections['default'].connection
+        db = connections['default'].connection
+        content_fs = GridFS(db, 'textfiles.patch_msg_content')
+        diff_fs = GridFS(db, 'textfiles.patch_code_diff')
 
-            fs = GridFS(db, 'textfiles.patch_msg_content')
+        content_file_obj_id = data['msg_content'].split("/")[-1]
+        content_file_content = content_fs.get(ObjectId(content_file_obj_id)).read().decode()
+        data['msg_content'] = content_file_content
 
-            file_content = fs.find_one({"filename": f"{data['original_id']}-msg_content.txt"}).read().decode()
-            data['msg_content'] = file_content
-
-        if data['code_diff'] == f"patch_code_diff/{data['original_id']}-code_diff.txt":
-            db = connections['default'].connection
-
-            fs = GridFS(db, 'textfiles.patch_code_diff')
-
-            file_content = fs.find_one({"filename": f"{data['original_id']}-code_diff.txt"}).read().decode()
-            data['code_diff'] = file_content
+        diff_file_obj_id = data['code_diff'].split("/")[-1]
+        diff_file_content = diff_fs.get(ObjectId(diff_file_obj_id)).read().decode()
+        data['code_diff'] = diff_file_content
 
         return data
 
@@ -293,12 +97,11 @@ class GetCommentSerializer(CommentStandardSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
-        if data['msg_content'] == f"comment_msg_content/{data['original_id']}-msg_content.txt":
-            db = connections['default'].connection
+        db = connections['default'].connection
+        fs = GridFS(db, 'textfiles.comment_msg_content')
 
-            fs = GridFS(db, 'textfiles.comment_msg_content')
-
-            file_content = fs.find_one({"filename": f"{data['original_id']}-msg_content.txt"}).read().decode()
-            data['msg_content'] = file_content
+        file_obj_id = data['msg_content'].split("/")[-1]
+        file_content = fs.get(ObjectId(file_obj_id)).read().decode()
+        data['msg_content'] = file_content
 
         return data

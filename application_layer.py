@@ -148,15 +148,9 @@ class DataAccess():
                     print(f"Duplicate {item_type} exists. Start inserting one by one.")
                     for item in json_data:
                         response1 = self.__post_data(item, item_type)
-
-                # large item exists
-                elif response.status_code == 201 and response.text != 'post completed' and json.loads(response.text):
-                    large_items = json.loads(response.text)
-                    for large_item in large_items:
-                        response2 = self.__post_data(large_item, item_type)
                 
                 # capture duplicate django auto id error and also others
-                elif not (response.status_code == 201 and response.text == 'post completed'):
+                elif response.status_code != 201:
                     raise PostRequestException(response)
 
         except FileNotFoundError as e:

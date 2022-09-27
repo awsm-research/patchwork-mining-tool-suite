@@ -111,49 +111,15 @@ class SeriesList(APIView):
     def post(self, request, format=None):
         series_data = JSONParser().parse(request)
 
-        if type(series_data) == list:
-            small_series_data = list()
-            large_series_data = list()
-
-            for i in range(len(series_data)):
-                
-                item_date = datetime.strptime(series_data[i]['date'], '%Y-%m-%d %H:%M:%S')
-                new_item_date = item_date.replace(tzinfo=timezone.utc)
-                series_data[i]['date'] = new_item_date
-
-                series_cover_letter = series_data[i]['cover_letter_content']
-
-                if series_cover_letter and len(series_cover_letter) > SIZE_LIMIT:
-                    large_series_data.append(series_data[i])
-                else:
-                    small_series_data.append(series_data[i])
-
-            # insert small patch data
-            series_serializer = SeriesStandardSerializer(data=small_series_data, many=True)
-            if series_serializer.is_valid():
-                series_serializer.save()
-
-                # if large comments exist, return them back and the layer will then post them separately
-                return JsonResponse(large_series_data, status=status.HTTP_201_CREATED, safe=False)
-            else:
-                return JsonResponse(series_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        else:
-            series_cover_letter = series_data['cover_letter_content']
-
-            if series_cover_letter and len(series_cover_letter) > SIZE_LIMIT:
-                series_data['cover_letter_content'] = TextFile(series_cover_letter.encode(), name=f"{series_data['original_id']}-cover_letter_content.txt")
-
-                series_serializer = SeriesContentFileSerializer(data=series_data)
-                if series_serializer.is_valid():
-                    series_serializer.save()
-                    return HttpResponse('post completed', status=201)
-            else:
-                series_serializer = SeriesStandardSerializer(data=series_data)
-                if series_serializer.is_valid():
-                    series_serializer.save()
-                    return JsonResponse('post completed', status=201)
-
-            return JsonResponse(series_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        if type(series_data) != list:
+            series_data = [series_data]
+            
+        series_serializer = SeriesStandardSerializer(data=series_data, many=True)
+        if series_serializer.is_valid():
+            series_serializer.save()
+            return JsonResponse(series_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+            
+        return JsonResponse(series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
 
 class PatchList(APIView):
@@ -206,70 +172,15 @@ class PatchList(APIView):
         patch_data = JSONParser().parse(request)
 
         # separate small patch data and large patch data
-        if type(patch_data) == list:
-            small_patch_data = list()
-            large_patch_data = list()
+        if type(patch_data) != list:
+            patch_data = [patch_data]
 
-            for i in range(len(patch_data)):
-                item_date = datetime.strptime(patch_data[i]['date'], '%Y-%m-%d %H:%M:%S')
-                new_item_date = item_date.replace(tzinfo=timezone.utc)
-                patch_data[i]['date'] = new_item_date
-
-                patch_msg_content = patch_data[i]['msg_content']
-                patch_code_diff = patch_data[i]['code_diff']
-
-                if (patch_msg_content and len(patch_msg_content) > SIZE_LIMIT) or (patch_code_diff and len(patch_code_diff) > SIZE_LIMIT):
-                    large_patch_data.append(patch_data[i])
-                else:
-                    small_patch_data.append(patch_data[i])
-
-            # insert small patch data
-            patch_serializer = PatchStandardSerializer(data=small_patch_data, many=True)
-            if patch_serializer.is_valid():
-
-                patch_serializer.save()
-
-                # if large patches exist, return them back and the layer will then post them separately
-                return JsonResponse(large_patch_data, status=status.HTTP_201_CREATED, safe=False)
-            else:
-                return JsonResponse(patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-        else:
-            patch_msg_content = patch_data['msg_content']
-            patch_code_diff = patch_data['code_diff']
-
-            if (patch_msg_content and len(patch_msg_content) > SIZE_LIMIT) and (patch_code_diff and len(patch_code_diff) > SIZE_LIMIT):
-                
-                patch_data['msg_content'] = TextFile(patch_msg_content.encode(), name=f"{patch_data['original_id']}-msg_content.txt")
-                patch_data['code_diff'] = TextFile(patch_code_diff.encode(), name=f"{patch_data['original_id']}-code_diff.txt")
-
-                patch_serializer = PatchFileSerializer(data=patch_data)
-                if patch_serializer.is_valid():
-                    patch_serializer.save()
-                    return HttpResponse('post completed', status=201)
-
-            elif patch_msg_content and len(patch_msg_content) > SIZE_LIMIT:
-                patch_data['msg_content'] = TextFile(patch_msg_content.encode(), name=f"{patch_data['original_id']}-msg_content.txt")
-                
-                patch_serializer = PatchContentFileSerializer(data=patch_data)
-                if patch_serializer.is_valid():
-                    patch_serializer.save()
-                    return HttpResponse('post completed', status=201)
-
-            elif patch_code_diff and len(patch_code_diff) > SIZE_LIMIT:
-                patch_data['code_diff'] = TextFile(patch_code_diff.encode(), name=f"{patch_data['original_id']}-code_diff.txt")
-                
-                patch_serializer = PatchDiffFileSerializer(data=patch_data)
-                if patch_serializer.is_valid():
-                    patch_serializer.save()
-                    return HttpResponse('post completed', status=201)
-            else:
-                patch_serializer = PatchStandardSerializer(data=patch_data)
-                if patch_serializer.is_valid():
-                    patch_serializer.save()
-                    return HttpResponse('post completed', status=201)
-
-            return JsonResponse(patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        patch_serializer = PatchStandardSerializer(data=patch_data, many=True)
+        if patch_serializer.is_valid():
+            patch_serializer.save()
+            return JsonResponse(patch_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+        
+        return JsonResponse(patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
 class CommentList(APIView):
     def get(self, request, format=None):
@@ -313,52 +224,15 @@ class CommentList(APIView):
     def post(self, request, format=None):
         comment_data = JSONParser().parse(request)
 
-        if type(comment_data) == list:
-            small_comment_data = list()
-            large_comment_data = list()
+        if type(comment_data) != list:
+            comment_data = [comment_data]
 
-            for i in range(len(comment_data)):
-                item_date = datetime.strptime(comment_data[i]['date'], '%Y-%m-%d %H:%M:%S')
-                new_item_date = item_date.replace(tzinfo=timezone.utc)
-                comment_data[i]['date'] = new_item_date
-
-                comment_msg_content = comment_data[i]['msg_content']
-
-                if comment_msg_content and len(comment_msg_content) > SIZE_LIMIT:
-                    large_comment_data.append(comment_data[i])
-                else:
-                    small_comment_data.append(comment_data[i])
-
-            # insert small patch data
-            comment_serializer = CommentStandardSerializer(data=small_comment_data, many=True)
-            if comment_serializer.is_valid():
-                comment_serializer.save()
-
-                # if large comments exist, return them back and the layer will then post them separately
-                return JsonResponse(large_comment_data, status=status.HTTP_201_CREATED, safe=False)
-            else:
-                return JsonResponse(comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        else:
-            item_date = datetime.strptime(comment_data['date'], '%Y-%m-%d %H:%M:%S')
-            new_item_date = item_date.replace(tzinfo=timezone.utc)
-            comment_data['date'] = new_item_date
-            
-            comment_msg_content = comment_data['msg_content']
-
-            if comment_msg_content and len(comment_msg_content) > SIZE_LIMIT:
-                comment_data['msg_content'] = TextFile(comment_msg_content.encode(), name=f"{comment_data['original_id']}-msg_content.txt")
-
-                comment_serializer = CommentContentFileSerializer(data=comment_data)
-                if comment_serializer.is_valid():
-                    comment_serializer.save()
-                    return HttpResponse('post completed', status=201)
-            else:
-                comment_serializer = CommentStandardSerializer(data=comment_data)
-                if comment_serializer.is_valid():
-                    comment_serializer.save()
-                    HttpResponse('post completed', status=201)
-            
-            return JsonResponse(comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        comment_serializer = CommentStandardSerializer(data=comment_data, many=True)
+        if comment_serializer.is_valid():
+            comment_serializer.save()
+            return JsonResponse(comment_serializer.data, status=status.HTTP_201_CREATED, safe=False)
+        
+        return JsonResponse(comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
 
 class MailingListList(APIView):
