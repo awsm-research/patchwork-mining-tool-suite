@@ -57,7 +57,11 @@ class PatchworkProjectSpider(scrapy.Spider):
 
     def parse(self, response):
         if response.status == 200:
-            item = self.base_func.get_page_json(response)
+            # item = self.base_func.get_page_json(response)
+            try:
+                item = self.base_func.get_page_json(response)
+            except json.decoder.JSONDecodeError as e:
+                item = requests.get(response.url).json()
             
             maintainers = item['maintainers']
             maintainer_list = list()
@@ -152,7 +156,11 @@ class PatchworkSeriesSpider(scrapy.Spider):
         if response.status == 200:
 
             # get a single series json
-            item = self.base_func.get_page_json(response)
+            # item = self.base_func.get_page_json(response)
+            try:
+                item = self.base_func.get_page_json(response)
+            except json.decoder.JSONDecodeError as e:
+                item = requests.get(response.url).json()
 
             submitter = item['submitter']
 
@@ -218,7 +226,11 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
     def parse_cover_letter(self, response):
         
-        item = self.base_func.get_page_json(response)
+        # item = self.base_func.get_page_json(response)
+        try:
+            item = self.base_func.get_page_json(response)
+        except json.decoder.JSONDecodeError as e:
+            item = requests.get(response.url).json()
 
         cover_letter_content = item['content']
 
@@ -251,8 +263,12 @@ class PatchworkPatchSpider(scrapy.Spider):
     def parse(self, response):
         if response.status == 200:
 
-            # get a single series json
-            item = self.base_func.get_page_json(response)
+            # get a single patch json
+            # item = self.base_func.get_page_json(response)
+            try:
+                item = self.base_func.get_page_json(response)
+            except json.decoder.JSONDecodeError as e:
+                item = requests.get(response.url).json()
 
             submitter = item['submitter']
 
