@@ -11,7 +11,8 @@ services:
     image: scrapy_docker_app:latest
     container_name: scrapy_docker_container
     command: >
-      sh -c "scrapyd"
+      sh -c "rm -rf twistd.pid&&
+             scrapyd"
 
 
   django_docker_app:

@@ -15,3 +15,7 @@
     mongodb restore
     - docker cp /Users/mingzhaoliang/projects_data/msr_data/dump mongodb_docker_container:/dump
     - docker exec -i mongodb_docker_container /usr/bin/mongorestore --db code_review_db /dump/code_review_db
+
+4. about migrating models ("python manage.py migrate patchwork&&" in docker-compose commands)
+    - do NOT migrate models if you are going to restore a database, otherwise the cached auto id values of each collections will not be restored
+    and further post request will no longer be available due to duplicate id error.

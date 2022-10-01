@@ -1,4 +1,4 @@
-import re
+import json
 from symbol import import_as_name
 from rest_framework import serializers
 from patchwork.models import *
@@ -23,10 +23,22 @@ class ProjectSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+
 class SeriesStandardSerializer(serializers.ModelSerializer):
+    cover_letter_content = serializers.CharField(allow_blank=True, allow_null=True)
+
+    class Meta:
+        model = Series
+        fields = '__all__'
+
+
+class SeriesFileSerializer(serializers.ModelSerializer):
 
     def to_internal_value(self, data):
-        data['cover_letter_content'] = TextFile(data['cover_letter_content'].encode(), name=f"{data['original_id']}-cover_letter_content.txt")
+        if data['cover_letter_content'] == '':
+            data['cover_letter_content'] = 'mongodb_gridfs_code_review_empty_file'
+        if data['cover_letter_content'] is not None:
+            data['cover_letter_content'] = TextFile(data['cover_letter_content'].encode(), name=f"{data['original_id']}-cover_letter_content.txt")
         return super().to_internal_value(data)
 
     class Meta:
@@ -35,6 +47,50 @@ class SeriesStandardSerializer(serializers.ModelSerializer):
 
 
 class PatchStandardSerializer(serializers.ModelSerializer):
+    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
+    code_diff = serializers.CharField(allow_blank=True, allow_null=True)
+
+    class Meta:
+        model = Patches
+        fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        try:
+            reply_to_msg_id = json.loads(data['reply_to_msg_id'])
+        except json.JSONDecodeError:
+            reply_to_msg_id = data['reply_to_msg_id']
+        data['reply_to_msg_id'] = reply_to_msg_id
+            
+        return data
+
+
+class PatchContentFileSerializer(serializers.ModelSerializer):
+    code_diff = serializers.CharField(allow_blank=True, allow_null=True)
+
+    def to_internal_value(self, data):
+        data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
+        return super().to_internal_value(data)
+
+    class Meta:
+        model = Patches
+        fields = '__all__'
+
+
+class PatchDiffFileSerializer(serializers.ModelSerializer):
+    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
+
+    def to_internal_value(self, data):
+        data['code_diff'] = TextFile(data['code_diff'].encode(), name=f"{data['original_id']}-code_diff.txt")
+        return super().to_internal_value(data)
+
+    class Meta:
+        model = Patches
+        fields = '__all__'
+
+
+class PatchFileSerializer(serializers.ModelSerializer):
 
     def to_internal_value(self, data):
         data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
@@ -47,6 +103,25 @@ class PatchStandardSerializer(serializers.ModelSerializer):
 
 
 class CommentStandardSerializer(serializers.ModelSerializer):
+    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
+
+    class Meta:
+        model = Comments
+        fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        try:
+            reply_to_msg_id = json.loads(data['reply_to_msg_id'])
+        except json.JSONDecodeError:
+            reply_to_msg_id = data['reply_to_msg_id']
+        data['reply_to_msg_id'] = reply_to_msg_id
+            
+        return data
+
+
+class CommentFileSerializer(serializers.ModelSerializer):
 
     def to_internal_value(self, data):
         data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
@@ -62,12 +137,11 @@ class GetSeriesSerializer(SeriesStandardSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
-        db = connections['default'].connection
-        fs = GridFS(db, 'textfiles.series_cover_letter_content')
-
-        file_obj_id = data['cover_letter_content'].split("/")[-1]
-        file_content = fs.get(ObjectId(file_obj_id)).read().decode()
-        data['cover_letter_content'] = file_content
+        if data['cover_letter_content'] == f"series_cover_letter_content/{data['original_id']}-cover_letter_content.txt":
+            db = connections['default'].connection
+            fs = GridFS(db, 'textfiles.series_cover_letter_content')
+            file_content = fs.find_one({"filename": f"{data['original_id']}-cover_letter_content.txt"}).read().decode()
+            data['cover_letter_content'] = file_content
 
         return data
 
@@ -77,17 +151,26 @@ class GetPatchSerializer(PatchStandardSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
+        try:
+            reply_to_msg_id = json.loads(data['reply_to_msg_id'])
+        except json.JSONDecodeError:
+            reply_to_msg_id = data['reply_to_msg_id']
+
+        data['reply_to_msg_id'] = reply_to_msg_id
+
         db = connections['default'].connection
-        content_fs = GridFS(db, 'textfiles.patch_msg_content')
-        diff_fs = GridFS(db, 'textfiles.patch_code_diff')
 
-        content_file_obj_id = data['msg_content'].split("/")[-1]
-        content_file_content = content_fs.get(ObjectId(content_file_obj_id)).read().decode()
-        data['msg_content'] = content_file_content
+        if data['msg_content'] == f"patch_msg_content/{data['original_id']}-msg_content.txt":
+            content_fs = GridFS(db, 'textfiles.patch_msg_content')
+            content_file_content = content_fs.find_one({"filename": f"{data['original_id']}-msg_content.txt"}).read().decode()
+            data['msg_content'] = content_file_content
 
-        diff_file_obj_id = data['code_diff'].split("/")[-1]
-        diff_file_content = diff_fs.get(ObjectId(diff_file_obj_id)).read().decode()
-        data['code_diff'] = diff_file_content
+        if data['code_diff'] == f"patch_code_diff/{data['original_id']}-code_diff.txt":
+            diff_fs = GridFS(db, 'textfiles.patch_code_diff')
+            diff_file_content = diff_fs.find_one({"filename": f"{data['original_id']}-code_diff.txt"}).read().decode()
+            if diff_file_content == 'mongodb_gridfs_code_review_empty_file':
+                diff_file_content = ''
+            data['code_diff'] = diff_file_content
 
         return data
 
@@ -97,11 +180,17 @@ class GetCommentSerializer(CommentStandardSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
 
-        db = connections['default'].connection
-        fs = GridFS(db, 'textfiles.comment_msg_content')
+        try:
+            reply_to_msg_id = json.loads(data['reply_to_msg_id'])
+        except json.JSONDecodeError:
+            reply_to_msg_id = data['reply_to_msg_id']
 
-        file_obj_id = data['msg_content'].split("/")[-1]
-        file_content = fs.get(ObjectId(file_obj_id)).read().decode()
-        data['msg_content'] = file_content
+        data['reply_to_msg_id'] = reply_to_msg_id
+
+        if data['msg_content'] == f"comment_msg_content/{data['original_id']}-msg_content.txt":
+            db = connections['default'].connection
+            fs = GridFS(db, 'textfiles.comment_msg_content')
+            file_content = fs.find_one({"filename": f"{data['original_id']}-msg_content.txt"}).read().decode()
+            data['msg_content'] = file_content
 
         return data

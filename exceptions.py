@@ -8,7 +8,7 @@ class InvalidFileException(Exception):
 
 
 class InvalidItemTypeException(Exception):
-    def __init__(self, message="Invalid item type. Supported item types include: account, project, series, patch, comment.", *args, **kwargs):
+    def __init__(self, message="Invalid item type. Supported item types include: accounts, projects, series, patches, comments.", *args, **kwargs):
         super().__init__(message, *args, **kwargs)
         self.message = message
 
