@@ -1,7 +1,7 @@
 # Code-Review-Mining
 This project consists of two parts: Django REST framework for accessing data and scrapy framework for crawling data.
 
-To find what each fields in documents of a collection mean, visit the [data dictionary](https://github.com/MingzhaoLiang/code-review-mining/wiki/Data-dictionary).
+All data are stored in MongoDB. To find the meaning of each field of a collection, visit the [data dictionary](https://github.com/MingzhaoLiang/code-review-mining/wiki/Data-dictionary).
 
 ### How to use
 
