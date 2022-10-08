@@ -50,8 +50,6 @@ class Series(models.Model):
 
 class NewSeries(models.Model):
     cover_letter_msg_id = models.TextField(unique=True)
-    name = models.CharField(max_length=255, blank=True, null=True)
-    date = models.DateTimeField(blank=True, null=True)
 
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
     submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
@@ -60,29 +58,33 @@ class NewSeries(models.Model):
 
     
 class Changes1(models.Model):
-    status = models.BooleanField(default=False)
+    is_accepted = models.BooleanField(default=False)
     parent_commit_id = models.CharField(max_length=255, blank=True, null=True)
     merged_commit_id = models.CharField(max_length=255, blank=True, null=True)
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
+    submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
+    submitter_user_id = models.IntegerField(blank=True, null=True)
     series_original_id = models.JSONField(blank=True, null=True)
     new_series_id = models.JSONField(blank=True, null=True)
 
 
 class Changes2(models.Model):
-    status = models.BooleanField(default=False)
+    is_accepted = models.BooleanField(default=False)
     parent_commit_id = models.CharField(max_length=255, blank=True, null=True)
     merged_commit_id = models.CharField(max_length=255, blank=True, null=True)
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
+    submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
+    submitter_user_id = models.IntegerField(blank=True, null=True)
     series_original_id = models.JSONField(blank=True, null=True)
     new_series_id = models.JSONField(blank=True, null=True)
 
     
 class MailingLists(models.Model):
-    msg_id = models.TextField(blank=True, null=True)
+    msg_id = models.TextField(unique=True, blank=True, null=True)
     subject = models.TextField(blank=True, null=True)
     content = models.FileField(blank=True, null=True, upload_to='mailing_list_email_content', storage=grid_fs_storage)
     date = models.DateTimeField(blank=True, null=True)

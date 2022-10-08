@@ -200,8 +200,8 @@ class PatchList(APIView):
         for i in range(len(patch_data)):
             patch = patch_data[i]
 
-            if patch['reply_to_msg_id']:
-                patch['reply_to_msg_id'] = str(patch['reply_to_msg_id'])
+            if patch['reply_to_msg_id'] and type(patch['reply_to_msg_id']) == list:
+                patch['reply_to_msg_id'] = json.dumps(patch['reply_to_msg_id'])
 
             if (patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT) and (patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT):
                 large_documents.append(patch)
@@ -294,8 +294,8 @@ class CommentList(APIView):
         for i in range(len(comment_data)):
             comment = comment_data[i]
 
-            if comment['reply_to_msg_id']:
-                comment['reply_to_msg_id'] = str(comment['reply_to_msg_id'])
+            if comment['reply_to_msg_id'] and type(comment['reply_to_msg_id']) == list:
+                comment['reply_to_msg_id'] = json.dumps(comment['reply_to_msg_id'])
 
             if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
                 large_documents.append(comment)
