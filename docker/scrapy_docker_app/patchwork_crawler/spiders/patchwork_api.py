@@ -32,14 +32,7 @@ class PatchworkProjectSpider(scrapy.Spider):
 
     custom_settings = {
         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
-        'HTTPERROR_ALLOWED_CODES': [404]
-        # 'FEEDS': {
-        #     './retrieved_data/project/kernel_projects_%(batch_id)d.json': {
-        #         'format': 'json',
-        #         'overwrite': True
-        #     }
-        # },
-        # 'FEED_EXPORT_BATCH_ITEM_COUNT': 100000
+        'HTTPERROR_ALLOWED_CODES': [404, 500]
     }
 
 
@@ -68,7 +61,7 @@ class PatchworkProjectSpider(scrapy.Spider):
 
             # current_account_list = list()
             for maintainer in maintainers:
-                maintainer_original_id = '-'.join([self.endpoint_type, 'account', str(maintainer['id'])])
+                maintainer_original_id = '-'.join([self.endpoint_type, 'projectaccount', str(maintainer['id'])])
                 maintainer_api_url = maintainer['url']
                 maintainer_email = maintainer['email']
                 maintainer_username = maintainer['username']
@@ -120,7 +113,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
     custom_settings = {
         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
-        'HTTPERROR_ALLOWED_CODES': [404]
+        'HTTPERROR_ALLOWED_CODES': [404, 500]
     }
 
     def __init__(self, start_series_id=1, end_series_id=MAX_SERIES_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
@@ -241,7 +234,7 @@ class PatchworkPatchSpider(scrapy.Spider):
 
     custom_settings = {
         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
-        'HTTPERROR_ALLOWED_CODES': [404]
+        'HTTPERROR_ALLOWED_CODES': [404, 500]
     }
     
 
@@ -392,7 +385,7 @@ class PatchworkPatchSpider(scrapy.Spider):
 #     configure_logging()
 #     runner = CrawlerRunner(settings={
 #         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
-#         'HTTPERROR_ALLOWED_CODES': [404],
+#         'HTTPERROR_ALLOWED_CODES': [404, 500],
 #         'SPIDER_MODULES': ['patchwork_crawler.spiders'],
 #         'NEWSPIDER_MODULE': 'patchwork_crawler.spiders'
 #     })
