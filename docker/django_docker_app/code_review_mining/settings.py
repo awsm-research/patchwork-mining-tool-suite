@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'patchwork.apps.PatchworkConfig',
     'rest_framework',
     'corsheaders',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # UPLOADED_FILES_USE_URL = True
 
 BASE_URL = 'https://127.0.0.1:8000/'
+
+# Enable filter backend
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 30
+}

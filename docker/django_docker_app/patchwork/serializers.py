@@ -59,7 +59,7 @@ class PatchStandardSerializer(serializers.ModelSerializer):
 
         try:
             reply_to_msg_id = json.loads(data['reply_to_msg_id'])
-        except json.JSONDecodeError:
+        except:
             reply_to_msg_id = data['reply_to_msg_id']
         data['reply_to_msg_id'] = reply_to_msg_id
             
@@ -114,7 +114,7 @@ class CommentStandardSerializer(serializers.ModelSerializer):
 
         try:
             reply_to_msg_id = json.loads(data['reply_to_msg_id'])
-        except json.JSONDecodeError:
+        except:
             reply_to_msg_id = data['reply_to_msg_id']
         data['reply_to_msg_id'] = reply_to_msg_id
             
@@ -153,7 +153,7 @@ class GetPatchSerializer(PatchStandardSerializer):
 
         try:
             reply_to_msg_id = json.loads(data['reply_to_msg_id'])
-        except json.JSONDecodeError:
+        except:
             reply_to_msg_id = data['reply_to_msg_id']
 
         data['reply_to_msg_id'] = reply_to_msg_id
@@ -182,7 +182,7 @@ class GetCommentSerializer(CommentStandardSerializer):
 
         try:
             reply_to_msg_id = json.loads(data['reply_to_msg_id'])
-        except json.JSONDecodeError:
+        except:
             reply_to_msg_id = data['reply_to_msg_id']
 
         data['reply_to_msg_id'] = reply_to_msg_id
