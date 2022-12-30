@@ -228,8 +228,19 @@ class ProcessInitialData():
     def __init__(self):
         pass
 
+    def __get_distinct_accounts(self, account_data):
+        new_account_data = list()
+        occurred_accounts = list()
+        for acc in account_data:
+            if acc['original_id'] not in occurred_accounts:
+                new_account_data.append(acc)
+                occurred_accounts.append(acc['original_id'])
 
-    def group_accounts(self, account_data):
+        return new_account_data
+
+    def group_accounts(self, account_data: list):
+        account_data = self.__get_distinct_accounts(account_data)
+        endpoint_type = account_data[0]['original_id'].split('-')[0]
         email_dict = dict()
         username_dict = dict()
         user_dict = defaultdict(lambda: defaultdict(list))
@@ -240,23 +251,27 @@ class ProcessInitialData():
         username_waiting_list = list()
         email_waiting_list = list()
         
-        for account in account_data:
+        for i in range(len(account_data)):
+            account = account_data[i]
             account_email = account['email']
             account_username = account['username']
             account_orgid = account['original_id']
             
-            if account_username == '':
-                username_waiting_list.append((account_orgid, account_email))
-            elif account_email == '':
-                email_waiting_list.append((account_orgid, account_username))
+            if not account_username:
+                username_waiting_list.append((i, account_orgid, account_email))
+            elif not account_email:
+                email_waiting_list.append((i, account_orgid, account_username))
             
             elif account_email not in email_dict.keys() and account_username not in username_dict.keys():
                 user_dict[idx]['email_list'].append(account_email)
                 user_dict[idx]['username_list'].append(account_username)
                 user_dict[idx]['original_id_list'].append(account_orgid)
+                user_dict[idx]['idx_list'].append(i)
                 
                 email_dict[account_email] = idx
                 username_dict[account_username] = idx
+
+                # account['user_id'] = idx
                 
                 idx += 1
                 
@@ -265,12 +280,18 @@ class ProcessInitialData():
                 username_dict[account_username] = target_idx
                 user_dict[target_idx]['username_list'].append(account_username)
                 user_dict[target_idx]['original_id_list'].append(account_orgid)
+                user_dict[target_idx]['idx_list'].append(i)
+
+                # account['user_id'] = target_idx
                 
             elif account_email not in email_dict.keys() and account_username in username_dict.keys():
                 target_idx = username_dict[account_username]
                 email_dict[account_email] = target_idx
                 user_dict[target_idx]['email_list'].append(account_email)
                 user_dict[target_idx]['original_id_list'].append(account_orgid)
+                user_dict[target_idx]['idx_list'].append(i)
+
+                # account['user_id'] = target_idx
                 
             elif account_email in email_dict.keys() and account_username in username_dict.keys() and email_dict[account_email] != username_dict[account_username]:
                 email_dict_idx = email_dict[account_email]
@@ -279,6 +300,7 @@ class ProcessInitialData():
                 email_list_to_move = user_dict[username_dict_idx]['email_list']
                 username_list_to_move = user_dict[username_dict_idx]['username_list']
                 orgid_list_to_move = user_dict[username_dict_idx]['original_id_list']
+                idx_to_move = user_dict[username_dict_idx]['idx_list']
                 
                 for email in email_list_to_move:
                     email_dict[email] = email_dict_idx
@@ -288,43 +310,103 @@ class ProcessInitialData():
                 user_dict[email_dict_idx]['email_list'].extend(email_list_to_move)
                 user_dict[email_dict_idx]['username_list'].extend(username_list_to_move)
                 user_dict[email_dict_idx]['original_id_list'].extend(orgid_list_to_move)
+                user_dict[email_dict_idx]['idx_list'].extend(idx_to_move)
                 
                 user_dict[email_dict_idx]['username_list'].append(account_username)
                 user_dict[email_dict_idx]['original_id_list'].append(account_orgid)
+                user_dict[email_dict_idx]['idx_list'].append(i)
                 
                 user_dict[username_dict_idx] = None
+
+                # account['user_id'] = email_dict_idx
+                # for j in idx_to_move:
+                #     account_data[j]['user_id'] = email_dict_idx
+
         
-        for orgid, email in username_waiting_list:
+        for account_idx, orgid, email in username_waiting_list:
             if email in email_dict.keys():
                 if orgid not in user_dict[email_dict[email]]['original_id_list']:
                     user_dict[email_dict[email]]['original_id_list'].append(orgid)
+                    user_dict[email_dict[email]]['idx_list'].append(account_idx)
+                    # account_data[account_idx]['user_id'] = email_dict[email]
             
             else:
                 email_dict[email] = idx
                 user_dict[idx]['email_list'].append(email)
                 user_dict[idx]['original_id_list'].append(orgid)
+                user_dict[idx]['idx_list'].append(account_idx)
+                # account_data[account_idx]['user_id'] = email_dict[email]
                 
                 idx += 1
         
-        for orgid, username in email_waiting_list:
+        for account_idx, orgid, username in email_waiting_list:
             if username in username_dict.keys():
                 if orgid not in user_dict[username_dict[username]]['original_id_list']:
                     user_dict[username_dict[username]]['original_id_list'].append(orgid)
+                    user_dict[username_dict[username]]['idx_list'].append(account_idx)
+                    # account_data[account_idx]['user_id'] = username_dict[username]
             else:
                 username_dict[username] = idx
                 user_dict[idx]['username_list'].append(username)
                 user_dict[idx]['original_id_list'].append(orgid)
+                user_dict[idx]['idx_list'].append(account_idx)
+                # account_data[account_idx]['user_id'] = username_dict[username]
                 
                 idx += 1
+
+        user_collection = list()
+
+        # update user id in account collection
+        for _, user_info in user_dict.items():
+            if user_info:
+                current_user_idx = len(user_collection) + 1
+                original_id_list = user_info['original_id_list']
+                account_idx_list = user_info['idx_list']
+
+                for i in account_idx_list:
+                    account_data[i]['user_id'] = f'{endpoint_type}-user-{current_user_idx}'
+
+                user_collection.append(
+                    {
+                        'original_id': f'{endpoint_type}-user-{current_user_idx}',
+                        'account_original_id': original_id_list
+                    }
+                )
                 
-        return email_dict, username_dict, user_dict
+        return account_data, user_collection
 
 
-    def group_series(self, patch_data):
-        patch_data = deepcopy(patch_data)
+    # This method is to update the user_id in series, newseries, patch, and comment collection
+    # It should be called after the function of grouping accounts is implemented
+    def update_user_id(self, account_data: list, collection: list, is_list=False):
+        account_map = dict()
+        for acc in account_data:
+            account_map[acc['original_id']] = acc['user_id']
+        
+
+        if is_list:
+            try:
+                for document in collection:
+                    for submitter in document['submitter_account_original_id']:
+                        document['submitter_user_id'].append(account_map[submitter])
+            except:
+                for document in collection:
+                    for maintainer in document['maintainer_account_original_id']:
+                        document['maintainer_user_id'].append(account_map[maintainer])
+        else:
+            for document in collection:
+                document['submitter_user_id'] = account_map[document['submitter_account_original_id']]
+
+        # return collection
+
+
+    def group_series(self, patch_data: list):
+        # patch_data = deepcopy(patch_data)
 
         idx = 1
         series_id_map = dict()
+        newseries_collection = list()
+        endpoint_type = patch_data[0]['original_id'].split('-')[0]
 
         for patch in patch_data:
             if patch['reply_to_msg_id'] and self.__is_series_patch(patch['name']):
@@ -333,29 +415,71 @@ class ProcessInitialData():
                 if type(reply_to_msg_id) == list:
                     for msg_id in reply_to_msg_id:
                         if msg_id in series_id_map.keys():
-                            patch['new_series_id'] = series_id_map[msg_id]
+                            patch['new_series_id'] = f'{endpoint_type}-newseries-{series_id_map[msg_id]}'
+                            for msg_id2 in reply_to_msg_id:
+                                series_id_map[msg_id2] = series_id_map[msg_id]
                             break
                     
                     if not patch['new_series_id']:
-                        patch['new_series_id'] = idx
-                        idx += 1
+                        patch['new_series_id'] = f'{endpoint_type}-newseries-{idx}'
+                        newseries = {
+                            'original_id': f'{endpoint_type}-newseries-{idx}',
+                            'cover_letter_msg_id': reply_to_msg_id,
+                            'project_original_id': patch['project_original_id'],
+                            'submitter_account_original_id': [patch['submitter_account_original_id']],
+                            'submitter_user_id': [],
+                            'series_original_id': [patch['series_original_id']]
+                        }
+                        newseries_collection.append(newseries)
 
-                    for msg_id in reply_to_msg_id:
-                        series_id_map[msg_id] = patch['new_series_id']
+                        for msg_id in reply_to_msg_id:
+                            series_id_map[msg_id] = idx
+                        
+                        idx += 1
+                    else:
+                        newseries_collection[series_id_map[reply_to_msg_id[0]] - 1]['cover_letter_msg_id'].extend(reply_to_msg_id)
+                        if patch['submitter_account_original_id'] not in newseries_collection[series_id_map[reply_to_msg_id[0]] - 1]['submitter_account_original_id']:
+                            newseries_collection[series_id_map[reply_to_msg_id[0]] - 1]['submitter_account_original_id'].append(patch['submitter_account_original_id'])
+                        if patch['series_original_id'] not in newseries_collection[series_id_map[reply_to_msg_id[0]] - 1]['series_original_id']:
+                            newseries_collection[series_id_map[reply_to_msg_id[0]] - 1]['series_original_id'].append(patch['series_original_id'])
+
+                    # for msg_id in reply_to_msg_id:
+                    #     series_id_map[msg_id] = patch['new_series_id']
 
                 else:
                     if reply_to_msg_id in series_id_map.keys():
-                        patch['new_series_id'] = series_id_map[reply_to_msg_id]
+                        patch['new_series_id'] = f'{endpoint_type}-newseries-{series_id_map[reply_to_msg_id]}'
+                        if patch['submitter_account_original_id'] not in newseries_collection[series_id_map[reply_to_msg_id] - 1]['submitter_account_original_id']:
+                            newseries_collection[series_id_map[reply_to_msg_id] - 1]['submitter_account_original_id'].append(patch['submitter_account_original_id'])
+                        if patch['series_original_id'] not in newseries_collection[series_id_map[reply_to_msg_id] - 1]['series_original_id']:
+                            newseries_collection[series_id_map[reply_to_msg_id] - 1]['series_original_id'].append(patch['series_original_id'])
                     else:
                         patch['new_series_id'] = idx
-                        series_id_map[reply_to_msg_id] = patch['new_series_id']
+                        series_id_map[reply_to_msg_id] = idx
+
+                        newseries = {
+                            'original_id': f'{endpoint_type}-newseries-{idx}',
+                            'cover_letter_msg_id': [reply_to_msg_id],
+                            'project_original_id': patch['project_original_id'],
+                            'submitter_account_original_id': [patch['submitter_account_original_id']],
+                            'submitter_user_id': [],
+                            'series_original_id': [patch['series_original_id']]
+                        }
+                        newseries_collection.append(newseries)
+
                         idx += 1
+                
+        for s in newseries_collection:
+            s['inspection_needed'] = 1 if len(s['cover_letter_msg_id']) > 1 else 0
 
-        return patch_data
+        return newseries_collection
 
 
+    # This function is to group patches based on the criteria in step 1
+    # It should be called after newseries collection is created 
     def group_patches_step1(self, patch_data):
-        patch_data = self.__sort_patches(self.group_series(patch_data))
+        endpoint_type = patch_data[0]['original_id'].split('-')[0]
+        sorted_patch_data = self.__sort_patches(patch_data)
 
         # patches of the same review process will be saved in the same group in the list
         step1_groups = list()
@@ -363,57 +487,77 @@ class ProcessInitialData():
         visited_patches = dict()
 
         i = 0
-        while i < len(patch_data):
-            patch_i = patch_data[i]
+        while i < len(sorted_patch_data):
+            patch_i = sorted_patch_data[i]
+            if patch_i['code_diff'] == None or patch_i['code_diff'] == '':
+                i += 1
+                continue
 
             one_gram_i = patch_i['one_gram']
             original_id_i = patch_i['original_id']
             name_i = patch_i['name']
             submitter_i = patch_i['submitter_account_original_id']
+            user_i = patch_i['submitter_user_id']
             tokens_i = sorted(patch_i['tokens'])
             series_original_id_i = patch_i['series_original_id']
             new_series_id_i = patch_i['new_series_id']
+            state_i = patch_i['state']
+            commit_id_i = patch_i['commit_ref']
 
             # version will be -1 if there is no version indicator in patch name
             version_i = self.__extract_version_number(name_i)
 
             step1_groups.append(
                 {
-                    'group': [original_id_i], 
+                    'group': [i], 
                     'versions': [version_i],
                     'one_gram': one_gram_i,
                     'tokens': tokens_i,
                     'tokens2': tokens_i[1:],
-                    'submitters': {submitter_i},
+                    'state': [state_i],
+                    'commit_id': [commit_id_i],
+                    'project_original_id': patch_i['project_original_id'],
+                    'submitters': [submitter_i],
+                    'users': [user_i],
                     'series_original_ids': [series_original_id_i],
-                    'new_series_ids': [new_series_id_i]
+                    'new_series_ids': [new_series_id_i],
                 }
             )
             visited_patches[original_id_i] = len(step1_groups) - 1
 
+            # patch_i['change_id1'] = visited_patches[original_id_i]
+
             j = i + 1
-            while j < len(patch_data):
-                patch_j = patch_data[j]
+            while j < len(sorted_patch_data):
+                patch_j = sorted_patch_data[j]
                 
                 one_gram_j = patch_j['one_gram']
                 original_id_j = patch_j['original_id']
                 name_j = patch_j['name']
                 submitter_j = patch_j['submitter_account_original_id']
+                user_j = patch_j['submitter_user_id']
                 tokens_j = sorted(patch_j['tokens'])
                 series_original_id_j = patch_j['series_original_id']
                 new_series_id_j = patch_j['new_series_id']
                 version_j = self.__extract_version_number(name_j)
+                state_j = patch_j['state']
+                commit_id_j = patch_j['commit_ref']
                 
                 token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
 
 
                 if self.__step1_conditions(token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j):
                     target_group_idx = visited_patches[original_id_i]
-                    step1_groups[target_group_idx]['group'].append(original_id_j)
+                    step1_groups[target_group_idx]['group'].append(j)
                     step1_groups[target_group_idx]['versions'].append(version_j)
-                    step1_groups[target_group_idx]['submitters'].add(submitter_j)
+                    step1_groups[target_group_idx]['submitters'].append(submitter_j)
+                    step1_groups[target_group_idx]['users'].append(user_j)
                     step1_groups[target_group_idx]['series_original_ids'].append(series_original_id_j)
                     step1_groups[target_group_idx]['new_series_ids'].append(new_series_id_j)
+                    step1_groups[target_group_idx]['state'].append(state_j)
+                    step1_groups[target_group_idx]['commit_id'].append(commit_id_j)
+
+                    # patch_j['change_id1'] = target_group_idx
 
                     j += 1
 
@@ -422,11 +566,55 @@ class ProcessInitialData():
 
             i = j
 
-        return step1_groups
+        change1_collection = list()
+        for j in range(len(step1_groups)):
+            group = step1_groups[j]
+
+            is_accepted = True if 'accepted' in group['state'] else False
+            commit_ids = list(set(group['commit_id']))
+            if None in commit_ids:
+                commit_ids.remove(None)
+            merged_commit_id = commit_ids if commit_ids else None
+            project_original_id = group['project_original_id']
+            submitter_account_original_id = list(set(group['submitters']))
+            submitter_user_id = list(set(group['users']))
+            series_original_id = list(set(group['series_original_ids']))
+            new_series_id = list(set(group['new_series_ids']))
+
+            tmp_dict = {
+                'original_id': f'{endpoint_type}-change1-{j + 1}',
+                'is_accepted': is_accepted,
+                'parent_commit_id': None,
+                'merged_commit_id': merged_commit_id,
+                'commit_date': None,
+                'project_original_id': project_original_id,
+                'submitter_account_original_id': submitter_account_original_id,
+                'submitter_user_id': submitter_user_id,
+                'series_original_id': series_original_id,
+                'new_series_id': new_series_id,
+                'patch_original_id': [sorted_patch_data[i]['original_id'] for i in group['group']],
+                'inspection_needed': 0,
+            }
+
+            for patch_idx in group['group']:
+                if sorted_patch_data[patch_idx]['change_id1'] == None:
+                    sorted_patch_data[patch_idx]['change_id1'] = f'{endpoint_type}-change1-{j + 1}'
+                else:
+                    tmp_dict['inspection_needed'] = 1
+
+                    group_idx = int(sorted_patch_data[patch_idx]['change_id1'].split('-')[-1]) - 1
+                    change1_collection[group_idx]['inspection_needed'] = 1
+
+
+            change1_collection.append(tmp_dict)
+
+        return sorted_patch_data, step1_groups, change1_collection
 
     
     def group_patches_step2(self, patch_data):
-        step1_groups = self.group_patches_step1(patch_data)
+        endpoint_type = patch_data[0]['original_id'].split('-')[0]
+
+        sorted_patch_data, step1_groups, change1_collection = self.group_patches_step1(patch_data)
         group_data = self.__sort_groups(step1_groups)
 
         step2_groups = list()
@@ -452,6 +640,7 @@ class ProcessInitialData():
                 tokens_i = group_i['tokens']
                 tokens2_i = group_i['tokens2']
                 submitter_i = group_i['submitters']
+                user_i = group_i['users']
                 series_original_id_i = group_i['series_original_ids']
                 new_series_id_i = group_i['new_series_ids']
 
@@ -464,10 +653,19 @@ class ProcessInitialData():
                             'tokens': [tokens_i],
                             'tokens2': [tokens2_i],
                             'series_original_ids': series_original_id_i,
-                            'new_series_ids': new_series_id_i
+                            'new_series_ids': new_series_id_i,
+                            
+                            'state': group_i['state'],
+                            'commit_id': group_i['commit_id'],
+                            'project_original_id': group_i['project_original_id'],
+                            'submitters': submitter_i,
+                            'users': user_i,
                         }
                     )
                     visited_groups[group_i_idx] = len(step2_groups) - 1
+
+                    # for patch_idx in group_i['group']:
+                    #     patch_data[patch_idx]['change_id2'] = visited_groups[group_i_idx]
 
                 if next_groups:
                     next_groups = sorted(next_groups, key = lambda x: x['tokens'])
@@ -480,31 +678,46 @@ class ProcessInitialData():
                     j = 0
                     while j < len(next_groups):
                         group_j = next_groups[j]
-                        if group_i['tokens'][0] < group_j['tokens'][0]:
-                            break
-                        if group_i['tokens'][0] == group_j['tokens'][0]:
-                            group_j_idx = step1_groups.index(group_j)
-                            versions_j = deepcopy(group_j['versions'])
-                            one_gram_j = group_j['one_gram']
-                            tokens_j = group_j['tokens']
-                            submitter_j = group_j['submitters']
-                            series_original_id_j = group_j['series_original_ids']
-                            new_series_id_j = group_j['new_series_ids']
+                        # print('group_i:', group_i)
+                        # print('group_j:', group_j)
+                        if group_i['tokens'] and group_j['tokens']:
+                            if group_i['tokens'][0] < group_j['tokens'][0]:
+                                break
+                            if group_i['tokens'][0] == group_j['tokens'][0]:
+                                group_j_idx = step1_groups.index(group_j)
+                                versions_j = deepcopy(group_j['versions'])
+                                one_gram_j = group_j['one_gram']
+                                tokens_j = group_j['tokens']
+                                submitter_j = group_j['submitters']
+                                user_j = group_j['users']
+                                series_original_id_j = group_j['series_original_ids']
+                                new_series_id_j = group_j['new_series_ids']
 
-                            token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
+                                token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
 
-                            if self.__step2_conditions(submitter_i, submitter_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
-                                next_groups.pop(j)
+                                if self.__step2_conditions(user_i, user_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+                                    next_groups.pop(j)
 
-                                target_idx = visited_groups[group_i_idx]
-                                step2_groups[target_idx]['group'].extend(group_j['group'])
-                                step2_groups[target_idx]['versions'].extend(versions_j)
-                                step2_groups[target_idx]['series_original_ids'].extend(series_original_id_j)
-                                step2_groups[target_idx]['new_series_ids'].extend(new_series_id_j)
-                                step2_groups[target_idx]['one_gram'].append(one_gram_j)
-                                step2_groups[target_idx]['tokens'].append(tokens_j)
+                                    target_idx = visited_groups[group_i_idx]
+                                    step2_groups[target_idx]['group'].extend(group_j['group'])
+                                    step2_groups[target_idx]['versions'].extend(versions_j)
+                                    step2_groups[target_idx]['series_original_ids'].extend(series_original_id_j)
+                                    step2_groups[target_idx]['new_series_ids'].extend(new_series_id_j)
+                                    step2_groups[target_idx]['one_gram'].append(one_gram_j)
+                                    step2_groups[target_idx]['tokens'].append(tokens_j)
 
-                                visited_groups[group_j_idx] = target_idx
+                                    step2_groups[target_idx]['state'].extend(group_j['state'])
+                                    step2_groups[target_idx]['commit_id'].extend(group_j['commit_id'])
+                                    step2_groups[target_idx]['submitters'].extend(group_j['submitters'])
+                                    step2_groups[target_idx]['users'].extend(group_j['users'])
+
+                                    visited_groups[group_j_idx] = target_idx
+
+                                    # for patch_idx in group_j['group']:
+                                    #     patch_data[patch_idx]['change_id2'] = target_idx
+                                else:
+                                    j += 1
+
                             else:
                                 j += 1
 
@@ -517,40 +730,90 @@ class ProcessInitialData():
                         j = 0
                         while j < len(next_groups):
                             group_j = next_groups[j]
-                            if group_i['tokens'][1] < group_j['tokens2'][0]:
-                                break
-                            if group_i['tokens'][1] == group_j['tokens2'][0]:
-                                group_j_idx = step1_groups.index(group_j)
-                                versions_j = deepcopy(group_j['versions'])
-                                one_gram_j = group_j['one_gram']
-                                tokens_j = group_j['tokens']
-                                submitter_j = group_j['submitters']
-                                series_original_id_j = group_j['series_original_ids']
-                                new_series_id_j = group_j['new_series_ids']
+                            if group_i['tokens'] and group_j['tokens']:
+                                if group_i['tokens'][1] < group_j['tokens2'][0]:
+                                    break
+                                if group_i['tokens'][1] == group_j['tokens2'][0]:
+                                    group_j_idx = step1_groups.index(group_j)
+                                    versions_j = deepcopy(group_j['versions'])
+                                    one_gram_j = group_j['one_gram']
+                                    tokens_j = group_j['tokens']
+                                    submitter_j = group_j['submitters']
+                                    series_original_id_j = group_j['series_original_ids']
+                                    new_series_id_j = group_j['new_series_ids']
 
-                                token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
+                                    token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
 
-                                if self.__step2_conditions(submitter_i, submitter_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
-                                    next_groups.pop(j)
+                                    if self.__step2_conditions(user_i, user_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+                                        next_groups.pop(j)
 
-                                    target_idx = visited_groups[group_i_idx]
-                                    step2_groups[target_idx]['group'].extend(group_j['group'])
-                                    step2_groups[target_idx]['versions'].extend(versions_j)
-                                    step2_groups[target_idx]['series_original_ids'].extend(series_original_id_j)
-                                    step2_groups[target_idx]['new_series_ids'].extend(new_series_id_j)
-                                    step2_groups[target_idx]['one_gram'].append(one_gram_j)
-                                    step2_groups[target_idx]['tokens'].append(tokens_j)
+                                        target_idx = visited_groups[group_i_idx]
+                                        step2_groups[target_idx]['group'].extend(group_j['group'])
+                                        step2_groups[target_idx]['versions'].extend(versions_j)
+                                        step2_groups[target_idx]['series_original_ids'].extend(series_original_id_j)
+                                        step2_groups[target_idx]['new_series_ids'].extend(new_series_id_j)
+                                        step2_groups[target_idx]['one_gram'].append(one_gram_j)
+                                        step2_groups[target_idx]['tokens'].append(tokens_j)
 
-                                    visited_groups[group_j_idx] = target_idx
+                                        step2_groups[target_idx]['state'].extend(group_j['state'])
+                                        step2_groups[target_idx]['commit_id'].extend(group_j['commit_id'])
+                                        step2_groups[target_idx]['submitters'].extend(group_j['submitters'])
+                                        step2_groups[target_idx]['users'].extend(group_j['users'])
+
+                                        visited_groups[group_j_idx] = target_idx
+
+                                        # for patch_idx in group_j['group']:
+                                        #     patch_data[patch_idx]['change_id2'] = target_idx
+                                    else:
+                                        j += 1
                                 else:
                                     j += 1
-                                
                             else:
                                 j += 1
                 else:
                     break
 
-        return step2_groups
+        change2_collection = list()
+        for j in range(len(step2_groups)):
+            group = step2_groups[j]
+            is_accepted = True if 'accepted' in group['state'] else False
+            commit_ids = list(set(group['commit_id']))
+            if None in commit_ids:
+                commit_ids.remove(None)
+            merged_commit_id = commit_ids if commit_ids else None
+            project_original_id = group['project_original_id']
+            submitter_account_original_id = list(set(group['submitters']))
+            submitter_user_id = list(set(group['users']))
+            series_original_id = list(set(group['series_original_ids']))
+            new_series_id = list(set(group['new_series_ids']))
+
+            tmp_dict = {
+                'original_id': f'{endpoint_type}-change2-{j + 1}',
+                'is_accepted': is_accepted,
+                'parent_commit_id': None,
+                'merged_commit_id': merged_commit_id,
+                'commit_date': None,
+                'project_original_id': project_original_id,
+                'submitter_account_original_id': submitter_account_original_id,
+                'submitter_user_id': submitter_user_id,
+                'series_original_id': series_original_id,
+                'new_series_id': new_series_id,
+                'patch_original_id': [sorted_patch_data[i]['original_id'] for i in group['group']],
+                'inspection_needed': 0,
+            }
+
+            for patch_idx in group['group']:
+                if sorted_patch_data[patch_idx]['change_id2'] == None:
+                    sorted_patch_data[patch_idx]['change_id2'] = f'{endpoint_type}-change2-{j + 1}'
+                else:
+                    tmp_dict['inspection_needed'] = 1
+
+                    group_idx = int(sorted_patch_data[patch_idx]['change_id2'].split('-')[-1]) - 1
+                    change2_collection[group_idx]['inspection_needed'] = 1
+
+            change2_collection.append(tmp_dict)
+
+        return sorted_patch_data, step1_groups, step2_groups, change1_collection, change2_collection
 
 
     def __is_series_patch(self, patch_name):
@@ -634,9 +897,9 @@ class ProcessInitialData():
         )
 
 
-    def __step2_conditions(self, submitter_i, submitter_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+    def __step2_conditions(self, user_i, user_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
         return (
-            bool(submitter_i & submitter_j)
+            bool(set(user_i) & set(user_j))
             and len(token_diff) == 1
             and 'revert' not in list(token_diff.keys())[0].lower()
             and (not self.__is_series_intersected(new_series_id_i, new_series_id_j))
