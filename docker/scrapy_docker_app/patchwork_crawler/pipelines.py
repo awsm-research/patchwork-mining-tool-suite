@@ -62,10 +62,10 @@ class PatchworkExporterPipeline(object):
             end_idx = 6
         
         try:
-            self.files |= dict([ (name, open(f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}.jl",'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1] ])
+            self.files |= dict([ (name, open(f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}{spider.fileidx}.jl",'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1] ])
         except FileNotFoundError:
             Path("./retrieved_data/patchwork").mkdir(parents=True, exist_ok=True)
-            self.files |= dict([ (name, open(f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}.jl",'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1] ])
+            self.files |= dict([ (name, open(f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}{spider.fileidx}.jl",'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1] ])
 
         # self.files = dict([ (name, f"./retrieved_data/kernel_{name}.jl") for name in self.fileNamesJson ])
 

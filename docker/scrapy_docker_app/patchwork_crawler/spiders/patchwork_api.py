@@ -61,7 +61,7 @@ class PatchworkProjectSpider(scrapy.Spider):
 
             # current_account_list = list()
             for maintainer in maintainers:
-                maintainer_original_id = '-'.join([self.endpoint_type, 'projectaccount', str(maintainer['id'])])
+                maintainer_original_id = '-'.join([self.endpoint_type, 'account', str(maintainer['id'])])
                 maintainer_api_url = maintainer['url']
                 maintainer_email = maintainer['email']
                 maintainer_username = maintainer['username']
@@ -238,12 +238,13 @@ class PatchworkPatchSpider(scrapy.Spider):
     }
     
 
-    def __init__(self, start_patch_id=1, end_patch_id=MAX_PATCH_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
+    def __init__(self, start_patch_id=1, end_patch_id=MAX_PATCH_ID, endpoint_type=ENDPOINT_TYPE, fileidx=1, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.current_patch_id = int(start_patch_id)
         self.max_patch_id = int(end_patch_id)
         self.endpoint_type = endpoint_type
+        self.fileidx = fileidx
 
         self.base_func = PatchworkCrawlerBase()
 
