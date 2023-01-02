@@ -59,7 +59,7 @@ class AccessData():
         # account
         if item_type == self.__item_types[0]:
             for item in json_data:
-                assert set(item.keys()) == {'original_id', 'email', 'username', 'api_url', 'user_id'}
+                assert set(item.keys()) == {'original_id', 'email', 'username', 'api_url', 'user_original_id'}
 
         # project
         elif item_type == self.__item_types[1]:
@@ -73,7 +73,7 @@ class AccessData():
                     'list_id',
                     'list_address',
                     'maintainer_account_original_id',
-                    'maintainer_user_id'
+                    'maintainer_user_original_id'
                 }
 
         # series
@@ -92,7 +92,7 @@ class AccessData():
                     'web_url',
                     'project_original_id',
                     'submitter_account_original_id',
-                    'submitter_user_id'
+                    'submitter_user_original_id'
                 }
 
         # patch
@@ -110,13 +110,13 @@ class AccessData():
                     'web_url',
                     'commit_ref',
                     'reply_to_msg_id',
-                    'change_id1',
-                    'change_id2',
-                    'mailing_list_id',
+                    'change1_original_id',
+                    'change2_original_id',
+                    'mailing_list_original_id',
                     'series_original_id',
-                    'new_series_id',
+                    'new_series_original_id',
                     'submitter_account_original_id',
-                    'submitter_user_id',
+                    'submitter_user_original_id',
                     'project_original_id'
                 }
 
@@ -131,11 +131,11 @@ class AccessData():
                     'subject',
                     'reply_to_msg_id',
                     'web_url',
-                    'change_id1',
-                    'change_id2',
-                    'mailing_list_id',
+                    'change_original_id1',
+                    'change2_original_id',
+                    'mailing_list_original_id',
                     'submitter_account_original_id',
-                    'submitter_user_id',
+                    'submitter_user_original_id',
                     'patch_original_id',
                     'project_original_id'
                 }
@@ -270,8 +270,6 @@ class ProcessInitialData():
                 
                 email_dict[account_email] = idx
                 username_dict[account_username] = idx
-
-                # account['user_id'] = idx
                 
                 idx += 1
                 
@@ -281,8 +279,6 @@ class ProcessInitialData():
                 user_dict[target_idx]['username_list'].append(account_username)
                 user_dict[target_idx]['original_id_list'].append(account_orgid)
                 user_dict[target_idx]['idx_list'].append(i)
-
-                # account['user_id'] = target_idx
                 
             elif account_email not in email_dict.keys() and account_username in username_dict.keys():
                 target_idx = username_dict[account_username]
@@ -290,8 +286,6 @@ class ProcessInitialData():
                 user_dict[target_idx]['email_list'].append(account_email)
                 user_dict[target_idx]['original_id_list'].append(account_orgid)
                 user_dict[target_idx]['idx_list'].append(i)
-
-                # account['user_id'] = target_idx
                 
             elif account_email in email_dict.keys() and account_username in username_dict.keys() and email_dict[account_email] != username_dict[account_username]:
                 email_dict_idx = email_dict[account_email]
@@ -317,25 +311,18 @@ class ProcessInitialData():
                 user_dict[email_dict_idx]['idx_list'].append(i)
                 
                 user_dict[username_dict_idx] = None
-
-                # account['user_id'] = email_dict_idx
-                # for j in idx_to_move:
-                #     account_data[j]['user_id'] = email_dict_idx
-
         
         for account_idx, orgid, email in username_waiting_list:
             if email in email_dict.keys():
                 if orgid not in user_dict[email_dict[email]]['original_id_list']:
                     user_dict[email_dict[email]]['original_id_list'].append(orgid)
                     user_dict[email_dict[email]]['idx_list'].append(account_idx)
-                    # account_data[account_idx]['user_id'] = email_dict[email]
             
             else:
                 email_dict[email] = idx
                 user_dict[idx]['email_list'].append(email)
                 user_dict[idx]['original_id_list'].append(orgid)
                 user_dict[idx]['idx_list'].append(account_idx)
-                # account_data[account_idx]['user_id'] = email_dict[email]
                 
                 idx += 1
         
@@ -344,13 +331,12 @@ class ProcessInitialData():
                 if orgid not in user_dict[username_dict[username]]['original_id_list']:
                     user_dict[username_dict[username]]['original_id_list'].append(orgid)
                     user_dict[username_dict[username]]['idx_list'].append(account_idx)
-                    # account_data[account_idx]['user_id'] = username_dict[username]
+
             else:
                 username_dict[username] = idx
                 user_dict[idx]['username_list'].append(username)
                 user_dict[idx]['original_id_list'].append(orgid)
                 user_dict[idx]['idx_list'].append(account_idx)
-                # account_data[account_idx]['user_id'] = username_dict[username]
                 
                 idx += 1
 
@@ -364,7 +350,7 @@ class ProcessInitialData():
                 account_idx_list = user_info['idx_list']
 
                 for i in account_idx_list:
-                    account_data[i]['user_id'] = f'{endpoint_type}-user-{current_user_idx}'
+                    account_data[i]['user_original_id'] = f'{endpoint_type}-user-{current_user_idx}'
 
                 user_collection.append(
                     {
@@ -378,24 +364,24 @@ class ProcessInitialData():
 
     # This method is to update the user_id in series, newseries, patch, and comment collection
     # It should be called after the function of grouping accounts is implemented
-    def update_user_id(self, account_data: list, collection: list, is_list=False):
+    def update_user_original_id(self, account_data: list, collection: list, is_list=False):
         account_map = dict()
         for acc in account_data:
-            account_map[acc['original_id']] = acc['user_id']
+            account_map[acc['original_id']] = acc['user_original_id']
         
 
         if is_list:
             try:
                 for document in collection:
                     for submitter in document['submitter_account_original_id']:
-                        document['submitter_user_id'].append(account_map[submitter])
+                        document['submitter_user_original_id'].append(account_map[submitter])
             except:
                 for document in collection:
                     for maintainer in document['maintainer_account_original_id']:
-                        document['maintainer_user_id'].append(account_map[maintainer])
+                        document['maintainer_user_original_id'].append(account_map[maintainer])
         else:
             for document in collection:
-                document['submitter_user_id'] = account_map[document['submitter_account_original_id']]
+                document['submitter_user_original_id'] = account_map[document['submitter_account_original_id']]
 
         # return collection
 
@@ -415,19 +401,19 @@ class ProcessInitialData():
                 if type(reply_to_msg_id) == list:
                     for msg_id in reply_to_msg_id:
                         if msg_id in series_id_map.keys():
-                            patch['new_series_id'] = f'{endpoint_type}-newseries-{series_id_map[msg_id]}'
+                            patch['new_series_original_id'] = f'{endpoint_type}-newseries-{series_id_map[msg_id]}'
                             for msg_id2 in reply_to_msg_id:
                                 series_id_map[msg_id2] = series_id_map[msg_id]
                             break
                     
-                    if not patch['new_series_id']:
-                        patch['new_series_id'] = f'{endpoint_type}-newseries-{idx}'
+                    if not patch['new_series_original_id']:
+                        patch['new_series_original_id'] = f'{endpoint_type}-newseries-{idx}'
                         newseries = {
                             'original_id': f'{endpoint_type}-newseries-{idx}',
                             'cover_letter_msg_id': reply_to_msg_id,
                             'project_original_id': patch['project_original_id'],
                             'submitter_account_original_id': [patch['submitter_account_original_id']],
-                            'submitter_user_id': [],
+                            'submitter_user_original_id': [],
                             'series_original_id': [patch['series_original_id']]
                         }
                         newseries_collection.append(newseries)
@@ -444,17 +430,17 @@ class ProcessInitialData():
                             newseries_collection[series_id_map[reply_to_msg_id[0]] - 1]['series_original_id'].append(patch['series_original_id'])
 
                     # for msg_id in reply_to_msg_id:
-                    #     series_id_map[msg_id] = patch['new_series_id']
+                    #     series_id_map[msg_id] = patch['new_series_original_id']
 
                 else:
                     if reply_to_msg_id in series_id_map.keys():
-                        patch['new_series_id'] = f'{endpoint_type}-newseries-{series_id_map[reply_to_msg_id]}'
+                        patch['new_series_original_id'] = f'{endpoint_type}-newseries-{series_id_map[reply_to_msg_id]}'
                         if patch['submitter_account_original_id'] not in newseries_collection[series_id_map[reply_to_msg_id] - 1]['submitter_account_original_id']:
                             newseries_collection[series_id_map[reply_to_msg_id] - 1]['submitter_account_original_id'].append(patch['submitter_account_original_id'])
                         if patch['series_original_id'] not in newseries_collection[series_id_map[reply_to_msg_id] - 1]['series_original_id']:
                             newseries_collection[series_id_map[reply_to_msg_id] - 1]['series_original_id'].append(patch['series_original_id'])
                     else:
-                        patch['new_series_id'] = idx
+                        patch['new_series_original_id'] = idx
                         series_id_map[reply_to_msg_id] = idx
 
                         newseries = {
@@ -462,7 +448,7 @@ class ProcessInitialData():
                             'cover_letter_msg_id': [reply_to_msg_id],
                             'project_original_id': patch['project_original_id'],
                             'submitter_account_original_id': [patch['submitter_account_original_id']],
-                            'submitter_user_id': [],
+                            'submitter_user_original_id': [],
                             'series_original_id': [patch['series_original_id']]
                         }
                         newseries_collection.append(newseries)
@@ -470,7 +456,7 @@ class ProcessInitialData():
                         idx += 1
                 
         for s in newseries_collection:
-            s['inspection_needed'] = 1 if len(s['cover_letter_msg_id']) > 1 else 0
+            s['inspection_needed'] = True if len(s['cover_letter_msg_id']) > 1 else False
 
         return newseries_collection
 
@@ -497,10 +483,10 @@ class ProcessInitialData():
             original_id_i = patch_i['original_id']
             name_i = patch_i['name']
             submitter_i = patch_i['submitter_account_original_id']
-            user_i = patch_i['submitter_user_id']
+            user_i = patch_i['submitter_user_original_id']
             tokens_i = sorted(patch_i['tokens'])
             series_original_id_i = patch_i['series_original_id']
-            new_series_id_i = patch_i['new_series_id']
+            new_series_original_id_i = patch_i['new_series_original_id']
             state_i = patch_i['state']
             commit_id_i = patch_i['commit_ref']
 
@@ -520,12 +506,10 @@ class ProcessInitialData():
                     'submitters': [submitter_i],
                     'users': [user_i],
                     'series_original_ids': [series_original_id_i],
-                    'new_series_ids': [new_series_id_i],
+                    'new_series_original_ids': [new_series_original_id_i],
                 }
             )
             visited_patches[original_id_i] = len(step1_groups) - 1
-
-            # patch_i['change_id1'] = visited_patches[original_id_i]
 
             j = i + 1
             while j < len(sorted_patch_data):
@@ -535,10 +519,10 @@ class ProcessInitialData():
                 original_id_j = patch_j['original_id']
                 name_j = patch_j['name']
                 submitter_j = patch_j['submitter_account_original_id']
-                user_j = patch_j['submitter_user_id']
+                user_j = patch_j['submitter_user_original_id']
                 tokens_j = sorted(patch_j['tokens'])
                 series_original_id_j = patch_j['series_original_id']
-                new_series_id_j = patch_j['new_series_id']
+                new_series_original_id_j = patch_j['new_series_original_id']
                 version_j = self.__extract_version_number(name_j)
                 state_j = patch_j['state']
                 commit_id_j = patch_j['commit_ref']
@@ -546,18 +530,18 @@ class ProcessInitialData():
                 token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
 
 
-                if self.__step1_conditions(token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j):
+                if self.__step1_conditions(token_diff, new_series_original_id_i, new_series_original_id_j, series_original_id_i, series_original_id_j):
                     target_group_idx = visited_patches[original_id_i]
                     step1_groups[target_group_idx]['group'].append(j)
                     step1_groups[target_group_idx]['versions'].append(version_j)
                     step1_groups[target_group_idx]['submitters'].append(submitter_j)
                     step1_groups[target_group_idx]['users'].append(user_j)
                     step1_groups[target_group_idx]['series_original_ids'].append(series_original_id_j)
-                    step1_groups[target_group_idx]['new_series_ids'].append(new_series_id_j)
+                    step1_groups[target_group_idx]['new_series_original_ids'].append(new_series_original_id_j)
                     step1_groups[target_group_idx]['state'].append(state_j)
                     step1_groups[target_group_idx]['commit_id'].append(commit_id_j)
 
-                    # patch_j['change_id1'] = target_group_idx
+                    # patch_j['change1_original_id'] = target_group_idx
 
                     j += 1
 
@@ -577,9 +561,9 @@ class ProcessInitialData():
             merged_commit_id = commit_ids if commit_ids else None
             project_original_id = group['project_original_id']
             submitter_account_original_id = list(set(group['submitters']))
-            submitter_user_id = list(set(group['users']))
+            submitter_user_original_id = list(set(group['users']))
             series_original_id = list(set(group['series_original_ids']))
-            new_series_id = list(set(group['new_series_ids']))
+            new_series_original_id = list(set(group['new_series_original_ids']))
 
             tmp_dict = {
                 'original_id': f'{endpoint_type}-change1-{j + 1}',
@@ -589,21 +573,21 @@ class ProcessInitialData():
                 'commit_date': None,
                 'project_original_id': project_original_id,
                 'submitter_account_original_id': submitter_account_original_id,
-                'submitter_user_id': submitter_user_id,
+                'submitter_user_original_id': submitter_user_original_id,
                 'series_original_id': series_original_id,
-                'new_series_id': new_series_id,
+                'new_series_original_id': new_series_original_id,
                 'patch_original_id': [sorted_patch_data[i]['original_id'] for i in group['group']],
-                'inspection_needed': 0,
+                'inspection_needed': False,
             }
 
             for patch_idx in group['group']:
-                if sorted_patch_data[patch_idx]['change_id1'] == None:
-                    sorted_patch_data[patch_idx]['change_id1'] = f'{endpoint_type}-change1-{j + 1}'
+                if sorted_patch_data[patch_idx]['change1_original_id'] == None:
+                    sorted_patch_data[patch_idx]['change1_original_id'] = f'{endpoint_type}-change1-{j + 1}'
                 else:
-                    tmp_dict['inspection_needed'] = 1
+                    tmp_dict['inspection_needed'] = True
 
-                    group_idx = int(sorted_patch_data[patch_idx]['change_id1'].split('-')[-1]) - 1
-                    change1_collection[group_idx]['inspection_needed'] = 1
+                    group_idx = int(sorted_patch_data[patch_idx]['change1_original_id'].split('-')[-1]) - 1
+                    change1_collection[group_idx]['inspection_needed'] = True
 
 
             change1_collection.append(tmp_dict)
@@ -642,7 +626,7 @@ class ProcessInitialData():
                 submitter_i = group_i['submitters']
                 user_i = group_i['users']
                 series_original_id_i = group_i['series_original_ids']
-                new_series_id_i = group_i['new_series_ids']
+                new_series_original_id_i = group_i['new_series_original_ids']
 
                 if group_i_idx not in visited_groups.keys():
                     step2_groups.append(
@@ -653,7 +637,7 @@ class ProcessInitialData():
                             'tokens': [tokens_i],
                             'tokens2': [tokens2_i],
                             'series_original_ids': series_original_id_i,
-                            'new_series_ids': new_series_id_i,
+                            'new_series_original_ids': new_series_original_id_i,
                             
                             'state': group_i['state'],
                             'commit_id': group_i['commit_id'],
@@ -665,7 +649,7 @@ class ProcessInitialData():
                     visited_groups[group_i_idx] = len(step2_groups) - 1
 
                     # for patch_idx in group_i['group']:
-                    #     patch_data[patch_idx]['change_id2'] = visited_groups[group_i_idx]
+                    #     patch_data[patch_idx]['change2_original_id'] = visited_groups[group_i_idx]
 
                 if next_groups:
                     next_groups = sorted(next_groups, key = lambda x: x['tokens'])
@@ -691,18 +675,18 @@ class ProcessInitialData():
                                 submitter_j = group_j['submitters']
                                 user_j = group_j['users']
                                 series_original_id_j = group_j['series_original_ids']
-                                new_series_id_j = group_j['new_series_ids']
+                                new_series_original_id_j = group_j['new_series_original_ids']
 
                                 token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
 
-                                if self.__step2_conditions(user_i, user_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+                                if self.__step2_conditions(user_i, user_j, token_diff, new_series_original_id_i, new_series_original_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
                                     next_groups.pop(j)
 
                                     target_idx = visited_groups[group_i_idx]
                                     step2_groups[target_idx]['group'].extend(group_j['group'])
                                     step2_groups[target_idx]['versions'].extend(versions_j)
                                     step2_groups[target_idx]['series_original_ids'].extend(series_original_id_j)
-                                    step2_groups[target_idx]['new_series_ids'].extend(new_series_id_j)
+                                    step2_groups[target_idx]['new_series_original_ids'].extend(new_series_original_id_j)
                                     step2_groups[target_idx]['one_gram'].append(one_gram_j)
                                     step2_groups[target_idx]['tokens'].append(tokens_j)
 
@@ -714,7 +698,7 @@ class ProcessInitialData():
                                     visited_groups[group_j_idx] = target_idx
 
                                     # for patch_idx in group_j['group']:
-                                    #     patch_data[patch_idx]['change_id2'] = target_idx
+                                    #     patch_data[patch_idx]['change2_original_id'] = target_idx
                                 else:
                                     j += 1
 
@@ -740,18 +724,18 @@ class ProcessInitialData():
                                     tokens_j = group_j['tokens']
                                     submitter_j = group_j['submitters']
                                     series_original_id_j = group_j['series_original_ids']
-                                    new_series_id_j = group_j['new_series_ids']
+                                    new_series_original_id_j = group_j['new_series_original_ids']
 
                                     token_diff = (one_gram_i | one_gram_j) - (one_gram_i & one_gram_j)
 
-                                    if self.__step2_conditions(user_i, user_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+                                    if self.__step2_conditions(user_i, user_j, token_diff, new_series_original_id_i, new_series_original_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
                                         next_groups.pop(j)
 
                                         target_idx = visited_groups[group_i_idx]
                                         step2_groups[target_idx]['group'].extend(group_j['group'])
                                         step2_groups[target_idx]['versions'].extend(versions_j)
                                         step2_groups[target_idx]['series_original_ids'].extend(series_original_id_j)
-                                        step2_groups[target_idx]['new_series_ids'].extend(new_series_id_j)
+                                        step2_groups[target_idx]['new_series_original_ids'].extend(new_series_original_id_j)
                                         step2_groups[target_idx]['one_gram'].append(one_gram_j)
                                         step2_groups[target_idx]['tokens'].append(tokens_j)
 
@@ -763,7 +747,7 @@ class ProcessInitialData():
                                         visited_groups[group_j_idx] = target_idx
 
                                         # for patch_idx in group_j['group']:
-                                        #     patch_data[patch_idx]['change_id2'] = target_idx
+                                        #     patch_data[patch_idx]['change2_original_id'] = target_idx
                                     else:
                                         j += 1
                                 else:
@@ -783,9 +767,9 @@ class ProcessInitialData():
             merged_commit_id = commit_ids if commit_ids else None
             project_original_id = group['project_original_id']
             submitter_account_original_id = list(set(group['submitters']))
-            submitter_user_id = list(set(group['users']))
+            submitter_user_original_id = list(set(group['users']))
             series_original_id = list(set(group['series_original_ids']))
-            new_series_id = list(set(group['new_series_ids']))
+            new_series_original_id = list(set(group['new_series_original_ids']))
 
             tmp_dict = {
                 'original_id': f'{endpoint_type}-change2-{j + 1}',
@@ -795,21 +779,21 @@ class ProcessInitialData():
                 'commit_date': None,
                 'project_original_id': project_original_id,
                 'submitter_account_original_id': submitter_account_original_id,
-                'submitter_user_id': submitter_user_id,
+                'submitter_user_original_id': submitter_user_original_id,
                 'series_original_id': series_original_id,
-                'new_series_id': new_series_id,
+                'new_series_original_id': new_series_original_id,
                 'patch_original_id': [sorted_patch_data[i]['original_id'] for i in group['group']],
-                'inspection_needed': 0,
+                'inspection_needed': False,
             }
 
             for patch_idx in group['group']:
-                if sorted_patch_data[patch_idx]['change_id2'] == None:
-                    sorted_patch_data[patch_idx]['change_id2'] = f'{endpoint_type}-change2-{j + 1}'
+                if sorted_patch_data[patch_idx]['change2_original_id'] == None:
+                    sorted_patch_data[patch_idx]['change2_original_id'] = f'{endpoint_type}-change2-{j + 1}'
                 else:
-                    tmp_dict['inspection_needed'] = 1
+                    tmp_dict['inspection_needed'] = True
 
-                    group_idx = int(sorted_patch_data[patch_idx]['change_id2'].split('-')[-1]) - 1
-                    change2_collection[group_idx]['inspection_needed'] = 1
+                    group_idx = int(sorted_patch_data[patch_idx]['change2_original_id'].split('-')[-1]) - 1
+                    change2_collection[group_idx]['inspection_needed'] = True
 
             change2_collection.append(tmp_dict)
 
@@ -889,20 +873,20 @@ class ProcessInitialData():
         return bool(set(list_i) & set(list_j))
 
 
-    def __step1_conditions(self, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j) -> bool:
+    def __step1_conditions(self, token_diff, new_series_original_id_i, new_series_original_id_j, series_original_id_i, series_original_id_j) -> bool:
         return (
             len(token_diff) == 0
-            and self.__is_diff_series(new_series_id_i, new_series_id_j)
+            and self.__is_diff_series(new_series_original_id_i, new_series_original_id_j)
             and self.__is_diff_series(series_original_id_i, series_original_id_j)
         )
 
 
-    def __step2_conditions(self, user_i, user_j, token_diff, new_series_id_i, new_series_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+    def __step2_conditions(self, user_i, user_j, token_diff, new_series_original_id_i, new_series_original_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
         return (
             bool(set(user_i) & set(user_j))
             and len(token_diff) == 1
             and 'revert' not in list(token_diff.keys())[0].lower()
-            and (not self.__is_series_intersected(new_series_id_i, new_series_id_j))
+            and (not self.__is_series_intersected(new_series_original_id_i, new_series_original_id_j))
             and (not self.__is_series_intersected(series_original_id_i, series_original_id_j))
             and (not self.__is_version_intersected(versions_i, versions_j))
         )

@@ -18,7 +18,7 @@ class AccountFilter(django_filters.FilterSet):
             'original_id': ['exact', 'icontains'],
             'username': ['exact', 'icontains'],
             'email': ['exact', 'icontains'],
-            'user_id': ['exact'],
+            'user_original_id': ['exact'],
         }
 
 
@@ -53,7 +53,7 @@ class SeriesFilter(django_filters.FilterSet):
             'cover_letter_content_contain',
             'project_original_id',
             'submitter_account_original_id',
-            'submitter_user_id',
+            'submitter_user_original_id',
         ]
 
     filter_overrides = {
@@ -85,14 +85,14 @@ class PatchFilter(django_filters.FilterSet):
             'msg_content_contain',
             'code_diff_contain',
             'commit_ref',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
+            'change1_original_id',
+            'change2_original_id',
+            'mailing_list_original_id',
             'series_original_id',
-            'new_series_id',
+            'new_series_original_id',
             'project_original_id',
             'submitter_account_original_id',
-            'submitter_user_id',
+            'submitter_user_original_id',
         ]
 
     filter_overrides = {
@@ -120,13 +120,13 @@ class CommentFilter(django_filters.FilterSet):
             'date__lt',
             'date__gt',
             'msg_content_contain',
-            'change_id1',
-            'change_id2',
-            'mailing_list_id',
+            'change1_original_id',
+            'change2_original_id',
+            'mailing_list_original_id',
             'patch_original_id',
             'project_original_id',
             'submitter_account_original_id',
-            'submitter_user_id',
+            'submitter_user_original_id',
         ]
 
     filter_overrides = {
@@ -134,3 +134,80 @@ class CommentFilter(django_filters.FilterSet):
             'filter_class': django_filters.IsoDateTimeFilter
         },
     }
+
+
+class Change1Filter(django_filters.FilterSet):
+
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+
+    class Meta:
+        model = Changes1
+        fields = [
+            'id',
+            'original_id',
+            'original_id__icontains',
+            'is_accepted',
+            'parent_commit_id',
+            'merged_commit_id',
+            'project_original_id',
+            # 'submitter_account_original_id',
+            # 'submitter_user_original_id',
+            # 'series_original_id',
+            # 'new_series_original_id',
+            # 'patch_original_id',
+            'inspection_needed',
+        ]
+
+
+class Change2Filter(django_filters.FilterSet):
+
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+
+    class Meta:
+        model = Changes2
+        fields = [
+            'id',
+            'original_id',
+            'original_id__icontains',
+            'is_accepted',
+            'parent_commit_id',
+            'merged_commit_id',
+            'project_original_id',
+            # 'submitter_account_original_id',
+            # 'submitter_user_original_id',
+            # 'series_original_id',
+            # 'new_series_original_id',
+            # 'patch_original_id',
+            'inspection_needed',
+        ]
+
+
+class UserFilter(django_filters.FilterSet):
+
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+
+    class Meta:
+        model = Users
+        fields = [
+            'id',
+            'original_id',
+            'original_id__icontains',
+            # 'account_original_id',
+        ]
+
+class NewSeriesFilter(django_filters.FilterSet):
+
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+
+    class Meta:
+        model = NewSeries
+        fields = [
+            'id',
+            'original_id',
+            'original_id__icontains',
+            # 'cover_letter_msg_id',
+            'project_original_id',
+            # 'submitter_account_original_id',
+            # 'submitter_user_original_id',
+            # 'series_original_id',
+        ]

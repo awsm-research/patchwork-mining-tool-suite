@@ -27,7 +27,7 @@ class AccountItem(scrapy.Item):
     email = scrapy.Field()
     username = scrapy.Field()
     api_url = scrapy.Field()
-    user_id = scrapy.Field()
+    user_original_id = scrapy.Field()
 
 
 class ProjectAccountItem(AccountItem):
@@ -51,7 +51,7 @@ class ProjectItem(scrapy.Item):
     list_id = scrapy.Field()
     list_address = scrapy.Field()
     maintainer_account_original_id = scrapy.Field()
-    maintainer_user_id = scrapy.Field()
+    maintainer_user_original_id = scrapy.Field()
 
 
 class SeriesItem(scrapy.Item):
@@ -67,7 +67,7 @@ class SeriesItem(scrapy.Item):
     web_url = scrapy.Field()
     project_original_id = scrapy.Field()
     submitter_account_original_id = scrapy.Field()
-    submitter_user_id = scrapy.Field()
+    submitter_user_original_id = scrapy.Field()
 
 
 class PatchItem(scrapy.Item):
@@ -82,13 +82,13 @@ class PatchItem(scrapy.Item):
     web_url = scrapy.Field()
     commit_ref = scrapy.Field()
     reply_to_msg_id = scrapy.Field()
-    change_id1 = scrapy.Field()
-    change_id2 = scrapy.Field()
-    mailing_list_id = scrapy.Field()
+    change1_original_id = scrapy.Field()
+    change2_original_id = scrapy.Field()
+    mailing_list_original_id = scrapy.Field()
     series_original_id = scrapy.Field()
-    new_series_id = scrapy.Field()
+    new_series_original_id = scrapy.Field()
     submitter_account_original_id = scrapy.Field()
-    submitter_user_id = scrapy.Field()
+    submitter_user_original_id = scrapy.Field()
     project_original_id = scrapy.Field()
 
 
@@ -100,10 +100,10 @@ class CommentItem(scrapy.Item):
     subject = scrapy.Field()
     reply_to_msg_id = scrapy.Field()
     web_url = scrapy.Field()
-    change_id1 = scrapy.Field()
-    change_id2 = scrapy.Field()
-    mailing_list_id = scrapy.Field()
+    change1_original_id = scrapy.Field()
+    change2_original_id = scrapy.Field()
+    mailing_list_original_id = scrapy.Field()
     submitter_account_original_id = scrapy.Field()
-    submitter_user_id = scrapy.Field()
+    submitter_user_original_id = scrapy.Field()
     patch_original_id = scrapy.Field()
     project_original_id = scrapy.Field()

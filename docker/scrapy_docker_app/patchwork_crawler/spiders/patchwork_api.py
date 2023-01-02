@@ -71,7 +71,7 @@ class PatchworkProjectSpider(scrapy.Spider):
                     email = maintainer_email,
                     username = maintainer_username,
                     api_url = maintainer_api_url,
-                    user_id = None,
+                    user_original_id = None,
                 )
 
                 yield account_item
@@ -88,7 +88,7 @@ class PatchworkProjectSpider(scrapy.Spider):
                 list_id = item['list_id'],
                 list_address = item['list_email'],
                 maintainer_account_original_id = maintainer_list,
-                maintainer_user_id = list()
+                maintainer_user_original_id = list()
             )
 
             yield project_item
@@ -165,7 +165,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
                 email = submitter_email,
                 username = submitter_username,
                 api_url = submitter_api_url,
-                user_id = None,
+                user_original_id = None,
             )
 
             yield account_item
@@ -195,7 +195,7 @@ class PatchworkSeriesSpider(scrapy.Spider):
                 web_url = item['web_url'],
                 project_original_id = series_project_original_id,
                 submitter_account_original_id = submitter_original_id,
-                submitter_user_id = None,
+                submitter_user_original_id = None,
             )
 
             yield series_item
@@ -274,7 +274,7 @@ class PatchworkPatchSpider(scrapy.Spider):
                 email = submitter_email,
                 username = submitter_username,
                 api_url = submitter_api_url,
-                user_id = None,
+                user_original_id = None,
             )
 
             yield account_item
@@ -305,13 +305,13 @@ class PatchworkPatchSpider(scrapy.Spider):
                 web_url = item['web_url'],
                 commit_ref = item['commit_ref'],
                 reply_to_msg_id = patch_reply_to_msg_id,
-                change_id1 = None,
-                change_id2 = None,
-                mailing_list_id = None,
+                change1_original_id = None,
+                change2_original_id = None,
+                mailing_list_original_id = None,
                 series_original_id = patch_series_original_id,
-                new_series_id = None,
+                new_series_original_id = None,
                 submitter_account_original_id = submitter_original_id,
-                submitter_user_id = None,
+                submitter_user_original_id = None,
                 project_original_id = patch_project_original_id
             )
 
@@ -341,7 +341,7 @@ class PatchworkPatchSpider(scrapy.Spider):
                         email = comment_submitter_email,
                         username = comment_submitter_username,
                         api_url = comment_submitter_api_url,
-                        user_id = None,
+                        user_original_id = None,
                     )
 
                     yield comment_account_item
@@ -355,11 +355,11 @@ class PatchworkPatchSpider(scrapy.Spider):
                         subject = comment['subject'],
                         reply_to_msg_id = comment_reply_to_msg_id,
                         web_url = comment['web_url'],
-                        change_id1 = None,
-                        change_id2 = None,
-                        mailing_list_id = None,
+                        change1_original_id = None,
+                        change2_original_id = None,
+                        mailing_list_original_id = None,
                         submitter_account_original_id = comment_submitter_original_id,
-                        submitter_user_id = None,
+                        submitter_user_original_id = None,
                         patch_original_id = patch_original_id,
                         project_original_id = patch_project_original_id
                     )

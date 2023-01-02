@@ -20,14 +20,17 @@ def home_view(request):
     return render(request, 'patchwork/home.html')
 
 
-class AccountList(generics.ListAPIView):
+class AccountListView(generics.ListAPIView):
 
     queryset = Accounts.objects.all()
     serializer_class = AccountSerializer
     filterset_class = AccountFilter
+    search_fields = ['original_id', 'email', 'username', 'user_original_id']
 
+class AccountCreateView(generics.CreateAPIView):
 
-class AccountCreate(generics.CreateAPIView):
+    queryset = Accounts.objects.all()
+    serializer_class = AccountSerializer
 
     def post(self, request, format=None):
         account_data = JSONParser().parse(request)
@@ -41,14 +44,18 @@ class AccountCreate(generics.CreateAPIView):
         return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
     
 
-class ProjectList(generics.ListAPIView):
+class ProjectListView(generics.ListAPIView):
 
     queryset = Projects.objects.all()
     serializer_class = ProjectSerializer
     filterset_class = ProjectFilter
+    search_fields = ['original_id', 'name']
 
 
-class ProjectCreate(generics.CreateAPIView):
+class ProjectCreateView(generics.CreateAPIView):
+
+    queryset = Projects.objects.all()
+    serializer_class = ProjectSerializer
 
     def post(self, request, format=None):
         project_data = JSONParser().parse(request)
@@ -65,7 +72,7 @@ class ProjectCreate(generics.CreateAPIView):
 
 
 # GridFS files will be auto-retrieved by serialisers
-class SeriesList(generics.ListAPIView):
+class SeriesListView(generics.ListAPIView):
 
     queryset = Series.objects.all()
     serializer_class = GetSeriesSerializer
@@ -73,7 +80,7 @@ class SeriesList(generics.ListAPIView):
     search_fields = ['name', 'cover_letter_content']
 
 
-class SeriesCreate(generics.CreateAPIView):
+class SeriesCreateView(generics.CreateAPIView):
 
     # override the post method
     def post(self, request, format=None):
@@ -107,7 +114,7 @@ class SeriesCreate(generics.CreateAPIView):
         return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
-class PatchList(generics.ListAPIView):
+class PatchListView(generics.ListAPIView):
 
     queryset = Patches.objects.all()
     serializer_class = GetPatchSerializer
@@ -115,7 +122,7 @@ class PatchList(generics.ListAPIView):
     search_fields = ['name', 'msg_content', 'code_diff']
 
 
-class PatchCreate(generics.CreateAPIView):
+class PatchCreateView(generics.CreateAPIView):
 
     def post(self, request, format=None):
         
@@ -174,7 +181,7 @@ class PatchCreate(generics.CreateAPIView):
         return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
-class CommentList(generics.ListAPIView):
+class CommentListView(generics.ListAPIView):
 
     queryset = Comments.objects.all()
     serializer_class = GetCommentSerializer
@@ -182,7 +189,7 @@ class CommentList(generics.ListAPIView):
     search_fields = ['subject', 'msg_content']
 
 
-class CommentCreate(generics.CreateAPIView):
+class CommentCreateView(generics.CreateAPIView):
 
     def post(self, request, format=None):
 
@@ -220,42 +227,61 @@ class CommentCreate(generics.CreateAPIView):
         return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
-class MailingListList(generics.ListAPIView):
+class Change1ListView(generics.ListAPIView):
+
+    queryset = Changes1.objects.all()
+    serializer_class = Change1Serializer
+    filterset_class = Change1Filter
+
+
+class Change1CreateView(generics.CreateAPIView):
+
+    queryset = Changes1.objects.all()
+    serializer_class = Change1Serializer
+
+
+class Change2ListView(generics.ListAPIView):
+
+    queryset = Changes2.objects.all()
+    serializer_class = Changes2
+    filterset_class = Change2Filter
+
+
+class Change2CreateView(generics.CreateAPIView):
+
+    queryset = Changes2.objects.all()
+    serializer_class = Change2Serializer
+
+
+class UserListView(generics.ListAPIView):
+
+    queryset = Changes2.objects.all()
+    serializer_class = Changes2
+    filterset_class = Change2Filter
+
+
+class UserCreateView(generics.CreateAPIView):
+
+    queryset = Users.objects.all()
+    serializer_class = UserSerializer
+
+
+class NewSeriesListView(generics.ListAPIView):
+
+    queryset = NewSeries.objects.all()
+    serializer_class = NewSeriesSerializer
+    filterset_class = NewSeriesFilter
+
+
+class NewSeriesCreateView(generics.CreateAPIView):
+
+    queryset = NewSeries.objects.all()
+    serializer_class = NewSeriesSerializer
+
+
+class MailingListListView(generics.ListAPIView):
     def get(self, request, format=None):
         pass
 
     def post(self, request, format=None):
         pass
-
-
-class Change1List(generics.ListAPIView):
-    def get(self, request, format=None):
-        pass
-
-    def post(self, request, format=None):
-        pass
-
-
-class Change2List(generics.ListAPIView):
-    def get(self, request, format=None):
-        pass
-
-    def post(self, request, format=None):
-        pass
-
-
-class UserList(generics.ListAPIView):
-    def get(self, request, format=None):
-        pass
-
-    def post(self, request, format=None):
-        pass
-
-
-class NewSeriesList(generics.ListAPIView):
-    def get(self, request, format=None):
-        pass
-
-    def post(self, request, format=None):
-        pass
-

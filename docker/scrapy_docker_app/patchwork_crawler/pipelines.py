@@ -78,7 +78,7 @@ class PatchworkExporterPipeline(object):
                     'email',
                     'username',
                     'api_url',
-                    'user_id'
+                    'user_original_id'
                 ]
                 self.exporters[name].start_exporting()
 
@@ -92,7 +92,7 @@ class PatchworkExporterPipeline(object):
                     'list_id',
                     'list_address',
                     'maintainer_account_original_id',
-                    'maintainer_user_id'
+                    'maintainer_user_original_id'
                 ]
                 self.exporters[name].start_exporting()
 
@@ -110,7 +110,7 @@ class PatchworkExporterPipeline(object):
                     'web_url',
                     'project_original_id',
                     'submitter_account_original_id',
-                    'submitter_user_id'
+                    'submitter_user_original_id'
                 ]
                 self.exporters[name].start_exporting()
 
@@ -127,13 +127,13 @@ class PatchworkExporterPipeline(object):
                     'web_url',
                     'commit_ref',
                     'reply_to_msg_id',
-                    'change_id1',
-                    'change_id2',
-                    'mailing_list_id',
+                    'change1_original_id',
+                    'change2_original_id',
+                    'mailing_list_original_id',
                     'series_original_id',
-                    'new_series_id',
+                    'new_series_original_id',
                     'submitter_account_original_id',
-                    'submitter_user_id',
+                    'submitter_user_original_id',
                     'project_original_id'
                 ]
                 self.exporters[name].start_exporting()
@@ -147,11 +147,11 @@ class PatchworkExporterPipeline(object):
                     'subject',
                     'reply_to_msg_id',
                     'web_url',
-                    'change_id1',
-                    'change_id2',
-                    'mailing_list_id',
+                    'change1_original_id',
+                    'change2_original_id',
+                    'mailing_list_original_id',
                     'submitter_account_original_id',
-                    'submitter_user_id',
+                    'submitter_user_original_id',
                     'patch_original_id',
                     'project_original_id'
                 ]

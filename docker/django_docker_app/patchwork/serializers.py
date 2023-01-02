@@ -194,3 +194,31 @@ class GetCommentSerializer(CommentStandardSerializer):
             data['msg_content'] = file_content
 
         return data
+
+
+class Change1Serializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Changes1
+        fields = '__all__'
+
+
+class Change2Serializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Changes2
+        fields = '__all__'
+
+
+class UserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Users
+        fields = '__all__'
+
+
+class NewSeriesSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = NewSeries
+        fields = '__all__'

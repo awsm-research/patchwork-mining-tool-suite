@@ -11,10 +11,11 @@ class Accounts(models.Model):
     email = models.CharField(max_length=255, blank=True, null=True)
     username = models.CharField(max_length=255, blank=True, null=True)
     api_url = models.CharField(max_length=255, blank=True, null=True)
-    user_id = models.IntegerField(blank=True, null=True)
+    user_original_id = models.CharField(max_length=255, blank=True, null=True)
     
     
 class Users(models.Model):
+    original_id = models.CharField(max_length=255, unique=True)
     account_original_id = models.JSONField(blank=True, null=True)
     
 
@@ -28,7 +29,7 @@ class Projects(models.Model):
     list_address = models.CharField(max_length=255, blank=True, null=True)
     
     maintainer_account_original_id = models.JSONField(blank=True, null=True)
-    maintainer_user_id = models.JSONField(blank=True, null=True)
+    maintainer_user_original_id = models.JSONField(blank=True, null=True)
     
     
 class Series(models.Model):
@@ -45,45 +46,54 @@ class Series(models.Model):
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
     submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_user_id = models.IntegerField(blank=True, null=True)
+    submitter_user_original_id = models.CharField(max_length=255, blank=True, null=True)
 
 
 class NewSeries(models.Model):
-    cover_letter_msg_id = models.TextField(unique=True)
+    original_id = models.CharField(max_length=255, unique=True)
+    cover_letter_msg_id = models.JSONField(blank=True, null=True)
 
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_user_id = models.IntegerField(blank=True, null=True)
+    submitter_account_original_id = models.JSONField(blank=True, null=True)
+    submitter_user_original_id = models.JSONField(blank=True, null=True)
     series_original_id = models.JSONField(blank=True, null=True)
+    inspection_needed = models.BooleanField(default=False)
 
     
 class Changes1(models.Model):
+    original_id = models.CharField(max_length=255, unique=True)
     is_accepted = models.BooleanField(default=False)
     parent_commit_id = models.CharField(max_length=255, blank=True, null=True)
     merged_commit_id = models.CharField(max_length=255, blank=True, null=True)
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_user_id = models.IntegerField(blank=True, null=True)
+    submitter_account_original_id = models.JSONField(blank=True, null=True)
+    submitter_user_original_id = models.JSONField(blank=True, null=True)
     series_original_id = models.JSONField(blank=True, null=True)
-    new_series_id = models.JSONField(blank=True, null=True)
+    new_series_original_id = models.JSONField(blank=True, null=True)
+    patch_original_id = models.JSONField(blank=True, null=True)
+    inspection_needed = models.BooleanField(default=False)
 
 
 class Changes2(models.Model):
+    original_id = models.CharField(max_length=255, unique=True)
     is_accepted = models.BooleanField(default=False)
     parent_commit_id = models.CharField(max_length=255, blank=True, null=True)
     merged_commit_id = models.CharField(max_length=255, blank=True, null=True)
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_user_id = models.IntegerField(blank=True, null=True)
+    submitter_account_original_id = models.JSONField(blank=True, null=True)
+    submitter_user_original_id = models.JSONField(blank=True, null=True)
     series_original_id = models.JSONField(blank=True, null=True)
-    new_series_id = models.JSONField(blank=True, null=True)
+    new_series_original_id = models.JSONField(blank=True, null=True)
+    patch_original_id = models.JSONField(blank=True, null=True)
+    inspection_needed = models.BooleanField(default=False)
 
     
 class MailingLists(models.Model):
+    original_id = models.CharField(max_length=255, unique=True)
     msg_id = models.TextField(unique=True, blank=True, null=True)
     subject = models.TextField(blank=True, null=True)
     content = models.FileField(blank=True, null=True, upload_to='mailing_list_email_content', storage=grid_fs_storage)
@@ -106,13 +116,13 @@ class Patches(models.Model):
     commit_ref = models.TextField(blank=True, null=True)
     reply_to_msg_id = models.TextField(blank=True, null=True)
     
-    change_id1 = models.IntegerField(blank=True, null=True)
-    change_id2 = models.IntegerField(blank=True, null=True)
-    mailing_list_id = models.IntegerField(blank=True, null=True)
+    change1_original_id = models.CharField(max_length=255, blank=True, null=True)
+    change2_original_id = models.CharField(max_length=255, blank=True, null=True)
+    mailing_list_original_id = models.CharField(max_length=255, blank=True, null=True)
     series_original_id = models.CharField(max_length=255, blank=True, null=True)
-    new_series_id = models.IntegerField(blank=True, null=True)
+    new_series_original_id = models.CharField(max_length=255, blank=True, null=True)
     submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_user_id = models.IntegerField(blank=True, null=True)
+    submitter_user_original_id = models.CharField(max_length=255, blank=True, null=True)
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
 
     
@@ -125,10 +135,10 @@ class Comments(models.Model):
     reply_to_msg_id = models.TextField(blank=True, null=True)
     web_url = models.CharField(max_length=255, blank=True, null=True)
     
-    change_id1 = models.IntegerField(blank=True, null=True)
-    change_id2 = models.IntegerField(blank=True, null=True)
-    mailing_list_id = models.IntegerField(blank=True, null=True)
+    change1_original_id = models.CharField(max_length=255, blank=True, null=True)
+    change2_original_id = models.CharField(max_length=255, blank=True, null=True)
+    mailing_list_original_id = models.CharField(max_length=255, blank=True, null=True)
     submitter_account_original_id = models.CharField(max_length=255, blank=True, null=True)
-    submitter_user_id = models.IntegerField(blank=True, null=True)
+    submitter_user_original_id = models.CharField(max_length=255, blank=True, null=True)
     patch_original_id = models.CharField(max_length=255, blank=True, null=True)
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
