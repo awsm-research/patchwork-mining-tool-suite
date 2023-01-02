@@ -166,26 +166,30 @@ class AccessData():
                 if item_type == self.__item_types[0]:
                     json_data = self.__filter_unique_accounts(json_data, reset_account_cache)
 
-                for i in range(0, len(json_data), self.__batch_size):
-                    json_data_batch = json_data[i:i + self.__batch_size]
-                    response = self.__post_data(json_data_batch, item_type)
+                for i in range(len(json_data)):
+                    # json_data_batch = json_data[i:i + self.__batch_size]
+                    json_item = json_data[i]
+                    response = self.__post_data(json_item, item_type)
 
-                    # duplicate item (same original_id) exists -> post one by one
-                    try:
-                        if response.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]:
-                            print(f"Duplicate {item_type} exists. Start inserting one by one.")
-                            for item in json_data_batch:
-                                response1 = self.__post_data(item, item_type)
-
-                                if response1.status_code != 201 and not (response1.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]):
-                                    raise PostRequestException(response)
-
-                        # capture duplicate django auto id error and also others
-                        elif response.status_code != 201:
-                            raise PostRequestException(response)
-                
-                    except:
+                    if response.status_code != 201 or response.status_code != 400:
                         raise PostRequestException(response)
+
+                    # # duplicate item (same original_id) exists -> post one by one
+                    # try:
+                    #     if response.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]:
+                    #         print(f"Duplicate {item_type} exists. Start inserting one by one.")
+                    #         for item in json_data_batch:
+                    #             response1 = self.__post_data(item, item_type)
+
+                    #             if response1.status_code != 201 and not (response1.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]):
+                    #                 raise PostRequestException(response)
+
+                    #     # capture duplicate django auto id error and also others
+                    #     elif response.status_code != 201:
+                    #         raise PostRequestException(response)
+                
+                    # except:
+                    #     raise PostRequestException(response)
 
         except FileNotFoundError as e:
             print(e)

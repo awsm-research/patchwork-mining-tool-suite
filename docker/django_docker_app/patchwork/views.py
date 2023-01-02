@@ -32,16 +32,16 @@ class AccountCreateView(generics.CreateAPIView):
     queryset = Accounts.objects.all()
     serializer_class = AccountSerializer
 
-    def post(self, request, format=None):
-        account_data = JSONParser().parse(request)
-        is_many = True if type(account_data) == list else False
-        account_serializer = AccountSerializer(data=account_data, many=is_many)
+    # def post(self, request, format=None):
+    #     account_data = JSONParser().parse(request)
+    #     is_many = True if type(account_data) == list else False
+    #     account_serializer = AccountSerializer(data=account_data, many=is_many)
 
-        if account_serializer.is_valid():
-            account_serializer.save()
-            return JsonResponse(account_serializer.data, status=status.HTTP_201_CREATED, safe=(not is_many))
+    #     if account_serializer.is_valid():
+    #         account_serializer.save()
+    #         return JsonResponse(account_serializer.data, status=status.HTTP_201_CREATED, safe=(not is_many))
         
-        return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
+    #     return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
     
 
 class ProjectListView(generics.ListAPIView):
@@ -57,16 +57,16 @@ class ProjectCreateView(generics.CreateAPIView):
     queryset = Projects.objects.all()
     serializer_class = ProjectSerializer
 
-    def post(self, request, format=None):
-        project_data = JSONParser().parse(request)
-        is_many = True if type(project_data) == list else False
-        project_serializer = ProjectSerializer(data=project_data, many=is_many)
+    # def post(self, request, format=None):
+    #     project_data = JSONParser().parse(request)
+    #     is_many = True if type(project_data) == list else False
+    #     project_serializer = ProjectSerializer(data=project_data, many=is_many)
 
-        if project_serializer.is_valid():
-            project_serializer.save()
-            return JsonResponse(project_serializer.data, status=status.HTTP_201_CREATED, safe=(not is_many))
+    #     if project_serializer.is_valid():
+    #         project_serializer.save()
+    #         return JsonResponse(project_serializer.data, status=status.HTTP_201_CREATED, safe=(not is_many))
 
-        return JsonResponse(project_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
+    #     return JsonResponse(project_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
 
 
 
@@ -82,36 +82,44 @@ class SeriesListView(generics.ListAPIView):
 
 class SeriesCreateView(generics.CreateAPIView):
 
-    # override the post method
-    def post(self, request, format=None):
-        series_data = JSONParser().parse(request)
-        large_documents = list()
-        small_documents = list()
+    queryset = Series.objects.all()
 
-        if type(series_data) != list:
-            series_data = [series_data]
+    # override the get_serializer_class method
+    def get_serializer_class(self):
+        series = JSONParser().parse(self.request)
+        if series['cover_letter_content'] and len(series['cover_letter_content']) > SIZE_LIMIT:
+            return SeriesFileSerializer
+        else:
+            return SeriesStandardSerializer
 
-        for i in range(len(series_data)):
-            series = series_data[i]
-            if series['cover_letter_content'] and len(series['cover_letter_content']) > SIZE_LIMIT:
-                large_documents.append(series)
-            else:
-                small_documents.append(series)
 
-        if small_documents:
-            small_series_serializer = SeriesStandardSerializer(data=small_documents, many=True)
-            if small_series_serializer.is_valid():
-                small_series_serializer.save()
-            else:
-                return JsonResponse(small_series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-        if large_documents:
-            large_series_serializer = SeriesFileSerializer(data=large_documents, many=True)
-            if large_series_serializer.is_valid():
-                large_series_serializer.save()
-            else:
-                return JsonResponse(large_series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+        # large_documents = list()
+        # small_documents = list()
 
-        return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
+        # if type(series_data) != list:
+        #     series_data = [series_data]
+
+        # for i in range(len(series_data)):
+        #     series = series_data[i]
+        #     if series['cover_letter_content'] and len(series['cover_letter_content']) > SIZE_LIMIT:
+        #         large_documents.append(series)
+        #     else:
+        #         small_documents.append(series)
+
+        # if small_documents:
+        #     small_series_serializer = SeriesStandardSerializer(data=small_documents, many=True)
+        #     if small_series_serializer.is_valid():
+        #         small_series_serializer.save()
+        #     else:
+        #         return JsonResponse(small_series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+        # if large_documents:
+        #     large_series_serializer = SeriesFileSerializer(data=large_documents, many=True)
+        #     if large_series_serializer.is_valid():
+        #         large_series_serializer.save()
+        #     else:
+        #         return JsonResponse(large_series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+
+        # return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
 class PatchListView(generics.ListAPIView):
@@ -124,61 +132,75 @@ class PatchListView(generics.ListAPIView):
 
 class PatchCreateView(generics.CreateAPIView):
 
-    def post(self, request, format=None):
+    queryset = Patches.objects.all()
+
+    # override the get_serializer_class method
+    def get_serializer_class(self):
+        patch = JSONParser().parse(self.request)
+        if (patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT) and (patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT):
+            return PatchFileSerializer
+        elif patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT:
+            return PatchContentFileSerializer
+        elif patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT:
+            return PatchDiffFileSerializer
+        else:
+            return PatchStandardSerializer
+
+    # def post(self, request, format=None):
         
-        patch_data = JSONParser().parse(request)
-        small_documents = list()
-        large_documents = list()
-        large_content_documents = list()
-        large_diff_documents = list()
+    #     patch_data = JSONParser().parse(request)
+    #     small_documents = list()
+    #     large_documents = list()
+    #     large_content_documents = list()
+    #     large_diff_documents = list()
 
-        if type(patch_data) != list:
-            patch_data = [patch_data]
+    #     if type(patch_data) != list:
+    #         patch_data = [patch_data]
 
-        for i in range(len(patch_data)):
-            patch = patch_data[i]
+    #     for i in range(len(patch_data)):
+    #         patch = patch_data[i]
 
-            if patch['reply_to_msg_id'] and type(patch['reply_to_msg_id']) == list:
-                patch['reply_to_msg_id'] = json.dumps(patch['reply_to_msg_id'])
+    #         if patch['reply_to_msg_id'] and type(patch['reply_to_msg_id']) == list:
+    #             patch['reply_to_msg_id'] = json.dumps(patch['reply_to_msg_id'])
 
-            if (patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT) and (patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT):
-                large_documents.append(patch)
-            elif patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT:
-                large_content_documents.append(patch)
-            elif patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT:
-                large_diff_documents.append(patch)
-            else:
-                small_documents.append(patch)
+    #         if (patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT) and (patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT):
+    #             large_documents.append(patch)
+    #         elif patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT:
+    #             large_content_documents.append(patch)
+    #         elif patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT:
+    #             large_diff_documents.append(patch)
+    #         else:
+    #             small_documents.append(patch)
 
-        if small_documents:
-            small_patch_serializer = PatchStandardSerializer(data=small_documents, many=True)
-            if small_patch_serializer.is_valid():
-                small_patch_serializer.save()
-            else:
-                return JsonResponse(small_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+    #     if small_documents:
+    #         small_patch_serializer = PatchStandardSerializer(data=small_documents, many=True)
+    #         if small_patch_serializer.is_valid():
+    #             small_patch_serializer.save()
+    #         else:
+    #             return JsonResponse(small_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
-        if large_documents:
-            large_patch_serializer = PatchFileSerializer(data=large_documents, many=True)
-            if large_patch_serializer.is_valid():
-                large_patch_serializer.save()
-            else:
-                return JsonResponse(large_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+    #     if large_documents:
+    #         large_patch_serializer = PatchFileSerializer(data=large_documents, many=True)
+    #         if large_patch_serializer.is_valid():
+    #             large_patch_serializer.save()
+    #         else:
+    #             return JsonResponse(large_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
-        if large_content_documents:
-            large_content_patch_serializer = PatchFileSerializer(data=large_content_documents, many=True)
-            if large_content_patch_serializer.is_valid():
-                large_content_patch_serializer.save()
-            else:
-                return JsonResponse(large_content_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+    #     if large_content_documents:
+    #         large_content_patch_serializer = PatchFileSerializer(data=large_content_documents, many=True)
+    #         if large_content_patch_serializer.is_valid():
+    #             large_content_patch_serializer.save()
+    #         else:
+    #             return JsonResponse(large_content_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
-        if large_diff_documents:
-            large_diff_patch_serializer = PatchFileSerializer(data=large_diff_documents, many=True)
-            if large_diff_patch_serializer.is_valid():
-                large_diff_patch_serializer.save()
-            else:
-                return JsonResponse(large_diff_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+    #     if large_diff_documents:
+    #         large_diff_patch_serializer = PatchFileSerializer(data=large_diff_documents, many=True)
+    #         if large_diff_patch_serializer.is_valid():
+    #             large_diff_patch_serializer.save()
+    #         else:
+    #             return JsonResponse(large_diff_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
 
-        return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
+    #     return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
 class CommentListView(generics.ListAPIView):
@@ -191,40 +213,50 @@ class CommentListView(generics.ListAPIView):
 
 class CommentCreateView(generics.CreateAPIView):
 
-    def post(self, request, format=None):
+    queryset = Comments.objects.all()
 
-        comment_data = JSONParser().parse(request)
-        small_documents = list()
-        large_documents = list()
+    # override the get_serializer_class method
+    def get_serializer_class(self):
+        comment = JSONParser().parse(self.request)
+        if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
+            return CommentFileSerializer
+        else:
+            return CommentStandardSerializer
 
-        if type(comment_data) != list:
-            comment_data = [comment_data]
+    # def post(self, request, format=None):
 
-        for i in range(len(comment_data)):
-            comment = comment_data[i]
+    #     comment_data = JSONParser().parse(request)
+    #     small_documents = list()
+    #     large_documents = list()
 
-            if comment['reply_to_msg_id'] and type(comment['reply_to_msg_id']) == list:
-                comment['reply_to_msg_id'] = json.dumps(comment['reply_to_msg_id'])
+    #     if type(comment_data) != list:
+    #         comment_data = [comment_data]
 
-            if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
-                large_documents.append(comment)
-            else:
-                small_documents.append(comment)
+    #     for i in range(len(comment_data)):
+    #         comment = comment_data[i]
 
-        if small_documents:
-            small_comment_serializer = CommentStandardSerializer(data=small_documents, many=True)
-            if small_comment_serializer.is_valid():
-                small_comment_serializer.save()
-            else:
-                return JsonResponse(small_comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-        if large_documents:
-            large_comment_serializer = CommentFileSerializer(data=large_documents, many=True)
-            if large_comment_serializer.is_valid():
-                large_comment_serializer.save()
-            else:
-                return JsonResponse(large_comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+    #         if comment['reply_to_msg_id'] and type(comment['reply_to_msg_id']) == list:
+    #             comment['reply_to_msg_id'] = json.dumps(comment['reply_to_msg_id'])
 
-        return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
+    #         if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
+    #             large_documents.append(comment)
+    #         else:
+    #             small_documents.append(comment)
+
+    #     if small_documents:
+    #         small_comment_serializer = CommentStandardSerializer(data=small_documents, many=True)
+    #         if small_comment_serializer.is_valid():
+    #             small_comment_serializer.save()
+    #         else:
+    #             return JsonResponse(small_comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+    #     if large_documents:
+    #         large_comment_serializer = CommentFileSerializer(data=large_documents, many=True)
+    #         if large_comment_serializer.is_valid():
+    #             large_comment_serializer.save()
+    #         else:
+    #             return JsonResponse(large_comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
+
+    #     return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
 class Change1ListView(generics.ListAPIView):
@@ -280,8 +312,13 @@ class NewSeriesCreateView(generics.CreateAPIView):
 
 
 class MailingListListView(generics.ListAPIView):
-    def get(self, request, format=None):
-        pass
 
-    def post(self, request, format=None):
-        pass
+    queryset = MailingLists.objects.all()
+    serializer_class = MailingListSerializer
+    filterset_class = MailingListFilter
+
+
+class MailingListCreateView(generics.CreateAPIView):
+
+    queryset = MailingLists.objects.all()
+    serializer_class = MailingListSerializer
