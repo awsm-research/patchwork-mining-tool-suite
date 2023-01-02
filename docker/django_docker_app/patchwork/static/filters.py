@@ -211,3 +211,25 @@ class NewSeriesFilter(django_filters.FilterSet):
             # 'submitter_user_original_id',
             # 'series_original_id',
         ]
+
+    
+
+class MailingListFilter(django_filters.FilterSet):
+
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
+    date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
+
+    class Meta:
+        model = NewSeries
+        fields = [
+            'id',
+            'original_id',
+            'original_id__icontains',
+            'msg_id',
+            'subject',
+            'date__lt',
+            'date__gt',
+            'sender_name',
+            'project_original_id',
+        ]

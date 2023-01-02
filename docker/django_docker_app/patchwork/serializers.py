@@ -222,3 +222,10 @@ class NewSeriesSerializer(serializers.ModelSerializer):
     class Meta:
         model = NewSeries
         fields = '__all__'
+
+
+class MailingListSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = MailingLists
+        fields = '__all__'
