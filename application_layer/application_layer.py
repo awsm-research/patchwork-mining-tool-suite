@@ -11,9 +11,20 @@ nltk.download('punkt', quiet=True)
 class AccessData():
     
     def __init__(self, endpoint="http://localhost:8000", batch_size=100000):
-        self.__item_types = ['accounts', 'projects', 'series', 'patches', 'comments']
+        self.__item_types = [
+            'accounts', 
+            'projects', 
+            'series', 
+            'patches', 
+            'comments', 
+            'changes1', 
+            'changes2', 
+            'newseries', 
+            'mailinglist',
+            'users',
+        ]
         self.__endpoint = endpoint
-        self.__base_url = self.__endpoint + "/patchwork/%s/"
+        self.__base_url = self.__endpoint + "/patchwork/%s/create/"
         self.__batch_size = batch_size
         self.__occurred_accounts = list()
 

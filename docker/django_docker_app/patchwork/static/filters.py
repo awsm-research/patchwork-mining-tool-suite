@@ -221,7 +221,7 @@ class MailingListFilter(django_filters.FilterSet):
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
 
     class Meta:
-        model = NewSeries
+        model = MailingLists
         fields = [
             'id',
             'original_id',

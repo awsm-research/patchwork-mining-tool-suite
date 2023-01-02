@@ -14,5 +14,10 @@ urlpatterns = [
     path('projects/create/', views.ProjectCreateView.as_view()),
     path('series/create/', views.SeriesCreateView.as_view()),
     path('patches/create/', views.PatchCreateView.as_view()),
-    path('comments/create/', views.CommentCreateView.as_view())
+    path('comments/create/', views.CommentCreateView.as_view()),
+    path('changes1/create/', views.CommentCreateView.as_view()),
+    path('changes2/create/', views.CommentCreateView.as_view()),
+    path('newseries/create/', views.CommentCreateView.as_view()),
+    path('mailinglist/create/', views.CommentCreateView.as_view()),
+    path('users/create/', views.CommentCreateView.as_view()),
 ]
