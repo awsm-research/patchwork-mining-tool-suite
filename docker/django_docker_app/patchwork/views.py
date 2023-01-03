@@ -86,7 +86,7 @@ class SeriesCreateView(generics.CreateAPIView):
 
     # override the get_serializer_class method
     def get_serializer_class(self):
-        series = JSONParser().parse(self.request)
+        series = self.request.data
         if series['cover_letter_content'] and len(series['cover_letter_content']) > SIZE_LIMIT:
             return SeriesFileSerializer
         else:
@@ -136,7 +136,7 @@ class PatchCreateView(generics.CreateAPIView):
 
     # override the get_serializer_class method
     def get_serializer_class(self):
-        patch = JSONParser().parse(self.request)
+        patch = self.request.data
         if (patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT) and (patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT):
             return PatchFileSerializer
         elif patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT:
@@ -217,7 +217,7 @@ class CommentCreateView(generics.CreateAPIView):
 
     # override the get_serializer_class method
     def get_serializer_class(self):
-        comment = JSONParser().parse(self.request)
+        comment = self.request.data
         if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
             return CommentFileSerializer
         else:

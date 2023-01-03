@@ -142,7 +142,7 @@ class AccessData():
                     'subject',
                     'reply_to_msg_id',
                     'web_url',
-                    'change_original_id1',
+                    'change1_original_id',
                     'change2_original_id',
                     'mailing_list_original_id',
                     'submitter_account_original_id',
@@ -150,7 +150,6 @@ class AccessData():
                     'patch_original_id',
                     'project_original_id'
                 }
-
 
     def __post_data(self, json_data, item_type):
         url = self.__base_url %item_type
@@ -182,7 +181,7 @@ class AccessData():
                     json_item = json_data[i]
                     response = self.__post_data(json_item, item_type)
 
-                    if response.status_code != 201 or response.status_code != 400:
+                    if response.status_code not in [201] and not (response.status_code == 400 and 'original_id' in json.loads(response.text).keys()):
                         raise PostRequestException(response)
 
                     # # duplicate item (same original_id) exists -> post one by one

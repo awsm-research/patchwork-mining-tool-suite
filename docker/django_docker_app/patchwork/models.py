@@ -114,7 +114,7 @@ class Patches(models.Model):
     api_url = models.CharField(max_length=255, blank=True, null=True)
     web_url = models.CharField(max_length=255, blank=True, null=True)
     commit_ref = models.TextField(blank=True, null=True)
-    reply_to_msg_id = models.TextField(blank=True, null=True)
+    reply_to_msg_id = models.JSONField(blank=True, null=True)
     
     change1_original_id = models.CharField(max_length=255, blank=True, null=True)
     change2_original_id = models.CharField(max_length=255, blank=True, null=True)
@@ -132,7 +132,7 @@ class Comments(models.Model):
     msg_content = models.FileField(blank=True, null=True, upload_to='comment_msg_content', storage=grid_fs_storage)
     date = models.DateTimeField(blank=True, null=True)
     subject = models.TextField(blank=True, null=True)
-    reply_to_msg_id = models.TextField(blank=True, null=True)
+    reply_to_msg_id = models.JSONField(blank=True, null=True)
     web_url = models.CharField(max_length=255, blank=True, null=True)
     
     change1_original_id = models.CharField(max_length=255, blank=True, null=True)
