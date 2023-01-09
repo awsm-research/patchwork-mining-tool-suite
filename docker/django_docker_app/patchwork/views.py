@@ -26,23 +26,13 @@ class AccountListView(generics.ListAPIView):
     serializer_class = AccountSerializer
     filterset_class = AccountFilter
     search_fields = ['original_id', 'email', 'username', 'user_original_id']
+    ordering_fields = '__all__'
 
 class AccountCreateView(generics.CreateAPIView):
 
     queryset = Accounts.objects.all()
     serializer_class = AccountSerializer
 
-    # def post(self, request, format=None):
-    #     account_data = JSONParser().parse(request)
-    #     is_many = True if type(account_data) == list else False
-    #     account_serializer = AccountSerializer(data=account_data, many=is_many)
-
-    #     if account_serializer.is_valid():
-    #         account_serializer.save()
-    #         return JsonResponse(account_serializer.data, status=status.HTTP_201_CREATED, safe=(not is_many))
-        
-    #     return JsonResponse(account_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
-    
 
 class ProjectListView(generics.ListAPIView):
 
@@ -50,6 +40,7 @@ class ProjectListView(generics.ListAPIView):
     serializer_class = ProjectSerializer
     filterset_class = ProjectFilter
     search_fields = ['original_id', 'name']
+    ordering_fields = '__all__'
 
 
 class ProjectCreateView(generics.CreateAPIView):
@@ -57,27 +48,14 @@ class ProjectCreateView(generics.CreateAPIView):
     queryset = Projects.objects.all()
     serializer_class = ProjectSerializer
 
-    # def post(self, request, format=None):
-    #     project_data = JSONParser().parse(request)
-    #     is_many = True if type(project_data) == list else False
-    #     project_serializer = ProjectSerializer(data=project_data, many=is_many)
 
-    #     if project_serializer.is_valid():
-    #         project_serializer.save()
-    #         return JsonResponse(project_serializer.data, status=status.HTTP_201_CREATED, safe=(not is_many))
-
-    #     return JsonResponse(project_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=(not is_many))
-
-
-
-
-# GridFS files will be auto-retrieved by serialisers
 class SeriesListView(generics.ListAPIView):
 
     queryset = Series.objects.all()
-    serializer_class = GetSeriesSerializer
+    serializer_class = ListSeriesSerializer
     filterset_class = SeriesFilter
     search_fields = ['name', 'cover_letter_content']
+    ordering_fields = '__all__'
 
 
 class SeriesCreateView(generics.CreateAPIView):
@@ -93,41 +71,13 @@ class SeriesCreateView(generics.CreateAPIView):
             return SeriesStandardSerializer
 
 
-        # large_documents = list()
-        # small_documents = list()
-
-        # if type(series_data) != list:
-        #     series_data = [series_data]
-
-        # for i in range(len(series_data)):
-        #     series = series_data[i]
-        #     if series['cover_letter_content'] and len(series['cover_letter_content']) > SIZE_LIMIT:
-        #         large_documents.append(series)
-        #     else:
-        #         small_documents.append(series)
-
-        # if small_documents:
-        #     small_series_serializer = SeriesStandardSerializer(data=small_documents, many=True)
-        #     if small_series_serializer.is_valid():
-        #         small_series_serializer.save()
-        #     else:
-        #         return JsonResponse(small_series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-        # if large_documents:
-        #     large_series_serializer = SeriesFileSerializer(data=large_documents, many=True)
-        #     if large_series_serializer.is_valid():
-        #         large_series_serializer.save()
-        #     else:
-        #         return JsonResponse(large_series_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-
-        # return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
-
-
 class PatchListView(generics.ListAPIView):
 
     queryset = Patches.objects.all()
-    serializer_class = GetPatchSerializer
+    serializer_class = ListPatchSerializer
     filterset_class = PatchFilter
     search_fields = ['name', 'msg_content', 'code_diff']
+    ordering_fields = '__all__'
 
 
 class PatchCreateView(generics.CreateAPIView):
@@ -146,69 +96,14 @@ class PatchCreateView(generics.CreateAPIView):
         else:
             return PatchStandardSerializer
 
-    # def post(self, request, format=None):
-        
-    #     patch_data = JSONParser().parse(request)
-    #     small_documents = list()
-    #     large_documents = list()
-    #     large_content_documents = list()
-    #     large_diff_documents = list()
-
-    #     if type(patch_data) != list:
-    #         patch_data = [patch_data]
-
-    #     for i in range(len(patch_data)):
-    #         patch = patch_data[i]
-
-    #         if patch['reply_to_msg_id'] and type(patch['reply_to_msg_id']) == list:
-    #             patch['reply_to_msg_id'] = json.dumps(patch['reply_to_msg_id'])
-
-    #         if (patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT) and (patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT):
-    #             large_documents.append(patch)
-    #         elif patch['msg_content'] and len(patch['msg_content']) > SIZE_LIMIT:
-    #             large_content_documents.append(patch)
-    #         elif patch['code_diff'] and len(patch['code_diff']) > SIZE_LIMIT:
-    #             large_diff_documents.append(patch)
-    #         else:
-    #             small_documents.append(patch)
-
-    #     if small_documents:
-    #         small_patch_serializer = PatchStandardSerializer(data=small_documents, many=True)
-    #         if small_patch_serializer.is_valid():
-    #             small_patch_serializer.save()
-    #         else:
-    #             return JsonResponse(small_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-
-    #     if large_documents:
-    #         large_patch_serializer = PatchFileSerializer(data=large_documents, many=True)
-    #         if large_patch_serializer.is_valid():
-    #             large_patch_serializer.save()
-    #         else:
-    #             return JsonResponse(large_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-
-    #     if large_content_documents:
-    #         large_content_patch_serializer = PatchFileSerializer(data=large_content_documents, many=True)
-    #         if large_content_patch_serializer.is_valid():
-    #             large_content_patch_serializer.save()
-    #         else:
-    #             return JsonResponse(large_content_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-
-    #     if large_diff_documents:
-    #         large_diff_patch_serializer = PatchFileSerializer(data=large_diff_documents, many=True)
-    #         if large_diff_patch_serializer.is_valid():
-    #             large_diff_patch_serializer.save()
-    #         else:
-    #             return JsonResponse(large_diff_patch_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-
-    #     return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
-
 
 class CommentListView(generics.ListAPIView):
 
     queryset = Comments.objects.all()
-    serializer_class = GetCommentSerializer
+    serializer_class = ListCommentSerializer
     filterset_class = CommentFilter
     search_fields = ['subject', 'msg_content']
+    ordering_fields = '__all__'
 
 
 class CommentCreateView(generics.CreateAPIView):
@@ -223,40 +118,19 @@ class CommentCreateView(generics.CreateAPIView):
         else:
             return CommentStandardSerializer
 
-    # def post(self, request, format=None):
 
-    #     comment_data = JSONParser().parse(request)
-    #     small_documents = list()
-    #     large_documents = list()
+class CommentUpdateView(generics.UpdateAPIView):
 
-    #     if type(comment_data) != list:
-    #         comment_data = [comment_data]
+    lookup_field = ['id', 'original_id']
 
-    #     for i in range(len(comment_data)):
-    #         comment = comment_data[i]
+    # override the get_serializer_class method
+    def get_serializer_class(self):
+        comment = self.request.data
+        if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
+            return CommentFileSerializer
+        else:
+            return CommentStandardSerializer
 
-    #         if comment['reply_to_msg_id'] and type(comment['reply_to_msg_id']) == list:
-    #             comment['reply_to_msg_id'] = json.dumps(comment['reply_to_msg_id'])
-
-    #         if comment['msg_content'] and len(comment['msg_content']) > SIZE_LIMIT:
-    #             large_documents.append(comment)
-    #         else:
-    #             small_documents.append(comment)
-
-    #     if small_documents:
-    #         small_comment_serializer = CommentStandardSerializer(data=small_documents, many=True)
-    #         if small_comment_serializer.is_valid():
-    #             small_comment_serializer.save()
-    #         else:
-    #             return JsonResponse(small_comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-    #     if large_documents:
-    #         large_comment_serializer = CommentFileSerializer(data=large_documents, many=True)
-    #         if large_comment_serializer.is_valid():
-    #             large_comment_serializer.save()
-    #         else:
-    #             return JsonResponse(large_comment_serializer.errors, status=status.HTTP_400_BAD_REQUEST, safe=False)
-
-    #     return HttpResponse('Post request processed.', status=status.HTTP_201_CREATED)
 
 
 class Change1ListView(generics.ListAPIView):
@@ -264,6 +138,7 @@ class Change1ListView(generics.ListAPIView):
     queryset = Changes1.objects.all()
     serializer_class = Change1Serializer
     filterset_class = Change1Filter
+    ordering_fields = '__all__'
 
 
 class Change1CreateView(generics.CreateAPIView):
@@ -277,6 +152,7 @@ class Change2ListView(generics.ListAPIView):
     queryset = Changes2.objects.all()
     serializer_class = Changes2
     filterset_class = Change2Filter
+    ordering_fields = '__all__'
 
 
 class Change2CreateView(generics.CreateAPIView):
@@ -290,6 +166,7 @@ class UserListView(generics.ListAPIView):
     queryset = Changes2.objects.all()
     serializer_class = Changes2
     filterset_class = Change2Filter
+    ordering_fields = '__all__'
 
 
 class UserCreateView(generics.CreateAPIView):
@@ -303,6 +180,7 @@ class NewSeriesListView(generics.ListAPIView):
     queryset = NewSeries.objects.all()
     serializer_class = NewSeriesSerializer
     filterset_class = NewSeriesFilter
+    ordering_fields = '__all__'
 
 
 class NewSeriesCreateView(generics.CreateAPIView):
@@ -311,11 +189,19 @@ class NewSeriesCreateView(generics.CreateAPIView):
     serializer_class = NewSeriesSerializer
 
 
+class NewSeriesUpdateView(generics.UpdateAPIView):
+
+    queryset = NewSeries.objects.all()
+    lookup_field = 'id'
+    serializer_class = NewSeriesSerializer
+
+
 class MailingListListView(generics.ListAPIView):
 
     queryset = MailingLists.objects.all()
     serializer_class = MailingListSerializer
     filterset_class = MailingListFilter
+    ordering_fields = '__all__'
 
 
 class MailingListCreateView(generics.CreateAPIView):
