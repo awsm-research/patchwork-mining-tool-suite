@@ -325,9 +325,9 @@ class PatchworkPatchSpider(scrapy.Spider):
 
                     comment_reply_to_msg_id = None
                     if 'In-Reply-To' in comment['headers'].keys():
-                        in_reply_to = comment['headers']['In-Reply-To']
-                        if in_reply_to[:2] == '\n ':
-                            comment_reply_to_msg_id = in_reply_to[2:]
+                        comment_reply_to_msg_id = comment['headers']['In-Reply-To']
+                        if comment_reply_to_msg_id[:2] == '\n ':
+                            comment_reply_to_msg_id = comment_reply_to_msg_id[2:]
 
                     comment_submitter = comment['submitter']
 
