@@ -10,6 +10,12 @@ urlpatterns = [
     path('series/', views.SeriesListView.as_view()),
     path('patches/', views.PatchListView.as_view()),
     path('comments/', views.CommentListView.as_view()),
+    path('changes1/', views.Change1ListView.as_view()),
+    path('changes2/', views.Change2ListView.as_view()),
+    path('newseries/', views.NewSeriesListView.as_view()),
+    path('mailinglist/', views.MailingListListView.as_view()),
+    path('users/', views.UserListView.as_view()),
+
     path('accounts/create/', views.AccountCreateView.as_view()),
     path('projects/create/', views.ProjectCreateView.as_view()),
     path('series/create/', views.SeriesCreateView.as_view()),
@@ -20,4 +26,7 @@ urlpatterns = [
     path('newseries/create/', views.NewSeriesCreateView.as_view()),
     path('mailinglist/create/', views.MailingListCreateView.as_view()),
     path('users/create/', views.UserCreateView.as_view()),
+
+    # path('newseries/<original_id>/update/', views.NewSeriesUpdateView.as_view()),
+    path('newseries/<id>/update/', views.NewSeriesUpdateView.as_view()),
 ]
