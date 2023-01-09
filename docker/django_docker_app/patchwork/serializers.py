@@ -18,6 +18,9 @@ class AccountSerializer(serializers.ModelSerializer):
 
 class ProjectSerializer(serializers.ModelSerializer):
 
+    maintainer_account_original_id = serializers.JSONField(allow_null=True)
+    maintainer_user_original_id = serializers.JSONField(allow_null=True)
+
     class Meta:
         model = Projects
         fields = '__all__'
@@ -35,10 +38,7 @@ class SeriesStandardSerializer(serializers.ModelSerializer):
 class SeriesFileSerializer(serializers.ModelSerializer):
 
     def to_internal_value(self, data):
-        if data['cover_letter_content'] == '':
-            data['cover_letter_content'] = 'mongodb_gridfs_code_review_empty_file'
-        if data['cover_letter_content'] is not None:
-            data['cover_letter_content'] = TextFile(data['cover_letter_content'].encode(), name=f"{data['original_id']}-cover_letter_content.txt")
+        data['cover_letter_content'] = TextFile(data['cover_letter_content'].encode(), name=f"{data['original_id']}-cover_letter_content.txt")
         return super().to_internal_value(data)
 
     class Meta:
@@ -53,6 +53,11 @@ class PatchStandardSerializer(serializers.ModelSerializer):
     class Meta:
         model = Patches
         fields = '__all__'
+
+    def to_internal_value(self, data):
+        if type(data['reply_to_msg_id']) == list:
+            data['reply_to_msg_id'] = json.dumps(data['reply_to_msg_id'])
+        return super().to_internal_value(data)
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -70,6 +75,9 @@ class PatchContentFileSerializer(serializers.ModelSerializer):
     code_diff = serializers.CharField(allow_blank=True, allow_null=True)
 
     def to_internal_value(self, data):
+        if type(data['reply_to_msg_id']) == list:
+            data['reply_to_msg_id'] = json.dumps(data['reply_to_msg_id'])
+
         data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
         return super().to_internal_value(data)
 
@@ -82,6 +90,9 @@ class PatchDiffFileSerializer(serializers.ModelSerializer):
     msg_content = serializers.CharField(allow_blank=True, allow_null=True)
 
     def to_internal_value(self, data):
+        if type(data['reply_to_msg_id']) == list:
+            data['reply_to_msg_id'] = json.dumps(data['reply_to_msg_id'])
+
         data['code_diff'] = TextFile(data['code_diff'].encode(), name=f"{data['original_id']}-code_diff.txt")
         return super().to_internal_value(data)
 
@@ -93,6 +104,9 @@ class PatchDiffFileSerializer(serializers.ModelSerializer):
 class PatchFileSerializer(serializers.ModelSerializer):
 
     def to_internal_value(self, data):
+        if type(data['reply_to_msg_id']) == list:
+            data['reply_to_msg_id'] = json.dumps(data['reply_to_msg_id'])
+
         data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
         data['code_diff'] = TextFile(data['code_diff'].encode(), name=f"{data['original_id']}-code_diff.txt")
         return super().to_internal_value(data)
@@ -108,6 +122,13 @@ class CommentStandardSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comments
         fields = '__all__'
+    
+    def to_internal_value(self, data):
+        if type(data['reply_to_msg_id']) == list:
+            data['reply_to_msg_id'] = json.dumps(data['reply_to_msg_id'])
+
+        return super().to_internal_value(data)
+
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -124,6 +145,9 @@ class CommentStandardSerializer(serializers.ModelSerializer):
 class CommentFileSerializer(serializers.ModelSerializer):
 
     def to_internal_value(self, data):
+        if type(data['reply_to_msg_id']) == list:
+            data['reply_to_msg_id'] = json.dumps(data['reply_to_msg_id'])
+
         data['msg_content'] = TextFile(data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
         return super().to_internal_value(data)
 
@@ -132,7 +156,7 @@ class CommentFileSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class GetSeriesSerializer(SeriesStandardSerializer):
+class ListSeriesSerializer(SeriesStandardSerializer):
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -146,7 +170,7 @@ class GetSeriesSerializer(SeriesStandardSerializer):
         return data
 
 
-class GetPatchSerializer(PatchStandardSerializer):
+class ListPatchSerializer(PatchStandardSerializer):
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -175,7 +199,7 @@ class GetPatchSerializer(PatchStandardSerializer):
         return data
 
 
-class GetCommentSerializer(CommentStandardSerializer):
+class ListCommentSerializer(CommentStandardSerializer):
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
@@ -198,12 +222,36 @@ class GetCommentSerializer(CommentStandardSerializer):
 
 class Change1Serializer(serializers.ModelSerializer):
 
+    submitter_account_original_id = serializers.JSONField(allow_null=True)
+    submitter_user_original_id = serializers.JSONField(allow_null=True)
+    series_original_id = serializers.JSONField(allow_null=True)
+    new_series_original_id = serializers.JSONField(allow_null=True)
+    patch_original_id = serializers.JSONField(allow_null=True)
+
+    def to_internal_value(self, data):
+        if type(data['merged_commit_id']) == list:
+            data['merged_commit_id'] = json.dumps(data['merged_commit_id'])
+        
+        return super().to_internal_value(data)
+
     class Meta:
         model = Changes1
         fields = '__all__'
 
 
 class Change2Serializer(serializers.ModelSerializer):
+
+    submitter_account_original_id = serializers.JSONField(allow_null=True)
+    submitter_user_original_id = serializers.JSONField(allow_null=True)
+    series_original_id = serializers.JSONField(allow_null=True)
+    new_series_original_id = serializers.JSONField(allow_null=True)
+    patch_original_id = serializers.JSONField(allow_null=True)
+
+    def to_internal_value(self, data):
+        if type(data['merged_commit_id']) == list:
+            data['merged_commit_id'] = json.dumps(data['merged_commit_id'])
+        
+        return super().to_internal_value(data)
 
     class Meta:
         model = Changes2
@@ -212,6 +260,8 @@ class Change2Serializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
 
+    account_original_id = serializers.JSONField(allow_null=True)
+
     class Meta:
         model = Users
         fields = '__all__'
@@ -219,9 +269,41 @@ class UserSerializer(serializers.ModelSerializer):
 
 class NewSeriesSerializer(serializers.ModelSerializer):
 
+    submitter_account_original_id = serializers.JSONField(allow_null=True)
+    submitter_user_original_id = serializers.JSONField(allow_null=True)
+    series_original_id = serializers.JSONField(allow_null=True)
+
+    def to_internal_value(self, data):
+        if type(data['cover_letter_msg_id']) == list:
+            data['cover_letter_msg_id'] = json.dumps(data['cover_letter_msg_id'])
+        
+        return super().to_internal_value(data)
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        try:
+            data['cover_letter_msg_id'] = json.loads(data['cover_letter_msg_id'])
+        except:
+            return data
+        
+        return data
+
     class Meta:
         model = NewSeries
         fields = '__all__'
+
+# class CreateUpdateNewSeriesSerializer(serializers.ModelSerializer):
+
+#     def to_internal_value(self, data):
+#         if type(data['cover_letter_msg_id']) == list:
+#             data['cover_letter_msg_id'] = json.dumps(data['cover_letter_msg_id'])
+        
+#         return super().to_internal_value(data)
+
+#     class Meta:
+#         model = NewSeries
+#         fields = '__all__'
 
 
 class MailingListSerializer(serializers.ModelSerializer):
