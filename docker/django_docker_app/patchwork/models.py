@@ -51,7 +51,7 @@ class Series(models.Model):
 
 class NewSeries(models.Model):
     original_id = models.CharField(max_length=255, unique=True)
-    cover_letter_msg_id = models.JSONField(blank=True, null=True)
+    cover_letter_msg_id = models.TextField(blank=True, null=True)
 
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
     submitter_account_original_id = models.JSONField(blank=True, null=True)
@@ -63,8 +63,8 @@ class NewSeries(models.Model):
 class Changes1(models.Model):
     original_id = models.CharField(max_length=255, unique=True)
     is_accepted = models.BooleanField(default=False)
-    parent_commit_id = models.CharField(max_length=255, blank=True, null=True)
-    merged_commit_id = models.CharField(max_length=255, blank=True, null=True)
+    parent_commit_id = models.TextField(blank=True, null=True)
+    merged_commit_id = models.TextField(blank=True, null=True)
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
@@ -79,8 +79,8 @@ class Changes1(models.Model):
 class Changes2(models.Model):
     original_id = models.CharField(max_length=255, unique=True)
     is_accepted = models.BooleanField(default=False)
-    parent_commit_id = models.CharField(max_length=255, blank=True, null=True)
-    merged_commit_id = models.CharField(max_length=255, blank=True, null=True)
+    parent_commit_id = models.TextField(blank=True, null=True)
+    merged_commit_id = models.TextField(blank=True, null=True)
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project_original_id = models.CharField(max_length=255, blank=True, null=True)
@@ -114,7 +114,7 @@ class Patches(models.Model):
     api_url = models.CharField(max_length=255, blank=True, null=True)
     web_url = models.CharField(max_length=255, blank=True, null=True)
     commit_ref = models.TextField(blank=True, null=True)
-    reply_to_msg_id = models.JSONField(blank=True, null=True)
+    reply_to_msg_id = models.TextField(blank=True, null=True)
     
     change1_original_id = models.CharField(max_length=255, blank=True, null=True)
     change2_original_id = models.CharField(max_length=255, blank=True, null=True)
@@ -132,7 +132,7 @@ class Comments(models.Model):
     msg_content = models.FileField(blank=True, null=True, upload_to='comment_msg_content', storage=grid_fs_storage)
     date = models.DateTimeField(blank=True, null=True)
     subject = models.TextField(blank=True, null=True)
-    reply_to_msg_id = models.JSONField(blank=True, null=True)
+    reply_to_msg_id = models.TextField(blank=True, null=True)
     web_url = models.CharField(max_length=255, blank=True, null=True)
     
     change1_original_id = models.CharField(max_length=255, blank=True, null=True)
