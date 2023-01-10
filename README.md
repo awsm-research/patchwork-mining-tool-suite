@@ -17,5 +17,10 @@ There are ten collections in the provided dataset, in which Projects, Accounts, 
 
 ## Tutorials
 
-* [How to deploy the docker](https://github.com/MingzhaoLiang/code-review-mining/wiki/How-to-deploy-the-docker)
-* [How to crawl data](https://github.com/MingzhaoLiang/code-review-mining/wiki/How-to-crawl-data)
+1. [How to deploy the docker](https://github.com/MingzhaoLiang/code-review-mining/wiki/How-to-deploy-the-docker)
+
+2. [How to backup and restore data](https://github.com/MingzhaoLiang/Code-Review-Mining/wiki/How-to-backup-and-restore-data)
+
+3. [How to crawl data](https://github.com/MingzhaoLiang/code-review-mining/wiki/How-to-crawl-data)
+
+4. [How to retrieve data](https://github.com/MingzhaoLiang/Code-Review-Mining/wiki/How-to-retrieve-data)
