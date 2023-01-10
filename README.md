@@ -21,6 +21,6 @@ There are ten collections in the provided dataset, in which Projects, Accounts, 
 
 2. [How to backup and restore data](https://github.com/MingzhaoLiang/Code-Review-Mining/wiki/How-to-backup-and-restore-data)
 
-3. [How to crawl data](https://github.com/MingzhaoLiang/code-review-mining/wiki/How-to-crawl-data)
+3. [How to crawl data from Patchwork](https://github.com/MingzhaoLiang/code-review-mining/wiki/How-to-crawl-data-from-Patchwork)
 
-4. [How to retrieve data](https://github.com/MingzhaoLiang/Code-Review-Mining/wiki/How-to-retrieve-data)
+4. [How to retrieve data from the database](https://github.com/MingzhaoLiang/Code-Review-Mining/wiki/How-to-retrieve-data-from-the-database)
