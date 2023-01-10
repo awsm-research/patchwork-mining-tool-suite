@@ -25,8 +25,7 @@ class AccessData():
             'users',
         ]
         self.__endpoint = endpoint
-        self.__base_url = self.__endpoint + "/patchwork/%s/create/"
-        self.__batch_size = batch_size
+        self.__base_url = self.__endpoint + "/patchwork/"
         self.__occurred_accounts = list()
 
 
@@ -66,6 +65,7 @@ class AccessData():
         return unique_accounts
 
 
+    # This function is to guarantee the data to be posted contain the required fields
     def __validate_items(self, json_data, item_type):
     
         # account
@@ -152,8 +152,10 @@ class AccessData():
                     'project_original_id'
                 }.issubset(set(item.keys()))
 
+
+    # This function is to post data through the Django REST API
     def __post_data(self, json_data, item_type):
-        url = self.__base_url %item_type
+        url = f"{self.__base_url}/{item_type}/create/"
         payload = json.dumps(json_data, cls=DjangoJSONEncoder)
         headers = {'Content-Type': 'application/json'}
         response = requests.post(url, headers=headers, data=payload)
@@ -187,23 +189,6 @@ class AccessData():
                     if response.status_code not in [201] and not (response.status_code == 400 and 'original_id' in json.loads(response.text).keys()):
                         raise PostRequestException(response)
 
-                    # # duplicate item (same original_id) exists -> post one by one
-                    # try:
-                    #     if response.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]:
-                    #         print(f"Duplicate {item_type} exists. Start inserting one by one.")
-                    #         for item in json_data_batch:
-                    #             response1 = self.__post_data(item, item_type)
-
-                    #             if response1.status_code != 201 and not (response1.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]):
-                    #                 raise PostRequestException(response)
-
-                    #     # capture duplicate django auto id error and also others
-                    #     elif response.status_code != 201:
-                    #         raise PostRequestException(response)
-                
-                    # except:
-                    #     raise PostRequestException(response)
-
         except FileNotFoundError as e:
             print(e)
             
@@ -220,15 +205,28 @@ class AccessData():
             print(f"Status: {e.response.status_code}\nReason: {e.response.reason}\nText: {e.response.text}")
 
 
+    # This funcion is to retrieve data through REST API
+    def retrieve_data(self, item_type, filter=''):
+        filter = f"?{filter}" if filter else ''
+        url = f"{self.__base_url}/{item_type}/{filter}"
+
+        try:
+            response = requests.get(url)
+            retrieved_data = response.json()
+            return retrieved_data
+        except json.JSONDecodeError:
+            print("Invalid filters.")
+            print(f"Requests status: {response.status_code}\nReason: {response.reason}\nText: {response.text}")
+
     def reset_occurred_accounts(self):
         self.__occurred_accounts = list()
 
 
-    def get_all_data(self, item_type):
-        url = self.__base_url %item_type
-        response = requests.get(url).json()
+    # def get_all_data(self, item_type):
+    #     url = self.__base_url %item_type
+    #     response = requests.get(url).json()
 
-        return response
+    #     return response
 
 
     def get_item_types(self):
