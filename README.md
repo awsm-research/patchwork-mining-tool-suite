@@ -13,7 +13,7 @@ You can either crawl new data for yourself or directly use the provided dataset,
 
 ## Dataset
 
-There are nine collections in the provided dataset, in which Projects, Accounts, Series, Patches, and Comments store the original retrieved data, and Changes1, Changes2, NewSeries, and MailingLists record the results of processing. More details can be found at [data dictionary](https://github.com/MingzhaoLiang/code-review-mining/wiki/Data-dictionary).
+There are ten collections in the provided dataset, in which Projects, Accounts, Series, Patches, and Comments store the original retrieved data, and Users, Changes1, Changes2, NewSeries, and MailingLists record the results of processing. More details can be found at [data dictionary](https://github.com/MingzhaoLiang/code-review-mining/wiki/Data-dictionary).
 
 ## Tutorials
 
