@@ -189,7 +189,7 @@ class AccessData():
                 n_batches = len(json_data) // self.__batch_size + 1
 
                 print(f"The data contains {len(json_data)} items.")
-                print(f"It will be divided into {n_batches} batches with each containing 20000 items (or less).")
+                print(f"It will be divided into {n_batches} batches with each containing {self.__batch_size} items (or less).")
                 print(f"It will take around 1.5 minutes to insert one batch.")
 
                 for i in tqdm(range(0, n_batches * self.__batch_size, self.__batch_size)):
