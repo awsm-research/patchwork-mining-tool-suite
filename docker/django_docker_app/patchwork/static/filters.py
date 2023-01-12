@@ -64,6 +64,9 @@ class SeriesFilter(django_filters.FilterSet):
 
 
 class PatchFilter(django_filters.FilterSet):
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    name__icontains = django_filters.DateTimeFilter(field_name='name', lookup_expr='icontians')
+
     date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
     msg_content_contain = django_filters.CharFilter(field_name='msg_content', method='filter_file')
@@ -78,7 +81,9 @@ class PatchFilter(django_filters.FilterSet):
         fields = [
             'id',
             'original_id',
+            'original_id__icontains',
             'name',
+            'name__icontains',
             'state',
             'date__lt',
             'date__gt',
@@ -103,6 +108,8 @@ class PatchFilter(django_filters.FilterSet):
 
 
 class CommentFilter(django_filters.FilterSet):
+    subject__icontains = django_filters.DateTimeFilter(field_name='subject', lookup_expr='icontians')
+
     date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
     msg_content_contain = django_filters.CharFilter(field_name='msg_content', method='filter_file')
@@ -117,6 +124,7 @@ class CommentFilter(django_filters.FilterSet):
             'id',
             'original_id',
             'subject',
+            'subject__icontains',
             'date__lt',
             'date__gt',
             'msg_content_contain',
@@ -134,6 +142,25 @@ class CommentFilter(django_filters.FilterSet):
             'filter_class': django_filters.IsoDateTimeFilter
         },
     }
+
+
+class NewSeriesFilter(django_filters.FilterSet):
+
+    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+
+    class Meta:
+        model = NewSeries
+        fields = [
+            'id',
+            'original_id',
+            'original_id__icontains',
+            # 'cover_letter_msg_id',
+            'project_original_id',
+            # 'submitter_account_original_id',
+            # 'submitter_user_original_id',
+            # 'series_original_id',
+            'inspection_needed',
+        ]
 
 
 class Change1Filter(django_filters.FilterSet):
@@ -194,24 +221,6 @@ class UserFilter(django_filters.FilterSet):
             'original_id__icontains',
             # 'account_original_id',
         ]
-
-class NewSeriesFilter(django_filters.FilterSet):
-
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
-
-    class Meta:
-        model = NewSeries
-        fields = [
-            'id',
-            'original_id',
-            'original_id__icontains',
-            # 'cover_letter_msg_id',
-            'project_original_id',
-            # 'submitter_account_original_id',
-            # 'submitter_user_original_id',
-            # 'series_original_id',
-        ]
-
     
 
 class MailingListFilter(django_filters.FilterSet):

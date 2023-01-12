@@ -8,10 +8,11 @@ from tqdm import tqdm
 
 nltk.download('punkt', quiet=True)
 
+SIZE_LIMIT = 16793600
 
 class AccessData():
     
-    def __init__(self, endpoint="http://localhost:8000", batch_size=100000):
+    def __init__(self, endpoint="http://localhost:8000", batch_size=20000):
         self.__item_types = [
             'accounts', 
             'projects', 
@@ -25,8 +26,9 @@ class AccessData():
             'users',
         ]
         self.__endpoint = endpoint
-        self.__base_url = self.__endpoint + "/patchwork/"
+        self.__base_url = self.__endpoint + "/patchwork"
         self.__occurred_accounts = list()
+        self.__batch_size = batch_size
 
 
     # Input: path of the json/jsonlines file to be loaded
@@ -154,13 +156,16 @@ class AccessData():
 
 
     # This function is to post data through the Django REST API
-    def __post_data(self, json_data, item_type):
-        url = f"{self.__base_url}/{item_type}/create/"
+    def __post_data(self, json_data, item_type, size_type=''):
+        url = f"{self.__base_url}/{item_type}/create/{size_type}"
         payload = json.dumps(json_data, cls=DjangoJSONEncoder)
         headers = {'Content-Type': 'application/json'}
         response = requests.post(url, headers=headers, data=payload)
-
-        return response
+        
+        if response.status_code not in [201]: # and not (response.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]):
+            raise PostRequestException(response)
+        
+        # return response
 
 
     # Input: data can be json objects or the file path
@@ -181,13 +186,86 @@ class AccessData():
                 if item_type == self.__item_types[0]:
                     json_data = self.__filter_unique_accounts(json_data, reset_account_cache)
 
-                for i in tqdm(range(len(json_data))):
-                    # json_data_batch = json_data[i:i + self.__batch_size]
-                    json_item = json_data[i]
-                    response = self.__post_data(json_item, item_type)
+                n_batches = len(json_data) // self.__batch_size + 1
 
-                    if response.status_code not in [201] and not (response.status_code == 400 and 'original_id' in json.loads(response.text).keys()):
-                        raise PostRequestException(response)
+                print(f"The data contains {len(json_data)} items.")
+                print(f"It will be divided into {n_batches} batches with each containing 20000 items (or less).")
+                print(f"It will take around 1.5 minutes to insert one batch.")
+
+                for i in tqdm(range(0, n_batches * self.__batch_size, self.__batch_size)):
+                    json_data_batch = json_data[i:i + self.__batch_size]
+
+                    if json_data_batch:
+                        # print(f"Start to insert batch {int(i / self.__batch_size + 1)}")
+                        # st = time.time()
+
+                        # series
+                        if item_type == self.__item_types[2]:
+
+                            standard_data = list()
+                            large_content_data = list()
+
+                            for data_item in json_data_batch:
+                                if data_item['cover_letter_content'] and len(data_item['cover_letter_content']) > SIZE_LIMIT:
+                                    large_content_data.append(data_item)
+                                else:
+                                    standard_data.append(data_item)
+
+                            if standard_data:
+                                self.__post_data(standard_data, item_type)
+                            if large_content_data:
+                                self.__post_data(large_content_data, item_type, 'large_content/')
+
+                        # patches
+                        elif item_type == self.__item_types[3]:
+                        
+                            standard_data = list()
+                            large_data = list()
+                            large_content_data = list()
+                            large_diff_data = list()
+
+                            for data_item in json_data_batch:
+                                if (data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT) and (data_item['code_diff'] and len(data_item['code_diff']) > SIZE_LIMIT):
+                                    large_data.append(data_item)
+                                elif data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT:
+                                    large_content_data.append(data_item)
+                                elif data_item['code_diff'] and len(data_item['code_diff']) > SIZE_LIMIT:
+                                    large_diff_data.append(data_item)
+                                else:
+                                    standard_data.append(data_item)
+
+                            if standard_data:
+                                self.__post_data(standard_data, item_type)
+                            if large_data:
+                                self.__post_data(large_data, item_type, 'large/')
+                            if large_content_data:
+                                self.__post_data(large_content_data, item_type, 'large_content/')
+                            if large_diff_data:
+                                self.__post_data(large_diff_data, item_type, 'large_diff/')
+
+                        # comments
+                        elif item_type == self.__item_types[4]:
+                        
+                            standard_data = list()
+                            large_content_data = list()
+
+                            for data_item in json_data_batch:
+                                if data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT:
+                                    large_content_data.append(data_item)
+                                else:
+                                    standard_data.append(data_item)
+
+                            if standard_data:
+                                self.__post_data(standard_data, item_type)
+                            if large_content_data:
+                                self.__post_data(large_content_data, item_type, 'large_content/')
+
+                        # others
+                        else:
+                            self.__post_data(json_data_batch, item_type)
+
+                        # et = time.time()
+                        # print(f"Insertion of batch {i / self.__batch_size + 1} is completed in {(et - st) / 60: .2f} minutes.")
 
         except FileNotFoundError as e:
             print(e)
