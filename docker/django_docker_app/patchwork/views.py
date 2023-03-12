@@ -11,7 +11,9 @@ from datetime import datetime, timezone
 from rest_framework import status, generics
 from rest_framework.parsers import JSONParser
 from rest_framework.views import APIView
-# from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework.reverse import reverse
+from rest_framework.decorators import api_view
 
 SIZE_LIMIT = 16793600
 
@@ -19,25 +21,48 @@ SIZE_LIMIT = 16793600
 def home_view(request):
     return render(request, 'patchwork/home.html')
 
+class APIRootView(APIView):
+    name = 'Index'
 
-class AccountListView(generics.ListAPIView):
+    def get(self, request, *args, **kwargs):
+        return Response({
+            'identity': 'http://localhost:8000/patchwork/identity/',
+            'project': 'http://localhost:8000/patchwork/project/',
+            'series': 'http://localhost:8000/patchwork/series/',
+            'patch': 'http://localhost:8000/patchwork/patch/',
+            'comment': 'http://localhost:8000/patchwork/comment/',
+            'newseries': 'http://localhost:8000/patchwork/newseries/',
+            'change1': 'http://localhost:8000/patchwork/change1/',
+            'change2': 'http://localhost:8000/patchwork/change2/',
+            'individual': 'http://localhost:8000/patchwork/individual/',
+            })
 
-    queryset = Accounts.objects.all()
-    serializer_class = AccountSerializer
-    filterset_class = AccountFilter
-    search_fields = ['original_id', 'email', 'username', 'user_original_id']
+
+class IdentityListView(generics.ListAPIView):
+
+    queryset = Identity.objects.all()
+    serializer_class = IdentityListSerializer
+    filterset_class = IdentityFilter
+    search_fields = ['original_id', 'email', 'name', 'individual_original_id']
     ordering_fields = '__all__'
+    # name = 'account-list'
 
-class AccountCreateView(generics.CreateAPIView):
+class IdentityCreateView(generics.CreateAPIView):
 
-    queryset = Accounts.objects.all()
-    serializer_class = AccountSerializer
+    queryset = Identity.objects.all()
+    serializer_class = IdentityCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(IdentityCreateView, self).get_serializer(*args, **kwargs)
 
 
 class ProjectListView(generics.ListAPIView):
 
-    queryset = Projects.objects.all()
-    serializer_class = ProjectSerializer
+    queryset = Project.objects.all()
+    serializer_class = ProjectListSerializer
     filterset_class = ProjectFilter
     search_fields = ['original_id', 'name']
     ordering_fields = '__all__'
@@ -45,14 +70,44 @@ class ProjectListView(generics.ListAPIView):
 
 class ProjectCreateView(generics.CreateAPIView):
 
-    queryset = Projects.objects.all()
-    serializer_class = ProjectSerializer
+    queryset = Project.objects.all()
+    serializer_class = ProjectCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(ProjectCreateView, self).get_serializer(*args, **kwargs)
+
+
+class ProjectIdentityRelationCreateView(generics.CreateAPIView):
+
+    queryset = ProjectIdentityRelation.objects.all()
+    serializer_class = ProjectIdentityCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(ProjectIdentityRelationCreateView, self).get_serializer(*args, **kwargs)
+
+
+class IndividualIdentityRelationCreateView(generics.CreateAPIView):
+
+    queryset = IndividualIdentityRelation.objects.all()
+    serializer_class = IndividualIdentityCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(IndividualIdentityRelationCreateView, self).get_serializer(*args, **kwargs)
 
 
 class SeriesListView(generics.ListAPIView):
 
     queryset = Series.objects.all()
-    serializer_class = ListSeriesSerializer
+    serializer_class = SeriesListSerializer
     filterset_class = SeriesFilter
     search_fields = ['name', 'cover_letter_content']
     ordering_fields = '__all__'
@@ -82,11 +137,10 @@ class SeriesFileCreateView(generics.CreateAPIView):
         return super(SeriesFileCreateView, self).get_serializer(*args, **kwargs)
 
 
-
 class PatchListView(generics.ListAPIView):
 
-    queryset = Patches.objects.all()
-    serializer_class = ListPatchSerializer
+    queryset = Patch.objects.all()
+    serializer_class = PatchListSerializer
     filterset_class = PatchFilter
     search_fields = ['name', 'msg_content', 'code_diff']
     ordering_fields = '__all__'
@@ -94,7 +148,7 @@ class PatchListView(generics.ListAPIView):
 
 class PatchStandardCreateView(generics.CreateAPIView):
 
-    queryset = Patches.objects.all()
+    queryset = Patch.objects.all()
     serializer_class = PatchStandardSerializer
 
     def get_serializer(self, *args, **kwargs):
@@ -106,7 +160,7 @@ class PatchStandardCreateView(generics.CreateAPIView):
 
 class PatchContentFileCreateView(generics.CreateAPIView):
 
-    queryset = Patches.objects.all()
+    queryset = Patch.objects.all()
     serializer_class = PatchContentFileSerializer
 
     def get_serializer(self, *args, **kwargs):
@@ -118,7 +172,7 @@ class PatchContentFileCreateView(generics.CreateAPIView):
 
 class PatchDiffFileCreateView(generics.CreateAPIView):
 
-    queryset = Patches.objects.all()
+    queryset = Patch.objects.all()
     serializer_class = PatchDiffFileSerializer
 
     def get_serializer(self, *args, **kwargs):
@@ -130,7 +184,7 @@ class PatchDiffFileCreateView(generics.CreateAPIView):
 
 class PatchFileCreateView(generics.CreateAPIView):
 
-    queryset = Patches.objects.all()
+    queryset = Patch.objects.all()
     serializer_class = PatchFileSerializer
 
     def get_serializer(self, *args, **kwargs):
@@ -142,8 +196,8 @@ class PatchFileCreateView(generics.CreateAPIView):
 
 class CommentListView(generics.ListAPIView):
 
-    queryset = Comments.objects.all()
-    serializer_class = ListCommentSerializer
+    queryset = Comment.objects.all()
+    serializer_class = CommentListSerializer
     filterset_class = CommentFilter
     search_fields = ['subject', 'msg_content']
     ordering_fields = '__all__'
@@ -151,7 +205,7 @@ class CommentListView(generics.ListAPIView):
 
 class CommentStandardCreateView(generics.CreateAPIView):
 
-    queryset = Comments.objects.all()
+    queryset = Comment.objects.all()
     serializer_class = CommentStandardSerializer
 
     def get_serializer(self, *args, **kwargs):
@@ -163,7 +217,7 @@ class CommentStandardCreateView(generics.CreateAPIView):
 
 class CommentFileCreateView(generics.CreateAPIView):
 
-    queryset = Comments.objects.all()
+    queryset = Comment.objects.all()
     serializer_class = CommentFileSerializer
 
     def get_serializer(self, *args, **kwargs):
@@ -186,19 +240,18 @@ class CommentUpdateView(generics.UpdateAPIView):
             return CommentStandardSerializer
 
 
-
 class Change1ListView(generics.ListAPIView):
 
-    queryset = Changes1.objects.all()
-    serializer_class = Change1Serializer
+    queryset = Change1.objects.all()
+    serializer_class = Change1ListSerializer
     filterset_class = Change1Filter
     ordering_fields = '__all__'
 
 
 class Change1CreateView(generics.CreateAPIView):
 
-    queryset = Changes1.objects.all()
-    serializer_class = Change1Serializer
+    queryset = Change1.objects.all()
+    serializer_class = Change1CreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
@@ -209,16 +262,16 @@ class Change1CreateView(generics.CreateAPIView):
 
 class Change2ListView(generics.ListAPIView):
 
-    queryset = Changes2.objects.all()
-    serializer_class = Changes2
+    queryset = Change2.objects.all()
+    serializer_class = Change2ListSerializer
     filterset_class = Change2Filter
     ordering_fields = '__all__'
 
 
 class Change2CreateView(generics.CreateAPIView):
 
-    queryset = Changes2.objects.all()
-    serializer_class = Change2Serializer
+    queryset = Change2.objects.all()
+    serializer_class = Change2CreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
@@ -227,30 +280,35 @@ class Change2CreateView(generics.CreateAPIView):
         return super(Change2CreateView, self).get_serializer(*args, **kwargs)
 
 
-class UserListView(generics.ListAPIView):
+class IndividualListView(generics.ListAPIView):
 
-    queryset = Changes2.objects.all()
-    serializer_class = Changes2
-    filterset_class = Change2Filter
+    queryset = Individual.objects.all()
+    serializer_class = IndividualListSerializer
+    filterset_class = IndividualFilter
     ordering_fields = '__all__'
 
 
-class UserCreateView(generics.CreateAPIView):
+class IndividualCreateView(generics.CreateAPIView):
 
-    queryset = Users.objects.all()
-    serializer_class = UserSerializer
+    queryset = Individual.objects.all()
+    serializer_class = IndividualCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(UserCreateView, self).get_serializer(*args, **kwargs)
+        return super(IndividualCreateView, self).get_serializer(*args, **kwargs)
+    
+    # def create(self, request, *args, **kwargs):
+    #     serializer = self.get_serializer(data=request.data)
+        
+    #     return super().create(request, *args, **kwargs)
 
 
 class NewSeriesListView(generics.ListAPIView):
 
     queryset = NewSeries.objects.all()
-    serializer_class = NewSeriesSerializer
+    serializer_class = NewSeriesListSerializer
     filterset_class = NewSeriesFilter
     ordering_fields = '__all__'
 
@@ -258,7 +316,7 @@ class NewSeriesListView(generics.ListAPIView):
 class NewSeriesCreateView(generics.CreateAPIView):
 
     queryset = NewSeries.objects.all()
-    serializer_class = NewSeriesSerializer
+    serializer_class = NewSeriesCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
@@ -271,12 +329,12 @@ class NewSeriesUpdateView(generics.UpdateAPIView):
 
     queryset = NewSeries.objects.all()
     lookup_field = 'id'
-    serializer_class = NewSeriesSerializer
+    serializer_class = NewSeriesCreateSerializer
 
 
 class MailingListListView(generics.ListAPIView):
 
-    queryset = MailingLists.objects.all()
+    queryset = MailingList.objects.all()
     serializer_class = MailingListSerializer
     filterset_class = MailingListFilter
     ordering_fields = '__all__'
@@ -284,7 +342,7 @@ class MailingListListView(generics.ListAPIView):
 
 class MailingListCreateView(generics.CreateAPIView):
 
-    queryset = MailingLists.objects.all()
+    queryset = MailingList.objects.all()
     serializer_class = MailingListSerializer
 
     def get_serializer(self, *args, **kwargs):
