@@ -9,25 +9,25 @@ class FileFilter(django_filters.Filter):
     field_class = djongo_models.FileField
 
 
-class AccountFilter(django_filters.FilterSet):
+class IdentityFilter(django_filters.FilterSet):
 
     class Meta:
-        model = Accounts
+        model = Identity
         fields = {
-            'id': ['exact'],
+            # 'id': ['exact'],
             'original_id': ['exact', 'icontains'],
-            'username': ['exact', 'icontains'],
+            'name': ['exact', 'icontains'],
             'email': ['exact', 'icontains'],
-            'user_original_id': ['exact'],
+            # 'individual': ['exact'],
         }
 
 
 class ProjectFilter(django_filters.FilterSet):
 
     class Meta:
-        model = Projects
+        model = Project
         fields = {
-            'id': ['exact'],
+            # 'id': ['exact'],
             'original_id': ['exact', 'icontains'],
             'name': ['exact', 'icontains'],
         }
@@ -45,15 +45,15 @@ class SeriesFilter(django_filters.FilterSet):
     class Meta:
         model = Series
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'name',
             'date__lt',
             'date__gt',
             'cover_letter_content_contain',
-            'project_original_id',
-            'submitter_account_original_id',
-            'submitter_user_original_id',
+            'project',
+            'submitter_identity',
+            'submitter_individual',
         ]
 
     filter_overrides = {
@@ -77,9 +77,9 @@ class PatchFilter(django_filters.FilterSet):
         return queryset.filter(**{lookup: value})
 
     class Meta:
-        model = Patches
+        model = Patch
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'original_id__icontains',
             'name',
@@ -90,14 +90,14 @@ class PatchFilter(django_filters.FilterSet):
             'msg_content_contain',
             'code_diff_contain',
             'commit_ref',
-            'change1_original_id',
-            'change2_original_id',
-            'mailing_list_original_id',
-            'series_original_id',
-            'new_series_original_id',
-            'project_original_id',
-            'submitter_account_original_id',
-            'submitter_user_original_id',
+            'change1',
+            'change2',
+            'mailinglist',
+            'series',
+            'newseries',
+            'project',
+            'submitter_identity',
+            'submitter_individual',
         ]
 
     filter_overrides = {
@@ -119,22 +119,22 @@ class CommentFilter(django_filters.FilterSet):
         return queryset.filter(**{lookup: value})
 
     class Meta:
-        model = Comments
+        model = Comment
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'subject',
             'subject__icontains',
             'date__lt',
             'date__gt',
             'msg_content_contain',
-            'change1_original_id',
-            'change2_original_id',
-            'mailing_list_original_id',
-            'patch_original_id',
-            'project_original_id',
-            'submitter_account_original_id',
-            'submitter_user_original_id',
+            'change1',
+            'change2',
+            'mailinglist',
+            'patch',
+            'project',
+            'submitter_identity',
+            'submitter_individual',
         ]
 
     filter_overrides = {
@@ -151,14 +151,14 @@ class NewSeriesFilter(django_filters.FilterSet):
     class Meta:
         model = NewSeries
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'original_id__icontains',
             # 'cover_letter_msg_id',
-            'project_original_id',
-            # 'submitter_account_original_id',
-            # 'submitter_user_original_id',
-            # 'series_original_id',
+            'project',
+            # 'submitter_identity',
+            # 'submitter_individual',
+            # 'series',
             'inspection_needed',
         ]
 
@@ -168,20 +168,20 @@ class Change1Filter(django_filters.FilterSet):
     original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
 
     class Meta:
-        model = Changes1
+        model = Change1
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'original_id__icontains',
             'is_accepted',
             'parent_commit_id',
             'merged_commit_id',
-            'project_original_id',
-            # 'submitter_account_original_id',
-            # 'submitter_user_original_id',
-            # 'series_original_id',
-            # 'new_series_original_id',
-            # 'patch_original_id',
+            'project',
+            # 'submitter_identity',
+            # 'submitter_individual',
+            # 'series',
+            # 'newseries',
+            # 'patch',
             'inspection_needed',
         ]
 
@@ -191,35 +191,35 @@ class Change2Filter(django_filters.FilterSet):
     original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
 
     class Meta:
-        model = Changes2
+        model = Change2
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'original_id__icontains',
             'is_accepted',
             'parent_commit_id',
             'merged_commit_id',
-            'project_original_id',
-            # 'submitter_account_original_id',
-            # 'submitter_user_original_id',
-            # 'series_original_id',
-            # 'new_series_original_id',
-            # 'patch_original_id',
+            'project',
+            # 'submitter_identity',
+            # 'submitter_individual',
+            # 'series',
+            # 'newseries',
+            # 'patch',
             'inspection_needed',
         ]
 
 
-class UserFilter(django_filters.FilterSet):
+class IndividualFilter(django_filters.FilterSet):
 
     original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
 
     class Meta:
-        model = Users
+        model = Individual
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'original_id__icontains',
-            # 'account_original_id',
+            # 'identity',
         ]
     
 
@@ -230,9 +230,9 @@ class MailingListFilter(django_filters.FilterSet):
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
 
     class Meta:
-        model = MailingLists
+        model = MailingList
         fields = [
-            'id',
+            # 'id',
             'original_id',
             'original_id__icontains',
             'msg_id',
@@ -240,5 +240,5 @@ class MailingListFilter(django_filters.FilterSet):
             'date__lt',
             'date__gt',
             'sender_name',
-            'project_original_id',
+            'project',
         ]
