@@ -11,23 +11,6 @@ from patchwork.static.utils import TextFile
 
 
 class ProjectBulkCreateSerializer(serializers.ListSerializer):
-    
-    # def create(self, validated_data):
-    #     identity_project_map = []
-    #     project_objs = []
-    #     for item in validated_data:
-    #         identities_data = item.pop('maintainer_identity', [])
-    #         identity_project_map.extend([(identity_data.original_id, item['original_id']) for identity_data in identities_data])
-    #         project_objs.append(models.Project(**item))
-
-    #     instance = models.Project.objects.bulk_create(project_objs)
-
-    #     through_objs = [models.Project.maintainer_identity.through(identity_id=x, project_id=y) for x, y in identity_project_map]
-
-    #     if through_objs:
-    #         models.Project.maintainer_identity.through.objects.bulk_create(through_objs)
-
-    #     return instance
 
     def create(self, validated_data):
         result = [models.Project(**item) for item in validated_data]
@@ -35,26 +18,15 @@ class ProjectBulkCreateSerializer(serializers.ListSerializer):
         return models.Project.objects.bulk_create(result)
 
 
+class IdentityBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Identity(**item) for item in validated_data]
+
+        return models.Identity.objects.bulk_create(result)
+
+
 class IndividualBulkCreateSerializer(serializers.ListSerializer):
-    
-    # def create(self, validated_data):
-    #     identity_individual_map = []
-    #     individual_objs = []
-    #     for item in validated_data:
-    #         identities_data = item.pop('identity', [])
-    #         identity_individual_map.extend([(identity_data.original_id, item['original_id']) for identity_data in identities_data])
-    #         individual_objs.append(models.Individual(**item))
-
-    #     instance = models.Individual.objects.bulk_create(individual_objs)
-
-    #     through_objs = [models.Individual.identity.through(identity_id=x, individual_id=y) for x, y in identity_individual_map]
-
-    #     if through_objs:
-    #         models.Individual.identity.through.objects.bulk_create(through_objs)
-
-
-    #     # return models.Individual.objects.bulk_create(result)
-    #     return instance
 
     def create(self, validated_data):
         result = [models.Individual(**item) for item in validated_data]
@@ -87,41 +59,6 @@ class SeriesBulkCreateSerializer(serializers.ListSerializer):
 
 
 class NewSeriesBulkCreateSerializer(serializers.ListSerializer):
-    
-    # def create(self, validated_data):
-    #     identity_newseries_map = []
-    #     individual_newseries_map = []
-    #     series_newseries_map = []
-    #     newseries_objs = []
-
-    #     for item in validated_data:
-    #         identities_data = item.pop('submitter_identity', [])
-    #         individuals_data = item.pop('submitter_individual', [])
-    #         series_data = item.pop('series')
-
-    #         identity_newseries_map.extend([(identity_data.original_id, item['original_id']) for identity_data in identities_data])
-    #         individual_newseries_map.extend([(individual_data.original_id, item['original_id']) for individual_data in individuals_data])
-    #         if series_data:
-    #             series_newseries_map.extend([(series_item.original_id, item['original_id']) for series_item in series_data])
-    #         newseries_objs.append(models.NewSeries(**item))
-        
-    #     instance = models.NewSeries.objects.bulk_create(newseries_objs)
-
-    #     identity_through_objs = [models.NewSeries.submitter_identity.through(identity_id=x, newseries_id=y) for x, y in identity_newseries_map]
-    #     individual_through_objs = [models.NewSeries.submitter_individual.through(individual_id=x, newseries_id=y) for x, y in individual_newseries_map]
-    #     series_through_objs = [models.NewSeries.series.through(series_id=x, newseries_id=y) for x, y in series_newseries_map]
-        
-    #     if identity_through_objs:
-    #         models.NewSeries.submitter_identity.through.objects.bulk_create(identity_through_objs)
-    #     if individual_through_objs:
-    #         models.NewSeries.submitter_individual.through.objects.bulk_create(individual_through_objs)
-    #     if series_through_objs:
-    #         models.NewSeries.series.through.objects.bulk_create(series_through_objs)
-
-    #     # result = [models.NewSeries(**item) for item in validated_data]
-
-    #     # return models.NewSeries.objects.bulk_create(result)
-    #     return instance
 
     def create(self, validated_data):
         result = [models.NewSeries(**item) for item in validated_data]
@@ -147,108 +84,106 @@ class CommentBulkCreateSerializer(serializers.ListSerializer):
 
 class Change1BulkCreateSerializer(serializers.ListSerializer):
     
-    # def create(self, validated_data):
-    #     identity_change1_map = []
-    #     individual_change1_map = []
-    #     series_change1_map = []
-    #     newseries_change1_map = []
-
-    #     change1_objs = []
-
-    #     for item in validated_data:
-    #         identities_data = item.pop('submitter_identity', [])
-    #         individuals_data = item.pop('submitter_individual', [])
-    #         series_data = item.pop('series', [])
-    #         newseries_data = item.pop('newseries', [])
-
-    #         identity_change1_map.extend([(identity_data.original_id, item['original_id']) for identity_data in identities_data])
-    #         individual_change1_map.extend([(individual_data.original_id, item['original_id']) for individual_data in individuals_data])
-    #         if series_data:
-    #             series_change1_map.extend([(series_item.original_id, item['original_id']) for series_item in series_data])
-    #         if newseries_data:
-    #             newseries_change1_map.extend([(newseries_item.original_id, item['original_id']) for newseries_item in newseries_data])
-            
-            
-    #         change1_objs.append(models.Change1(**item))
-
-    #     instance = models.Change1.objects.bulk_create(change1_objs)
-
-    #     identity_through_objs = [models.Change1.submitter_identity.through(identity_id=x, change1_id=y) for x, y in identity_change1_map]
-    #     individual_through_objs = [models.Change1.submitter_individual.through(individual_id=x, change1_id=y) for x, y in individual_change1_map]
-    #     series_through_objs = [models.Change1.series.through(series_id=x, change1_id=y) for x, y in series_change1_map]
-    #     newseries_through_objs = [models.Change1.newseries.through(newseries_id=x, change1_id=y) for x, y in newseries_change1_map]
-
-    #     if identity_through_objs:
-    #         models.Change1.submitter_identity.through.objects.bulk_create(identity_through_objs)
-
-    #     if individual_through_objs:
-    #         models.Change1.submitter_individual.through.objects.bulk_create(individual_through_objs)
-
-    #     if series_through_objs:
-    #         models.Change1.series.through.objects.bulk_create(series_through_objs)
-
-    #     if newseries_through_objs:
-    #         models.Change1.newseries.through.objects.bulk_create(newseries_through_objs)
-
-    #     return instance
-
     def create(self, validated_data):
         result = [models.Change1(**item) for item in validated_data]
 
         return models.Change1.objects.bulk_create(result)
 
 class Change2BulkCreateSerializer(serializers.ListSerializer):
-    
-    # def create(self, validated_data):
-    #     identity_change2_map = []
-    #     individual_change2_map = []
-    #     series_change2_map = []
-    #     newseries_change2_map = []
 
-    #     change2_objs = []
-
-    #     for item in validated_data:
-    #         identities_data = item.pop('submitter_identity', [])
-    #         individuals_data = item.pop('submitter_individual', [])
-    #         series_data = item.pop('series', [])
-    #         newseries_data = item.pop('newseries', [])
-
-    #         identity_change2_map.extend([(identity_data.original_id, item['original_id']) for identity_data in identities_data])
-    #         individual_change2_map.extend([(individual_data.original_id, item['original_id']) for individual_data in individuals_data])
-    #         if series_data:
-    #             series_change2_map.extend([(series_item.original_id, item['original_id']) for series_item in series_data])
-    #         if newseries_data:
-    #             newseries_change2_map.extend([(newseries_item.original_id, item['original_id']) for newseries_item in newseries_data])
-            
-            
-    #         change2_objs.append(models.Change2(**item))
-
-    #     instance = models.Change2.objects.bulk_create(change2_objs)
-
-    #     identity_through_objs = [models.Change2.submitter_identity.through(identity_id=x, change2_id=y) for x, y in identity_change2_map]
-    #     individual_through_objs = [models.Change2.submitter_individual.through(individual_id=x, change2_id=y) for x, y in individual_change2_map]
-    #     series_through_objs = [models.Change2.series.through(series_id=x, change2_id=y) for x, y in series_change2_map]
-    #     newseries_through_objs = [models.Change2.newseries.through(newseries_id=x, change2_id=y) for x, y in newseries_change2_map]
-
-    #     if identity_through_objs:
-    #         models.Change2.submitter_identity.through.objects.bulk_create(identity_through_objs)
-
-    #     if individual_through_objs:
-    #         models.Change2.submitter_individual.through.objects.bulk_create(individual_through_objs)
-
-    #     if series_through_objs:
-    #         models.Change2.series.through.objects.bulk_create(series_through_objs)
-
-    #     if newseries_through_objs:
-    #         models.Change2.newseries.through.objects.bulk_create(newseries_through_objs)
-
-    #     return instance
-    
     def create(self, validated_data):
         result = [models.Change2(**item) for item in validated_data]
 
         return models.Change2.objects.bulk_create(result)
 
+
+class NewSeriesIdentityRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.NewSeriesIdentityRelation(**item) for item in validated_data]
+
+        return models.NewSeriesIdentityRelation.objects.bulk_create(result)
+
+
+class NewSeriesIndividualRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.NewSeriesIndividualRelation(**item) for item in validated_data]
+
+        return models.NewSeriesIndividualRelation.objects.bulk_create(result)
+
+
+class NewSeriesSeriesRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.NewSeriesSeriesRelation(**item) for item in validated_data]
+
+        return models.NewSeriesSeriesRelation.objects.bulk_create(result)
+    
+
+
+class Change1IdentityRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change1IdentityRelation(**item) for item in validated_data]
+
+        return models.Change1IdentityRelation.objects.bulk_create(result)
+
+
+class Change1IndividualRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change1IndividualRelation(**item) for item in validated_data]
+
+        return models.Change1IndividualRelation.objects.bulk_create(result)
+
+
+class Change1SeriesRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change1SeriesRelation(**item) for item in validated_data]
+
+        return models.Change1SeriesRelation.objects.bulk_create(result)
+
+
+class Change1NewSeriesRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change1NewSeriesRelation(**item) for item in validated_data]
+
+        return models.Change1NewSeriesRelation.objects.bulk_create(result)
+
+
+class Change2IdentityRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change2IdentityRelation(**item) for item in validated_data]
+
+        return models.Change2IdentityRelation.objects.bulk_create(result)
+
+
+class Change2IndividualRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change2IndividualRelation(**item) for item in validated_data]
+
+        return models.Change2IndividualRelation.objects.bulk_create(result)
+
+
+class Change2SeriesRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change2SeriesRelation(**item) for item in validated_data]
+
+        return models.Change2SeriesRelation.objects.bulk_create(result)
+
+
+class Change2NewSeriesRelationBulkCreateSerializer(serializers.ListSerializer):
+
+    def create(self, validated_data):
+        result = [models.Change2NewSeriesRelation(**item) for item in validated_data]
+
+        return models.Change2NewSeriesRelation.objects.bulk_create(result)
 
 ##########################################################################################################################################
 
@@ -281,14 +216,15 @@ class IndividualCreateSerializer(serializers.ModelSerializer):
 
 
 class IdentityCreateSerializer(serializers.ModelSerializer):
-    individuals = IndividualCreateSerializer(many=True, read_only=True)
+    # individuals = IndividualCreateSerializer(many=True, read_only=True)
 
     class Meta:
         model = models.Identity
-        fields = ('id', 'original_id', 'email', 'name', 'api_url', 'is_maintainer', 'individuals')
+        fields = ('id', 'original_id', 'email', 'name', 'api_url', 'is_maintainer')
+        list_serializer_class = IdentityBulkCreateSerializer
 
 
-class ProjectIdentityCreateSerializer(serializers.ModelSerializer):
+class ProjectIdentityRelationCreateSerializer(serializers.ModelSerializer):
     project_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Project.objects.all(), read_only=False)
     identity_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
 
@@ -298,7 +234,7 @@ class ProjectIdentityCreateSerializer(serializers.ModelSerializer):
         list_serializer_class = ProjectIdentityRelationBulkCreateSerializer
 
 
-class IndividualIdentityCreateSerializer(serializers.ModelSerializer):
+class IndividualIdentityRelationCreateSerializer(serializers.ModelSerializer):
     individual_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Individual.objects.all(), read_only=False)
     identity_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
 
@@ -387,6 +323,45 @@ class NewSeriesCreateSerializer(serializers.ModelSerializer):
             'inspection_needed',
         )
         list_serializer_class = NewSeriesBulkCreateSerializer
+
+
+    def to_internal_value(self, data):
+        if type(data['cover_letter_msg_id']) == list:
+            data['cover_letter_msg_id'] = json.dumps(data['cover_letter_msg_id'])
+        
+        return super().to_internal_value(data)
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+
+        try:
+            data['cover_letter_msg_id'] = json.loads(data['cover_letter_msg_id'])
+        except:
+            return data
+        
+        return data
+
+
+class NewSeriesListSerializer(serializers.ModelSerializer):
+    project = serializers.SlugRelatedField(slug_field="original_id", read_only=True)
+    patches = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    submitter_identity = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    submitter_individual = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    series = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+
+    class Meta:
+        model = models.NewSeries
+        fields = (
+            'id',
+            'original_id',
+            'cover_letter_msg_id',
+            'project',
+            'patches',
+            'submitter_identity',
+            'submitter_individual',
+            'series',
+            'inspection_needed'
+        )
 
 
     def to_internal_value(self, data):
@@ -558,38 +533,6 @@ class PatchListSerializer(PatchStandardSerializer):
         return data
 
 
-class NewSeriesListSerializer(serializers.ModelSerializer):
-    project = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Project.objects.all(), read_only=False)
-    patches = PatchListSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = models.NewSeries
-        fields = (
-            'id',
-            'original_id',
-            'cover_letter_msg_id',
-            'project',
-            'patches',
-            'inspection_needed',
-        )
-
-    def to_internal_value(self, data):
-        if type(data['cover_letter_msg_id']) == list:
-            data['cover_letter_msg_id'] = json.dumps(data['cover_letter_msg_id'])
-        
-        return super().to_internal_value(data)
-
-    def to_representation(self, instance):
-        data = super().to_representation(instance)
-
-        try:
-            data['cover_letter_msg_id'] = json.loads(data['cover_letter_msg_id'])
-        except:
-            return data
-        
-        return data
-
-
 class CommentStandardSerializer(serializers.ModelSerializer):
     msg_content = serializers.CharField(allow_blank=True, allow_null=True)
 
@@ -747,8 +690,13 @@ class Change1ListSerializer(serializers.ModelSerializer):
 
     project = serializers.SlugRelatedField(slug_field="original_id", read_only=True)
 
-    patches = PatchListSerializer(many=True, read_only=True)
-    comments = CommentListSerializer(many=True, read_only=True)
+    patches = embedded.PatchSerializer(many=True, read_only=True)
+    comments = embedded.CommentSerializer(many=True, read_only=True)
+
+    submitter_identity = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    submitter_individual = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    series = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    newseries = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
 
     class Meta:
         model = models.Change1
@@ -762,6 +710,10 @@ class Change1ListSerializer(serializers.ModelSerializer):
             'project',
             'patches',
             'comments',
+            'submitter_identity',
+            'submitter_individual',
+            'series',
+            'newseries',
             'inspection_needed'
         )
 
@@ -782,8 +734,13 @@ class Change2ListSerializer(serializers.ModelSerializer):
 
     project = serializers.SlugRelatedField(slug_field="original_id", read_only=True)
 
-    patches = PatchListSerializer(many=True, read_only=True)
-    comments = CommentListSerializer(many=True, read_only=True)
+    patches = embedded.PatchSerializer(many=True, read_only=True)
+    comments = embedded.CommentSerializer(many=True, read_only=True)
+
+    submitter_identity = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    submitter_individual = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    series = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
+    newseries = serializers.SlugRelatedField(slug_field="original_id", many=True, read_only=True)
 
     class Meta:
         model = models.Change2
@@ -797,6 +754,10 @@ class Change2ListSerializer(serializers.ModelSerializer):
             'project',
             'patches',
             'comments',
+            'submitter_identity',
+            'submitter_individual',
+            'series',
+            'newseries',
             'inspection_needed'
         )
 
@@ -811,6 +772,116 @@ class Change2ListSerializer(serializers.ModelSerializer):
         data['merged_commit_id'] = merged_commit_id
             
         return data
+
+
+class NewSeriesIdentityRelationCreateSerializer(serializers.ModelSerializer):
+    newseries_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False)
+    identity_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.NewSeriesIdentityRelation
+        fields = '__all__'
+        list_serializer_class = NewSeriesIdentityRelationBulkCreateSerializer
+
+
+class NewSeriesIndividualRelationCreateSerializer(serializers.ModelSerializer):
+    newseries_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False)
+    individual_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Individual.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.NewSeriesIndividualRelation
+        fields = '__all__'
+        list_serializer_class = NewSeriesIndividualRelationBulkCreateSerializer
+
+
+class NewSeriesSeriesRelationCreateSerializer(serializers.ModelSerializer):
+    newseries_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False)
+    series_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Series.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.NewSeriesSeriesRelation
+        fields = '__all__'
+        list_serializer_class = NewSeriesSeriesRelationBulkCreateSerializer
+
+
+class Change1IdentityRelationCreateSerializer(serializers.ModelSerializer):
+    change1_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change1.objects.all(), read_only=False)
+    identity_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change1IdentityRelation
+        fields = '__all__'
+        list_serializer_class = Change1IdentityRelationBulkCreateSerializer
+
+
+class Change1IndividualRelationCreateSerializer(serializers.ModelSerializer):
+    change1_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change1.objects.all(), read_only=False)
+    individual_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Individual.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change1IndividualRelation
+        fields = '__all__'
+        list_serializer_class = Change1IndividualRelationBulkCreateSerializer
+
+
+class Change1SeriesRelationCreateSerializer(serializers.ModelSerializer):
+    change1_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change1.objects.all(), read_only=False)
+    series_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Series.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change1SeriesRelation
+        fields = '__all__'
+        list_serializer_class = Change1SeriesRelationBulkCreateSerializer
+
+
+class Change1NewSeriesRelationCreateSerializer(serializers.ModelSerializer):
+    change1_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change1.objects.all(), read_only=False)
+    newseries_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change1NewSeriesRelation
+        fields = '__all__'
+        list_serializer_class = Change1NewSeriesRelationBulkCreateSerializer
+
+
+class Change2IdentityRelationCreateSerializer(serializers.ModelSerializer):
+    change2_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change2.objects.all(), read_only=False)
+    identity_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change2IdentityRelation
+        fields = '__all__'
+        list_serializer_class = Change2IdentityRelationBulkCreateSerializer
+
+
+class Change2IndividualRelationCreateSerializer(serializers.ModelSerializer):
+    change2_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change2.objects.all(), read_only=False)
+    individual_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Individual.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change2IndividualRelation
+        fields = '__all__'
+        list_serializer_class = Change2IndividualRelationBulkCreateSerializer
+
+
+class Change2SeriesRelationCreateSerializer(serializers.ModelSerializer):
+    change2_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change2.objects.all(), read_only=False)
+    series_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Series.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change2SeriesRelation
+        fields = '__all__'
+        list_serializer_class = Change2SeriesRelationBulkCreateSerializer
+
+
+class Change2NewSeriesRelationCreateSerializer(serializers.ModelSerializer):
+    change2_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.Change2.objects.all(), read_only=False)
+    newseries_original_id = serializers.SlugRelatedField(slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False)
+
+    class Meta:
+        model = models.Change2NewSeriesRelation
+        fields = '__all__'
+        list_serializer_class = Change2NewSeriesRelationBulkCreateSerializer
 
 
 class MailingListsBulkCreateListSerializer(serializers.ListSerializer):
