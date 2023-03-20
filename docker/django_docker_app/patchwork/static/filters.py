@@ -14,7 +14,7 @@ class IdentityFilter(django_filters.FilterSet):
     class Meta:
         model = Identity
         fields = {
-            # 'id': ['exact'],
+            'id': ['exact'],
             'original_id': ['exact', 'icontains'],
             'name': ['exact', 'icontains'],
             'email': ['exact', 'icontains'],
@@ -27,7 +27,7 @@ class ProjectFilter(django_filters.FilterSet):
     class Meta:
         model = Project
         fields = {
-            # 'id': ['exact'],
+            'id': ['exact'],
             'original_id': ['exact', 'icontains'],
             'name': ['exact', 'icontains'],
         }
@@ -45,7 +45,7 @@ class SeriesFilter(django_filters.FilterSet):
     class Meta:
         model = Series
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'name',
             'date__lt',
@@ -79,7 +79,7 @@ class PatchFilter(django_filters.FilterSet):
     class Meta:
         model = Patch
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'original_id__icontains',
             'name',
@@ -121,7 +121,7 @@ class CommentFilter(django_filters.FilterSet):
     class Meta:
         model = Comment
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'subject',
             'subject__icontains',
@@ -151,7 +151,7 @@ class NewSeriesFilter(django_filters.FilterSet):
     class Meta:
         model = NewSeries
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'original_id__icontains',
             # 'cover_letter_msg_id',
@@ -170,7 +170,7 @@ class Change1Filter(django_filters.FilterSet):
     class Meta:
         model = Change1
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'original_id__icontains',
             'is_accepted',
@@ -193,7 +193,7 @@ class Change2Filter(django_filters.FilterSet):
     class Meta:
         model = Change2
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'original_id__icontains',
             'is_accepted',
@@ -216,7 +216,7 @@ class IndividualFilter(django_filters.FilterSet):
     class Meta:
         model = Individual
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'original_id__icontains',
             # 'identity',
@@ -232,7 +232,7 @@ class MailingListFilter(django_filters.FilterSet):
     class Meta:
         model = MailingList
         fields = [
-            # 'id',
+            'id',
             'original_id',
             'original_id__icontains',
             'msg_id',
