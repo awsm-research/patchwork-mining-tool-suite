@@ -57,7 +57,6 @@ class Series(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE, blank=True, null=True, to_field="original_id", db_column="project")
     submitter_identity = models.ForeignKey(Identity, on_delete=models.RESTRICT, blank=True, null=True, to_field="original_id", db_column="submitter_identity")
     submitter_individual = models.ForeignKey(Individual, on_delete=models.RESTRICT, blank=True, null=True, to_field="original_id", db_column="submitter_individual")
-    # newseries = models.ForeignKey(NewSeries, on_delete=models.DO_NOTHING, blank=True, null=True)
 
 
 class NewSeries(models.Model):
@@ -65,10 +64,25 @@ class NewSeries(models.Model):
     cover_letter_msg_id = models.TextField(blank=True, null=True)
 
     project = models.ForeignKey(Project, on_delete=models.CASCADE, blank=True, null=True, to_field="original_id", db_column="project")
-    # submitter_identity = models.ManyToManyField(Identity, blank=True)
-    # submitter_individual = models.ManyToManyField(Individual, blank=True)
-    # series = models.ManyToManyField(Series, blank=True)
+    submitter_identity = models.ManyToManyField(Identity, through="NewSeriesIdentityRelation", blank=True)
+    submitter_individual = models.ManyToManyField(Individual, through="NewSeriesIndividualRelation", blank=True)
+    series = models.ManyToManyField(Series, through="NewSeriesSeriesRelation", blank=True)
     inspection_needed = models.BooleanField(default=False)
+
+
+class NewSeriesIdentityRelation(models.Model):
+    newseries_original_id = models.ForeignKey(NewSeries, on_delete=models.CASCADE, to_field="original_id", db_column="newseries_original_id")
+    identity_original_id = models.ForeignKey(Identity, on_delete=models.CASCADE, to_field="original_id", db_column="identity_original_id")
+
+
+class NewSeriesIndividualRelation(models.Model):
+    newseries_original_id = models.ForeignKey(NewSeries, on_delete=models.CASCADE, to_field="original_id", db_column="newseries_original_id")
+    individual_original_id = models.ForeignKey(Individual, on_delete=models.CASCADE, to_field="original_id", db_column="individual_original_id")
+
+
+class NewSeriesSeriesRelation(models.Model):
+    newseries_original_id = models.ForeignKey(NewSeries, on_delete=models.CASCADE, to_field="original_id", db_column="newseries_original_id")
+    series_original_id = models.ForeignKey(Series, on_delete=models.CASCADE, to_field="original_id", db_column="series_original_id")
 
     
 class Change1(models.Model):
@@ -79,11 +93,31 @@ class Change1(models.Model):
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project = models.ForeignKey(Project, on_delete=models.CASCADE, blank=True, null=True, to_field="original_id", db_column="project")
-    # submitter_identity = models.ManyToManyField(Identity, blank=True, null=True)
-    # submitter_individual = models.ManyToManyField(Individual, blank=True, null=True)
-    # series = models.ManyToManyField(Series, blank=True, null=True)
-    # newseries = models.ManyToManyField(NewSeries, blank=True, null=True)
+    submitter_identity = models.ManyToManyField(Identity, through="Change1IdentityRelation", blank=True, null=True)
+    submitter_individual = models.ManyToManyField(Individual, through="Change1IndividualRelation", blank=True, null=True)
+    series = models.ManyToManyField(Series, through="Change1SeriesRelation", blank=True, null=True)
+    newseries = models.ManyToManyField(NewSeries, through="Change1NewSeriesRelation", blank=True, null=True)
     inspection_needed = models.BooleanField(default=False)
+
+
+class Change1IdentityRelation(models.Model):
+    change1_original_id = models.ForeignKey(Change1, on_delete=models.CASCADE, to_field="original_id", db_column="change1_original_id")
+    identity_original_id = models.ForeignKey(Identity, on_delete=models.CASCADE, to_field="original_id", db_column="identity_original_id")
+
+
+class Change1IndividualRelation(models.Model):
+    change1_original_id = models.ForeignKey(Change1, on_delete=models.CASCADE, to_field="original_id", db_column="change1_original_id")
+    individual_original_id = models.ForeignKey(Individual, on_delete=models.CASCADE, to_field="original_id", db_column="individual_original_id")
+
+
+class Change1SeriesRelation(models.Model):
+    change1_original_id = models.ForeignKey(Change1, on_delete=models.CASCADE, to_field="original_id", db_column="change1_original_id")
+    series_original_id = models.ForeignKey(Series, on_delete=models.CASCADE, to_field="original_id", db_column="series_original_id")
+
+
+class Change1NewSeriesRelation(models.Model):
+    change1_original_id = models.ForeignKey(Change1, on_delete=models.CASCADE, to_field="original_id", db_column="change1_original_id")
+    newseries_original_id = models.ForeignKey(NewSeries, on_delete=models.CASCADE, to_field="original_id", db_column="newseries_original_id")
 
 
 class Change2(models.Model):
@@ -94,11 +128,31 @@ class Change2(models.Model):
     commit_date = models.DateTimeField(blank=True, null=True)
     
     project = models.ForeignKey(Project, on_delete=models.CASCADE, blank=True, null=True, to_field="original_id", db_column="project")
-    # submitter_identity = models.ManyToManyField(Identity, blank=True)
-    # submitter_individual = models.ManyToManyField(Individual, blank=True)
-    # series = models.ManyToManyField(Series, blank=True)
-    # newseries = models.ManyToManyField(NewSeries, blank=True)
+    submitter_identity = models.ManyToManyField(Identity, through="Change2IdentityRelation", blank=True, null=True)
+    submitter_individual = models.ManyToManyField(Individual, through="Change2IndividualRelation", blank=True, null=True)
+    series = models.ManyToManyField(Series, through="Change2SeriesRelation", blank=True, null=True)
+    newseries = models.ManyToManyField(NewSeries, through="Change2NewSeriesRelation", blank=True, null=True)
     inspection_needed = models.BooleanField(default=False)
+
+
+class Change2IdentityRelation(models.Model):
+    change2_original_id = models.ForeignKey(Change2, on_delete=models.CASCADE, to_field="original_id", db_column="change2_original_id")
+    identity_original_id = models.ForeignKey(Identity, on_delete=models.CASCADE, to_field="original_id", db_column="identity_original_id")
+
+
+class Change2IndividualRelation(models.Model):
+    change2_original_id = models.ForeignKey(Change2, on_delete=models.CASCADE, to_field="original_id", db_column="change2_original_id")
+    individual_original_id = models.ForeignKey(Individual, on_delete=models.CASCADE, to_field="original_id", db_column="individual_original_id")
+
+
+class Change2SeriesRelation(models.Model):
+    change2_original_id = models.ForeignKey(Change2, on_delete=models.CASCADE, to_field="original_id", db_column="change2_original_id")
+    series_original_id = models.ForeignKey(Series, on_delete=models.CASCADE, to_field="original_id", db_column="series_original_id")
+
+
+class Change2NewSeriesRelation(models.Model):
+    change2_original_id = models.ForeignKey(Change2, on_delete=models.CASCADE, to_field="original_id", db_column="change2_original_id")
+    newseries_original_id = models.ForeignKey(NewSeries, on_delete=models.CASCADE, to_field="original_id", db_column="newseries_original_id")
 
     
 class MailingList(models.Model):
