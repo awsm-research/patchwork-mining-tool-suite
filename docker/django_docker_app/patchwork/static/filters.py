@@ -64,8 +64,8 @@ class SeriesFilter(django_filters.FilterSet):
 
 
 class PatchFilter(django_filters.FilterSet):
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
-    name__icontains = django_filters.DateTimeFilter(field_name='name', lookup_expr='icontians')
+    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
+    name__icontains = django_filters.CharFilter(field_name='name', lookup_expr='icontains')
 
     date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
@@ -108,7 +108,7 @@ class PatchFilter(django_filters.FilterSet):
 
 
 class CommentFilter(django_filters.FilterSet):
-    subject__icontains = django_filters.DateTimeFilter(field_name='subject', lookup_expr='icontians')
+    subject__icontains = django_filters.CharFilter(field_name='subject', lookup_expr='icontains')
 
     date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
@@ -146,7 +146,7 @@ class CommentFilter(django_filters.FilterSet):
 
 class NewSeriesFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
 
     class Meta:
         model = NewSeries
@@ -165,7 +165,7 @@ class NewSeriesFilter(django_filters.FilterSet):
 
 class Change1Filter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
 
     class Meta:
         model = Change1
@@ -188,7 +188,7 @@ class Change1Filter(django_filters.FilterSet):
 
 class Change2Filter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
 
     class Meta:
         model = Change2
@@ -211,7 +211,7 @@ class Change2Filter(django_filters.FilterSet):
 
 class IndividualFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
 
     class Meta:
         model = Individual
@@ -225,7 +225,7 @@ class IndividualFilter(django_filters.FilterSet):
 
 class MailingListFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.DateTimeFilter(field_name='original_id', lookup_expr='icontians')
+    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
     date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
     date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
 
