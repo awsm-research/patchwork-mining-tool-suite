@@ -12,7 +12,7 @@ SIZE_LIMIT = 16793600
 
 class AccessData():
     
-    def __init__(self, endpoint="http://localhost:8000", batch_size=20000):
+    def __init__(self, endpoint="http://localhost:8000", batch_size=10000):
         self.__item_types = [
             'identity', 
             'project', 
@@ -333,6 +333,102 @@ class AccessData():
                                 self.__post_data(standard_data, item_type)
                             if large_content_data:
                                 self.__post_data(large_content_data, item_type, 'large_content/')
+                        
+                        # change
+                        elif item_type == self.__item_types[5] or item_type == self.__item_types[6]:
+                            change_type = 'change1' if item_type == self.__item_types[5] else 'change2'
+
+                            identity_relation_data = []
+                            individual_relation_data = []
+                            series_relation_data = []
+                            newseries_relation_data = []
+
+                            for data_item in json_data_batch:
+                                identity_info = data_item['submitter_identity']
+                                individual_info = data_item['submitter_individual']
+                                series_info = data_item['series']
+                                newseries_info = data_item['newseries']
+
+                                for identity_item in identity_info:
+                                    temp_relation = {
+                                        f'{change_type}_original_id': data_item['original_id'],
+                                        'identity_original_id': identity_item,
+                                    }
+                                    identity_relation_data.append(temp_relation)
+
+                                for individual_item in individual_info:
+                                    temp_relation = {
+                                        f'{change_type}_original_id': data_item['original_id'],
+                                        'individual_original_id': individual_item,
+                                    }
+                                    individual_relation_data.append(temp_relation)
+
+                                for series_item in series_info:
+                                    temp_relation = {
+                                        f'{change_type}_original_id': data_item['original_id'],
+                                        'series_original_id': series_item,
+                                    }
+                                    series_relation_data.append(temp_relation)
+
+                                for newseries_item in newseries_info:
+                                    temp_relation = {
+                                        f'{change_type}_original_id': data_item['original_id'],
+                                        'newseries_original_id': newseries_item,
+                                    }
+                                    newseries_relation_data.append(temp_relation)
+                                
+                                data_item['submitter_identity'] = []
+                                data_item['submitter_individual'] = []
+                                data_item['series'] = []
+                                data_item['newseries'] = []
+
+                            self.__post_data(json_data_batch, item_type)
+                            self.__post_data(identity_relation_data, f"{change_type}identityrelation")
+                            self.__post_data(individual_relation_data, f"{change_type}individualrelation")
+                            self.__post_data(series_relation_data, f"{change_type}seriesrelation")
+                            self.__post_data(newseries_relation_data, f"{change_type}newseriesrelation")
+
+                        
+                        # newseries
+                        elif item_type == self.__item_types[7]:
+                            identity_relation_data = []
+                            individual_relation_data = []
+                            series_relation_data = []
+
+                            for data_item in json_data_batch:
+                                identity_info = data_item['submitter_identity']
+                                individual_info = data_item['submitter_individual']
+                                series_info = data_item['series']
+
+                                for identity_item in identity_info:
+                                    temp_relation = {
+                                        'newseries_original_id': data_item['original_id'],
+                                        'identity_original_id': identity_item,
+                                    }
+                                    identity_relation_data.append(temp_relation)
+
+                                for individual_item in individual_info:
+                                    temp_relation = {
+                                        'newseries_original_id': data_item['original_id'],
+                                        'individual_original_id': individual_item,
+                                    }
+                                    individual_relation_data.append(temp_relation)
+
+                                for series_item in series_info:
+                                    temp_relation = {
+                                        'newseries_original_id': data_item['original_id'],
+                                        'series_original_id': series_item,
+                                    }
+                                    series_relation_data.append(temp_relation)
+                                
+                                data_item['submitter_identity'] = []
+                                data_item['submitter_individual'] = []
+                                data_item['series'] = []
+
+                            self.__post_data(json_data_batch, item_type)
+                            self.__post_data(identity_relation_data, "newseriesidentityrelation")
+                            self.__post_data(individual_relation_data, "newseriesindividualrelation")
+                            self.__post_data(series_relation_data, "newseriesseriesrelation")
 
                         # individual
                         elif item_type == self.__item_types[9]:
