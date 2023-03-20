@@ -116,12 +116,13 @@ class PatchworkSeriesSpider(scrapy.Spider):
         'HTTPERROR_ALLOWED_CODES': [404, 500]
     }
 
-    def __init__(self, start_series_id=1, end_series_id=MAX_SERIES_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
+    def __init__(self, start_series_id=1, end_series_id=MAX_SERIES_ID, endpoint_type=ENDPOINT_TYPE, fileidx=1, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.current_series_id = int(start_series_id)
         self.max_series_id = int(end_series_id)
         self.endpoint_type = endpoint_type
+        self.fileidx = fileidx
 
         self.base_func = PatchworkCrawlerBase()
 
