@@ -30,6 +30,20 @@ urlpatterns = [
     path('projectidentityrelation/create/', views.ProjectIdentityRelationCreateView.as_view()),
     path('individualidentityrelation/create/', views.IndividualIdentityRelationCreateView.as_view()),
 
+    path('newseriesidentityrelation/create/', views.NewSeriesIdentityRelationCreateView.as_view()),
+    path('newseriesindividualrelation/create/', views.NewSeriesIndividualRelationCreateView.as_view()),
+    path('newseriesseriesrelation/create/', views.NewSeriesSeriesRelationCreateView.as_view()),
+
+    path('change1identityrelation/create/', views.Change1IdentityRelationCreateView.as_view()),
+    path('change1individualrelation/create/', views.Change1IndividualRelationCreateView.as_view()),
+    path('change1seriesrelation/create/', views.Change1SeriesRelationCreateView.as_view()),
+    path('change1newseriesrelation/create/', views.Change1NewSeriesRelationCreateView.as_view()),
+
+    path('change2identityrelation/create/', views.Change2IdentityRelationCreateView.as_view()),
+    path('change2individualrelation/create/', views.Change2IndividualRelationCreateView.as_view()),
+    path('change2seriesrelation/create/', views.Change2SeriesRelationCreateView.as_view()),
+    path('change2newseriesrelation/create/', views.Change2NewSeriesRelationCreateView.as_view()),
+
     path('series/create/large_content/', views.SeriesFileCreateView.as_view()),
     path('patch/create/large_content/', views.PatchContentFileCreateView.as_view()),
     path('patch/create/large_diff/', views.PatchDiffFileCreateView.as_view()),
