@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  scrapy_docker_app:
+    build:
+      context: ./scrapy_docker_app
+    volumes:
+      - ./scrapy_docker_app:/scrapy_docker_app
+    ports:
+      - "6800:6800"
+    image: scrapy_docker_app:latest
+    container_name: scrapy_docker_container
+    command: >
+      sh -c "rm -rf twistd.pid&&
+             scrapyd"
+
+
+  django_docker_app:
+    build:
+      context: ./django_docker_app
+    volumes:
+      - ./django_docker_app:/django_docker_app
+    ports:
+      - "8000:8000"
+    image: django_docker_app:latest
+    container_name: django_docker_container
+    command: >
+      sh -c "python manage.py wait_for_db &&
+             python manage.py makemigrations patchwork&&
+             python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_HOST=mongodb://mongodb:27017
+      - DB_NAME=code_review_db
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - dev-db-data:/var/lib/mongodb/data
+    environment:
+      - MONGO_INITDB_DATABASE=code_review_db
+    container_name: mongodb_docker_container
+
+volumes:
+  dev-db-data:
