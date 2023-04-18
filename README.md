@@ -23,6 +23,7 @@ This project provides a suite of tools for mining and further processing Patchwo
         1. [Customise spiders in scrapyd](#221-customise-spiders-in-scrapyd)
         2. [Customise spiders from script](#222-customise-spiders-from-script)
         3. [Customise spiders run using commands](#223-customise-spiders-run-using-commands)
+    3. [Insert data to database](#23-insert-data-to-database)
 3. [Data dictionary](#3-data-dictionary)
     1. [Application filter](#31-application-filter)
 
@@ -201,6 +202,11 @@ Similar to customisation in scrapyd, with the argument option `-a`
 # take crawling project as an example
 scrapy crawl <spider-name> -a start_project_id=<specified-id> -a end_project_id=<specified-id> -a endpoint_type=<endpoint-name>
 ```
+
+### 2.3. Insert data to database
+<!-- TODO add steps -->
+_how to run grouping algorithms_
+
 ## 3. Data dictionary
 <!-- TODO add high-level ER diagram -->
 This section describes the high-level structure of the dataset.
