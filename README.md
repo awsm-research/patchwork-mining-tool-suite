@@ -12,19 +12,19 @@ This project provides a suite of tools for mining and further processing Patchwo
 
 ## Table of Content
 1. [Provided dataset](#1-provided-dataset)
-  1. [Get provided dataset](#11-get-provided-dataset)
-  2. [Analyse provided dataset](#12-analyse-provided-dataset)
+    1. [Get provided dataset](#11-get-provided-dataset)
+    2. [Analyse provided dataset](#12-analyse-provided-dataset)
 2. [Data crawling](#2-data-crawling)
-  1. [Basic steps for crawling](#21-basic-steps-for-crawling)
-    1. [Schedule spiders on scrapyd](#211-schedule-spiders-on-scrapyd)
-    2. [Run spiders from script](#212-run-spiders-from-script)
-    3. [Run spiders using commands](#213-run-spiders-using-commands)
-  2. [Customise spiders](#22-customise-spiders)
-    1. [Customise spiders in scrapyd](#221-customise-spiders-in-scrapyd)
-    2. [Customise spiders from script](#222-customise-spiders-from-script)
-    3. [Customise spiders run using commands](#223-customise-spiders-run-using-commands)
+    1. [Basic steps for crawling](#21-basic-steps-for-crawling)
+        1. [Schedule spiders on scrapyd](#211-schedule-spiders-on-scrapyd)
+        2. [Run spiders from script](#212-run-spiders-from-script)
+        3. [Run spiders using commands](#213-run-spiders-using-commands)
+    2. [Customise spiders](#22-customise-spiders)
+        1. [Customise spiders in scrapyd](#221-customise-spiders-in-scrapyd)
+        2. [Customise spiders from script](#222-customise-spiders-from-script)
+        3. [Customise spiders run using commands](#223-customise-spiders-run-using-commands)
 3. [Data dictionary](#3-data-dictionary)
-  1. [Application filter](#31-application-filter)
+    1. [Application filter](#31-application-filter)
 
 
 ## 1. Provided dataset
