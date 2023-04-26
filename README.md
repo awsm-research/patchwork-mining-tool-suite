@@ -247,7 +247,7 @@ comment_data = access_data.load_json("path/to/crawled/comment/data")
 After loading the data, instantiate ProcessInitialData to run the approaches.
 
 ```python
-process = application_layer.ProcessInitialData()
+process_data = application_layer.ProcessInitialData()
 ```
 
 However, newseries, change1, change2, and individual data are newly generated data and they do not have original id as those crawled from Patchwork (See data attributes in the [data dictionary](#3-data-dictionary)), so their initial original ids are required to be specified **if the approaches are not run at the first time**.
