@@ -19,26 +19,27 @@ class MailingListItem(scrapy.Item):
     date = scrapy.Field()
     sender_name = scrapy.Field()
     web_url = scrapy.Field()
-    project_original_id = scrapy.Field()
+    project = scrapy.Field()
     
 
-class AccountItem(scrapy.Item):
+class IdentityItem(scrapy.Item):
     original_id = scrapy.Field()
     email = scrapy.Field()
-    username = scrapy.Field()
+    name = scrapy.Field()
     api_url = scrapy.Field()
-    user_original_id = scrapy.Field()
+    project = scrapy.Field()
+    is_maintainer = scrapy.Field()
 
 
-class ProjectAccountItem(AccountItem):
+class ProjectIdentityItem(IdentityItem):
     source = 'project'
 
 
-class SeriesAccountItem(AccountItem):
+class SeriesIdentityItem(IdentityItem):
     source = 'series'
 
 
-class PatchAccountItem(AccountItem):
+class PatchIdentityItem(IdentityItem):
     source = 'patch'
 
 
@@ -50,8 +51,7 @@ class ProjectItem(scrapy.Item):
     web_url = scrapy.Field()
     list_id = scrapy.Field()
     list_address = scrapy.Field()
-    maintainer_account_original_id = scrapy.Field()
-    maintainer_user_original_id = scrapy.Field()
+    maintainer_identity = scrapy.Field()
 
 
 class SeriesItem(scrapy.Item):
@@ -65,9 +65,9 @@ class SeriesItem(scrapy.Item):
     cover_letter_content = scrapy.Field()
     api_url = scrapy.Field()
     web_url = scrapy.Field()
-    project_original_id = scrapy.Field()
-    submitter_account_original_id = scrapy.Field()
-    submitter_user_original_id = scrapy.Field()
+    project = scrapy.Field()
+    submitter_identity = scrapy.Field()
+    submitter_individual = scrapy.Field()
 
 
 class PatchItem(scrapy.Item):
@@ -81,15 +81,15 @@ class PatchItem(scrapy.Item):
     api_url = scrapy.Field()
     web_url = scrapy.Field()
     commit_ref = scrapy.Field()
-    reply_to_msg_id = scrapy.Field()
-    change1_original_id = scrapy.Field()
-    change2_original_id = scrapy.Field()
-    mailing_list_original_id = scrapy.Field()
-    series_original_id = scrapy.Field()
-    new_series_original_id = scrapy.Field()
-    submitter_account_original_id = scrapy.Field()
-    submitter_user_original_id = scrapy.Field()
-    project_original_id = scrapy.Field()
+    in_reply_to = scrapy.Field()
+    change1 = scrapy.Field()
+    change2 = scrapy.Field()
+    mailinglist = scrapy.Field()
+    series = scrapy.Field()
+    newseries = scrapy.Field()
+    submitter_identity = scrapy.Field()
+    submitter_individual = scrapy.Field()
+    project = scrapy.Field()
 
 
 class CommentItem(scrapy.Item):
@@ -98,12 +98,12 @@ class CommentItem(scrapy.Item):
     msg_content = scrapy.Field()
     date = scrapy.Field()
     subject = scrapy.Field()
-    reply_to_msg_id = scrapy.Field()
+    in_reply_to = scrapy.Field()
     web_url = scrapy.Field()
-    change1_original_id = scrapy.Field()
-    change2_original_id = scrapy.Field()
-    mailing_list_original_id = scrapy.Field()
-    submitter_account_original_id = scrapy.Field()
-    submitter_user_original_id = scrapy.Field()
-    patch_original_id = scrapy.Field()
-    project_original_id = scrapy.Field()
+    change1 = scrapy.Field()
+    change2 = scrapy.Field()
+    mailinglist = scrapy.Field()
+    submitter_identity = scrapy.Field()
+    submitter_individual = scrapy.Field()
+    patch = scrapy.Field()
+    project = scrapy.Field()

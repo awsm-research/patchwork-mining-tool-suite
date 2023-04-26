@@ -36,12 +36,13 @@ class PatchworkProjectSpider(scrapy.Spider):
     }
 
 
-    def __init__(self, start_project_id=1, end_project_id=MAX_PROJECT_ID, endpoint_type=ENDPOINT_TYPE, *args, **kwargs):
+    def __init__(self, start_project_id=1, end_project_id=MAX_PROJECT_ID, endpoint_type=ENDPOINT_TYPE, fileidx=1, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.current_project_id = int(start_project_id)
         self.max_project_id = int(end_project_id)
         self.endpoint_type = endpoint_type
+        self.fileidx = fileidx
 
         self.base_func = PatchworkCrawlerBase()
 
@@ -59,22 +60,22 @@ class PatchworkProjectSpider(scrapy.Spider):
             maintainers = item['maintainers']
             maintainer_list = list()
 
-            # current_account_list = list()
             for maintainer in maintainers:
-                maintainer_original_id = '-'.join([self.endpoint_type, 'account', str(maintainer['id'])])
+                maintainer_original_id = '-'.join([self.endpoint_type, 'user', str(maintainer['id'])])
                 maintainer_api_url = maintainer['url']
                 maintainer_email = maintainer['email']
                 maintainer_username = maintainer['username']
 
-                account_item = ProjectAccountItem(
+                identity_item = ProjectIdentityItem(
                     original_id = maintainer_original_id,
                     email = maintainer_email,
-                    username = maintainer_username,
+                    name = maintainer_username,
                     api_url = maintainer_api_url,
-                    user_original_id = None,
+                    project = '-'.join([self.endpoint_type, 'project', str(item['id'])]),
+                    is_maintainer = True,
                 )
 
-                yield account_item
+                yield identity_item
 
                 maintainer_list.append(maintainer_original_id)
                 
@@ -87,8 +88,7 @@ class PatchworkProjectSpider(scrapy.Spider):
                 web_url = item['web_url'],
                 list_id = item['list_id'],
                 list_address = item['list_email'],
-                maintainer_account_original_id = maintainer_list,
-                maintainer_user_original_id = list()
+                maintainer_identity = maintainer_list,
             )
 
             yield project_item
@@ -128,21 +128,6 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
         self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}"]
 
-    # def start_requests(self):
-    #     start_series_id = getattr(self, 'start_series_id', None)
-    #     end_series_id = getattr(self, 'end_series_id', None)
-    #     org = getattr(self, 'org', None)
-
-    #     if start_series_id is not None:
-    #         self.current_series_id = int(start_series_id)
-    #     if end_series_id is not None:
-    #         self.max_series_id = int(end_series_id)
-    #     if org is not None:
-    #         self.endpoint_type = endpoint_type
-    #     url = f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}"
-    #     yield scrapy.Request(url, self.parse)
-
-
     def parse(self, response):
         if response.status == 200:
 
@@ -155,23 +140,23 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
             submitter = item['submitter']
 
-            submitter_original_id = '-'.join([self.endpoint_type, 'account', str(submitter['id'])])
+            series_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
+
+            submitter_original_id = '-'.join([self.endpoint_type, 'people', str(submitter['id'])])
             submitter_api_url = submitter['url']
             submitter_email = submitter['email']
             submitter_username = submitter['name']
 
-
-            account_item = SeriesAccountItem(
+            identity_item = SeriesIdentityItem(
                 original_id = submitter_original_id,
                 email = submitter_email,
-                username = submitter_username,
+                name = submitter_username,
                 api_url = submitter_api_url,
-                user_original_id = None,
+                project = series_project_original_id,
+                is_maintainer = False,
             )
 
-            yield account_item
-
-            series_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
+            yield identity_item
             
             series_cover_letter_msg_id = None
             series_cover_letter_content = None
@@ -194,9 +179,9 @@ class PatchworkSeriesSpider(scrapy.Spider):
                 cover_letter_content = series_cover_letter_content,
                 api_url = item['url'],
                 web_url = item['web_url'],
-                project_original_id = series_project_original_id,
-                submitter_account_original_id = submitter_original_id,
-                submitter_user_original_id = None,
+                project = series_project_original_id,
+                submitter_identity = submitter_original_id,
+                submitter_individual = None,
             )
 
             yield series_item
@@ -262,25 +247,28 @@ class PatchworkPatchSpider(scrapy.Spider):
             except json.decoder.JSONDecodeError as e:
                 item = requests.get(response.url).json()
 
+            patch_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
+
             submitter = item['submitter']
 
-            submitter_original_id = '-'.join([self.endpoint_type, 'account', str(submitter['id'])])
+            submitter_original_id = '-'.join([self.endpoint_type, 'people', str(submitter['id'])])
             submitter_api_url = submitter['url']
             submitter_email = submitter['email']
             submitter_username = submitter['name']
 
 
-            account_item = PatchAccountItem(
+            identity_item = PatchIdentityItem(
                 original_id = submitter_original_id,
                 email = submitter_email,
-                username = submitter_username,
+                name = submitter_username,
                 api_url = submitter_api_url,
-                user_original_id = None,
+                project = patch_project_original_id,
+                is_maintainer = False,
             )
 
-            yield account_item
+            yield identity_item
 
-            patch_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
+            # patch_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
             
             if item['series']:
                 patch_series_api_id = item['series'][0]['id']
@@ -290,9 +278,9 @@ class PatchworkPatchSpider(scrapy.Spider):
             
             patch_original_id = '-'.join([self.endpoint_type, 'patch', str(item['id'])])
 
-            patch_reply_to_msg_id = None
+            patch_in_reply_to = None
             if 'In-Reply-To' in item['headers'].keys():
-                patch_reply_to_msg_id = item['headers']['In-Reply-To']
+                patch_in_reply_to = item['headers']['In-Reply-To']
 
             patch_item = PatchItem(
                 original_id = patch_original_id,
@@ -305,15 +293,15 @@ class PatchworkPatchSpider(scrapy.Spider):
                 api_url = item['url'],
                 web_url = item['web_url'],
                 commit_ref = item['commit_ref'],
-                reply_to_msg_id = patch_reply_to_msg_id,
-                change1_original_id = None,
-                change2_original_id = None,
-                mailing_list_original_id = None,
-                series_original_id = patch_series_original_id,
-                new_series_original_id = None,
-                submitter_account_original_id = submitter_original_id,
-                submitter_user_original_id = None,
-                project_original_id = patch_project_original_id
+                in_reply_to = patch_in_reply_to,
+                change1 = None,
+                change2 = None,
+                mailinglist = None,
+                series = patch_series_original_id,
+                newseries = None,
+                submitter_identity = submitter_original_id,
+                submitter_individual = None,
+                project = patch_project_original_id
             )
 
             yield patch_item
@@ -324,28 +312,29 @@ class PatchworkPatchSpider(scrapy.Spider):
             if comment_list:
                 for comment in comment_list:
 
-                    comment_reply_to_msg_id = None
+                    comment_in_reply_to = None
                     if 'In-Reply-To' in comment['headers'].keys():
-                        comment_reply_to_msg_id = comment['headers']['In-Reply-To']
-                        if comment_reply_to_msg_id[:2] == '\n ':
-                            comment_reply_to_msg_id = comment_reply_to_msg_id[2:]
+                        comment_in_reply_to = comment['headers']['In-Reply-To']
+                        if comment_in_reply_to[:2] == '\n ':
+                            comment_in_reply_to = comment_in_reply_to[2:]
 
                     comment_submitter = comment['submitter']
 
-                    comment_submitter_original_id = '-'.join([self.endpoint_type, 'account', str(comment_submitter['id'])])
+                    comment_submitter_original_id = '-'.join([self.endpoint_type, 'people', str(comment_submitter['id'])])
                     comment_submitter_api_url = comment_submitter['url']
                     comment_submitter_email = comment_submitter['email']
                     comment_submitter_username = comment_submitter['name']
 
-                    comment_account_item = PatchAccountItem(
+                    comment_identity_item = PatchIdentityItem(
                         original_id = comment_submitter_original_id,
                         email = comment_submitter_email,
-                        username = comment_submitter_username,
+                        name = comment_submitter_username,
                         api_url = comment_submitter_api_url,
-                        user_original_id = None,
+                        project = patch_project_original_id,
+                        is_maintainer = False,
                     )
 
-                    yield comment_account_item
+                    yield comment_identity_item
 
 
                     comment_item = CommentItem(
@@ -354,15 +343,15 @@ class PatchworkPatchSpider(scrapy.Spider):
                         msg_content = comment['content'],
                         date = comment['date'],
                         subject = comment['subject'],
-                        reply_to_msg_id = comment_reply_to_msg_id,
+                        in_reply_to = comment_in_reply_to,
                         web_url = comment['web_url'],
-                        change1_original_id = None,
-                        change2_original_id = None,
-                        mailing_list_original_id = None,
-                        submitter_account_original_id = comment_submitter_original_id,
-                        submitter_user_original_id = None,
-                        patch_original_id = patch_original_id,
-                        project_original_id = patch_project_original_id
+                        change1 = None,
+                        change2 = None,
+                        mailinglist = None,
+                        submitter_identity = comment_submitter_original_id,
+                        submitter_individual = None,
+                        patch = patch_original_id,
+                        project = patch_project_original_id
                     )
 
                     yield comment_item

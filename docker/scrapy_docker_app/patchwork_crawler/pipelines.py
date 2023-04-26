@@ -16,19 +16,19 @@ from . import items
 def get_item_type(item):
     # The JSON file names are used (imported) from the scrapy spider.
     if isinstance(item, items.ProjectItem):
-        return 'projects'
+        return 'project'
     
-    elif isinstance(item, items.AccountItem):
-        return f"{item.source}_accounts"
+    elif isinstance(item, items.IdentityItem):
+        return f"{item.source}_identity"
 
     elif isinstance(item, items.SeriesItem):
         return 'series'
 
     elif isinstance(item, items.PatchItem):
-        return 'patches'
+        return 'patch'
 
     elif isinstance(item, items.CommentItem):
-        return 'comments'
+        return 'comment'
 
     return type(item)
 
@@ -39,7 +39,7 @@ class PatchworkCrawlerPipeline:
 
 class PatchworkExporterPipeline(object):
 
-    fileNamesJson = ['project_accounts', 'projects', 'series_accounts', 'series', 'patch_accounts', 'patches', 'comments']
+    fileNamesJson = ['project_identity', 'project', 'series_identity', 'series', 'patch_identity', 'patch', 'comment']
 
     def __init__(self):
         self.files = {}
@@ -72,16 +72,19 @@ class PatchworkExporterPipeline(object):
         for name in self.fileNamesJson[start_idx:end_idx + 1]:
             self.exporters[name] = JsonLinesItemExporter(self.files[name])
 
+            # identity
             if name in [self.fileNamesJson[i] for i in range (0, 5, 2)]:
                 self.exporters[name].fields_to_export = [
                     'original_id',
                     'email',
-                    'username',
+                    'name',
                     'api_url',
-                    'user_original_id'
+                    'project',
+                    'is_maintainer',
                 ]
                 self.exporters[name].start_exporting()
 
+            # project
             if name == self.fileNamesJson[1]:
                 self.exporters[name].fields_to_export = [
                     'original_id',
@@ -91,11 +94,11 @@ class PatchworkExporterPipeline(object):
                     'web_url',
                     'list_id',
                     'list_address',
-                    'maintainer_account_original_id',
-                    'maintainer_user_original_id'
+                    'maintainer_identity',
                 ]
                 self.exporters[name].start_exporting()
 
+            # series
             if name == self.fileNamesJson[3]:
                 self.exporters[name].fields_to_export = [
                     'original_id',
@@ -108,12 +111,13 @@ class PatchworkExporterPipeline(object):
                     'cover_letter_content',
                     'api_url',
                     'web_url',
-                    'project_original_id',
-                    'submitter_account_original_id',
-                    'submitter_user_original_id'
+                    'project',
+                    'submitter_identity',
+                    'submitter_individual'
                 ]
                 self.exporters[name].start_exporting()
 
+            # patch
             if name == self.fileNamesJson[5]:
                 self.exporters[name].fields_to_export = [
                     'original_id',
@@ -127,17 +131,18 @@ class PatchworkExporterPipeline(object):
                     'web_url',
                     'commit_ref',
                     'reply_to_msg_id',
-                    'change1_original_id',
-                    'change2_original_id',
-                    'mailing_list_original_id',
-                    'series_original_id',
-                    'new_series_original_id',
-                    'submitter_account_original_id',
-                    'submitter_user_original_id',
-                    'project_original_id'
+                    'change1',
+                    'change2',
+                    'mailinglist',
+                    'series',
+                    'newseries',
+                    'submitter_identity',
+                    'submitter_individual',
+                    'project'
                 ]
                 self.exporters[name].start_exporting()
 
+            # comment
             if name == self.fileNamesJson[6]:
                 self.exporters[name].fields_to_export = [
                     'original_id',
@@ -147,13 +152,13 @@ class PatchworkExporterPipeline(object):
                     'subject',
                     'reply_to_msg_id',
                     'web_url',
-                    'change1_original_id',
-                    'change2_original_id',
-                    'mailing_list_original_id',
-                    'submitter_account_original_id',
-                    'submitter_user_original_id',
-                    'patch_original_id',
-                    'project_original_id'
+                    'change1',
+                    'change2',
+                    'mailinglist',
+                    'submitter_identity',
+                    'submitter_individual',
+                    'patch',
+                    'project'
                 ]
                 self.exporters[name].start_exporting()
     
