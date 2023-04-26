@@ -501,20 +501,11 @@ class AccessData():
 
 class ProcessInitialData():
 
-    def __init__(self, connection=True):
-        if connection:
-            client = pymongo.MongoClient("mongodb://localhost:27017/")
-            db = client["code_review_db"]
-            
-            self.newseries_original_id = db.patchwork_newseries.count_documents({}) + 1
-            self.change1_original_id = db.patchwork_change1.count_documents({}) + 1
-            self.change2_original_id = db.patchwork_change2.count_documents({}) + 1
-            self.individual_original_id = db.patchwork_individual.count_documents({}) + 1
-        else:
-            self.newseries_original_id = 1
-            self.change1_original_id = 1
-            self.change2_original_id = 1
-            self.individual_original_id = 1
+    def __init__(self, newseries_original_id=1, change1_original_id=1, change2_original_id=1, individual_original_id=1):
+        self.newseries_original_id = newseries_original_id
+        self.change1_original_id = change1_original_id
+        self.change2_original_id = change2_original_id
+        self.individual_original_id = individual_original_id
 
     def __get_distinct_identities(self, identity_data: list):
         new_data = defaultdict(list)
