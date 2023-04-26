@@ -91,7 +91,7 @@ retrieved_data = access_data.retrieve_data(item_type, filter)
 All available filters can be found in section [Application filter](#31-application-filter).
 
 ## 2. Data crawling
-To crawl new data from the source, apply the Scrapy framework in the suite. Retrieved data will be firt stored in jsonlines files. The file content can be inserted into the database with the help of the application layer. 
+To crawl new data from the source, apply the Scrapy framework in the suite. Retrieved data will be first stored in jsonlines files. The file content can be inserted into the database with the help of the application layer. 
 
 There are three spiders for crawling patchwork data. Their **spider names** are **patchwork_project**, **patchwork_series**, and **patchwork_patch**.
 - *patchwork_project crawls patchwork projects and corresponding maintainer accounts data.*
@@ -207,8 +207,91 @@ scrapy crawl <spider-name> -a start_project_id=<specified-id> -a end_project_id=
 ```
 
 ### 2.3. Insert data to database
-<!-- TODO add steps -->
-_how to run grouping algorithms_
+After crawling data from Patchwork, relevant data can be inserted to the database with the help of the application layer.
+
+#### 2.3.1. Process data
+
+Two classes are provided in the application layer to assist with access and process data.
+
+One is AccessData, which helps 1) to insert data into the database; 2) to access json files in your local machine; 3) to query data from the database.
+
+The other is ProcessInitialData, which helps 1) to identify individual (i.e. unique developers) within each project; and 2) to group related code review activities of the same proposed patch.
+
+It is adivised to run the two automated approaches provided in ProcessInitialData before data insertion.
+
+Load the data before running the approaches. Json files can be immediately accessed with the help of ```load_json()``` provided in AccessData.
+
+```python
+import application_layer
+
+access_data = application_layer.AccessData()
+
+# load identity data
+project_identity_data = access_data.load_json("path/to/crawled/project/identity/data")
+series_identity_data = access_data.load_json("path/to/crawled/series/identity/data")
+patch_identity_data = access_data.load_json("path/to/crawled/patch/identity/data")
+
+# combine identity data
+identity_data = project_identity_data + series_identity_data + patch_identity_data
+
+# load series data
+series_data = access_data.load_json("path/to/crawled/series/data")
+
+# load patch data
+patch_data = access_data.load_json("path/to/crawled/patch/data")
+
+# load comment data
+comment_data = access_data.load_json("path/to/crawled/comment/data")
+```
+
+After loading the data, instantiate ProcessInitialData to run the approaches.
+
+```python
+process = application_layer.ProcessInitialData()
+```
+
+However, newseries, change1, change2, and individual data are newly generated data and they do not have original id as those crawled from Patchwork (See data attributes in the [data dictionary](#3-data-dictionary)), so their initial original ids are required to be specified **if the approaches are not run at the first time**.
+
+To specify the original ids, you can retrieve the corresponding maximum original id from the database.
+
+```python
+import pymongo, application layer
+
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+db = client["code_review_db"]
+
+newseries_original_id = db.patchwork_newseries.count_documents({}) + 1
+change1_original_id = db.patchwork_change1.count_documents({}) + 1
+change2_original_id = db.patchwork_change2.count_documents({}) + 1
+individual_original_id = db.patchwork_individual.count_documents({}) + 1
+
+process_data = application_layer.ProcessInitialData(newseries_original_id, change1_original_id, change2_original_id, individual_original_id)
+```
+
+Or you can specify a specific number.
+
+```python
+process_data = application_layer.ProcessInitialData(newseries_original_id=10, change1_original_id=10, change2_original_id=10, individual_original_id=10)
+```
+
+To run the two approaches, simply run the ```process_data()``` function.
+```python
+individual_data, updated_series_data, updated_patch_data, updated_comment_data, newseries_data, change1_data, change2_data = process_data.process_data(identity_data, series_data, patch_data, comment_data)
+```
+
+#### 2.3.2. Insert data
+Data can be inserted to the database by using the ```insert_data()``` function provided in ```AccessData```. Specifically, you should specify the data to be inserted or the location of the data to be inserted, and its corresponding item type. The item type include identity, project, individual, series, newseries, change1, change2, patch, and comment.
+
+```python
+
+# data has been loaded before insertion
+access_data.insert_data(data=project_data, item_type="project")
+
+# data has not been loaded before insertion
+access_data.insert_data(data="path/to/project/data", item_type="project")
+```
+
+However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the high-level ER diagram).
 
 ## 3. Data dictionary
 <!-- TODO add high-level ER diagram -->
