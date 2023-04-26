@@ -291,10 +291,11 @@ access_data.insert_data(data=project_data, item_type="project")
 access_data.insert_data(data="path/to/project/data", item_type="project")
 ```
 
-However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the high-level ER diagram).
+However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the [complete ER diagram](#3-data-dictionary)).
 
 ## 3. Data dictionary
 <!-- TODO add high-level ER diagram -->
+![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/ERD-complete.png)
 This section describes the high-level structure of the dataset.
 ### Collections
 - [Identity](#Identity)
