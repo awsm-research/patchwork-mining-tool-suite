@@ -1,0 +1,414 @@
+,change2_original_id,patch_original_id,patch_name,correct_grouping
+0,ffmpeg-change2-15309,ffmpeg-patch-35824,"[FFmpeg-devel,1/2] ffmpeg: add display_{rotation, hflip, vflip} options",1
+1,,ffmpeg-patch-38289,"[FFmpeg-devel,v5,2/3] ffmpeg: Add display_{rotation, hflip, vflip, scale} options",1
+2,,ffmpeg-patch-38321,"[FFmpeg-devel,v6,1/2] ffmpeg: Add display_{rotation, hflip, vflip} options",1
+3,ffmpeg-change2-17097,ffmpeg-patch-11436,"[FFmpeg-devel,1/2] avcodec/fft_template: improve performance of the ff_fft_init in fft_template",1
+4,,ffmpeg-patch-11511,"[FFmpeg-devel,v2] avcodec/fft_template: libavcodec/fft_template: improve performance of the ff_fft_init in fft_template",1
+5,,ffmpeg-patch-11553,"[FFmpeg-devel,v3] avcodec/fft_template: improve performance of the ff_fft_init in fft_template",1
+6,ffmpeg-change2-15472,ffmpeg-patch-5968,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+7,,ffmpeg-patch-6076,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+8,,ffmpeg-patch-6133,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+9,,ffmpeg-patch-6151,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+10,,ffmpeg-patch-6286,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+11,,ffmpeg-patch-6287,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+12,,ffmpeg-patch-6412,[FFmpeg-devel] Fix for ticket 6658 (Dash demuxer segfault),1
+13,,ffmpeg-patch-6536,[FFmpeg-devel] libavformat/dashdec: Fix for ticket 6658 (Dash demuxer segfault),1
+14,,ffmpeg-patch-6969,[FFmpeg-devel] libavformat/dashdec: Fix for ticket 6658 (Dash demuxer segfault),1
+15,,ffmpeg-patch-7113,[FFmpeg-devel] libavformat/dashdec: Fix for ticket 6658 (Dash demuxer segfault),1
+16,,ffmpeg-patch-7307,"[FFmpeg-devel,2/3] libavformat/dashdec: Fix for ticket 6658 (Dash demuxer segfault)",1
+17,,ffmpeg-patch-7311,"[FFmpeg-devel,2/3] libavformat/dashdec: Fix for ticket 6658 (Dash demuxer segfault)",1
+18,ffmpeg-change2-12523,ffmpeg-patch-12455,"[FFmpeg-devel,1/1] Prevent writing manifest files multiple times",1
+19,,ffmpeg-patch-12644,"[FFmpeg-devel,1/1] libavformat/dashenc : Prevent writing manifest files multiple times",1
+20,ffmpeg-change2-23979,ffmpeg-patch-1835,"[FFmpeg-devel,5/5] ffmpeg: use the typedefs more to make comparison between dxva2 and d3d11va",1
+21,,ffmpeg-patch-2051,"[FFmpeg-devel,6/6] ffmpeg: dxva: use the typedefs more to make comparison between dxva2 and d3d11va",1
+22,ffmpeg-change2-23043,ffmpeg-patch-29785,"[FFmpeg-devel,RFC] Add option for writing detailed filtergraph information to file or stdout",1
+23,,ffmpeg-patch-29796,"[FFmpeg-devel,v2] Add option for writing detailed filtergraph information to file or stdout",1
+24,,ffmpeg-patch-29797,"[FFmpeg-devel,v3] fftools: Add option for writing detailed filtergraph information to file or stdout",1
+25,ffmpeg-change2-12806,ffmpeg-patch-17913,"[FFmpeg-devel,12/12] Add missing stddef.h includes for size_t.",1
+26,,ffmpeg-patch-23333,"[FFmpeg-devel,3/6] lavu: add missing stddef.h includes for size_t.",1
+27,ffmpeg-change2-3562,ffmpeg-patch-18548,"[FFmpeg-devel,1/7] lavc/libopenh264enc: Add default qmin/qmax support",1
+28,,ffmpeg-patch-18592,"[FFmpeg-devel,01/10] lavc/libopenh264enc: Add default qmin/qmax support",1
+29,,ffmpeg-patch-18699,"[FFmpeg-devel,01/10] lavc/libopenh264enc: Add default qmin/qmax support",1
+30,,ffmpeg-patch-18844,"[FFmpeg-devel,v3,1/9] lavc/libopenh264enc: Add default qmin/qmax support",1
+31,,ffmpeg-patch-18961,"[FFmpeg-devel,v4,1/9] lavc/libopenh264enc: Add default qmin/qmax support",1
+32,,ffmpeg-patch-19306,"[FFmpeg-devel,v5,1/5] lavc/libopenh264enc: Add qmin/qmax support",1
+33,,ffmpeg-patch-19351,"[FFmpeg-devel,v6,1/5] lavc/libopenh264enc: Add qmin/qmax support",1
+34,ffmpeg-change2-4276,ffmpeg-patch-14906,[FFmpeg-devel] Add option to log timing,1
+35,,ffmpeg-patch-14962,[FFmpeg-devel] Add option to log timing,1
+36,,ffmpeg-patch-15106,"[FFmpeg-devel,v2] Add option to log timing",1
+37,,ffmpeg-patch-29369,"[FFmpeg-devel,v3,1/2] Add option to log timing",1
+38,,ffmpeg-patch-29374,"[FFmpeg-devel,v4,2/2] fftools: Add option to log timing",1
+39,,ffmpeg-patch-29390,"[FFmpeg-devel,v5,2/2] fftools: Add option to log timing",1
+40,,ffmpeg-patch-29395,"[FFmpeg-devel,v6,2/2] fftools: Add option to log timing",1
+41,,ffmpeg-patch-29398,"[FFmpeg-devel,v7,2/2] fftools: Add option to log timing",1
+42,ffmpeg-change2-11780,ffmpeg-patch-13913,"[FFmpeg-devel,v2,1/3] lavc/avs2_parser.c: fix for missing start code",1
+43,,ffmpeg-patch-13918,"[FFmpeg-devel,v3,1/3] lavc/avs2_parser.c: fix for missing start code",1
+44,,ffmpeg-patch-14030,"[FFmpeg-devel,v4,1/3] lavc/avs2_parser.c: fix missing start code",1
+45,,ffmpeg-patch-14033,"[FFmpeg-devel,v5,1/3] lavc/avs2_parser.c: fix missing start code",1
+46,ffmpeg-change2-22174,ffmpeg-patch-14848,[FFmpeg-devel] avfilter/vf_delogo: add auto set the area inside of the frame,1
+47,,ffmpeg-patch-14882,"[FFmpeg-devel,v2] avfilter/vf_delogo: avfilter/vf_delogo: add auto set the area inside of the frame",1
+48,,ffmpeg-patch-14900,"[FFmpeg-devel,v3] avfilter/vf_delogo: add auto set the area inside of the frame",1
+49,ffmpeg-change2-22122,ffmpeg-patch-36238,[FFmpeg-devel] avcodec/v4l2_m2m: close the invalid file descriptor -1 in function v4l2_m2m_destroy_context,1
+50,,ffmpeg-patch-36418,[FFmpeg-devel] 答复: [PATCH] avcodec/v4l2_m2m: close the invalid file descriptor -1 in function v4l2_m2m_destroy_context,1
+51,ffmpeg-change2-24115,ffmpeg-patch-25818,[FFmpeg-devel] Fwd: [PATCH] set ulMaxDisplayDelay cuvidec parser option to zero if low_delay flag is on,1
+52,,ffmpeg-patch-25819,[FFmpeg-devel] set ulMaxDisplayDelay cuvidec parser option to zero if low_delay flag is on,1
+53,ffmpeg-change2-6820,ffmpeg-patch-22025,"[FFmpeg-devel,1/3,GSoC] Add mutithread function for dnn_backend_native_layer_conv2d.c",1
+54,,ffmpeg-patch-22077,"[FFmpeg-devel,2/2] Add mutithread function for dnn_backend_native_layer_conv2d.c",1
+55,,ffmpeg-patch-22091,"[FFmpeg-devel,v2,2/2] dnn_backend_native_layer_conv2d.c:Add mutithread function",1
+56,,ffmpeg-patch-22094,"[FFmpeg-devel,v4,2/2] dnn_backend_native_layer_conv2d.c:Add mutithread function",1
+57,,ffmpeg-patch-22130,"[FFmpeg-devel,v5,2/2] dnn_backend_native_layer_conv2d.c:Add mutithread function",1
+58,ffmpeg-change2-8301,ffmpeg-patch-37475,"[FFmpeg-devel,FFmpeg-devel,v10,2/9] Added parser implementaion for EVC format",1
+59,,ffmpeg-patch-37589,"[FFmpeg-devel,v11,2/9] Added parser implementaion for EVC format",1
+60,,ffmpeg-patch-37702,"[FFmpeg-devel,v12,2/9] avcodec/evc_parser: Added parser implementaion for EVC format",1
+61,ffmpeg-change2-23836,ffmpeg-patch-5277,"[FFmpeg-devel,8/9] avcodec/videotoolbox: use decode_params to propagate PPS changes and restart on SPS changes",1
+62,,ffmpeg-patch-5896,"[FFmpeg-devel,v4,08/14] avcodec/videotoolbox: use decode_params to propagate H264 PPS changes and restart on SPS changes",1
+63,ffmpeg-change2-525,ffmpeg-patch-15853,"[FFmpeg-devel,2/5] avcodec/wmalosslessdec: Check block_align",0
+64,,ffmpeg-patch-20253,"[FFmpeg-devel,2/3] avcodec/wmalosslessdec: Check block_align maximum",0
+65,ffmpeg-change2-8007,ffmpeg-patch-949,[FFmpeg-devel] Selftest coverage for libavutil/fifo.c,1
+66,,ffmpeg-patch-965,"[FFmpeg-devel,2/3] Selftest coverage for libavutil/fifo.c",1
+67,,ffmpeg-patch-964,"[FFmpeg-devel,3/3] Selftest coverage for libavutil/fifo.c",1
+68,,ffmpeg-patch-988,[FFmpeg-devel] Improved selftest coverage for libavutil/fifo.c,1
+69,,ffmpeg-patch-1003,[FFmpeg-devel] Improved selftest coverage for libavutil/fifo.c,1
+70,ffmpeg-change2-13733,ffmpeg-patch-22608,"[FFmpeg-devel,15/25] avcodec/utvideodec: Avoid qsort when creating Huffman tables",0
+71,,ffmpeg-patch-23575,"[FFmpeg-devel,109/114] avcodec/utvideodec: Avoid implicit qsort when creating Huffman tables",0
+72,,ffmpeg-patch-23885,"[FFmpeg-devel,v2,134/162] avcodec/utvideodec: Avoid implicit qsort when creating Huffman tables",0
+73,ffmpeg-change2-2780,ffmpeg-patch-12252,"[FFmpeg-devel,10/10] avformat/matroskadec: Typos and cosmetics",1
+74,,ffmpeg-patch-12489,"[FFmpeg-devel,21/21] avformat/matroskadec: Typos and cosmetics",1
+75,,ffmpeg-patch-13152,"[FFmpeg-devel,29/37] avformat/matroskadec: Typos, nits and cosmetics",1
+76,ffmpeg-change2-4280,ffmpeg-patch-11280,[FFmpeg-devel] add support for ROI-based encoding,1
+77,,ffmpeg-patch-11380,"[FFmpeg-devel,1/2] add support for ROI-based encoding",1
+78,,ffmpeg-patch-11544,"[FFmpeg-devel,V2,1/2] add support for ROI-based encoding",1
+79,,ffmpeg-patch-11559,"[FFmpeg-devel,V3,2/3] avcodec/libx264: add support for ROI-based encoding",1
+80,,ffmpeg-patch-11568,"[FFmpeg-devel,V4,2/2] avcodec/libx264: add support for ROI-based encoding",1
+81,,ffmpeg-patch-11644,"[FFmpeg-devel,V5,2/2] avcodec/libx264: add support for ROI-based encoding",1
+82,,ffmpeg-patch-11671,"[FFmpeg-devel,V6,2/2] avcodec/libx264: add support for ROI-based encoding",1
+83,,ffmpeg-patch-11676,"[FFmpeg-devel,V7,3/3] avcodec/libx264: add support for ROI-based encoding",1
+84,,ffmpeg-patch-11690,"[FFmpeg-devel,V8,2/2] avcodec/libx264: add support for ROI-based encoding",1
+85,ffmpeg-change2-1594,ffmpeg-patch-33142,"[FFmpeg-devel,4/4] avcodec/dvdsubdec: fix writing ppm",1
+86,,ffmpeg-patch-33194,"[FFmpeg-devel,v2,2/2] avcodec/dvdsubdec, dvbsubdec: fix writing ppm",1
+87,ffmpeg-change2-7964,ffmpeg-patch-725,[FFmpeg-devel] pass TLS args for RTSPS,1
+88,,ffmpeg-patch-764,"[FFmpeg-devel,1/2] pass TLS args for RTSPS",1
+89,,ffmpeg-patch-813,"[FFmpeg-devel,1/2] RTSP: pass TLS args for RTSPS",1
+90,,ffmpeg-patch-817,[FFmpeg-devel] RTSP: pass TLS args for RTSPS,1
+91,ffmpeg-change2-6354,ffmpeg-patch-12195,[FFmpeg-devel] avformat/mpegts.c: reduce buffering during initialization,1
+92,,ffmpeg-patch-12213,"[FFmpeg-devel,v2] avformat/mpegts: reduce buffering during initialization",1
+93,,ffmpeg-patch-12231,"[FFmpeg-devel,v3] avformat/mpegts: reduce buffering during initialization",1
+94,,ffmpeg-patch-12239,"[FFmpeg-devel,v4] avformat/mpegts: reduce buffering during initialization",1
+95,,ffmpeg-patch-12268,"[FFmpeg-devel,v5] avformat/mpegts: reduce buffering during initialization",1
+96,ffmpeg-change2-19484,ffmpeg-patch-9229,[FFmpeg-devel] libavfilter/opencl.h: Add macro for setting opencl kernel arguments,1
+97,,ffmpeg-patch-9241,[FFmpeg-devel] libavfilter/opencl.h: Add macro for setting opencl kernel,1
+98,,ffmpeg-patch-9368,[FFmpeg-devel] libavfilter/opencl.h: Add macro for setting opencl kernel,1
+99,,ffmpeg-patch-9416,[FFmpeg-devel] libavfilter/opencl.h: Add macro for setting opencl kernel,1
+100,ffmpeg-change2-24693,ffmpeg-patch-18176,"[FFmpeg-devel] remove useless mv The function which add motion info, but do not need motionless vectors, its useless. And, when u export mvs , loop oper will spend many times for useless vectors.",1
+101,,ffmpeg-patch-18177,"[FFmpeg-devel] libavcodec/mpegutils: remove useless mv The function which add motion info, but do not need motionless vectors, its useless. And, when u export mvs , loop oper will spend many times for useless vectors.",1
+102,,ffmpeg-patch-18191,"[FFmpeg-devel] remove useless mv The function which add motion info, but do not need motionless vectors, its useless. And, when u export mvs , loop oper will spend many times for useless vectors.",1
+103,ffmpeg-change2-24417,ffmpeg-patch-36401,[FFmpeg-devel] fftools/ffprobe.c: Add Function: The peak bit rate of video streams can be queried,1
+104,,ffmpeg-patch-36402,[FFmpeg-devel] fftools/ffprobe.c: Add new Function: The peak bit rate of video streams can be queried,1
+105,ffmpeg-change2-12855,ffmpeg-patch-1590,[FFmpeg-devel] Allow client to enable/disable openh264 load balancing.,1
+106,,ffmpeg-patch-1649,[FFmpeg-devel] Allow client to enable/disable openh264 load balancing.,1
+107,,ffmpeg-patch-1783,[FFmpeg-devel] libavcodec/libopenh264enc: Allow client to enable/disable openh264 load balancing.,1
+108,ffmpeg-change2-20064,ffmpeg-patch-16855,"[FFmpeg-devel,v1,5/5] avcodec/h264: create user data unregistered side data for H.264",1
+109,,ffmpeg-patch-16873,"[FFmpeg-devel,v2,5/5] avcodec/h264: create user data unregistered side data for H.264",1
+110,,ffmpeg-patch-16882,"[FFmpeg-devel,v3,5/5] avcodec/h264: create user data unregistered side data for H.264",1
+111,,ffmpeg-patch-16899,"[FFmpeg-devel,v4,4/4] avcodec/h264: create user data unregistered side data H.264",1
+112,,ffmpeg-patch-17127,"[FFmpeg-devel,v5,4/4] avcodec/h264: create user data unregistered side data H.264",1
+113,,ffmpeg-patch-17226,"[FFmpeg-devel,v7,4/8] avcodec/h264: create user data unregistered side data for H.264",1
+114,,ffmpeg-patch-17256,"[FFmpeg-devel,v8,4/4] avcodec/h264: create user data unregistered SEI side data for H.264",1
+115,,ffmpeg-patch-18265,"[FFmpeg-devel,v9,4/4] avcodec/h264: create user data unregistered SEI side data for H.264",1
+116,,ffmpeg-patch-20258,"[FFmpeg-devel,v10,4/4] avcodec/h264: create user data unregistered SEI side data for H.264",1
+117,,ffmpeg-patch-20263,"[FFmpeg-devel,v11,4/4] avcodec/h264: create user data unregistered SEI side data for H.264",1
+118,,ffmpeg-patch-20280,"[FFmpeg-devel,v12,4/4] avcodec/h264: create user data unregistered SEI side data for H.264",1
+119,ffmpeg-change2-2692,ffmpeg-patch-3801,[FFmpeg-devel] avformat/hls: Check file extensions,1
+120,,ffmpeg-patch-3818,[FFmpeg-devel] avformat/hls: Check file extensions,1
+121,,ffmpeg-patch-3821,[FFmpeg-devel] avformat/hls: Check local file extensions,1
+122,ffmpeg-change2-3238,ffmpeg-patch-23159,[FFmpeg-devel] expand hls_fmp4_init_filename with strftime(),1
+123,,ffmpeg-patch-23167,"[FFmpeg-devel,v2] expand hls_fmp4_init_filename with strftime()",1
+124,,ffmpeg-patch-23243,"[FFmpeg-devel,v3] hlsenc: expand hls_fmp4_init_filename with strftime()",1
+125,ffmpeg-change2-18557,ffmpeg-patch-15854,"[FFmpeg-devel,4/5] avutil/lfg: Correct index type to avoid undefined behavior",1
+126,,ffmpeg-patch-15862,[FFmpeg-devel] avutil/lfg: Correct index increment type to avoid undefined behavior,1
+127,ffmpeg-change2-19889,ffmpeg-patch-19655,[FFmpeg-devel] avcodec: improve the macros function of FF_ALLOC{Z}{_ARRAY}_OR_GOTO,1
+128,,ffmpeg-patch-19656,[FFmpeg-devel] avcodec: improve the function of FF_ALLOC{Z}{_ARRAY}_OR_GOTO,1
+129,ffmpeg-change2-1299,ffmpeg-patch-10884,[FFmpeg-devel] Add CUDA function cuDeviceGetAttribute,1
+130,,ffmpeg-patch-10885,[FFmpeg-devel] Add CUDA function cuDeviceGetAttribute V2,1
+131,ffmpeg-change2-24129,ffmpeg-patch-36687,"[FFmpeg-devel,avcodec/amfenc:,10,bit,support,1/3] Update the min version to 1.4.23.0 for AMF SDK.",1
+132,,ffmpeg-patch-37738,"[FFmpeg-devel,avcodec/amfenc:,10,bit,support,v2,1/3] amf: Update the min version to 1.4.23.0 for AMF SDK.",1
+133,ffmpeg-change2-8315,ffmpeg-patch-6995,[FFmpeg-devel] AIFF fix in case of ANNO,1
+134,,ffmpeg-patch-7084,[FFmpeg-devel] avformat/aiffdec: AIFF fix in case of ANNO,1
+135,,ffmpeg-patch-7072,[FFmpeg-devel] avformat/aiffdec: AIFF fix in case of ANNO,1
+136,,ffmpeg-patch-7074,[FFmpeg-devel] avformat/aiffdec: AIFF fix in case of ANNO,1
+137,,ffmpeg-patch-7204,[FFmpeg-devel] avformat/aiffdec: AIFF fix in case of ANNO,1
+138,ffmpeg-change2-3824,ffmpeg-patch-4514,"[FFmpeg-devel,2/2] WIP lavfi/vf_overlay: move to framesync2.",1
+139,,ffmpeg-patch-4516,"[FFmpeg-devel,2/2] lavfi/vf_overlay: move to framesync2.",1
+140,,ffmpeg-patch-4534,"[FFmpeg-devel,03/14] lavfi/vf_overlay: move to framesync2.",1
+141,,ffmpeg-patch-4673,"[FFmpeg-devel,04/16] lavfi/vf_overlay: move to framesync2.",1
+142,ffmpeg-change2-3117,ffmpeg-patch-7637,"[FFmpeg-devel,2/3] cmdutils: use new iteration APIs",1
+143,,ffmpeg-patch-8025,"[FFmpeg-devel,3/4] cmdutils: use new iteration APIs",1
+144,,ffmpeg-patch-8042,"[FFmpeg-devel,v3,3/7] cmdutils: use new iteration APIs",1
+145,,ffmpeg-patch-8091,"[FFmpeg-devel,v4,3/7] cmdutils: use new iteration APIs",1
+146,,ffmpeg-patch-8128,"[FFmpeg-devel,5/5] cmdutils: use new APIs",1
+147,ffmpeg-change2-23120,ffmpeg-patch-33141,"[FFmpeg-devel,3/4] avcodec/dvdsubdec: don't dump images to disk based on DEBUG define",1
+148,,ffmpeg-patch-33193,"[FFmpeg-devel,v2,1/2] avcodec/dvdsubdec, dvbsubdec: don't dump images to disk based on DEBUG define",1
+149,ffmpeg-change2-4576,ffmpeg-patch-20344,[FFmpeg-devel] avcodec/ccaption_dec: add support for colors,0
+150,,ffmpeg-patch-20537,[FFmpeg-devel] avcodec/ccaption_dec: add support for bacground colors,0
+151,ffmpeg-change2-19850,ffmpeg-patch-13900,[FFmpeg-devel] Add support for Display Definition Segment to DVB Subtitle encoder,1
+152,,ffmpeg-patch-13908,[FFmpeg-devel] Add support for Display Definition Segment to DVB Subtitle encoder,1
+153,,ffmpeg-patch-13920,[FFmpeg-devel] Add support for Display Definition Segment to DVB Subtitle,1
+154,,ffmpeg-patch-13926,[FFmpeg-devel] Add support for Display Definition Segment to DVB Subtitle encoder,1
+155,ffmpeg-change2-7250,ffmpeg-patch-27904,"[FFmpeg-devel,08/25] lavc/cbs.h: avoid avcodec.h dependency",1
+156,,ffmpeg-patch-28018,[FFmpeg-devel] lavc/cbs: avoid avcodec.h dependency,1
+157,ffmpeg-change2-8325,ffmpeg-patch-5879,"[FFmpeg-devel,1/2] aptx: implement the aptX bluetooth codec",1
+158,,ffmpeg-patch-5910,"[FFmpeg-devel,1/2] aptx: implement the aptX bluetooth codec",1
+159,,ffmpeg-patch-5999,"[FFmpeg-devel,1/2] aptx: implement the aptX bluetooth codec",1
+160,,ffmpeg-patch-5970,"[FFmpeg-devel,1/2] aptx: implement the aptX bluetooth codec",1
+161,,ffmpeg-patch-5972,"[FFmpeg-devel,1/2] aptx: implement the aptX bluetooth codec",1
+162,,ffmpeg-patch-5992,"[FFmpeg-devel,1/2] aptx: implement the aptX bluetooth codec",1
+163,,ffmpeg-patch-7164,"[FFmpeg-devel,4/5] aptx: implement the aptX HD bluetooth codec",1
+164,,ffmpeg-patch-7283,"[FFmpeg-devel,4/5] aptx: implement the aptX HD bluetooth codec",1
+165,ffmpeg-change2-12557,ffmpeg-patch-3730,[FFmpeg-devel] RFQ on patch for decklink warnings,1
+166,,ffmpeg-patch-3759,[FFmpeg-devel] FW: RFQ on patch for decklink warnings,1
+167,ffmpeg-change2-3656,ffmpeg-patch-9849,[FFmpeg-devel] lavf: add avs2 demuxer,1
+168,,ffmpeg-patch-9877,"[FFmpeg-devel,v2] lavf: add raw AVS2 demuxer",1
+169,,ffmpeg-patch-10051,"[FFmpeg-devel,v2] lavf: add raw AVS2 demuxer",1
+170,ffmpeg-change2-23933,ffmpeg-patch-20024,"[FFmpeg-devel,1/2] avutil/buffer: add a mention that some arguments from av_buffer_pool_init2() may be NULL",1
+171,,ffmpeg-patch-20055,"[FFmpeg-devel,2/2,v2] avutil/buffer: avutil/buffer: add a mention that some arguments from av_buffer_pool_init2() may be NULL",1
+172,ffmpeg-change2-12503,ffmpeg-patch-2388,"[FFmpeg-devel,6/6] opus: [RFC] add a native Opus encoder",1
+173,,ffmpeg-patch-2497,"[FFmpeg-devel,v2,5/5] opus: add a native Opus encoder",1
+174,ffmpeg-change2-3495,ffmpeg-patch-9246,"[FFmpeg-devel,2/2] lavc/aacsbr: fix make checkheaders",1
+175,,ffmpeg-patch-9261,"[FFmpeg-devel,v2,2/2] lavc/aacsbr: fix make checkheaders warning",1
+176,ffmpeg-change2-9821,ffmpeg-patch-29460,"[FFmpeg-devel,03/23] avfilter/avfilter: Allow to free pads generically",1
+177,,ffmpeg-patch-29581,"[FFmpeg-devel,4/6] avfilter/avfilter: Allow to free non-static pads generically",1
+178,,ffmpeg-patch-29698,"[FFmpeg-devel,v3,02/25] avfilter/avfilter: Allow to free non-static pads generically",1
+179,ffmpeg-change2-21005,ffmpeg-patch-7892,"[FFmpeg-devel] doc/utils: document the ""ms"" and ""us"" suffixes for durations",1
+180,,ffmpeg-patch-20220,"[FFmpeg-devel,v2] doc/utils: document the ""s"", ""ms"" and ""us"" suffixes for durations",1
+181,ffmpeg-change2-22699,ffmpeg-patch-2019,[FFmpeg-devel] lavc/cuvid: fail early if GPU can't handle given video resolution,1
+182,,ffmpeg-patch-2286,[FFmpeg-devel] lavc/cuvid: fail early if GPU can't handle video resolution (v5),1
+183,ffmpeg-change2-4942,ffmpeg-patch-27398,"[FFmpeg-devel,26/34] avcodec/libxavs: Avoid copying packet data",1
+184,,ffmpeg-patch-27881,"[FFmpeg-devel,17/39] avcodec/libxavs: Avoid overallocating, copying packet data",1
+185,ffmpeg-change2-16799,ffmpeg-patch-5295,"[FFmpeg-devel,3/4] Add support for 10-bit output for Decklink SDI",1
+186,,ffmpeg-patch-5431,"[FFmpeg-devel,2/2] libavdevice/decklink: add support for 10-bit output for Decklink SDI",1
+187,,ffmpeg-patch-5437,"[FFmpeg-devel,PATCHv3,2/2] libavdevice/decklink: add support for 10-bit output for Decklink SDI",1
+188,ffmpeg-change2-4488,ffmpeg-patch-17603,"[FFmpeg-devel,1/3] avcodec/apedec: Fix integer overflows in predictor_decode_mono_3950()",0
+189,,ffmpeg-patch-28985,"[FFmpeg-devel,3/4] avcodec/apedec: Fix integer overflows in",0
+190,,ffmpeg-patch-33036,"[FFmpeg-devel,1/2] avcodec/apedec: Fix integer overflows in predictor_update_3930()",0
+191,ffmpeg-change2-15899,ffmpeg-patch-18861,"[FFmpeg-devel,v2,7/7] lavf/movenc: enable dvcC/dvvC box support from sidedata",1
+192,,ffmpeg-patch-18906,"[FFmpeg-devel,v3,7/7] lavf/movenc: enable dvcC/dvvC box support from DOVI sidedata",1
+193,,ffmpeg-patch-19080,"[FFmpeg-devel,v4,7/7] lavf/movenc: enable dvcC/dvvC box support from DOVI sidedata",1
+194,,ffmpeg-patch-19146,"[FFmpeg-devel,v5,7/7] lavf/movenc: enable dvcC/dvvC box support from DOVI sidedata",1
+195,,ffmpeg-patch-19161,"[FFmpeg-devel,v6,7/9] lavf/movenc: enable dvcC/dvvC box support from DOVI sidedata",1
+196,ffmpeg-change2-24492,ffmpeg-patch-2426,"[FFmpeg-devel] Cinepak: speed up decoding several-fold, depending on the scenario, by supporting multiple output pixel formats.",1
+197,,ffmpeg-patch-2509,"[FFmpeg-devel] deduplicated [PATCH] Cinepak: speed up decoding several-fold, depending on the scenario, by supporting multiple output pixel formats.",1
+198,,ffmpeg-patch-2681,"[FFmpeg-devel,1/2] Re: deduplicated [PATCH] Cinepak: speed up decoding several-fold, depending on the scenario, by supporting multiple output pixel formats.",1
+199,,ffmpeg-patch-2675,"[FFmpeg-devel,2/2] Re: deduplicated [PATCH] Cinepak: speed up decoding several-fold, depending on the scenario, by supporting multiple output pixel formats.",1
+200,,ffmpeg-patch-2684,"[FFmpeg-devel,3/2] Re: deduplicated [PATCH] Cinepak: speed up decoding several-fold, depending on the scenario, by supporting multiple output pixel formats.",1
+201,ffmpeg-change2-13463,ffmpeg-patch-5147,[FFmpeg-devel] avcodec/mips: Improve avc mc copy msa functions,0
+202,,ffmpeg-patch-5150,[FFmpeg-devel] avcodec/mips: Improve avc mc copy msa functions,0
+203,,ffmpeg-patch-5505,[FFmpeg-devel] avcodec/mips: Improve avc uni copy mc msa functions,0
+204,,ffmpeg-patch-5513,[FFmpeg-devel] avcodec/mips: Improve avc uni copy mc msa functions,0
+205,ffmpeg-change2-2259,ffmpeg-patch-17496,[FFmpeg-devel] avfilter: add xfade opencl filter,0
+206,,ffmpeg-patch-17505,[FFmpeg-devel] avfilter: add xfade opencl filter,0
+207,,ffmpeg-patch-17558,[FFmpeg-devel] avfilter: add xfade filter,0
+208,,ffmpeg-patch-17566,[FFmpeg-devel] avfilter: add xfade opencl filter,0
+209,,ffmpeg-patch-17645,"[FFmpeg-devel,PLEASE,IGNORE] avfilter: add xfade opencl filter",0
+210,ffmpeg-change2-11311,ffmpeg-patch-34488,"[FFmpeg-devel,1/2] doc/examples/transcode_aac: Don't ignore last encoded frame",1
+211,,ffmpeg-patch-34905,"[FFmpeg-devel,v2,1/2] doc/examples/transcode_aac: Don't ignore last encoded frame",1
+212,,ffmpeg-patch-35447,"[FFmpeg-devel,v3,1/2] doc/examples/transcode_aac: Don't ignore last encoded frame",1
+213,,ffmpeg-patch-35449,"[FFmpeg-devel,v4,1/2] doc/examples/transcode_aac: Don't ignore last encoded",1
+214,,ffmpeg-patch-35467,"[FFmpeg-devel,v5,1/4] doc/examples/transcode_aac: Don't ignore last encoded frame",1
+215,,ffmpeg-patch-35474,"[FFmpeg-devel,v6,1/4] doc/examples/transcode_aac: Don't ignore last encoded frame",1
+216,,ffmpeg-patch-35539,"[FFmpeg-devel,v7,1/4] doc/examples/transcode_aac: Don't ignore last encoded frame",1
+217,ffmpeg-change2-14574,ffmpeg-patch-30248,"[FFmpeg-devel,v2] avformat/mpegts: fixes overflow handlign when parsing the PMT",1
+218,,ffmpeg-patch-30257,"[FFmpeg-devel,v3] avformat/mpegts: fixes overflow when parsing the PMT",1
+219,ffmpeg-change2-22029,ffmpeg-patch-5881,[FFmpeg-devel] avcodec/mips: Improve hevc bi 4 tap hv mc msa functions,0
+220,,ffmpeg-patch-5882,[FFmpeg-devel] avcodec/mips: Improve hevc bi wgt 4 tap hv mc msa functions,0
+221,,ffmpeg-patch-5889,[FFmpeg-devel] avcodec/mips: Improve hevc bi 4 tap hv mc msa functions,0
+222,,ffmpeg-patch-5988,[FFmpeg-devel] avcodec/mips: Improve hevc bi wgt 4 tap hv mc msa functions,0
+223,ffmpeg-change2-7193,ffmpeg-patch-21372,"[FFmpeg-devel,RFC] lavc, lavfmt: add FLIF decoding support",1
+224,,ffmpeg-patch-21380,"[FFmpeg-devel,v2,RFC] lavc, lavfmt: add FLIF decoding support",1
+225,,ffmpeg-patch-21601,"[FFmpeg-devel,v3,RFC] lavc, lavfmt: add FLIF decoding support",1
+226,,ffmpeg-patch-21665,"[FFmpeg-devel,v4,1/3,RFC] lavc: add FLIF decoding support",1
+227,,ffmpeg-patch-21668,"[FFmpeg-devel,v5,1/3,RFC] lavc: add FLIF decoding support",1
+228,,ffmpeg-patch-21816,"[FFmpeg-devel,v6,1/4] lavc: add FLIF decoding support",1
+229,ffmpeg-change2-21006,ffmpeg-patch-7246,[FFmpeg-devel] Don't overwrite previously setup dimensions for all codecs,1
+230,,ffmpeg-patch-7319,"[FFmpeg-devel,V2,2/2] Don't overwrite previously setup dimensions for all codecs",1
+231,,ffmpeg-patch-7425,"[FFmpeg-devel,V3] lavc: Don't overwrite previously setup dimensions for all codecs",1
+232,ffmpeg-change2-22698,ffmpeg-patch-2026,[FFmpeg-devel] lavc/cuvid: fail early if GPU can't handle given video parameters,1
+233,,ffmpeg-patch-2145,[FFmpeg-devel] lavc/cuvid: fail early if GPU can't handle video parameters,1
+234,,ffmpeg-patch-2278,[FFmpeg-devel] lavc/cuvid: fail early if GPU can't handle video parameters,1
+235,,ffmpeg-patch-2279,[FFmpeg-devel] lavc/cuvid: fail early if GPU can't handle video parameters (v4),1
+236,ffmpeg-change2-17316,ffmpeg-patch-5222,[FFmpeg-devel] avcodec/mips: Improve avc chroma horiz mc msa functions,0
+237,,ffmpeg-patch-5236,[FFmpeg-devel] avcodec/mips: Improve avc chroma horiz mc msa functions,0
+238,,ffmpeg-patch-5524,[FFmpeg-devel] avcodec/mips: Improve avc chroma avg horiz mc msa functions,0
+239,,ffmpeg-patch-5530,[FFmpeg-devel] avcodec/mips: Improve avc chroma avg horiz mc msa functions,0
+240,ffmpeg-change2-1793,ffmpeg-patch-33902,"[FFmpeg-devel,02/41] avcodec/mjpegenc: Remove nonsense assert",1
+241,,ffmpeg-patch-33977,"[FFmpeg-devel,v2,03/69] avcodec/mjpegenc, speedhqenc: Remove nonsense assert",1
+242,ffmpeg-change2-9347,ffmpeg-patch-10143,"[FFmpeg-devel,2/2] avcodec/ra144: Fix undefined integer overflow in add_wav()",0
+243,,ffmpeg-patch-10628,"[FFmpeg-devel,1/4] avcodec/ra144: Fix integer overflow in add_wav()",0
+244,ffmpeg-change2-22971,ffmpeg-patch-29547,[FFmpeg-devel] support raw avi for raw PAL8 or Gray8 pixel data,1
+245,,ffmpeg-patch-29561,[FFmpeg-devel] libavformat/riffenc: support raw avi for raw PAL8 or Gray8 pixel data,1
+246,ffmpeg-change2-16262,ffmpeg-patch-36196,"[FFmpeg-devel,v14,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi() and getenv_utf8()",1
+247,,ffmpeg-patch-36243,"[FFmpeg-devel,v15,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi() and getenv_utf8()",1
+248,,ffmpeg-patch-36249,"[FFmpeg-devel,v16,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi() and getenv_utf8()",1
+249,,ffmpeg-patch-36296,"[FFmpeg-devel,v17,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi() and getenv_utf8()",1
+250,,ffmpeg-patch-36330,"[FFmpeg-devel,v18,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi(), getenv_utf8() and freeenv_utf8()",1
+251,,ffmpeg-patch-36337,"[FFmpeg-devel,v19,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi(), getenv_utf8() and freeenv_utf8()",1
+252,,ffmpeg-patch-36349,"[FFmpeg-devel,v20,1/5] libavutil: Add wchartoutf8(), wchartoansi(), utf8toansi(), getenv_utf8(), freeenv_utf8() and getenv_dup()",1
+253,ffmpeg-change2-24144,ffmpeg-patch-37476,"[FFmpeg-devel,FFmpeg-devel,v10,3/9] Added muxer to handle writing EVC encoded data into file or output bytestream",1
+254,,ffmpeg-patch-37590,"[FFmpeg-devel,v11,3/9] Added muxer to handle writing EVC encoded data into file or output bytestream",1
+255,,ffmpeg-patch-37703,"[FFmpeg-devel,v12,3/9] avformat/evc_muxer: Added muxer to handle writing EVC encoded data into file or output bytestream",1
+256,ffmpeg-change2-6473,ffmpeg-patch-12387,"[FFmpeg-devel,v1,1/2] avformat/rtsp.c: Add https tunneling support",1
+257,,ffmpeg-patch-12388,"[FFmpeg-devel,v2] avformat/rtsp: Add https tunneling support",1
+258,ffmpeg-change2-22072,ffmpeg-patch-13184,"[FFmpeg-devel,2/2] avcodec/nvenc: add master display and light level sei data for hdr10",1
+259,,ffmpeg-patch-13241,"[FFmpeg-devel,2/3] avcodec/nvenc: add master display and light level sei for HDR10",1
+260,,ffmpeg-patch-13309,"[FFmpeg-devel,v2,2/3] avcodec/nvenc: add master display and light level sei for HDR10",1
+261,ffmpeg-change2-14576,ffmpeg-patch-5052,"[FFmpeg-devel,PATCHv3] avformat/mpegts: opus muxing & demuxing for mapping family 255",0
+262,,ffmpeg-patch-5141,"[FFmpeg-devel,PATCHv3] avformat/mpegts: opus muxing & demuxing for mapping family 255",0
+263,,ffmpeg-patch-5730,"[FFmpeg-devel,v4,2/2] avformat/mpegts: opus demuxing for mapping family 255",0
+264,,ffmpeg-patch-5750,"[FFmpeg-devel,v5,2/2] avformat/mpegts: opus demuxing for mapping family 255",0
+265,,ffmpeg-patch-5798,"[FFmpeg-devel,v6,2/2] avformat/mpegts: opus demuxing for mapping family 255",0
+266,ffmpeg-change2-4577,ffmpeg-patch-27951,[FFmpeg-devel] avcodec/ccaption_dec: Make real-time latency configurable,1
+267,,ffmpeg-patch-27983,[FFmpeg-devel] avcodec/ccaption_dec: Make real-time latency configurable v2,1
+268,,ffmpeg-patch-28100,[FFmpeg-devel] avcodec/ccaption_dec: Make real-time latency configurable,1
+269,,ffmpeg-patch-28098,"[FFmpeg-devel,v2] avcodec/ccaption_dec: Make real-time latency configurable",1
+270,ffmpeg-change2-22629,ffmpeg-patch-17939,"[FFmpeg-devel,3/3] fftools/ffmpeg: check caps of encoders for encoding frame with variable dimension",1
+271,,ffmpeg-patch-20199,"[FFmpeg-devel,2/3] fftools/ffmpeg: check caps of encoders for encoding with variable dimension",1
+272,ffmpeg-change2-3433,ffmpeg-patch-6250,"[FFmpeg-devel,ogm] Free extradata before reallocating.",0
+273,,ffmpeg-patch-6426,"[FFmpeg-devel,ogg] Free opus extradata before reallocating.",0
+274,ffmpeg-change2-8269,ffmpeg-patch-12649,"[FFmpeg-devel,RFC,2/6] Add common V4L2 request API code",1
+275,,ffmpeg-patch-24459,"[FFmpeg-devel,2/5] avcodec: add common V4L2 request API code",1
+276,,ffmpeg-patch-35291,"[FFmpeg-devel,v2,2/2] avcodec: add common V4L2 request API code",1
+277,ffmpeg-change2-22972,ffmpeg-patch-25456,"[FFmpeg-devel,2/3] Support size = 1 and size = 0 special cases in probing",1
+278,,ffmpeg-patch-25461,"[FFmpeg-devel,2/8] avformat/mov: Support size = 1 and size = 0 special cases in probing",1
+279,ffmpeg-change2-23743,ffmpeg-patch-10789,[FFmpeg-devel] add the protection for http range get request starting from file size,1
+280,,ffmpeg-patch-10790,[FFmpeg-devel] Fw: [PATCH] add the protection for http range get request starting from file size,1
+281,ffmpeg-change2-11111,ffmpeg-patch-37482,"[FFmpeg-devel,FFmpeg-devel,v10,9/9] Changes in Changelog and MAINTAINERS files",1
+282,,ffmpeg-patch-37597,"[FFmpeg-devel,v11,9/9] Changes in Changelog and MAINTAINERS files",1
+283,,ffmpeg-patch-37709,"[FFmpeg-devel,v12,9/9] avcodec/evc: Changes in Changelog and MAINTAINERS files",1
+284,ffmpeg-change2-3871,ffmpeg-patch-334,[FFmpeg-devel] libavutil: let clang-FORTIFY build; NFC.,1
+285,,ffmpeg-patch-343,"[FFmpeg-devel,v2] Let clang-FORTIFY build; NFC.",1
+286,ffmpeg-change2-20162,ffmpeg-patch-9763,[FFmpeg-devel] avcodec/mediacodec_sw_buffer: Fix segmentation fault with decoding on android oreo,1
+287,,ffmpeg-patch-9764,[FFmpeg-devel] avcodec/mediacodec_sw_buffer: Fix segmentation fault with decoding on android oreo (corrected),1
+288,ffmpeg-change2-9481,ffmpeg-patch-19614,"[FFmpeg-devel,6/7] avcodec/ttadsp: Fix several integer overflows in tta_filter_process_c()",0
+289,,ffmpeg-patch-31117,"[FFmpeg-devel,2/2] avcodec/ttadsp: Fix integer overflows in tta_filter_process_c()",0
+290,ffmpeg-change2-6681,ffmpeg-patch-16373,"[FFmpeg-devel,v1,3/4] bavfilter/vsrc_life: Fix for tye random_seed type",1
+291,,ffmpeg-patch-16375,"[FFmpeg-devel,v2,3/3] bavfilter/vsrc_life: Fix for random_seed type",1
+292,ffmpeg-change2-22650,ffmpeg-patch-4867,[FFmpeg-devel] Fix SIGBUS on ARM when compiled with binutils 2.29,1
+293,,ffmpeg-patch-4875,"[FFmpeg-devel,v2] avcodec/arm: Fix SIGBUS on ARM when compiled with binutils 2.29",1
+294,ffmpeg-change2-16443,ffmpeg-patch-31097,"[FFmpeg-devel,v2,1/1] Print bit depths when executing 'ffmpeg -pix_fmts'",1
+295,,ffmpeg-patch-31101,"[FFmpeg-devel,v3,1/1] fftools/cmdutils: Print bit depths when executing 'ffmpeg -pix_fmts'",1
+296,ffmpeg-change2-173,ffmpeg-patch-9546,"[FFmpeg-devel,17/17] Update Documentation.txt",0
+297,,ffmpeg-patch-9860,"[FFmpeg-devel,7/7] Update Documentation",0
+298,ffmpeg-change2-16164,ffmpeg-patch-14651,[FFmpeg-devel] libavfilter: Add dehaze-filter option in existing derain filter.,1
+299,,ffmpeg-patch-14654,"[FFmpeg-devel,v2] libavfilter: Add dehaze-filter option in existing derain.",1
+300,ffmpeg-change2-3466,ffmpeg-patch-30366,"[FFmpeg-devel,1/1] Implements RTMP reconnect feature",1
+301,,ffmpeg-patch-30367,"[FFmpeg-devel,1/1] Implements RTMP reconnect feature",1
+302,,ffmpeg-patch-30368,"[FFmpeg-devel,1/1] libavformat/rtmp: Implements RTMP reconnect feature",1
+303,,ffmpeg-patch-30596,"[FFmpeg-devel,1/1] libavformat/rtmp: Implements RTMP reconnect feature",1
+304,ffmpeg-change2-85,ffmpeg-patch-16825,"[FFmpeg-devel,16/16] avformat/hlsenc: Cosmetics",0
+305,,ffmpeg-patch-17955,"[FFmpeg-devel,v2,7/7] avformat/hlsenc: Cosmetics",0
+306,,ffmpeg-patch-18785,"[FFmpeg-devel,v3,7/7] avformat/hlsenc: Cosmetics",0
+307,,ffmpeg-patch-19867,"[FFmpeg-devel,4/4] avformat/hlsenc, hlsplaylist: Cosmetics",0
+308,ffmpeg-change2-13903,ffmpeg-patch-32473,[FFmpeg-devel] avfilter: add yadif implementation using Metal.framework,1
+309,,ffmpeg-patch-32652,[FFmpeg-devel] avfilter: add deinterlace_videotoolbox (yadif implementation using Metal.framework),1
+310,ffmpeg-change2-12803,ffmpeg-patch-3208,"[FFmpeg-devel,2/2] Add http cookie tests cases to fate",1
+311,,ffmpeg-patch-3245,"[FFmpeg-devel,2/2] Add http cookie tests cases to fate",1
+312,,ffmpeg-patch-3312,"[FFmpeg-devel,2/2] Add http cookie tests cases to fate",1
+313,,ffmpeg-patch-3562,"[FFmpeg-devel,2/2] libavformat/tests: Add http cookie tests cases to fate",1
+314,ffmpeg-change2-24142,ffmpeg-patch-34524,[FFmpeg-devel] add support for AVS3 High profile - same syntax as AVS3 Main profile,1
+315,,ffmpeg-patch-34525,[FFmpeg-devel] AVS3: add support for AVS3 High profile - same syntax as AVS3 Main profile,1
+316,ffmpeg-change2-3447,ffmpeg-patch-14026,"[FFmpeg-devel,3/4] h264_mp4toannexb: Improve overread checks II",1
+317,,ffmpeg-patch-14060,"[FFmpeg-devel,5/6] h264_mp4toannexb: Improve overread checks",1
+318,,ffmpeg-patch-15802,"[FFmpeg-devel,12/15] h264_mp4toannexb: Improve overread checks",1
+319,,ffmpeg-patch-16788,"[FFmpeg-devel,v2,12/14] h264_mp4toannexb: Improve overread checks",1
+320,ffmpeg-change2-24342,ffmpeg-patch-5326,[FFmpeg-devel] Added HW accelerated H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+321,,ffmpeg-patch-5764,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+322,,ffmpeg-patch-5792,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+323,,ffmpeg-patch-5864,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+324,,ffmpeg-patch-6034,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+325,,ffmpeg-patch-6071,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+326,,ffmpeg-patch-6135,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+327,,ffmpeg-patch-6284,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+328,,ffmpeg-patch-6385,[FFmpeg-devel] Added HW H.264 and HEVC encoding for AMD GPUs based on AMF SDK,1
+329,ffmpeg-change2-8266,ffmpeg-patch-11538,[FFmpeg-devel] Add a new channel layout API,1
+330,,ffmpeg-patch-16006,[FFmpeg-devel] Add a new channel layout API,1
+331,,ffmpeg-patch-16632,"[FFmpeg-devel,001/244] Add a new channel layout API",1
+332,,ffmpeg-patch-32120,"[FFmpeg-devel,001/279] Add a new channel layout API",1
+333,,ffmpeg-patch-32657,"[FFmpeg-devel,001/279,v2] Add a new channel layout API",1
+334,,ffmpeg-patch-33291,"[FFmpeg-devel,001/281] Add a new channel layout API",1
+335,,ffmpeg-patch-33642,"[FFmpeg-devel,001/289,v4] Add a new channel layout API",1
+336,,ffmpeg-patch-33643,"[FFmpeg-devel,001/289,v5] Add a new channel layout API",1
+337,,ffmpeg-patch-33648,"[FFmpeg-devel,001/289,v6] Add a new channel layout API",1
+338,,ffmpeg-patch-33736,"[FFmpeg-devel,001/293,v7] Add a new channel layout API",1
+339,,ffmpeg-patch-33832,"[FFmpeg-devel,001/293,v8] avutil/channel_layout: Add a new channel layout API",1
+340,ffmpeg-change2-12706,ffmpeg-patch-13451,[FFmpeg-devel] vaapi_encode_mjpeg: WA: fix bad component id bug,1
+341,,ffmpeg-patch-13452,"[FFmpeg-devel,v2] vaapi_encode_mjpeg: fix bad component id bug",1
+342,,ffmpeg-patch-13453,"[FFmpeg-devel,v3] vaapi_encode_mjpeg: fix bad component id bug",1
+343,,ffmpeg-patch-13454,"[FFmpeg-devel,v4] vaapi_encode_mjpeg: fix bad component id bug",1
+344,ffmpeg-change2-1850,ffmpeg-patch-26779,"[FFmpeg-devel,10/19] avcodec/mpegvideo_enc: Remove redundant time_base check",0
+345,,ffmpeg-patch-37203,"[FFmpeg-devel,8/9] avcodec/mpegvideo_enc: Remove redundant check",0
+346,ffmpeg-change2-8149,ffmpeg-patch-15689,"[FFmpeg-devel,4/5] tools/target_dec_fuzzer: Adjust threshold for smacker",0
+347,,ffmpeg-patch-35578,"[FFmpeg-devel,1/2] tools/target_dec_fuzzer: Adjust threshold for smacker audio",0
+348,ffmpeg-change2-8419,ffmpeg-patch-8258,[FFmpeg-devel] avcodec/aacdec_fixed: Fix integer overflow in apply_independent_coupling_fixed(),0
+349,,ffmpeg-patch-9411,"[FFmpeg-devel,4/4] avcodec/aacdec_fixed: Fix undefined integer overflow in apply_independent_coupling_fixed()",0
+350,ffmpeg-change2-23972,ffmpeg-patch-4005,"[FFmpeg-devel,2/2] fate: use do_md5sum instead of the md5 protocol for md5 fate tests",1
+351,,ffmpeg-patch-4010,"[FFmpeg-devel,PATCHv2,2/2] fate: use do_md5sum instead of the md5 protocol for most md5 fate tests",1
+352,ffmpeg-change2-15480,ffmpeg-patch-31220,[FFmpeg-devel] Fix typo in pixel format warning message,1
+353,,ffmpeg-patch-31221,[FFmpeg-devel] swscale/utils: Fix typo in pixel format warning message,1
+354,ffmpeg-change2-14342,ffmpeg-patch-7843,"[FFmpeg-devel,v1,1/1] avformat/http: fix for zero window size issue when",1
+355,,ffmpeg-patch-7844,"[FFmpeg-devel,v2,1/1] avformat/http: fix for zero window size issue",1
+356,ffmpeg-change2-6560,ffmpeg-patch-17179,"[FFmpeg-devel,8/9] avformat/wavdec: Reindent after last commit",1
+357,,ffmpeg-patch-17369,"[FFmpeg-devel,v2,6/8] avformat/wavdec.c: Reindent after last commit",1
+358,,ffmpeg-patch-22708,"[FFmpeg-devel,v4,6/9] avformat/wavdec.c: Reindent after last commit",1
+359,,ffmpeg-patch-23074,"[FFmpeg-devel,v5,6/9] avformat/wavdec.c: Reindent after last commit",1
+360,ffmpeg-change2-16144,ffmpeg-patch-25187,"[FFmpeg-devel,06/10] libavcodec/qsvenc.c: add ROI support to qsv encoder",1
+361,,ffmpeg-patch-35610,[FFmpeg-devel] libavcodec/qsvenc: add ROI support to qsv encoder,1
+362,,ffmpeg-patch-36055,"[FFmpeg-devel,v2] libavcodec/qsvenc: add ROI support to qsv encoder",1
+363,,ffmpeg-patch-36078,"[FFmpeg-devel,v3] libavcodec/qsvenc: add ROI support to qsv encoder",1
+364,,ffmpeg-patch-36092,"[FFmpeg-devel,v4] libavcodec/qsvenc: add ROI support to qsv encoder",1
+365,ffmpeg-change2-19686,ffmpeg-patch-1591,[FFmpeg-devel] Save FFmpeg colorspace info in openh264 video files.,1
+366,,ffmpeg-patch-1651,[FFmpeg-devel] Save FFmpeg colorspace info in openh264 video files.,1
+367,,ffmpeg-patch-1733,[FFmpeg-devel] Save FFmpeg colorspace info in openh264 video files.,1
+368,,ffmpeg-patch-1784,[FFmpeg-devel] libavcodec/libopenh264enc: Save FFmpeg colorspace info in openh264 video files.,1
+369,ffmpeg-change2-23610,ffmpeg-patch-29200,"[FFmpeg-devel,v2,2/4] lavfi/vf_scale: use single default swscale flags for simple and complex filter graph",1
+370,,ffmpeg-patch-29218,"[FFmpeg-devel,v3,1/2] lavfi/vf_scale: use default swscale flags for simple and complex filter graph",1
+371,ffmpeg-change2-21542,ffmpeg-patch-16382,"[FFmpeg-devel] libavcodec/amfenc_hevc.c: Fix constant QP settings for I, P pictures.",1
+372,,ffmpeg-patch-17601,"[FFmpeg-devel,1/2] libavcodec/amfenc_hevc.c: Fix constant QP settings for I, P",1
+373,ffmpeg-change2-8272,ffmpeg-patch-15887,"[FFmpeg-devel,2/2] Add decode support for VDPAU VP9.",1
+374,,ffmpeg-patch-15888,"[FFmpeg-devel,2/2] Add decode support for VDPAU VP9.",1
+375,,ffmpeg-patch-15895,[FFmpeg-devel] Add support for VP9 VDPAU hwaccel decode,1
+376,,ffmpeg-patch-15944,"[FFmpeg-devel,v2] Add support for VP9 VDPAU hwaccel decode",1
+377,ffmpeg-change2-4263,ffmpeg-patch-156,[FFmpeg-devel] add append_list flag into hlsenc,1
+378,,ffmpeg-patch-230,[FFmpeg-devel] lavf/hlsenc: add append_list flag into hlsenc,1
+379,ffmpeg-change2-23807,ffmpeg-patch-5837,[FFmpeg-devel] avcodec/mips: Improve hevc bi 4 tap hz and vt mc msa functions,0
+380,,ffmpeg-patch-5838,[FFmpeg-devel] avcodec/mips: Improve hevc bi wgt 4 tap hz and vt mc msa functions,0
+381,,ffmpeg-patch-5845,[FFmpeg-devel] avcodec/mips: Improve hevc bi 4 tap hz and vt mc msa functions,0
+382,,ffmpeg-patch-5847,[FFmpeg-devel] avcodec/mips: Improve hevc bi wgt 4 tap hz and vt mc msa functions,0
+383,ffmpeg-change2-16806,ffmpeg-patch-37477,"[FFmpeg-devel,FFmpeg-devel,v10,4/9] Added demuxer to handle reading EVC video files",1
+384,,ffmpeg-patch-37591,"[FFmpeg-devel,v11,4/9] Added demuxer to handle reading EVC video files",1
+385,,ffmpeg-patch-37704,"[FFmpeg-devel,v12,4/9] avformat/evc_demuxer: Added demuxer to handle reading EVC video files",1
+386,ffmpeg-change2-11705,ffmpeg-patch-31749,[FFmpeg-devel] Include -fPIC also in the LDFLAGS,1
+387,,ffmpeg-patch-31751,[FFmpeg-devel] configure: Include -fPIC also in the LDFLAGS,1
+388,ffmpeg-change2-15598,ffmpeg-patch-9100,"[FFmpeg-devel,2/3] lavc: add avs2 video decoder via libdavs2",1
+389,,ffmpeg-patch-9118,"[FFmpeg-devel,2/3] lavc, configure: add avs2 video decoder via libdavs2",1
+390,ffmpeg-change2-3522,ffmpeg-patch-9245,"[FFmpeg-devel,1/2] lavc/dolby_e: fix make checkheaders",1
+391,,ffmpeg-patch-9260,"[FFmpeg-devel,v2,1/2] lavc/dolby_e: fix make checkheaders warning",1
+392,ffmpeg-change2-17317,ffmpeg-patch-5498,[FFmpeg-devel] avcodec/mips: Improve avc chroma hv mc msa functions,0
+393,,ffmpeg-patch-5501,[FFmpeg-devel] avcodec/mips: Improve avc chroma hv mc msa functions,0
+394,,ffmpeg-patch-5714,[FFmpeg-devel] avcodec/mips: Improve avc chroma avg hv mc msa functions,0
+395,,ffmpeg-patch-5755,[FFmpeg-devel] avcodec/mips: Improve avc chroma avg hv mc msa functions,0
+396,ffmpeg-change2-86,ffmpeg-patch-30665,"[FFmpeg-devel,3/5] avformat/imf: Demuxer implementation",1
+397,,ffmpeg-patch-30976,"[FFmpeg-devel,3/5] avformat/imf: Demuxer implementation",1
+398,,ffmpeg-patch-31169,"[FFmpeg-devel,3/5] avformat/imf: Demuxer implementation",1
+399,,ffmpeg-patch-31295,"[FFmpeg-devel,v2,3/4] avformat/imf: Demuxer implementation",1
+400,,ffmpeg-patch-31313,"[FFmpeg-devel,v3,3/4] avformat/imf: Demuxer implementation",1
+401,,ffmpeg-patch-31604,"[FFmpeg-devel,v4,3/4] avformat/imf: Demuxer implementation",1
+402,,ffmpeg-patch-31611,"[FFmpeg-devel,v5,3/4] avformat/imf: Demuxer implementation",1
+403,,ffmpeg-patch-32041,"[FFmpeg-devel,v6,1/2] avformat/imf: Demuxer",1
+404,,ffmpeg-patch-32050,"[FFmpeg-devel,v7,1/2] avformat/imf: Demuxer",1
+405,,ffmpeg-patch-32108,"[FFmpeg-devel,v8,1/2] avformat/imf: Demuxer",1
+406,,ffmpeg-patch-32211,"[FFmpeg-devel,v9,1/2] avformat/imf: Demuxer",1
+407,,ffmpeg-patch-32395,"[FFmpeg-devel,v10,1/2] avformat/imf: Demuxer",1
+408,,ffmpeg-patch-32502,"[FFmpeg-devel,v11,1/2] avformat/imf: Demuxer",1
+409,,ffmpeg-patch-32721,"[FFmpeg-devel,v12,1/2] avformat/imf: Demuxer",1
+410,,ffmpeg-patch-32769,"[FFmpeg-devel,v13,1/2] avformat/imf: Demuxer",1
+411,,ffmpeg-patch-32806,"[FFmpeg-devel,v14,1/2] avformat/imf: Demuxer",1
+412,,ffmpeg-patch-32926,"[FFmpeg-devel,v15,1/2] avformat/imf: Demuxer",1

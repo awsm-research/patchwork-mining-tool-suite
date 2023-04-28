@@ -1,0 +1,1146 @@
+,change1_original_id,patch_original_id,patch_name,correct_grouping
+0,kernel-change1-940281,kernel-patch-12122447,[net] net: dsa: only unset VLAN filtering when last port leaves last VLAN-aware bridge,1
+1,,kernel-patch-12152771,"[v2,net,1/3] net: dsa: only unset VLAN filtering when last port leaves last VLAN-aware bridge",1
+2,,kernel-patch-12160603,"[v3,net] net: dsa: only unset VLAN filtering when last port leaves last VLAN-aware bridge",1
+3,kernel-change1-954684,kernel-patch-12108209,"[RFC,net,2/2] selftests: fib_nexthops: Test blackhole nexthops when loopback goes down",1
+4,,kernel-patch-12115689,"[net,2/2] selftests: fib_nexthops: Test blackhole nexthops when loopback goes down",1
+5,kernel-change1-943059,kernel-patch-12922630,"[net-next,4/5] net: ipa: report when the driver has been removed",1
+6,,kernel-patch-12922872,"[net-next,v2,4/5] net: ipa: report when the driver has been removed",1
+7,kernel-change1-940445,kernel-patch-12706747,"[RFC,net-next,03/12] net: dsa: qca8k: rename references to ""lag"" as ""lag_dev""",1
+8,,kernel-patch-12741890,"[v2,net-next,03/12] net: dsa: qca8k: rename references to ""lag"" as ""lag_dev""",1
+9,,kernel-patch-12754026,"[v3,net-next,03/11] net: dsa: qca8k: rename references to ""lag"" as ""lag_dev""",1
+10,,kernel-patch-12754170,"[v4,net-next,03/11] net: dsa: qca8k: rename references to ""lag"" as ""lag_dev""",1
+11,,kernel-patch-12756976,"[v5,net-next,03/11] net: dsa: qca8k: rename references to ""lag"" as ""lag_dev""",1
+12,kernel-change1-937474,kernel-patch-12054911,"[net-next,07/16] mptcp: create the listening socket for new port",1
+13,,kernel-patch-12060195,"[net-next,v2,07/15] mptcp: create the listening socket for new port",1
+14,kernel-change1-950389,kernel-patch-12952715,[nf] netfilter: nf_defrag_ipv6: allow nf_conntrack_frag6_high_thresh increases,1
+15,,kernel-patch-12954008,"[net,14/14] netfilter: nf_defrag_ipv6: allow nf_conntrack_frag6_high_thresh increases",1
+16,kernel-change1-948325,kernel-patch-12155663,"[RFC,V4,net-next,3/5] net/mlx5: Implement get_module_eeprom_by_page()",1
+17,,kernel-patch-12164255,"[RFC,V5,net-next,3/5] net/mlx5: Implement get_module_eeprom_by_page()",1
+18,,kernel-patch-12193265,"[net-next,3/8] net/mlx5: Implement get_module_eeprom_by_page()",1
+19,kernel-change1-938549,kernel-patch-12937040,net:bonding:support balance-alb interface with vlan to bridge,1
+20,,kernel-patch-12938624,[v1] net:bonding:support balance-alb interface with vlan to bridge,1
+21,,kernel-patch-12939368,[v2] net:bonding:support balance-alb interface with vlan to bridge,1
+22,kernel-change1-951549,kernel-patch-12057289,"[net-next,03/14] octeontx2-af: cn10k: Update NIX/NPA context structure",1
+23,,kernel-patch-12060747,"[net-next,v2,03/14] octeontx2-af: cn10k: Update NIX/NPA context structure",1
+24,,kernel-patch-12067087,"[net-next,v3,03/14] octeontx2-af: cn10k: Update NIX/NPA context structure",1
+25,,kernel-patch-12071743,"[net-next,v4,03/14] octeontx2-af: cn10k: Update NIX/NPA context structure",1
+26,,kernel-patch-12082157,"[net-next,v5,03/14] octeontx2-af: cn10k: Update NIX/NPA context structure",1
+27,,kernel-patch-12083613,"[net-next,v6,03/14] octeontx2-af: cn10k: Update NIX/NPA context structure",1
+28,kernel-change1-927367,kernel-patch-12147443,"[v3,bpf-next,08/12] bpftool: add ability to specify custom skeleton object name",1
+29,,kernel-patch-12149123,"[v4,bpf-next,08/12] bpftool: add ability to specify custom skeleton object name",1
+30,kernel-change1-958375,kernel-patch-12580991,"[v6,08/12] tools/bpf/bpftool/skeleton: make it adopt to task comm size change",1
+31,,kernel-patch-12595803,"[v7,07/11] tools/bpf/bpftool/skeleton: make it adopt to task comm size change",1
+32,kernel-change1-928319,kernel-patch-12938128,can: kvaser_usb: kvaser_usb_hydra: Use kzalloc for allocating only one element,1
+33,,kernel-patch-12977015,"[net-next,04/23] can: kvaser_usb: kvaser_usb_hydra: Use kzalloc for allocating only one element",1
+34,kernel-change1-952273,kernel-patch-12771058,"[RFC,v7,net-next,06/13] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+35,,kernel-patch-12842518,"[RFC,v8,net-next,05/16] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+36,,kernel-patch-12877871,"[v9,net-next,3/7] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+37,,kernel-patch-12878064,"[v10,net-next,3/7] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+38,,kernel-patch-12897888,"[v11,net-next,4/9] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+39,,kernel-patch-12903633,"[v12,net-next,4/9] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+40,,kernel-patch-12907010,"[v13,net-next,4/9] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+41,,kernel-patch-12925943,"[v14,mfd,4/9] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+42,,kernel-patch-12935201,"[v15,mfd,4/9] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+43,,kernel-patch-12942989,"[v16,mfd,3/8] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+44,,kernel-patch-12966310,"[RESEND,v16,mfd,3/8] pinctrl: ocelot: add ability to be used in a non-mmio configuration",1
+45,kernel-change1-936204,kernel-patch-11948325,MAINTAINERS: Add entry for Marvell Prestera Ethernet Switch driver,1
+46,,kernel-patch-11953399,[v2] MAINTAINERS: Add entry for Marvell Prestera Ethernet Switch driver,1
+47,,kernel-patch-11961513,[v3] MAINTAINERS: Add entry for Marvell Prestera Ethernet Switch driver,1
+48,kernel-change1-960397,kernel-patch-12839326,"[ipsec-next,3/8] xfrm: rename xfrm_state_offload struct to allow reuse",1
+49,,kernel-patch-12848983,[3/8] xfrm: rename xfrm_state_offload struct to allow reuse,1
+50,kernel-change1-954532,kernel-patch-12030181,"[bpf-next,7/8] selftest/bpf: add XDP socket tests for bpf_redirect_{xsk, map}()",1
+51,,kernel-patch-12030231,"[bpf-next,v2,7/8] selftest/bpf: add XDP socket tests for bpf_redirect_{xsk, map}()",1
+52,kernel-change1-946496,kernel-patch-11950457,"[V2,1/5] net: stmmac: increase the timeout for dma reset",1
+53,,kernel-patch-11955285,"[V3,1/5] net: stmmac: increase the timeout for dma reset",1
+54,kernel-change1-955570,kernel-patch-11864711,"[bpf-next,10/11] selftests/bpf: add split BTF dedup selftests",1
+55,,kernel-patch-11883165,"[v2,bpf-next,10/11] selftests/bpf: add split BTF dedup selftests",1
+56,kernel-change1-946331,kernel-patch-12681137,"[CFT,net-next,2/6] net: stmmac: convert to phylink_get_linkmodes()",1
+57,,kernel-patch-12724018,"[net-next,2/7] net: stmmac: convert to phylink_get_linkmodes()",1
+58,,kernel-patch-12724897,"[net-next,v2,2/7] net: stmmac: convert to phylink_get_linkmodes()",1
+59,kernel-change1-936041,kernel-patch-11882589,"[v22,06/23] LSM: Use lsmblob in security_secid_to_secctx",1
+60,,kernel-patch-11882825,"[v22,06/23] LSM: Use lsmblob in security_secid_to_secctx",1
+61,,kernel-patch-11922143,"[v23,06/23] LSM: Use lsmblob in security_secid_to_secctx",1
+62,,kernel-patch-12048583,"[v24,08/25] LSM: Use lsmblob in security_secid_to_secctx",1
+63,,kernel-patch-12125609,"[v25,08/25] LSM: Use lsmblob in security_secid_to_secctx",1
+64,,kernel-patch-12256473,"[v26,08/25] LSM: Use lsmblob in security_secid_to_secctx",1
+65,,kernel-patch-12314397,"[v27,08/25] LSM: Use lsmblob in security_secid_to_secctx",1
+66,,kernel-patch-12392637,"[v28,08/25] LSM: Use lsmblob in security_secid_to_secctx",1
+67,,kernel-patch-12516417,"[v29,08/28] LSM: Use lsmblob in security_secid_to_secctx",1
+68,,kernel-patch-12635709,"[v30,09/28] LSM: Use lsmblob in security_secid_to_secctx",1
+69,,kernel-patch-12674945,"[v31,09/28] LSM: Use lsmblob in security_secid_to_secctx",1
+70,,kernel-patch-12733579,"[v32,09/28] LSM: Use lsmblob in security_secid_to_secctx",1
+71,,kernel-patch-12777046,"[v33,09/29] LSM: Use lsmblob in security_secid_to_secctx",1
+72,,kernel-patch-12805720,"[v34,09/29] LSM: Use lsmblob in security_secid_to_secctx",1
+73,,kernel-patch-12815356,"[v34,09/29] LSM: Use lsmblob in security_secid_to_secctx",1
+74,,kernel-patch-12816754,"[v35,09/29] LSM: Use lsmblob in security_secid_to_secctx",1
+75,,kernel-patch-12876086,"[v36,09/33] LSM: Use lsmblob in security_secid_to_secctx",1
+76,,kernel-patch-12897403,"[v37,09/33] LSM: Use lsmblob in security_secid_to_secctx",1
+77,,kernel-patch-12991226,"[v38,15/39] LSM: Use lsmblob in security_secid_to_secctx",1
+78,kernel-change1-930740,kernel-patch-12955921,[2/3] dt-bindings: net: sparx5: don't require a reset line,1
+79,,kernel-patch-12960652,"[net-next,1/2] dt-bindings: net: sparx5: don't require a reset line",1
+80,kernel-change1-933150,kernel-patch-12634841,"[net-next,5/9] ice: switch to napi_build_skb()",1
+81,,kernel-patch-12700525,"[net-next,5/9] ice: switch to napi_build_skb()",1
+82,kernel-change1-930688,kernel-patch-12731762,"[net,1/2] dt-bindings: net: qcom,ipa: add optional qcom,qmp property",1
+83,,kernel-patch-12731787,"[net,v2,1/2] dt-bindings: net: qcom,ipa: add optional qcom,qmp property",1
+84,kernel-change1-951714,kernel-patch-12906382,[11/12] octeontx2-pf: Add support for exact match table.,1
+85,,kernel-patch-12907293,"[V1,11/12] octeontx2-pf: Add support for exact match table.",1
+86,,kernel-patch-12909052,"[V2,11/12] octeontx2-pf: Add support for exact match table.",1
+87,,kernel-patch-12909167,"[net-next,V3,11/12] octeontx2-pf: Add support for exact match table.",1
+88,,kernel-patch-12910545,"[net-next,v4,11/12] octeontx2-pf: Add support for exact match table.",1
+89,,kernel-patch-12910559,"[net-next,v5,11/12] octeontx2-pf: Add support for exact match table.",1
+90,kernel-change1-924129,kernel-patch-11852121,"[v3,07/10] ASoC: SOF: sof-client: Add client APIs to access probes ops",1
+91,,kernel-patch-11904093,"[v4,07/10] ASoC: SOF: sof-client: Add client APIs to access probes ops",1
+92,kernel-change1-932233,kernel-patch-12198275,[net] i40e: Fix use-after-free in i40e_client_subtask(),1
+93,,kernel-patch-12244943,"[net,2/5] i40e: Fix use-after-free in i40e_client_subtask()",1
+94,kernel-change1-939673,kernel-patch-11864905,"[net-next,v7,6/8] net: dsa: hellcreek: Add PTP status LEDs",1
+95,,kernel-patch-11876059,"[net-next,v8,6/8] net: dsa: hellcreek: Add PTP status LEDs",1
+96,kernel-change1-926317,kernel-patch-12460789,"[v2,bpf-next,2/3] bpf: introduce helper bpf_get_branch_snapshot",1
+97,,kernel-patch-12466019,"[v3,bpf-next,2/3] bpf: introduce helper bpf_get_branch_snapshot",1
+98,,kernel-patch-12468011,"[v4,bpf-next,2/3] bpf: introduce helper bpf_get_branch_snapshot",1
+99,,kernel-patch-12472179,"[v5,bpf-next,2/3] bpf: introduce helper bpf_get_branch_snapshot",1
+100,,kernel-patch-12479297,"[v6,bpf-next,2/3] bpf: introduce helper bpf_get_branch_snapshot",1
+101,,kernel-patch-12485685,"[v7,bpf-next,2/3] bpf: introduce helper bpf_get_branch_snapshot",1
+102,kernel-change1-951113,kernel-patch-12478537,[11/15] nfc: st21nfca: drop unneeded debug prints,1
+103,,kernel-patch-12489373,"[v2,11/15] nfc: st21nfca: drop unneeded debug prints",1
+104,,kernel-patch-12541889,"[RESEND,v2,5/7] nfc: st21nfca: drop unneeded debug prints",1
+105,,kernel-patch-12550009,"[v3,5/7] nfc: st21nfca: drop unneeded debug prints",1
+106,kernel-change1-928454,kernel-patch-12757619,"[net-next,18/36] can: mcp251xfd: mcp251xfd_chip_stop(): convert to a void function",1
+107,,kernel-patch-12758067,"[net-next,18/36] can: mcp251xfd: mcp251xfd_chip_stop(): convert to a void function",1
+108,kernel-change1-955095,kernel-patch-12454841,"[RFC,net-next,8/8] selftests: net: dsa: add a stress test for unlocked FDB operations",1
+109,,kernel-patch-12577943,"[v2,net-next,9/9] selftests: net: dsa: add a stress test for unlocked FDB operations",1
+110,,kernel-patch-12578291,"[v3,net-next,9/9] selftests: net: dsa: add a stress test for unlocked FDB operations",1
+111,,kernel-patch-12578497,"[v4,net-next,9/9] selftests: net: dsa: add a stress test for unlocked FDB operations",1
+112,,kernel-patch-12580387,"[v5,net-next,10/10] selftests: net: dsa: add a stress test for unlocked FDB operations",1
+113,kernel-change1-958286,kernel-patch-12101185,"[2/2] tools, bpf_asm: exit non-zero on errors.",1
+114,,kernel-patch-12102807,"[2/2] tools, bpf_asm: exit non-zero on errors.",1
+115,,kernel-patch-12102827,"[2/2] tools, bpf_asm: exit non-zero on errors.",1
+116,kernel-change1-925240,kernel-patch-12725946,[next] bonding: pair enable_port with slave_arr_updates,1
+117,,kernel-patch-12729388,"[v2,net-next] bonding: pair enable_port with slave_arr_updates",1
+118,,kernel-patch-12734720,"[v3,net-next] bonding: pair enable_port with slave_arr_updates",1
+119,,kernel-patch-12737927,[v4] bonding: pair enable_port with slave_arr_updates,1
+120,kernel-change1-931723,kernel-patch-12877785,[4/6] ftgmac100: Remove enable NCSI VLAN filtering,1
+121,,kernel-patch-12877796,[4/6] ftgmac100: Remove enable NCSI VLAN filtering,1
+122,,kernel-patch-12877821,"[v2,4/6] ftgmac100: Remove enable NCSI VLAN filtering",1
+123,kernel-change1-929835,kernel-patch-12745769,"[net-next,2/2] dpaa2-eth: Update SINGLE_STEP register access",1
+124,,kernel-patch-12751759,"[net-next,v2,2/2] dpaa2-eth: Update SINGLE_STEP register access",1
+125,,kernel-patch-12751898,"[net-next,v3,2/2] dpaa2-eth: Update SINGLE_STEP register access",1
+126,kernel-change1-944427,kernel-patch-12639435,"[net-next,2/4] net: mvneta: Don't force-set the offloading flag",1
+127,,kernel-patch-12640409,"[net-next,v2,2/4] net: mvneta: Don't force-set the offloading flag",1
+128,kernel-change1-943090,kernel-patch-11819255,"[net,2/2] net: ipa: skip suspend/resume activities if not set up",1
+129,,kernel-patch-11829631,"[net,v2] net: ipa: skip suspend/resume activities if not set up",1
+130,kernel-change1-946494,kernel-patch-11950461,"[V2,3/5] net: stmmac: free tx skb buffer in stmmac_resume()",1
+131,,kernel-patch-11955287,"[V3,3/5] net: stmmac: free tx skb buffer in stmmac_resume()",1
+132,kernel-change1-938742,kernel-patch-12734361,"[RFC,net-next] net: bridge: multicast: notify switchdev driver whenever MC processing gets disabled",1
+133,,kernel-patch-12743436,net: bridge: multicast: notify switchdev driver whenever MC processing gets disabled,1
+134,,kernel-patch-12747327,"[net,v2] net: bridge: multicast: notify switchdev driver whenever MC processing gets disabled",1
+135,kernel-change1-945236,kernel-patch-12735068,[1/2] net: phy: micrel: add Microchip KSZ 9897 Switch PHY support,1
+136,,kernel-patch-12737796,"[v2,1/2] net: phy: micrel: add Microchip KSZ 9897 Switch PHY support",1
+137,kernel-change1-926159,kernel-patch-12381853,[bpf] bpf: fix OOB read when printing XDP link fdinfo,1
+138,,kernel-patch-12385041,"[bpf,v2,1/1] bpf: fix OOB read when printing XDP link fdinfo",1
+139,kernel-change1-926490,kernel-patch-11956637,[bpf-next] bpf: Only call sock_from_file with CONFIG_NET,1
+140,,kernel-patch-11956643,"[bpf-next,v2] bpf: Only call sock_from_file with CONFIG_NET",1
+141,kernel-change1-946717,kernel-patch-12850249,"[net-next,5/9] net: tcp: make tcp_rcv_synsent_state_process() return drop reasons",1
+142,,kernel-patch-12852081,"[net-next,v2,5/9] net: tcp: make tcp_rcv_synsent_state_process() return drop reasons",1
+143,,kernel-patch-12876379,"[net-next,v3,4/9] net: tcp: make tcp_rcv_synsent_state_process() return drop reasons",1
+144,kernel-change1-943727,kernel-patch-12905166,"[net-next,v2,5/5] net: macb: sort init_reset_optional() with other init()s",1
+145,,kernel-patch-12907826,"[net-next,v3,5/5] net: macb: sort init_reset_optional() with other init()s",1
+146,kernel-change1-945096,kernel-patch-12078591,"[net-next,6/9] net: phy: icplus: don't set APS_EN bit on IP101G",1
+147,,kernel-patch-12081243,"[net-next,v2,6/9] net: phy: icplus: don't set APS_EN bit on IP101G",1
+148,,kernel-patch-12081745,"[net-next,v3,6/9] net: phy: icplus: don't set APS_EN bit on IP101G",1
+149,,kernel-patch-12082445,"[net-next,v4,6/9] net: phy: icplus: don't set APS_EN bit on IP101G",1
+150,kernel-change1-924863,kernel-patch-12782536,"[RFC,net] bnx2x: fix built-in kernel driver load failure",1
+151,,kernel-patch-12783216,[net] bnx2x: fix built-in kernel driver load failure,1
+152,kernel-change1-958709,kernel-patch-11845557,"[iproute2-next,01/15] Unify batch processing across tools",1
+153,,kernel-patch-11869457,"[iproute2-next,v2,01/11] Unify batch processing across tools",1
+154,,kernel-patch-11889677,"[iproute2-next,v3,01/11] Unify batch processing across tools",1
+155,,kernel-patch-11889871,"[iproute2-next,v4,01/11] Unify batch processing across tools",1
+156,,kernel-patch-11901937,"[iproute2-next,v5,01/11] Unify batch processing across tools",1
+157,kernel-change1-928258,kernel-patch-12575159,"[net,2/3] can: j1939: j1939_can_recv(): ignore messages with invalid source address",1
+158,,kernel-patch-12590333,"[net,v2,2/3] can: j1939: j1939_can_recv(): ignore messages with invalid source address",1
+159,,kernel-patch-12606631,"[net,2/8] can: j1939: j1939_can_recv(): ignore messages with invalid source address",1
+160,kernel-change1-948438,kernel-patch-12597659,"[net-next,2/7] net/mlx5: Print more info on pci error handlers",1
+161,,kernel-patch-12599177,"[net-next,v2,2/7] net/mlx5: Print more info on pci error handlers",1
+162,,kernel-patch-12653969,"[net-next,v0,06/14] net/mlx5: Print more info on pci error handlers",1
+163,kernel-change1-933332,kernel-patch-12197551,"[RFC,net] igb: Fix XDP with PTP enabled",1
+164,,kernel-patch-12204779,[net] igb: Fix XDP with PTP enabled,1
+165,,kernel-patch-12210933,"[net,v2] igb: Fix XDP with PTP enabled",1
+166,,kernel-patch-12217645,"[net,v3] igb: Fix XDP with PTP enabled",1
+167,,kernel-patch-12235729,"[net,v4] igb: Fix XDP with PTP enabled",1
+168,,kernel-patch-12297737,"[net,1/8] igb: Fix XDP with PTP enabled",1
+169,kernel-change1-956321,kernel-patch-12048543,"[bpf-next,v6,4/5] selftests/bpf: Use vmlinux.h in socket_cookie_prog.c",1
+170,,kernel-patch-12080591,"[bpf-next,v7,4/5] selftests/bpf: Use vmlinux.h in socket_cookie_prog.c",1
+171,kernel-change1-950789,kernel-patch-12954147,"[net-next,v2,3/6] netlink: add helpers for extack attr presence checking",1
+172,,kernel-patch-12955516,"[net-next,v3,3/6] netlink: add helpers for extack attr presence checking",1
+173,kernel-change1-951694,kernel-patch-12906381,[09/12] octeontx2-af: Wrapper functions for mac addr add/del/update/reset,1
+174,,kernel-patch-12907292,"[V1,09/12] octeontx2-af: Wrapper functions for MAC addr add/del/update/reset",1
+175,,kernel-patch-12909051,"[V2,09/12] octeontx2-af: Wrapper functions for MAC addr add/del/update/reset",1
+176,,kernel-patch-12909169,"[net-next,V3,09/12] octeontx2-af: Wrapper functions for MAC addr add/del/update/reset",1
+177,,kernel-patch-12910544,"[net-next,v4,09/12] octeontx2-af: Wrapper functions for MAC addr add/del/update/reset",1
+178,,kernel-patch-12910557,"[net-next,v5,09/12] octeontx2-af: Wrapper functions for MAC addr add/del/update/reset",1
+179,kernel-change1-955611,kernel-patch-12702291,"[bpf-next,v6,11/11] selftests/bpf: Add test for race in btf_try_get_module",1
+180,,kernel-patch-12710260,"[bpf-next,v7,10/10] selftests/bpf: Add test for race in btf_try_get_module",1
+181,,kernel-patch-12713838,"[bpf-next,v8,10/10] selftests/bpf: Add test for race in btf_try_get_module",1
+182,kernel-change1-927607,kernel-patch-12699421,[10/34] brcmfmac: firmware: Allow platform to override macaddr,1
+183,,kernel-patch-12703034,"[v2,10/35] brcmfmac: firmware: Allow platform to override macaddr",1
+184,,kernel-patch-12968543,"[net-next,08/12] brcmfmac: firmware: Allow platform to override macaddr",1
+185,,kernel-patch-12973507,"[wireless-next,v2,08/12] brcmfmac: firmware: Allow platform to override macaddr",1
+186,,kernel-patch-12978683,"[wireless-next,v3,08/12] brcmfmac: firmware: Allow platform to override macaddr",1
+187,kernel-change1-948936,kernel-patch-12211751,[net] net/mlx5e: Fix uninitialised struct field moder.comps,1
+188,,kernel-patch-12213413,"[net-next,v2] net/mlx5e: Fix uninitialised struct field moder.comps",1
+189,kernel-change1-926418,kernel-patch-12412767,"[bpf-next,1/1] bpf: migrate cgroup_bpf to internal cgroup_bpf_attach_type enum",1
+190,,kernel-patch-12446757,"[bpf-next,v2,1/1] bpf: migrate cgroup_bpf to internal cgroup_bpf_attach_type enum",1
+191,kernel-change1-926286,kernel-patch-11807247,"[v2,bpf-next,1/2] bpf: introduce BPF_F_PRESERVE_ELEMS for perf event array",1
+192,,kernel-patch-11809421,"[v3,bpf-next,1/2] bpf: introduce BPF_F_PRESERVE_ELEMS for perf event array",1
+193,,kernel-patch-11810285,"[v4,bpf-next,1/2] bpf: introduce BPF_F_PRESERVE_ELEMS for perf event array",1
+194,,kernel-patch-11810451,"[v5,bpf-next,1/2] bpf: introduce BPF_F_PRESERVE_ELEMS for perf event array",1
+195,kernel-change1-929267,kernel-patch-12539615,"[net-next,v2,4/9] device property: move mac addr helpers to eth.c",1
+196,,kernel-patch-12540857,"[net-next,v3,4/9] device property: move mac addr helpers to eth.c",1
+197,kernel-change1-940418,kernel-patch-12921950,"[net-next,v2,11/15] net: dsa: qca8k: move port mirror functions to common code",1
+198,,kernel-patch-12927193,"[net-next,v3,11/14] net: dsa: qca8k: move port mirror functions to common code",1
+199,,kernel-patch-12927648,"[net-next,v4,11/14] net: dsa: qca8k: move port mirror functions to common code",1
+200,,kernel-patch-12930375,"[net-next,v5,11/14] net: dsa: qca8k: move port mirror functions to common code",1
+201,kernel-change1-944431,kernel-patch-12561487,"[v16,bpf-next,10/20] net: mvneta: enable jumbo frames if the loaded XDP program support mb",1
+202,,kernel-patch-12603597,"[v17,bpf-next,10/23] net: mvneta: enable jumbo frames if the loaded XDP program support mb",1
+203,,kernel-patch-12620531,"[v18,bpf-next,10/23] net: mvneta: enable jumbo frames if the loaded XDP program support mb",1
+204,,kernel-patch-12647067,"[v19,bpf-next,10/23] net: mvneta: enable jumbo frames if the loaded XDP program support mb",1
+205,,kernel-patch-12670759,"[v20,bpf-next,10/23] net: mvneta: enable jumbo frames if the loaded XDP program support mb",1
+206,,kernel-patch-12707473,"[v21,bpf-next,10/23] net: mvneta: enable jumbo frames if the loaded XDP program support mb",1
+207,kernel-change1-952071,kernel-patch-12794321,"[v2,6/6] perf evlist: Respect all_cpus when setting user_requested_cpus",1
+208,,kernel-patch-12806033,"[v3,4/5] perf evlist: Respect all_cpus when setting user_requested_cpus",1
+209,kernel-change1-931901,kernel-patch-12542311,"[net-next,2/7] gve: Add rx buffer pagecnt bias",1
+210,,kernel-patch-12550353,"[net-next,v2,2/7] gve: Add rx buffer pagecnt bias",1
+211,kernel-change1-949950,kernel-patch-11907563,[4/6] net/x25: support NETDEV_CHANGE notifier,1
+212,,kernel-patch-11908599,"[net-next,v2,4/6] net/x25: support NETDEV_CHANGE notifier",1
+213,kernel-change1-951516,kernel-patch-12057297,"[net-next,01/14] octeontx2-af: cn10k: Add mbox support for CN10K platform",1
+214,,kernel-patch-12060735,"[net-next,v2,01/14] octeontx2-af: cn10k: Add mbox support for CN10K platform",1
+215,,kernel-patch-12067083,"[net-next,v3,01/14] octeontx2-af: cn10k: Add mbox support for CN10K platform",1
+216,,kernel-patch-12071687,"[net-next,v4,01/14] octeontx2-af: cn10k: Add mbox support for CN10K platform",1
+217,,kernel-patch-12082155,"[net-next,v5,01/14] octeontx2-af: cn10k: Add mbox support for CN10K platform",1
+218,,kernel-patch-12083619,"[net-next,v6,01/14] octeontx2-af: cn10k: Add mbox support for CN10K platform",1
+219,kernel-change1-930909,kernel-patch-12324043,e1000e: Fix an error handling path in 'e1000_probe()',1
+220,,kernel-patch-12354651,"[net,08/11] e1000e: Fix an error handling path in 'e1000_probe()'",1
+221,kernel-change1-946522,kernel-patch-12728901,[net-next] net: stmmac: optimize locking around PTP clock reads,1
+222,,kernel-patch-12735140,[net-next] net: stmmac: optimize locking around PTP clock reads,1
+223,kernel-change1-932261,kernel-patch-12648007,"[net-next,1/2] i40e: remove dead stores on XSK hotpath",1
+224,,kernel-patch-12751969,"[net-next,1/1] i40e: remove dead stores on XSK hotpath",1
+225,kernel-change1-935679,kernel-patch-12162971,[bpf-next] libbpf: preserve empty DATASEC BTFs during static linking,1
+226,,kernel-patch-12165757,"[v2,bpf-next] libbpf: preserve empty DATASEC BTFs during static linking",1
+227,kernel-change1-934896,kernel-patch-12048369,lan743x: fix endianness when accessing descriptors,1
+228,,kernel-patch-12051763,[v2] lan743x: fix endianness when accessing descriptors,1
+229,kernel-change1-959508,kernel-patch-12863897,"[net-next,8/8] vmxnet3: update to version 7",1
+230,,kernel-patch-12870754,"[net-next,8/8] vmxnet3: update to version 7",1
+231,,kernel-patch-12871516,"[v2,net-next,8/8] vmxnet3: update to version 7",1
+232,,kernel-patch-12872882,"[v3,net-next,8/8] vmxnet3: update to version 7",1
+233,kernel-change1-951561,kernel-patch-11873039,"[net-next,13/13] octeontx2-af: Delete NIX_RXVLAN_ALLOC mailbox message",1
+234,,kernel-patch-11883753,"[v2,net-next,13/13] octeontx2-af: Delete NIX_RXVLAN_ALLOC mailbox message",1
+235,,kernel-patch-11896547,"[v3,net-next,13/13] octeontx2-af: Delete NIX_RXVLAN_ALLOC mailbox message",1
+236,,kernel-patch-11905815,"[v4,net-next,13/13] octeontx2-af: Delete NIX_RXVLAN_ALLOC mailbox message",1
+237,kernel-change1-955530,kernel-patch-12126897,"[bpf-next,10/10] selftests/bpf: add multi-file statically linked BPF object file test",1
+238,,kernel-patch-12136993,"[v2,bpf-next,11/11] selftests/bpf: add multi-file statically linked BPF object file test",1
+239,,kernel-patch-12147455,"[v3,bpf-next,12/12] selftests/bpf: add multi-file statically linked BPF object file test",1
+240,,kernel-patch-12149127,"[v4,bpf-next,12/12] selftests/bpf: add multi-file statically linked BPF object file test",1
+241,kernel-change1-928064,kernel-patch-12195569,"[v15,3/3] can: etas_es58x: add support for the ETAS ES58X_FD CAN USB interfaces",1
+242,,kernel-patch-12199951,"[net-next,04/14] can: etas_es58x: add support for the ETAS ES58X_FD CAN USB interfaces",1
+243,kernel-change1-948569,kernel-patch-12428759,"[net-next,09/10] net/mlx5: Support enable_rdma devlink dev param",1
+244,,kernel-patch-12428935,"[RESEND,net-next,09/10] net/mlx5: Support enable_rdma devlink dev param",1
+245,kernel-change1-956475,kernel-patch-12991794,[net-next] selftests/tc-testing: update qdisc/cls/action features in config,1
+246,,kernel-patch-12993484,"[net-next,v2] selftests/tc-testing: update qdisc/cls/action features in config",1
+247,kernel-change1-925839,kernel-patch-12799509,[v1] bpf: correct the comment for BTF kind bitfield,1
+248,,kernel-patch-12799533,[v2] bpf: correct the comment for BTF kind bitfield,1
+249,kernel-change1-940006,kernel-patch-12863051,"[RFC,net-next,10/17] net: dsa: microchip: update fdb add/del/dump in ksz_common",1
+250,,kernel-patch-12864523,"[RFC,net-next,v2,09/15] net: dsa: microchip: update fdb add/del/dump in ksz_common",1
+251,,kernel-patch-12885316,"[net-next,10/11] net: dsa: microchip: update fdb add/del/dump in ksz_common",1
+252,kernel-change1-944253,kernel-patch-12842512,"[RFC,v8,net-next,11/16] net: mscc: ocelot: expose regfield definition to be used by other drivers",1
+253,,kernel-patch-12973041,"[RFC,v1,net-next,2/8] net: mscc: ocelot: expose regfield definition to be used by other drivers",1
+254,,kernel-patch-12984517,"[v2,net-next,02/14] net: mscc: ocelot: expose regfield definition to be used by other drivers",1
+255,,kernel-patch-12988155,"[v3,net-next,02/14] net: mscc: ocelot: expose regfield definition to be used by other drivers",1
+256,kernel-change1-929771,kernel-patch-12097681,"[RFC,net-next,03/12] Documentation: networking: dsa: remove static port count from limitations",1
+257,,kernel-patch-12141993,"[v2,net-next,03/12] Documentation: networking: dsa: remove static port count from limitations",1
+258,kernel-change1-935781,kernel-patch-11821711,"[v2,bpf-next,1/4] libbpf: skip CO-RE relocations for not loaded BPF programs",1
+259,,kernel-patch-11821991,"[v3,bpf-next,1/4] libbpf: skip CO-RE relocations for not loaded BPF programs",1
+260,kernel-change1-926938,kernel-patch-11849585,"[bpf-next,1/3] bpf: Support for pointers beyond pkt_end.",1
+261,,kernel-patch-11896165,"[v2,bpf-next,1/3] bpf: Support for pointers beyond pkt_end.",1
+262,kernel-change1-945305,kernel-patch-12085369,"[net,v1,3/3] net: phy: mscc: coma mode disabled for VSC8514",1
+263,,kernel-patch-12089009,"[net-next,v2,3/3] net: phy: mscc: coma mode disabled for VSC8514",1
+264,,kernel-patch-12090173,"[net-next,v3,3/3] net: phy: mscc: coma mode disabled for VSC8514",1
+265,kernel-change1-940975,kernel-patch-11916055,"[V1,net,4/4] net: ena: return error code from ena_xdp_xmit_buff",1
+266,,kernel-patch-11918903,"[V2,net,4/4] net: ena: return error code from ena_xdp_xmit_buff",1
+267,kernel-change1-953599,kernel-patch-12035351,rt2x00: reset reg earlier in rt2500usb_register_read,1
+268,,kernel-patch-12035559,rt2x00: reset reg earlier in rt2500usb_register_read,1
+269,kernel-change1-936768,kernel-patch-12881103,"[net-next,08/11] mlxsw: core_linecards: Expose device PSID over device info",1
+270,,kernel-patch-12922156,"[net-next,v2,09/12] mlxsw: core_linecards: Expose device PSID over device info",1
+271,,kernel-patch-12924121,"[net-next,v3,08/11] mlxsw: core_linecards: Expose device PSID over device info",1
+272,,kernel-patch-12927882,"[net-next,v4,09/12] mlxsw: core_linecards: Expose device PSID over device info",1
+273,kernel-change1-935161,kernel-patch-12703219,[10/13] libbpf: Add bpf_link_create support for multi kprobes,1
+274,,kernel-patch-12732939,[5/8] libbpf: Add bpf_link_create support for multi kprobes,1
+275,,kernel-patch-12755696,[07/10] libbpf: Add bpf_link_create support for multi kprobes,1
+276,,kernel-patch-12782582,"[PATCHv3,bpf-next,08/13] libbpf: Add bpf_link_create support for multi kprobes",1
+277,kernel-change1-937325,kernel-patch-12148807,"[v2,04/17] module: ensure __cfi_check alignment",1
+278,,kernel-patch-12159259,"[v3,04/17] module: ensure __cfi_check alignment",1
+279,,kernel-patch-12176431,"[v4,04/17] module: ensure __cfi_check alignment",1
+280,,kernel-patch-12179927,"[v5,04/18] module: ensure __cfi_check alignment",1
+281,,kernel-patch-12192143,"[v6,04/18] module: ensure __cfi_check alignment",1
+282,kernel-change1-935387,kernel-patch-12719198,"[bpf-next,2/7] libbpf: deprecate bpf_map__resize()",1
+283,,kernel-patch-12722876,"[v2,bpf-next,2/7] libbpf: deprecate bpf_map__resize()",1
+284,kernel-change1-959372,kernel-patch-12893523,"[v10,39/41] virtio_net: support rx queue resize",1
+285,,kernel-patch-12899497,"[v11,38/40] virtio_net: support rx queue resize",1
+286,,kernel-patch-12923454,"[v12,38/40] virtio_net: support rx queue resize",1
+287,,kernel-patch-12928892,"[v13,40/42] virtio_net: support rx queue resize",1
+288,,kernel-patch-12933560,"[v14,40/42] virtio_net: support rx queue resize",1
+289,kernel-change1-928964,kernel-patch-12380713,[4/6] clk: renesas: r9a07g044-cpg: Add entry for fixed clock P0_DIV2,1
+290,,kernel-patch-12386001,"[v2,4/5] clk: renesas: r9a07g044-cpg: Add entry for fixed clock P0_DIV2",1
+291,kernel-change1-930065,kernel-patch-11871509,"[net-next,3/3] drivers: net: xilinx_emaclite: Add COMPILE_TEST support",1
+292,,kernel-patch-11892961,"[net-next,v2,3/3] drivers: net: xilinx_emaclite: Add COMPILE_TEST support",1
+293,kernel-change1-960165,kernel-patch-12968358,[2/2] x86/kprobes: Fix optprobe optimization check with CONFIG_RETHUNK,1
+294,,kernel-patch-12969570,"[v2,2/2] x86/kprobes: Fix optprobe optimization check with CONFIG_RETHUNK",1
+295,,kernel-patch-12970241,"[v3,2/2] x86/kprobes: Fix optprobe optimization check with CONFIG_RETHUNK",1
+296,kernel-change1-955776,kernel-patch-12209509,"[bpf-next,15/15] selftests/bpf: Convert few tests to light skeleton.",1
+297,,kernel-patch-12219317,"[v2,bpf-next,16/16] selftests/bpf: Convert few tests to light skeleton.",1
+298,,kernel-patch-12241595,"[v3,bpf-next,17/17] selftests/bpf: Convert few tests to light skeleton.",1
+299,,kernel-patch-12245795,"[v4,bpf-next,19/22] selftests/bpf: Convert few tests to light skeleton.",1
+300,,kernel-patch-12254839,"[v5,bpf-next,18/21] selftests/bpf: Convert few tests to light skeleton.",1
+301,,kernel-patch-12256897,"[v6,bpf-next,18/21] selftests/bpf: Convert few tests to light skeleton.",1
+302,kernel-change1-942583,kernel-patch-12521233,"[bpf,v2,3/4] net: implement ->sock_is_readable for UDP and AF_UNIX",1
+303,,kernel-patch-12531829,"[bpf,v3,3/4] net: implement ->sock_is_readable() for UDP and AF_UNIX",1
+304,,kernel-patch-12546403,"[bpf,v4,3/4] net: implement ->sock_is_readable() for UDP and AF_UNIX",1
+305,kernel-change1-926543,kernel-patch-12845545,"[bpf-next,v1,2/4] bpf: Prepare prog_test_struct kfuncs for runtime tests",1
+306,,kernel-patch-12846593,"[bpf-next,v2,2/4] bpf: Prepare prog_test_struct kfuncs for runtime tests",1
+307,kernel-change1-955657,kernel-patch-12848282,"[bpf-next,v3,5/5] selftests/bpf: add tests for sleepable (uk)probes",1
+308,,kernel-patch-12881692,"[bpf-next,v4,5/5] selftests/bpf: add tests for sleepable (uk)probes",1
+309,kernel-change1-939442,kernel-patch-12700649,net: dsa: bcm_sf2: refactor LED regs access,1
+310,,kernel-patch-12701060,[V2] net: dsa: bcm_sf2: refactor LED regs access,1
+311,kernel-change1-947652,kernel-patch-12701535,"[net-next,4/8] net/funeth: ethtool operations",1
+312,,kernel-patch-12701878,"[net-next,v2,4/8] net/funeth: ethtool operations",1
+313,,kernel-patch-12702885,"[net-next,v3,4/8] net/funeth: ethtool operations",1
+314,,kernel-patch-12703013,"[net-next,v4,4/8] net/funeth: ethtool operations",1
+315,,kernel-patch-12706201,"[net-next,v5,4/8] net/funeth: ethtool operations",1
+316,,kernel-patch-12708098,"[net-next,v6,4/8] net/funeth: ethtool operations",1
+317,,kernel-patch-12752008,"[net-next,v7,4/8] net/funeth: ethtool operations",1
+318,,kernel-patch-12759567,"[net-next,v8,4/8] net/funeth: ethtool operations",1
+319,kernel-change1-959391,kernel-patch-12757940,"[v6,16/26] virtio_pci: queue_reset: extract the logic of active vq for modern pci",1
+320,,kernel-patch-12773633,"[v7,16/26] virtio_pci: queue_reset: extract the logic of active vq for modern pci",1
+321,,kernel-patch-12803094,"[v9,22/32] virtio_pci: queue_reset: extract the logic of active vq for modern pci",1
+322,kernel-change1-932907,kernel-patch-12662841,"[net,4/7] ice: ignore dropped packets during init",1
+323,,kernel-patch-12665295,"[net,v2,4/7] ice: ignore dropped packets during init",1
+324,kernel-change1-929416,kernel-patch-11901313,"[net-next,02/13] devlink: Introduce PCI SF port flavour and port attribute",1
+325,,kernel-patch-11960681,"[net-next,v2,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+326,,kernel-patch-11969989,"[net-next,v3,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+327,,kernel-patch-11973195,"[net-next,v4,03/15] devlink: Introduce PCI SF port flavour and port attribute",1
+328,,kernel-patch-11974249,"[net-next,v5,03/15] devlink: Introduce PCI SF port flavour and port attribute",1
+329,,kernel-patch-12017711,"[net-next,V6,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+330,,kernel-patch-12028167,"[net-next,V7,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+331,,kernel-patch-12031801,"[net-next,V8,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+332,,kernel-patch-12035209,"[net-next,V9,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+333,,kernel-patch-12040839,"[net-next,V10,02/14] devlink: Introduce PCI SF port flavour and port attribute",1
+334,kernel-change1-945510,kernel-patch-12459177,net: phylink: Update SFP selected interface on advertising changes,1
+335,,kernel-patch-12470783,[v2] net: phylink: Update SFP selected interface on advertising changes,1
+336,kernel-change1-939082,kernel-patch-12887683,"[net-next:,05/12] net: core: switch to fwnode_find_net_device_by_node()",1
+337,,kernel-patch-12918933,"[net-next:,v2,6/8] net: core: switch to fwnode_find_net_device_by_node()",1
+338,,kernel-patch-12930146,"[net-next:,v3,6/8] net: core: switch to fwnode_find_net_device_by_node()",1
+339,kernel-change1-947572,kernel-patch-12169789,"[rdma-next,v1,5/5] net/bnxt: Use direct API instead of useless indirection",1
+340,,kernel-patch-12177387,"[rdma-next,v2,5/5] net/bnxt: Use direct API instead of useless indirection",1
+341,kernel-change1-952108,kernel-patch-12093435,perf machine: Use true and false for bool variable,1
+342,,kernel-patch-12103769,[v2] perf machine: Use true and false for bool variable,1
+343,kernel-change1-928016,kernel-patch-12018377,"[net-next,13/17] can: dev: can_put_echo_skb(): extend to handle frame_len",1
+344,,kernel-patch-12018819,"[net-next,13/17] can: dev: can_put_echo_skb(): extend to handle frame_len",1
+345,kernel-change1-924399,kernel-patch-11984989,"[ghak90,v10,01/11] audit: collect audit task parameters",1
+346,,kernel-patch-12013715,"[ghak90,v11,01/11] audit: collect audit task parameters",1
+347,kernel-change1-935047,kernel-patch-11877549,[v6] lib: optimize cpumask_local_spread(),1
+348,,kernel-patch-11913793,[v7] lib: optimize cpumask_local_spread(),1
+349,,kernel-patch-11996553,[v8] lib: optimize cpumask_local_spread(),1
+350,kernel-change1-930770,kernel-patch-12194769,"[RFC,2/3] dt-bindings: net: xilinx_axienet: Introduce dmaengine binding support",1
+351,,kernel-patch-12981384,"[RFC,V2,2/3] dt-bindings: net: xilinx_axienet: Introduce dmaengine binding support",1
+352,kernel-change1-960085,kernel-patch-12320279,"[net-next,05/10] wwan: core: remove all netdevs on ops unregistering",1
+353,,kernel-patch-12335897,"[net-next,v2,05/10] wwan: core: remove all netdevs on ops unregistering",1
+354,kernel-change1-923581,kernel-patch-12239075,"[3/3] Add entries for words with stem ""eleminat""",1
+355,,kernel-patch-12240755,"[v2] Add entries for words with stem ""eleminat""",1
+356,,kernel-patch-12240771,"[v2,3/3] Add entries for words with stem ""eleminat""",1
+357,kernel-change1-935310,kernel-patch-12807191,"[bpf-next,1/3] libbpf: allow ""incomplete"" basic tracing SEC() definitions",1
+358,,kernel-patch-12831103,"[v2,bpf-next,1/3] libbpf: allow ""incomplete"" basic tracing SEC() definitions",1
+359,kernel-change1-929336,kernel-patch-12525231,"[net-next,3/5] devlink: Allow set specific ops callbacks dynamically",1
+360,,kernel-patch-12525355,"[net-next,v1,3/5] devlink: Allow set specific ops callbacks dynamically",1
+361,,kernel-patch-12532953,"[net-next,v2,3/5] devlink: Allow set specific ops callbacks dynamically",1
+362,kernel-change1-954465,kernel-patch-12878452,"[iproute2-next,v1] seg6: add support for flavors in SRv6 End* behaviors",1
+363,,kernel-patch-12973870,"[iproute2-next,v2] seg6: add support for flavors in SRv6 End* behaviors",1
+364,kernel-change1-931737,kernel-patch-12301423,[07/19] ftrace: Add multi direct modify interface,1
+365,,kernel-patch-12460553,"[bpf-next,v4,07/27] ftrace: Add multi direct modify interface",1
+366,,kernel-patch-12466823,[7/8] ftrace: Add multi direct modify interface,1
+367,,kernel-patch-12544655,[7/8] ftrace: Add multi direct modify interface,1
+368,kernel-change1-930478,kernel-patch-12648991,"[net-next,4/7] dt-bindings: net: Convert GENET binding to YAML",1
+369,,kernel-patch-12650479,"[net-next,v2,5/9] dt-bindings: net: Convert GENET binding to YAML",1
+370,,kernel-patch-12659263,"[v3,4/8] dt-bindings: net: Convert GENET binding to YAML",1
+371,kernel-change1-951917,kernel-patch-12729698,"[net-next,v2,08/10] page_pool: Add stat tracking cache refill",1
+372,,kernel-patch-12732487,"[net-next,v3,08/10] page_pool: Add stat tracking cache refill",1
+373,,kernel-patch-12734734,"[net-next,v4,09/11] page_pool: Add stat tracking cache refill",1
+374,kernel-change1-959277,kernel-patch-12174493,"[net-next,v3,6/8] virtio-net: xsk zero copy xmit kick by threshold",1
+375,,kernel-patch-12199195,"[net-next,v4,10/10] virtio-net: xsk zero copy xmit kick by threshold",1
+376,,kernel-patch-12312249,"[net-next,v5,15/15] virtio-net: xsk zero copy xmit kick by threshold",1
+377,kernel-change1-934051,kernel-patch-11940713,"[iproute2-next,v1] iplink macvlan: Added bcqueuelen parameter",1
+378,,kernel-patch-11971917,"[iproute2-next,v2] iplink:macvlan: Added bcqueuelen parameter",1
+379,kernel-change1-942419,kernel-patch-12328115,"[net-next,3/6] net: hostess_sv11: remove trailing whitespace",1
+380,,kernel-patch-12329987,"[V2,net-next,3/7] net: hostess_sv11: remove trailing whitespace",1
+381,kernel-change1-945511,kernel-patch-12612607,"[RFC,net-next,4/8] net: phylink: update supported_interfaces with modes from fwnode",1
+382,,kernel-patch-12625687,"[net-next,4/8] net: phylink: update supported_interfaces with modes from fwnode",1
+383,,kernel-patch-12634661,"[net-next,v2,4/8] net: phylink: update supported_interfaces with modes from fwnode",1
+384,kernel-change1-954631,kernel-patch-12806752,"[v2,1/2] selftests: bpf: drop duplicate max/min definitions",1
+385,,kernel-patch-12807279,"[v3,1/2] selftests: bpf: drop duplicate max/min definitions",1
+386,kernel-change1-927170,kernel-patch-12929576,"[RFC,bpf-next,4/7] bpf: x86: Support in-register struct arguments",1
+387,,kernel-patch-12941902,"[bpf-next,v2,3/6] bpf: x86: Support in-register struct arguments",1
+388,kernel-change1-941766,kernel-patch-12764126,"[v5,net-next,09/13] net: Get rcv tstamp if needed in nfnetlink_{log, queue}.c",1
+389,,kernel-patch-12766659,"[v6,net-next,09/13] net: Get rcv tstamp if needed in nfnetlink_{log, queue}.c",1
+390,kernel-change1-957458,kernel-patch-12634401,"[V2,1/6] Swiotlb: Add Swiotlb bounce buffer remap function for HV IVM",1
+391,,kernel-patch-12650287,"[V3,1/5] Swiotlb: Add Swiotlb bounce buffer remap function for HV IVM",1
+392,,kernel-patch-12656977,"[V4,1/5] Swiotlb: Add Swiotlb bounce buffer remap function for HV IVM",1
+393,,kernel-patch-12658527,"[V5,1/5] Swiotlb: Add Swiotlb bounce buffer remap function for HV IVM",1
+394,,kernel-patch-12661165,"[V6,1/5] swiotlb: Add swiotlb bounce buffer remap function for HV IVM",1
+395,,kernel-patch-12661241,"[V6,1/5] swiotlb: Add swiotlb bounce buffer remap function for HV IVM",1
+396,,kernel-patch-12673157,"[V7,1/5] swiotlb: Add swiotlb bounce buffer remap function for HV IVM",1
+397,kernel-change1-955690,kernel-patch-12012837,[2/2] selftests/bpf: add verifier test for PTR_TO_MEM spill,1
+398,,kernel-patch-12012873,"[bpf,2/2] selftests/bpf: add verifier test for PTR_TO_MEM spill",1
+399,,kernel-patch-12015813,"[bpf,v2,2/2] selftests/bpf: add verifier test for PTR_TO_MEM spill",1
+400,kernel-change1-944816,kernel-patch-12521707,"[net-next,1/2] net: pcs: xpcs: introduce xpcs_modify() helper function",1
+401,,kernel-patch-12521709,"[net-next,1/2] net: pcs: xpcs: introduce xpcs_modify() helper function",1
+402,kernel-change1-954424,kernel-patch-11822561,"[PATCHv2,net-next,13/17] sctp: support for sending packet over udp4 sock",1
+403,,kernel-patch-11835105,"[PATCHv3,net-next,12/16] sctp: support for sending packet over udp4 sock",1
+404,,kernel-patch-11844293,"[PATCHv4,net-next,12/16] sctp: support for sending packet over udp4 sock",1
+405,,kernel-patch-11865547,"[PATCHv5,net-next,12/16] sctp: support for sending packet over udp4 sock",1
+406,kernel-change1-942010,kernel-patch-12281107,"[RFC,net-next,3/4] net: hns3: add support for EQE/CQE mode configuration",1
+407,,kernel-patch-12287665,"[RFC,V2,net-next,2/3] net: hns3: add support for EQE/CQE mode configuration",1
+408,,kernel-patch-12434507,"[RFC,V3,net-next,3/4] net: hns3: add support for EQE/CQE mode configuration",1
+409,,kernel-patch-12437685,"[RFC,V4,net-next,3/4] net: hns3: add support for EQE/CQE mode configuration",1
+410,,kernel-patch-12440295,"[net-next,3/4] net: hns3: add support for EQE/CQE mode configuration",1
+411,,kernel-patch-12446363,"[V2,net-next,3/4] net: hns3: add support for EQE/CQE mode configuration",1
+412,,kernel-patch-12448591,"[V3,net-next,3/4] net: hns3: add support for EQE/CQE mode configuration",1
+413,kernel-change1-926948,kernel-patch-12077237,"[v2,bpf-next,3/4] bpf: Support pointers in global func args",1
+414,,kernel-patch-12086063,"[v3,bpf-next,3/4] bpf: Support pointers in global func args",1
+415,kernel-change1-958904,kernel-patch-12202285,[3/3] vDPA/ifcvf: get_config_size should return dev specific config size,1
+416,,kernel-patch-12204909,"[V2,3/3] vDPA/ifcvf: get_config_size should return dev specific config size",1
+417,,kernel-patch-12206815,"[V3,3/3] vDPA/ifcvf: get_config_size should return dev specific config size",1
+418,,kernel-patch-12210897,"[V4,3/3] vDPA/ifcvf: get_config_size should return dev specific config size",1
+419,kernel-change1-955901,kernel-patch-12968807,[bpf-next] selftests/bpf: fix ct status check in bpf_nf selftests,1
+420,,kernel-patch-12969731,"[v2,bpf-next] selftests/bpf: fix ct status check in bpf_nf selftests",1
+421,kernel-change1-952309,kernel-patch-12364033,"[v2,5/6] platform/x86: intel_tdx_attest: Add TDX Guest attestation interface driver",1
+422,,kernel-patch-12387545,"[v3,5/6] platform/x86: intel_tdx_attest: Add TDX Guest attestation interface driver",1
+423,,kernel-patch-12422351,"[v4,6/7] platform/x86: intel_tdx_attest: Add TDX Guest attestation interface driver",1
+424,,kernel-patch-12756045,"[v1,4/6] platform/x86: intel_tdx_attest: Add TDX Guest attestation interface driver",1
+425,kernel-change1-936706,kernel-patch-12625987,"[net-next,2/9] mlxsw: constify address in mlxsw_sp_port_dev_addr_set",1
+426,,kernel-patch-12627171,"[net-next,2/4] mlxsw: constify address in mlxsw_sp_port_dev_addr_set",1
+427,kernel-change1-957630,kernel-patch-12819230,"[RFC,1/2] tcp: allow MPTCP to update the announced window.",1
+428,,kernel-patch-12838690,"[net-next,3/5] tcp: allow MPTCP to update the announced window",1
+429,kernel-change1-938313,kernel-patch-12704319,[RFT] net: asix: add proper error handling of usb read errors,1
+430,,kernel-patch-12736630,[net-next] net: asix: add proper error handling of usb read errors,1
+431,kernel-change1-927996,kernel-patch-12822371,can: ctucanfd: Remove unused including <linux/version.h>,1
+432,,kernel-patch-12824981,"[v1,3/4] can: ctucanfd: Remove unused including <linux/version.h>",1
+433,,kernel-patch-12833905,"[net-next,5/9] can: ctucanfd: remove unused including <linux/version.h>",1
+434,kernel-change1-926247,kernel-patch-12450999,"[bpf-next,RFC,v1,1/5] bpf: Implement file local storage",1
+435,,kernel-patch-12459851,"[bpf-next,v2,1/5] bpf: Implement file local storage",1
+436,kernel-change1-944685,kernel-patch-12972992,[2/2] net: openvswitch: allow conntrack in non-initial user namespace,1
+437,,kernel-patch-12982927,"[v2,net,2/2] net: openvswitch: allow conntrack in non-initial user namespace",1
+438,,kernel-patch-12986589,"[v3,net-next,2/2] net: openvswitch: allow conntrack in non-initial user namespace",1
+439,kernel-change1-944348,kernel-patch-12572079,"[net-next,5/5] net: mscc: ocelot: track the port pvid using a pointer",1
+440,,kernel-patch-12572907,"[v2,net-next,5/5] net: mscc: ocelot: track the port pvid using a pointer",1
+441,kernel-change1-944821,kernel-patch-12311041,"[net-next,01/13] net: pcs: xpcs: rename mdio_xpcs_args to dw_xpcs",1
+442,,kernel-patch-12313695,"[v2,net-next,01/13] net: pcs: xpcs: rename mdio_xpcs_args to dw_xpcs",1
+443,,kernel-patch-12316473,"[v3,net-next,01/13] net: pcs: xpcs: rename mdio_xpcs_args to dw_xpcs",1
+444,kernel-change1-926500,kernel-patch-12928630,"[bpf-next,1/3] bpf: Parameterize task iterators.",1
+445,,kernel-patch-12934166,"[bpf-next,v2,1/3] bpf: Parameterize task iterators.",1
+446,,kernel-patch-12939369,"[bpf-next,v3,1/3] bpf: Parameterize task iterators.",1
+447,,kernel-patch-12939898,"[bpf-next,v4,1/3] bpf: Parameterize task iterators.",1
+448,,kernel-patch-12941050,"[bpf-next,v5,1/3] bpf: Parameterize task iterators.",1
+449,,kernel-patch-12949285,"[bpf-next,v6,1/4] bpf: Parameterize task iterators.",1
+450,,kernel-patch-12955410,"[bpf-next,v7,1/5] bpf: Parameterize task iterators.",1
+451,,kernel-patch-12958380,"[bpf-next,v8,1/5] bpf: Parameterize task iterators.",1
+452,,kernel-patch-12960260,"[bpf-next,v9,1/5] bpf: Parameterize task iterators.",1
+453,,kernel-patch-12961228,"[bpf-next,v10,1/5] bpf: Parameterize task iterators.",1
+454,,kernel-patch-12989296,"[bpf-next,v11,1/5] bpf: Parameterize task iterators.",1
+455,kernel-change1-947946,kernel-patch-12283279,"[net-next,02/17] net/mlx5: CT: Avoid reusing modify header context for natted entries",1
+456,,kernel-patch-12285111,"[net-next,V2,02/15] net/mlx5: CT: Avoid reusing modify header context for natted entries",1
+457,kernel-change1-948815,kernel-patch-12439357,"[net-next,01/17] net/mlx5e: Do not try enable RSS when resetting indir table",1
+458,,kernel-patch-12439477,"[net-next,V2,01/17] net/mlx5e: Do not try enable RSS when resetting indir table",1
+459,kernel-change1-933753,kernel-patch-11882275,"[net-next,2/6] ionic: check for link after netdev registration",1
+460,,kernel-patch-11885489,"[v2,net-next,2/8] ionic: check for link after netdev registration",1
+461,,kernel-patch-11900987,"[v3,net-next,2/8] ionic: check for link after netdev registration",1
+462,kernel-change1-924753,kernel-patch-12860956,"[v5,5/5] Bluetooth: let HCI_QUALITY_REPORT persist over adapter power cycle",1
+463,,kernel-patch-12862305,"[v6,5/5] Bluetooth: let HCI_QUALITY_REPORT persist over adapter power cycle",1
+464,kernel-change1-942034,kernel-patch-12111233,"[RFC,net-next,4/9] net: hns3: add support for traffic class tuple support for flow director by ethtool",1
+465,,kernel-patch-12139145,"[net-next,4/9] net: hns3: add support for traffic class tuple support for flow director by ethtool",1
+466,,kernel-patch-12153667,"[V2,net-next,4/7] net: hns3: add support for traffic class tuple support for flow director by ethtool",1
+467,kernel-change1-949775,kernel-patch-11875121,"[net-next,07/15] net/smc: Refactor the netlink reply processing routine",1
+468,,kernel-patch-11876635,"[net-next,v2,07/15] net/smc: Refactor the netlink reply processing routine",1
+469,,kernel-patch-11888931,"[net-next,v3,07/15] net/smc: Refactor the netlink reply processing routine",1
+470,,kernel-patch-11891675,"[net-next,v4,07/15] net/smc: Refactor the netlink reply processing routine",1
+471,kernel-change1-949292,kernel-patch-12709415,"[net-next,09/17] net/mlx5e: TC, Reject rules with multiple CT actions",1
+472,,kernel-patch-12727393,"[net-next,RESEND,08/17] net/mlx5e: TC, Reject rules with multiple CT actions",1
+473,kernel-change1-952783,kernel-patch-12231851,"[RFC,v4,23/27] qedn: Add support of Task and SGL",1
+474,,kernel-patch-12266999,"[RFC,v5,23/27] qedn: Add support of Task and SGL",1
+475,,kernel-patch-12285843,"[RFC,v6,23/27] qedn: Add support of Task and SGL",1
+476,,kernel-patch-12290183,"[RFC,v7,23/27] qedn: Add support of Task and SGL",1
+477,kernel-change1-931750,kernel-patch-12927628,"[bpf-next,1/5] ftrace: Keep the resolved addr in kallsyms_callback",1
+478,,kernel-patch-12941272,"[PATCHv2,bpf-next,2/6] ftrace: Keep the resolved addr in kallsyms_callback",1
+479,,kernel-patch-12971458,"[PATCHv3,bpf-next,2/6] ftrace: Keep the resolved addr in kallsyms_callback",1
+480,,kernel-patch-12985800,"[PATCHv4,bpf-next,2/6] ftrace: Keep the resolved addr in kallsyms_callback",1
+481,,kernel-patch-12989080,"[PATCHv5,bpf-next,2/6] ftrace: Keep the resolved addr in kallsyms_callback",1
+482,kernel-change1-939271,kernel-patch-11862119,"[net-next,14/15] net: dpaa: Replace in_irq() usage.",1
+483,,kernel-patch-11872765,"[v2,net-next,2/3] net: dpaa: Replace in_irq() usage.",1
+484,kernel-change1-925074,kernel-patch-12463641,"[net-next,03/11] bnxt_en: move HWRM API implementation into separate file",1
+485,,kernel-patch-12463767,"[net-next,v2,03/11] bnxt_en: move HWRM API implementation into separate file",1
+486,kernel-change1-931374,kernel-patch-11861147,"[RFC,net-next,v3] ethtool: Improve compatibility between netlink and ioctl interfaces",1
+487,,kernel-patch-11874895,"[RFC,ethtool] ethtool: Improve compatibility between netlink and ioctl interfaces",1
+488,,kernel-patch-11891527,"[ethtool,2/2] ethtool: Improve compatibility between netlink and ioctl interfaces",1
+489,kernel-change1-927303,kernel-patch-12398821,"[RFC,11/14] bpf/tests: add test for 32-bit context pointer argument passing",1
+490,,kernel-patch-12406449,[11/14] bpf/tests: Add test for 32-bit context pointer argument passing,1
+491,,kernel-patch-12425951,"[bpf-next,v2,11/14] bpf/tests: Add test for 32-bit context pointer argument passing",1
+492,kernel-change1-926308,kernel-patch-12616223,"[v2,bpf-next,2/2] bpf: introduce btf_tracing_ids",1
+493,,kernel-patch-12616905,"[v3,bpf-next,2/2] bpf: introduce btf_tracing_ids",1
+494,kernel-change1-952544,kernel-patch-12682433,[4/5] ptp: ocp: adjust utc_tai_offset to TOD info,1
+495,,kernel-patch-12766818,"[net-next,4/5] ptp: ocp: adjust utc_tai_offset to TOD info",1
+496,kernel-change1-934837,kernel-patch-12368669,"[-tip,1/6] kprobes: treewide: Cleanup the error messages for kprobes",1
+497,,kernel-patch-12369003,"[-tip,v2,1/6] kprobes: treewide: Cleanup the error messages for kprobes",1
+498,,kernel-patch-12406185,"[-tip,v3,1/6] kprobes: treewide: Cleanup the error messages for kprobes",1
+499,,kernel-patch-12493681,"[-tip,v11,06/27] kprobes: treewide: Cleanup the error messages for kprobes",1
+500,kernel-change1-930775,kernel-patch-12548535,"[1/7] dt-bindings: nfc: nxp,nci: convert to dtschema",1
+501,,kernel-patch-12549257,"[v2,1/8] dt-bindings: nfc: nxp,nci: convert to dtschema",1
+502,kernel-change1-935184,kernel-patch-12547713,"[bpf-next,1/2] libbpf: Add btf__type_cnt() and btf__raw_data() APIs",1
+503,,kernel-patch-12577747,"[bpf-next,1/5,v2] libbpf: Add btf__type_cnt() and btf__raw_data() APIs",1
+504,kernel-change1-932100,kernel-patch-12596145,"[net-next,3/6] i2c: aspeed: Allow 255 byte block transfers",1
+505,,kernel-patch-12613799,"[net-next,v2,3/6] i2c: aspeed: Allow 255 byte block transfers",1
+506,,kernel-patch-12618591,"[net-next,v3,3/6] i2c: aspeed: Allow 255 byte block transfers",1
+507,kernel-change1-955239,kernel-patch-12716194,[01/10] selftests: set the BUILD variable to absolute path,1
+508,,kernel-patch-12717363,"[V2,01/10] selftests: set the BUILD variable to absolute path",1
+509,kernel-change1-949864,kernel-patch-11930335,"[08/10,net-next] net/tipc: fix socket.c kernel-doc",1
+510,,kernel-patch-11939275,"[08/10,net-next,v2] net/tipc: fix socket.c kernel-doc",1
+511,kernel-change1-953764,kernel-patch-12675307,rtw88: Disable PCIe ASPM while doing NAPI poll on 8821CE,1
+512,,kernel-patch-12675481,[v2] rtw88: Disable PCIe ASPM while doing NAPI poll on 8821CE,1
+513,,kernel-patch-12677587,[v3] rtw88: Disable PCIe ASPM while doing NAPI poll on 8821CE,1
+514,,kernel-patch-12678171,[v4] rtw88: Disable PCIe ASPM while doing NAPI poll on 8821CE,1
+515,kernel-change1-925364,kernel-patch-12823988,"[RFC,bpf-next,1/2] bpf: Add bpf_link iterator",1
+516,,kernel-patch-12845210,"[bpf-next,v2,1/4] bpf: Add bpf_link iterator",1
+517,kernel-change1-935767,kernel-patch-12182383,"[bpf-next,2/3] libbpf: selftests: refactor 'BPF_PERCPU_TYPE()' and 'bpf_percpu()' macros",1
+518,,kernel-patch-12185751,"[bpf-next,v2,2/3] libbpf: selftests: refactor 'BPF_PERCPU_TYPE()' and 'bpf_percpu()' macros",1
+519,kernel-change1-925547,kernel-patch-12786192,"[bpf-next,1/3] bpf: Add source ip in ""struct bpf_tunnel_key""",1
+520,,kernel-patch-12788712,"[External,bpf-next,v2,1/3] bpf: Add source ip in ""struct bpf_tunnel_key""",1
+521,,kernel-patch-12815963,"[External,bpf-next,v3,1/3] bpf: Add source ip in ""struct bpf_tunnel_key""",1
+522,,kernel-patch-12816187,"[External,bpf-next,v4,1/3] bpf: Add source ip in ""struct bpf_tunnel_key""",1
+523,,kernel-patch-12823326,"[External,bpf-next,v5,1/3] bpf: Add source ip in ""struct bpf_tunnel_key""",1
+524,,kernel-patch-12833067,"[External,bpf-next,v6,1/3] bpf: Add source ip in ""struct bpf_tunnel_key""",1
+525,kernel-change1-940214,kernel-patch-12706746,"[RFC,net-next,02/12] net: dsa: mv88e6xxx: rename references to ""lag"" as ""lag_dev""",1
+526,,kernel-patch-12741889,"[v2,net-next,02/12] net: dsa: mv88e6xxx: rename references to ""lag"" as ""lag_dev""",1
+527,,kernel-patch-12754023,"[v3,net-next,02/11] net: dsa: mv88e6xxx: rename references to ""lag"" as ""lag_dev""",1
+528,,kernel-patch-12754169,"[v4,net-next,02/11] net: dsa: mv88e6xxx: rename references to ""lag"" as ""lag_dev""",1
+529,,kernel-patch-12756974,"[v5,net-next,02/11] net: dsa: mv88e6xxx: rename references to ""lag"" as ""lag_dev""",1
+530,kernel-change1-939891,kernel-patch-11955747,"[v5,4/6] net: dsa: microchip: ksz8795: add support for ksz88xx chips",1
+531,,kernel-patch-12219827,"[net-next,v6,04/10] net: dsa: microchip: ksz8795: add support for ksz88xx chips",1
+532,,kernel-patch-12224265,"[net-next,v7,4/9] net: dsa: microchip: ksz8795: add support for ksz88xx chips",1
+533,,kernel-patch-12225441,"[net-next,v8,4/9] net: dsa: microchip: ksz8795: add support for ksz88xx chips",1
+534,kernel-change1-940824,kernel-patch-12689509,[net-next] net: dsa: tag_ocelot: use traffic class to map priority on injected header,1
+535,,kernel-patch-12697958,"[v2,net] net: dsa: tag_ocelot: use traffic class to map priority on injected header",1
+536,kernel-change1-924734,kernel-patch-12860519,[2/2] Bluetooth: hci_sync: Refactor remove Adv Monitor,1
+537,,kernel-patch-12924585,"[v2,2/2] Bluetooth: hci_sync: Refactor remove Adv Monitor",1
+538,kernel-change1-954783,kernel-patch-12716198,[06/10] selftests: landlock: Add the uapi headers include variable,1
+539,,kernel-patch-12717368,"[V2,06/10] selftests: landlock: Add the uapi headers include variable",1
+540,kernel-change1-949520,kernel-patch-12651537,"[net-next,19/19] net/sched: add net device refcount tracker to struct Qdisc",1
+541,,kernel-patch-12654155,"[v2,net-next,19/23] net/sched: add net device refcount tracker to struct Qdisc",1
+542,,kernel-patch-12656943,"[v3,net-next,19/23] net/sched: add net device refcount tracker to struct Qdisc",1
+543,kernel-change1-938355,kernel-patch-12900496,net: atlantic: fix potential memory leak in aq_ndev_close(),1
+544,,kernel-patch-12902809,net: atlantic: fix potential memory leak in aq_ndev_close(),1
+545,,kernel-patch-12974464,net: atlantic: fix potential memory leak in aq_ndev_close(),1
+546,,kernel-patch-12975467,net: atlantic: fix potential memory leak in aq_ndev_close(),1
+547,kernel-change1-954610,kernel-patch-12355521,[1/4] selftests: add tests_sysfs module,1
+548,,kernel-patch-12356835,"[v2,1/4] selftests: add tests_sysfs module",1
+549,kernel-change1-934019,kernel-patch-11907885,[net-next] ip_gre: remove CRC flag from dev features in gre_gso_segment,1
+550,,kernel-patch-12010623,"[PATCHv2,net-next] ip_gre: remove CRC flag from dev features in gre_gso_segment",1
+551,,kernel-patch-12024589,"[PATCHv3,net-next] ip_gre: remove CRC flag from dev features in gre_gso_segment",1
+552,kernel-change1-952571,kernel-patch-12840340,"[net-next,v1,04/10] ptp: ocp: parameterize input/output sma selectors",1
+553,,kernel-patch-12841673,"[net-next,v2,04/10] ptp: ocp: parameterize input/output sma selectors",1
+554,,kernel-patch-12849563,"[net-next,v3,04/10] ptp: ocp: parameterize input/output sma selectors",1
+555,,kernel-patch-12856056,"[net-next,v4,05/10] ptp: ocp: parameterize input/output sma selectors",1
+556,kernel-change1-953641,kernel-patch-12824799,rtlwifi: btcoex: fix if == else warning,1
+557,,kernel-patch-12825209,[v2] rtlwifi: btcoex: fix if == else warning,1
+558,kernel-change1-928193,kernel-patch-12737826,[net-next] can: gw: use call_rcu() instead of costly synchronize_rcu(),1
+559,,kernel-patch-12757607,"[net-next,06/36] can: gw: use call_rcu() instead of costly synchronize_rcu()",1
+560,,kernel-patch-12758054,"[net-next,06/36] can: gw: use call_rcu() instead of costly synchronize_rcu()",1
+561,kernel-change1-954316,kernel-patch-12005473,"[v4,net-next,10/18] scsi: fcoe: propagate errors from dev_get_stats",1
+562,,kernel-patch-12006999,"[v5,net-next,09/16] scsi: fcoe: propagate errors from dev_get_stats",1
+563,,kernel-patch-12008567,"[v6,net-next,09/15] scsi: fcoe: propagate errors from dev_get_stats",1
+564,kernel-change1-938946,kernel-patch-11995767,"[net,stable] net: cdc_ncm: correct overhead in delayed_ndp_size",1
+565,,kernel-patch-11995909,"[net,stable,v2] net: cdc_ncm: correct overhead in delayed_ndp_size",1
+566,,kernel-patch-11998129,"[net,stable,v3] net: cdc_ncm: correct overhead in delayed_ndp_size",1
+567,kernel-change1-949223,kernel-patch-12629481,"[net,05/10] net/mlx5e: SHAMPO, Fix constant expression result",1
+568,,kernel-patch-12649195,"[net,13/13] net/mlx5e: SHAMPO, Fix constant expression result",1
+569,kernel-change1-956935,kernel-patch-12127043,"[bpf-next,v4,04/11] skmsg: avoid lock_sock() in sk_psock_backlog()",1
+570,,kernel-patch-12144565,"[bpf-next,v5,04/11] skmsg: avoid lock_sock() in sk_psock_backlog()",1
+571,,kernel-patch-12156451,"[bpf-next,v6,04/12] skmsg: avoid lock_sock() in sk_psock_backlog()",1
+572,,kernel-patch-12169117,"[bpf-next,v7,04/13] skmsg: avoid lock_sock() in sk_psock_backlog()",1
+573,,kernel-patch-12174167,"[bpf-next,v8,04/16] skmsg: avoid lock_sock() in sk_psock_backlog()",1
+574,kernel-change1-945625,kernel-patch-12572625,"[net-next,03/12] net: qmi_wwan: use dev_addr_mod()",1
+575,,kernel-patch-12575017,"[net-next,v2,03/12] net: qmi_wwan: use dev_addr_mod()",1
+576,kernel-change1-928262,kernel-patch-12939407,"[net,2/4] can: j1939: j1939_session_destroy(): fix memory leak of skbs",1
+577,,kernel-patch-12940284,"[net,2/4] can: j1939: j1939_session_destroy(): fix memory leak of skbs",1
+578,kernel-change1-935199,kernel-patch-12332353,[bpf-next] libbpf: add extra BPF_PROG_TYPE check to bpf_object__probe_loading,1
+579,,kernel-patch-12333023,[bpf-next] libbpf: add extra BPF_PROG_TYPE check to bpf_object__probe_loading,1
+580,kernel-change1-935346,kernel-patch-12209501,"[bpf-next,12/15] libbpf: Change the order of data and text relocations.",1
+581,,kernel-patch-12219307,"[v2,bpf-next,12/16] libbpf: Change the order of data and text relocations.",1
+582,,kernel-patch-12241589,"[v3,bpf-next,12/17] libbpf: Change the order of data and text relocations.",1
+583,,kernel-patch-12245781,"[v4,bpf-next,12/22] libbpf: Change the order of data and text relocations.",1
+584,,kernel-patch-12254827,"[v5,bpf-next,11/21] libbpf: Change the order of data and text relocations.",1
+585,,kernel-patch-12256883,"[v6,bpf-next,11/21] libbpf: Change the order of data and text relocations.",1
+586,kernel-change1-925275,kernel-patch-12937961,"[bpf,1/9] bpf: Acquire map uref in .init_seq_private for array map iterator",1
+587,,kernel-patch-12940298,"[bpf,v2,1/9] bpf: Acquire map uref in .init_seq_private for array map iterator",1
+588,kernel-change1-932589,kernel-patch-11922689,"[net,03/15] ibmvnic: stop free_all_rwi on failed reset",1
+589,,kernel-patch-11926887,"[net,v2,2/9] ibmvnic: stop free_all_rwi on failed reset",1
+590,,kernel-patch-11932387,"[net,v3,2/9] ibmvnic: stop free_all_rwi on failed reset",1
+591,kernel-change1-945880,kernel-patch-12964071,"[net-next,21/22] net: sched: act_vlan: get rid of tcf_vlan_walker and tcf_vlan_search",1
+592,,kernel-patch-12967372,"[net-next,v2,22/22] net: sched: act_vlan: get rid of tcf_vlan_walker and tcf_vlan_search",1
+593,,kernel-patch-12969630,"[net-next,v3,22/22] net: sched: act_vlan: get rid of tcf_vlan_walker and tcf_vlan_search",1
+594,kernel-change1-932200,kernel-patch-11868611,i40e: Fix memory leak in i40e_probe,1
+595,,kernel-patch-12094539,"[net,2/8] i40e: Fix memory leak in i40e_probe",1
+596,,kernel-patch-12096103,"[net,v2,2/8] i40e: Fix memory leak in i40e_probe",1
+597,kernel-change1-939538,kernel-patch-12513303,[net] net: dsa: felix: break at first CPU port during init and teardown,1
+598,,kernel-patch-12551073,"[net,10/10] net: dsa: felix: break at first CPU port during init and teardown",1
+599,,kernel-patch-12552241,"[v2,net,10/10] net: dsa: felix: break at first CPU port during init and teardown",1
+600,kernel-change1-935483,kernel-patch-12461387,libbpf: Fix build with latest gcc/binutils with LTO,1
+601,,kernel-patch-12461399,libbpf: Fix build with latest gcc/binutils with LTO,1
+602,,kernel-patch-12479507,[bpf-next] libbpf: Fix build with latest gcc/binutils with LTO,1
+603,kernel-change1-929763,kernel-patch-12097699,"[RFC,net-next,10/12] Documentation: networking: dsa: add paragraph for the HSR/PRP offload",1
+604,,kernel-patch-12142005,"[v2,net-next,10/12] Documentation: networking: dsa: add paragraph for the HSR/PRP offload",1
+605,kernel-change1-929976,kernel-patch-11905389,"[net-next,1/3] drivers: net: cpsw: ale: add broadcast/multicast rate limit support",1
+606,,kernel-patch-12596775,"[net-next,v2,1/3] drivers: net: cpsw: ale: add broadcast/multicast rate limit support",1
+607,,kernel-patch-12810589,"[net-next,v3,1/3] drivers: net: cpsw: ale: add broadcast/multicast rate limit support",1
+608,kernel-change1-946803,kernel-patch-12846650,net: tulip: convert to devres,1
+609,,kernel-patch-12849131,[v2] net: tulip: convert to devres,1
+610,kernel-change1-926888,kernel-patch-12386981,"[bpf,2/3] bpf, sockmap: on cleanup we additionally need to remove cached skb",1
+611,,kernel-patch-12400339,"[bpf,v2,2/3] bpf, sockmap: on cleanup we additionally need to remove cached skb",1
+612,,kernel-patch-12403129,"[bpf,v3,2/3] bpf, sockmap: on cleanup we additionally need to remove cached skb",1
+613,kernel-change1-926622,kernel-patch-11923111,"[bpf-next,1/7] bpf: remove hard-coded btf_vmlinux assumption from BPF verifier",1
+614,,kernel-patch-11941857,"[v2,bpf-next,2/8] bpf: remove hard-coded btf_vmlinux assumption from BPF verifier",1
+615,,kernel-patch-11944407,"[v4,bpf-next,09/14] bpf: remove hard-coded btf_vmlinux assumption from BPF verifier",1
+616,,kernel-patch-11947685,"[v5,bpf-next,09/14] bpf: remove hard-coded btf_vmlinux assumption from BPF verifier",1
+617,,kernel-patch-11949571,"[v6,bpf-next,09/14] bpf: remove hard-coded btf_vmlinux assumption from BPF verifier",1
+618,kernel-change1-958587,kernel-patch-11871987,"[net-next,5/5] tun: switch to net core provided statistics counters",1
+619,,kernel-patch-11880801,"[net-next,v2,03/10] tun: switch to net core provided statistics counters",1
+620,,kernel-patch-11889309,"[net-next,v3,03/10] tun: switch to net core provided statistics counters",1
+621,kernel-change1-929073,kernel-patch-11826289,"[v4,net-next,05/13] crypto: octeontx2: add mailbox communication with AF",1
+622,,kernel-patch-11831709,"[v5,net-next,05/13] crypto: octeontx2: add mailbox communication with AF",1
+623,,kernel-patch-11831783,"[v6,net-next,05/13] crypto: octeontx2: add mailbox communication with AF",1
+624,,kernel-patch-11832289,"[v7,net-next,05/13] crypto: octeontx2: add mailbox communication with AF",1
+625,,kernel-patch-11844149,"[v8,net-next,05/12] crypto: octeontx2: add mailbox communication with AF",1
+626,,kernel-patch-11864911,"[v8,net-next,05/12] crypto: octeontx2: add mailbox communication with AF",1
+627,,kernel-patch-11891415,"[v9,net-next,05/12] crypto: octeontx2: add mailbox communication with AF",1
+628,kernel-change1-932756,kernel-patch-12483409,[net] ice: Correctly deal with PFs that do not support RDMA,1
+629,,kernel-patch-12484099,"[RESEND,net] ice: Correctly deal with PFs that do not support RDMA",1
+630,kernel-change1-952539,kernel-patch-12466115,"[net-next,05/11] ptp: ocp: Add third timestamper",1
+631,,kernel-patch-12495343,"[net-next,06/18] ptp: ocp: Add third timestamper",1
+632,kernel-change1-928296,kernel-patch-12877649,"[v6,1/7] can: Kconfig: rename config symbol CAN_DEV into CAN_NETLINK",1
+633,,kernel-patch-12895352,"[net-next,05/22] can: Kconfig: rename config symbol CAN_DEV into CAN_NETLINK",1
+634,kernel-change1-947179,kernel-patch-12587643,net:wireless: call cfg80211_stop_ap when switch from P2P_GO type,1
+635,,kernel-patch-12587657,[v2] net:wireless: call cfg80211_stop_ap when switch from P2P_GO type,1
+636,kernel-change1-936010,kernel-patch-12226265,llc2: Remove redundant assignment to rc,1
+637,,kernel-patch-12228463,llc2: Remove redundant assignment to rc,1
+638,kernel-change1-949552,kernel-patch-12664823,"[net,2/3] net/sched: flow_dissector: Fix matching on zone id for invalid conns",1
+639,,kernel-patch-12666003,"[net,v2,2/3] net/sched: flow_dissector: Fix matching on zone id for invalid conns",1
+640,,kernel-patch-12676497,"[net,v3,2/3] net/sched: flow_dissector: Fix matching on zone id for invalid conns",1
+641,kernel-change1-933033,kernel-patch-12780607,"[net-next,07/25] ice: refactor spoofchk control code in ice_sriov.c",1
+642,,kernel-patch-12780928,"[net-next,v2,07/11] ice: refactor spoofchk control code in ice_sriov.c",1
+643,kernel-change1-925534,kernel-patch-12987300,"[bpf-next,v2,2/2] bpf: Add selftests for lsh, rsh, arsh with reg operand",1
+644,,kernel-patch-12991109,"[bpf-next,v3,3/3] bpf: add selftests for lsh, rsh, arsh with reg operand",1
+645,kernel-change1-949948,kernel-patch-11907561,[3/6] net/x25: replace x25_kill_by_device with x25_kill_by_neigh,1
+646,,kernel-patch-11908597,"[net-next,v2,3/6] net/x25: replace x25_kill_by_device with x25_kill_by_neigh",1
+647,kernel-change1-949739,kernel-patch-11875129,"[net-next,10/15] net/smc: Introduce SMCR get link command",1
+648,,kernel-patch-11876627,"[net-next,v2,10/15] net/smc: Introduce SMCR get link command",1
+649,,kernel-patch-11888939,"[net-next,v3,10/15] net/smc: Introduce SMCR get link command",1
+650,,kernel-patch-11891687,"[net-next,v4,10/15] net/smc: Introduce SMCR get link command",1
+651,,kernel-patch-11929487,"[net-next,v5,11/14] net/smc: Introduce SMCR get link command",1
+652,,kernel-patch-11934719,"[net-next,v6,11/14] net/smc: Introduce SMCR get link command",1
+653,,kernel-patch-11943575,"[net-next,v7,11/14] net/smc: Introduce SMCR get link command",1
+654,kernel-change1-929231,kernel-patch-12479235,dccp: don't duplicate ccid when cloning dccp sock,1
+655,,kernel-patch-12480099,dccp: don't duplicate ccid when cloning dccp sock,1
+656,kernel-change1-954138,kernel-patch-12651365,"[bpf-next,8/8] samples/bpf: Add xdp_trafficgen sample",1
+657,,kernel-patch-12669687,"[bpf-next,v2,8/8] samples/bpf: Add xdp_trafficgen sample",1
+658,,kernel-patch-12671925,"[bpf-next,v3,8/8] samples/bpf: Add xdp_trafficgen sample",1
+659,kernel-change1-936705,kernel-patch-12901394,"[net-next,03/13] mlxsw: Configure ingress RIF classification",1
+660,,kernel-patch-12904737,"[net-next,v2,03/13] mlxsw: Configure ingress RIF classification",1
+661,kernel-change1-944221,kernel-patch-12207549,"[net-next,2/3] net: mscc: ocelot: convert to ocelot_port_txtstamp_request()",1
+662,,kernel-patch-12224039,"[net-next,v2,6/7] net: mscc: ocelot: convert to ocelot_port_txtstamp_request()",1
+663,,kernel-patch-12225331,"[net-next,v3,6/7] net: mscc: ocelot: convert to ocelot_port_txtstamp_request()",1
+664,kernel-change1-941866,kernel-patch-12137255,"[net] net: hdlc_x25: Prevent racing between ""x25_close"" and ""x25_xmit""/""x25_rx""",1
+665,,kernel-patch-12137289,"[net,v2] net: hdlc_x25: Prevent racing between ""x25_close"" and ""x25_xmit""/""x25_rx""",1
+666,kernel-change1-955691,kernel-patch-11981389,"[v2,3/3] selftests/bpf: Add verifier test for x64 jit jump padding",1
+667,,kernel-patch-12002597,"[RESEND,v2,3/3] selftests/bpf: Add verifier test for x64 jit jump padding",1
+668,,kernel-patch-12019067,"[v3,3/3] selftests/bpf: Add verifier test for x64 jit jump padding",1
+669,kernel-change1-959621,kernel-patch-12400093,"[RFC,v1,6/7] vsock_test: update message bounds test for MSG_EOR",1
+670,,kernel-patch-12428717,"[RFC,v2,5/5] vsock_test: update message bounds test for MSG_EOR",1
+671,,kernel-patch-12437999,"[RFC,v3,6/6] vsock_test: update message bounds test for MSG_EOR",1
+672,,kernel-patch-12473691,"[net-next,v4,6/6] vsock_test: update message bounds test for MSG_EOR",1
+673,,kernel-patch-12474351,"[net-next,v5,6/6] vsock_test: update message bounds test for MSG_EOR",1
+674,kernel-change1-935042,kernel-patch-11941487,"[iproute2-next,5/6] lib: Move get_size() from tc here",1
+675,,kernel-patch-11953517,"[iproute2-next,v2,7/7] lib: Move get_size() from tc here",1
+676,kernel-change1-954652,kernel-patch-12969979,"[bpf-next,v2] selftests: bpf: test_kmod.sh: pass parameters to the module",1
+677,,kernel-patch-12969995,"[bpf-next,v3] selftests: bpf: test_kmod.sh: pass parameters to the module",1
+678,kernel-change1-944376,kernel-patch-12949836,[1/2] net: mt7531: only do PLL once after the reset,1
+679,,kernel-patch-12978930,"[net,v2,1/2] net: mt7531: only do PLL once after the reset",1
+680,kernel-change1-927680,kernel-patch-11826139,"[net-next,v4,05/10] bridge: cfm: Kernel space implementation of CFM. CCM frame TX added.",1
+681,,kernel-patch-11832819,"[net-next,v5,05/10] bridge: cfm: Kernel space implementation of CFM. CCM frame TX added.",1
+682,,kernel-patch-11839105,"[net-next,v6,05/10] bridge: cfm: Kernel space implementation of CFM. CCM frame TX added.",1
+683,,kernel-patch-11859815,"[net-next,v7,05/10] bridge: cfm: Kernel space implementation of CFM. CCM frame TX added.",1
+684,kernel-change1-948644,kernel-patch-12459511,net/mlx5e: Add extack msgs related to TC for better debug,1
+685,,kernel-patch-12466759,[v2] net/mlx5e: Add extack msgs related to TC for better debug,1
+686,,kernel-patch-12492659,"[net-next,v3] net/mlx5e: Add extack msgs related to TC for better debug",1
+687,,kernel-patch-12492887,"[net-next,v4] net/mlx5e: Add extack msgs related to TC for better debug",1
+688,,kernel-patch-12504399,"[net-next,v5] net/mlx5e: Add extack msgs related to TC for better debug",1
+689,,kernel-patch-12509563,"[net-next,v6] net/mlx5e: Add extack msgs related to TC for better debug",1
+690,,kernel-patch-12563137,"[net-next,08/13] net/mlx5e: Add extack msgs related to TC for better debug",1
+691,kernel-change1-932134,kernel-patch-12766882,[next-queue] i40e: Add support for MPLS + TSO,1
+692,,kernel-patch-12811118,"[net-next,1/5] i40e: Add support for MPLS + TSO",1
+693,kernel-change1-925272,kernel-patch-12237981,"[RFC,v2] bpf.2: Use standard types and attributes",1
+694,,kernel-patch-12259979,[v3] bpf.2: Use standard types and attributes,1
+695,kernel-change1-946787,kernel-patch-12904912,"[v2,3/3] net: tls: Add ARIA-GCM algorithm",1
+696,,kernel-patch-12988010,"[v3,net-next] net: tls: Add ARIA-GCM algorithm",1
+697,kernel-change1-940632,kernel-patch-12277195,"[net-next,07/13] net: dsa: sja1105: always keep RGMII ports in the MAC role",1
+698,,kernel-patch-12281755,"[RFC,v2,linux-next,07/14] net: dsa: sja1105: always keep RGMII ports in the MAC role",1
+699,,kernel-patch-12288501,"[v3,net-next,7/8] net: dsa: sja1105: always keep RGMII ports in the MAC role",1
+700,kernel-change1-930456,kernel-patch-11850595,"[v6,2/6] dt-bindings: net: can: binding for CTU CAN FD open-source IP core.",1
+701,,kernel-patch-11870913,"[v7,2/6] dt-bindings: net: can: binding for CTU CAN FD open-source IP core.",1
+702,,kernel-patch-12787903,"[v8,2/7] dt-bindings: net: can: binding for CTU CAN FD open-source IP core.",1
+703,,kernel-patch-12818706,"[net-next,12/17] dt-bindings: net: can: binding for CTU CAN FD open-source IP core.",1
+704,kernel-change1-953021,kernel-patch-12413685,"[net-next,v2,6/8] ravb: Add net_features and net_hw_features to struct ravb_hw_info",1
+705,,kernel-patch-12445083,"[net-next,v3,7/9] ravb: Add net_features and net_hw_features to struct ravb_hw_info",1
+706,kernel-change1-926617,kernel-patch-12594437,"[RFC,bpf-next,v1,2/6] bpf: Remove DEFINE_KFUNC_BTF_ID_SET",1
+707,,kernel-patch-12667855,"[bpf-next,v2,2/9] bpf: Remove DEFINE_KFUNC_BTF_ID_SET",1
+708,,kernel-patch-12669505,"[bpf-next,v3,2/9] bpf: Remove DEFINE_KFUNC_BTF_ID_SET",1
+709,,kernel-patch-12683425,"[bpf-next,v4,02/10] bpf: Remove DEFINE_KFUNC_BTF_ID_SET",1
+710,kernel-change1-925488,kernel-patch-12425455,"[bpf,v2,2/2] bpf: add missing bpf_read_[un]lock_trace() for syscall program",1
+711,,kernel-patch-12427641,"[bpf,v3,2/2] bpf: add missing bpf_read_[un]lock_trace() for syscall program",1
+712,kernel-change1-959710,kernel-patch-11832165,[09/23] wfx: add fwio.c/fwio.h,1
+713,,kernel-patch-11846855,"[v2,10/24] wfx: add fwio.c/fwio.h",1
+714,,kernel-patch-11881191,"[v3,10/24] wfx: add fwio.c/fwio.h",1
+715,,kernel-patch-11988599,"[v4,10/24] wfx: add fwio.c/fwio.h",1
+716,,kernel-patch-12139409,"[v5,10/24] wfx: add fwio.c/fwio.h",1
+717,,kernel-patch-12502541,"[v6,10/24] wfx: add fwio.c/fwio.h",1
+718,,kernel-patch-12505879,"[v7,10/24] wfx: add fwio.c/fwio.h",1
+719,,kernel-patch-12710082,"[v9,10/24] wfx: add fwio.c/fwio.h",1
+720,kernel-change1-958307,kernel-patch-12409161,"[bpf-next,4/7] tools: bpftool: update and synchronise option list in doc and help msg",1
+721,,kernel-patch-12411995,"[bpf-next,v2,4/7] tools: bpftool: update and synchronise option list in doc and help msg",1
+722,kernel-change1-944391,kernel-patch-12803820,"[RFC,net-next,12/12] net: mtk_eth_soc: partially convert to phylink_pcs",1
+723,,kernel-patch-12853752,"[net-next,12/12] net: mtk_eth_soc: partially convert to phylink_pcs",1
+724,kernel-change1-928885,kernel-patch-11870435,"[net,v3,04/10] ch_ktls: incorrect use of GFP_KERNEL",1
+725,,kernel-patch-11870477,"[net,v4,04/10] ch_ktls: incorrect use of GFP_KERNEL",1
+726,kernel-change1-942006,kernel-patch-12359933,"[RFC,net-next,4/8] net: hns3: add support for devlink get info for VF",1
+727,,kernel-patch-12369573,"[net-next,5/9] net: hns3: add support for devlink get info for VF",1
+728,,kernel-patch-12379189,"[V2,net-next,5/9] net: hns3: add support for devlink get info for VF",1
+729,,kernel-patch-12398365,"[V3,net-next,5/7] net: hns3: add support for devlink get info for VF",1
+730,kernel-change1-948261,kernel-patch-12283311,"[net-next,15/17] net/mlx5: Fix lag port remapping logic",1
+731,,kernel-patch-12285143,"[net-next,V2,15/15] net/mlx5: Fix lag port remapping logic",1
+732,kernel-change1-937944,kernel-patch-11864139,"[RFC,3/3] mwifiex: pcie: add reset_wsid quirk for Surface 3",1
+733,,kernel-patch-12274543,"[RFC,3/3] mwifiex: pcie: add reset_wsid quirk for Surface 3",1
+734,kernel-change1-955764,kernel-patch-11972971,selftests/bpf: clarify build error if no vmlinux,1
+735,,kernel-patch-11975545,[v2] selftests/bpf: clarify build error if no vmlinux,1
+736,kernel-change1-956062,kernel-patch-12607871,"[bpf-next,02/11] selftests/bpf: minor cleanups and normalization of Makefile",1
+737,,kernel-patch-12614205,"[v2,bpf-next,2/9] selftests/bpf: minor cleanups and normalization of Makefile",1
+738,kernel-change1-953768,kernel-patch-12853333,[03/10] rtw88: Drop h2c.lock,1
+739,,kernel-patch-12864668,"[v2,03/10] rtw88: Drop h2c.lock",1
+740,kernel-change1-939910,kernel-patch-11915955,[05/11] net: dsa: microchip: ksz8795: use mib_cnt where possible,1
+741,,kernel-patch-11943767,"[v2,05/11] net: dsa: microchip: ksz8795: use mib_cnt where possible",1
+742,kernel-change1-953917,kernel-patch-12453675,s390/ism: switch from 'pci_' to 'dma_' API,1
+743,,kernel-patch-12492341,"[net-next,4/4] s390/ism: switch from 'pci_' to 'dma_' API",1
+744,kernel-change1-933730,kernel-patch-12531221,"[net-next,7/7] ionic: add lif param to ionic_qcq_disable",1
+745,,kernel-patch-12531429,"[v2,net-next,7/7] ionic: add lif param to ionic_qcq_disable",1
+746,kernel-change1-950920,kernel-patch-12076505,"[RFC,01/13] nexthop: Pass nh_config to replace_nexthop()",1
+747,,kernel-patch-12128155,"[net-next,01/14] nexthop: Pass nh_config to replace_nexthop()",1
+748,,kernel-patch-12132283,"[net-next,v2,01/14] nexthop: Pass nh_config to replace_nexthop()",1
+749,kernel-change1-931293,kernel-patch-12219769,"[ethtool-next,1/4] ethtool: Add netlink handler for getmodule (-m)",1
+750,,kernel-patch-12276345,"[ethtool,v2,1/4] ethtool: Add netlink handler for getmodule (-m)",1
+751,,kernel-patch-12306257,"[ethtool,v3,1/4] ethtool: Add netlink handler for getmodule (-m)",1
+752,,kernel-patch-12328937,"[ethtool,v4,1/4] ethtool: Add netlink handler for getmodule (-m)",1
+753,kernel-change1-952519,kernel-patch-12840339,"[net-next,v1,02/10] ptp: ocp: add Celestica timecard PCI ids",1
+754,,kernel-patch-12841674,"[net-next,v2,02/10] ptp: ocp: add Celestica timecard PCI ids",1
+755,,kernel-patch-12849562,"[net-next,v3,02/10] ptp: ocp: add Celestica timecard PCI ids",1
+756,,kernel-patch-12856055,"[net-next,v4,03/10] ptp: ocp: add Celestica timecard PCI ids",1
+757,kernel-change1-928026,kernel-patch-12017881,"[net-next,03/17] can: dev: move driver related infrastructure into separate subdir",1
+758,,kernel-patch-12018795,"[net-next,03/17] can: dev: move driver related infrastructure into separate subdir",1
+759,kernel-change1-925047,kernel-patch-12707678,"[net-next,4/4] bnxt_en: improve firmware timeout messaging",1
+760,,kernel-patch-12708019,"[net-next,v2,4/4] bnxt_en: improve firmware timeout messaging",1
+761,kernel-change1-957655,kernel-patch-12427331,"[RFCv2,5/9] tcp: authopt: Hook into tcp core",1
+762,,kernel-patch-12455925,"[RFCv3,07/15] tcp: authopt: Hook into tcp core",1
+763,,kernel-patch-12508255,[07/19] tcp: authopt: Hook into tcp core,1
+764,,kernel-patch-12596631,"[v2,08/25] tcp: authopt: Hook into tcp core",1
+765,,kernel-patch-12664175,"[v3,06/18] tcp: authopt: Hook into tcp core",1
+766,,kernel-patch-12698398,"[v4,06/19] tcp: authopt: Hook into tcp core",1
+767,,kernel-patch-12721941,"[v5,06/20] tcp: authopt: Hook into tcp core",1
+768,,kernel-patch-12928651,"[v6,08/26] tcp: authopt: Hook into tcp core",1
+769,,kernel-patch-12947746,"[v7,07/26] tcp: authopt: Hook into tcp core",1
+770,,kernel-patch-12965589,"[v8,07/26] tcp: authopt: Hook into tcp core",1
+771,kernel-change1-945304,kernel-patch-12148105,"[net-next,v1,1/3] net: phy: mscc: Applying LCPLL reset to VSC8584",1
+772,,kernel-patch-12151073,"[net-next,v2,1/3] net: phy: mscc: Applying LCPLL reset to VSC8584",1
+773,kernel-change1-940231,kernel-patch-11843519,"[v2,2/3] net: dsa: mv88e6xxx: Support serdes ports on MV88E6097/6095/6185",1
+774,,kernel-patch-11845701,"[v3,2/3] net: dsa: mv88e6xxx: Support serdes ports on MV88E6097/6095/6185",1
+775,,kernel-patch-11850089,[2/4] net: dsa: mv88e6xxx: Support serdes ports on MV88E6097/6095/6185,1
+776,,kernel-patch-11927063,"[net-next,v5,2/4] net: dsa: mv88e6xxx: Support serdes ports on MV88E6097/6095/6185",1
+777,kernel-change1-926825,kernel-patch-11803931,"[bpf-next,v2,5/6] bpf, selftests: use bpf_tail_call_static where appropriate",1
+778,,kernel-patch-11806959,"[bpf-next,v3,5/6] bpf, selftests: use bpf_tail_call_static where appropriate",1
+779,,kernel-patch-11809403,"[bpf-next,v4,5/6] bpf, selftests: use bpf_tail_call_static where appropriate",1
+780,kernel-change1-940755,kernel-patch-12959834,"[net-next,5/9] net: dsa: suppress appending ethtool stats to LAG DSA masters",1
+781,,kernel-patch-12972737,"[v2,net-next,05/10] net: dsa: suppress appending ethtool stats to LAG DSA masters",1
+782,kernel-change1-943254,kernel-patch-12776976,[v2] net: ipv6: fix skb_over_panic in __ip6_append_data,1
+783,,kernel-patch-12776996,[v3] net: ipv6: fix skb_over_panic in __ip6_append_data,1
+784,kernel-change1-950850,kernel-patch-12654163,"[v2,net-next,23/23] netpoll: add net device refcount tracker to struct netpoll",1
+785,,kernel-patch-12656951,"[v3,net-next,23/23] netpoll: add net device refcount tracker to struct netpoll",1
+786,kernel-change1-930730,kernel-patch-12864454,"[net-next,v6,10/16] dt-bindings: net: snps,dwmac: add ""power-domains"" property",1
+787,,kernel-patch-12877319,"[net-next,v7,10/16] dt-bindings: net: snps,dwmac: add ""power-domains"" property",1
+788,,kernel-patch-12877372,"[RESEND,net-next,v7,10/16] dt-bindings: net: snps,dwmac: add ""power-domains"" property",1
+789,,kernel-patch-12887371,"[net-next,v8,10/16] dt-bindings: net: snps,dwmac: add ""power-domains"" property",1
+790,,kernel-patch-12894718,"[net-next,v9,10/16] dt-bindings: net: snps,dwmac: add ""power-domains"" property",1
+791,kernel-change1-933377,kernel-patch-11944711,"[net-next,v1,8/9] igc: Add support for exposing frame preemption stats registers",1
+792,,kernel-patch-12856168,"[net-next,v5,11/11] igc: Add support for exposing frame preemption stats registers",1
+793,kernel-change1-932497,kernel-patch-11926885,"[net,v2,5/9] ibmvnic: delay next reset if hard reset fails",1
+794,,kernel-patch-11932377,"[net,v3,5/9] ibmvnic: delay next reset if hard reset fails",1
+795,kernel-change1-927206,kernel-patch-12467873,"[bpf-next,5/5] bpf/benchs: Add benchmarks for comparing hashmap lookups with vs. without bloom filter",1
+796,,kernel-patch-12491647,"[v2,bpf-next,4/4] bpf/benchs: Add benchmarks for comparing hashmap lookups with vs. without bloom filter",1
+797,,kernel-patch-12508811,"[v3,bpf-next,5/5] bpf/benchs: Add benchmarks for comparing hashmap lookups with vs. without bloom filter",1
+798,kernel-change1-943532,kernel-patch-12657383,[net] net: lantiq_xrx200: increase buffer reservation,1
+799,,kernel-patch-12660001,"[net,v2] net: lantiq_xrx200: increase buffer reservation",1
+800,,kernel-patch-12683137,[1/1] net: lantiq_xrx200: increase buffer reservation,1
+801,kernel-change1-925313,kernel-patch-12182381,"[bpf-next,1/3] bpf: add batched ops support for percpu array",1
+802,,kernel-patch-12185749,"[bpf-next,v2,1/3] bpf: add batched ops support for percpu array",1
+803,,kernel-patch-12198715,"[bpf-next,v3,1/3] bpf: add batched ops support for percpu array",1
+804,,kernel-patch-12205871,"[bpf-next,v4,1/3] bpf: add batched ops support for percpu array",1
+805,,kernel-patch-12222811,"[bpf-next,v5,1/2] bpf: add batched ops support for percpu array",1
+806,kernel-change1-951130,kernel-patch-12278003,NFC: st95hf: remove unnecessary assignment and label,1
+807,,kernel-patch-12280449,[v2] nfc: st95hf: remove unnecessary assignment and label,1
+808,kernel-change1-956610,kernel-patch-12829903,"[net-next,v2,04/13] sfc: Copy shared files needed for Siena (part 2)",1
+809,,kernel-patch-12837222,"[net-next,v3,04/13] sfc: Copy shared files needed for Siena (part 2)",1
+810,,kernel-patch-12843792,"[net-next,v4,03/11] sfc: Copy shared files needed for Siena (part 2)",1
+811,kernel-change1-924677,kernel-patch-12630517,"[v5,1/2] bluetooth: Handle MSFT Monitor Device Event",1
+812,,kernel-patch-12631017,"[v6,1/2] bluetooth: Handle MSFT Monitor Device Event",1
+813,,kernel-patch-12654421,"[v7,1/2] bluetooth: Handle MSFT Monitor Device Event",1
+814,kernel-change1-937703,kernel-patch-11899665,"[net-next,05/13] mptcp: reduce the arguments of mptcp_sendmsg_frag",1
+815,,kernel-patch-11900821,"[net-next,v2,05/13] mptcp: reduce the arguments of mptcp_sendmsg_frag",1
+816,,kernel-patch-11907989,"[net-next,v3,05/13] mptcp: reduce the arguments of mptcp_sendmsg_frag",1
+817,kernel-change1-939456,kernel-patch-12332015,"[net-next,4/6] net: dsa: calculate the largest_mtu across all ports in the tree",1
+818,,kernel-patch-12335253,"[v2,net-next,4/6] net: dsa: calculate the largest_mtu across all ports in the tree",1
+819,kernel-change1-952015,kernel-patch-12253981,"[V3,5/6] PCI/IOV: Enable 10-Bit tag support for PCIe VF devices",1
+820,,kernel-patch-12317419,"[RESEND,V3,5/6] PCI/IOV: Enable 10-Bit tag support for PCIe VF devices",1
+821,,kernel-patch-12323863,"[V4,5/6] PCI/IOV: Enable 10-Bit tag support for PCIe VF devices",1
+822,,kernel-patch-12334473,"[V5,5/6] PCI/IOV: Enable 10-Bit tag support for PCIe VF devices",1
+823,,kernel-patch-12395913,"[V6,5/8] PCI/IOV: Enable 10-Bit tag support for PCIe VF devices",1
+824,,kernel-patch-12418915,"[V7,5/9] PCI/IOV: Enable 10-Bit tag support for PCIe VF devices",1
+825,,kernel-patch-12444377,"[V8,8/8] PCI/IOV: Enable 10-Bit Tag support for PCIe VF devices",1
+826,,kernel-patch-12510705,"[V9,8/8] PCI/IOV: Enable 10-Bit Tag support for PCIe VF devices",1
+827,,kernel-patch-12547459,"[V10,8/8] PCI/IOV: Enable 10-Bit Tag support for PCIe VF devices",1
+828,,kernel-patch-12594321,"[V11,8/8] PCI/IOV: Enable 10-Bit Tag support for PCIe VF devices",1
+829,kernel-change1-944937,kernel-patch-12491803,[net-next] net: phy: at803x: add support for qca 8327 internal phy,1
+830,,kernel-patch-12493079,"[net-next,v2] net: phy: at803x: add support for qca 8327 internal phy",1
+831,kernel-change1-941873,kernel-patch-12883807,net: helper function for skb_shift,1
+832,,kernel-patch-12887877,[v2] net: helper function for skb_shift,1
+833,kernel-change1-946328,kernel-patch-12721839,"[net,1/2] net: stmmac: configure PTP clock source prior to PTP initialization",1
+834,,kernel-patch-12723393,"[net,1/2] net: stmmac: configure PTP clock source prior to PTP initialization",1
+835,,kernel-patch-12724816,"[net,1/2] net: stmmac: configure PTP clock source prior to PTP initialization",1
+836,kernel-change1-925860,kernel-patch-11943089,"[v1,bpf-next,02/11] bpf: Define migration types for SO_REUSEPORT.",1
+837,,kernel-patch-11955845,"[v2,bpf-next,02/13] bpf: Define migration types for SO_REUSEPORT.",1
+838,kernel-change1-950707,kernel-patch-11923353,"[net,2/4] netfilter: nftables_offload: build mask based from the matching bytes",1
+839,,kernel-patch-11937093,"[net,5/5] netfilter: nftables_offload: build mask based from the matching bytes",1
+840,kernel-change1-947353,kernel-patch-11978497,"[bpf-next,1/2] net: xdp: introduce __xdp_build_skb_from_frame utility routine",1
+841,,kernel-patch-12014463,"[v2,bpf-next,1/2] net: xdp: introduce __xdp_build_skb_from_frame utility routine",1
+842,kernel-change1-932251,kernel-patch-12705743,"[net-next,3/7] i40e: Minimize amount of busy-waiting during AQ send",1
+843,,kernel-patch-12706860,"[net-next,v2,2/6] i40e: Minimize amount of busy-waiting during AQ send",1
+844,kernel-change1-940754,kernel-patch-12637241,"[RFC,net-next,02/12] net: dsa: support use of phylink_generic_validate()",1
+845,,kernel-patch-12647281,"[net-next,3/5] net: dsa: support use of phylink_generic_validate()",1
+846,kernel-change1-940725,kernel-patch-12311061,"[net-next,12/13] net: dsa: sja1105: SGMII and 2500base-x on the SJA1110 are 'special'",1
+847,,kernel-patch-12313709,"[v2,net-next,12/13] net: dsa: sja1105: SGMII and 2500base-x on the SJA1110 are 'special'",1
+848,,kernel-patch-12316487,"[v3,net-next,12/13] net: dsa: sja1105: SGMII and 2500base-x on the SJA1110 are 'special'",1
+849,kernel-change1-948613,kernel-patch-12756335,"[mlx5-next,13/17] net/mlx5: Use mlx5_cmd_do() in core create_{cq,dct}",1
+850,,kernel-patch-12757689,"[for-next,v2,13/17] net/mlx5: Use mlx5_cmd_do() in core create_{cq,dct}",1
+851,kernel-change1-944909,kernel-patch-12342339,[2/4] net: phy: adin1100: Add ethtool get_stats support,1
+852,,kernel-patch-12371089,"[v2,4/7] net: phy: adin1100: Add ethtool get_stats support",1
+853,kernel-change1-940397,kernel-patch-12720868,"[RFC,v7,16/16] net: dsa: qca8k: introduce qca8k_bulk_read/write function",1
+854,,kernel-patch-12732449,"[net-next,v8,16/16] net: dsa: qca8k: introduce qca8k_bulk_read/write function",1
+855,kernel-change1-956995,kernel-patch-12559013,"[net-next,4/5] soc: fsl: dpio: add Net DIM integration",1
+856,,kernel-patch-12560807,"[v2,net-next,4/5] soc: fsl: dpio: add Net DIM integration",1
+857,kernel-change1-948714,kernel-patch-11944243,"[net-next,02/15] net/mlx5e: Allow CQ outside of channel context",1
+858,,kernel-patch-11947751,"[net-next,V2,02/15] net/mlx5e: Allow CQ outside of channel context",1
+859,,kernel-patch-11959581,"[net-next,V3,02/15] net/mlx5e: Allow CQ outside of channel context",1
+860,kernel-change1-935830,kernel-patch-11812797,"[bpf-next,1/3] libbpf: support safe subset of load/store instruction resizing with CO-RE",1
+861,,kernel-patch-11821709,"[v2,bpf-next,2/4] libbpf: support safe subset of load/store instruction resizing with CO-RE",1
+862,,kernel-patch-11821993,"[v3,bpf-next,2/4] libbpf: support safe subset of load/store instruction resizing with CO-RE",1
+863,kernel-change1-934645,kernel-patch-12691724,"[wpan-tools,4/7] iwpan: Remove duplicated SECTION",1
+864,,kernel-patch-12711656,"[wpan-tools,v2,4/7] iwpan: Remove duplicated SECTION",1
+865,kernel-change1-929367,kernel-patch-12775709,"[RFT,net-next,1/6] devlink: expose instance locking and add locked port registering",1
+866,,kernel-patch-12781052,"[net-next,1/6] devlink: expose instance locking and add locked port registering",1
+867,kernel-change1-928208,kernel-patch-12503745,[net] can: isotp: add result check for wait_event_interruptible(),1
+868,,kernel-patch-12518245,"[net,1/2] can: isotp: add result check for wait_event_interruptible()",1
+869,,kernel-patch-12547339,"[net,v2,1/2] can: isotp: add result check for wait_event_interruptible()",1
+870,kernel-change1-948196,kernel-patch-12216689,"[net-next,01/11] net/mlx5: E-Switch, Return eswitch max ports when eswitch is supported",1
+871,,kernel-patch-12222505,"[net-next,V2,01/11] net/mlx5: E-Switch, Return eswitch max ports when eswitch is supported",1
+872,kernel-change1-936536,kernel-patch-12975842,[07/10] mips: dts: ralink: mt7621: change phy-mode of gmac1 to rgmii,1
+873,,kernel-patch-12976895,"[v2,net-next,07/10] mips: dts: ralink: mt7621: change phy-mode of gmac1 to rgmii",1
+874,,kernel-patch-12979469,"[v3,net-next,07/10] mips: dts: ralink: mt7621: change phy-mode of gmac1 to rgmii",1
+875,,kernel-patch-12982425,"[v4,net-next,07/10] mips: dts: ralink: mt7621: change phy-mode of gmac1 to rgmii",1
+876,kernel-change1-929077,kernel-patch-11826299,"[v4,net-next,11/13] crypto: octeontx2: add virtual function driver support",1
+877,,kernel-patch-11831737,"[v5,net-next,11/13] crypto: octeontx2: add virtual function driver support",1
+878,,kernel-patch-11831803,"[v6,net-next,11/13] crypto: octeontx2: add virtual function driver support",1
+879,,kernel-patch-11832295,"[v7,net-next,11/13] crypto: octeontx2: add virtual function driver support",1
+880,,kernel-patch-11844169,"[v8,net-next,10/12] crypto: octeontx2: add virtual function driver support",1
+881,,kernel-patch-11864957,"[v8,net-next,10/12] crypto: octeontx2: add virtual function driver support",1
+882,,kernel-patch-11891425,"[v9,net-next,10/12] crypto: octeontx2: add virtual function driver support",1
+883,kernel-change1-952515,kernel-patch-12840338,"[net-next,v1,01/10] ptp: ocp: 32-bit fixups for pci start address",1
+884,,kernel-patch-12841670,"[net-next,v2,01/10] ptp: ocp: 32-bit fixups for pci start address",1
+885,,kernel-patch-12849560,"[net-next,v3,01/10] ptp: ocp: 32-bit fixups for pci start address",1
+886,,kernel-patch-12856053,"[net-next,v4,01/10] ptp: ocp: 32-bit fixups for pci start address",1
+887,kernel-change1-960377,kernel-patch-12308749,xfrm: policy: fix a spelling mistake,1
+888,,kernel-patch-12311489,xfrm: policy: fix a spelling mistake,1
+889,,kernel-patch-12314519,xfrm: policy: fix a spelling mistake,1
+890,,kernel-patch-12347269,[05/17] xfrm: policy: fix a spelling mistake,1
+891,kernel-change1-957313,kernel-patch-12663359,"[net-next,v6,5/6] stmmac: dwmac-mediatek: add support for mt8195",1
+892,,kernel-patch-12663601,"[net-next,v7,5/6] stmmac: dwmac-mediatek: add support for mt8195",1
+893,,kernel-patch-12668507,"[net-next,v8,5/6] stmmac: dwmac-mediatek: add support for mt8195",1
+894,,kernel-patch-12677263,"[net-next,v9,5/6] stmmac: dwmac-mediatek: add support for mt8195",1
+895,,kernel-patch-12680029,"[net-next,v10,5/6] stmmac: dwmac-mediatek: add support for mt8195",1
+896,,kernel-patch-12702969,"[net-next,v11,5/6] stmmac: dwmac-mediatek: add support for mt8195",1
+897,,kernel-patch-12714849,"[net-next,v12,6/7] stmmac: dwmac-mediatek: add support for mt8195",1
+898,,kernel-patch-12779822,"[net-next,v13,6/7] stmmac: dwmac-mediatek: add support for mt8195",1
+899,kernel-change1-955607,kernel-patch-12851286,"[bpf-next,05/12] selftests/bpf: Add test for libbpf_bpf_map_type_str",1
+900,,kernel-patch-12854402,"[bpf-next,v2,05/12] selftests/bpf: Add test for libbpf_bpf_map_type_str",1
+901,,kernel-patch-12856068,"[bpf-next,v3,05/12] selftests/bpf: Add test for libbpf_bpf_map_type_str",1
+902,,kernel-patch-12859548,"[bpf-next,v4,05/12] selftests/bpf: Add test for libbpf_bpf_map_type_str",1
+903,kernel-change1-945818,kernel-patch-12758608,"[net-next,07/14] net: rtnetlink: Add UAPI for obtaining L3 offload xstats",1
+904,,kernel-patch-12766272,"[net-next,v2,07/14] net: rtnetlink: Add UAPI for obtaining L3 offload xstats",1
+905,kernel-change1-959013,kernel-patch-12901606,"[vfio,07/13] vfio: Add an IOVA bitmap support",1
+906,,kernel-patch-12906313,"[V1,vfio,05/11] vfio: Add an IOVA bitmap support",1
+907,,kernel-patch-12917444,"[V2,vfio,05/11] vfio: Add an IOVA bitmap support",1
+908,,kernel-patch-12933096,"[V3,vfio,05/11] vfio: Add an IOVA bitmap support",1
+909,,kernel-patch-12943695,"[V4,vfio,04/10] vfio: Add an IOVA bitmap support",1
+910,,kernel-patch-12962176,"[V5,vfio,04/10] vfio: Add an IOVA bitmap support",1
+911,,kernel-patch-12965959,"[V6,vfio,04/10] vfio: Add an IOVA bitmap support",1
+912,,kernel-patch-12970481,"[V7,vfio,04/10] vfio: Add an IOVA bitmap support",1
+913,kernel-change1-933224,kernel-patch-12722388,"[bpf-next,v4,2/8] ice: xsk: force rings to be sized to power of 2",1
+914,,kernel-patch-12723975,"[bpf-next,v5,2/8] ice: xsk: force rings to be sized to power of 2",1
+915,kernel-change1-942613,kernel-patch-12709384,[14/14] net: inline sock_alloc_send_skb,1
+916,,kernel-patch-12799545,"[net-next,09/27] net: inline sock_alloc_send_skb",1
+917,,kernel-patch-12830466,"[net-next,1/5] net: inline sock_alloc_send_skb",1
+918,kernel-change1-934698,kernel-patch-12591381,[net] ixgbe: set X550 MDIO speed before talking to PHY,1
+919,,kernel-patch-12597737,"[v2,net] ixgbe: set X550 MDIO speed before talking to PHY",1
+920,,kernel-patch-12679153,"[net,5/5] ixgbe: set X550 MDIO speed before talking to PHY",1
+921,kernel-change1-952619,kernel-patch-11896393,"[v15,3/9] ptp: Reorganize ptp_kvm module to make it arch-independent.",1
+922,,kernel-patch-11960555,"[v16,3/9] ptp: Reorganize ptp_kvm module to make it arch-independent.",1
+923,kernel-change1-942844,kernel-patch-12044849,"[net-next,3/6] net: ipa: drop packet if status has valid tag",1
+924,,kernel-patch-12048627,"[net-next,v2,3/6] net: ipa: drop packet if status has valid tag",1
+925,kernel-change1-959317,kernel-patch-12120959,"[RFC,v6,09/22] virtio/vsock: set packet's type in virtio_transport_send_pkt_info()",1
+926,,kernel-patch-12157817,"[RFC,v7,09/22] virtio/vsock: set packet's type in virtio_transport_send_pkt_info()",1
+927,,kernel-patch-12200481,"[RFC,v8,08/19] virtio/vsock: set packet's type in virtio_transport_send_pkt_info()",1
+928,,kernel-patch-12246151,"[RFC,v9,08/19] virtio/vsock: set packet's type in virtio_transport_send_pkt_info()",1
+929,,kernel-patch-12271295,"[v10,08/18] virtio/vsock: set packet's type in virtio_transport_send_pkt_info()",1
+930,,kernel-patch-12315441,"[v11,08/18] virtio/vsock: set packet's type in virtio_transport_send_pkt_info()",1
+931,kernel-change1-938072,kernel-patch-12993324,"[net-next,3/6] net: add basic C code generators for Netlink",1
+932,,kernel-patch-12994836,"[net-next,v2,3/7] net: add basic C code generators for Netlink",1
+933,kernel-change1-956972,kernel-patch-12984457,[11/12] slab: Remove __malloc attribute from realloc functions,1
+934,,kernel-patch-12987091,"[v2,01/16] slab: Remove __malloc attribute from realloc functions",1
+935,kernel-change1-949086,kernel-patch-12775045,"[net-next,2/3] net/mlx5e: MPLSoUDP decap, use vlan push_eth instead of pedit",1
+936,,kernel-patch-12781321,"[net-next,v2,2/3] net/mlx5e: MPLSoUDP decap, use vlan push_eth instead of pedit",1
+937,kernel-change1-926056,kernel-patch-12462179,"[4.19,2/3] bpf: Fix 32 bit src register truncation on div/mod",1
+938,,kernel-patch-12465829,"[4.14,3/4] bpf: Fix 32 bit src register truncation on div/mod",1
+939,kernel-change1-946308,kernel-patch-12081247,[2/4] net: stmmac: Add Toshiba Visconti SoCs glue driver,1
+940,,kernel-patch-12084697,"[v2,2/4] net: stmmac: Add Toshiba Visconti SoCs glue driver",1
+941,,kernel-patch-12087767,[2/4] net: stmmac: Add Toshiba Visconti SoCs glue driver,1
+942,,kernel-patch-12088411,"[v4,2/4] net: stmmac: Add Toshiba Visconti SoCs glue driver",1
+943,kernel-change1-952499,kernel-patch-11870469,"[net,1/1] ptp: idt82p33: add adjphase support",1
+944,,kernel-patch-11874253,"[v2,net,1/1] ptp: idt82p33: add adjphase support",1
+945,,kernel-patch-11881527,"[net-next,1/3] ptp: idt82p33: add adjphase support",1
+946,,kernel-patch-11882315,"[v2,net-next,1/3] ptp: idt82p33: add adjphase support",1
+947,,kernel-patch-11882783,"[v3,net-next,1/3] ptp: idt82p33: add adjphase support",1
+948,,kernel-patch-11885905,"[v4,net-next,1/3] ptp: idt82p33: add adjphase support",1
+949,kernel-change1-954371,kernel-patch-12333719,"[net-next,08/14] sctp: do state transition when a probe succeeds on HB ACK recv path",1
+950,,kernel-patch-12338339,"[PATCHv2,net-next,08/14] sctp: do state transition when a probe succeeds on HB ACK recv path",1
+951,kernel-change1-958909,kernel-patch-12228351,[2/2] vDPA/ifcvf: implement doorbell mapping for ifcvf,1
+952,,kernel-patch-12257371,"[V2,2/2] vDPA/ifcvf: implement doorbell mapping for ifcvf",1
+953,,kernel-patch-12288841,"[V2,RESEND,2/2] vDPA/ifcvf: implement doorbell mapping for ifcvf",1
+954,,kernel-patch-12290487,"[V3,2/2] vDPA/ifcvf: implement doorbell mapping for ifcvf",1
+955,,kernel-patch-12293431,"[V4,2/2] vDPA/ifcvf: implement doorbell mapping for ifcvf",1
+956,,kernel-patch-12293447,"[RESEND,V4,2/2] vDPA/ifcvf: implement doorbell mapping for ifcvf",1
+957,kernel-change1-942031,kernel-patch-12359937,"[RFC,net-next,2/8] net: hns3: add support for registering devlink for VF",1
+958,,kernel-patch-12369579,"[net-next,3/9] net: hns3: add support for registering devlink for VF",1
+959,,kernel-patch-12379187,"[V2,net-next,3/9] net: hns3: add support for registering devlink for VF",1
+960,,kernel-patch-12398367,"[V3,net-next,3/7] net: hns3: add support for registering devlink for VF",1
+961,kernel-change1-934262,kernel-patch-12235297,"[RFC,net-next,05/10] ipv6: Calculate multipath hash inside switch statement",1
+962,,kernel-patch-12246441,"[RFC,net-next,v2,05/10] ipv6: Calculate multipath hash inside switch statement",1
+963,,kernel-patch-12262749,"[net-next,05/10] ipv6: Calculate multipath hash inside switch statement",1
+964,kernel-change1-959311,kernel-patch-12437989,"[RFC,v3,1/6] virtio/vsock: rename 'EOR' to 'EOM' bit.",1
+965,,kernel-patch-12473681,"[net-next,v4,1/6] virtio/vsock: rename 'EOR' to 'EOM' bit.",1
+966,,kernel-patch-12474343,"[net-next,v5,1/6] virtio/vsock: rename 'EOR' to 'EOM' bit.",1
+967,kernel-change1-923967,kernel-patch-12133481,[14/17] arm64: add __nocfi to functions that jump to a physical address,1
+968,,kernel-patch-12148831,"[v2,14/17] arm64: add __nocfi to functions that jump to a physical address",1
+969,,kernel-patch-12159285,"[v3,14/17] arm64: add __nocfi to functions that jump to a physical address",1
+970,,kernel-patch-12176453,"[v4,14/17] arm64: add __nocfi to functions that jump to a physical address",1
+971,,kernel-patch-12180021,"[v5,14/18] arm64: add __nocfi to functions that jump to a physical address",1
+972,,kernel-patch-12192163,"[v6,14/18] arm64: add __nocfi to functions that jump to a physical address",1
+973,kernel-change1-928024,kernel-patch-12018405,"[net-next,04/17] can: dev: move bittiming related code into seperate file",1
+974,,kernel-patch-12018789,"[net-next,04/17] can: dev: move bittiming related code into seperate file",1
+975,kernel-change1-935594,kernel-patch-12915888,"[bpf-next,3/5] libbpf: improve BPF_KPROBE_SYSCALL macro and rename it to BPF_KSYSCALL",1
+976,,kernel-patch-12917360,"[v2,bpf-next,3/5] libbpf: improve BPF_KPROBE_SYSCALL macro and rename it to BPF_KSYSCALL",1
+977,kernel-change1-953300,kernel-patch-12933218,[RFC] Remove DECNET support from kernel,1
+978,,kernel-patch-12946594,[net-next] Remove DECnet support from kernel,1
+979,kernel-change1-960189,kernel-patch-12364025,"[v2,2/6] x86/tdx: Add GetQuote TDX hypercall support",1
+980,,kernel-patch-12387539,"[v3,2/6] x86/tdx: Add GetQuote TDX hypercall support",1
+981,,kernel-patch-12422359,"[v4,3/7] x86/tdx: Add GetQuote TDX hypercall support",1
+982,kernel-change1-923735,kernel-patch-12167793,af_x25.c: Fix a spello,1
+983,,kernel-patch-12167829,[03/19] af_x25.c: Fix a spello,1
+984,kernel-change1-947774,kernel-patch-12529279,[net-next] net/mlx4_en: avoid one cache line miss to ring doorbell,1
+985,,kernel-patch-12529615,"[V2,net-next] net/mlx4_en: avoid one cache line miss to ring doorbell",1
+986,kernel-change1-926876,kernel-patch-12753418,"[net-next,2/4] bpf, sockmap: Fix memleak in tcp_bpf_sendmsg while sk msg is full",1
+987,,kernel-patch-12759508,"[bpf-next,2/4] bpf, sockmap: Fix memleak in tcp_bpf_sendmsg while sk msg is full",1
+988,,kernel-patch-12765382,"[bpf-next,v2,2/4] bpf, sockmap: Fix memleak in tcp_bpf_sendmsg while sk msg is full",1
+989,,kernel-patch-12768672,"[bpf-next,v3,2/4] bpf, sockmap: Fix memleak in tcp_bpf_sendmsg while sk msg is full",1
+990,kernel-change1-956161,kernel-patch-12429499,"[v3,bpf-next,1/4] selftests/bpf: skip loading bpf_testmod when using -l to list tests.",1
+991,,kernel-patch-12439709,"[v4,bpf-next,1/4] selftests/bpf: skip loading bpf_testmod when using -l to list tests.",1
+992,,kernel-patch-12440465,"[v5,bpf-next,1/4] selftests/bpf: skip loading bpf_testmod when using -l to list tests.",1
+993,kernel-change1-946490,kernel-patch-12013303,"[V2,net,3/6] net: stmmac: fix watchdog timeout during suspend/resume stress test",1
+994,,kernel-patch-12046207,"[V3,3/6] net: stmmac: fix watchdog timeout during suspend/resume stress test",1
+995,,kernel-patch-12067071,"[V4,net,2/5] net: stmmac: fix watchdog timeout during suspend/resume stress test",1
+996,,kernel-patch-12103683,"[V5,net,2/5] net: stmmac: fix watchdog timeout during suspend/resume stress test",1
+997,kernel-change1-933056,kernel-patch-12831076,"[net-next,11/11] ice: remove period on argument description in ice_for_each_vf",1
+998,,kernel-patch-12840149,"[net-next,v2,10/10] ice: remove period on argument description in ice_for_each_vf",1
+999,kernel-change1-926380,kernel-patch-12004589,[bpf] bpf: local storage helpers should check nullness of owner ptr passed,1
+1000,,kernel-patch-12011673,"[bpf,v2,2/3] bpf: local storage helpers should check nullness of owner ptr passed",1
+1001,,kernel-patch-12012617,"[bpf,v3,2/3] bpf: local storage helpers should check nullness of owner ptr passed",1
+1002,kernel-change1-933091,kernel-patch-12780609,"[net-next,06/25] ice: rename ICE_MAX_VF_COUNT to avoid confusion",1
+1003,,kernel-patch-12780926,"[net-next,v2,06/11] ice: rename ICE_MAX_VF_COUNT to avoid confusion",1
+1004,kernel-change1-928014,kernel-patch-11842117,"[v4,1/4] can: dev: can_get_echo_skb(): prevent call to kfree_skb() in hard IRQ context",1
+1005,,kernel-patch-11879163,"[net,05/27] can: dev: can_get_echo_skb(): prevent call to kfree_skb() in hard IRQ context",1
+1006,kernel-change1-934199,kernel-patch-12659311,"[net-next,3/4] ipv4: Reject routes specifying ECN bits in rtm_tos",1
+1007,,kernel-patch-12735111,"[net-next,3/4] ipv4: Reject routes specifying ECN bits in rtm_tos",1
+1008,kernel-change1-949246,kernel-patch-12973152,"[net-next,10/10] net/mlx5e: Support MACsec offload replay window",1
+1009,,kernel-patch-12976391,"[net-next,V2,10/10] net/mlx5e: Support MACsec offload replay window",1
+1010,,kernel-patch-12984080,"[net-next,V3,10/10] net/mlx5e: Support MACsec offload replay window",1
+1011,kernel-change1-958497,kernel-patch-12940151,"[RFCv7,net-next,17/36] treewide: adjust features initialization",1
+1012,,kernel-patch-12979401,"[RFCv8,net-next,17/55] treewide: adjust features initialization",1
+1013,kernel-change1-951753,kernel-patch-12035083,"[net-next,7/7] octeontx2-pf: ethtool physical link configuration",1
+1014,,kernel-patch-12049201,"[v2,net-next,7/7] octeontx2-pf: ethtool physical link configuration",1
+1015,,kernel-patch-12058089,"[v3,net-next,7/7] octeontx2-pf: ethtool physical link configuration",1
+1016,,kernel-patch-12077733,"[v4,net-next,7/7] octeontx2-pf: ethtool physical link configuration",1
+1017,kernel-change1-938023,kernel-patch-12266209,[01/20] net: 3com: remove leading spaces before tabs,1
+1018,,kernel-patch-12266245,[01/20] net: 3com: remove leading spaces before tabs,1
+1019,kernel-change1-946892,kernel-patch-12299801,"[net-next,v1,5/7] net: usb: asix: add error handling for asix_mdio_* functions",1
+1020,,kernel-patch-12302871,"[net-next,v2,6/8] net: usb: asix: add error handling for asix_mdio_* functions",1
+1021,kernel-change1-949245,kernel-patch-12973147,"[net-next,09/10] net/mlx5e: Support MACsec offload extended packet number (EPN)",1
+1022,,kernel-patch-12976393,"[net-next,V2,09/10] net/mlx5e: Support MACsec offload extended packet number (EPN)",1
+1023,,kernel-patch-12984081,"[net-next,V3,09/10] net/mlx5e: Support MACsec offload extended packet number (EPN)",1
+1024,kernel-change1-940797,kernel-patch-12356983,"[RFC,v2,net-next,10/10] net: dsa: tag_dsa: offload the bridge forwarding process",1
+1025,,kernel-patch-12371417,"[RFC,v3,net-next,24/24] net: dsa: tag_dsa: offload the bridge forwarding process",1
+1026,,kernel-patch-12384517,"[v4,net-next,15/15] net: dsa: tag_dsa: offload the bridge forwarding process",1
+1027,,kernel-patch-12394325,"[v5,net-next,5/5] net: dsa: tag_dsa: offload the bridge forwarding process",1
+1028,kernel-change1-930551,kernel-patch-12548909,"[net-next,v5,09/14] dt-bindings: net: dsa: qca8k: Document qca,led-open-drain binding",1
+1029,,kernel-patch-12554179,"[net-next,v6,09/16] dt-bindings: net: dsa: qca8k: Document qca,led-open-drain binding",1
+1030,,kernel-patch-12557451,"[net-next,v7,09/16] dt-bindings: net: dsa: qca8k: Document qca,led-open-drain binding",1
+1031,kernel-change1-947309,kernel-patch-12576467,[09/14] net: wwan: t7xx: Add WWAN network interface,1
+1032,,kernel-patch-12595695,"[v2,09/14] net: wwan: t7xx: Add WWAN network interface",1
+1033,,kernel-patch-12660887,"[net-next,v3,08/12] net: wwan: t7xx: Add WWAN network interface",1
+1034,,kernel-patch-12713281,"[net-next,v4,09/13] net: wwan: t7xx: Add WWAN network interface",1
+1035,,kernel-patch-12757568,"[net-next,v5,09/13] net: wwan: t7xx: Add WWAN network interface",1
+1036,,kernel-patch-12805853,"[net-next,v6,09/13] net: wwan: t7xx: Add WWAN network interface",1
+1037,,kernel-patch-12840400,"[net-next,v7,10/14] net: wwan: t7xx: Add WWAN network interface",1
+1038,,kernel-patch-12841480,"[net-next,v8,10/14] net: wwan: t7xx: Add WWAN network interface",1
+1039,kernel-change1-939279,kernel-patch-12974021,"[net-next,10/12] net: dpaa2-eth: AF_XDP RX zero copy support",1
+1040,,kernel-patch-12986713,"[net-next,v2,10/12] net: dpaa2-eth: AF_XDP RX zero copy support",1
+1041,kernel-change1-926003,kernel-patch-12090065,"[v2,bpf-next] bpf: Explicitly zero-extend R0 after 32-bit cmpxchg",1
+1042,,kernel-patch-12091245,"[v3,bpf-next] bpf: Explicitly zero-extend R0 after 32-bit cmpxchg",1
+1043,,kernel-patch-12100449,"[v4,bpf-next] bpf: Explicitly zero-extend R0 after 32-bit cmpxchg",1
+1044,,kernel-patch-12112739,"[v5,bpf-next] bpf: Explicitly zero-extend R0 after 32-bit cmpxchg",1
+1045,,kernel-patch-12114483,"[v6,bpf-next] bpf: Explicitly zero-extend R0 after 32-bit cmpxchg",1
+1046,kernel-change1-948741,kernel-patch-12472373,"[net-next,07/15] net/mlx5e: Check action fwd/drop flag exists also for nic flows",1
+1047,,kernel-patch-12516621,"[net-next,06/12] net/mlx5e: Check action fwd/drop flag exists also for nic flows",1
+1048,kernel-change1-938709,kernel-patch-12779978,"[v3,net-next,04/14] net: bridge: mst: Notify switchdev drivers of MST mode changes",1
+1049,,kernel-patch-12780895,"[v4,net-next,04/15] net: bridge: mst: Notify switchdev drivers of MST mode changes",1
+1050,,kernel-patch-12782819,"[v5,net-next,04/15] net: bridge: mst: Notify switchdev drivers of MST mode changes",1
+1051,kernel-change1-956466,kernel-patch-12983063,"[net-next,v2,13/15] selftests/tc-testing: add selftests for taprio qdisc",1
+1052,,kernel-patch-12987360,"[net-next,v3,13/15] selftests/tc-testing: add selftests for taprio qdisc",1
+1053,kernel-change1-935829,kernel-patch-12816256,[bpf-next] libbpf: Support riscv USDT argument parsing logic,1
+1054,,kernel-patch-12818604,"[v2,bpf-next,2/2] libbpf: Support riscv USDT argument parsing logic",1
+1055,kernel-change1-927145,kernel-patch-12842227,"[bpf-next,v7,3/5] bpf, x86: Attach a cookie to fentry/fexit/fmod_ret/lsm.",1
+1056,,kernel-patch-12845528,"[bpf-next,v8,3/5] bpf, x86: Attach a cookie to fentry/fexit/fmod_ret/lsm.",1
+1057,,kernel-patch-12958373,"[bpf-next,v8,3/5] bpf, x86: Attach a cookie to fentry/fexit/fmod_ret/lsm.",1
+1058,kernel-change1-953882,kernel-patch-12856999,"[net-next,2/7] rxrpc: Use refcount_t rather than atomic_t",1
+1059,,kernel-patch-12857724,"[net-next,2/7] rxrpc: Use refcount_t rather than atomic_t",1
+1060,kernel-change1-940505,kernel-patch-12841891,net: dsa: realtek: rtl8366rb: Serialize indirect PHY register access,1
+1061,,kernel-patch-12842967,[v2] net: dsa: realtek: rtl8366rb: Serialize indirect PHY register access,1
+1062,,kernel-patch-12849503,"[net-next,v3] net: dsa: realtek: rtl8366rb: Serialize indirect PHY register access",1
+1063,kernel-change1-924266,kernel-patch-11873513,[10/41] ath9k: ar9330_1p1_initvals: Remove unused const variable 'ar9331_common_tx_gain_offset1_1',1
+1064,,kernel-patch-11933953,[03/17] ath9k: ar9330_1p1_initvals: Remove unused const variable 'ar9331_common_tx_gain_offset1_1',1
+1065,kernel-change1-945876,kernel-patch-12964067,"[net-next,17/22] net: sched: act_simple: get rid of tcf_simp_walker and tcf_simp_search",1
+1066,,kernel-patch-12967368,"[net-next,v2,18/22] net: sched: act_simple: get rid of tcf_simp_walker and tcf_simp_search",1
+1067,,kernel-patch-12969628,"[net-next,v3,18/22] net: sched: act_simple: get rid of tcf_simp_walker and tcf_simp_search",1
+1068,kernel-change1-923624,kernel-patch-12954011,"[bpf-next,v2,2/2] Add table of BPF program types to libbpf docs",1
+1069,,kernel-patch-12957577,"[bpf-next,v3,2/2] Add table of BPF program types to libbpf docs",1
+1070,,kernel-patch-12985049,"[bpf-next,v4,2/2] Add table of BPF program types to libbpf docs",1
+1071,kernel-change1-943078,kernel-patch-12064513,[net] net: ipa: set error code in gsi_channel_setup(),1
+1072,,kernel-patch-12065931,"[net,v2] net: ipa: set error code in gsi_channel_setup()",1
+1073,kernel-change1-928610,kernel-patch-12467237,can: rcar: Drop unneeded ARM dependency,1
+1074,,kernel-patch-12580445,"[net-next,10/15] can: rcar: drop unneeded ARM dependency",1
+1075,kernel-change1-940251,kernel-patch-12224041,"[net-next,v2,4/7] net: dsa: no longer clone skb in core driver",1
+1076,,kernel-patch-12225325,"[net-next,v3,3/7] net: dsa: no longer clone skb in core driver",1
+1077,kernel-change1-947712,kernel-patch-12803443,[net-next] net/ipv6: Introduce accept_unsolicited_na knob to implement router-side changes for RFC9131,1
+1078,,kernel-patch-12804588,"[net-next,v2] net/ipv6: Introduce accept_unsolicited_na knob to implement router-side changes for RFC9131",1
+1079,,kernel-patch-12812088,"[net-next,v3] net/ipv6: Introduce accept_unsolicited_na knob to implement router-side changes for RFC9131",1
+1080,,kernel-patch-12812859,"[net-next,v4] net/ipv6: Introduce accept_unsolicited_na knob to implement router-side changes for RFC9131",1
+1081,,kernel-patch-12814546,"[net-next,v5] net/ipv6: Introduce accept_unsolicited_na knob to implement router-side changes for RFC9131",1
+1082,,kernel-patch-12814634,"[net-next,v6] net/ipv6: Introduce accept_unsolicited_na knob to implement router-side changes for RFC9131",1
+1083,kernel-change1-934884,kernel-patch-12846723,"[net-next,08/10] l2tp: use add READ_ONCE() to fetch sk->sk_bound_dev_if",1
+1084,,kernel-patch-12849264,"[v2,net-next,08/10] l2tp: use add READ_ONCE() to fetch sk->sk_bound_dev_if",1
+1085,kernel-change1-943259,kernel-patch-12764125,"[v5,net-next,07/13] net: ipv6: Handle delivery_time in ipv6 defrag",1
+1086,,kernel-patch-12766657,"[v6,net-next,07/13] net: ipv6: Handle delivery_time in ipv6 defrag",1
+1087,kernel-change1-956720,kernel-patch-12926584,"[net-next,09/14] sfc: use a dynamic m-port for representor RX and set it promisc",1
+1088,,kernel-patch-12930690,"[net-next,v2,09/14] sfc: use a dynamic m-port for representor RX and set it promisc",1
+1089,,kernel-patch-12931681,"[net-next,v3,09/10] sfc: use a dynamic m-port for representor RX and set it promisc",1
+1090,kernel-change1-959658,kernel-patch-12388585,"[net-next,v2,25/31] wan: cosa: remove dead cosa_net_ioctl() function",1
+1091,,kernel-patch-12402845,"[net-next,v3,25/31] wan: cosa: remove dead cosa_net_ioctl() function",1
+1092,kernel-change1-951541,kernel-patch-12988827,"[net-next,3/8] octeontx2-af: cn10k: mcs: Manage the MCS block hardware resources",1
+1093,,kernel-patch-12991578,"[net-next,v2,3/8] octeontx2-af: cn10k: mcs: Manage the MCS block hardware resources",1
+1094,kernel-change1-955312,kernel-patch-12469137,"[bpf-next,18/20] selftests: xsk: eliminate test specific if-statement in test runner",1
+1095,,kernel-patch-12477701,"[bpf-next,v2,18/20] selftests: xsk: eliminate test specific if-statement in test runner",1
+1096,kernel-change1-927048,kernel-patch-12960584,[RFC] bpf: use bpf_capable() instead of CAP_SYS_ADMIN for blinding decision,1
+1097,,kernel-patch-12960865,"[RFC,v2] bpf: use bpf_capable() instead of CAP_SYS_ADMIN for blinding decision",1
+1098,,kernel-patch-12965862,[bpf-next] bpf: use bpf_capable() instead of CAP_SYS_ADMIN for blinding decision,1
+1099,kernel-change1-955581,kernel-patch-12212379,"[bpf-next,v2,9/9] selftests/bpf: add test cases for redirection between udp and unix",1
+1100,,kernel-patch-12223709,"[bpf-next,v3,10/10] selftests/bpf: add test cases for redirection between udp and unix",1
+1101,,kernel-patch-12246277,"[bpf-next,v4,12/12] selftests/bpf: add test cases for redirection between udp and unix",1
+1102,,kernel-patch-12357641,"[bpf-next,v5,11/11] selftests/bpf: add test cases for redirection between udp and unix",1
+1103,kernel-change1-927915,kernel-patch-12969593,[1/2] can: bcm: registration process optimization in bcm_module_init(),1
+1104,,kernel-patch-12976751,"[v2,1/2] can: bcm: registration process optimization in bcm_module_init()",1
+1105,,kernel-patch-12986509,"[net-next,01/11] can: bcm: registration process optimization in bcm_module_init()",1
+1106,kernel-change1-926523,kernel-patch-12359977,[1/4] bpf powerpc: Remove unused SEEN_STACK,1
+1107,,kernel-patch-12502597,"[v2,1/8] bpf powerpc: Remove unused SEEN_STACK",1
+1108,,kernel-patch-12507839,"[v3,1/8] bpf powerpc: Remove unused SEEN_STACK",1
+1109,,kernel-patch-12525287,"[v4,1/8] bpf powerpc: Remove unused SEEN_STACK",1
+1110,,kernel-patch-12552445,"[RESEND,v4,1/8] bpf powerpc: Remove unused SEEN_STACK",1
+1111,kernel-change1-944840,kernel-patch-11854801,"[RFC,net-next,2/5] net: phy: add a shutdown procedure",1
+1112,,kernel-patch-11865913,"[net-next,02/19] net: phy: add a shutdown procedure",1
+1113,,kernel-patch-11872025,"[net-next,v2,02/19] net: phy: add a shutdown procedure",1
+1114,kernel-change1-927860,kernel-patch-12360447,bus: Make remove callback return void,1
+1115,,kernel-patch-12360839,"[v2,4/4] bus: Make remove callback return void",1
+1116,,kernel-patch-12373075,"[v3,5/5] bus: Make remove callback return void",1
+1117,,kernel-patch-12374907,"[v4,5/5] bus: Make remove callback return void",1
+1118,kernel-change1-930631,kernel-patch-12505009,"[RFC,net-next,08/12] dt-bindings: net: lan966x: Add lan966x-switch bindings",1
+1119,,kernel-patch-12624039,"[net-next,1/5] dt-bindings: net: lan966x: Add lan966x-switch bindings",1
+1120,,kernel-patch-12634217,"[net-next,v2,1/6] dt-bindings: net: lan966x: Add lan966x-switch bindings",1
+1121,,kernel-patch-12636353,"[net-next,v3,1/6] dt-bindings: net: lan966x: Add lan966x-switch bindings",1
+1122,,kernel-patch-12640257,"[net-next,v4,1/6] dt-bindings: net: lan966x: Add lan966x-switch bindings",1
+1123,,kernel-patch-12644389,"[net-next,v5,1/6] dt-bindings: net: lan966x: Add lan966x-switch bindings",1
+1124,kernel-change1-952883,kernel-patch-12582033,r8169: Add device 10ec:8162 to driver r8169,1
+1125,,kernel-patch-12583999,[v2] r8169: Add device 10ec:8162 to driver r8169,1
+1126,kernel-change1-947454,kernel-patch-12616427,"[v3,1/7] net-next: stmmac: dwmac-mediatek: add platform level clocks management",1
+1127,,kernel-patch-12654333,"[v4,1/7] net-next: stmmac: dwmac-mediatek: add platform level clocks management",1
+1128,,kernel-patch-12660775,"[v5,1/7] net-next: stmmac: dwmac-mediatek: add platform level clocks management",1
+1129,kernel-change1-949243,kernel-patch-12439369,"[net-next,07/17] net/mlx5e: Support flow classification into RSS contexts",1
+1130,,kernel-patch-12439491,"[net-next,V2,07/17] net/mlx5e: Support flow classification into RSS contexts",1
+1131,kernel-change1-932250,kernel-patch-12060467,"[net-next,6/6] i40e: Log error for oversized MTU on device",1
+1132,,kernel-patch-12077033,"[net-next,v2,5/5] i40e: Log error for oversized MTU on device",1
+1133,kernel-change1-934385,kernel-patch-11916207,[net] ipv6: Remove dependency of ipv6_frag_thdr_truncated on ipv6 module,1
+1134,,kernel-patch-11917069,"[net,v2] ipv6: Remove dependency of ipv6_frag_thdr_truncated on ipv6 module",1
+1135,kernel-change1-940224,kernel-patch-12199577,"[net-next,4/5] net: dsa: mv88e6xxx: simulate Amethyst PHY model number",1
+1136,,kernel-patch-12213511,"[net-next,v2,4/5] net: dsa: mv88e6xxx: simulate Amethyst PHY model number",1
+1137,kernel-change1-955672,kernel-patch-11972941,"[bpf-next,v2,5/5] selftests/bpf: add timeout map check in map_ptr tests",1
+1138,,kernel-patch-11985593,"[bpf-next,v3,3/3] selftests/bpf: add timeout map check in map_ptr tests",1
+1139,,kernel-patch-12025179,"[bpf-next,v4,3/3] selftests/bpf: add timeout map check in map_ptr tests",1
+1140,,kernel-patch-12040547,"[bpf-next,v5,3/3] selftests/bpf: add timeout map check in map_ptr tests",1
+1141,kernel-change1-949866,kernel-patch-11930341,"[02/10,net-next] net/tipc: fix various kernel-doc warnings",1
+1142,,kernel-patch-11939273,"[02/10,net-next,v2] net/tipc: fix various kernel-doc warnings",1
+1143,kernel-change1-943211,kernel-patch-11886215,net: ipv4: remove redundant initialization in inet_rtm_deladdr,1
+1144,,kernel-patch-11889361,[v2] net: ipv4: remove redundant initialization in inet_rtm_deladdr,1
