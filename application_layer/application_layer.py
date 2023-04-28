@@ -1245,7 +1245,7 @@ class ProcessInitialData():
         
         # replace patchv1, <series number>, [v1], (v1), <punctuations>
         patch_words = re.sub(r'[\(\[]patch[\)\]]|\[*patchv\d+\]*|\d+/\d+\W|\[v\d+\]|\(v\d+\)|[^\w\s/-]', ' ', patch_name)
-        tokens = word_tokenize(patch_words)
+        tokens = sorted(word_tokenize(patch_words))
         one_gram = Counter(tokens)
             
         return tokens, one_gram
