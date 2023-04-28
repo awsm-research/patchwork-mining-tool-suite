@@ -1,7 +1,8 @@
 # Code-Review-Mining
-
-_abstract_
-<!-- TODO add abstract -->
+Code review is an important practice that improves the overall quality of a proposed patch (i.e., a code change). 
+In recent years,  an asynchronous code review has been widely used in software projects. While much research focused on tool-based code reviews (e.g. a Gerrit code review tool, GitHub), an asynchronous code review can be performed through a mailing list which is often used in many traditional open-source projects. However, due to the nature of email-based communication, the code review activities of a proposed patch (e.g. a series of revisions, and review comments) are scattered across different emails and a developer could use multiple email aliases.
+Therefore, this paper presents novel datasets of code review activities that were performed through mailing lists and two automated approaches to curate the datasets. Specifically, we collected the code review data from 160 projects across three software ecosystems (i.e. FFmpeg, OzLabs, and Linux Kernel) which are recorded in Patchwork, a web-based patch-tracking system of email-based code reviews. Our dataset includes 1,965,630 proposed patches (and their code review activities) and 130,176 identified developers. Through our manual validation of the datasets of five large projects, our approaches achieved an average accuracy of 99.30% for identifying groups of code review activities and achieved an average accuracy of 89.81% for identifying email aliases. 
+From our exploratory analysis of these five projects, we observed that the email-based code review activities of these projects are similar to the findings of prior studies that investigated tool-based code review practices. To facilitate future research, we made our datasets and a suite of tools available online. 
 
 ## Introduction
 
@@ -29,10 +30,10 @@ This project provides a suite of tools for mining and further processing Patchwo
 
 
 ## 1. Provided dataset
-The provided dataset contains data of all sub-projects in [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Kernel](https://patchwork.kernel.org) until 30/09/2022. There are ten collections in which Projects, Accounts, Series, Patches, and Comments store the original crawled data (some fields will be updated during further processing), and Users, Changes1, Changes2, NewSeries, and MailingLists record the results of processing. 
+The provided dataset contains data of all sub-projects in [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Kernel](https://patchwork.kernel.org) until 30/09/2022. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing. 
 
 ### 1.1. Get provided dataset
-The compressed complete dataset can be downloaded from [link](TODO). Decompress the downloaded file in root folder of the project to use in the folowing step.
+The compressed complete dataset can be downloaded [here](https://drive.google.com/file/d/1JDsV73i5qqsl2yfmbCBizhIMw9VGn1BH/view?usp=share_link). Decompress the downloaded file in root folder of the project to use in the folowing step.
 
 ### 1.2. Use provided dataset
 To use the provided dataset, simply run docker containers without migrating database by using following commands in the terminal. 
@@ -247,7 +248,7 @@ comment_data = access_data.load_json("path/to/crawled/comment/data")
 After loading the data, instantiate ProcessInitialData to run the approaches.
 
 ```python
-process = application_layer.ProcessInitialData()
+process_data = application_layer.ProcessInitialData()
 ```
 
 However, newseries, change1, change2, and individual data are newly generated data and they do not have original id as those crawled from Patchwork (See data attributes in the [data dictionary](#3-data-dictionary)), so their initial original ids are required to be specified **if the approaches are not run at the first time**.
@@ -291,10 +292,11 @@ access_data.insert_data(data=project_data, item_type="project")
 access_data.insert_data(data="path/to/project/data", item_type="project")
 ```
 
-However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the high-level ER diagram).
+However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the [complete ER diagram](#3-data-dictionary)).
 
 ## 3. Data dictionary
 <!-- TODO add high-level ER diagram -->
+![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/ERD-complete.png)
 This section describes the high-level structure of the dataset.
 ### Collections
 - [Identity](#Identity)
