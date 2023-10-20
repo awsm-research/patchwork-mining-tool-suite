@@ -1,3 +1,13 @@
+import json
+import requests
+from tqdm import tqdm
+from copy import deepcopy
+from django.core.serializers.json import DjangoJSONEncoder
+from helpers.exceptions import InvalidFileException, InvalidItemTypeException, PostRequestException
+
+SIZE_LIMIT = 16793600
+
+
 class AccessData():
 
     def __init__(self, endpoint="http://localhost:8000", batch_size=10000):
