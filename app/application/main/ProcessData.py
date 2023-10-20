@@ -331,38 +331,6 @@ class ProcessData():
         # sort patches
         return sorted(raw_data_patch, key=lambda x: (x['tokens'], x['date']))
 
-    # def __create_new_conservative_group(self, patch):
-    #     bag_of_words_i = patch_i['one_gram']
-    #     name_i = patch_i['name']
-    #     submitter_i = patch_i['submitter_identity']
-    #     individual_i = patch_i['submitter_individual']
-    #     tokens_i = sorted(patch_i['tokens'])
-    #     series_original_id_i = patch_i['series']
-    #     newseries_original_id_i = patch_i['newseries']
-    #     state_i = patch_i['state']
-    #     commit_id_i = patch_i['commit_ref']
-
-    #     # version will be -1 if there is no version indicator in patch name
-    #     version_i = self.__extract_version_number(name_i)
-
-    #     # create new group for firstly visited patch
-    #     new_conservative_group = {
-    #         'patch_indexes': [i],
-    #         'versions': [version_i],
-    #         'bag_of_words': bag_of_words_i,
-    #         'tokens': tokens_i,
-    #         # 'tokens2': tokens_i[1:],
-    #         'state': [state_i],
-    #         'commit_id': [commit_id_i],
-    #         'project': patch_i['project'],
-    #         'submitters': [submitter_i],
-    #         'individuals': [individual_i],
-    #         'series_original_ids': [series_original_id_i],
-    #         'newseries_original_ids': [newseries_original_id_i],
-    #     }
-
-    #     return new_conservative_group
-
     def __is_diff_series(self, series_id1, series_id2):
         if series_id1 is None and series_id2 is None:
             return True
