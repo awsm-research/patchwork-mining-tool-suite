@@ -5,6 +5,7 @@ import time
 import nltk
 
 from nltk.tokenize import word_tokenize
+from tqdm import tqdm
 
 nltk.download('punkt', quiet=True)
 
@@ -172,24 +173,44 @@ class ProcessData():
     # This method is to update the individual_original_id in series, newseries, patch, and comment collection
     # It should be called after the function of grouping identities is implemented
 
-    def update_individual_original_id(self, individual_data: list, collection: list):
+    def insert_individual_original_id(self, individual_data: list, target_data: list):
+
         # map identity original id to individual original id
-        identity_individual_map = defaultdict(lambda: defaultdict(str))
-        for item in individual_data:
-            project = item["project"]
-            for item_identity_orgid in item["identity"]:
-                identity_individual_map[project][item_identity_orgid] = item['original_id']
+        identity_to_individual = dict()
+        for individual in individual_data:
+            # one individual id contains one or multiple identity original ids
+            identity_oids = individual['identity']
+            for identity_oid in identity_oids:
+                identity_to_individual[identity_oid] = individual['original_id']
 
-        for document in collection:
-            if type(document['submitter_individual']) == list:
-                for submitter in document['submitter_identity']:
-                    document['submitter_individual'].append(
-                        identity_individual_map[document['project']][submitter])
+        for item in target_data:
+            if type(item['submitter_individual']) == list:
+                for submitter_identity_oid in item['submitter_identity']:
+                    item['submitter_individual'].append(
+                        identity_to_individual[submitter_identity_oid])
             else:
-                document['submitter_individual'] = identity_individual_map[document['project']
-                                                                           ][document['submitter_identity']]
+                item['submitter_individual'] = identity_to_individual[item['submitter_identity']]
 
-        return collection
+        return target_data
+
+    # def update_individual_original_id(self, individual_data: list, collection: list):
+    #     # map identity original id to individual original id
+    #     identity_individual_map = defaultdict(lambda: defaultdict(str))
+    #     for individual in individual_data:
+    #         project = individual["project"]
+    #         for item_identity_orgid in individual["identity"]:
+    #             identity_individual_map[project][item_identity_orgid] = individual['original_id']
+
+    #     for document in collection:
+    #         if type(document['submitter_individual']) == list:
+    #             for submitter in document['submitter_identity']:
+    #                 document['submitter_individual'].append(
+    #                     identity_individual_map[document['project']][submitter])
+    #         else:
+    #             document['submitter_individual'] = identity_individual_map[document['project']
+    #                                                                        ][document['submitter_identity']]
+
+    #     return collection
 
     def group_series(self, patch_data: list):
         patch_data = deepcopy(patch_data)
@@ -402,7 +423,7 @@ class ProcessData():
             change1_collection.append(tmp_dict)
             self.change1_original_id += 1
 
-            return change1_collection
+        return change1_collection
 
     def conservative_grouping(self, raw_data_patch):
         raw_data_patch = deepcopy(raw_data_patch)
@@ -635,7 +656,7 @@ class ProcessData():
             self.__relaxed_compare_patch_groups(
                 orgainsed_collection2_token1, group_i, conservative_groups, visited_groups, relaxed_groups)
 
-    def relaxed_grouping(self, raw_data_patch):
+    def relaxed_grouping(self, raw_data_patch, progress_bar=True):
         ecosystem = raw_data_patch[0]['original_id'].split('-')[0]
 
         patch_data, conservative_groups, conservative_changes = self.conservative_grouping(
@@ -648,11 +669,15 @@ class ProcessData():
 
         token_lengths = sorted(organised_conservative_groups.keys())
 
+        if progress_bar:
+            pbar = tqdm(total=len(token_lengths) - 1)
         i = 0
         while i < len(token_lengths) - 1:
             # groups with tokens length 0 will not be changed; consecutive token lengths are required
             if token_lengths[i] == 0 or token_lengths[i] + 1 != token_lengths[i + 1]:
                 i += 1
+                if progress_bar:
+                    pbar.update(1)
                 continue
 
             # group with token length x & group with token length x + 1
@@ -664,6 +689,11 @@ class ProcessData():
                 group_collection1, group_collection2, visited_groups, relaxed_groups, conservative_groups)
 
             i += 1
+            if progress_bar:
+                pbar.update(1)
+
+        if progress_bar:
+            pbar.close()
 
         relaxed_changes = self.__create_relaxed_change(
             ecosystem, patch_data, relaxed_groups)
@@ -760,19 +790,19 @@ class ProcessData():
 
         return comment_collection
 
-    # This function is to combine step 1 and step 2 together
+    # This function is to combine conservative grouping and relaxed grouping together
 
-    def group_patches(self, patch_data: list, comment_data: list):
-        patch_data = deepcopy(patch_data)
-        comment_data = deepcopy(comment_data)
+    def patch_grouping(self, raw_data_patch: list, raw_data_comment: list, progress_bar=True):
+        raw_data_patch = deepcopy(raw_data_patch)
+        raw_data_comment = deepcopy(raw_data_comment)
 
-        updated_patch_data, _, _, change1_data, change2_data = self.group_patches_step2(
-            patch_data)
+        processed_data_patch, _, _, conservative_changes, relaxed_changes = self.relaxed_grouping(
+            raw_data_patch, progress_bar)
 
-        updated_comment_data = self.update_changeid_in_comment(
-            change1_data, change2_data, comment_data)
+        processed_data_comment = self.update_changeid_in_comment(
+            conservative_changes, relaxed_changes, raw_data_comment)
 
-        return updated_patch_data, updated_comment_data, change1_data, change2_data
+        return processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
 
     def process_data(self, identity_data: list, series_data: list, patch_data: list, comment_data: list):
 
@@ -858,19 +888,19 @@ class ProcessData():
             return False
         return bool(set(list_i) & set(list_j))
 
-    def __step1_conditions(self, token_diff, newseries_original_id_i, newseries_original_id_j, series_original_id_i, series_original_id_j) -> bool:
-        return (
-            len(token_diff) == 0
-            and self.__is_diff_series(newseries_original_id_i, newseries_original_id_j)
-            and self.__is_diff_series(series_original_id_i, series_original_id_j)
-        )
+    # def __step1_conditions(self, token_diff, newseries_original_id_i, newseries_original_id_j, series_original_id_i, series_original_id_j) -> bool:
+    #     return (
+    #         len(token_diff) == 0
+    #         and self.__is_diff_series(newseries_original_id_i, newseries_original_id_j)
+    #         and self.__is_diff_series(series_original_id_i, series_original_id_j)
+    #     )
 
-    def __step2_conditions(self, individual_i, individual_j, token_diff, newseries_original_id_i, newseries_original_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
-        return (
-            bool(set(individual_i) & set(individual_j))
-            and len(token_diff) == 1
-            and 'revert' not in list(token_diff.keys())[0].lower()
-            and (not self.__is_series_intersected(newseries_original_id_i, newseries_original_id_j))
-            and (not self.__is_series_intersected(series_original_id_i, series_original_id_j))
-            and (not self.__is_version_intersected(versions_i, versions_j))
-        )
+    # def __step2_conditions(self, individual_i, individual_j, token_diff, newseries_original_id_i, newseries_original_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
+    #     return (
+    #         bool(set(individual_i) & set(individual_j))
+    #         and len(token_diff) == 1
+    #         and 'revert' not in list(token_diff.keys())[0].lower()
+    #         and (not self.__is_series_intersected(newseries_original_id_i, newseries_original_id_j))
+    #         and (not self.__is_series_intersected(series_original_id_i, series_original_id_j))
+    #         and (not self.__is_version_intersected(versions_i, versions_j))
+    #     )
