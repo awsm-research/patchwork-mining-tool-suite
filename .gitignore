@@ -139,3 +139,5 @@ application_layer/ready_to_post(v2)/
 application_layer/ready_to_post(v3)/
 
 docker/scrapy_docker_app/retrieved_data/
+
+results/
