@@ -193,25 +193,6 @@ class ProcessData():
 
         return target_data
 
-    # def update_individual_original_id(self, individual_data: list, collection: list):
-    #     # map identity original id to individual original id
-    #     identity_individual_map = defaultdict(lambda: defaultdict(str))
-    #     for individual in individual_data:
-    #         project = individual["project"]
-    #         for item_identity_orgid in individual["identity"]:
-    #             identity_individual_map[project][item_identity_orgid] = individual['original_id']
-
-    #     for document in collection:
-    #         if type(document['submitter_individual']) == list:
-    #             for submitter in document['submitter_identity']:
-    #                 document['submitter_individual'].append(
-    #                     identity_individual_map[document['project']][submitter])
-    #         else:
-    #             document['submitter_individual'] = identity_individual_map[document['project']
-    #                                                                        ][document['submitter_identity']]
-
-    #     return collection
-
     def group_series(self, patch_data: list):
         patch_data = deepcopy(patch_data)
 
