@@ -887,20 +887,3 @@ class ProcessData():
         if set(list_i) & set(list_j) == {None}:
             return False
         return bool(set(list_i) & set(list_j))
-
-    # def __step1_conditions(self, token_diff, newseries_original_id_i, newseries_original_id_j, series_original_id_i, series_original_id_j) -> bool:
-    #     return (
-    #         len(token_diff) == 0
-    #         and self.__is_diff_series(newseries_original_id_i, newseries_original_id_j)
-    #         and self.__is_diff_series(series_original_id_i, series_original_id_j)
-    #     )
-
-    # def __step2_conditions(self, individual_i, individual_j, token_diff, newseries_original_id_i, newseries_original_id_j, series_original_id_i, series_original_id_j, versions_i, versions_j):
-    #     return (
-    #         bool(set(individual_i) & set(individual_j))
-    #         and len(token_diff) == 1
-    #         and 'revert' not in list(token_diff.keys())[0].lower()
-    #         and (not self.__is_series_intersected(newseries_original_id_i, newseries_original_id_j))
-    #         and (not self.__is_series_intersected(series_original_id_i, series_original_id_j))
-    #         and (not self.__is_version_intersected(versions_i, versions_j))
-    #     )
