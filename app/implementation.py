@@ -2,6 +2,7 @@ import argparse
 from collections import defaultdict
 import time
 from application.main.ProcessData import ProcessData
+from application.main.ProcessIdentity import ProcessIdentity
 from application.helpers.utils import *
 
 # TODO
@@ -46,17 +47,17 @@ if __name__ == '__main__':
     raw_data_identity = load_json(raw_data_identity_path)
 
     # instantiate process_data class
-    process_data = ProcessData()
+    process_identity = ProcessIdentity()
 
     # organise data by projects
-    organised_raw_data_identity = process_data.organise_identity_data_by_project(
+    organised_raw_data_identity = process_identity.organise_identity_data_by_project(
         raw_data_identity)
 
     # group identities
     processed_data_individual = []
 
     for project_oid, data in organised_raw_data_identity.items():
-        current_data_individual = process_data.identity_grouping(
+        current_data_individual = process_identity.identity_grouping(
             data, project_oid)
 
         processed_data_individual.extend(current_data_individual)
