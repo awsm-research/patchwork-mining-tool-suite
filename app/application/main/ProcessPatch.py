@@ -11,7 +11,7 @@ from tqdm import tqdm
 nltk.download('punkt', quiet=True)
 
 
-class ProcessData():
+class ProcessPatch():
 
     def __init__(self, newseries_original_id=1, change1_original_id=1, change2_original_id=1):
         self.newseries_original_id = newseries_original_id

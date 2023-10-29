@@ -1,7 +1,7 @@
 import argparse
 from collections import defaultdict
 import time
-from application.main.ProcessData import ProcessData
+from application.main.ProcessPatch import ProcessPatch
 from application.main.ProcessIdentity import ProcessIdentity
 from application.helpers.utils import *
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     # load data
     raw_data_identity = load_json(raw_data_identity_path)
 
-    # instantiate process_data class
+    # instantiate process_identity class
     process_identity = ProcessIdentity()
 
     # organise data by projects
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     raw_data_series_path = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_series.jl'
     raw_data_series = load_json(raw_data_series_path)
 
-    processed_data_series = process_data.insert_individual_original_id(
+    processed_data_series = insert_individual_original_id(
         processed_data_individual, raw_data_series)
     output_data(processed_data_individual, 'series')
 
@@ -87,12 +87,12 @@ if __name__ == '__main__':
     raw_data_patch = load_json(raw_data_patch_path)
     raw_data_comment = load_json(raw_data_comment_path)
 
-    # instantiate process_data class
-    process_data = ProcessData()
+    # instantiate process_patch class
+    process_patch = ProcessPatch()
 
     # organise data by projects
     organised_processed_data_individual, organised_raw_data_patch, organised_raw_data_comment = [
-        process_data.organise_data_by_project(data)
+        process_patch.organise_data_by_project(data)
         for data in [processed_data_individual, raw_data_patch, raw_data_comment]
     ]
 
@@ -112,7 +112,7 @@ if __name__ == '__main__':
         current_data_comment = organised_raw_data_comment[project_oid]
 
         # processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
-        results = process_data.patch_grouping(
+        results = process_patch.patch_grouping(
             current_data_patch, current_data_comment, current_data_individual)
 
         # store newly processed project data
