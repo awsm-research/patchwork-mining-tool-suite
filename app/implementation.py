@@ -13,8 +13,6 @@ parser.add_argument('-re', '--result_path')
 
 # parse arguments
 args = parser.parse_args()
-# RAW_DATA_DIR = '/Users/mingzhaoliang/projects/msr/raw-data/'
-# RESULTS_DIR = '/Users/mingzhaoliang/projects/msr/Code-Review-Mining/results/'
 ECOSYSTEM = args.ecosystem
 RAW_DATA_DIR = args.raw_data_path if args.raw_data_path else './'
 RESULTS_DIR = args.result_path if args.result_path else './'
