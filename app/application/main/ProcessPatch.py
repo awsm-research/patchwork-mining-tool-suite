@@ -1,7 +1,8 @@
 from collections import Counter, defaultdict
 from copy import deepcopy
+from application.helpers.utils import insert_individual_original_id
+
 import re
-import time
 import nltk
 
 from nltk.tokenize import word_tokenize
@@ -10,190 +11,23 @@ from tqdm import tqdm
 nltk.download('punkt', quiet=True)
 
 
-class ProcessData():
+class ProcessPatch():
 
-    def __init__(self, newseries_original_id=1, change1_original_id=1, change2_original_id=1, individual_original_id=1):
+    def __init__(self, newseries_original_id=1, change1_original_id=1, change2_original_id=1):
         self.newseries_original_id = newseries_original_id
         self.change1_original_id = change1_original_id
         self.change2_original_id = change2_original_id
-        self.individual_original_id = individual_original_id
 
-    def __get_distinct_identities(self, identity_data: list):
-        new_data = defaultdict(list)
-        occurred_identities = list()
-        for item in identity_data:
-            if item not in occurred_identities:
-                new_data[item['project']].append(item)
-                occurred_identities.append(item)
+    def organise_data_by_project(self, data):
+        organised_data = defaultdict(list)
 
-        return new_data
+        for item in data:
+            project_oid = item['project']
+            organised_data[project_oid].append(item)
 
-    def __group_identities_by_project(self, identity_data: list, project: str):
+        return organised_data
 
-        ecosystem = identity_data[0]['original_id'].split('-')[0]
-        email_dict = dict()
-        name_dict = dict()
-        individual_dict = defaultdict(lambda: defaultdict(list))
-
-        idx = 0
-
-        # list for account with empty/null name/email
-        identity_with_empty_name = list()
-        identity_with_empty_email = list()
-
-        for i in range(len(identity_data)):
-            identity = identity_data[i]
-            identity_email = identity['email']
-            identity_name = identity['name']
-            identity_orgid = identity['original_id']
-
-            if not identity_name:
-                identity_with_empty_name.append(
-                    (i, identity_orgid, identity_email))
-            elif not identity_email:
-                identity_with_empty_email.append(
-                    (i, identity_orgid, identity_name))
-
-            elif identity_email not in email_dict.keys() and identity_name not in name_dict.keys():
-                individual_dict[idx]['email_list'].append(identity_email)
-                individual_dict[idx]['name_list'].append(identity_name)
-                individual_dict[idx]['original_id_list'].append(identity_orgid)
-
-                email_dict[identity_email] = idx
-                name_dict[identity_name] = idx
-
-                idx += 1
-
-            elif identity_email in email_dict.keys() and identity_name not in name_dict.keys():
-                target_idx = email_dict[identity_email]
-                name_dict[identity_name] = target_idx
-                individual_dict[target_idx]['name_list'].append(identity_name)
-                individual_dict[target_idx]['original_id_list'].append(
-                    identity_orgid)
-
-            elif identity_email not in email_dict.keys() and identity_name in name_dict.keys():
-                target_idx = name_dict[identity_name]
-                email_dict[identity_email] = target_idx
-                individual_dict[target_idx]['email_list'].append(
-                    identity_email)
-                individual_dict[target_idx]['original_id_list'].append(
-                    identity_orgid)
-
-            elif identity_email in email_dict.keys() and identity_name in name_dict.keys():
-                if email_dict[identity_email] != name_dict[identity_name]:
-                    email_dict_idx = email_dict[identity_email]
-                    name_dict_idx = name_dict[identity_name]
-
-                    email_list_to_move = individual_dict[name_dict_idx]['email_list']
-                    name_list_to_move = individual_dict[name_dict_idx]['name_list']
-                    orgid_list_to_move = individual_dict[name_dict_idx]['original_id_list']
-
-                    for email in email_list_to_move:
-                        email_dict[email] = email_dict_idx
-                    for name in name_list_to_move:
-                        name_dict[name] = email_dict_idx
-
-                    individual_dict[email_dict_idx]['email_list'].extend(
-                        email_list_to_move)
-                    individual_dict[email_dict_idx]['name_list'].extend(
-                        name_list_to_move)
-                    individual_dict[email_dict_idx]['original_id_list'].extend(
-                        orgid_list_to_move)
-
-                    individual_dict[email_dict_idx]['name_list'].append(
-                        identity_name)
-                    individual_dict[email_dict_idx]['original_id_list'].append(
-                        identity_orgid)
-
-                    individual_dict[name_dict_idx] = None
-                else:
-                    target_idx = email_dict[identity_email]
-                    individual_dict[target_idx]['original_id_list'].append(
-                        identity_orgid)
-
-        for _, orgid, email in identity_with_empty_name:
-            if email in email_dict.keys():
-                if orgid not in individual_dict[email_dict[email]]['original_id_list']:
-                    individual_dict[email_dict[email]
-                                    ]['original_id_list'].append(orgid)
-
-            else:
-                email_dict[email] = idx
-                individual_dict[idx]['email_list'].append(email)
-                individual_dict[idx]['original_id_list'].append(orgid)
-
-                idx += 1
-
-        for _, orgid, name in identity_with_empty_email:
-            if name in name_dict.keys():
-                if orgid not in individual_dict[name_dict[name]]['original_id_list']:
-                    individual_dict[name_dict[name]
-                                    ]['original_id_list'].append(orgid)
-
-            else:
-                name_dict[name] = idx
-                individual_dict[idx]['name_list'].append(name)
-                individual_dict[idx]['original_id_list'].append(orgid)
-
-                idx += 1
-
-        individual_collection = list()
-
-        # update individual original id in identity collection
-        for _, individual_info in individual_dict.items():
-            if individual_info:
-                original_id_list = individual_info['original_id_list']
-
-                individual_collection.append(
-                    {
-                        'original_id': f'{ecosystem}-individual-{self.individual_original_id}',
-                        'project': project,
-                        'identity': original_id_list,
-                    }
-                )
-
-                self.individual_original_id += 1
-
-        return individual_collection
-
-    def group_identities(self, identity_data: list):
-        identity_data_by_project = self.__get_distinct_identities(
-            identity_data)
-
-        individual_data = list()
-
-        for project, identity_list in identity_data_by_project.items():
-            curr_individual_data = self.__group_identities_by_project(
-                identity_list, project)
-
-            individual_data.extend(curr_individual_data)
-
-        return individual_data
-
-    # This method is to update the individual_original_id in series, newseries, patch, and comment collection
-    # It should be called after the function of grouping identities is implemented
-
-    def insert_individual_original_id(self, individual_data: list, target_data: list):
-
-        # map identity original id to individual original id
-        identity_to_individual = dict()
-        for individual in individual_data:
-            # one individual id contains one or multiple identity original ids
-            identity_oids = individual['identity']
-            for identity_oid in identity_oids:
-                identity_to_individual[identity_oid] = individual['original_id']
-
-        for item in target_data:
-            if type(item['submitter_individual']) == list:
-                for submitter_identity_oid in item['submitter_identity']:
-                    item['submitter_individual'].append(
-                        identity_to_individual[submitter_identity_oid])
-            else:
-                item['submitter_individual'] = identity_to_individual[item['submitter_identity']]
-
-        return target_data
-
-    def group_series(self, patch_data: list):
+    def series_grouping(self, patch_data: list):
         patch_data = deepcopy(patch_data)
 
         # map msg_id to newseries_original_id
@@ -771,81 +605,34 @@ class ProcessData():
 
         return comment_collection
 
-    # This function is to combine conservative grouping and relaxed grouping together
+    # This function processes raw data of patch and comment and then does relaxed grouping, on a project level
 
-    def patch_grouping(self, raw_data_patch: list, raw_data_comment: list, progress_bar=True):
+    def patch_grouping(self, raw_data_patch: list, raw_data_comment: list, processed_data_individual: list, progress_bar=True):
         raw_data_patch = deepcopy(raw_data_patch)
         raw_data_comment = deepcopy(raw_data_comment)
 
+        # create newseries
+        raw_data_patch, data_newseries = self.series_grouping(raw_data_patch)
+
+        # update individual oid in patches, comments, and newseries
+        raw_data_patch, raw_data_comment, processed_data_newseries = [
+            insert_individual_original_id(processed_data_individual, data)
+            for data in [raw_data_patch, raw_data_comment, data_newseries]
+        ]
+
+        # relaxed grouping
         processed_data_patch, _, _, conservative_changes, relaxed_changes = self.relaxed_grouping(
             raw_data_patch, progress_bar)
 
+        # update change1 and change2 ids in comments
         processed_data_comment = self.update_changeid_in_comment(
             conservative_changes, relaxed_changes, raw_data_comment)
 
-        return processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
-
-    def process_data(self, identity_data: list, series_data: list, patch_data: list, comment_data: list):
-
-        # group identities
-        individual_data = self.group_identities(identity_data)
-
-        # update individual info in other collections
-        series_data = self.update_individual_original_id(
-            individual_data, series_data)
-        patch_data = self.update_individual_original_id(
-            individual_data, patch_data)
-        comment_data = self.update_individual_original_id(
-            individual_data, comment_data)
-
-        patch_data_by_project = defaultdict(list)
-        comment_data_by_project = defaultdict(list)
-
-        for item in patch_data:
-            patch_data_by_project[item['project']].append(item)
-
-        for item in comment_data:
-            comment_data_by_project[item['project']].append(item)
-
-        newseries_data = list()
-        change1_data = list()
-        change2_data = list()
-
-        updated_patch_data = list()
-        updated_comment_data = list()
-
-        for project, patch_list in patch_data_by_project.items():
-
-            # group series
-            updated_patch_list, curr_newseries_data = self.group_series(
-                patch_list)
-            newseries_data.extend(curr_newseries_data)
-
-            # group patches
-            comment_list = comment_data_by_project[project]
-            updated_patches, updated_comments, curr_change1_data, curr_change2_data = self.group_patches(
-                updated_patch_list, comment_list)
-
-            updated_patch_data.extend(updated_patches)
-            updated_comment_data.extend(updated_comments)
-            change1_data.extend(curr_change1_data)
-            change2_data.extend(curr_change2_data)
-
-        return individual_data, series_data, updated_patch_data, updated_comment_data, newseries_data, change1_data, change2_data
+        return processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
 
     def __is_series_patch(self, patch_name):
         series_number = re.search('\d+/\d+', patch_name, re.IGNORECASE)
         return bool(series_number)
-
-    # Belows are helper functions
-
-    # def __sort_patches(self, patches):
-    #     for i in range(len(patches)):
-    #         patch_i = patches[i]
-    #         patch_i['tokens'], patch_i['one_gram'] = self.__create_bag_of_words(
-    #             patch_i['name'])
-
-    #     return sorted(patches, key=lambda x: (x['tokens'], x['date']))
 
     def __extract_version_number(self, patch_name):
         patch_name = patch_name.lower()
