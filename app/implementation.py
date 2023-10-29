@@ -14,45 +14,19 @@ from application.helpers.utils import *
 # currently only consider a single project case
 ###############################################
 
-# parse arguments
+# add arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--ecosystem')
+parser.add_argument('-ra', '--raw_data_path')
+parser.add_argument('-re', '--result_path')
 
+# parse arguments
 args = parser.parse_args()
-
-RESULTS_DIR = '/Users/mingzhaoliang/projects/msr/Code-Review-Mining/results/'
-RAW_DATA_DIR = '/Users/mingzhaoliang/projects/msr/raw-data/'
+# RAW_DATA_DIR = '/Users/mingzhaoliang/projects/msr/raw-data/'
+# RESULTS_DIR = '/Users/mingzhaoliang/projects/msr/Code-Review-Mining/results/'
 ECOSYSTEM = args.ecosystem
-
-
-def organise_data_by_project(data):
-    organised_data = defaultdict(list)
-
-    for item in data:
-        project_oid = item['project']
-        organised_data[project_oid].append(item)
-
-    return organised_data
-
-
-def grouping_by_project(process_data_object, project_data_individual, project_data_patch, project_data_comment):
-    # group newseries
-    project_data_patch, project_data_newseries = process_data_object.group_series(
-        project_data_patch)
-
-    # update individual oid in patches, comments, and newseries
-    data_patch = process_data_object.insert_individual_original_id(
-        project_data_individual, project_data_patch)
-    data_comment = process_data_object.insert_individual_original_id(
-        project_data_individual, project_data_comment)
-    processed_data_newseries = process_data_object.insert_individual_original_id(
-        project_data_individual, project_data_newseries)
-
-    # group patches
-    processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes = process_data_object.patch_grouping(
-        data_patch, data_comment)
-
-    return processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
+RAW_DATA_DIR = args.raw_data_path if args.raw_data_path else './'
+RESULTS_DIR = args.result_path if args.result_path else './'
 
 
 def output_data(target_data, target_data_type):
@@ -61,6 +35,46 @@ def output_data(target_data, target_data_type):
 
 
 if __name__ == '__main__':
+    ###############
+    # group identities
+    ###############
+
+    # get file paths
+    raw_data_identity_path = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_identity.jl'
+
+    # load data
+    raw_data_identity = load_json(raw_data_identity_path)
+
+    # instantiate process_data class
+    process_data = ProcessData()
+
+    # organise data by projects
+    organised_raw_data_identity = process_data.organise_identity_data_by_project(
+        raw_data_identity)
+
+    # group identities
+    processed_data_individual = []
+
+    for project_oid, data in organised_raw_data_identity.items():
+        current_data_individual = process_data.identity_grouping(
+            data, project_oid)
+
+        processed_data_individual.extend(current_data_individual)
+
+    output_data(processed_data_individual, 'individual')
+
+    # update individual oid in series data
+    raw_data_series_path = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_series.jl'
+    raw_data_series = load_json(raw_data_series_path)
+
+    processed_data_series = process_data.insert_individual_original_id(
+        processed_data_individual, raw_data_series)
+    output_data(processed_data_individual, 'series')
+
+    ###############
+    # group patches
+    ###############
+
     # get file paths
     processed_data_individual_path = f'{RESULTS_DIR}{ECOSYSTEM}/{ECOSYSTEM}_individual.jl'
     raw_data_patch_path = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_patch.jl'
@@ -72,15 +86,16 @@ if __name__ == '__main__':
     raw_data_patch = load_json(raw_data_patch_path)
     raw_data_comment = load_json(raw_data_comment_path)
 
-    # organise data by projects
-    organised_processed_data_individual = organise_data_by_project(
-        processed_data_individual)
-    organised_raw_data_patch = organise_data_by_project(raw_data_patch)
-    organised_raw_data_comment = organise_data_by_project(raw_data_comment)
-
     # instantiate process_data class
     process_data = ProcessData()
 
+    # organise data by projects
+    organised_processed_data_individual, organised_raw_data_patch, organised_raw_data_comment = [
+        process_data.organise_data_by_project(data)
+        for data in [processed_data_individual, raw_data_patch, raw_data_comment]
+    ]
+
+    # initialise variables
     processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes = [], [], [], [], []
     processed_data = [processed_data_newseries, processed_data_patch,
                       processed_data_comment, conservative_changes, relaxed_changes]
@@ -96,13 +111,10 @@ if __name__ == '__main__':
         current_data_comment = organised_raw_data_comment[project_oid]
 
         # processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
-        results = grouping_by_project(
-            process_data,
-            current_data_individual,
-            current_data_patch,
-            current_data_comment
-        )
+        results = process_data.patch_grouping(
+            current_data_patch, current_data_comment, current_data_individual)
 
+        # store newly processed project data
         [processed_data[i].extend(results[i]) for i in range(len(results))]
 
         end_time = time.time()
@@ -110,7 +122,7 @@ if __name__ == '__main__':
         print()
 
     et = time.time()
-    print(f'total time: {(end_time - start_time) / 60: .2f} min')
+    print(f'total time: {(et - st) / 60: .2f} min')
     data_types = ['newseries', 'patch', 'comment', 'change1', 'change2']
     [output_data(data, data_type)
      for data, data_type in zip(processed_data, data_types)]

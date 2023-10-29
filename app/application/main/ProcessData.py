@@ -18,17 +18,28 @@ class ProcessData():
         self.change2_original_id = change2_original_id
         self.individual_original_id = individual_original_id
 
-    def __get_distinct_identities(self, identity_data: list):
-        new_data = defaultdict(list)
-        occurred_identities = list()
-        for item in identity_data:
-            if item not in occurred_identities:
-                new_data[item['project']].append(item)
-                occurred_identities.append(item)
+    def organise_data_by_project(self, data):
+        organised_data = defaultdict(list)
 
-        return new_data
+        for item in data:
+            project_oid = item['project']
+            organised_data[project_oid].append(item)
 
-    def __group_identities_by_project(self, identity_data: list, project: str):
+        return organised_data
+
+    def organise_identity_data_by_project(self, data):
+        organised_identity_data = defaultdict(list)
+        occurred_identity = list()
+
+        for item in data:
+            if item not in occurred_identity:
+                project_oid = item['project']
+                organised_identity_data[project_oid].append(item)
+                occurred_identity.append(item)
+
+        return organised_identity_data
+
+    def identity_grouping(self, identity_data: list, project: str):
 
         ecosystem = identity_data[0]['original_id'].split('-')[0]
         email_dict = dict()
@@ -156,20 +167,6 @@ class ProcessData():
 
         return individual_collection
 
-    def group_identities(self, identity_data: list):
-        identity_data_by_project = self.__get_distinct_identities(
-            identity_data)
-
-        individual_data = list()
-
-        for project, identity_list in identity_data_by_project.items():
-            curr_individual_data = self.__group_identities_by_project(
-                identity_list, project)
-
-            individual_data.extend(curr_individual_data)
-
-        return individual_data
-
     # This method is to update the individual_original_id in series, newseries, patch, and comment collection
     # It should be called after the function of grouping identities is implemented
 
@@ -193,7 +190,7 @@ class ProcessData():
 
         return target_data
 
-    def group_series(self, patch_data: list):
+    def series_grouping(self, patch_data: list):
         patch_data = deepcopy(patch_data)
 
         # map msg_id to newseries_original_id
@@ -771,81 +768,34 @@ class ProcessData():
 
         return comment_collection
 
-    # This function is to combine conservative grouping and relaxed grouping together
+    # This function processes raw data of patch and comment and then does relaxed grouping, on a project level
 
-    def patch_grouping(self, raw_data_patch: list, raw_data_comment: list, progress_bar=True):
+    def patch_grouping(self, raw_data_patch: list, raw_data_comment: list, processed_data_individual: list, progress_bar=True):
         raw_data_patch = deepcopy(raw_data_patch)
         raw_data_comment = deepcopy(raw_data_comment)
 
+        # create newseries
+        raw_data_patch, data_newseries = self.series_grouping(raw_data_patch)
+
+        # update individual oid in patches, comments, and newseries
+        raw_data_patch, raw_data_comment, processed_data_newseries = [
+            self.insert_individual_original_id(processed_data_individual, data)
+            for data in [raw_data_patch, raw_data_comment, data_newseries]
+        ]
+
+        # relaxed grouping
         processed_data_patch, _, _, conservative_changes, relaxed_changes = self.relaxed_grouping(
             raw_data_patch, progress_bar)
 
+        # update change1 and change2 ids in comments
         processed_data_comment = self.update_changeid_in_comment(
             conservative_changes, relaxed_changes, raw_data_comment)
 
-        return processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
-
-    def process_data(self, identity_data: list, series_data: list, patch_data: list, comment_data: list):
-
-        # group identities
-        individual_data = self.group_identities(identity_data)
-
-        # update individual info in other collections
-        series_data = self.update_individual_original_id(
-            individual_data, series_data)
-        patch_data = self.update_individual_original_id(
-            individual_data, patch_data)
-        comment_data = self.update_individual_original_id(
-            individual_data, comment_data)
-
-        patch_data_by_project = defaultdict(list)
-        comment_data_by_project = defaultdict(list)
-
-        for item in patch_data:
-            patch_data_by_project[item['project']].append(item)
-
-        for item in comment_data:
-            comment_data_by_project[item['project']].append(item)
-
-        newseries_data = list()
-        change1_data = list()
-        change2_data = list()
-
-        updated_patch_data = list()
-        updated_comment_data = list()
-
-        for project, patch_list in patch_data_by_project.items():
-
-            # group series
-            updated_patch_list, curr_newseries_data = self.group_series(
-                patch_list)
-            newseries_data.extend(curr_newseries_data)
-
-            # group patches
-            comment_list = comment_data_by_project[project]
-            updated_patches, updated_comments, curr_change1_data, curr_change2_data = self.group_patches(
-                updated_patch_list, comment_list)
-
-            updated_patch_data.extend(updated_patches)
-            updated_comment_data.extend(updated_comments)
-            change1_data.extend(curr_change1_data)
-            change2_data.extend(curr_change2_data)
-
-        return individual_data, series_data, updated_patch_data, updated_comment_data, newseries_data, change1_data, change2_data
+        return processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
 
     def __is_series_patch(self, patch_name):
         series_number = re.search('\d+/\d+', patch_name, re.IGNORECASE)
         return bool(series_number)
-
-    # Belows are helper functions
-
-    # def __sort_patches(self, patches):
-    #     for i in range(len(patches)):
-    #         patch_i = patches[i]
-    #         patch_i['tokens'], patch_i['one_gram'] = self.__create_bag_of_words(
-    #             patch_i['name'])
-
-    #     return sorted(patches, key=lambda x: (x['tokens'], x['date']))
 
     def __extract_version_number(self, patch_name):
         patch_name = patch_name.lower()
