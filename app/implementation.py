@@ -5,16 +5,6 @@ from application.main.ProcessPatch import ProcessPatch
 from application.main.ProcessIdentity import ProcessIdentity
 from application.helpers.utils import *
 
-# TODO
-# group newseries -> to record newseries oid in patches x
-# import processed individual data, patch data, comment data x
-# update individual oid in patches and newseries x
-# start grouping patches
-
-###############################################
-# currently only consider a single project case
-###############################################
-
 # add arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--ecosystem')
