@@ -131,6 +131,17 @@ class ProcessPatch():
 
         return patch_data, newseries_data
 
+    def insert_mailinglist_id(self, mailinglist_data, target_data):
+        msgid_to_orgid = {}
+
+        for item in mailinglist_data:
+
+            msgid_to_orgid[item['msg_id']] = item["original_id"]
+
+        for item in target_data:
+            if item['msg_id'] in msgid_to_orgid.keys():
+                item['mailinglist'] = msgid_to_orgid[item['msg_id']]
+
     # This function is to group patches based on the criteria in step 1
     # It should be called after newseries collection is created
 
