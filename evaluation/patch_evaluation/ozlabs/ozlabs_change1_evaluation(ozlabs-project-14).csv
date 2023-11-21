@@ -1,0 +1,1325 @@
+,id,change1_original_id,patch_original_id,patch_name,date,is_correct
+0,0,ozlabs-change1-300502,ozlabs-patch-278052,"[V2,1/2] tests: build the helper program by default",2013-09-26T00:42:55,1
+1,,ozlabs-change1-300502,ozlabs-patch-282841,"[PULL,38/61] tests: build the helper program by default",2013-10-11T15:05:28,1
+2,1,ozlabs-change1-313101,ozlabs-patch-162555,[12/25] x86: split off condition code helpers,2012-06-03T14:32:14,1
+3,,ozlabs-change1-313101,ozlabs-patch-163952,[12/25] x86: split off condition code helpers,2012-06-09T16:19:08,1
+4,,ozlabs-change1-313101,ozlabs-patch-166395,[11/17] x86: split off condition code helpers,2012-06-21T20:54:08,1
+5,2,ozlabs-change1-301816,ozlabs-patch-1158115,"[v1,20/42] tests/docker: move our ppc64 cross compile to Buster",2019-09-04T20:29:51,1
+6,,ozlabs-change1-301816,ozlabs-patch-1160147,"[PULL,23/45] tests/docker: move our ppc64 cross compile to Buster",2019-09-10T08:43:27,1
+7,3,ozlabs-change1-288955,ozlabs-patch-185817,[13/22] qom-fuse: force single-threaded mode to avoid QMP races,2012-09-21T14:07:36,1
+8,,ozlabs-change1-288955,ozlabs-patch-189316,"[v3,13/22] qom-fuse: force single-threaded mode to avoid QMP races",2012-10-04T17:33:32,1
+9,,ozlabs-change1-288955,ozlabs-patch-191227,"[v4,17/26] qom-fuse: force single-threaded mode to avoid QMP races",2012-10-12T21:10:59,1
+10,,ozlabs-change1-288955,ozlabs-patch-192533,[17/26] qom-fuse: force single-threaded mode to avoid QMP races,2012-10-19T02:42:11,1
+11,,ozlabs-change1-288955,ozlabs-patch-196048,[19/28] qom-fuse: force single-threaded mode to avoid QMP races,2012-10-31T22:36:03,1
+12,4,ozlabs-change1-344248,ozlabs-patch-1343447,"[RFC,v4,14/14] kvm: remove kvm specific functions from global includes",2020-08-11T21:03:26,1
+13,,ozlabs-change1-344248,ozlabs-patch-1343837,"[v5,14/14] kvm: remove kvm specific functions from global includes",2020-08-12T18:32:50,1
+14,,ozlabs-change1-344248,ozlabs-patch-1354797,"[v6,16/16] kvm: remove kvm specific functions from global includes",2020-09-01T07:22:01,1
+15,,ozlabs-change1-344248,ozlabs-patch-1356523,"[v7,16/16] kvm: remove kvm specific functions from global includes",2020-09-03T10:56:14,1
+16,,ozlabs-change1-344248,ozlabs-patch-1365377,"[v8,16/17] kvm: remove kvm specific functions from global includes",2020-09-16T14:20:03,1
+17,,ozlabs-change1-344248,ozlabs-patch-1377267,"[PULL,16/37] kvm: remove kvm specific functions from global includes",2020-10-06T07:29:26,1
+18,5,ozlabs-change1-336594,ozlabs-patch-1112716,[3/7] iotests: exclude killed processes from running under Valgrind,2019-06-09T18:35:44,1
+19,,ozlabs-change1-336594,ozlabs-patch-1114167,"[v2,2/7] iotests: exclude killed processes from running under Valgrind",2019-06-11T18:02:06,1
+20,,ozlabs-change1-336594,ozlabs-patch-1124268,"[v3,2/7] iotests: exclude killed processes from running under Valgrind",2019-06-28T13:46:09,1
+21,,ozlabs-change1-336594,ozlabs-patch-1133982,"[v4,2/7] iotests: exclude killed processes from running under Valgrind",2019-07-19T09:39:59,1
+22,,ozlabs-change1-336594,ozlabs-patch-1134155,"[v5,2/6] iotests: exclude killed processes from running under Valgrind",2019-07-19T16:30:12,1
+23,,ozlabs-change1-336594,ozlabs-patch-1153260,"[v6,2/6] iotests: exclude killed processes from running under Valgrind",2019-08-26T15:50:24,1
+24,,ozlabs-change1-336594,ozlabs-patch-1156278,"[v7,2/6] iotests: exclude killed processes from running under Valgrind",2019-09-01T11:53:02,1
+25,,ozlabs-change1-336594,ozlabs-patch-1157557,"[v8,2/6] iotests: exclude killed processes from running under Valgrind",2019-09-04T09:11:20,1
+26,,ozlabs-change1-336594,ozlabs-patch-1161602,"[PULL,15/22] iotests: exclude killed processes from running under Valgrind",2019-09-12T13:45:57,1
+27,6,ozlabs-change1-291946,ozlabs-patch-470116,[03/34] quorum: Use bdrv_open_image(),2015-05-08T17:21:35,1
+28,,ozlabs-change1-291946,ozlabs-patch-482662,"[v2,04/13] quorum: Use bdrv_open_image()",2015-06-10T13:46:58,1
+29,,ozlabs-change1-291946,ozlabs-patch-483686,"[PULL,16/25] quorum: Use bdrv_open_image()",2015-06-12T16:23:25,1
+30,7,ozlabs-change1-348346,ozlabs-patch-1620849,[3/3] hw/audio/ac97: Remove unneeded local variables,2022-04-22T13:14:41,1
+31,,ozlabs-change1-348346,ozlabs-patch-1620907,"[v2,3/3] hw/audio/ac97: Remove unneeded local variables",2022-04-22T15:14:40,1
+32,,ozlabs-change1-348346,ozlabs-patch-1621328,"[v3,3/3] hw/audio/ac97: Remove unneeded local variables",2022-04-23T09:36:57,1
+33,,ozlabs-change1-348346,ozlabs-patch-1635630,"[PULL,09/17] hw/audio/ac97: Remove unneeded local variables",2022-05-25T19:28:44,1
+34,8,ozlabs-change1-245895,ozlabs-patch-948435,[2/5] target/arm: Honour HCR_EL2.TGE and MDCR_EL2.TDE in debug register access checks,2018-07-24T11:59:47,1
+35,,ozlabs-change1-245895,ozlabs-patch-957673,"[PULL,34/45] target/arm: Honour HCR_EL2.TGE and MDCR_EL2.TDE in debug register access checks",2018-08-14T18:18:04,1
+36,9,ozlabs-change1-250479,ozlabs-patch-542714,[42/77] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt,2015-11-11T00:27:55,1
+37,,ozlabs-change1-250479,ozlabs-patch-677653,"[v4,17/20] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt",2016-10-03T07:24:53,1
+38,,ozlabs-change1-250479,ozlabs-patch-685356,"[v5,15/17] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt",2016-10-22T09:46:48,1
+39,,ozlabs-change1-250479,ozlabs-patch-692186,"[v6,08/10] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt",2016-11-08T08:08:08,1
+40,,ozlabs-change1-250479,ozlabs-patch-736534,"[for-2.10,6/8] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt",2017-03-08T10:52:49,1
+41,,ozlabs-change1-250479,ozlabs-patch-747264,[01/21] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt,2017-04-05T12:41:26,1
+42,,ozlabs-change1-250479,ozlabs-patch-754071,"[PULL,27/47] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt",2017-04-24T01:59:07,1
+43,,ozlabs-change1-250479,ozlabs-patch-755273,"[PULL,27/48] ppc/pnv: Add cut down PSI bridge model and hookup external interrupt",2017-04-26T07:00:13,1
+44,10,ozlabs-change1-351708,ozlabs-patch-742926,[36/51] ram: Move QEMUFile into RAMState,2017-03-23T20:45:29,1
+45,,ozlabs-change1-351708,ozlabs-patch-747806,[39/54] ram: Move QEMUFile into RAMState,2017-04-06T13:08:58,1
+46,,ozlabs-change1-351708,ozlabs-patch-752530,[39/59] ram: Move QEMUFile into RAMState,2017-04-19T20:59:03,1
+47,,ozlabs-change1-351708,ozlabs-patch-753364,"[PULL,39/65] ram: Move QEMUFile into RAMState",2017-04-21T11:56:20,1
+48,11,ozlabs-change1-285677,ozlabs-patch-1647403,"[v2,1/8] aspeed: Set CPU memory property explicitly",2022-06-24T00:36:54,1
+49,,ozlabs-change1-285677,ozlabs-patch-1650726,"[PULL,08/27] aspeed: Set CPU memory property explicitly",2022-06-30T11:23:52,1
+50,12,ozlabs-change1-329152,ozlabs-patch-633067,"[v1,20/40] trace: split out trace events for hw/dma/ directory",2016-06-09T16:58:14,1
+51,,ozlabs-change1-329152,ozlabs-patch-636298,"[v2,20/40] trace: split out trace events for hw/dma/ directory",2016-06-16T08:40:06,1
+52,,ozlabs-change1-329152,ozlabs-patch-637183,"[PULL,22/42] trace: split out trace events for hw/dma/ directory",2016-06-17T15:59:33,1
+53,,ozlabs-change1-329152,ozlabs-patch-638263,"[PULL,22/42] trace: split out trace events for hw/dma/ directory",2016-06-20T20:29:42,1
+54,13,ozlabs-change1-328348,ozlabs-patch-1651111,[03/11] hw/rtc/ls7a_rtc: Remove unimplemented device in realized function,2022-07-01T09:33:59,1
+55,,ozlabs-change1-328348,ozlabs-patch-1651904,"[PULL,17/23] hw/rtc/ls7a_rtc: Remove unimplemented device in realized function",2022-07-04T09:33:51,1
+56,14,ozlabs-change1-285276,ozlabs-patch-1255478,[05/11] Makefile: Write MINIKCONF variables as one entry per line,2020-03-16T12:00:43,1
+57,,ozlabs-change1-285276,ozlabs-patch-1291514,"[v2,06/10] Makefile: Write MINIKCONF variables as one entry per line",2020-05-15T17:08:00,1
+58,,ozlabs-change1-285276,ozlabs-patch-1295665,"[v3,06/11] Makefile: Write MINIKCONF variables as one entry per line",2020-05-21T19:59:06,1
+59,,ozlabs-change1-285276,ozlabs-patch-1296383,"[v4,07/11] Makefile: Write MINIKCONF variables as one entry per line",2020-05-22T16:37:55,1
+60,,ozlabs-change1-285276,ozlabs-patch-1303924,"[v5,07/11] Makefile: Write MINIKCONF variables as one entry per line",2020-06-05T07:39:49,1
+61,,ozlabs-change1-285276,ozlabs-patch-1304000,"[v6,07/11] Makefile: Write MINIKCONF variables as one entry per line",2020-06-05T09:32:52,1
+62,,ozlabs-change1-285276,ozlabs-patch-1304335,"[v7,07/11] Makefile: Write MINIKCONF variables as one entry per line",2020-06-05T17:58:17,1
+63,,ozlabs-change1-285276,ozlabs-patch-1305282,"[v8,06/10] Makefile: Write MINIKCONF variables as one entry per line",2020-06-08T16:38:19,1
+64,,ozlabs-change1-285276,ozlabs-patch-1312056,"[v9,06/10] Makefile: Write MINIKCONF variables as one entry per line",2020-06-18T12:33:38,1
+65,,ozlabs-change1-285276,ozlabs-patch-1323747,"[PULL,24/53] Makefile: Write MINIKCONF variables as one entry per line",2020-07-06T16:41:26,1
+66,15,ozlabs-change1-261206,ozlabs-patch-370964,"[v4,1/2] qapi: add read-pattern enum for quorum",2014-07-17T05:18:55,1
+67,,ozlabs-change1-261206,ozlabs-patch-380076,"[v5,1/2] qapi: add read-pattern enum for quorum",2014-08-15T05:05:16,1
+68,,ozlabs-change1-261206,ozlabs-patch-380911,"[v6,1/2] qapi: add read-pattern enum for quorum",2014-08-18T09:41:04,1
+69,,ozlabs-change1-261206,ozlabs-patch-384303,"[PULL,08/35] qapi: add read-pattern enum for quorum",2014-08-29T16:29:36,1
+70,16,ozlabs-change1-271937,ozlabs-patch-142895,[5/5] boards: move all machine type functions to boards.c,2012-02-24T14:13:12,1
+71,,ozlabs-change1-271937,ozlabs-patch-142966,[3/3] boards: move all machine type functions to boards.c,2012-02-24T19:36:29,1
+72,17,ozlabs-change1-260930,ozlabs-patch-41368,Add SH4 ELF magic into qemu-binfmt-conf.sh.,2009-12-16T22:03:42,1
+73,,ozlabs-change1-260930,ozlabs-patch-41317,Add SH4 ELF magic into qemu-binfmt-conf.sh.,2009-12-17T13:11:30,1
+74,18,ozlabs-change1-349190,ozlabs-patch-1668062,[4/6] target/arm: Implement ID_DFR1,2022-08-19T11:00:50,1
+75,,ozlabs-change1-349190,ozlabs-patch-1677850,"[PULL,06/20] target/arm: Implement ID_DFR1",2022-09-14T11:52:03,1
+76,19,ozlabs-change1-229547,ozlabs-patch-265837,"[RFC,PATCHv8,26/30] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-08T21:42:23,1
+77,,ozlabs-change1-229547,ozlabs-patch-266207,"[RFC,PATCHv9,27/31] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-10T10:06:31,1
+78,,ozlabs-change1-229547,ozlabs-patch-266359,"[RFC,PATCHv10,27/31] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-11T16:43:21,1
+79,,ozlabs-change1-229547,ozlabs-patch-267436,"[PATCHv11,27/31] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-15T20:34:35,1
+80,,ozlabs-change1-229547,ozlabs-patch-267764,"[PATCHv12,27/31] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-16T18:30:08,1
+81,,ozlabs-change1-229547,ozlabs-patch-268848,"[PATCHv13,27/31] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-21T15:03:05,1
+82,,ozlabs-change1-229547,ozlabs-patch-269214,"[PULL,35/42] aio / timers: convert block_job_sleep_ns and co_sleep_ns to new API",2013-08-22T20:11:31,1
+83,20,ozlabs-change1-267700,ozlabs-patch-285002,[13/16] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff,2013-10-20T14:56:17,1
+84,,ozlabs-change1-267700,ozlabs-patch-291844,[13/16] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff,2013-11-17T15:04:45,1
+85,,ozlabs-change1-267700,ozlabs-patch-319283,[13/16] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff,2014-02-11T13:08:14,1
+86,,ozlabs-change1-267700,ozlabs-patch-335165,[14/18] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff,2014-03-30T22:23:05,1
+87,,ozlabs-change1-267700,ozlabs-patch-501516,[14/18] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff,2015-07-28T22:57:21,1
+88,,ozlabs-change1-267700,ozlabs-patch-555429,[14/18] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff,2015-12-11T00:15:26,1
+89,,ozlabs-change1-267700,ozlabs-patch-580220,"[PATCHv7,5/9] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff",2016-02-08T10:28:54,1
+90,,ozlabs-change1-267700,ozlabs-patch-582524,"[PATCHv7,5/9] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff",2016-02-14T17:47:39,1
+91,,ozlabs-change1-267700,ozlabs-patch-586520,"[PATCHv9,05/10] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff",2016-02-22T19:28:20,1
+92,,ozlabs-change1-267700,ozlabs-patch-593995,"[PATCHv10,06/11] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff",2016-03-08T10:34:52,1
+93,,ozlabs-change1-267700,ozlabs-patch-597413,"[PULL,06/11] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff",2016-03-15T09:42:53,1
+94,,ozlabs-change1-267700,ozlabs-patch-597687,"[PULL,06/11] slirp: Generalizing and neutralizing various TCP functions before adding IPv6 stuff",2016-03-15T16:11:51,1
+95,21,ozlabs-change1-296705,ozlabs-patch-954352,[16/21] block/commit: refactor commit to use job callbacks,2018-08-07T04:33:44,1
+96,,ozlabs-change1-296705,ozlabs-patch-961629,"[v2,04/13] block/commit: refactor commit to use job callbacks",2018-08-23T22:22:40,1
+97,,ozlabs-change1-296705,ozlabs-patch-964740,"[v3,04/15] block/commit: refactor commit to use job callbacks",2018-08-31T22:28:56,1
+98,,ozlabs-change1-296705,ozlabs-patch-966014,"[v4,04/15] block/commit: refactor commit to use job callbacks",2018-09-04T17:09:19,1
+99,,ozlabs-change1-296705,ozlabs-patch-966978,"[v5,04/16] block/commit: refactor commit to use job callbacks",2018-09-06T13:02:13,1
+100,,ozlabs-change1-296705,ozlabs-patch-974582,"[PULL,04/42] block/commit: refactor commit to use job callbacks",2018-09-25T15:15:03,1
+101,22,ozlabs-change1-240175,ozlabs-patch-175921,"commit da57febfed ""qdev: give all devices a canonical path"" broke usb_del",2012-08-08T12:39:11,1
+102,,ozlabs-change1-240175,ozlabs-patch-175934,"commit da57febfed ""qdev: give all devices a canonical path"" broke usb_del",2012-08-08T14:42:01,1
+103,23,ozlabs-change1-346459,ozlabs-patch-516478,"[RFC,3/3] qapi-introspect: Guarantee particular sorting",2015-09-10T22:25:49,1
+104,,ozlabs-change1-346459,ozlabs-patch-520613,"[v5,18/46] qapi-introspect: Guarantee particular sorting",2015-09-21T21:57:34,1
+105,,ozlabs-change1-346459,ozlabs-patch-527544,"[v6,06/15] qapi-introspect: Guarantee particular sorting",2015-10-08T02:00:41,1
+106,,ozlabs-change1-346459,ozlabs-patch-531618,"[v7,04/14] qapi-introspect: Guarantee particular sorting",2015-10-17T04:35:39,1
+107,,ozlabs-change1-346459,ozlabs-patch-537488,"[v8,04/17] qapi-introspect: Guarantee particular sorting",2015-10-28T17:14:20,1
+108,24,ozlabs-change1-250939,ozlabs-patch-991366,[3/3] qapi: add reason to SHUTDOWN and RESET events,2018-10-31T11:52:42,1
+109,,ozlabs-change1-250939,ozlabs-patch-1006743,"[v2,2/3] qapi: Add reason to SHUTDOWN and RESET events",2018-12-03T09:26:16,1
+110,,ozlabs-change1-250939,ozlabs-patch-1008174,"[v3,2/3] qapi: Add reason to SHUTDOWN and RESET events",2018-12-05T11:01:30,1
+111,25,ozlabs-change1-233928,ozlabs-patch-314254,[15/21] target-arm: A64: Add SIMD simple 64 bit insns from scalar 2-reg misc,2014-01-26T19:25:06,1
+112,,ozlabs-change1-233928,ozlabs-patch-315945,"[v2,07/13] target-arm: A64: Add SIMD simple 64 bit insns from scalar 2-reg misc",2014-02-01T23:00:01,1
+113,,ozlabs-change1-233928,ozlabs-patch-318439,"[PULL,07/29] target-arm: A64: Add SIMD simple 64 bit insns from scalar 2-reg misc",2014-02-08T15:57:42,1
+114,26,ozlabs-change1-265503,ozlabs-patch-1391986,[1/2] MAINTAINERS: Add QAPI schema modules to their subsystems,2020-11-02T08:15:49,1
+115,,ozlabs-change1-265503,ozlabs-patch-1396602,"[PULL,2/5] MAINTAINERS: Add QAPI schema modules to their subsystems",2020-11-09T09:02:17,1
+116,27,ozlabs-change1-256456,ozlabs-patch-223797,[13/17] chardev: add spice support to qapi,2013-02-28T07:50:05,1
+117,,ozlabs-change1-256456,ozlabs-patch-226848,[13/19] chardev: add spice support to qapi,2013-03-12T08:56:23,1
+118,,ozlabs-change1-256456,ozlabs-patch-227524,[13/20] chardev: add spice support to qapi,2013-03-14T08:57:34,1
+119,28,ozlabs-change1-319474,ozlabs-patch-670042,[4/5] spapr_llan: convert to trace framework instead of DPRINTF,2016-09-14T18:48:26,1
+120,,ozlabs-change1-319474,ozlabs-patch-670836,"[v2,4/5] spapr_llan: convert to trace framework instead of DPRINTF",2016-09-16T12:39:10,1
+121,,ozlabs-change1-319474,ozlabs-patch-673148,"[PULL,20/44] spapr_llan: convert to trace framework instead of DPRINTF",2016-09-22T06:37:18,1
+122,,ozlabs-change1-319474,ozlabs-patch-673886,"[PULL,20/45] spapr_llan: convert to trace framework instead of DPRINTF",2016-09-23T07:14:56,1
+123,29,ozlabs-change1-313169,ozlabs-patch-1038671,[RFC] coroutines: generate wrapper code,2019-02-08T14:11:22,1
+124,,ozlabs-change1-313169,ozlabs-patch-1045244,"[RFC,v2] coroutines: generate wrapper code",2019-02-20T10:03:58,1
+125,30,ozlabs-change1-329137,ozlabs-patch-1468292,"[RFC,v2,13/13] MAINTAINERS: update s390x directories",2021-04-20T10:36:16,1
+126,,ozlabs-change1-329137,ozlabs-patch-1469190,"[RFC,v3,13/13] MAINTAINERS: update s390x directories",2021-04-22T11:54:30,1
+127,,ozlabs-change1-329137,ozlabs-patch-1482617,"[RFC,v4,14/14] MAINTAINERS: update s390x directories",2021-05-24T02:52:56,1
+128,31,ozlabs-change1-292652,ozlabs-patch-646746,[05/19] xen: Prepare xendev qtail to be shared with frontends,2016-07-10T11:47:36,1
+129,,ozlabs-change1-292652,ozlabs-patch-677933,[07/15] xen: Prepare xendev qtail to be shared with frontends,2016-10-04T06:43:36,1
+130,,ozlabs-change1-292652,ozlabs-patch-681618,"[v2,06/13] xen: Prepare xendev qtail to be shared with frontends",2016-10-13T06:01:47,1
+131,,ozlabs-change1-292652,ozlabs-patch-686332,"[v3,06/13] xen: Prepare xendev qtail to be shared with frontends",2016-10-25T05:50:12,1
+132,,ozlabs-change1-292652,ozlabs-patch-688676,"[PULL,06/13] xen: Prepare xendev qtail to be shared with frontends",2016-10-29T01:10:06,1
+133,32,ozlabs-change1-323745,ozlabs-patch-272126,cputlb: remove dead function tlb_update_dirty,2013-09-03T07:05:17,1
+134,,ozlabs-change1-323745,ozlabs-patch-281812,"[PULL,3/5] cputlb: Remove dead function tlb_update_dirty()",2013-10-09T10:49:22,1
+135,33,ozlabs-change1-239202,ozlabs-patch-56743,[02/15] qdev: Add a get_dev_path() function to BusInfo,2010-06-24T04:41:05,1
+136,,ozlabs-change1-239202,ozlabs-patch-56956,"[v2,03/16] qdev: Add a get_dev_path() function to BusInfo",2010-06-25T17:08:52,1
+137,,ozlabs-change1-239202,ozlabs-patch-57711,"[v3,03/16] qdev: Add a get_dev_path() function to BusInfo",2010-07-02T17:12:09,1
+138,34,ozlabs-change1-241297,ozlabs-patch-552354,net/vmxnet3.c: fix a build error when enabling debug output,2015-12-03T05:08:06,1
+139,,ozlabs-change1-241297,ozlabs-patch-552986,"[v2,1/3] net/vmxnet3.c: fix a build error when enabling debug output",2015-12-05T08:55:00,1
+140,,ozlabs-change1-241297,ozlabs-patch-553246,"[PULL,for,2.5,5/9] net/vmxnet3.c: fix a build error when enabling debug output",2015-12-07T03:26:09,1
+141,35,ozlabs-change1-330248,ozlabs-patch-1331501,[PATCH-for-5.1] hw/ide/ahci: Do not dma_memory_unmap(NULL),2020-07-18T07:28:54,1
+142,,ozlabs-change1-330248,ozlabs-patch-1375362,"[PULL,2/9] hw/ide/ahci: Do not dma_memory_unmap(NULL)",2020-10-01T17:46:42,1
+143,36,ozlabs-change1-315880,ozlabs-patch-991338,"vhost-user-bridge: fix ""unknown type name"" compilation error",2018-10-31T10:41:36,1
+144,,ozlabs-change1-315880,ozlabs-patch-1012058,"[PULL,02/54] vhost-user-bridge: fix ""unknown type name"" compilation error",2018-12-12T15:22:23,1
+145,,ozlabs-change1-315880,ozlabs-patch-1014858,"[PULL,02/35] vhost-user-bridge: fix ""unknown type name"" compilation error",2018-12-17T23:16:27,1
+146,,ozlabs-change1-315880,ozlabs-patch-1016108,"[PULL,02/35] vhost-user-bridge: fix ""unknown type name"" compilation error",2018-12-19T15:18:44,1
+147,37,ozlabs-change1-322943,ozlabs-patch-788539,[13/28] hppa: replace cpu_hppa_init() with cpu_generic_init(),2017-07-14T13:52:04,1
+148,,ozlabs-change1-322943,ozlabs-patch-803147,"[for-2.11,11/27] hppa: replace cpu_hppa_init() with cpu_generic_init()",2017-08-18T10:08:43,1
+149,,ozlabs-change1-322943,ozlabs-patch-805557,"[for-2.11,v3,10/25] hppa: replace cpu_hppa_init() with cpu_generic_init()",2017-08-24T16:31:33,1
+150,38,ozlabs-change1-232249,ozlabs-patch-569964,"[v17,8/9] pc: put PIIX3 in slot 1 explicitly and cleanup functions assignment",2016-01-19T13:06:28,1
+151,,ozlabs-change1-232249,ozlabs-patch-571691,"[v18,8/9] pc: put PIIX3 in slot 1 explicitly and cleanup functions assignment",2016-01-22T13:21:01,1
+152,,ozlabs-change1-232249,ozlabs-patch-574647,"[v19,8/9] pc: put PIIX3 in slot 1 explicitly and cleanup functions assignment",2016-01-28T10:54:29,1
+153,39,ozlabs-change1-250159,ozlabs-patch-441959,"[v2,2/2] target-mips: add missing MSACSR and restore fp_status and hflags",2015-02-20T13:07:45,1
+154,,ozlabs-change1-250159,ozlabs-patch-449073,"[PULL,2/2] target-mips: add missing MSACSR and restore fp_status and hflags",2015-03-11T16:15:21,1
+155,40,ozlabs-change1-336899,ozlabs-patch-248807,[16/39] pci-testdev: use instance_finalize instead of exit,2013-06-04T18:52:11,1
+156,,ozlabs-change1-336899,ozlabs-patch-272238,[15/38] pci-testdev: use instance_finalize instead of exit,2013-09-03T12:33:06,1
+157,41,ozlabs-change1-272727,ozlabs-patch-217821,[6/6] load_linux: change kernel header size allocation,2013-02-04T02:27:58,1
+158,,ozlabs-change1-272727,ozlabs-patch-222464,"[v2,6/6] load_linux: change kernel header size allocation",2013-02-22T04:15:33,1
+159,42,ozlabs-change1-345031,ozlabs-patch-912023,"[v2,09/17] memory-device: new functions to handle plug/unplug",2018-05-11T13:19:45,1
+160,,ozlabs-change1-345031,ozlabs-patch-912824,"[v3,10/18] memory-device: new functions to handle plug/unplug",2018-05-14T10:00:15,1
+161,,ozlabs-change1-345031,ozlabs-patch-915183,"[v4,10/14] memory-device: new functions to handle plug/unplug",2018-05-17T08:15:23,1
+162,43,ozlabs-change1-349064,ozlabs-patch-1589563,"[RFCv2,3/4] i386/pc: warn if phys-bits is too low",2022-02-07T20:24:21,1
+163,,ozlabs-change1-349064,ozlabs-patch-1596855,"[v3,5/6] i386/pc: warn if phys-bits is too low",2022-02-23T18:44:54,1
+164,44,ozlabs-change1-247183,ozlabs-patch-422705,"[RFC,25/47] acpi: add acpi_field() & acpi_named_field() terms",2014-12-19T02:02:20,1
+165,,ozlabs-change1-247183,ozlabs-patch-431868,"[v2,25/47] acpi: add acpi_field() & acpi_named_field() terms",2015-01-22T14:50:09,1
+166,45,ozlabs-change1-338553,ozlabs-patch-1668936,[RFC] tests/vm: Remove obsolete Fedora VM test,2022-08-22T17:53:17,1
+167,,ozlabs-change1-338553,ozlabs-patch-1670961,"[v1,12/25] tests/vm: Remove obsolete Fedora VM test",2022-08-26T17:21:15,1
+168,,ozlabs-change1-338553,ozlabs-patch-1677996,"[v2,17/30] tests/vm: Remove obsolete Fedora VM test",2022-09-14T15:59:37,1
+169,,ozlabs-change1-338553,ozlabs-patch-1680261,"[PULL,17/30] tests/vm: Remove obsolete Fedora VM test",2022-09-20T17:15:20,1
+170,46,ozlabs-change1-240828,ozlabs-patch-289224,avoid a bogus COMPLETED->CANCELLED transition,2013-11-07T08:21:23,1
+171,,ozlabs-change1-240828,ozlabs-patch-310266,[01/49] avoid a bogus COMPLETED->CANCELLED transition,2014-01-13T17:39:46,1
+172,47,ozlabs-change1-239974,ozlabs-patch-1181369,"[v4,3/6] ppc/pnv: Add a PnvChip pointer to PnvCore",2019-10-22T13:42:51,1
+173,,ozlabs-change1-239974,ozlabs-patch-1181411,"[v4,4/7] ppc/pnv: Add a PnvChip pointer to PnvCore",2019-10-22T13:46:29,1
+174,,ozlabs-change1-239974,ozlabs-patch-1181527,"[v5,4/7] ppc/pnv: Add a PnvChip pointer to PnvCore",2019-10-22T16:38:09,1
+175,,ozlabs-change1-239974,ozlabs-patch-1182721,"[PULL,25/28] ppc/pnv: Add a PnvChip pointer to PnvCore",2019-10-24T08:18:10,1
+176,48,ozlabs-change1-253735,ozlabs-patch-528266,"[09/12] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-09T05:45:23,1
+177,,ozlabs-change1-253735,ozlabs-patch-529069,"[v2,08/12] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-12T11:50:47,1
+178,,ozlabs-change1-253735,ozlabs-patch-531192,"[v3,08/12] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-16T10:12:19,1
+179,,ozlabs-change1-253735,ozlabs-patch-532793,"[v4,08/12] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-20T05:16:59,1
+180,,ozlabs-change1-253735,ozlabs-patch-533573,"[v5,08/12] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-21T02:06:45,1
+181,,ozlabs-change1-253735,ozlabs-patch-534244,"[v6,08/12] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-22T06:32:56,1
+182,,ozlabs-change1-253735,ozlabs-patch-534720,"[v7,08/10] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-23T03:08:12,1
+183,,ozlabs-change1-253735,ozlabs-patch-535111,"[PULL,35/37] block: Add ""drained begin/end"" for transactional blockdev-backup",2015-10-23T17:01:22,1
+184,49,ozlabs-change1-301542,ozlabs-patch-1648029,"[v8,4/4] module: Use bundle mechanism",2022-06-24T14:50:39,1
+185,,ozlabs-change1-301542,ozlabs-patch-1648110,"[v9,4/4] module: Use bundle mechanism",2022-06-24T17:34:05,1
+186,,ozlabs-change1-301542,ozlabs-patch-1648602,"[v10,4/4] module: Use bundle mechanism",2022-06-27T03:57:44,1
+187,,ozlabs-change1-301542,ozlabs-patch-1656298,"[PULL,04/20] module: Use bundle mechanism",2022-07-14T09:01:55,1
+188,50,ozlabs-change1-319516,ozlabs-patch-58643,[04/15] ebus: convert to pci_bar_map,2010-07-12T18:40:29,1
+189,,ozlabs-change1-319516,ozlabs-patch-59702,[04/34] ebus: convert to pci_bar_map,2010-07-22T21:55:31,1
+190,51,ozlabs-change1-350732,ozlabs-patch-161916,"[PATCHv2,05/22] vmdk: relative_path: use pstrcpy in place of strncpy",2012-05-30T07:46:24,1
+191,,ozlabs-change1-350732,ozlabs-patch-189315,"[PATCHv3,05/20] vmdk: relative_path: use pstrcpy in place of strncpy",2012-10-04T11:09:48,1
+192,52,ozlabs-change1-266120,ozlabs-patch-1149188,[Webpage] add support page,2019-08-19T10:57:53,1
+193,,ozlabs-change1-266120,ozlabs-patch-1159769,"[qemu-web,v2] add support page",2019-09-09T13:56:44,1
+194,,ozlabs-change1-266120,ozlabs-patch-1159770,"[qemu-web,v2] add support page",2019-09-09T13:58:42,1
+195,,ozlabs-change1-266120,ozlabs-patch-1159794,"[qemu-web,v3] add support page",2019-09-09T15:12:18,1
+196,,ozlabs-change1-266120,ozlabs-patch-1159795,"[qemu-web,v4] add support page",2019-09-09T15:23:02,1
+197,53,ozlabs-change1-342615,ozlabs-patch-1635109,"[v2,11/15] tests/qtest: use g_autofree for test_server_create_chr",2022-05-24T15:40:52,1
+198,,ozlabs-change1-342615,ozlabs-patch-1638601,"[PULL,09/12] tests/qtest: use g_autofree for test_server_create_chr",2022-06-03T06:59:02,1
+199,54,ozlabs-change1-348140,ozlabs-patch-225710,"[v2,2/5] net: hub use lock to protect ports list",2013-03-07T02:53:17,1
+200,,ozlabs-change1-348140,ozlabs-patch-237177,"[RFC,v4,08/15] net: hub use lock to protect ports list",2013-04-17T08:39:17,1
+201,,ozlabs-change1-348140,ozlabs-patch-239636,"[RFC,v5,07/14] net: hub use lock to protect ports list",2013-04-26T02:47:28,1
+202,,ozlabs-change1-348140,ozlabs-patch-241985,"[v1,07/14] net: hub use lock to protect ports list",2013-05-07T05:46:55,1
+203,,ozlabs-change1-348140,ozlabs-patch-251017,"[v2,6/6] net: hub use lock to protect ports list",2013-06-13T09:03:06,1
+204,,ozlabs-change1-348140,ozlabs-patch-254943,"[v3,7/7] net: hub use lock to protect ports list",2013-06-27T03:38:49,1
+205,55,ozlabs-change1-262089,ozlabs-patch-741004,"[for-2.9,5/5] MAINTAINERS: Add myself for files I touched recently",2017-03-20T12:55:48,1
+206,,ozlabs-change1-262089,ozlabs-patch-742193,"[PULL,for-2.9,05/17] MAINTAINERS: Add myself for files I touched recently",2017-03-22T16:05:36,1
+207,,ozlabs-change1-262089,ozlabs-patch-742250,"[PULL,v2,for-2.9,05/17] MAINTAINERS: Add myself for files I touched recently",2017-03-22T17:48:16,1
+208,,ozlabs-change1-262089,ozlabs-patch-742280,"[PULL,v3,for-2.9,05/17] MAINTAINERS: Add myself for files I touched recently",2017-03-22T18:36:09,1
+209,56,ozlabs-change1-329245,ozlabs-patch-127059,[07/11] fix spelling in tcg sub directory,2011-11-22T10:06:22,1
+210,,ozlabs-change1-329245,ozlabs-patch-128873,[11/15] fix spelling in tcg sub directory,2011-12-02T13:50:29,1
+211,57,ozlabs-change1-267867,ozlabs-patch-1439145,"[v1,4/5] softmmu/memory_mapping: factor out adding physical memory ranges",2021-02-10T17:15:36,1
+212,,ozlabs-change1-267867,ozlabs-patch-1445671,"[v2,4/5] softmmu/memory_mapping: factor out adding physical memory ranges",2021-03-01T16:11:36,1
+213,,ozlabs-change1-267867,ozlabs-patch-1507512,"[resend,v2,4/5] softmmu/memory_mapping: factor out adding physical memory ranges",2021-07-20T13:03:03,1
+214,,ozlabs-change1-267867,ozlabs-patch-1508007,"[v3,3/4] softmmu/memory_mapping: factor out adding physical memory ranges",2021-07-21T08:38:37,1
+215,,ozlabs-change1-267867,ozlabs-patch-1510134,"[v3,3/4] softmmu/memory_mapping: factor out adding physical memory ranges",2021-07-26T16:03:45,1
+216,,ozlabs-change1-267867,ozlabs-patch-1510366,"[v4,3/4] softmmu/memory_mapping: factor out adding physical memory ranges",2021-07-27T08:25:44,1
+217,,ozlabs-change1-267867,ozlabs-patch-1535765,"[PULL,29/30] softmmu/memory_mapping: factor out adding physical memory ranges",2021-10-03T07:42:49,1
+218,58,ozlabs-change1-283242,ozlabs-patch-372850,icount: Fix virtual clock start value on ARM,2014-07-23T09:11:31,1
+219,,ozlabs-change1-283242,ozlabs-patch-372860,[v2] icount: Fix virtual clock start value on ARM,2014-07-23T09:47:50,1
+220,,ozlabs-change1-283242,ozlabs-patch-377065,"[PULL,05/11] icount: Fix virtual clock start value on ARM",2014-08-06T16:12:29,1
+221,59,ozlabs-change1-279150,ozlabs-patch-252511,[1/2] libqtest: Plug fd and memory leaks in qtest_quit(),2013-06-19T07:44:54,1
+222,,ozlabs-change1-279150,ozlabs-patch-252757,"[v2,1/2] libqtest: Plug fd and memory leaks in qtest_quit()",2013-06-20T06:55:28,1
+223,60,ozlabs-change1-348389,ozlabs-patch-1450247,[4/9] hw/block/pflash_cfi02: Set rom_mode to true in pflash_setup_mappings(),2021-03-09T23:50:23,1
+224,,ozlabs-change1-348389,ozlabs-patch-1450663,"[v2,04/12] hw/block/pflash_cfi02: Set rom_mode to true in pflash_setup_mappings()",2021-03-10T17:05:20,1
+225,,ozlabs-change1-348389,ozlabs-patch-1453623,"[PULL,04/11] hw/block/pflash_cfi02: Set rom_mode to true in pflash_setup_mappings()",2021-03-15T23:35:20,1
+226,61,ozlabs-change1-249509,ozlabs-patch-697795,"[v3,09/10] aio: add .io_poll_begin/end() callbacks",2016-11-22T16:31:45,1
+227,,ozlabs-change1-249509,ozlabs-patch-701652,"[v4,10/13] aio: add .io_poll_begin/end() callbacks",2016-12-01T19:26:49,1
+228,,ozlabs-change1-249509,ozlabs-patch-711007,"[PULL,11/14] aio: add .io_poll_begin/end() callbacks",2017-01-04T13:34:11,1
+229,62,ozlabs-change1-337420,ozlabs-patch-236543,[2/2] vnc: Support for LED state extension,2013-04-15T09:29:09,1
+230,,ozlabs-change1-337420,ozlabs-patch-238084,[2/3] vnc: Support for LED state extension,2013-04-19T18:11:51,1
+231,,ozlabs-change1-337420,ozlabs-patch-239134,[2/3] vnc: Support for LED state extension,2013-04-24T10:12:29,1
+232,,ozlabs-change1-337420,ozlabs-patch-239395,[2/4] vnc: Support for LED state extension,2013-04-25T05:29:10,1
+233,63,ozlabs-change1-237384,ozlabs-patch-920430,scripts/update-linux-headers: Handle __aligned_u64,2018-05-25T11:09:14,1
+234,,ozlabs-change1-237384,ozlabs-patch-920509,[2/6] scripts/update-linux-headers: Handle __aligned_u64,2018-05-25T13:27:51,1
+235,,ozlabs-change1-237384,ozlabs-patch-923500,"[PULL,43/53] scripts/update-linux-headers: Handle __aligned_u64",2018-05-31T17:15:56,1
+236,64,ozlabs-change1-298692,ozlabs-patch-933713,[v3] sam460ex: Fix sam460ex device tree when booting the Linux kernel,2018-06-23T14:36:09,1
+237,,ozlabs-change1-298692,ozlabs-patch-933796,[v4] sam460ex: Fix sam460ex device tree when booting the Linux kernel,2018-06-23T21:18:05,1
+238,,ozlabs-change1-298692,ozlabs-patch-938351,"[PULL,03/35] sam460ex: Fix sam460ex device tree when booting the Linux kernel",2018-07-03T05:57:32,1
+239,65,ozlabs-change1-318575,ozlabs-patch-198374,[1/1] s390: new contributions GPLv2 or later,2012-11-12T11:44:10,1
+240,,ozlabs-change1-318575,ozlabs-patch-209955,[1/5] s390: new contributions GPLv2 or later,2013-01-07T15:37:08,1
+241,,ozlabs-change1-318575,ozlabs-patch-210014,[1/6] s390: new contributions GPLv2 or later,2013-01-07T16:09:21,1
+242,,ozlabs-change1-318575,ozlabs-patch-213714,[1/8] s390: new contributions GPLv2 or later,2013-01-18T18:12:15,1
+243,66,ozlabs-change1-256244,ozlabs-patch-523098,"[02/10,TRIVIAL] cmd646: add to storage category",2015-09-26T16:22:04,1
+244,,ozlabs-change1-256244,ozlabs-patch-534869,"[PULL,12/21] cmd646: add to storage category",2015-10-23T09:43:24,1
+245,67,ozlabs-change1-283909,ozlabs-patch-1238289,[11/19] target/arm: Replace ARM_FEATURE_VFP4 with isar_feature_aa32_simdfmac,2020-02-14T18:15:39,1
+246,,ozlabs-change1-283909,ozlabs-patch-1243632,"[v2,09/17] target/arm: Replace ARM_FEATURE_VFP4 with isar_feature_aa32_simdfmac",2020-02-24T22:22:24,1
+247,,ozlabs-change1-283909,ozlabs-patch-1246634,"[PULL,14/33] target/arm: Replace ARM_FEATURE_VFP4 with isar_feature_aa32_simdfmac",2020-02-28T16:38:21,1
+248,68,ozlabs-change1-243467,ozlabs-patch-1670962,"[v1,14/25] gitlab-ci: update aarch32/aarch64 custom runner jobs",2022-08-26T17:21:17,1
+249,,ozlabs-change1-243467,ozlabs-patch-1678008,"[v2,20/30] gitlab-ci: update aarch32/aarch64 custom runner jobs",2022-09-14T15:59:40,1
+250,,ozlabs-change1-243467,ozlabs-patch-1680304,"[PULL,20/30] gitlab-ci: update aarch32/aarch64 custom runner jobs",2022-09-20T17:15:23,1
+251,69,ozlabs-change1-324084,ozlabs-patch-161936,[17/25] PPC: e500: dt: create mpic node dynamically,2012-05-30T11:00:38,1
+252,,ozlabs-change1-324084,ozlabs-patch-163199,[17/31] PPC: e500: dt: create mpic node dynamically,2012-06-05T23:53:08,1
+253,,ozlabs-change1-324084,ozlabs-patch-165823,[17/31] PPC: e500: dt: create mpic node dynamically,2012-06-19T19:15:10,1
+254,,ozlabs-change1-324084,ozlabs-patch-166809,[47/72] PPC: e500: dt: create mpic node dynamically,2012-06-23T23:07:11,1
+255,70,ozlabs-change1-305190,ozlabs-patch-747044,"[v1,2/5] cadence_gem: Correct the multi-queue can rx logic",2017-04-04T23:40:07,1
+256,,ozlabs-change1-305190,ozlabs-patch-749284,"[v2,2/5] cadence_gem: Correct the multi-queue can rx logic",2017-04-10T23:43:46,1
+257,,ozlabs-change1-305190,ozlabs-patch-749665,"[v3,2/5] cadence_gem: Correct the multi-queue can rx logic",2017-04-11T22:30:20,1
+258,,ozlabs-change1-305190,ozlabs-patch-752898,"[PULL,12/24] cadence_gem: Correct the multi-queue can rx logic",2017-04-20T16:40:58,1
+259,71,ozlabs-change1-337425,ozlabs-patch-354187,[4/9] target-arm: VFPv4 implies half-precision extension,2014-05-30T13:55:20,1
+260,,ozlabs-change1-337425,ozlabs-patch-357501,"[PULL,13/20] target-arm: VFPv4 implies half-precision extension",2014-06-09T14:57:31,1
+261,72,ozlabs-change1-287767,ozlabs-patch-1163950,[RFC] error: auto propagated local_err,2019-09-18T13:02:44,1
+262,,ozlabs-change1-287767,ozlabs-patch-1166144,"[RFC,v2,1/9] error: auto propagated local_err",2019-09-23T16:12:23,1
+263,,ozlabs-change1-287767,ozlabs-patch-1166834,"[v3,04/25] error: auto propagated local_err",2019-09-24T20:08:41,1
+264,,ozlabs-change1-287767,ozlabs-patch-1170059,"[v4,04/31] error: auto propagated local_err",2019-10-01T15:52:52,1
+265,,ozlabs-change1-287767,ozlabs-patch-1175498,"[RFC,v5,024/126] error: auto propagated local_err",2019-10-11T16:04:10,1
+266,,ozlabs-change1-287767,ozlabs-patch-1221415,"[v6,02/11] error: auto propagated local_err",2020-01-10T19:41:49,1
+267,,ozlabs-change1-287767,ozlabs-patch-1231881,"[v7,02/11] error: auto propagated local_err",2020-01-31T13:01:09,1
+268,,ozlabs-change1-287767,ozlabs-patch-1250056,"[v8,01/10] error: auto propagated local_err",2020-03-06T05:15:27,1
+269,,ozlabs-change1-287767,ozlabs-patch-1253424,"[v9,01/10] error: auto propagated local_err",2020-03-12T08:59:27,1
+270,,ozlabs-change1-287767,ozlabs-patch-1256545,"[v10,1/9] error: auto propagated local_err",2020-03-17T15:16:17,1
+271,,ozlabs-change1-287767,ozlabs-patch-1307102,[1/3] error: auto propagated local_err,2020-06-10T17:17:26,1
+272,,ozlabs-change1-287767,ozlabs-patch-1307385,"[v2,1/3] error: auto propagated local_err",2020-06-11T09:09:52,1
+273,,ozlabs-change1-287767,ozlabs-patch-1307576,"[v3,2/4] error: auto propagated local_err",2020-06-11T13:40:18,1
+274,,ozlabs-change1-287767,ozlabs-patch-1322250,"[v11,1/8] error: auto propagated local_err",2020-07-03T09:08:09,1
+275,73,ozlabs-change1-280493,ozlabs-patch-837395,scripts/make-release: No need to delete pixman/.git anymore,2017-11-13T09:21:45,1
+276,,ozlabs-change1-280493,ozlabs-patch-849191,[v2] scripts/make-release: No need to delete pixman/.git anymore,2017-12-15T14:27:10,1
+277,74,ozlabs-change1-288670,ozlabs-patch-1069463,[04/14] linux-user: avoid string truncation warnings in uname field copying,2019-03-29T11:10:54,1
+278,,ozlabs-change1-288670,ozlabs-patch-1084672,"[v2,1/5] linux-user: avoid string truncation warnings in uname field copying",2019-04-12T12:16:22,1
+279,,ozlabs-change1-288670,ozlabs-patch-1093734,[v2] linux-user: avoid string truncation warnings in uname field copying,2019-05-01T14:46:46,1
+280,75,ozlabs-change1-281830,ozlabs-patch-958550,i386: Fix arch_query_cpu_model_expansion() leak,2018-08-16T18:35:09,1
+281,,ozlabs-change1-281830,ozlabs-patch-960674,"[PULL,30/74] i386: Fix arch_query_cpu_model_expansion() leak",2018-08-21T17:02:02,1
+282,76,ozlabs-change1-252660,ozlabs-patch-1214396,"[v2,3/8] hw/avr: Add some ATmega microcontrollers",2019-12-21T01:02:21,1
+283,,ozlabs-change1-252660,ozlabs-patch-1216185,"[v3,3/8] hw/avr: Add some ATmega microcontrollers",2019-12-29T22:45:00,1
+284,,ozlabs-change1-252660,ozlabs-patch-1226151,"[v4,13/18] hw/avr: Add some ATmega microcontrollers",2020-01-20T22:01:02,1
+285,,ozlabs-change1-252660,ozlabs-patch-1227545,"[rc1,19/24] hw/avr: Add some ATmega microcontrollers",2020-01-23T00:03:02,1
+286,,ozlabs-change1-252660,ozlabs-patch-1228648,"[rc2,20/25] hw/avr: Add some ATmega microcontrollers",2020-01-24T00:51:26,1
+287,,ozlabs-change1-252660,ozlabs-patch-1229463,"[rc3,25/30] hw/avr: Add some ATmega microcontrollers",2020-01-26T22:55:06,1
+288,,ozlabs-change1-252660,ozlabs-patch-1231739,"[rc4,24/29] hw/avr: Add some ATmega microcontrollers",2020-01-31T00:03:08,1
+289,,ozlabs-change1-252660,ozlabs-patch-1234704,"[rc5,24/32] hw/avr: Add some ATmega microcontrollers",2020-02-07T01:57:52,1
+290,,ozlabs-change1-252660,ozlabs-patch-1323050,"[rc6,24/30] hw/avr: Add some ATmega microcontrollers",2020-07-05T14:03:09,1
+291,,ozlabs-change1-252660,ozlabs-patch-1324596,"[PULL,25/32] hw/avr: Add some ATmega microcontrollers",2020-07-07T18:17:03,1
+292,77,ozlabs-change1-257403,ozlabs-patch-252129,[6/7] NUMA: add hmp command set-mpol,2013-06-18T08:09:50,1
+293,,ozlabs-change1-257403,ozlabs-patch-253142,"[V2,8/9] NUMA: add hmp command set-mpol",2013-06-21T06:25:59,1
+294,,ozlabs-change1-257403,ozlabs-patch-253697,"[V3,09/10] NUMA: add hmp command set-mpol",2013-06-24T07:12:07,1
+295,,ozlabs-change1-257403,ozlabs-patch-256855,"[V4,09/10] NUMA: add hmp command set-mpol",2013-07-04T09:53:16,1
+296,78,ozlabs-change1-311660,ozlabs-patch-95381,"[08/25,virtio-9p] clean up v9fs_mkdir.",2011-05-12T20:57:30,1
+297,,ozlabs-change1-311660,ozlabs-patch-96017,"[V2,08/25,virtio-9p] clean up v9fs_mkdir.",2011-05-17T19:43:34,1
+298,,ozlabs-change1-311660,ozlabs-patch-96292,"[V3,07/24,virtio-9p] clean up v9fs_mkdir.",2011-05-19T02:56:57,1
+299,,ozlabs-change1-311660,ozlabs-patch-109015,"[-V4,08/26,virtio-9p] clean up v9fs_mkdir.",2011-08-08T17:03:56,1
+300,79,ozlabs-change1-241631,ozlabs-patch-1003430,"[PULL,09/15] checkpatch: g_test_message does not need a trailing newline",2018-11-26T19:40:29,1
+301,,ozlabs-change1-241631,ozlabs-patch-1003863,"[PULL,09/15] checkpatch: g_test_message does not need a trailing newline",2018-11-27T14:36:31,1
+302,80,ozlabs-change1-295618,ozlabs-patch-103084,"[V4,1/4] Qemu: Enhance ""info block"" to display host cache setting",2011-07-04T10:42:51,1
+303,,ozlabs-change1-295618,ozlabs-patch-103239,"[V4,1/4,-Updated] Qemu: Enhance ""info block"" to display host cache setting",2011-07-05T10:49:56,1
+304,,ozlabs-change1-295618,ozlabs-patch-107031,"[V5,1/4] Qemu: Enhance ""info block"" to display host cache setting",2011-07-27T11:30:14,1
+305,,ozlabs-change1-295618,ozlabs-patch-108611,"[v6,1/4] Qemu: Enhance ""info block"" to display host cache setting",2011-08-05T06:56:19,1
+306,,ozlabs-change1-295618,ozlabs-patch-118854,"[v7,1/5] Qemu: Enhance ""info block"" to display host cache setting",2011-10-11T03:10:59,1
+307,,ozlabs-change1-295618,ozlabs-patch-122591,"[v8,1/6] Qemu: Enhance ""info block"" to display host cache setting",2011-10-30T10:33:54,1
+308,,ozlabs-change1-295618,ozlabs-patch-125095,"[v9,1/6] Qemu: Enhance ""info block"" to display host cache setting",2011-11-11T06:47:21,1
+309,,ozlabs-change1-295618,ozlabs-patch-125115,"[v9,1/6,-,updated] Qemu: Enhance ""info block"" to display host cache setting",2011-11-11T10:09:29,1
+310,,ozlabs-change1-295618,ozlabs-patch-138892,"[RFC,1/7] Qemu: Enhance ""info block"" to display host cache setting",2012-02-01T03:06:14,1
+311,,ozlabs-change1-295618,ozlabs-patch-165219,"[v1,1/10] Qemu: Enhance ""info block"" to display host cache setting",2012-06-15T20:47:01,1
+312,81,ozlabs-change1-334303,ozlabs-patch-1661134,[4/5] util/qemu-sockets: Enable unix socket support on Windows,2022-07-27T07:35:41,1
+313,,ozlabs-change1-334303,ozlabs-patch-1661247,"[v2,4/6] util/qemu-sockets: Enable unix socket support on Windows",2022-07-27T13:28:00,1
+314,,ozlabs-change1-334303,ozlabs-patch-1662171,"[v3,2/4] util/qemu-sockets: Enable unix socket support on Windows",2022-07-30T14:50:34,1
+315,,ozlabs-change1-334303,ozlabs-patch-1662873,"[v4,2/4] util/qemu-sockets: Enable unix socket support on Windows",2022-08-02T07:51:58,1
+316,,ozlabs-change1-334303,ozlabs-patch-1673580,"[PULL,1/4] util/qemu-sockets: Enable unix socket support on Windows",2022-09-02T13:14:09,1
+317,82,ozlabs-change1-270896,ozlabs-patch-1287963,[2/2] aio-posix: disable fdmon-io_uring when GSource is used,2020-05-11T18:36:30,1
+318,,ozlabs-change1-270896,ozlabs-patch-1293102,"[PULL,8/8] aio-posix: disable fdmon-io_uring when GSource is used",2020-05-19T08:00:54,1
+319,,ozlabs-change1-270896,ozlabs-patch-1357005,[25/77] aio-posix: disable fdmon-io_uring when GSource is used,2020-09-03T20:58:43,1
+320,83,ozlabs-change1-254529,ozlabs-patch-837776,[4/5] block-stream: add compress option,2017-11-14T10:16:52,1
+321,,ozlabs-change1-254529,ozlabs-patch-1170169,[5/6] block-stream: add compress option,2019-10-01T19:27:19,1
+322,,ozlabs-change1-254529,ozlabs-patch-1170703,"[v2,5/6] block-stream: add compress option",2019-10-02T14:22:45,1
+323,,ozlabs-change1-254529,ozlabs-patch-1177283,"[v3,4/5] block-stream: add compress option",2019-10-15T18:20:24,1
+324,84,ozlabs-change1-325047,ozlabs-patch-1090186,"[v3,02/20] gdbstub: Implement deatch (D pkt) with new infra",2019-04-24T14:26:56,1
+325,,ozlabs-change1-325047,ozlabs-patch-1090348,"[v4,02/20] gdbstub: Implement deatch (D pkt) with new infra",2019-04-24T18:45:42,1
+326,,ozlabs-change1-325047,ozlabs-patch-1090401,"[v5,02/21] gdbstub: Implement deatch (D pkt) with new infra",2019-04-24T19:38:40,1
+327,,ozlabs-change1-325047,ozlabs-patch-1090818,"[v6,02/21] gdbstub: Implement deatch (D pkt) with new infra",2019-04-25T13:26:17,1
+328,,ozlabs-change1-325047,ozlabs-patch-1091272,"[v7,02/21] gdbstub: Implement deatch (D pkt) with new infra",2019-04-26T04:35:39,1
+329,,ozlabs-change1-325047,ozlabs-patch-1094004,"[v8,02/27] gdbstub: Implement deatch (D pkt) with new infra",2019-05-02T07:26:16,1
+330,,ozlabs-change1-325047,ozlabs-patch-1094051,"[v9,02/27] gdbstub: Implement deatch (D pkt) with new infra",2019-05-02T08:15:29,1
+331,,ozlabs-change1-325047,ozlabs-patch-1102649,"[v10,02/20] gdbstub: Implement deatch (D pkt) with new infra",2019-05-21T09:59:30,1
+332,,ozlabs-change1-325047,ozlabs-patch-1105005,"[v11,02/20] gdbstub: Implement deatch (D pkt) with new infra",2019-05-24T16:01:00,1
+333,,ozlabs-change1-325047,ozlabs-patch-1106828,"[v12,02/20] gdbstub: Implement deatch (D pkt) with new infra",2019-05-29T06:41:30,1
+334,,ozlabs-change1-325047,ozlabs-patch-1111725,"[PULL,34/52] gdbstub: Implement deatch (D pkt) with new infra",2019-06-07T09:05:33,1
+335,85,ozlabs-change1-293728,ozlabs-patch-544017,"[for-2.5,v2] tests: Ignore recent test binaries",2015-11-13T03:47:03,1
+336,,ozlabs-change1-293728,ozlabs-patch-545521,"[PULL,for-2.5,2/7] tests: Ignore recent test binaries",2015-11-17T11:17:23,1
+337,86,ozlabs-change1-333903,ozlabs-patch-868682,"[RFC,21/21] qapi: Empty out qapi-schema.json",2018-02-02T13:03:36,1
+338,,ozlabs-change1-333903,ozlabs-patch-880083,"[PULL,25/30] qapi: Empty out qapi-schema.json",2018-03-01T19:42:40,1
+339,,ozlabs-change1-333903,ozlabs-patch-880228,"[PULL,v2,25/30] qapi: Empty out qapi-schema.json",2018-03-02T01:30:02,1
+340,87,ozlabs-change1-350847,ozlabs-patch-1659579,"[v2,2/7] vdpa: Use v->shadow_vqs_enabled in vhost_vdpa_svqs_start & stop",2022-07-22T13:43:13,1
+341,,ozlabs-change1-350847,ozlabs-patch-1663453,"[v3,2/7] vdpa: Use v->shadow_vqs_enabled in vhost_vdpa_svqs_start & stop",2022-08-03T17:18:16,1
+342,,ozlabs-change1-350847,ozlabs-patch-1664140,"[v4,2/6] vdpa: Use v->shadow_vqs_enabled in vhost_vdpa_svqs_start & stop",2022-08-05T16:39:05,1
+343,88,ozlabs-change1-249239,ozlabs-patch-1512931,hw/dma/pl330: Add memory region to replace default address_space_memory,2021-08-03T05:38:14,1
+344,,ozlabs-change1-249239,ozlabs-patch-1516583,hw/dma/pl330: Add memory region to replace default address_space_memory,2021-08-13T06:44:06,1
+345,89,ozlabs-change1-230233,ozlabs-patch-1583639,"[2/2] Revert ""python: pin setuptools below v60.0.0""",2022-01-24T18:56:43,1
+346,,ozlabs-change1-230233,ozlabs-patch-1588631,"[v2,2/2] Revert ""python: pin setuptools below v60.0.0""",2022-02-04T22:18:04,1
+347,,ozlabs-change1-230233,ozlabs-patch-1596918,"[PULL,5/6] Revert ""python: pin setuptools below v60.0.0""",2022-02-23T22:08:59,1
+348,90,ozlabs-change1-279922,ozlabs-patch-1247823,"[v1,10/10] travis.yml: install python3 numpy and opencv libraries",2020-03-02T18:19:07,1
+349,,ozlabs-change1-279922,ozlabs-patch-1248456,"[v2,9/9] travis.yml: install python3 numpy and opencv libraries",2020-03-03T15:06:22,1
+350,,ozlabs-change1-279922,ozlabs-patch-1248903,"[PULL,9/9] travis.yml: install python3 numpy and opencv libraries",2020-03-04T10:01:54,1
+351,91,ozlabs-change1-261366,ozlabs-patch-342596,[07/10] tests: Add es1370 qtest,2014-04-24T12:49:20,1
+352,,ozlabs-change1-261366,ozlabs-patch-345842,"[PULL,16/20] tests: Add es1370 qtest",2014-05-05T19:04:00,1
+353,92,ozlabs-change1-226357,ozlabs-patch-148128,block stream: close unused files and update ->backing_hd,2012-03-22T01:09:45,1
+354,,ozlabs-change1-226357,ozlabs-patch-148846,[v2] block stream: close unused files and update ->backing_hd,2012-03-27T00:22:10,1
+355,,ozlabs-change1-226357,ozlabs-patch-151175,[39/46] block stream: close unused files and update ->backing_hd,2012-04-05T15:52:17,1
+356,93,ozlabs-change1-281453,ozlabs-patch-423540,[3/4] migration: Append JSON description of migration stream,2014-12-22T23:03:43,1
+357,,ozlabs-change1-281453,ozlabs-patch-424131,"[v3,4/5] migration: Append JSON description of migration stream",2014-12-26T14:42:47,1
+358,,ozlabs-change1-281453,ozlabs-patch-431822,"[v4,3/4] migration: Append JSON description of migration stream",2015-01-22T14:01:39,1
+359,,ozlabs-change1-281453,ozlabs-patch-436876,"[PULL,07/10] migration: Append JSON description of migration stream",2015-02-05T16:24:24,1
+360,94,ozlabs-change1-254166,ozlabs-patch-1535471,"[v4,10/11] tests/acpi: add expected blob for VIOT test on virt machine",2021-10-01T17:33:58,1
+361,,ozlabs-change1-254166,ozlabs-patch-1543999,"[v5,11/12] tests/acpi: add expected blob for VIOT test on virt machine",2021-10-20T17:27:45,1
+362,,ozlabs-change1-254166,ozlabs-patch-1566587,"[v7,8/8] tests/acpi: add expected blob for VIOT test on virt machine",2021-12-10T17:04:16,1
+363,,ozlabs-change1-254166,ozlabs-patch-1568195,"[PULL,33/33] tests/acpi: add expected blob for VIOT test on virt machine",2021-12-15T10:40:49,1
+364,95,ozlabs-change1-265591,ozlabs-patch-355144,"[RFC,v1,08/11] qom/cpu: Add Memory Region Property",2014-06-03T02:10:59,1
+365,,ozlabs-change1-265591,ozlabs-patch-382895,"[v1,5/6] qom/cpu: Add Memory Region Property",2014-08-26T00:59:16,1
+366,96,ozlabs-change1-259417,ozlabs-patch-986891,"[v5,04/14] target/mips: Add MXU decoding engine",2018-10-19T16:33:38,1
+367,,ozlabs-change1-259417,ozlabs-patch-988277,"[v6,05/18] target/mips: Add MXU decoding engine",2018-10-23T16:18:16,1
+368,,ozlabs-change1-259417,ozlabs-patch-988603,"[v7,05/20] target/mips: Add MXU decoding engine",2018-10-24T12:18:32,1
+369,,ozlabs-change1-259417,ozlabs-patch-990129,"[v8,05/20] target/mips: Add MXU decoding engine",2018-10-29T11:25:13,1
+370,,ozlabs-change1-259417,ozlabs-patch-990320,"[PULL,06/27] target/mips: Add MXU decoding engine",2018-10-29T15:19:57,1
+371,97,ozlabs-change1-350080,ozlabs-patch-334768,"[v5,32/37] target-arm: Implement RVBAR register",2014-03-28T16:10:19,1
+372,,ozlabs-change1-350080,ozlabs-patch-338158,"[v6,32/37] target-arm: Implement RVBAR register",2014-04-10T16:15:31,1
+373,,ozlabs-change1-350080,ozlabs-patch-339886,"[PULL,31/51] target-arm: Implement RVBAR register",2014-04-17T10:33:46,1
+374,98,ozlabs-change1-275547,ozlabs-patch-143094,[6/6] usb-ehci: Handle ISO packets failing with an error other then NAK,2012-02-26T15:14:48,1
+375,,ozlabs-change1-275547,ozlabs-patch-143404,[14/21] usb-ehci: Handle ISO packets failing with an error other then NAK,2012-02-28T10:20:23,1
+376,99,ozlabs-change1-310767,ozlabs-patch-755722,"[v10,04/17] qcow2: Optimize zero_single_l2() to minimize L2 churn",2017-04-27T01:46:13,1
+377,,ozlabs-change1-310767,ozlabs-patch-758310,"[v12,05/10] qcow2: Optimize zero_single_l2() to minimize L2 churn",2017-05-04T03:07:50,1
+378,,ozlabs-change1-310767,ozlabs-patch-759381,"[v13,07/12] qcow2: Optimize zero_single_l2() to minimize L2 churn",2017-05-07T00:05:47,1
+379,,ozlabs-change1-310767,ozlabs-patch-761179,"[PULL,52/58] qcow2: Optimize zero_single_l2() to minimize L2 churn",2017-05-11T14:32:55,1
+380,100,ozlabs-change1-325053,ozlabs-patch-1289177,[08/12] target/mips: fpu: Demacro NMADD.<D|S|PS>,2020-05-13T10:53:03,1
+381,,ozlabs-change1-325053,ozlabs-patch-1290642,"[v2,08/17] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-05-14T19:20:38,1
+382,,ozlabs-change1-325053,ozlabs-patch-1291931,"[v3,08/18] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-05-16T17:45:38,1
+383,,ozlabs-change1-325053,ozlabs-patch-1292100,"[v4,08/19] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-05-17T09:23:46,1
+384,,ozlabs-change1-325053,ozlabs-patch-1292755,"[v5,09/22] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-05-18T19:41:36,1
+385,,ozlabs-change1-325053,ozlabs-patch-1292788,"[v6,08/21] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-05-18T20:09:07,1
+386,,ozlabs-change1-325053,ozlabs-patch-1304871,"[PULL,10/21] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-06-07T19:46:14,1
+387,,ozlabs-change1-325053,ozlabs-patch-1306100,"[PULL,10/20] target/mips: fpu: Demacro NMADD.<D|S|PS>",2020-06-09T16:28:28,1
+388,101,ozlabs-change1-244769,ozlabs-patch-342638,[06/10] tests: Add ac97 qtest,2014-04-24T12:49:19,1
+389,,ozlabs-change1-244769,ozlabs-patch-345848,"[PULL,15/20] tests: Add ac97 qtest",2014-05-05T19:03:59,1
+390,102,ozlabs-change1-308824,ozlabs-patch-33101,[17/23] convert vc chardev to QemuOpts.,2009-09-07T16:06:19,1
+391,,ozlabs-change1-308824,ozlabs-patch-33288,"[v2,17/23] convert vc chardev to QemuOpts.",2009-09-10T08:58:49,1
+392,103,ozlabs-change1-321233,ozlabs-patch-1365070,"meson: qtest: set ""depends"" correctly",2020-09-16T09:04:22,1
+393,,ozlabs-change1-321233,ozlabs-patch-1367668,"[PULL,38/57] meson: qtest: set ""depends"" correctly",2020-09-19T15:58:57,1
+394,,ozlabs-change1-321233,ozlabs-patch-1370530,"[PULL,36/92] meson: qtest: set ""depends"" correctly",2020-09-24T09:22:18,1
+395,104,ozlabs-change1-309659,ozlabs-patch-211003,"[1/2] qxl: Fix SPICE_RING_PROD_ITEM(), SPICE_RING_CONS_ITEM() sanity check",2013-01-10T13:24:49,1
+396,,ozlabs-change1-309659,ozlabs-patch-211768,"[1/2] qxl: Fix SPICE_RING_PROD_ITEM(), SPICE_RING_CONS_ITEM() sanity check",2013-01-14T11:46:34,1
+397,105,ozlabs-change1-243558,ozlabs-patch-225252,[10/12] linux-user: Add signal handling for AArch64,2013-03-06T02:01:18,1
+398,,ozlabs-change1-243558,ozlabs-patch-240564,"[v2,09/12] linux-user: Add signal handling for AArch64",2013-04-30T06:38:38,1
+399,,ozlabs-change1-243558,ozlabs-patch-243295,"[v3,09/12] linux-user: Add signal handling for AArch64",2013-05-13T06:29:14,1
+400,,ozlabs-change1-243558,ozlabs-patch-243312,"[v3,resend,08/11] linux-user: Add signal handling for AArch64",2013-05-13T06:57:55,1
+401,,ozlabs-change1-243558,ozlabs-patch-243595,"[v4,09/12] linux-user: Add signal handling for AArch64",2013-05-14T04:32:57,1
+402,,ozlabs-change1-243558,ozlabs-patch-256189,"[v5,13/21] linux-user: Add signal handling for AArch64",2013-07-01T17:35:12,1
+403,,ozlabs-change1-243558,ozlabs-patch-272378,"[v6,16/24] linux-user: Add signal handling for AArch64",2013-09-03T19:12:16,1
+404,,ozlabs-change1-243558,ozlabs-patch-274025,"[PULL,22/28] linux-user: Add signal handling for AArch64",2013-09-10T18:52:16,1
+405,106,ozlabs-change1-351850,ozlabs-patch-363594,[3/4] machine: Introduce QEMU_COMPAT_* macros,2014-06-24T18:02:03,1
+406,,ozlabs-change1-351850,ozlabs-patch-363805,"[v2,2/2] machine: Introduce QEMU_COMPAT_* macros",2014-06-25T02:04:45,1
+407,107,ozlabs-change1-287733,ozlabs-patch-296193,"[RFC,V3,6/7] block: Create authorizations mechanism for external snapshots.",2013-12-03T13:26:04,1
+408,,ozlabs-change1-287733,ozlabs-patch-297212,"[V4,6/7] block: Create authorizations mechanism for external snapshots.",2013-12-05T17:15:02,1
+409,108,ozlabs-change1-291111,ozlabs-patch-125558,"[1.1,2/6] block: simplify failure handling for bdrv_aio_multiwrite",2011-11-14T16:50:50,1
+410,,ozlabs-change1-291111,ozlabs-patch-131659,[02/14] block: simplify failure handling for bdrv_aio_multiwrite,2011-12-15T14:09:17,1
+411,109,ozlabs-change1-249153,ozlabs-patch-259175,seccomp: add additional asynchronous I/O syscalls,2013-07-15T19:32:01,1
+412,,ozlabs-change1-249153,ozlabs-patch-266849,[47/56] seccomp: add additional asynchronous I/O syscalls,2013-08-13T15:11:11,1
+413,110,ozlabs-change1-239675,ozlabs-patch-506610,qemu-thread: add a fast path to the Win32 QemuEvent,2015-08-12T13:38:18,1
+414,,ozlabs-change1-239675,ozlabs-patch-522559,"[PULL,3/5] qemu-thread: add a fast path to the Win32 QemuEvent",2015-09-24T20:16:06,1
+415,111,ozlabs-change1-320601,ozlabs-patch-927836,Remove COPYING.PYTHON,2018-06-11T18:01:52,1
+416,,ozlabs-change1-320601,ozlabs-patch-930162,"[PULL,1/7] Remove COPYING.PYTHON",2018-06-15T19:13:21,1
+417,112,ozlabs-change1-318992,ozlabs-patch-986423,"[RFC,v3,19/56] xtensa: convert to cpu_halted",2018-10-19T01:05:48,1
+418,,ozlabs-change1-318992,ozlabs-patch-989170,"[RFC,v4,26/71] xtensa: convert to cpu_halted",2018-10-25T14:45:59,1
+419,,ozlabs-change1-318992,ozlabs-patch-1012546,"[v5,27/73] xtensa: convert to cpu_halted",2018-12-13T05:04:07,1
+420,,ozlabs-change1-318992,ozlabs-patch-1033087,"[v6,27/73] xtensa: convert to cpu_halted",2019-01-30T00:47:25,1
+421,,ozlabs-change1-318992,ozlabs-patch-1051268,"[v7,27/73] xtensa: convert to cpu_halted",2019-03-04T18:17:27,1
+422,,ozlabs-change1-318992,ozlabs-patch-1262230,"[v8,28/74] xtensa: convert to cpu_halted",2020-03-26T19:31:10,1
+423,,ozlabs-change1-318992,ozlabs-patch-1295385,"[v9,28/74] xtensa: convert to cpu_halted",2020-05-21T16:39:25,1
+424,,ozlabs-change1-318992,ozlabs-patch-1311542,"[v10,27/73] xtensa: convert to cpu_halted",2020-06-17T21:01:45,1
+425,113,ozlabs-change1-321265,ozlabs-patch-842285,"[v1,for-2.12,07/15] s390x: handle exceptions during s390_cpu_virt_mem_rw() correctly (TCG)",2017-11-28T20:33:17,1
+426,,ozlabs-change1-321265,ozlabs-patch-842738,"[v2,for-2.12,07/16] s390x: handle exceptions during s390_cpu_virt_mem_rw() correctly (TCG)",2017-11-29T20:26:52,1
+427,,ozlabs-change1-321265,ozlabs-patch-843083,"[v3,for-2.12,07/16] s390x: handle exceptions during s390_cpu_virt_mem_rw() correctly (TCG)",2017-11-30T16:27:35,1
+428,,ozlabs-change1-321265,ozlabs-patch-848687,"[PULL,12/46] s390x: handle exceptions during s390_cpu_virt_mem_rw() correctly (TCG)",2017-12-14T17:09:30,1
+429,114,ozlabs-change1-241331,ozlabs-patch-1001447,"[v2,for-3.2,v2,13/30] build-sys: use a seperate slirp-obj-y && slirp.mo",2018-11-21T22:06:30,1
+430,,ozlabs-change1-241331,ozlabs-patch-1015750,"[PULL,61/64] build-sys: use a seperate slirp-obj-y && slirp.mo",2018-12-18T23:04:39,1
+431,,ozlabs-change1-241331,ozlabs-patch-1024250,"[PULL,61/65] build-sys: use a seperate slirp-obj-y && slirp.mo",2019-01-14T00:03:22,1
+432,115,ozlabs-change1-335326,ozlabs-patch-789372,"[v4,3/6] migration/rdma: fix qemu_rdma_block_for_wrid error paths",2017-07-17T11:09:33,1
+433,,ozlabs-change1-335326,ozlabs-patch-790364,"[PULL,03/16] migration/rdma: fix qemu_rdma_block_for_wrid error paths",2017-07-18T15:41:14,1
+434,116,ozlabs-change1-338195,ozlabs-patch-1130908,"[RFC,v4,20/29] vfio/pci: Register handler for iommu fault",2019-07-11T17:28:36,1
+435,,ozlabs-change1-338195,ozlabs-patch-1130936,"[RFC,v5,20/29] vfio/pci: Register handler for iommu fault",2019-07-11T17:39:24,1
+436,,ozlabs-change1-338195,ozlabs-patch-1259101,"[RFC,v6,15/24] vfio/pci: Register handler for iommu fault",2020-03-20T16:58:31,1
+437,,ozlabs-change1-338195,ozlabs-patch-1401090,"[RFC,v7,15/26] vfio/pci: Register handler for iommu fault",2020-11-16T18:13:38,1
+438,,ozlabs-change1-338195,ozlabs-patch-1444309,"[RFC,v8,17/28] vfio/pci: Register handler for iommu fault",2021-02-25T10:52:22,1
+439,,ozlabs-change1-338195,ozlabs-patch-1464813,"[RFC,v9,18/29] vfio/pci: Register handler for iommu fault",2021-04-11T12:09:01,1
+440,117,ozlabs-change1-301546,ozlabs-patch-509316,"[v13r,10/14] target-tilegx: Framework for decoding bundles",2015-08-21T05:32:40,1
+441,,ozlabs-change1-301546,ozlabs-patch-510162,"[v14,11/33] target-tilegx: Framework for decoding bundles",2015-08-24T16:17:37,1
+442,,ozlabs-change1-301546,ozlabs-patch-513765,"[v15,11/33] target-tilegx: Framework for decoding bundles",2015-09-03T01:31:03,1
+443,,ozlabs-change1-301546,ozlabs-patch-517617,"[v16,11/35] target-tilegx: Framework for decoding bundles",2015-09-14T22:43:18,1
+444,,ozlabs-change1-301546,ozlabs-patch-517928,"[PULL,11/35] target-tilegx: Framework for decoding bundles",2015-09-15T15:03:49,1
+445,118,ozlabs-change1-274644,ozlabs-patch-1601333,"[v3,5/5] tests/tcg/ppc64le: Use Altivec register names in clobber list",2022-03-04T16:54:17,1
+446,,ozlabs-change1-274644,ozlabs-patch-1601532,"[PULL,06/13] tests/tcg/ppc64le: Use Altivec register names in clobber list",2022-03-05T11:00:03,1
+447,119,ozlabs-change1-231684,ozlabs-patch-274778,"[v2,uq/master,2/2] x86: cpuid: reconstruct leaf 0Dh data",2013-09-13T13:55:58,1
+448,,ozlabs-change1-231684,ozlabs-patch-279799,"[v3,uq/master,2/2] x86: cpuid: reconstruct leaf 0Dh data",2013-10-02T15:54:57,1
+449,,ozlabs-change1-231684,ozlabs-patch-284625,"[PULL,2/3] x86: cpuid: reconstruct leaf 0Dh data",2013-10-18T15:04:00,1
+450,120,ozlabs-change1-309774,ozlabs-patch-1390279,"[v2,1/7] virtiofsd: Check FUSE_SUBMOUNTS",2020-10-29T17:17:38,1
+451,,ozlabs-change1-309774,ozlabs-patch-1392361,"[v3,1/7] virtiofsd: Check FUSE_SUBMOUNTS",2020-11-02T16:18:53,1
+452,,ozlabs-change1-309774,ozlabs-patch-1392499,"[PULL,06/12] virtiofsd: Check FUSE_SUBMOUNTS",2020-11-02T19:56:51,1
+453,121,ozlabs-change1-341632,ozlabs-patch-291231,smc91c111: Fix receive starvation,2013-11-14T13:53:46,1
+454,,ozlabs-change1-341632,ozlabs-patch-291606,"[PULL,1/1] smc91c111: Fix receive starvation",2013-11-15T16:13:52,1
+455,,ozlabs-change1-341632,ozlabs-patch-292377,"[PULL,for-1.7,1/2] smc91c111: Fix receive starvation",2013-11-19T12:41:47,1
+456,122,ozlabs-change1-339766,ozlabs-patch-1493782,[2/9] target/mips: Fix more TCG temporary leaks in gen_pool32a5_nanomips_insn,2021-06-17T17:43:16,1
+457,,ozlabs-change1-339766,ozlabs-patch-1497169,"[PULL,03/15] target/mips: Fix more TCG temporary leaks in gen_pool32a5_nanomips_insn",2021-06-25T09:23:17,1
+458,123,ozlabs-change1-354382,ozlabs-patch-855011,"[v2,04/13] migration: split use of MigrationState.total_time",2018-01-03T12:20:08,1
+459,,ozlabs-change1-354382,ozlabs-patch-860842,"[PULL,18/27] migration: split use of MigrationState.total_time",2018-01-15T11:53:00,1
+460,124,ozlabs-change1-265690,ozlabs-patch-830498,"[v2,06/10] tests: Add migration precopy test",2017-10-26T07:52:18,1
+461,,ozlabs-change1-265690,ozlabs-patch-843659,"[v3,3/6] tests: Add migration precopy test",2017-12-01T12:58:10,1
+462,,ozlabs-change1-265690,ozlabs-patch-856261,"[v4,06/11] tests: Add migration precopy test",2018-01-05T21:52:41,1
+463,,ozlabs-change1-265690,ozlabs-patch-867077,"[PULL,10/13] tests: Add migration precopy test",2018-01-29T12:09:29,1
+464,,ozlabs-change1-265690,ozlabs-patch-882540,"[v10,01/24] tests: Add migration precopy test",2018-03-07T10:59:47,1
+465,,ozlabs-change1-265690,ozlabs-patch-894936,"[v7,2/8] tests: Add migration precopy test",2018-04-04T11:27:25,1
+466,,ozlabs-change1-265690,ozlabs-patch-904133,"[v8,2/8] tests: Add migration precopy test",2018-04-25T11:19:34,1
+467,,ozlabs-change1-265690,ozlabs-patch-910769,"[PULL,02/41] tests: Add migration precopy test",2018-05-09T11:23:27,1
+468,,ozlabs-change1-265690,ozlabs-patch-914020,"[PULL,02/40] tests: Add migration precopy test",2018-05-15T23:39:39,1
+469,125,ozlabs-change1-294600,ozlabs-patch-1053712,bitmaps: Fix typo in function name,2019-03-08T20:58:45,1
+470,,ozlabs-change1-294600,ozlabs-patch-1055759,"[PULL,18/22] bitmaps: Fix typo in function name",2019-03-12T20:23:33,1
+471,126,ozlabs-change1-233097,ozlabs-patch-73064,[2/5] scsi-disk: support WRITE SAME (16) with unmap bit,2010-11-25T13:57:18,1
+472,,ozlabs-change1-233097,ozlabs-patch-73834,[2/5] scsi-disk: support WRITE SAME (16) with unmap bit,2010-12-01T15:35:23,1
+473,,ozlabs-change1-233097,ozlabs-patch-75100,[2/7] scsi-disk: support WRITE SAME (16) with unmap bit,2010-12-10T15:00:55,1
+474,,ozlabs-change1-233097,ozlabs-patch-75789,[2/3] scsi-disk: support WRITE SAME (16) with unmap bit,2010-12-16T18:36:43,1
+475,,ozlabs-change1-233097,ozlabs-patch-75954,[27/38] scsi-disk: support WRITE SAME (16) with unmap bit,2010-12-17T17:44:42,1
+476,127,ozlabs-change1-264248,ozlabs-patch-958662,[9/9] hmp-commands-info: add sync-profile,2018-08-17T05:18:53,1
+477,,ozlabs-change1-264248,ozlabs-patch-960648,"[PULL,26/74] hmp-commands-info: add sync-profile",2018-08-21T17:01:58,1
+478,128,ozlabs-change1-245501,ozlabs-patch-1300086,"[v7,5/8] qdev-properties: make blocksize accept size suffixes",2020-05-28T21:39:43,1
+479,,ozlabs-change1-245501,ozlabs-patch-1300155,"[v8,5/8] qdev-properties: make blocksize accept size suffixes",2020-05-28T22:55:13,1
+480,,ozlabs-change1-245501,ozlabs-patch-1311311,"[PULL,34/43] qdev-properties: make blocksize accept size suffixes",2020-06-17T14:49:00,1
+481,129,ozlabs-change1-240117,ozlabs-patch-109604,[5/5] usb-redir: Don't try to write to the chardev after a close event,2011-08-11T12:25:15,1
+482,,ozlabs-change1-240117,ozlabs-patch-126533,[5/5] usb-redir: Don't try to write to the chardev after a close event,2011-11-19T09:22:47,1
+483,130,ozlabs-change1-353044,ozlabs-patch-824832,[24/31] qcow2: Update qcow2_update_snapshot_refcount() to support L2 slices,2017-10-12T13:05:38,1
+484,,ozlabs-change1-353044,ozlabs-patch-866410,"[v3,27/39] qcow2: Update qcow2_update_snapshot_refcount() to support L2 slices",2018-01-26T14:59:54,1
+485,,ozlabs-change1-353044,ozlabs-patch-869339,"[v4,27/39] qcow2: Update qcow2_update_snapshot_refcount() to support L2 slices",2018-02-05T14:33:27,1
+486,,ozlabs-change1-353044,ozlabs-patch-873077,"[PULL,43/55] qcow2: Update qcow2_update_snapshot_refcount() to support L2 slices",2018-02-13T17:05:17,1
+487,131,ozlabs-change1-278817,ozlabs-patch-313642,ppcemb-softmmu: Drop Mac and e500 emulation,2014-01-23T15:40:28,1
+488,,ozlabs-change1-278817,ozlabs-patch-319051,"[PULL,03/48] ppcemb-softmmu: Drop Mac and e500 emulation",2014-02-10T18:36:20,1
+489,,ozlabs-change1-278817,ozlabs-patch-321175,"[PULL,v2,02/49] ppcemb-softmmu: Drop Mac and e500 emulation",2014-02-17T22:24:12,1
+490,132,ozlabs-change1-261387,ozlabs-patch-951482,[2/2] s390x/kvm: add etoken facility,2018-07-31T09:04:48,1
+491,,ozlabs-change1-261387,ozlabs-patch-959689,"[PULL,6/7] s390x/kvm: add etoken facility",2018-08-20T12:53:40,1
+492,133,ozlabs-change1-280660,ozlabs-patch-509548,"[v2,44/49] wavaudio: port to the new audio backend api",2015-08-21T15:37:40,1
+493,,ozlabs-change1-280660,ozlabs-patch-567476,[36/51] wavaudio: port to the new audio backend api,2016-01-14T13:45:49,1
+494,,ozlabs-change1-280660,ozlabs-patch-1018123,"[v2,37/52] wavaudio: port to the new audio backend api",2018-12-23T20:52:13,1
+495,,ozlabs-change1-280660,ozlabs-patch-1026304,"[v3,35/50] wavaudio: port to the new audio backend api",2019-01-16T23:37:08,1
+496,,ozlabs-change1-280660,ozlabs-patch-1152867,[10/25] wavaudio: port to the new audio backend api,2019-08-25T18:46:12,1
+497,,ozlabs-change1-280660,ozlabs-patch-1159544,"[v2,10/24] wavaudio: port to the new audio backend api",2019-09-08T21:22:10,1
+498,,ozlabs-change1-280660,ozlabs-patch-1162510,"[v3,10/24] wavaudio: port to the new audio backend api",2019-09-15T19:23:26,1
+499,,ozlabs-change1-280660,ozlabs-patch-1164413,"[PULL,10/26] wavaudio: port to the new audio backend api",2019-09-19T08:36:13,1
+500,,ozlabs-change1-280660,ozlabs-patch-1164891,"[v4,10/24] wavaudio: port to the new audio backend api",2019-09-19T21:24:18,1
+501,,ozlabs-change1-280660,ozlabs-patch-1166336,"[PULL,12/16] wavaudio: port to the new audio backend api",2019-09-24T06:19:47,1
+502,134,ozlabs-change1-267007,ozlabs-patch-1405074,[01/21] tests/test-bdrv-graph-mod: add test_parallel_exclusive_write,2020-11-23T20:12:12,1
+503,,ozlabs-change1-267007,ozlabs-patch-1407261,"[v2,01/36] tests/test-bdrv-graph-mod: add test_parallel_exclusive_write",2020-11-27T14:44:47,1
+504,,ozlabs-change1-267007,ozlabs-patch-1454706,"[v3,01/36] tests/test-bdrv-graph-mod: add test_parallel_exclusive_write",2021-03-17T14:34:54,1
+505,,ozlabs-change1-267007,ozlabs-patch-1471254,"[v4,01/36] tests/test-bdrv-graph-mod: add test_parallel_exclusive_write",2021-04-28T15:17:29,1
+506,,ozlabs-change1-267007,ozlabs-patch-1472136,"[PULL,01/39] tests/test-bdrv-graph-mod: add test_parallel_exclusive_write",2021-04-30T10:51:09,1
+507,135,ozlabs-change1-342216,ozlabs-patch-825582,"[RFC,06/30] fpu/softfloat: implement float16_squash_input_denormal",2017-10-13T16:24:14,1
+508,,ozlabs-change1-342216,ozlabs-patch-846968,"[v1,01/19] fpu/softfloat: implement float16_squash_input_denormal",2017-12-11T12:56:47,1
+509,,ozlabs-change1-342216,ozlabs-patch-865341,"[v3,01/22] fpu/softfloat: implement float16_squash_input_denormal",2018-01-24T13:12:54,1
+510,,ozlabs-change1-342216,ozlabs-patch-869900,"[v4,01/22] fpu/softfloat: implement float16_squash_input_denormal",2018-02-06T16:47:54,1
+511,,ozlabs-change1-342216,ozlabs-patch-876027,"[PULL,01/22] fpu/softfloat: implement float16_squash_input_denormal",2018-02-21T11:05:01,1
+512,136,ozlabs-change1-234744,ozlabs-patch-1500618,[06/14] iotest 302: use img_info_log() helper,2021-07-05T09:15:41,1
+513,,ozlabs-change1-234744,ozlabs-patch-1507478,"[v2,09/17] iotest 302: use img_info_log() helper",2021-07-20T11:38:24,1
+514,,ozlabs-change1-234744,ozlabs-patch-1527834,"[v3,09/17] iotest 302: use img_info_log() helper",2021-09-14T10:25:39,1
+515,,ozlabs-change1-234744,ozlabs-patch-1563232,"[v4,09/19] iotest 302: use img_info_log() helper",2021-12-03T13:07:27,1
+516,,ozlabs-change1-234744,ozlabs-patch-1572793,"[v5,11/19] iotest 302: use img_info_log() helper",2021-12-23T16:01:36,1
+517,,ozlabs-change1-234744,ozlabs-patch-1587300,"[PULL,13/24] iotest 302: use img_info_log() helper",2022-02-01T14:42:22,1
+518,137,ozlabs-change1-283852,ozlabs-patch-1466223,"[RFC,v13,75/80] target/arm: move arm_cpu_finalize_features into cpu64",2021-04-14T11:26:45,1
+519,,ozlabs-change1-283852,ozlabs-patch-1467211,"[RFC,v14,75/80] target/arm: move arm_cpu_finalize_features into cpu64",2021-04-16T16:28:19,1
+520,,ozlabs-change1-283852,ozlabs-patch-1487858,"[v16,87/99] target/arm: move arm_cpu_finalize_features into cpu64",2021-06-04T15:53:00,1
+521,138,ozlabs-change1-235845,ozlabs-patch-1452488,edid: add support for DisplayID extension (5k resolution),2021-03-13T10:44:32,1
+522,,ozlabs-change1-235845,ozlabs-patch-1452649,[v2] edid: add support for DisplayID extension (5k resolution),2021-03-14T09:12:36,1
+523,,ozlabs-change1-235845,ozlabs-patch-1453235,"[v3,3/3] edid: add support for DisplayID extension (5k resolution)",2021-03-15T11:46:39,1
+524,,ozlabs-change1-235845,ozlabs-patch-1453950,[9/9] edid: add support for DisplayID extension (5k resolution),2021-03-16T14:38:12,1
+525,,ozlabs-change1-235845,ozlabs-patch-1470719,"[v2,8/8] edid: add support for DisplayID extension (5k resolution)",2021-04-27T15:08:24,1
+526,,ozlabs-change1-235845,ozlabs-patch-1476422,"[PULL,08/25] edid: add support for DisplayID extension (5k resolution)",2021-05-10T13:20:34,1
+527,139,ozlabs-change1-299981,ozlabs-patch-672894,"[for,v2.6.0] net: imx: check buffer descriptor length",2016-09-21T13:45:25,1
+528,,ozlabs-change1-299981,ozlabs-patch-672975,"[for,v2.6.0] net: imx: check buffer descriptor length",2016-09-21T16:48:09,1
+529,140,ozlabs-change1-297910,ozlabs-patch-1467997,[for-6.0] migration: Drop redundant query-migrate result @blocked,2021-04-19T16:27:32,1
+530,,ozlabs-change1-297910,ozlabs-patch-1468172,[v2] migration: Drop redundant query-migrate result @blocked,2021-04-20T05:19:07,1
+531,,ozlabs-change1-297910,ozlabs-patch-1471739,[v3] migration: Drop redundant query-migrate result @blocked,2021-04-29T14:04:24,1
+532,,ozlabs-change1-297910,ozlabs-patch-1477186,"[PULL,04/17] migration: Drop redundant query-migrate result @blocked",2021-05-11T15:08:29,1
+533,,ozlabs-change1-297910,ozlabs-patch-1478158,"[PULL,04/17] migration: Drop redundant query-migrate result @blocked",2021-05-13T17:37:24,1
+534,141,ozlabs-change1-304398,ozlabs-patch-1044650,[1/8] hw/misc/armsse-mhu.c: Model the SSE-200 Message Handling Unit,2019-02-19T12:58:01,1
+535,,ozlabs-change1-304398,ozlabs-patch-1049377,"[PULL,01/16] hw/misc/armsse-mhu.c: Model the SSE-200 Message Handling Unit",2019-02-28T11:08:20,1
+536,142,ozlabs-change1-231603,ozlabs-patch-316121,qemu-iotest: Make 077 raw-only,2014-02-03T10:32:30,1
+537,,ozlabs-change1-231603,ozlabs-patch-318535,"[PULL,01/18] qemu-iotest: Make 077 raw-only",2014-02-09T08:46:13,1
+538,143,ozlabs-change1-340372,ozlabs-patch-771914,[2/3] target/ppc: fix memory leak in kvmppc_is_mem_backend_page_size_ok(),2017-06-06T15:22:53,1
+539,,ozlabs-change1-340372,ozlabs-patch-773631,"[PULL,02/20] target/ppc: fix memory leak in kvmppc_is_mem_backend_page_size_ok()",2017-06-09T05:26:34,1
+540,,ozlabs-change1-340372,ozlabs-patch-778730,"[for-2.9,stable] target/ppc: fix memory leak in kvmppc_is_mem_backend_page_size_ok()",2017-06-21T09:34:44,1
+541,,ozlabs-change1-340372,ozlabs-patch-806855,[53/79] target/ppc: fix memory leak in kvmppc_is_mem_backend_page_size_ok(),2017-08-29T00:14:28,1
+542,144,ozlabs-change1-291340,ozlabs-patch-124970,"[v2,2/3] block: Introduce bdrv_co_flush_to_os",2011-11-10T17:32:15,1
+543,,ozlabs-change1-291340,ozlabs-patch-125247,[15/16] block: Introduce bdrv_co_flush_to_os,2011-11-11T17:39:27,1
+544,145,ozlabs-change1-275400,ozlabs-patch-243011,"[V2,1/2] hw/arm/exynos4210.c: convert chipid_and_omr to an mmio region",2013-05-10T15:33:00,1
+545,,ozlabs-change1-275400,ozlabs-patch-248375,"[PULL,22/24] hw/arm/exynos4210.c: convert chipid_and_omr to an mmio region",2013-06-03T16:30:19,1
+546,146,ozlabs-change1-353169,ozlabs-patch-464169,[1/5] tests: Link libqos virtio object to virtio-scsi-test,2015-04-24T10:53:20,1
+547,,ozlabs-change1-353169,ozlabs-patch-464181,"[v2,1/5] tests: Link libqos virtio object to virtio-scsi-test",2015-04-24T11:35:16,1
+548,,ozlabs-change1-353169,ozlabs-patch-486596,"[PULL,07/15] tests: Link libqos virtio object to virtio-scsi-test",2015-06-19T07:45:28,1
+549,147,ozlabs-change1-249918,ozlabs-patch-1142968,"[v3,03/14] migration.json: add AMD SEV specific migration parameters",2019-08-06T16:54:48,1
+550,,ozlabs-change1-249918,ozlabs-patch-1513395,"[v4,03/14] migration.json: add AMD SEV specific migration parameters",2021-08-04T11:54:43,1
+551,148,ozlabs-change1-293220,ozlabs-patch-670214,[3/7] e1000e: Fix CTRL_EXT.EIAME behavior,2016-09-15T06:14:26,1
+552,,ozlabs-change1-293220,ozlabs-patch-675047,"[PULL,20/27] e1000e: Fix CTRL_EXT.EIAME behavior",2016-09-26T08:59:28,1
+553,,ozlabs-change1-293220,ozlabs-patch-675506,"[PULL,V2,20/27] e1000e: Fix CTRL_EXT.EIAME behavior",2016-09-27T10:13:00,1
+554,149,ozlabs-change1-339494,ozlabs-patch-1677778,[1/1] s390x/tcg: Fix opcode for lzrf,2022-09-14T10:57:50,1
+555,,ozlabs-change1-339494,ozlabs-patch-1682757,"[PULL,01/14] s390x/tcg: Fix opcode for lzrf",2022-09-26T17:07:51,1
+556,150,ozlabs-change1-325440,ozlabs-patch-814670,[5/8] ppc/mac: More rework of the DBDMA emulation,2017-09-17T17:15:45,1
+557,,ozlabs-change1-325440,ozlabs-patch-819011,"[PULL,09/26] ppc/mac: More rework of the DBDMA emulation",2017-09-27T07:42:59,1
+558,151,ozlabs-change1-250187,ozlabs-patch-435425,"[v4,06/13] arch_init: Add and free data struct for decompression",2015-02-02T11:05:42,1
+559,,ozlabs-change1-250187,ozlabs-patch-438656,"[v5,06/12] arch_init: Add and free data struct for decompression",2015-02-11T03:06:20,1
+560,,ozlabs-change1-250187,ozlabs-patch-453325,"[v6,06/14] arch_init: Add and free data struct for decompression",2015-03-23T08:32:21,1
+561,,ozlabs-change1-250187,ozlabs-patch-459103,"[v7,06/14] arch_init: Add and free data struct for decompression",2015-04-08T06:20:03,1
+562,,ozlabs-change1-250187,ozlabs-patch-461448,"[v8,06/14] arch_init: Add and free data struct for decompression",2015-04-15T09:26:15,1
+563,,ozlabs-change1-250187,ozlabs-patch-469083,"[PULL,06/15] arch_init: Add and free data struct for decompression",2015-05-06T17:49:55,1
+564,,ozlabs-change1-250187,ozlabs-patch-469612,"[PULL,06/16] arch_init: Add and free data struct for decompression",2015-05-07T11:50:34,1
+565,,ozlabs-change1-250187,ozlabs-patch-469742,"[PULL,06/16] arch_init: Add and free data struct for decompression",2015-05-07T16:46:06,1
+566,152,ozlabs-change1-280780,ozlabs-patch-864575,"[v3,08/18] sdcard: use the registerfields API for the CARD_STATUS register masks",2018-01-23T03:30:24,1
+567,,ozlabs-change1-280780,ozlabs-patch-874179,"[v4,08/20] sdcard: use the registerfields API for the CARD_STATUS register masks",2018-02-15T22:13:13,1
+568,153,ozlabs-change1-281612,ozlabs-patch-760267,[13/17] qdev: use appropriate getter/setters type,2017-05-09T17:35:55,1
+569,,ozlabs-change1-281612,ozlabs-patch-769176,"[v2,21/45] qdev: use appropriate getter/setters type",2017-05-31T13:56:45,1
+570,,ozlabs-change1-281612,ozlabs-patch-772552,"[v3,19/43] qdev: use appropriate getter/setters type",2017-06-07T16:36:11,1
+571,,ozlabs-change1-281612,ozlabs-patch-773984,"[PULL,19/41] qdev: Use appropriate getter/setters type",2017-06-09T13:47:03,1
+572,,ozlabs-change1-281612,ozlabs-patch-778292,"[PULL,v2,19/41] qdev: Use appropriate getter/setters type",2017-06-20T12:40:46,1
+573,154,ozlabs-change1-234187,ozlabs-patch-1075272,[4/7] iotests: Update 241 to expose backing layer fragmentation,2019-04-03T03:05:23,1
+574,,ozlabs-change1-234187,ozlabs-patch-1441879,[1/5] iotests: Update 241 to expose backing layer fragmentation,2021-02-18T20:15:24,1
+575,155,ozlabs-change1-269635,ozlabs-patch-48068,[06/11] error: Drop extra messages after qemu_opts_set() and qemu_opts_parse(),2010-03-18T16:33:13,1
+576,,ozlabs-change1-269635,ozlabs-patch-48272,"[v2,06/11] error: Drop extra messages after qemu_opts_set() and qemu_opts_parse()",2010-03-22T09:48:48,1
+577,,ozlabs-change1-269635,ozlabs-patch-48544,"[v3,06/11] error: Drop extra messages after qemu_opts_set() and qemu_opts_parse()",2010-03-25T16:22:35,1
+578,,ozlabs-change1-269635,ozlabs-patch-49438,[09/21] error: Drop extra messages after qemu_opts_set() and qemu_opts_parse(),2010-04-05T20:33:50,1
+579,156,ozlabs-change1-326492,ozlabs-patch-299321,"[v3,5/5] spapr: define interface to fix device pathname",2013-12-10T07:32:37,1
+580,,ozlabs-change1-326492,ozlabs-patch-299916,"[v4,8/8] spapr: define interface to fix device pathname",2013-12-11T10:22:21,1
+581,,ozlabs-change1-326492,ozlabs-patch-322194,"[v5,6/6] spapr: define interface to fix device pathname",2014-02-20T13:50:46,1
+582,,ozlabs-change1-326492,ozlabs-patch-330750,"[v7,6/6] spapr: define interface to fix device pathname",2014-03-17T02:40:27,1
+583,157,ozlabs-change1-267597,ozlabs-patch-875758,[1/2] roms: Added git submodule for u-boot-sam460 (firmware for sam460ex),2018-02-20T17:55:32,1
+584,,ozlabs-change1-267597,ozlabs-patch-880482,"[v2,1/2] roms: Added git submodule for u-boot-sam460 (firmware for sam460ex)",2018-03-02T11:50:14,1
+585,,ozlabs-change1-267597,ozlabs-patch-881894,"[PULL,04/30] roms: Added git submodule for u-boot-sam460 (firmware for sam460ex)",2018-03-06T04:01:28,1
+586,158,ozlabs-change1-296143,ozlabs-patch-1473663,"[v2,2/9] block: drop write notifiers",2021-05-04T08:25:46,1
+587,,ozlabs-change1-296143,ozlabs-patch-1474869,"[v3,2/8] block: drop write notifiers",2021-05-06T09:06:15,1
+588,,ozlabs-change1-296143,ozlabs-patch-1478621,"[PULL,14/19] block: drop write notifiers",2021-05-14T16:45:09,1
+589,159,ozlabs-change1-282335,ozlabs-patch-1416238,[01/12] qapi/commands: assert arg_type is not None,2020-12-14T23:53:16,1
+590,,ozlabs-change1-282335,ozlabs-patch-1417458,"[v2,01/12] qapi/commands: assert arg_type is not None",2020-12-17T01:59:16,1
+591,,ozlabs-change1-282335,ozlabs-patch-1418583,[01/11] qapi/commands: assert arg_type is not None,2020-12-18T20:53:57,1
+592,,ozlabs-change1-282335,ozlabs-patch-1428796,"[v3,01/17] qapi/commands: assert arg_type is not None",2021-01-19T18:02:26,1
+593,,ozlabs-change1-282335,ozlabs-patch-1434291,"[v4,01/16] qapi/commands: assert arg_type is not None",2021-02-01T19:37:32,1
+594,,ozlabs-change1-282335,ozlabs-patch-1437916,"[PULL,01/16] qapi/commands: assert arg_type is not None",2021-02-08T13:58:31,1
+595,160,ozlabs-change1-256179,ozlabs-patch-676084,"[v4,12/13] virtio-crypto-test: add qtest case for virtio-crypto",2016-09-28T08:25:51,1
+596,,ozlabs-change1-256179,ozlabs-patch-678852,"[v5,12/14] virtio-crypto-test: add qtest case for virtio-crypto",2016-10-06T11:36:45,1
+597,,ozlabs-change1-256179,ozlabs-patch-680243,"[v6,12/12] virtio-crypto-test: add qtest case for virtio-crypto",2016-10-10T08:43:44,1
+598,161,ozlabs-change1-257014,ozlabs-patch-647528,"[RFC,4/6] target-ppc: add cmprb instruction",2016-07-12T18:03:20,1
+599,,ozlabs-change1-257014,ozlabs-patch-649670,"[RFC,v1,04/13] target-ppc: add cmprb instruction",2016-07-18T17:05:08,1
+600,,ozlabs-change1-257014,ozlabs-patch-651844,"[RFC,v2,04/13] target-ppc: add cmprb instruction",2016-07-23T08:44:41,1
+601,,ozlabs-change1-257014,ozlabs-patch-652354,"[v3,04/15] target-ppc: add cmprb instruction",2016-07-25T17:20:29,1
+602,,ozlabs-change1-257014,ozlabs-patch-652717,"[v4,04/15] target-ppc: add cmprb instruction",2016-07-26T11:58:27,1
+603,,ozlabs-change1-257014,ozlabs-patch-666170,"[PULL,06/66] target-ppc: add cmprb instruction",2016-09-06T03:39:53,1
+604,,ozlabs-change1-257014,ozlabs-patch-666255,"[PULL,06/66] target-ppc: add cmprb instruction",2016-09-06T03:42:16,1
+605,,ozlabs-change1-257014,ozlabs-patch-666899,"[PULL,06/64] target-ppc: add cmprb instruction",2016-09-07T10:28:45,1
+606,162,ozlabs-change1-330545,ozlabs-patch-1636491,[061/114] target/arm: Use TRANS_FEAT for do_clast_fp,2022-05-27T18:18:14,1
+607,,ozlabs-change1-330545,ozlabs-patch-1637069,"[PULL,064/117] target/arm: Use TRANS_FEAT for do_clast_fp",2022-05-30T16:06:15,1
+608,163,ozlabs-change1-243205,ozlabs-patch-290358,[RFC] target-arm: provide skeleton for a64 insn decoding,2013-11-11T15:13:57,1
+609,,ozlabs-change1-243205,ozlabs-patch-290642,"[RFC,v2] target-arm: provide skeleton for a64 insn decoding",2013-11-12T13:29:47,1
+610,164,ozlabs-change1-242125,ozlabs-patch-909052,"[v1,1/4] hw/riscv/sifive_u: Create a U54 SoC object",2018-05-04T20:12:58,1
+611,,ozlabs-change1-242125,ozlabs-patch-912256,"[v2,1/7] hw/riscv/sifive_u: Create a U54 SoC object",2018-05-11T23:27:29,1
+612,165,ozlabs-change1-271928,ozlabs-patch-923861,"[V6,1/7] memory, exec: Expose all memory block related flags.",2018-06-01T08:10:23,1
+613,,ozlabs-change1-271928,ozlabs-patch-928118,"[1/7,V7] memory, exec: Expose all memory block related flags.",2018-06-12T06:28:14,1
+614,,ozlabs-change1-271928,ozlabs-patch-941803,"[1/7,V8] memory, exec: Expose all memory block related flags.",2018-07-10T06:06:24,1
+615,,ozlabs-change1-271928,ozlabs-patch-941904,"[1/7,V9] memory, exec: Expose all memory block related flags.",2018-07-10T10:30:14,1
+616,,ozlabs-change1-271928,ozlabs-patch-944746,"[1/7,V10] memory, exec: Expose all memory block related flags.",2018-07-17T06:32:04,1
+617,,ozlabs-change1-271928,ozlabs-patch-945540,"[1/7,V11] memory, exec: Expose all memory block related flags.",2018-07-18T07:47:57,1
+618,,ozlabs-change1-271928,ozlabs-patch-959955,"[PULL,1/7] memory, exec: Expose all memory block related flags.",2018-08-20T20:24:23,1
+619,166,ozlabs-change1-253160,ozlabs-patch-1291940,"[v3,17/18] hw/mips: Add some logging for bad register offset cases",2020-05-16T17:45:47,1
+620,,ozlabs-change1-253160,ozlabs-patch-1292101,"[v4,17/19] hw/mips: Add some logging for bad register offset cases",2020-05-17T09:23:55,1
+621,,ozlabs-change1-253160,ozlabs-patch-1292758,"[v5,21/22] hw/mips: Add some logging for bad register offset cases",2020-05-18T19:41:48,1
+622,,ozlabs-change1-253160,ozlabs-patch-1292795,"[v6,20/21] hw/mips: Add some logging for bad register offset cases",2020-05-18T20:09:19,1
+623,167,ozlabs-change1-341626,ozlabs-patch-1131453,rdmacm-mux: fix strcpy string warning,2019-07-12T16:51:54,1
+624,,ozlabs-change1-341626,ozlabs-patch-1132499,"[PULL,07/19] rdmacm-mux: fix strcpy string warning",2019-07-16T08:11:05,1
+625,,ozlabs-change1-341626,ozlabs-patch-1132577,[1/2] rdmacm-mux: fix strcpy string warning,2019-07-16T10:07:18,1
+626,168,ozlabs-change1-270247,ozlabs-patch-1048734,[2/4] nvdimm: use *function* directly instead of allocating it again,2019-02-27T07:50:59,1
+627,,ozlabs-change1-270247,ozlabs-patch-1055013,"[v2,2/3] nvdimm: use *function* directly instead of allocating it again",2019-03-12T01:24:56,1
+628,169,ozlabs-change1-353027,ozlabs-patch-343879,"[v2,2/3] s390x: use kvm_vcpu_enable_cap()",2014-04-29T15:11:24,1
+629,,ozlabs-change1-353027,ozlabs-patch-344166,"[PULL,2/3] s390x: use kvm_vcpu_enable_cap()",2014-04-30T13:58:21,1
+630,170,ozlabs-change1-250394,ozlabs-patch-525604,"[v2,07/22] block: Add statistics for failed and invalid I/O operations",2015-10-02T14:26:17,1
+631,,ozlabs-change1-250394,ozlabs-patch-534269,"[v3,06/21] block: Add statistics for failed and invalid I/O operations",2015-10-22T08:11:16,1
+632,,ozlabs-change1-250394,ozlabs-patch-537425,"[v4,06/21] block: Add statistics for failed and invalid I/O operations",2015-10-28T15:33:03,1
+633,,ozlabs-change1-250394,ozlabs-patch-542398,"[PULL,29/44] block: Add statistics for failed and invalid I/O operations",2015-11-10T14:14:24,1
+634,171,ozlabs-change1-332120,ozlabs-patch-296686,[06/14] spapr_pci: populate DRC dt entries for PHBs,2013-12-05T01:19:46,1
+635,,ozlabs-change1-332120,ozlabs-patch-297437,"[v2,02/14] spapr_pci: populate DRC dt entries for PHBs",2013-12-05T22:32:53,1
+636,,ozlabs-change1-332120,ozlabs-patch-381159,[02/12] spapr_pci: populate DRC dt entries for PHBs,2014-08-19T00:21:48,1
+637,,ozlabs-change1-332120,ozlabs-patch-423677,"[v4,14/17] spapr_pci: populate DRC dt entries for PHBs",2014-12-23T12:30:28,1
+638,,ozlabs-change1-332120,ozlabs-patch-440136,"[v5,13/16] spapr_pci: populate DRC dt entries for PHBs",2015-02-16T14:10:55,1
+639,,ozlabs-change1-332120,ozlabs-patch-440163,"[v5,13/16] spapr_pci: populate DRC dt entries for PHBs",2015-02-16T14:27:49,1
+640,172,ozlabs-change1-285064,ozlabs-patch-145584,[3/5] exec: fix code tlb entry misused as iotlb in get_page_addr_code(),2012-03-08T17:20:31,1
+641,,ozlabs-change1-285064,ozlabs-patch-147398,[3/5] exec: fix code tlb entry misused as iotlb in get_page_addr_code(),2012-03-18T16:33:47,1
+642,173,ozlabs-change1-340518,ozlabs-patch-320888,"trace-events: Fix typo in ""offset""",2014-02-17T09:03:17,1
+643,,ozlabs-change1-340518,ozlabs-patch-321968,"[PULL,6/6] trace-events: Fix typo in ""offset""",2014-02-19T15:45:59,1
+644,174,ozlabs-change1-271365,ozlabs-patch-1540375,"[RFC,04/15] memory: Allow for marking memory region aliases unmergeable",2021-10-13T10:33:19,1
+645,,ozlabs-change1-271365,ozlabs-patch-1546923,"[v1,03/12] memory: Allow for marking memory region aliases unmergeable",2021-10-27T12:45:22,1
+646,175,ozlabs-change1-235758,ozlabs-patch-160825,"[qom-next,49/59] target-i386: Drop version 5 CPU VMState support",2012-05-23T03:08:12,1
+647,,ozlabs-change1-235758,ozlabs-patch-217659,"[RFC,qom-cpu-next,4/9] target-i386: Drop version 5 CPU VMState support",2013-02-02T11:57:22,1
+648,176,ozlabs-change1-342602,ozlabs-patch-1670883,[11/13] linux-user: Show timespec on strace for futex(),2022-08-26T14:18:51,1
+649,,ozlabs-change1-342602,ozlabs-patch-1676583,"[v2,10/12] linux-user: Show timespec on strace for futex()",2022-09-11T18:18:28,1
+650,,ozlabs-change1-342602,ozlabs-patch-1677472,"[PULL,10/12] linux-user: Show timespec on strace for futex()",2022-09-13T19:13:19,1
+651,,ozlabs-change1-342602,ozlabs-patch-1679054,"[v3,10/12] linux-user: Show timespec on strace for futex()",2022-09-18T19:45:53,1
+652,,ozlabs-change1-342602,ozlabs-patch-1680371,"[PULL,10/12] linux-user: Show timespec on strace for futex()",2022-09-20T17:31:50,1
+653,,ozlabs-change1-342602,ozlabs-patch-1683824,"[PULL,12/38] linux-user: Show timespec on strace for futex()",2022-09-28T08:14:51,1
+654,,ozlabs-change1-342602,ozlabs-patch-1684061,"[PULL,12/37] linux-user: Show timespec on strace for futex()",2022-09-28T20:27:12,1
+655,177,ozlabs-change1-341412,ozlabs-patch-1092285,"[v2,1/8] tests/qemu-iotests: Fix output of qemu-io related tests",2019-04-28T15:54:44,1
+656,,ozlabs-change1-341412,ozlabs-patch-1093369,"[PULL,01/27] tests/qemu-iotests: Fix output of qemu-io related tests",2019-04-30T15:42:18,1
+657,178,ozlabs-change1-253575,ozlabs-patch-1405102,[10/21] block: add bdrv_list_* permission update functions,2020-11-23T20:12:22,1
+658,,ozlabs-change1-253575,ozlabs-patch-1407267,"[v2,17/36] block: add bdrv_list_* permission update functions",2020-11-27T14:45:03,1
+659,,ozlabs-change1-253575,ozlabs-patch-1454773,"[v3,15/36] block: add bdrv_list_* permission update functions",2021-03-17T14:35:08,1
+660,,ozlabs-change1-253575,ozlabs-patch-1471256,"[v4,15/36] block: add bdrv_list_* permission update functions",2021-04-28T15:17:43,1
+661,,ozlabs-change1-253575,ozlabs-patch-1472170,"[PULL,15/39] block: add bdrv_list_* permission update functions",2021-04-30T10:51:23,1
+662,179,ozlabs-change1-287715,ozlabs-patch-397579,[1/3] iotests: replace fake parallels image with authentic one,2014-10-08T09:13:28,1
+663,,ozlabs-change1-287715,ozlabs-patch-403474,[1/9] iotests: replace fake parallels image with authentic one,2014-10-27T09:07:04,1
+664,,ozlabs-change1-287715,ozlabs-patch-406084,"[PULL,11/53] iotests: replace fake parallels image with authentic one",2014-11-03T11:50:14,1
+665,180,ozlabs-change1-318377,ozlabs-patch-1541192,[7/7] tests/tcg: Enable container_cross_cc for microblaze,2021-10-14T22:44:35,1
+666,,ozlabs-change1-318377,ozlabs-patch-1546375,"[v1,07/28] tests/tcg: Enable container_cross_cc for microblaze",2021-10-26T10:22:13,1
+667,,ozlabs-change1-318377,ozlabs-patch-1550444,"[PULL,05/21] tests/tcg: Enable container_cross_cc for microblaze",2021-11-03T17:05:42,1
+668,181,ozlabs-change1-309134,ozlabs-patch-1129822,[3/3] migration/savevm: move non SaveStateEntry condition check out of iteration,2019-07-09T14:09:24,1
+669,,ozlabs-change1-309134,ozlabs-patch-1147699,"[PULL,11/33] migration/savevm: move non SaveStateEntry condition check out of iteration",2019-08-15T16:34:42,1
+670,182,ozlabs-change1-279884,ozlabs-patch-1603764,"[v5,08/48] linux-user/nios2: Only initialize SP and PC in target_cpu_copy_regs",2022-03-10T11:26:45,1
+671,,ozlabs-change1-279884,ozlabs-patch-1606385,"[for-7.1,v6,09/51] linux-user/nios2: Only initialize SP and PC in target_cpu_copy_regs",2022-03-17T05:04:56,1
+672,,ozlabs-change1-279884,ozlabs-patch-1620228,"[v7,20/64] linux-user/nios2: Only initialize SP and PC in target_cpu_copy_regs",2022-04-21T15:16:51,1
+673,,ozlabs-change1-279884,ozlabs-patch-1621009,"[v8,20/68] linux-user/nios2: Only initialize SP and PC in target_cpu_copy_regs",2022-04-22T16:51:50,1
+674,,ozlabs-change1-279884,ozlabs-patch-1622591,"[PULL,20/68] linux-user/nios2: Only initialize SP and PC in target_cpu_copy_regs",2022-04-26T18:18:19,1
+675,183,ozlabs-change1-319151,ozlabs-patch-1280756,[06/36] target/arm: Convert V[US]DOT (vector) to decodetree,2020-04-30T18:09:33,1
+676,,ozlabs-change1-319151,ozlabs-patch-1282574,"[PULL,25/39] target/arm: Convert V[US]DOT (vector) to decodetree",2020-05-04T12:32:55,1
+677,184,ozlabs-change1-247551,ozlabs-patch-293233,"[for-1.7,2/5] acpi unit-test: adjust the test data structure for better handling",2013-11-21T19:33:22,1
+678,,ozlabs-change1-247551,ozlabs-patch-300367,"[PULL,26/28] acpi unit-test: adjust the test data structure for better handling",2013-12-11T18:31:36,1
+679,185,ozlabs-change1-337736,ozlabs-patch-1638810,"[v4,05/11] hw/isa/piix4: Factor out ISABus retrieval from piix4_create()",2022-06-03T18:50:39,1
+680,,ozlabs-change1-337736,ozlabs-patch-1642316,"[PULL,31/49] hw/isa/piix4: Factor out ISABus retrieval from piix4_create()",2022-06-11T10:32:54,1
+681,186,ozlabs-change1-267214,ozlabs-patch-759884,[1/3] kvm: irqchip: trace changes on msi add/remove,2017-05-09T04:28:26,1
+682,,ozlabs-change1-267214,ozlabs-patch-759907,"[v2,1/3] kvm: irqchip: trace changes on msi add/remove",2017-05-09T06:00:42,1
+683,,ozlabs-change1-267214,ozlabs-patch-764625,"[PULL,06/20] kvm: irqchip: trace changes on msi add/remove",2017-05-19T11:20:58,1
+684,,ozlabs-change1-267214,ozlabs-patch-769690,"[PULL,06/33] kvm: irqchip: trace changes on msi add/remove",2017-06-01T12:41:24,1
+685,187,ozlabs-change1-234161,ozlabs-patch-248495,VM can not boot after commit 235e898,2013-06-04T08:26:16,1
+686,,ozlabs-change1-234161,ozlabs-patch-261457,VM can not boot after commit 235e898,2013-07-24T16:26:41,1
+687,188,ozlabs-change1-330513,ozlabs-patch-771901,qemu-doc: do not refer to years-old version numbers,2017-06-06T15:00:16,1
+688,,ozlabs-change1-330513,ozlabs-patch-784447,"[PULL,21/42] qemu-doc: do not refer to years-old version numbers",2017-07-05T07:14:24,1
+689,189,ozlabs-change1-303186,ozlabs-patch-981463,linux-user/sparc/signal.c: Remove unnecessary comment,2018-10-09T18:40:17,1
+690,,ozlabs-change1-303186,ozlabs-patch-986172,"[2,2/2] linux-user/sparc/signal.c: Remove unnecessary comment",2018-10-18T19:00:26,1
+691,190,ozlabs-change1-259235,ozlabs-patch-461148,[2/2] q35: add test for SMRAM.D_LCK,2015-04-14T13:12:40,1
+692,,ozlabs-change1-259235,ozlabs-patch-462761,[4/6] q35: add test for SMRAM.D_LCK,2015-04-20T09:19:18,1
+693,,ozlabs-change1-259235,ozlabs-patch-470861,[21/31] q35: add test for SMRAM.D_LCK,2015-05-11T13:49:07,1
+694,,ozlabs-change1-259235,ozlabs-patch-480064,"[v2,21/23] q35: add test for SMRAM.D_LCK",2015-06-03T17:08:46,1
+695,,ozlabs-change1-259235,ozlabs-patch-481445,"[PULL,58/62] q35: add test for SMRAM.D_LCK",2015-06-05T15:15:59,1
+696,191,ozlabs-change1-354957,ozlabs-patch-691808,[2/3] net: vhost stop updates virtio queue state,2016-11-07T08:20:28,1
+697,,ozlabs-change1-354957,ozlabs-patch-692833,"[v2,2/3] net: vhost stop updates virtio queue state",2016-11-09T15:22:01,1
+698,,ozlabs-change1-354957,ozlabs-patch-705329,"[v3,2/4] net: vhost stop updates virtio queue state",2016-12-13T08:12:06,1
+699,,ozlabs-change1-354957,ozlabs-patch-713137,"[PULL,26/41] net: vhost stop updates virtio queue state",2017-01-10T05:40:25,1
+700,192,ozlabs-change1-242077,ozlabs-patch-1593285,[16/27] target/ppc: cpu_init: Move e300 SPR registration into a function,2022-02-15T21:41:37,1
+701,,ozlabs-change1-242077,ozlabs-patch-1593842,"[v2,16/27] target/ppc: cpu_init: Move e300 SPR registration into a function",2022-02-16T16:24:15,1
+702,,ozlabs-change1-242077,ozlabs-patch-1594671,"[PULL,28/39] target/ppc: cpu_init: Move e300 SPR registration into a function",2022-02-18T10:38:16,1
+703,193,ozlabs-change1-235461,ozlabs-patch-246655,"[qom-cpu,3/3] target-i386: set level=4 on Conroe/Penryn/Nehalem",2013-05-27T20:23:55,1
+704,,ozlabs-change1-235461,ozlabs-patch-250061,"[qom-cpu,v4,05/18] target-i386: Set level=4 on Conroe/Penryn/Nehalem",2013-06-09T16:10:34,1
+705,,ozlabs-change1-235461,ozlabs-patch-250937,"[PULL,05/17] target-i386: Set level=4 on Conroe/Penryn/Nehalem",2013-06-13T00:45:17,1
+706,194,ozlabs-change1-319224,ozlabs-patch-1111380,[22/42] target/arm: Convert VMUL to decodetree,2019-06-06T17:45:49,1
+707,,ozlabs-change1-319224,ozlabs-patch-1113715,"[v2,22/42] target/arm: Convert VMUL to decodetree",2019-06-11T10:53:31,1
+708,,ozlabs-change1-319224,ozlabs-patch-1115063,"[PULL,28/48] target/arm: Convert VMUL to decodetree",2019-06-13T12:14:13,1
+709,195,ozlabs-change1-252488,ozlabs-patch-1158107,"[RFC,07/15] aspeed/sdmc: Add AST2600 support",2019-09-04T20:46:51,1
+710,,ozlabs-change1-252488,ozlabs-patch-1164366,[09/21] aspeed/sdmc: Add AST2600 support,2019-09-19T05:49:50,1
+711,,ozlabs-change1-252488,ozlabs-patch-1167329,"[v2,09/23] aspeed/sdmc: Add AST2600 support",2019-09-25T14:32:34,1
+712,,ozlabs-change1-252488,ozlabs-patch-1176492,"[PULL,48/68] aspeed/sdmc: Add AST2600 support",2019-10-14T16:03:44,1
+713,196,ozlabs-change1-309619,ozlabs-patch-1403332,"[v2,24/28] hw/intc/armv7m_nvic: Fix ""return from inactive handler"" check",2020-11-19T21:56:13,1
+714,,ozlabs-change1-309619,ozlabs-patch-1414072,"[PULL,33/36] hw/intc/armv7m_nvic: Fix ""return from inactive handler"" check",2020-12-10T11:47:53,1
+715,197,ozlabs-change1-336391,ozlabs-patch-1271168,"[v2,02/16] nvme: rename trace events to pci_nvme",2020-04-15T13:01:45,1
+716,,ozlabs-change1-336391,ozlabs-patch-1274790,"[v3,02/16] nvme: rename trace events to pci_nvme",2020-04-22T07:09:13,1
+717,,ozlabs-change1-336391,ozlabs-patch-1283229,"[v5,02/18] nvme: rename trace events to pci_nvme",2020-05-05T05:48:24,1
+718,198,ozlabs-change1-289685,ozlabs-patch-850076,[1/2] fsdev: improve error handling of backend opts parsing,2017-12-18T14:16:15,1
+719,,ozlabs-change1-289685,ozlabs-patch-856818,"[PULL,11/14] fsdev: improve error handling of backend opts parsing",2018-01-08T14:28:28,1
+720,199,ozlabs-change1-298026,ozlabs-patch-866689,"[RFC,v3,13/14] blockjobs: Expose manual property",2018-01-27T02:05:14,1
+721,,ozlabs-change1-298026,ozlabs-patch-877335,"[RFC,v4,19/21] blockjobs: Expose manual property",2018-02-23T23:51:40,1
+722,,ozlabs-change1-298026,ozlabs-patch-884131,"[v5,19/21] blockjobs: Expose manual property",2018-03-10T08:27:44,1
+723,,ozlabs-change1-298026,ozlabs-patch-885240,"[PULL,19/41] blockjobs: Expose manual property",2018-03-13T16:17:41,1
+724,200,ozlabs-change1-274580,ozlabs-patch-584528,"[v11,03/15] qapi: Forbid 'any' inside an alternate",2016-02-18T06:48:17,1
+725,,ozlabs-change1-274580,ozlabs-patch-584911,"[v11,03/15] qapi: Forbid 'any' inside an alternate",2016-02-18T20:11:37,1
+726,,ozlabs-change1-274580,ozlabs-patch-585167,"[PULL,04/15] qapi: Forbid 'any' inside an alternate",2016-02-19T12:17:55,1
+727,201,ozlabs-change1-345568,ozlabs-patch-1636392,[020/114] target/arm: Introduce gen_gvec_ool_arg_zpz,2022-05-27T18:17:33,1
+728,,ozlabs-change1-345568,ozlabs-patch-1636986,"[PULL,023/117] target/arm: Introduce gen_gvec_ool_arg_zpz",2022-05-30T16:05:34,1
+729,202,ozlabs-change1-263807,ozlabs-patch-365181,[2/3] iotests: Add qemu tests to quick group,2014-06-27T20:47:47,1
+730,,ozlabs-change1-263807,ozlabs-patch-365976,"[PULL,for-2.1,15/24] iotests: Add qemu tests to quick group",2014-07-01T08:48:48,1
+731,203,ozlabs-change1-352837,ozlabs-patch-1149502,"[v2,11/16] qcow2: Keep track of the snapshot table length",2019-08-19T18:55:57,1
+732,,ozlabs-change1-352837,ozlabs-patch-1175314,"[v3,11/16] qcow2: Keep track of the snapshot table length",2019-10-11T15:28:09,1
+733,,ozlabs-change1-352837,ozlabs-patch-1185407,"[PULL,55/69] qcow2: Keep track of the snapshot table length",2019-10-28T12:14:47,1
+734,204,ozlabs-change1-249323,ozlabs-patch-514396,[2/2] arm/virt: Add full-sized CPU affinity handling,2015-09-04T11:39:48,1
+735,,ozlabs-change1-249323,ozlabs-patch-514621,"[PULL,27/27] arm/virt: Add full-sized CPU affinity handling",2015-09-04T15:05:56,1
+736,205,ozlabs-change1-233001,ozlabs-patch-824900,[2/2] target/i386: trap on instructions longer than >15 bytes,2017-10-12T14:35:48,1
+737,,ozlabs-change1-233001,ozlabs-patch-827709,"[PULL,15/29] target/i386: trap on instructions longer than >15 bytes",2017-10-18T16:12:07,1
+738,206,ozlabs-change1-324074,ozlabs-patch-1318583,"[11/17] hw/misc/max111x: Create header file for documentation, TYPE_ macros",2020-06-28T14:24:23,1
+739,,ozlabs-change1-324074,ozlabs-patch-1322570,"[PULL,27/34] hw/misc/max111x: Create header file for documentation, TYPE_ macros",2020-07-03T16:53:58,1
+740,207,ozlabs-change1-300065,ozlabs-patch-1224912,"[v2,2/7] hw/acpi/nvdimm: Fix for NVDIMM incorrect DSM output buffer length",2020-01-17T17:45:17,1
+741,,ozlabs-change1-300065,ozlabs-patch-1253085,"[v3,04/10] hw/acpi/nvdimm: Fix for NVDIMM incorrect DSM output buffer length",2020-03-11T17:20:08,1
+742,,ozlabs-change1-300065,ozlabs-patch-1274245,"[v4,1/7] hw/acpi/nvdimm: Fix for NVDIMM incorrect DSM output buffer length",2020-04-21T12:59:28,1
+743,,ozlabs-change1-300065,ozlabs-patch-1282714,"[PULL,15/29] hw/acpi/nvdimm: Fix for NVDIMM incorrect DSM output buffer length",2020-05-04T14:29:49,1
+744,208,ozlabs-change1-242931,ozlabs-patch-926406,"[v4,11/28] ppc/xive: introduce a simplified XIVE presenter",2018-06-07T15:49:46,1
+745,,ozlabs-change1-242931,ozlabs-patch-998888,"[v5,08/36] ppc/xive: introduce a simplified XIVE presenter",2018-11-16T10:57:01,1
+746,,ozlabs-change1-242931,ozlabs-patch-1008520,"[v6,08/37] ppc/xive: introduce a simplified XIVE presenter",2018-12-05T23:22:22,1
+747,,ozlabs-change1-242931,ozlabs-patch-1010123,"[v7,03/19] ppc/xive: introduce a simplified XIVE presenter",2018-12-09T19:45:54,1
+748,,ozlabs-change1-242931,ozlabs-patch-1012518,"[PULL,24/27] ppc/xive: introduce a simplified XIVE presenter",2018-12-13T04:01:23,1
+749,,ozlabs-change1-242931,ozlabs-patch-1017286,"[PULL,26/40] ppc/xive: introduce a simplified XIVE presenter",2018-12-21T05:45:52,1
+750,209,ozlabs-change1-303942,ozlabs-patch-1445023,[5/5] spapr.c: send QAPI event when memory hotunplug fails,2021-02-26T16:33:01,1
+751,,ozlabs-change1-303942,ozlabs-patch-1446062,"[v2,2/2] spapr.c: send QAPI event when memory hotunplug fails",2021-03-02T14:10:19,1
+752,,ozlabs-change1-303942,ozlabs-patch-1450315,"[PULL,20/20] spapr.c: send QAPI event when memory hotunplug fails",2021-03-10T04:10:02,1
+753,210,ozlabs-change1-313668,ozlabs-patch-601957,[1/2] memory: Remove code for mr->may_overlap,2016-03-25T10:10:28,1
+754,,ozlabs-change1-313668,ozlabs-patch-625286,"[PULL,11/24] memory: Remove code for mr->may_overlap",2016-05-23T15:09:46,1
+755,211,ozlabs-change1-345240,ozlabs-patch-417786,[2/4] x86: Fuse g_malloc(); memset() into g_malloc0(),2014-12-04T13:46:44,1
+756,,ozlabs-change1-345240,ozlabs-patch-421479,"[PULL,18/47] x86: Fuse g_malloc(); memset() into g_malloc0()",2014-12-15T16:38:02,1
+757,212,ozlabs-change1-261106,ozlabs-patch-77808,[3/3] MAINTAINERS: add entries for TCG,2011-01-06T21:50:26,1
+758,,ozlabs-change1-261106,ozlabs-patch-78180,[3/3] MAINTAINERS: add entries for TCG,2011-01-10T17:34:33,1
+759,,ozlabs-change1-261106,ozlabs-patch-78444,"[v3,3/3] MAINTAINERS: add entries for TCG",2011-01-11T21:10:32,1
+760,213,ozlabs-change1-273037,ozlabs-patch-319212,QMP: allow dot separated dict path arguments in qmp-shell,2014-02-11T10:45:05,1
+761,,ozlabs-change1-273037,ozlabs-patch-319460,[v2] QMP: Allow dot separated dict path arguments in qmp-shell,2014-02-12T01:22:14,1
+762,,ozlabs-change1-273037,ozlabs-patch-319491,[v3] QMP: Allow dot separated dict path arguments in qmp-shell,2014-02-12T03:05:13,1
+763,,ozlabs-change1-273037,ozlabs-patch-325906,"[PULL,01/32] QMP: Allow dot separated dict path arguments in qmp-shell",2014-03-03T17:11:52,1
+764,214,ozlabs-change1-269003,ozlabs-patch-560132,io: bind to loopback IP addrs in test suite,2015-12-22T15:46:04,1
+765,,ozlabs-change1-269003,ozlabs-patch-560445,"[PULL,v1,1/3] io: bind to loopback IP addrs in test suite",2015-12-23T10:57:55,1
+766,215,ozlabs-change1-244945,ozlabs-patch-1645699,"[v2,1/2] accel: Introduce current_accel_name()",2022-06-20T19:22:41,1
+767,,ozlabs-change1-244945,ozlabs-patch-1648829,"[PULL,02/25] accel: Introduce current_accel_name()",2022-06-27T10:22:13,1
+768,216,ozlabs-change1-314976,ozlabs-patch-955721,scripts/checkpatch.pl: Enforce multiline comment syntax,2018-08-09T16:00:11,1
+769,,ozlabs-change1-314976,ozlabs-patch-1013562,"[PULL,01/22] scripts/checkpatch.pl: Enforce multiline comment syntax",2018-12-14T14:41:53,1
+770,217,ozlabs-change1-234472,ozlabs-patch-1366800,[6/6] travis.yml: Drop the superfluous Python 3.6 build,2020-09-18T10:34:30,1
+771,,ozlabs-change1-234472,ozlabs-patch-1371397,"[v1,07/15] travis.yml: Drop the superfluous Python 3.6 build",2020-09-25T15:40:19,1
+772,,ozlabs-change1-234472,ozlabs-patch-1375661,"[PULL,04/14] travis.yml: Drop the superfluous Python 3.6 build",2020-10-02T11:36:35,1
+773,218,ozlabs-change1-346527,ozlabs-patch-1097979,"[v2,05/13] tests/vm: proper guest shutdown",2019-05-10T10:46:25,1
+774,,ozlabs-change1-346527,ozlabs-patch-1101984,"[v3,06/14] tests/vm: proper guest shutdown",2019-05-20T12:47:08,1
+775,,ozlabs-change1-346527,ozlabs-patch-1107707,"[v1,18/26] tests/vm: proper guest shutdown",2019-05-30T10:15:55,1
+776,,ozlabs-change1-346527,ozlabs-patch-1111653,"[PULL,17/52] tests/vm: proper guest shutdown",2019-06-07T09:05:16,1
+777,,ozlabs-change1-346527,ozlabs-patch-1116700,"[v4,04/11] tests/vm: proper guest shutdown",2019-06-17T04:38:51,1
+778,,ozlabs-change1-346527,ozlabs-patch-1118975,"[v1,08/17] tests/vm: proper guest shutdown",2019-06-19T19:40:12,1
+779,,ozlabs-change1-346527,ozlabs-patch-1121316,"[PULL,08/19] tests/vm: proper guest shutdown",2019-06-24T13:43:26,1
+780,219,ozlabs-change1-231454,ozlabs-patch-977117,"[v3,12/18] iotests: prepare 055 to graph changes during backup job",2018-10-01T10:29:22,1
+781,,ozlabs-change1-231454,ozlabs-patch-984264,"[v4,07/11] iotests: prepare 055 to graph changes during backup job",2018-10-15T16:06:29,1
+782,,ozlabs-change1-231454,ozlabs-patch-1019332,"[v5,06/11] iotests: prepare 055 to graph changes during backup job",2018-12-29T12:20:22,1
+783,220,ozlabs-change1-289242,ozlabs-patch-31573,[6/8] ide: split away ide-mmio.c,2009-08-18T16:06:45,1
+784,,ozlabs-change1-289242,ozlabs-patch-31730,[06/10] ide: split away ide-mmio.c,2009-08-20T13:22:22,1
+785,,ozlabs-change1-289242,ozlabs-patch-32130,[06/11] ide: split away ide-mmio.c,2009-08-26T11:53:34,1
+786,221,ozlabs-change1-295682,ozlabs-patch-965463,"[v2,06/10] block: Forbid trying to change unsupported options during reopen",2018-09-03T14:34:04,1
+787,,ozlabs-change1-295682,ozlabs-patch-966889,"[v3,06/10] block: Forbid trying to change unsupported options during reopen",2018-09-06T09:37:06,1
+788,,ozlabs-change1-295682,ozlabs-patch-977316,"[PULL,07/23] block: Forbid trying to change unsupported options during reopen",2018-10-01T17:18:45,1
+789,222,ozlabs-change1-350515,ozlabs-patch-893380,[2/3] iotests.py: support unsupported_fmts in main(),2018-03-30T15:16:35,1
+790,,ozlabs-change1-350515,ozlabs-patch-896778,"[PULL,1/7] iotests.py: support unsupported_fmts in main()",2018-04-10T15:37:42,1
+791,223,ozlabs-change1-322057,ozlabs-patch-809751,"[v2,15/19] s390x: print CPU definitions in sorted order",2017-09-04T15:43:12,1
+792,,ozlabs-change1-322057,ozlabs-patch-811154,"[v3,15/21] s390x: print CPU definitions in sorted order",2017-09-07T20:13:29,1
+793,,ozlabs-change1-322057,ozlabs-patch-812426,"[v4,15/21] s390x: print CPU definitions in sorted order",2017-09-11T15:21:44,1
+794,,ozlabs-change1-322057,ozlabs-patch-813452,"[v5,15/22] s390x: print CPU definitions in sorted order",2017-09-13T13:24:10,1
+795,,ozlabs-change1-322057,ozlabs-patch-815592,"[PULL,25/38] s390x: print CPU definitions in sorted order",2017-09-19T14:56:23,1
+796,,ozlabs-change1-322057,ozlabs-patch-815691,"[PULL,v2,25/38] s390x: print CPU definitions in sorted order",2017-09-19T16:43:24,1
+797,224,ozlabs-change1-309176,ozlabs-patch-974253,"[v2,1/3] linux-user: Check for Linux USBFS in configure",2018-09-25T07:12:26,1
+798,,ozlabs-change1-309176,ozlabs-patch-980666,"[v3,1/3] linux-user: Check for Linux USBFS in configure",2018-10-08T16:35:19,1
+799,,ozlabs-change1-309176,ozlabs-patch-986716,"[2,1/3] linux-user: Check for Linux USBFS in configure",2018-10-19T12:16:21,1
+800,,ozlabs-change1-309176,ozlabs-patch-986721,"[PULL,1/3] linux-user: Check for Linux USBFS in configure",2018-10-19T12:19:08,1
+801,225,ozlabs-change1-328336,ozlabs-patch-1163000,[07/13] hw: Move TWL92230 device from hw/timer/ to hw/rtc/ subdirectory,2019-09-16T15:48:41,1
+802,,ozlabs-change1-328336,ozlabs-patch-1171477,"[v2,07/14] hw: Move TWL92230 device from hw/timer/ to hw/rtc/ subdirectory",2019-10-03T23:03:57,1
+803,,ozlabs-change1-328336,ozlabs-patch-1183911,"[PULL,12/19] hw: Move TWL92230 device from hw/timer/ to hw/rtc/ subdirectory",2019-10-25T08:35:04,1
+804,226,ozlabs-change1-237509,ozlabs-patch-356769,"[v2,02/13] signal/x86/setup_frame: __put_user cleanup",2014-06-06T09:46:46,1
+805,,ozlabs-change1-237509,ozlabs-patch-357435,"[PULL,02/18] signal/x86/setup_frame: __put_user cleanup",2014-06-09T12:46:27,1
+806,,ozlabs-change1-237509,ozlabs-patch-357921,"[v3,02/13] signal/x86/setup_frame: __put_user cleanup",2014-06-10T13:20:31,1
+807,,ozlabs-change1-237509,ozlabs-patch-360518,"[PULL,v2,02/17] signal/x86/setup_frame: __put_user cleanup",2014-06-17T14:56:45,1
+808,227,ozlabs-change1-344772,ozlabs-patch-1337745,"[for-5.1?,1/3] include/hw/irq.h: New function qemu_irq_is_connected()",2020-07-28T10:37:42,1
+809,,ozlabs-change1-344772,ozlabs-patch-1340429,"[PULL,2/8] include/hw/irq.h: New function qemu_irq_is_connected()",2020-08-03T19:33:53,1
+810,228,ozlabs-change1-332715,ozlabs-patch-1217214,"[RFC,1/4] ppc: Drop PPC_EMULATE_32BITS_HYPV stub",2020-01-03T06:39:08,1
+811,,ozlabs-change1-332715,ozlabs-patch-1218585,"[v2,01/10] ppc: Drop PPC_EMULATE_32BITS_HYPV stub",2020-01-07T04:48:18,1
+812,229,ozlabs-change1-267780,ozlabs-patch-171542,"[PATCHv4,4/4] Adding seccomp calls to vl.c",2012-07-17T19:19:15,1
+813,,ozlabs-change1-267780,ozlabs-patch-174581,"[PATCHv5,4/4] Adding seccomp calls to vl.c",2012-08-01T19:54:55,1
+814,,ozlabs-change1-267780,ozlabs-patch-177159,"[v6,3/3] Adding seccomp calls to vl.c",2012-08-13T18:44:48,1
+815,,ozlabs-change1-267780,ozlabs-patch-177028,"[v6,3/3] Adding seccomp calls to vl.c",2012-08-13T19:01:08,1
+816,,ozlabs-change1-267780,ozlabs-patch-177464,"[v7,3/4] Adding seccomp calls to vl.c",2012-08-14T21:44:07,1
+817,,ozlabs-change1-267780,ozlabs-patch-177876,[3/4] Adding seccomp calls to vl.c (v8),2012-08-15T22:44:41,1
+818,230,ozlabs-change1-303916,ozlabs-patch-263396,vl.c: Output error on invalid machine type provided,2013-07-30T14:28:08,1
+819,,ozlabs-change1-303916,ozlabs-patch-263401,[v2] vl.c: Output error on invalid machine type provided,2013-07-30T14:54:40,1
+820,,ozlabs-change1-303916,ozlabs-patch-263516,[v3] vl.c: Output error on invalid machine type provided,2013-07-30T19:10:44,1
+821,,ozlabs-change1-303916,ozlabs-patch-263590,[v4] vl.c: Output error on invalid machine type provided,2013-07-31T06:30:38,1
+822,,ozlabs-change1-303916,ozlabs-patch-263608,[v5] vl.c: Output error on invalid machine type provided,2013-07-31T07:04:15,1
+823,,ozlabs-change1-303916,ozlabs-patch-266569,[QEMU-1.6] vl.c: Output error on invalid machine type provided,2013-08-12T16:28:30,1
+824,231,ozlabs-change1-303704,ozlabs-patch-200317,exec.c: Use tb1->phys_hash_next directly in tb_remove,2012-11-20T12:30:35,1
+825,,ozlabs-change1-303704,ozlabs-patch-200531,[v2] exec.c: Use tb1->phys_hash_next directly in tb_remove,2012-11-20T23:52:48,1
+826,232,ozlabs-change1-337649,ozlabs-patch-756884,tcg/mips: fix field extraction opcode,2017-04-30T14:47:06,1
+827,,ozlabs-change1-337649,ozlabs-patch-759276,"[PULL,1/1] tcg/mips: fix field extraction opcode",2017-05-06T11:03:33,1
+828,233,ozlabs-change1-321835,ozlabs-patch-1205251,"[for-5.0,2/3] cpu: Introduce cpu_class_set_parent_reset()",2019-12-06T18:44:00,1
+829,,ozlabs-change1-321835,ozlabs-patch-1206454,"[for-5.0,v2,2/3] cpu: Introduce cpu_class_set_parent_reset()",2019-12-09T17:55:24,1
+830,,ozlabs-change1-321835,ozlabs-patch-1210459,"[v3,1/2] cpu: Introduce cpu_class_set_parent_reset()",2019-12-16T15:01:12,1
+831,,ozlabs-change1-321835,ozlabs-patch-1228232,"[PULL,01/59] cpu: Introduce cpu_class_set_parent_reset()",2020-01-23T13:48:04,1
+832,,ozlabs-change1-321835,ozlabs-patch-1228312,"[PULL,01/59] cpu: Introduce cpu_class_set_parent_reset()",2020-01-23T13:49:51,1
+833,234,ozlabs-change1-301359,ozlabs-patch-1408940,[02/23] tests/docker: don't use BUILDKIT in GitLab either,2020-12-01T17:18:04,1
+834,,ozlabs-change1-301359,ozlabs-patch-1426358,"[v2,02/25] tests/docker: don't use BUILDKIT in GitLab either",2021-01-14T13:02:22,1
+835,,ozlabs-change1-301359,ozlabs-patch-1477989,"[v3,02/22] tests/docker: don't use BUILDKIT in GitLab either",2021-05-13T09:54:59,1
+836,,ozlabs-change1-301359,ozlabs-patch-1496152,"[v4,02/22] tests/docker: don't use BUILDKIT in GitLab either",2021-06-23T14:22:25,1
+837,,ozlabs-change1-301359,ozlabs-patch-1501331,"[v1,10/39] tests/docker: don't use BUILDKIT in GitLab either",2021-07-06T14:57:48,1
+838,,ozlabs-change1-301359,ozlabs-patch-1502705,"[v2,10/39] tests/docker: don't use BUILDKIT in GitLab either",2021-07-08T19:09:12,1
+839,,ozlabs-change1-301359,ozlabs-patch-1503198,"[v3,10/40] tests/docker: don't use BUILDKIT in GitLab either",2021-07-09T14:29:35,1
+840,,ozlabs-change1-301359,ozlabs-patch-1503956,"[PULL,10/40] tests/docker: don't use BUILDKIT in GitLab either",2021-07-12T12:26:23,1
+841,,ozlabs-change1-301359,ozlabs-patch-1505281,"[PULL,v5,12/44] tests/docker: don't use BUILDKIT in GitLab either",2021-07-14T15:00:04,1
+842,235,ozlabs-change1-337904,ozlabs-patch-436441,[6/8] serial: serial_hds_isa_init() shouldn't fail,2015-02-04T17:33:06,1
+843,,ozlabs-change1-337904,ozlabs-patch-442994,"[PULL,08/10] serial: serial_hds_isa_init() shouldn't fail",2015-02-24T13:58:28,1
+844,236,ozlabs-change1-284223,ozlabs-patch-541533,[12/18] armv7m: simpler/faster exception start,2015-11-09T01:11:39,1
+845,,ozlabs-change1-284223,ozlabs-patch-551999,"[v2,07/26] armv7m: simpler/faster exception start",2015-12-03T00:18:34,1
+846,237,ozlabs-change1-277756,ozlabs-patch-1472965,"[v6,01/26] tcg: Combine dh_is_64bit and dh_is_signed to dh_typecode",2021-05-02T23:57:02,1
+847,,ozlabs-change1-277756,ozlabs-patch-1486036,"[v7,01/27] tcg: Combine dh_is_64bit and dh_is_signed to dh_typecode",2021-06-01T15:00:40,1
+848,,ozlabs-change1-277756,ozlabs-patch-1494665,"[PULL,01/33] tcg: Combine dh_is_64bit and dh_is_signed to dh_typecode",2021-06-19T18:14:20,1
+849,238,ozlabs-change1-254319,ozlabs-patch-244099,"[v3,3/8] block: add drive-backup QMP command",2013-05-15T14:34:31,1
+850,,ozlabs-change1-254319,ozlabs-patch-244245,"[v4,3/8] block: add drive-backup QMP command",2013-05-16T08:36:14,1
+851,,ozlabs-change1-254319,ozlabs-patch-247565,"[v5,06/11] block: add drive-backup QMP command",2013-05-30T12:34:54,1
+852,,ozlabs-change1-254319,ozlabs-patch-253883,"[v6,06/12] block: add drive-backup QMP command",2013-06-24T15:13:14,1
+853,,ozlabs-change1-254319,ozlabs-patch-255395,"[PULL,07/20] block: add drive-backup QMP command",2013-06-28T14:24:56,1
+854,239,ozlabs-change1-249979,ozlabs-patch-264558,ARM: Add an L2 cache controller to KZM,2013-08-05T01:21:11,1
+855,,ozlabs-change1-249979,ozlabs-patch-264826,ARM: Add an L2 cache controller to KZM,2013-08-06T00:53:11,1
+856,,ozlabs-change1-249979,ozlabs-patch-265304,ARM: Add an L2 cache controller to KZM,2013-08-07T02:21:46,1
+857,240,ozlabs-change1-336179,ozlabs-patch-1292302,"[20/24] riscv: Fix type of SiFive[EU]SocState, member parent_obj",2020-05-18T05:04:04,1
+858,,ozlabs-change1-336179,ozlabs-patch-1299689,"[v2,20/24] riscv: Fix type of SiFive[EU]SocState, member parent_obj",2020-05-28T11:04:40,1
+859,,ozlabs-change1-336179,ozlabs-patch-1305865,"[v3,20/24] riscv: Fix type of SiFive[EU]SocState, member parent_obj",2020-06-09T12:23:35,1
+860,,ozlabs-change1-336179,ozlabs-patch-1309746,"[PULL,22/84] riscv: Fix type of SiFive[EU]SocState, member parent_obj",2020-06-15T20:39:06,1
+861,241,ozlabs-change1-287104,ozlabs-patch-607484,[11/11] tcg: Note requirement on atomic direct jump patching,2016-04-07T15:53:53,1
+862,,ozlabs-change1-287104,ozlabs-patch-613781,"[v2,11/11] tcg: Note requirement on atomic direct jump patching",2016-04-22T16:08:53,1
+863,,ozlabs-change1-287104,ozlabs-patch-621784,"[PULL,12/39] tcg: Note requirement on atomic direct jump patching",2016-05-13T00:13:13,1
+864,242,ozlabs-change1-253204,ozlabs-patch-1297284,[2/9] tests/acceptance: add base class record/replay kernel tests,2020-05-25T11:19:13,1
+865,,ozlabs-change1-253204,ozlabs-patch-1298784,"[v2,03/11] tests/acceptance: add base class record/replay kernel tests",2020-05-27T10:30:55,1
+866,,ozlabs-change1-253204,ozlabs-patch-1300472,"[v3,03/11] tests/acceptance: add base class record/replay kernel tests",2020-05-29T07:04:51,1
+867,,ozlabs-change1-253204,ozlabs-patch-1314160,"[PULL,2/8] tests/acceptance: add base class record/replay kernel tests",2020-06-22T08:59:28,1
+868,243,ozlabs-change1-352793,ozlabs-patch-903637,"[RFC,28/33] job: Move job_finish_sync() to Job",2018-04-24T15:25:10,1
+869,,ozlabs-change1-352793,ozlabs-patch-911008,[29/42] job: Move job_finish_sync() to Job,2018-05-09T16:26:24,1
+870,,ozlabs-change1-352793,ozlabs-patch-916339,"[v2,24/40] job: Move job_finish_sync() to Job",2018-05-18T13:20:58,1
+871,,ozlabs-change1-352793,ozlabs-patch-919060,"[PULL,30/46] job: Move job_finish_sync() to Job",2018-05-23T13:11:39,1
+872,244,ozlabs-change1-326075,ozlabs-patch-1238297,[18/19] target/arm: Split VFM decode,2020-02-14T18:15:46,1
+873,,ozlabs-change1-326075,ozlabs-patch-1243639,"[v2,16/17] target/arm: Split VFM decode",2020-02-24T22:22:31,1
+874,,ozlabs-change1-326075,ozlabs-patch-1246666,"[PULL,21/33] target/arm: Split VFM decode",2020-02-28T16:38:28,1
+875,245,ozlabs-change1-272310,ozlabs-patch-957558,"[6/6] tests/device-introspect: Test with all machines, not only with ""none""",2018-08-14T14:46:58,1
+876,,ozlabs-change1-272310,ozlabs-patch-958243,"[v2,7/8] tests/device-introspect: Test with all machines, not only with ""none""",2018-08-16T11:35:57,1
+877,,ozlabs-change1-272310,ozlabs-patch-960618,"[PULL,16/74] tests/device-introspect: Test with all machines, not only with ""none""",2018-08-21T17:01:48,1
+878,246,ozlabs-change1-311800,ozlabs-patch-1494874,[05/18] vhost-vdpa: don't cleanup twice in vhost_vdpa_add(),2021-06-21T04:16:37,1
+879,,ozlabs-change1-311800,ozlabs-patch-1501081,"[V2,05/18] vhost-vdpa: don't cleanup twice in vhost_vdpa_add()",2021-07-06T08:27:04,1
+880,,ozlabs-change1-311800,ozlabs-patch-1524135,"[V2,07/21] vhost-vdpa: don't cleanup twice in vhost_vdpa_add()",2021-09-03T09:10:17,1
+881,,ozlabs-change1-311800,ozlabs-patch-1524692,"[PULL,31/35] vhost-vdpa: don't cleanup twice in vhost_vdpa_add()",2021-09-04T21:37:28,1
+882,247,ozlabs-change1-278174,ozlabs-patch-1430161,"[v2,1/3] target/arm: Remove PSTATE_SS from cpsr and move it into env->pstate.",2021-01-22T04:45:35,1
+883,,ozlabs-change1-278174,ozlabs-patch-1432539,"[v3,1/4] target/arm: Remove PSTATE_SS from cpsr and move it into env->pstate.",2021-01-28T04:45:26,1
+884,248,ozlabs-change1-353465,ozlabs-patch-497338,"[v3,08/35] translate-common: Listify tcg_enabled()",2015-07-18T09:40:18,1
+885,,ozlabs-change1-353465,ozlabs-patch-516574,"[v1,08/15] translate-common: Listify tcg_enabled()",2015-09-11T05:39:38,1
+886,249,ozlabs-change1-312566,ozlabs-patch-1396334,[for-5.2] qga: fix missing closedir() in qmp_guest_get_disks(),2020-11-08T16:11:12,1
+887,,ozlabs-change1-312566,ozlabs-patch-1397095,"[PULL,for-5.2,1/1] qga: fix missing closedir() in qmp_guest_get_disks()",2020-11-09T20:17:22,1
+888,250,ozlabs-change1-290076,ozlabs-patch-442165,"[v14,19/19] docs: incremental backup documentation",2015-02-20T23:07:25,1
+889,,ozlabs-change1-290076,ozlabs-patch-444543,"[RESEND,01/17] docs: incremental backup documentation",2015-02-28T00:47:41,1
+890,,ozlabs-change1-290076,ozlabs-patch-445476,"[v2,01/17] docs: incremental backup documentation",2015-03-02T23:19:47,1
+891,,ozlabs-change1-290076,ozlabs-patch-450029,"[2.4,v3,01/19] docs: incremental backup documentation",2015-03-13T18:30:01,1
+892,,ozlabs-change1-290076,ozlabs-patch-452784,"[v4,01/20] docs: incremental backup documentation",2015-03-20T19:16:44,1
+893,,ozlabs-change1-290076,ozlabs-patch-459528,"[v5,01/21] docs: incremental backup documentation",2015-04-08T22:19:44,1
+894,,ozlabs-change1-290076,ozlabs-patch-462226,"[v6,01/21] docs: incremental backup documentation",2015-04-17T23:49:49,1
+895,,ozlabs-change1-290076,ozlabs-patch-465660,"[PULL,49/76] docs: incremental backup documentation",2015-04-28T15:00:31,1
+896,251,ozlabs-change1-339113,ozlabs-patch-995469,"[RFC,v8,16/18] hw/arm/virt-acpi-build: Introduce fill_iort_idmap helper",2018-11-09T11:29:55,1
+897,,ozlabs-change1-339113,ozlabs-patch-1001910,"[RFC,v9,16/17] hw/arm/virt-acpi-build: Introduce fill_iort_idmap helper",2018-11-22T17:15:37,1
+898,,ozlabs-change1-339113,ozlabs-patch-1199593,"[for-5.0,v11,16/20] hw/arm/virt-acpi-build: Introduce fill_iort_idmap helper",2019-11-22T18:29:39,1
+899,252,ozlabs-change1-238716,ozlabs-patch-1517064,hw/acpi: define PIIX4 acpi pci hotplug property strings at a single place,2021-08-16T08:32:14,1
+900,,ozlabs-change1-238716,ozlabs-patch-1520499,[4/5] hw/acpi: define PIIX4 acpi pci hotplug property strings at a single place,2021-08-25T03:19:48,1
+901,,ozlabs-change1-238716,ozlabs-patch-1524667,"[PULL,04/35] hw/acpi: define PIIX4 acpi pci hotplug property strings at a single place",2021-09-04T21:36:04,1
+902,253,ozlabs-change1-328249,ozlabs-patch-1587587,hw/arm/smmuv3: Fix device reset,2022-02-02T11:16:02,1
+903,,ozlabs-change1-328249,ozlabs-patch-1589834,"[PULL,25/39] hw/arm/smmuv3: Fix device reset",2022-02-08T11:39:34,1
+904,254,ozlabs-change1-352644,ozlabs-patch-1650073,[28/40] lasips2: switch to using port-based IRQs,2022-06-29T12:40:14,1
+905,,ozlabs-change1-352644,ozlabs-patch-1655681,"[v2,28/40] lasips2: switch to using port-based IRQs",2022-07-12T21:52:39,1
+906,,ozlabs-change1-352644,ozlabs-patch-1657683,"[PULL,28/40] lasips2: switch to using port-based IRQs",2022-07-18T18:33:27,1
+907,255,ozlabs-change1-309750,ozlabs-patch-1335253,"[v2,4/7] target/riscv: Check nanboxed inputs to fp helpers",2020-07-24T00:28:04,1
+908,,ozlabs-change1-309750,ozlabs-patch-1343931,"[PULL,04/20] target/riscv: Check nanboxed inputs to fp helpers",2020-08-12T22:30:29,1
+909,,ozlabs-change1-309750,ozlabs-patch-1345068,"[PULL,v2,04/20] target/riscv: Check nanboxed inputs to fp helpers",2020-08-14T15:04:50,1
+910,,ozlabs-change1-309750,ozlabs-patch-1349608,"[PULL,v3,04/20] target/riscv: Check nanboxed inputs to fp helpers",2020-08-22T05:40:45,1
+911,256,ozlabs-change1-276492,ozlabs-patch-645889,timer.h: fix inconsistency between comment and function prototype,2016-07-07T13:27:35,1
+912,,ozlabs-change1-276492,ozlabs-patch-669513,"[PULL,13/16] timer.h: fix inconsistency between comment and function prototype",2016-09-13T16:04:52,1
+913,257,ozlabs-change1-228443,ozlabs-patch-1231947,"[v4,06/80] vl.c: move -m parsing after memory backends has been processed",2020-01-31T15:08:36,1
+914,,ozlabs-change1-228443,ozlabs-patch-1239422,"[v5,06/79] vl.c: move -m parsing after memory backends has been processed",2020-02-17T17:33:39,1
+915,,ozlabs-change1-228443,ozlabs-patch-1240774,"[v6,06/79] vl.c: move -m parsing after memory backends has been processed",2020-02-19T16:08:40,1
+916,,ozlabs-change1-228443,ozlabs-patch-1244021,"[PULL,006/136] vl.c: move -m parsing after memory backends has been processed",2020-02-25T11:48:56,1
+917,258,ozlabs-change1-249294,ozlabs-patch-476131,"[RFC,v8,07/13] vfio: add check for vfio devices which enable aer should support bus reset",2015-05-25T10:06:07,1
+918,,ozlabs-change1-249294,ozlabs-patch-476900,"[RFC,v8.1,07/13] vfio: add check for vfio devices which enable aer should support bus reset",2015-05-27T02:46:28,1
+919,259,ozlabs-change1-282747,ozlabs-patch-1442659,target/mips: Remove unused 'rw' argument from page_table_walk_refill(),2021-02-20T20:20:26,1
+920,,ozlabs-change1-282747,ozlabs-patch-1442789,"[PULL,21/43] target/mips: Remove unused 'rw' argument from page_table_walk_refill()",2021-02-21T14:34:10,1
+921,260,ozlabs-change1-356365,ozlabs-patch-591438,rng: switch request queue to QSIMPLEQ,2016-03-03T13:16:11,1
+922,,ozlabs-change1-356365,ozlabs-patch-594015,"[PULL,1/1] rng: switch request queue to QSIMPLEQ",2016-03-08T10:54:12,1
+923,261,ozlabs-change1-227368,ozlabs-patch-1184339,fw_cfg: Allow reboot-timeout=-1 again,2019-10-25T16:57:06,1
+924,,ozlabs-change1-227368,ozlabs-patch-1186200,[1/2] fw_cfg: Allow reboot-timeout=-1 again,2019-10-29T17:01:23,1
+925,,ozlabs-change1-227368,ozlabs-patch-1188713,"[PULL,1/2] fw_cfg: Allow reboot-timeout=-1 again",2019-11-03T22:25:10,1
+926,262,ozlabs-change1-334771,ozlabs-patch-271577,qapi-types.py: Fix enum struct sizes on i686,2013-08-31T22:36:17,1
+927,,ozlabs-change1-334771,ozlabs-patch-273881,[PULL] qapi-types.py: Fix enum struct sizes on i686,2013-09-10T14:12:44,1
+928,,ozlabs-change1-334771,ozlabs-patch-277856,[30/38] qapi-types.py: Fix enum struct sizes on i686,2013-09-25T12:57:58,1
+929,263,ozlabs-change1-243141,ozlabs-patch-305599,[09/10] target-arm: A64: Add support for floating point cond select,2013-12-28T21:49:10,1
+930,,ozlabs-change1-243141,ozlabs-patch-305802,"[v2,09/10] target-arm: A64: Add support for floating point cond select",2013-12-30T16:34:34,1
+931,,ozlabs-change1-243141,ozlabs-patch-307193,"[PULL,34/52] target-arm: A64: Add support for floating point cond select",2014-01-06T11:30:39,1
+932,,ozlabs-change1-243141,ozlabs-patch-307757,"[PULL,34/76] target-arm: A64: Add support for floating point cond select",2014-01-07T20:03:30,1
+933,264,ozlabs-change1-329116,ozlabs-patch-772601,"[v3,4/5] xics: directly register ICPState objects to vmstate",2017-06-07T17:17:17,1
+934,,ozlabs-change1-329116,ozlabs-patch-773211,"[v4,5/6] xics: directly register ICPState objects to vmstate",2017-06-08T13:43:18,1
+935,,ozlabs-change1-329116,ozlabs-patch-775788,"[v5,2/3] xics: directly register ICPState objects to vmstate",2017-06-14T13:29:10,1
+936,,ozlabs-change1-329116,ozlabs-patch-782783,"[PULL,10/21] xics: directly register ICPState objects to vmstate",2017-06-30T10:46:21,1
+937,265,ozlabs-change1-271450,ozlabs-patch-783671,"[v2,14/15] block: Align block status requests",2017-07-03T22:14:55,1
+938,,ozlabs-change1-271450,ozlabs-patch-787868,"[v3,21/23] block: Align block status requests",2017-07-13T15:47:09,1
+939,,ozlabs-change1-271450,ozlabs-patch-813523,"[v4,21/23] block: Align block status requests",2017-09-13T16:03:31,1
+940,,ozlabs-change1-271450,ozlabs-patch-821134,"[v5,21/23] block: Align block status requests",2017-10-04T02:00:46,1
+941,,ozlabs-change1-271450,ozlabs-patch-824689,"[v6,21/24] block: Align block status requests",2017-10-12T03:47:17,1
+942,,ozlabs-change1-271450,ozlabs-patch-830671,"[PULL,23/35] block: Align block status requests",2017-10-26T13:17:29,1
+943,266,ozlabs-change1-345244,ozlabs-patch-1180484,[02/30] virtiofsd: Pull in kernel's fuse.h,2019-10-21T10:58:04,1
+944,,ozlabs-change1-345244,ozlabs-patch-1208588,[002/104] virtiofsd: Pull in kernel's fuse.h,2019-12-12T16:37:22,1
+945,,ozlabs-change1-345244,ozlabs-patch-1226430,"[v2,002/109] virtiofsd: Pull in kernel's fuse.h",2020-01-21T12:22:46,1
+946,,ozlabs-change1-345244,ozlabs-patch-1227869,"[PULL,002/111] virtiofsd: Pull in kernel's fuse.h",2020-01-23T11:56:52,1
+947,,ozlabs-change1-345244,ozlabs-patch-1228469,"[PULL,002/108] virtiofsd: Pull in kernel's fuse.h",2020-01-23T16:44:44,1
+948,267,ozlabs-change1-240552,ozlabs-patch-1104644,[17/20] hw/i386/pc: Let pc_build_feature_control() take a FWCfgState argument,2019-05-24T06:35:50,1
+949,,ozlabs-change1-240552,ozlabs-patch-1115251,"[v2,17/20] hw/i386/pc: Let pc_build_feature_control() take a FWCfgState argument",2019-06-13T14:34:43,1
+950,,ozlabs-change1-240552,ozlabs-patch-1125377,"[v3,12/15] hw/i386/pc: Let pc_build_feature_control() take a FWCfgState argument",2019-07-01T13:35:33,1
+951,,ozlabs-change1-240552,ozlabs-patch-1148941,"[v4,12/15] hw/i386/pc: Let pc_build_feature_control() take a FWCfgState argument",2019-08-18T22:54:11,1
+952,,ozlabs-change1-240552,ozlabs-patch-1162943,"[PULL,26/29] hw/i386/pc: Let pc_build_feature_control() take a FWCfgState argument",2019-09-16T14:42:06,1
+953,268,ozlabs-change1-271614,ozlabs-patch-1237628,qcow2: Fix alignment checks in encrypted images,2020-02-13T17:16:46,1
+954,,ozlabs-change1-271614,ozlabs-patch-1240073,"[PULL,03/36] qcow2: Fix alignment checks in encrypted images",2020-02-18T14:06:49,1
+955,269,ozlabs-change1-249218,ozlabs-patch-385630,[1/2] memory: Add MemoryRegion get address space offset helper function,2014-09-03T17:38:37,1
+956,,ozlabs-change1-249218,ozlabs-patch-385507,[1/2] memory: Add MemoryRegion get address space offset helper function,2014-09-03T18:36:14,1
+957,270,ozlabs-change1-276126,ozlabs-patch-78750,[2/5] iohandlers: Introduce assign_fd_handlers() and remove_fd_handlers,2011-01-13T13:00:07,1
+958,,ozlabs-change1-276126,ozlabs-patch-78763,"[v2,2/5] iohandlers: Introduce assign_fd_handlers() and remove_fd_handlers",2011-01-13T15:00:39,1
+959,271,ozlabs-change1-339606,ozlabs-patch-1218962,migration-test: ppc64: fix FORTH test program,2020-01-07T16:34:37,1
+960,,ozlabs-change1-339606,ozlabs-patch-1221325,"[PULL,04/28] migration-test: ppc64: fix FORTH test program",2020-01-10T17:31:51,1
+961,,ozlabs-change1-339606,ozlabs-patch-1222594,"[PULL,05/29] migration-test: ppc64: fix FORTH test program",2020-01-14T09:25:42,1
+962,,ozlabs-change1-339606,ozlabs-patch-1222721,"[PULL,05/30] migration-test: ppc64: fix FORTH test program",2020-01-14T11:39:01,1
+963,,ozlabs-change1-339606,ozlabs-patch-1222764,"[PULL,06/30] migration-test: ppc64: fix FORTH test program",2020-01-14T12:52:30,1
+964,,ozlabs-change1-339606,ozlabs-patch-1224760,"[PULL,2/4] migration-test: ppc64: fix FORTH test program",2020-01-17T11:07:56,1
+965,272,ozlabs-change1-349405,ozlabs-patch-1433001,iotests/297: pylint: ignore too many statements,2021-01-28T20:04:17,1
+966,,ozlabs-change1-349405,ozlabs-patch-1433364,[v2] iotests/297: pylint: ignore too many statements,2021-01-29T16:13:23,1
+967,,ozlabs-change1-349405,ozlabs-patch-1434283,"[PULL,4/6] iotests/297: pylint: ignore too many statements",2021-02-01T19:07:18,1
+968,,ozlabs-change1-349405,ozlabs-patch-1434829,"[PULL,v2,04/10] iotests/297: pylint: ignore too many statements",2021-02-02T16:28:28,1
+969,273,ozlabs-change1-289940,ozlabs-patch-955863,[11/11] iotests: Test committing to overridden backing,2018-08-09T21:38:01,1
+970,,ozlabs-change1-289940,ozlabs-patch-955882,"[v2,11/11] iotests: Test committing to overridden backing",2018-08-09T22:31:17,1
+971,,ozlabs-change1-289940,ozlabs-patch-1041658,"[v3,12/12] iotests: Test committing to overridden backing",2019-02-13T22:53:11,1
+972,,ozlabs-change1-289940,ozlabs-patch-1083620,"[v4,11/11] iotests: Test committing to overridden backing",2019-04-10T20:20:33,1
+973,,ozlabs-change1-289940,ozlabs-patch-1114907,"[v5,42/42] iotests: Test committing to overridden backing",2019-06-12T22:10:04,1
+974,,ozlabs-change1-289940,ozlabs-patch-1144835,"[v6,42/42] iotests: Test committing to overridden backing",2019-08-09T16:14:07,1
+975,,ozlabs-change1-289940,ozlabs-patch-1317044,"[v7,47/47] iotests: Test committing to overridden backing",2020-06-25T15:22:15,1
+976,,ozlabs-change1-289940,ozlabs-patch-1355154,"[v8,43/43] iotests: Test committing to overridden backing",2020-09-01T14:34:24,1
+977,,ozlabs-change1-289940,ozlabs-patch-1358868,"[PULL,59/64] iotests: Test committing to overridden backing",2020-09-07T11:09:31,1
+978,274,ozlabs-change1-330987,ozlabs-patch-1232765,[qemu-web] Update the documentation links to point to our generated docs,2020-02-03T13:19:19,1
+979,,ozlabs-change1-330987,ozlabs-patch-1232800,"[qemu-web,v2] Update the documentation links to point to our generated docs",2020-02-03T14:13:46,1
+980,275,ozlabs-change1-339600,ozlabs-patch-555272,[28/34] scripts/kvm/kvm_stat: Fix output formatting,2015-12-10T12:12:58,1
+981,,ozlabs-change1-339600,ozlabs-patch-565994,"[v2,28/34] scripts/kvm/kvm_stat: Fix output formatting",2016-01-11T15:17:58,1
+982,,ozlabs-change1-339600,ozlabs-patch-573292,"[PULL,34/49] scripts/kvm/kvm_stat: Fix output formatting",2016-01-26T13:47:06,1
+983,276,ozlabs-change1-304185,ozlabs-patch-1060675,"[RFC,for-4.1,13/25] target/ppc: Style fixes for mem_helper.c",2019-03-22T00:15:32,1
+984,,ozlabs-change1-304185,ozlabs-patch-1091330,"[PULL,15/36] target/ppc: Style fixes for mem_helper.c",2019-04-26T06:06:06,1
+985,277,ozlabs-change1-260051,ozlabs-patch-1348616,"[v1,2/2] microblaze: petalogix-s3adsp1800: Add device-tree source",2020-08-20T19:43:42,1
+986,,ozlabs-change1-260051,ozlabs-patch-1350210,"[PULL,v1,8/8] microblaze: petalogix-s3adsp1800: Add device-tree source",2020-08-24T10:00:41,1
+987,278,ozlabs-change1-332584,ozlabs-patch-731783,[13/21] qapi: Drop string input visitor method optional(),2017-02-23T21:45:09,1
+988,,ozlabs-change1-332584,ozlabs-patch-732582,"[v2,13/26] qapi: Drop string input visitor method optional()",2017-02-26T21:43:31,1
+989,,ozlabs-change1-332584,ozlabs-patch-733710,"[v3,13/26] qapi: Drop string input visitor method optional()",2017-02-28T17:39:07,1
+990,,ozlabs-change1-332584,ozlabs-patch-733776,"[PULL,13/26] qapi: Drop string input visitor method optional()",2017-02-28T19:06:23,1
+991,,ozlabs-change1-332584,ozlabs-patch-735044,"[v4,15/28] qapi: Drop string input visitor method optional()",2017-03-03T12:32:35,1
+992,,ozlabs-change1-332584,ozlabs-patch-735386,"[PULL,v2,14/27] qapi: Drop string input visitor method optional()",2017-03-05T08:35:45,1
+993,279,ozlabs-change1-294699,ozlabs-patch-778040,"[v3,18/18] target/s390x: Clean up TB flag bits",2017-06-20T00:04:05,1
+994,,ozlabs-change1-294699,ozlabs-patch-780130,"[PULL,12/15] target/s390x: Clean up TB flag bits",2017-06-23T16:22:38,1
+995,280,ozlabs-change1-238352,ozlabs-patch-1471917,"[v3,11/30] target/ppc: Introduce DISAS_{EXIT,CHAIN}{,_UPDATE}",2021-04-30T01:15:24,1
+996,,ozlabs-change1-238352,ozlabs-patch-1477782,"[v4,07/31] target/ppc: Introduce DISAS_{EXIT,CHAIN}{,_UPDATE}",2021-05-12T18:54:17,1
+997,,ozlabs-change1-238352,ozlabs-patch-1480904,"[PULL,22/48] target/ppc: Introduce DISAS_{EXIT,CHAIN}{,_UPDATE}",2021-05-19T12:51:22,1
+998,281,ozlabs-change1-337995,ozlabs-patch-961458,"[v2,4/5] test-char: fix random socket test failure",2018-08-23T14:31:24,1
+999,,ozlabs-change1-337995,ozlabs-patch-977987,"[PULL,53/80] test-char: fix random socket test failure",2018-10-02T17:22:46,1
+1000,282,ozlabs-change1-292579,ozlabs-patch-384526,IDE: MMIO IDE device control should be little endian,2014-08-31T08:32:08,1
+1001,,ozlabs-change1-292579,ozlabs-patch-388707,"[PULL,07/22] IDE: MMIO IDE device control should be little endian",2014-09-12T15:56:51,1
+1002,283,ozlabs-change1-284219,ozlabs-patch-754802,[09/13] armv7m: Implement M profile default memory map,2017-04-25T12:07:06,1
+1003,,ozlabs-change1-284219,ozlabs-patch-769834,"[PULL,15/27] armv7m: Implement M profile default memory map",2017-06-01T17:10:23,1
+1004,284,ozlabs-change1-244586,ozlabs-patch-104082,"[RFC,v3,05/56] memory: abstract address space operations",2011-07-10T18:14:18,1
+1005,,ozlabs-change1-244586,ozlabs-patch-105025,"[RFC,v4,05/58] memory: abstract address space operations",2011-07-17T11:13:32,1
+1006,,ozlabs-change1-244586,ozlabs-patch-105871,"[RFC,v5,06/86] memory: abstract address space operations",2011-07-20T16:49:16,1
+1007,,ozlabs-change1-244586,ozlabs-patch-106700,[05/23] memory: abstract address space operations,2011-07-25T14:02:46,1
+1008,,ozlabs-change1-244586,ozlabs-patch-106841,"[v2,06/23] memory: abstract address space operations",2011-07-26T11:26:05,1
+1009,285,ozlabs-change1-302244,ozlabs-patch-525138,[1/2] vhost-user-test: use tmpfs by default,2015-10-01T12:54:38,1
+1010,,ozlabs-change1-302244,ozlabs-patch-525592,"[PULL,14/15] vhost-user-test: use tmpfs by default",2015-10-02T13:45:55,1
+1011,,ozlabs-change1-302244,ozlabs-patch-526585,"[PULL,14/15] vhost-user-test: use tmpfs by default",2015-10-05T23:04:20,1
+1012,,ozlabs-change1-302244,ozlabs-patch-526586,"[PULL,14/15] vhost-user-test: use tmpfs by default",2015-10-05T23:17:00,1
+1013,286,ozlabs-change1-229850,ozlabs-patch-770003,[3/5] migration: Create load_setup()/cleanup() methods,2017-06-01T22:15:50,1
+1014,,ozlabs-change1-229850,ozlabs-patch-775059,"[v2,3/5] migration: Create load_setup()/cleanup() methods",2017-06-13T09:53:36,1
+1015,,ozlabs-change1-229850,ozlabs-patch-778751,"[v3,3/5] migration: Create load_setup()/cleanup() methods",2017-06-21T10:20:03,1
+1016,,ozlabs-change1-229850,ozlabs-patch-781517,"[v4,3/5] migration: Create load_setup()/cleanup() methods",2017-06-28T09:52:26,1
+1017,,ozlabs-change1-229850,ozlabs-patch-786295,"[PULL,7/9] migration: Create load_setup()/cleanup() methods",2017-07-10T17:10:38,1
+1018,287,ozlabs-change1-326436,ozlabs-patch-545224,[for-2.5] default-configs/aarch64-linux-user.mak: Remove unused define,2015-11-16T16:09:38,1
+1019,,ozlabs-change1-326436,ozlabs-patch-548102,"[PULL,2/4] default-configs/aarch64-linux-user.mak: Remove unused define",2015-11-24T14:18:49,1
+1020,288,ozlabs-change1-226579,ozlabs-patch-922943,"[v3b,15/18] target/arm: Implement SVE Integer Compare - Scalars Group",2018-05-30T18:01:17,1
+1021,,ozlabs-change1-226579,ozlabs-patch-928600,"[v4b,15/18] target/arm: Implement SVE Integer Compare - Scalars Group",2018-06-13T01:56:38,1
+1022,,ozlabs-change1-226579,ozlabs-patch-930029,"[PULL,33/43] target/arm: Implement SVE Integer Compare - Scalars Group",2018-06-15T14:25:11,1
+1023,289,ozlabs-change1-313134,ozlabs-patch-175728,[4/4] s390/kvm: Split out early console code.,2012-08-07T14:52:48,1
+1024,,ozlabs-change1-313134,ozlabs-patch-181613,"[v2,4/4] s390/kvm: Split out early console code.",2012-09-04T15:13:42,1
+1025,290,ozlabs-change1-251392,ozlabs-patch-1617828,[17/26] qed: add missing coroutine_fn annotations,2022-04-15T13:18:51,1
+1026,,ozlabs-change1-251392,ozlabs-patch-1628515,"[v2,17/26] qed: add missing coroutine_fn annotations",2022-05-09T10:30:10,1
+1027,,ozlabs-change1-251392,ozlabs-patch-1681013,[17/26] qed: add missing coroutine_fn annotations,2022-09-22T08:49:15,1
+1028,291,ozlabs-change1-300194,ozlabs-patch-1607466,"[PULL,for-7.1,01/36] util/log: Drop manual log buffering",2022-03-20T17:11:00,1
+1029,,ozlabs-change1-300194,ozlabs-patch-1609694,"[v2,01/39] util/log: Drop manual log buffering",2022-03-26T13:24:49,1
+1030,,ozlabs-change1-300194,ozlabs-patch-1618185,"[v3,01/39] util/log: Drop manual log buffering",2022-04-17T18:29:41,1
+1031,,ozlabs-change1-300194,ozlabs-patch-1619683,"[PULL,01/39] util/log: Drop manual log buffering",2022-04-20T18:05:40,1
+1032,292,ozlabs-change1-334518,ozlabs-patch-1480156,target/ppc: Fix load endianness for lxvwsx/lxvdsx,2021-05-18T09:23:52,1
+1033,,ozlabs-change1-334518,ozlabs-patch-1480255,[v2] target/ppc: Fix load endianness for lxvwsx/lxvdsx,2021-05-18T13:30:20,1
+1034,,ozlabs-change1-334518,ozlabs-patch-1480920,"[PULL,33/48] target/ppc: Fix load endianness for lxvwsx/lxvdsx",2021-05-19T12:51:33,1
+1035,,ozlabs-change1-334518,ozlabs-patch-1543410,[07/64] target/ppc: Fix load endianness for lxvwsx/lxvdsx,2021-10-19T14:08:47,1
+1036,293,ozlabs-change1-279125,ozlabs-patch-228082,"[RFC,V7,18/32] qcow2: Extract qcow2_set_incompat_feature and qcow2_clear_incompat_feature.",2013-03-15T14:49:32,1
+1037,,ozlabs-change1-279125,ozlabs-patch-252954,"[RFC,V8,15/24] qcow2: Extract qcow2_set_incompat_feature and qcow2_clear_incompat_feature.",2013-06-20T14:26:23,1
+1038,294,ozlabs-change1-313689,ozlabs-patch-1266969,"[PATCH-for-5.1,v2,10/54] hw/arm/fsl-imx31: Move some code from realize() to init()",2020-04-06T17:46:59,1
+1039,,ozlabs-change1-313689,ozlabs-patch-1269588,"[PATCH-for-5.1,v3,10/24] hw/arm/fsl-imx31: Move some code from realize() to init()",2020-04-12T22:36:05,1
+1040,295,ozlabs-change1-348319,ozlabs-patch-451827,"[v11,5/9] hw/arm/virt: start VFIO IRQ propagation",2015-03-19T10:05:34,1
+1041,,ozlabs-change1-348319,ozlabs-patch-452073,"[v12,5/9] hw/arm/virt: start VFIO IRQ propagation",2015-03-19T17:16:37,1
+1042,296,ozlabs-change1-244114,ozlabs-patch-51047,qcow2: Remove abort on free_clusters failure,2010-04-27T10:35:18,1
+1043,,ozlabs-change1-244114,ozlabs-patch-51343,[14/18] qcow2: Remove abort on free_clusters failure,2010-04-30T14:00:36,1
+1044,,ozlabs-change1-244114,ozlabs-patch-58871,"[STABLE,04/14] qcow2: Remove abort on free_clusters failure",2010-07-14T11:24:03,1
+1045,297,ozlabs-change1-248741,ozlabs-patch-100946,Align dummy display to fixed-size active console,2011-06-19T09:53:02,1
+1046,,ozlabs-change1-248741,ozlabs-patch-101833,[02/13] Align dummy display to fixed-size active console,2011-06-24T16:56:38,1
+1047,298,ozlabs-change1-241437,ozlabs-patch-483605,"[12/13] target-mips: microMIPS32 R6 POOL16{A, C} instructions",2015-06-12T14:02:22,1
+1048,,ozlabs-change1-241437,ozlabs-patch-486786,"[v2,14/15] target-mips: microMIPS32 R6 POOL16{A, C} instructions",2015-06-19T16:25:37,1
+1049,,ozlabs-change1-241437,ozlabs-patch-487702,"[v3,14/15] target-mips: microMIPS32 R6 POOL16{A, C} instructions",2015-06-23T15:38:47,1
+1050,,ozlabs-change1-241437,ozlabs-patch-488241,"[v4,14/15] target-mips: microMIPS32 R6 POOL16{A, C} instructions",2015-06-24T23:24:26,1
+1051,,ozlabs-change1-241437,ozlabs-patch-488727,"[PULL,19/20] target-mips: microMIPS32 R6 POOL16{A, C} instructions",2015-06-26T10:25:23,1
+1052,299,ozlabs-change1-321391,ozlabs-patch-51295,qemu-img rebase: Fix output image corruption,2010-04-29T12:57:06,1
+1053,,ozlabs-change1-321391,ozlabs-patch-51344,[17/18] qemu-img rebase: Fix output image corruption,2010-04-30T14:00:39,1
+1054,300,ozlabs-change1-248531,ozlabs-patch-77046,"[RFC,2/2] KVM, MCE, unpoison memory address across reboot",2010-12-31T05:22:35,1
+1055,,ozlabs-change1-248531,ozlabs-patch-82426,"[uq/master,-v2,2/2] KVM, MCE, unpoison memory address across reboot",2011-02-09T03:00:31,1
+1056,,ozlabs-change1-248531,ozlabs-patch-83215,"[13/13] KVM, MCE, unpoison memory address across reboot",2011-02-15T08:23:37,1
+1057,,ozlabs-change1-248531,ozlabs-patch-83561,"[v2,15/15] KVM, MCE, unpoison memory address across reboot",2011-02-18T10:11:26,1
+1058,,ozlabs-change1-248531,ozlabs-patch-85050,"[v3,17/17] KVM, MCE, unpoison memory address across reboot",2011-03-02T07:56:20,1
+1059,,ozlabs-change1-248531,ozlabs-patch-87125,"[17/35] KVM, MCE, unpoison memory address across reboot",2011-03-15T21:50:31,1
+1060,301,ozlabs-change1-238356,ozlabs-patch-1238304,"[09/19] target/arm: Replace ARM_FEATURE_VFP3 checks with fp{sp, dp}_v3",2020-02-14T18:15:37,1
+1061,,ozlabs-change1-238356,ozlabs-patch-1242139,"[PULL,51/52] target/arm: Replace ARM_FEATURE_VFP3 checks with fp{sp, dp}_v3",2020-02-21T13:07:39,1
+1062,,ozlabs-change1-238356,ozlabs-patch-1243633,"[v2,07/17] target/arm: Replace ARM_FEATURE_VFP3 checks with fp{sp, dp}_v3",2020-02-24T22:22:22,1
+1063,,ozlabs-change1-238356,ozlabs-patch-1246635,"[PULL,12/33] target/arm: Replace ARM_FEATURE_VFP3 checks with fp{sp, dp}_v3",2020-02-28T16:38:19,1
+1064,302,ozlabs-change1-260536,ozlabs-patch-1464511,[2/2] docs/devel/qgraph: add troubleshooting information,2021-04-09T19:01:09,1
+1065,,ozlabs-change1-260536,ozlabs-patch-1465301,"[v2,2/2] docs/devel/qgraph: add troubleshooting information",2021-04-12T14:34:37,1
+1066,,ozlabs-change1-260536,ozlabs-patch-1473136,"[PULL,08/10] docs/devel/qgraph: add troubleshooting information",2021-05-03T10:44:54,1
+1067,,ozlabs-change1-260536,ozlabs-patch-1478449,"[PULL,06/20] docs/devel/qgraph: add troubleshooting information",2021-05-14T12:15:04,1
+1068,303,ozlabs-change1-354565,ozlabs-patch-323856,"[qom-cpu,v10,2/2] target-i386: X86CPU model subclasses",2014-02-25T07:36:27,1
+1069,,ozlabs-change1-354565,ozlabs-patch-329950,"[PULL,for-2.0-rc0,19/58] target-i386: X86CPU model subclasses",2014-03-13T14:54:22,1
+1070,,ozlabs-change1-354565,ozlabs-patch-330073,"[PULL,for-2.0-rc0,19/58] target-i386: X86CPU model subclasses",2014-03-13T18:19:49,1
+1071,304,ozlabs-change1-333211,ozlabs-patch-194381,uhci: dynamic type generation,2012-10-26T07:02:59,1
+1072,,ozlabs-change1-333211,ozlabs-patch-195509,[15/22] uhci: dynamic type generation,2012-10-30T14:26:47,1
+1073,,ozlabs-change1-333211,ozlabs-patch-196303,[16/31] uhci: dynamic type generation,2012-11-01T15:54:29,1
+1074,305,ozlabs-change1-339570,ozlabs-patch-1491694,[v2] linux-user/trace-events: fix minor typo in format string,2021-06-14T14:42:45,1
+1075,,ozlabs-change1-339570,ozlabs-patch-1495069,"[PULL,3/9] linux-user/trace-events: fix minor typo in format string",2021-06-21T11:04:39,1
+1076,306,ozlabs-change1-267763,ozlabs-patch-1072505,"[v2,3/5] migration: Support adding migration blockers earlier",2019-04-01T09:08:25,1
+1077,,ozlabs-change1-267763,ozlabs-patch-1074407,"[PULL,6/8] migration: Support adding migration blockers earlier",2019-04-02T13:01:10,1
+1078,307,ozlabs-change1-276946,ozlabs-patch-1032293,"[v2,11/12] linux-user/aarch64: Reset btype for syscalls and signals",2019-01-28T22:31:17,1
+1079,,ozlabs-change1-276946,ozlabs-patch-1035925,"[v3,3/4] linux-user/aarch64: Reset btype for syscalls and signals",2019-02-04T13:12:27,1
+1080,,ozlabs-change1-276946,ozlabs-patch-1070397,"[v4,1/4] linux-user/aarch64: Reset btype for syscalls and signals",2019-03-30T00:58:57,1
+1081,,ozlabs-change1-276946,ozlabs-patch-1110754,"[v6,1/6] linux-user/aarch64: Reset btype for syscalls and signals",2019-06-05T20:57:01,1
+1082,308,ozlabs-change1-300024,ozlabs-patch-673307,[v2] net: mcf: limit buffer descriptor count,2016-09-22T10:32:37,1
+1083,,ozlabs-change1-300024,ozlabs-patch-675053,"[PULL,25/27] net: mcf: limit buffer descriptor count",2016-09-26T08:59:33,1
+1084,,ozlabs-change1-300024,ozlabs-patch-675512,"[PULL,V2,25/27] net: mcf: limit buffer descriptor count",2016-09-27T10:13:05,1
+1085,309,ozlabs-change1-342233,ozlabs-patch-982784,[2/7] target/ppc: Remove float_check_status,2018-10-11T23:41:54,1
+1086,,ozlabs-change1-342233,ozlabs-patch-994839,"[PULL,07/22] target/ppc: Remove float_check_status",2018-11-08T12:16:31,1
+1087,310,ozlabs-change1-313509,ozlabs-patch-1497388,[07/10] iotests/297: return error code from run_linters(),2021-06-25T18:20:18,1
+1088,,ozlabs-change1-313509,ozlabs-patch-1507703,"[v2,13/17] iotests/297: return error code from run_linters()",2021-07-20T17:33:32,1
+1089,,ozlabs-change1-313509,ozlabs-patch-1528621,"[v3,11/16] iotests/297: return error code from run_linters()",2021-09-16T04:09:50,1
+1090,311,ozlabs-change1-283841,ozlabs-patch-1458999,"[RFC,v12,30/65] target/arm: fix style of arm_cpu_do_interrupt functions before move",2021-03-26T19:36:26,1
+1091,,ozlabs-change1-283841,ozlabs-patch-1466180,"[RFC,v13,36/80] target/arm: fix style of arm_cpu_do_interrupt functions before move",2021-04-14T11:26:06,1
+1092,,ozlabs-change1-283841,ozlabs-patch-1467164,"[RFC,v14,36/80] target/arm: fix style of arm_cpu_do_interrupt functions before move",2021-04-16T16:27:40,1
+1093,,ozlabs-change1-283841,ozlabs-patch-1488004,"[v16,50/99] target/arm: fix style of arm_cpu_do_interrupt functions before move",2021-06-04T15:52:23,1
+1094,312,ozlabs-change1-281264,ozlabs-patch-160814,"[qom-next,05/59] apic: Replace cpu_env pointer by X86CPU link",2012-05-23T03:07:28,1
+1095,,ozlabs-change1-281264,ozlabs-patch-161817,"[qom-next,06/12] apic: Replace cpu_env pointer by X86CPU link",2012-05-29T22:10:19,1
+1096,313,ozlabs-change1-315239,ozlabs-patch-654086,[1/3] timer: update comments,2016-07-29T11:05:36,1
+1097,,ozlabs-change1-315239,ozlabs-patch-669536,"[PULL,14/58] timer: update comments",2016-09-13T17:15:45,1
+1098,,ozlabs-change1-315239,ozlabs-patch-669794,"[PULL,14/27] timer: update comments",2016-09-14T07:58:40,1
+1099,314,ozlabs-change1-266782,ozlabs-patch-38617,[15/15] scsi: add scsi_req_print(),2009-11-17T10:17:51,1
+1100,,ozlabs-change1-266782,ozlabs-patch-39541,[15/30] scsi: add scsi_req_print(),2009-11-26T14:34:01,1
+1101,315,ozlabs-change1-293691,ozlabs-patch-85294,linux-user: bigger default stack,2011-03-03T15:37:37,1
+1102,,ozlabs-change1-293691,ozlabs-patch-91814,"[1/6,v2] linux-user: bigger default stack",2011-04-18T17:28:58,1
+1103,316,ozlabs-change1-281251,ozlabs-patch-54786,[6/6] apic: avoid using CPUState internals,2010-06-05T21:31:48,1
+1104,,ozlabs-change1-281251,ozlabs-patch-55402,"[v2,5/7] apic: avoid using CPUState internals",2010-06-12T21:15:19,1
+1105,317,ozlabs-change1-296210,ozlabs-patch-1410512,[1/3] block: Simplify qmp_block_resize() error paths,2020-12-03T17:23:09,1
+1106,,ozlabs-change1-296210,ozlabs-patch-1415181,"[PULL,32/34] block: Simplify qmp_block_resize() error paths",2020-12-11T17:08:10,1
+1107,318,ozlabs-change1-255061,ozlabs-patch-300056,target-ppc: add stubs for KVM breakpoints,2013-12-11T13:15:34,1
+1108,,ozlabs-change1-255061,ozlabs-patch-303829,"[PULL,01/32] target-ppc: add stubs for KVM breakpoints",2013-12-20T01:00:23,1
+1109,319,ozlabs-change1-333790,ozlabs-patch-116775,[17/22] i8259: Eliminate PicState2,2011-09-28T11:01:03,1
+1110,,ozlabs-change1-333790,ozlabs-patch-118264,"[v2,18/23] i8259: Eliminate PicState2",2011-10-07T07:19:51,1
+1111,320,ozlabs-change1-271800,ozlabs-patch-1466192,"[RFC,v13,45/80] MAINTAINERS: update arm kvm maintained files to all in target/arm/kvm/",2021-04-14T11:26:15,1
+1112,,ozlabs-change1-271800,ozlabs-patch-1467199,"[RFC,v14,45/80] MAINTAINERS: update arm kvm maintained files to all in target/arm/kvm/",2021-04-16T16:27:49,1
+1113,,ozlabs-change1-271800,ozlabs-patch-1487931,"[v16,59/99] MAINTAINERS: update arm kvm maintained files to all in target/arm/kvm/",2021-06-04T15:52:32,1
+1114,321,ozlabs-change1-268168,ozlabs-patch-293497,"[RFC,3/8] exec: Always initialize MemorySection address spaces",2013-11-22T15:15:54,1
+1115,,ozlabs-change1-268168,ozlabs-patch-301499,"[v1,03/22] exec: Always initialize MemorySection address spaces",2013-12-16T08:05:51,1
+1116,,ozlabs-change1-268168,ozlabs-patch-303175,"[v2,03/22] exec: Always initialize MemorySection address spaces",2013-12-19T05:51:14,1
+1117,,ozlabs-change1-268168,ozlabs-patch-309714,"[v3,03/22] exec: Always initialize MemorySection address spaces",2014-01-13T07:39:43,1
+1118,,ozlabs-change1-268168,ozlabs-patch-316092,"[v4,03/22] exec: Always initialize MemorySection address spaces",2014-02-03T09:44:31,1
+1119,322,ozlabs-change1-322395,ozlabs-patch-805312,"[for-2.11,1/6] ppc: use macros to make cpu type name from string literal",2017-08-24T08:21:46,1
+1120,,ozlabs-change1-322395,ozlabs-patch-807628,"[v2,2/8] ppc: use macros to make cpu type name from string literal",2017-08-30T13:24:29,1
+1121,,ozlabs-change1-322395,ozlabs-patch-811515,"[PULL,33/40] ppc: use macros to make cpu type name from string literal",2017-09-08T10:35:51,1
+1122,323,ozlabs-change1-355745,ozlabs-patch-261546,"[qom-next,for-1.6,11/14] pl011: Rename pl011_state",2013-07-24T21:42:16,1
+1123,,ozlabs-change1-355745,ozlabs-patch-263009,"[PULL,070/173] pl011: Rename pl011_state",2013-07-29T19:18:47,1
+1124,324,ozlabs-change1-279610,ozlabs-patch-510161,"[v14,18/33] target-tilegx: Handle post-increment load and store instructions",2015-08-24T16:17:44,1
+1125,,ozlabs-change1-279610,ozlabs-patch-513767,"[v15,18/33] target-tilegx: Handle post-increment load and store instructions",2015-09-03T01:31:10,1
+1126,,ozlabs-change1-279610,ozlabs-patch-517593,"[v16,20/35] target-tilegx: Handle post-increment load and store instructions",2015-09-14T22:43:27,1
+1127,,ozlabs-change1-279610,ozlabs-patch-517934,"[PULL,20/35] target-tilegx: Handle post-increment load and store instructions",2015-09-15T15:03:58,1
+1128,325,ozlabs-change1-278225,ozlabs-patch-721217,[6/7] cpu-exec: unify icount_decr and tcg_exit_req,2017-01-29T21:09:09,1
+1129,,ozlabs-change1-278225,ozlabs-patch-730546,[1/3] cpu-exec: unify icount_decr and tcg_exit_req,2017-02-21T12:46:36,1
+1130,,ozlabs-change1-278225,ozlabs-patch-732216,"[PULL,01/17] cpu-exec: unify icount_decr and tcg_exit_req",2017-02-24T17:40:14,1
+1131,,ozlabs-change1-278225,ozlabs-patch-732796,[01/17] cpu-exec: unify icount_decr and tcg_exit_req,2017-02-27T12:45:35,1
+1132,326,ozlabs-change1-337362,ozlabs-patch-248010,[3/4] tcg/aarch64: implement sign/zero extend operations,2013-05-31T18:05:23,1
+1133,,ozlabs-change1-337362,ozlabs-patch-248268,[4/4] tcg/aarch64: implement sign/zero extend operations,2013-06-03T13:30:00,1
+1134,,ozlabs-change1-337362,ozlabs-patch-250834,"[PULL,09/13] tcg/aarch64: implement sign/zero extend operations",2013-06-12T15:57:21,1
+1135,327,ozlabs-change1-281306,ozlabs-patch-31560,[5/5] Port apic to new VMState design,2009-08-18T13:34:10,1
+1136,,ozlabs-change1-281306,ozlabs-patch-31649,[2/3] Port apic to new VMState design,2009-08-19T14:34:13,1
+1137,,ozlabs-change1-281306,ozlabs-patch-31760,[10/23] Port apic to new VMState design,2009-08-20T17:42:28,1
+1138,328,ozlabs-change1-310561,ozlabs-patch-271159,"[v3,4/8] qcow2-refcount: Move OFLAG_COPIED checks",2013-08-30T07:46:54,1
+1139,,ozlabs-change1-310561,ozlabs-patch-271267,"[v4,4/8] qcow2-refcount: Move OFLAG_COPIED checks",2013-08-30T12:34:27,1
+1140,,ozlabs-change1-310561,ozlabs-patch-271315,"[PULL,22/26] qcow2-refcount: Move OFLAG_COPIED checks",2013-08-30T14:30:47,1
+1141,,ozlabs-change1-310561,ozlabs-patch-271697,"[v5,4/8] qcow2-refcount: Move OFLAG_COPIED checks",2013-09-02T07:25:08,1
+1142,,ozlabs-change1-310561,ozlabs-patch-271822,"[PULL,v2,22/26] qcow2-refcount: Move OFLAG_COPIED checks",2013-09-02T08:49:48,1
+1143,,ozlabs-change1-310561,ozlabs-patch-271950,"[PULL,v2,22/26] qcow2-refcount: Move OFLAG_COPIED checks",2013-09-02T13:52:37,1
+1144,329,ozlabs-change1-331614,ozlabs-patch-193538,[6/7] hw/nseries: Don't prematurely explode QEMUMachineInitArgs,2012-10-23T17:04:29,1
+1145,,ozlabs-change1-331614,ozlabs-patch-193773,"[v2,6/8] hw/nseries: Don't prematurely explode QEMUMachineInitArgs",2012-10-24T13:22:02,1
+1146,,ozlabs-change1-331614,ozlabs-patch-195430,[07/28] hw/nseries: Don't prematurely explode QEMUMachineInitArgs,2012-10-30T08:44:03,1
+1147,330,ozlabs-change1-324674,ozlabs-patch-1548074,[4/5] target/riscv: csr: Hook debug CSR read/write,2021-10-29T15:25:34,1
+1148,,ozlabs-change1-324674,ozlabs-patch-1548516,"[v2,5/7] target/riscv: csr: Hook debug CSR read/write",2021-10-30T13:55:11,1
+1149,,ozlabs-change1-324674,ozlabs-patch-1575438,"[v3,5/7] target/riscv: csr: Hook debug CSR read/write",2022-01-05T03:01:24,1
+1150,,ozlabs-change1-324674,ozlabs-patch-1575443,"[RESEND,v3,5/7] target/riscv: csr: Hook debug CSR read/write",2022-01-05T03:08:42,1
+1151,,ozlabs-change1-324674,ozlabs-patch-1605456,"[v4,5/7] target/riscv: csr: Hook debug CSR read/write",2022-03-15T06:55:27,1
+1152,,ozlabs-change1-324674,ozlabs-patch-1619886,"[v5,3/6] target/riscv: csr: Hook debug CSR read/write",2022-04-21T00:33:21,1
+1153,,ozlabs-change1-324674,ozlabs-patch-1619997,"[PULL,27/31] target/riscv: csr: Hook debug CSR read/write",2022-04-21T06:36:26,1
+1154,,ozlabs-change1-324674,ozlabs-patch-1620531,"[PULL,v2,27/31] target/riscv: csr: Hook debug CSR read/write",2022-04-22T00:36:52,1
+1155,331,ozlabs-change1-344013,ozlabs-patch-1153515,[11/13] target/openrisc: Implement move to/from FPCSR,2019-08-27T00:07:43,1
+1156,,ozlabs-change1-344013,ozlabs-patch-1158109,"[PULL,11/13] target/openrisc: Implement move to/from FPCSR",2019-09-04T20:45:05,1
+1157,332,ozlabs-change1-264535,ozlabs-patch-661149,"[v2,1/3] tests/tcg: Add i386 litmus test",2016-08-20T16:28:44,1
+1158,,ozlabs-change1-264535,ozlabs-patch-701363,"[v5,1/3] tests/tcg: Add i386 litmus test",2016-12-01T05:28:42,1
+1159,333,ozlabs-change1-296634,ozlabs-patch-961611,"[v2,7/9] block/backup: make function variables consistently named",2018-08-23T22:08:54,1
+1160,,ozlabs-change1-296634,ozlabs-patch-963722,"[v3,7/9] block/backup: make function variables consistently named",2018-08-30T01:57:32,1
+1161,,ozlabs-change1-296634,ozlabs-patch-964479,"[PULL,09/11] block/backup: make function variables consistently named",2018-08-31T14:24:44,1
+1162,,ozlabs-change1-296634,ozlabs-patch-964507,"[PULL,v2,08/10] block/backup: make function variables consistently named",2018-08-31T14:32:39,1
+1163,334,ozlabs-change1-255669,ozlabs-patch-61773,[2/5] HACKING: add C type rules,2010-08-15T17:50:23,1
+1164,,ozlabs-change1-255669,ozlabs-patch-62803,[2/5] HACKING: add C type rules,2010-08-26T18:38:28,1
+1165,335,ozlabs-change1-327002,ozlabs-patch-1206084,"[PATCH-for-5.0,v3,4/6] hw/pci-host/i440fx: Use definitions instead of magic values",2019-12-09T09:50:00,1
+1166,,ozlabs-change1-327002,ozlabs-patch-1212344,"[PULL,80/87] hw/pci-host/i440fx: Use definitions instead of magic values",2019-12-18T12:02:46,1
+1167,336,ozlabs-change1-295357,ozlabs-patch-436397,block: move I/O request processing to block/io.c,2015-02-04T15:31:42,1
+1168,,ozlabs-change1-295357,ozlabs-patch-436443,[reformat] block: move I/O request processing to block/io.c,2015-02-04T17:51:37,1
+1169,,ozlabs-change1-295357,ozlabs-patch-440628,[v2] block: move I/O request processing to block/io.c,2015-02-17T14:39:19,1
+1170,,ozlabs-change1-295357,ozlabs-patch-465106,"[v3,2/2] block: move I/O request processing to block/io.c",2015-04-27T15:53:11,1
+1171,,ozlabs-change1-295357,ozlabs-patch-465558,"[v4,4/4] block: move I/O request processing to block/io.c",2015-04-28T13:27:52,1
+1172,,ozlabs-change1-295357,ozlabs-patch-465687,"[PULL,76/76] block: move I/O request processing to block/io.c",2015-04-28T15:00:58,1
+1173,,ozlabs-change1-295357,ozlabs-patch-465715,"[Qemu-block,PULL,76/76] block: move I/O request processing to block/io.c",2015-04-28T17:15:07,1
+1174,337,ozlabs-change1-316386,ozlabs-patch-991410,"[v3,34/35] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2018-10-31T13:20:28,1
+1175,,ozlabs-change1-316386,ozlabs-patch-1027395,"[v4,34/35] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2019-01-18T13:14:55,1
+1176,,ozlabs-change1-316386,ozlabs-patch-1029147,"[v5,34/35] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2019-01-22T09:29:08,1
+1177,,ozlabs-change1-316386,ozlabs-patch-1029826,"[v6,34/35] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2019-01-23T09:25:37,1
+1178,,ozlabs-change1-316386,ozlabs-patch-1041383,"[v7,34/35] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2019-02-13T15:54:13,1
+1179,,ozlabs-change1-316386,ozlabs-patch-1046935,"[v8,33/34] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2019-02-22T14:10:23,1
+1180,,ozlabs-change1-316386,ozlabs-patch-1050493,"[PULL,33/34] target/riscv: Splice remaining compressed insn pairs for riscv32 vs riscv64",2019-03-01T21:49:44,1
+1181,338,ozlabs-change1-245738,ozlabs-patch-120485,[01/21] target-sparc: Add accessors for single-precision fpr access.,2011-10-18T18:50:23,1
+1182,,ozlabs-change1-245738,ozlabs-patch-122012,[01/16] target-sparc: Add accessors for single-precision fpr access.,2011-10-26T21:15:21,1
+1183,339,ozlabs-change1-239975,ozlabs-patch-664616,"[v2,6/7] ppc/pnv: add a XScomDevice to PnvCore",2016-08-31T16:34:14,1
+1184,,ozlabs-change1-239975,ozlabs-patch-670384,"[v3,08/10] ppc/pnv: add a XScomDevice to PnvCore",2016-09-15T12:45:58,1
+1185,340,ozlabs-change1-258768,ozlabs-patch-1040515,"[v1,15/15] s390x: Add floating-point extension facility to ""qemu"" cpu model",2019-02-12T11:03:08,1
+1186,,ozlabs-change1-258768,ozlabs-patch-1041326,"[v2,15/15] s390x: Add floating-point extension facility to ""qemu"" cpu model",2019-02-13T14:33:22,1
+1187,,ozlabs-change1-258768,ozlabs-patch-1043948,"[v3,15/15] s390x: Add floating-point extension facility to ""qemu"" cpu model",2019-02-18T12:27:10,1
+1188,,ozlabs-change1-258768,ozlabs-patch-1051108,"[PULL,27/27] s390x: Add floating-point extension facility to ""qemu"" cpu model",2019-03-04T12:02:10,1
+1189,341,ozlabs-change1-240898,ozlabs-patch-1635822,[1/5] gitlab: introduce a common base job template,2022-05-26T11:07:01,1
+1190,,ozlabs-change1-240898,ozlabs-patch-1636313,"[v1,28/33] gitlab: introduce a common base job template",2022-05-27T15:35:58,1
+1191,,ozlabs-change1-240898,ozlabs-patch-1638091,"[PULL,28/33] gitlab: introduce a common base job template",2022-06-01T18:05:32,1
+1192,342,ozlabs-change1-347401,ozlabs-patch-1169477,[03/10] hbitmap: unpublish hbitmap_iter_skip_words,2019-09-30T15:14:55,1
+1193,,ozlabs-change1-347401,ozlabs-patch-1181299,"[v2,03/10] hbitmap: unpublish hbitmap_iter_skip_words",2019-10-22T12:58:32,1
+1194,,ozlabs-change1-347401,ozlabs-patch-1213111,"[v3,03/10] hbitmap: unpublish hbitmap_iter_skip_words",2019-12-19T10:03:41,1
+1195,,ozlabs-change1-347401,ozlabs-patch-1233799,"[v4,03/10] hbitmap: unpublish hbitmap_iter_skip_words",2020-02-05T11:20:34,1
+1196,,ozlabs-change1-347401,ozlabs-patch-1256042,"[PULL,03/10] hbitmap: unpublish hbitmap_iter_skip_words",2020-03-17T04:38:12,1
+1197,,ozlabs-change1-347401,ozlabs-patch-1257739,"[PULL,v2,04/11] hbitmap: unpublish hbitmap_iter_skip_words",2020-03-18T20:23:34,1
+1198,343,ozlabs-change1-233160,ozlabs-patch-1439891,[12/38] target/riscv: SIMD 16-bit Miscellaneous Instructions,2021-02-12T15:02:30,1
+1199,,ozlabs-change1-233160,ozlabs-patch-1490246,"[v2,11/37] target/riscv: SIMD 16-bit Miscellaneous Instructions",2021-06-10T07:58:42,1
+1200,,ozlabs-change1-233160,ozlabs-patch-1496558,"[v3,11/37] target/riscv: SIMD 16-bit Miscellaneous Instructions",2021-06-24T10:54:55,1
+1201,344,ozlabs-change1-277452,ozlabs-patch-940170,"[v8,3/3] qmp hmp: Make system_wakeup check wake-up support and run state",2018-07-05T20:08:13,1
+1202,,ozlabs-change1-277452,ozlabs-patch-971265,"[v9,3/3] qmp hmp: Make system_wakeup check wake-up support and run state",2018-09-18T18:52:46,1
+1203,,ozlabs-change1-277452,ozlabs-patch-995681,"[for-3.2,v10,3/3] qmp hmp: Make system_wakeup check wake-up support and run state",2018-11-09T17:33:09,1
+1204,,ozlabs-change1-277452,ozlabs-patch-1008406,"[v11,3/3] qmp hmp: Make system_wakeup check wake-up support and run state",2018-12-05T19:47:01,1
+1205,,ozlabs-change1-277452,ozlabs-patch-1015255,"[PULL,6/7] qmp hmp: Make system_wakeup check wake-up support and run state",2018-12-18T10:09:40,1
+1206,345,ozlabs-change1-299117,ozlabs-patch-887966,i.MX: Support serial RS-232 break properly,2018-03-20T01:36:57,1
+1207,,ozlabs-change1-299117,ozlabs-patch-890137,"[PULL,05/10] i.MX: Support serial RS-232 break properly",2018-03-23T18:49:53,1
+1208,346,ozlabs-change1-277024,ozlabs-patch-196917,Fix out-of-tree and cross compile builds for pixman,2012-11-03T18:47:33,1
+1209,,ozlabs-change1-277024,ozlabs-patch-197026,Fix out-of-tree and cross compile builds for pixman,2012-11-04T12:10:49,1
+1210,,ozlabs-change1-277024,ozlabs-patch-197613,Fix out-of-tree and cross compile builds for pixman,2012-11-07T02:33:54,1
+1211,,ozlabs-change1-277024,ozlabs-patch-197726,Fix out-of-tree and cross compile builds for pixman,2012-11-07T20:06:58,1
+1212,,ozlabs-change1-277024,ozlabs-patch-197729,Fix out-of-tree and cross compile builds for pixman,2012-11-07T20:57:10,1
+1213,347,ozlabs-change1-252427,ozlabs-patch-596918,"[v4,3/4] hw/arm: Add ASPEED AST2400 SoC model",2016-03-14T04:13:51,1
+1214,,ozlabs-change1-252427,ozlabs-patch-598108,"[v5,3/4] hw/arm: Add ASPEED AST2400 SoC model",2016-03-16T02:45:16,1
+1215,,ozlabs-change1-252427,ozlabs-patch-598548,"[PULL,14/21] hw/arm: Add ASPEED AST2400 SoC model",2016-03-16T17:18:28,1
+1216,348,ozlabs-change1-276497,ozlabs-patch-454322,"[Migration,Bug?] Occasionally, the content of VM's memory is inconsistent between Source and Destination of migration",2015-03-25T09:31:48,1
+1217,,ozlabs-change1-276497,ozlabs-patch-457572,"[Migration,Bug?] Occasionally, the content of VM's memory is inconsistent between Source and Destination of migration",2015-04-02T09:14:48,1
+1218,,ozlabs-change1-276497,ozlabs-patch-457610,"[Migration,Bug?] Occasionally, the content of VM's memory is inconsistent between Source and Destination of migration",2015-04-02T11:52:25,1
+1219,,ozlabs-change1-276497,ozlabs-patch-552054,"[TCG,only,Migration,Bug?] Occasionally, the content of VM's memory is inconsistent between Source and Destination of migration",2015-12-03T07:32:40,1
+1220,349,ozlabs-change1-247034,ozlabs-patch-631260,[1/6] ppc: POWER7 had ACOP and PID registers,2016-06-07T01:36:43,1
+1221,,ozlabs-change1-247034,ozlabs-patch-631261,[1/6] ppc: POWER7 had ACOP and PID registers,2016-06-07T02:08:38,1
+1222,,ozlabs-change1-247034,ozlabs-patch-631296,[4/9] ppc: POWER7 had ACOP and PID registers,2016-06-07T02:50:23,1
+1223,,ozlabs-change1-247034,ozlabs-patch-631480,"[PULL,21/26] ppc: POWER7 had ACOP and PID registers",2016-06-07T10:48:08,1
+1224,350,ozlabs-change1-258253,ozlabs-patch-1377537,[08/12] contrib/gitdm: Add Nir Soffer to Red Hat domain,2020-10-06T16:06:49,1
+1225,,ozlabs-change1-258253,ozlabs-patch-1378106,"[v1,14/22] contrib/gitdm: Add Nir Soffer to Red Hat domain",2020-10-07T16:00:30,1
+1226,,ozlabs-change1-258253,ozlabs-patch-1379381,"[PULL,14/22] contrib/gitdm: Add Nir Soffer to Red Hat domain",2020-10-09T16:31:39,1
+1227,351,ozlabs-change1-298309,ozlabs-patch-219240,linux-user: make bogus negative iovec lengths fail EINVAL,2013-02-08T17:58:41,1
+1228,,ozlabs-change1-298309,ozlabs-patch-226665,[08/11] linux-user: make bogus negative iovec lengths fail EINVAL,2013-03-11T19:27:45,1
+1229,,ozlabs-change1-298309,ozlabs-patch-233171,[35/37] linux-user: make bogus negative iovec lengths fail EINVAL,2013-04-02T21:45:40,1
+1230,352,ozlabs-change1-292036,ozlabs-patch-371680,[3/6] blkverify: Implement bdrv_refresh_filename(),2014-07-18T18:24:58,1
+1231,,ozlabs-change1-292036,ozlabs-patch-382249,"[PULL,18/29] blkverify: Implement bdrv_refresh_filename()",2014-08-22T14:51:42,1
+1232,353,ozlabs-change1-254842,ozlabs-patch-1539302,tests/acceptance: Add tests for the ppc405 boards,2021-10-11T12:59:30,1
+1233,,ozlabs-change1-254842,ozlabs-patch-1544119,"[PULL,08/25] tests/acceptance: Add tests for the ppc405 boards",2021-10-21T04:20:10,1
+1234,354,ozlabs-change1-322011,ozlabs-patch-149641,[05/14] target-arm: Move CTR setup to per cpu init fns,2012-03-30T12:51:41,1
+1235,,ozlabs-change1-322011,ozlabs-patch-152538,"[v2,05/14] target-arm: Move CTR setup to per cpu init fns",2012-04-14T16:42:14,1
+1236,,ozlabs-change1-322011,ozlabs-patch-154223,[06/14] target-arm: Move CTR setup to per cpu init fns,2012-04-21T18:30:00,1
+1237,355,ozlabs-change1-273414,ozlabs-patch-922245,"[v2,1/2] qapi: allow empty branches in flat unions",2018-05-29T16:41:31,1
+1238,,ozlabs-change1-273414,ozlabs-patch-922887,"[v3,1/2] qapi: allow empty branches in flat unions",2018-05-30T16:37:31,1
+1239,,ozlabs-change1-273414,ozlabs-patch-928957,"[v4,1/2] qapi: allow empty branches in flat unions",2018-06-13T15:53:47,1
+1240,,ozlabs-change1-273414,ozlabs-patch-930745,"[v5,1/2] qapi: allow empty branches in flat unions",2018-06-18T08:40:05,1
+1241,,ozlabs-change1-273414,ozlabs-patch-933471,"[PULL,05/10] qapi: allow empty branches in flat unions",2018-06-22T15:32:23,1
+1242,356,ozlabs-change1-352621,ozlabs-patch-601860,"[PATCHv3,1/2] Rework ipv6 options",2016-03-24T23:25:54,1
+1243,,ozlabs-change1-352621,ozlabs-patch-601864,"[PATCHv4,1/2] Rework ipv6 options",2016-03-24T23:34:10,1
+1244,,ozlabs-change1-352621,ozlabs-patch-602675,"[PULL,5/5] Rework ipv6 options",2016-03-28T23:28:24,1
+1245,357,ozlabs-change1-266632,ozlabs-patch-449593,"[v2,1/9] scripts: Add qom-tree script",2015-03-12T16:43:36,1
+1246,,ozlabs-change1-266632,ozlabs-patch-451009,"[PULL,2/7] scripts: Add qom-tree script",2015-03-17T15:08:07,1
+1247,358,ozlabs-change1-235587,ozlabs-patch-1593274,[10/27] target/ppc: cpu_init: Deduplicate 440 SPR registration,2022-02-15T21:41:31,1
+1248,,ozlabs-change1-235587,ozlabs-patch-1593826,"[v2,10/27] target/ppc: cpu_init: Deduplicate 440 SPR registration",2022-02-16T16:24:09,1
+1249,,ozlabs-change1-235587,ozlabs-patch-1594713,"[PULL,22/39] target/ppc: cpu_init: Deduplicate 440 SPR registration",2022-02-18T10:38:10,1
+1250,359,ozlabs-change1-317451,ozlabs-patch-556537,[for-2.5??] configure: Fix shell syntax to placate OpenBSD's pdksh,2015-12-14T15:02:36,1
+1251,,ozlabs-change1-317451,ozlabs-patch-600247,[04/35] configure: Fix shell syntax to placate OpenBSD's pdksh,2016-03-21T17:28:02,1
+1252,360,ozlabs-change1-283020,ozlabs-patch-1038015,[07/19] target/hppa: Convert arithmetic/logical insns,2019-02-07T11:53:48,1
+1253,,ozlabs-change1-283020,ozlabs-patch-1040369,"[PULL,07/24] target/hppa: Convert arithmetic/logical insns",2019-02-12T04:57:04,1
+1254,361,ozlabs-change1-321690,ozlabs-patch-1567226,target/mips: Remove duplicated MIPSCPU::cp0_count_rate,2021-12-13T10:23:40,1
+1255,,ozlabs-change1-321690,ozlabs-patch-1602062,"[PULL,02/16] target/mips: Remove duplicated MIPSCPU::cp0_count_rate",2022-03-07T10:11:53,1
+1256,362,ozlabs-change1-292827,ozlabs-patch-132816,[3/5] usb-redir: Pre-fill our isoc input buffer before sending pkts to the host,2011-12-22T11:12:36,1
+1257,,ozlabs-change1-292827,ozlabs-patch-135445,[3/5] usb-redir: Pre-fill our isoc input buffer before sending pkts to the host,2012-01-10T13:13:06,1
+1258,,ozlabs-change1-292827,ozlabs-patch-135806,[15/17] usb-redir: Pre-fill our isoc input buffer before sending pkts to the host,2012-01-13T10:18:32,1
+1259,363,ozlabs-change1-325375,ozlabs-patch-366120,"[v2,2/4] dataplane: do not free VirtQueueElement in vring_push()",2014-07-01T15:25:07,1
+1260,,ozlabs-change1-325375,ozlabs-patch-368787,"[v3,2/4] dataplane: do not free VirtQueueElement in vring_push()",2014-07-09T08:05:47,1
+1261,,ozlabs-change1-325375,ozlabs-patch-368884,"[PULL,for-2.1,12/22] dataplane: do not free VirtQueueElement in vring_push()",2014-07-10T12:35:17,1
+1262,,ozlabs-change1-325375,ozlabs-patch-369591,"[PULL,v2,for-2.1,12/22] dataplane: do not free VirtQueueElement in vring_push()",2014-07-14T11:43:02,1
+1263,364,ozlabs-change1-227244,ozlabs-patch-1237072,[2/3] tests/docker: Remove obsolete VirGL --with-glx configure option,2020-02-12T20:27:08,1
+1264,,ozlabs-change1-227244,ozlabs-patch-1251819,"[v1,3/5] tests/docker: Remove obsolete VirGL --with-glx configure option",2020-03-09T20:23:16,1
+1265,,ozlabs-change1-227244,ozlabs-patch-1255685,"[v1,03/28] tests/docker: Remove obsolete VirGL --with-glx configure option",2020-03-16T17:21:30,1
+1266,,ozlabs-change1-227244,ozlabs-patch-1256768,"[PULL,03/28] tests/docker: Remove obsolete VirGL --with-glx configure option",2020-03-17T17:50:28,1
+1267,365,ozlabs-change1-312313,ozlabs-patch-1194535,"[v3,1/4] nbd/server: Prefer heap over stack for parsing client names",2019-11-14T02:46:32,1
+1268,,ozlabs-change1-312313,ozlabs-patch-1197145,"[PULL,03/10] nbd/server: Prefer heap over stack for parsing client names",2019-11-19T03:07:52,1
+1269,366,ozlabs-change1-333765,ozlabs-patch-541126,[1/2] exec: Eliminate qemu_ram_free_from_ptr(),2015-11-06T21:20:04,1
+1270,,ozlabs-change1-333765,ozlabs-patch-558500,"[PULL,01/45] exec: Eliminate qemu_ram_free_from_ptr()",2015-12-17T17:45:57,1
+1271,367,ozlabs-change1-228038,ozlabs-patch-926158,"[RFC,01/19] rbd: Drop deprecated -drive parameter ""filename""",2018-06-07T06:25:41,1
+1272,,ozlabs-change1-228038,ozlabs-patch-928310,"[01/18] rbd: Drop deprecated -drive parameter ""filename""",2018-06-12T12:58:04,1
+1273,,ozlabs-change1-228038,ozlabs-patch-929653,"[v2,01/18] rbd: Drop deprecated -drive parameter ""filename""",2018-06-14T19:14:26,1
+1274,,ozlabs-change1-228038,ozlabs-patch-929982,"[PULL,05/26] rbd: Drop deprecated -drive parameter ""filename""",2018-06-15T14:20:47,1
+1275,368,ozlabs-change1-292853,ozlabs-patch-1370465,numa: hmat: require parent cache description before the next level one,2020-09-24T09:14:06,1
+1276,,ozlabs-change1-292853,ozlabs-patch-1377020,"[PULL,01/21] numa: hmat: require parent cache description before the next level one",2020-10-05T21:09:40,1
+1277,,ozlabs-change1-292853,ozlabs-patch-1377494,[v2] numa: hmat: require parent cache description before the next level one,2020-10-06T15:00:02,1
+1278,,ozlabs-change1-292853,ozlabs-patch-1377692,"[PULL,21/21] numa: hmat: require parent cache description before the next level one",2020-10-06T22:09:30,1
+1279,369,ozlabs-change1-330976,ozlabs-patch-948484,[3/4] docs: Document the l2-cache-full option,2018-07-24T12:17:52,1
+1280,,ozlabs-change1-330976,ozlabs-patch-948649,"[v2,2/2] docs: Document the l2-cache-full option",2018-07-24T17:02:17,1
+1281,,ozlabs-change1-330976,ozlabs-patch-948811,"[v3,5/5] docs: Document the l2-cache-full option",2018-07-24T20:03:43,1
+1282,370,ozlabs-change1-289391,ozlabs-patch-168211,[08/32] hd-geometry: Move disk geometry guessing back from block.c,2012-06-29T15:34:30,1
+1283,,ozlabs-change1-289391,ozlabs-patch-169379,[08/32] hd-geometry: Move disk geometry guessing back from block.c,2012-07-06T06:57:46,1
+1284,,ozlabs-change1-289391,ozlabs-patch-170090,"[v3,05/29] hd-geometry: Move disk geometry guessing back from block.c",2012-07-10T09:12:31,1
+1285,,ozlabs-change1-289391,ozlabs-patch-171497,[07/41] hd-geometry: Move disk geometry guessing back from block.c,2012-07-17T16:00:04,1
+1286,371,ozlabs-change1-346940,ozlabs-patch-1625816,"[v2,53/74] target/nios2: Use semihosting/syscalls.h",2022-05-03T19:48:22,1
+1287,,ozlabs-change1-346940,ozlabs-patch-1640305,"[v4,3/3] target/nios2: Use semihosting/syscalls.h",2022-06-08T02:38:16,1
+1288,,ozlabs-change1-346940,ozlabs-patch-1649475,"[v5,1/2] target/nios2: Use semihosting/syscalls.h",2022-06-28T11:21:34,1
+1289,,ozlabs-change1-346940,ozlabs-patch-1677876,"[PULL,01/11] target/nios2: Use semihosting/syscalls.h",2022-09-14T13:22:58,1
+1290,372,ozlabs-change1-254611,ozlabs-patch-154538,block/qcow2: Add missing GCC_FMT_ATTR to function report_unsupported(),2012-04-23T20:54:38,1
+1291,,ozlabs-change1-254611,ozlabs-patch-156521,[2/9] block/qcow2: Add missing GCC_FMT_ATTR to function report_unsupported(),2012-05-02T17:16:11,1
+1292,373,ozlabs-change1-274394,ozlabs-patch-213939,"[RFC,qom-cpu,v2,02/28] target-alpha: Update AlphaCPU to QOM realizefn",2013-01-20T07:22:25,1
+1293,,ozlabs-change1-274394,ozlabs-patch-220967,[02/47] target-alpha: Update AlphaCPU to QOM realizefn,2013-02-16T15:44:57,1
+1294,374,ozlabs-change1-345896,ozlabs-patch-814998,"[v1,03/27] target/s390x: get rid of next_core_id",2017-09-18T15:59:48,1
+1295,,ozlabs-change1-345896,ozlabs-patch-819620,"[v1,4/5] target/s390x: get rid of next_core_id",2017-09-28T13:46:08,1
+1296,,ozlabs-change1-345896,ozlabs-patch-822300,"[PULL,23/33] target/s390x: get rid of next_core_id",2017-10-06T09:59:46,1
+1297,375,ozlabs-change1-340616,ozlabs-patch-197849,qemu-sockets: Fix parsing of the inet option 'to'.,2012-11-08T15:11:41,1
+1298,,ozlabs-change1-340616,ozlabs-patch-198030,[V2] qemu-sockets: Fix parsing of the inet option 'to'.,2012-11-09T11:50:54,1
+1299,,ozlabs-change1-340616,ozlabs-patch-199625,[1/2] qemu-sockets: Fix parsing of the inet option 'to'.,2012-11-16T14:08:14,1
+1300,376,ozlabs-change1-252190,ozlabs-patch-348465,"[v2,06/23] target-arm: add arm_is_secure() function",2014-05-13T16:15:51,1
+1301,,ozlabs-change1-252190,ozlabs-patch-358451,"[v3,04/32] target-arm: add arm_is_secure() function",2014-06-10T23:54:46,1
+1302,,ozlabs-change1-252190,ozlabs-patch-365803,"[v4,04/33] target-arm: add arm_is_secure() function",2014-06-30T23:09:04,1
+1303,,ozlabs-change1-252190,ozlabs-patch-395323,"[v5,02/33] target-arm: add arm_is_secure() function",2014-09-30T21:49:14,1
+1304,,ozlabs-change1-252190,ozlabs-patch-398696,"[v6,02/32] target-arm: add arm_is_secure() function",2014-10-10T16:03:13,1
+1305,,ozlabs-change1-252190,ozlabs-patch-401615,"[v7,02/32] target-arm: add arm_is_secure() function",2014-10-21T16:55:14,1
+1306,,ozlabs-change1-252190,ozlabs-patch-402828,"[PULL,19/23] target-arm: add arm_is_secure() function",2014-10-24T11:37:25,1
+1307,377,ozlabs-change1-248878,ozlabs-patch-193868,[09/17] uhci: Make uhci_fill_queue() actually operate on an UHCIQueue,2012-10-24T16:31:12,1
+1308,,ozlabs-change1-248878,ozlabs-patch-194239,[23/36] uhci: Make uhci_fill_queue() actually operate on an UHCIQueue,2012-10-25T12:51:56,1
+1309,378,ozlabs-change1-277002,ozlabs-patch-1113143,[2/2] docs: Build and install specs manual,2019-06-10T15:24:44,1
+1310,,ozlabs-change1-277002,ozlabs-patch-1117133,"[PULL,4/4] docs: Build and install specs manual",2019-06-17T14:57:40,1
+1311,379,ozlabs-change1-309376,ozlabs-patch-1443769,"[v7,08/13] vfio: Sanity check maximum number of DMA mappings with RamDiscardManager",2021-02-24T09:49:04,1
+1312,,ozlabs-change1-309376,ozlabs-patch-1465687,"[RESEND,v7,08/13] vfio: Sanity check maximum number of DMA mappings with RamDiscardManager",2021-04-13T09:55:26,1
+1313,,ozlabs-change1-309376,ozlabs-patch-1501995,"[PULL,10/15] vfio: Sanity check maximum number of DMA mappings with RamDiscardManager",2021-07-07T19:32:36,1
+1314,,ozlabs-change1-309376,ozlabs-patch-1502746,"[PULL,v2,10/15] vfio: Sanity check maximum number of DMA mappings with RamDiscardManager",2021-07-08T19:55:47,1
+1315,380,ozlabs-change1-229568,ozlabs-patch-87916,[1/3] chardev: Allow frontends to notify backends of guest open / close,2011-03-22T13:15:21,1
+1316,,ozlabs-change1-229568,ozlabs-patch-88155,[1/3] chardev: Allow frontends to notify backends of guest open / close,2011-03-24T10:12:02,1
+1317,,ozlabs-change1-229568,ozlabs-patch-93187,[1/6] chardev: Allow frontends to notify backends of guest open / close,2011-04-28T07:30:48,1
+1318,381,ozlabs-change1-343960,ozlabs-patch-1527294,"[v2,09/12] target/arm: Optimize MVE VSHL, VSHR immediate forms",2021-09-13T09:54:37,1
+1319,,ozlabs-change1-343960,ozlabs-patch-1530165,"[PULL,24/27] target/arm: Optimize MVE VSHL, VSHR immediate forms",2021-09-20T14:19:44,1
+1320,382,ozlabs-change1-251596,ozlabs-patch-90394,"[v2,1/5] hpet 'driftfix': add hooks required to detect coalesced interrupts (x86 apic only)",2011-04-08T15:20:38,1
+1321,,ozlabs-change1-251596,ozlabs-patch-93223,"[v3,1/5] hpet 'driftfix': add hooks required to detect coalesced interrupts (x86 apic only)",2011-04-28T14:24:56,1
+1322,,ozlabs-change1-251596,ozlabs-patch-94732,"[v4,1/5] hpet 'driftfix': add hooks required to detect coalesced interrupts (x86 apic only)",2011-05-09T07:03:17,1
+1323,,ozlabs-change1-251596,ozlabs-patch-96548,"[v5,1/5] hpet 'driftfix': add hooks required to detect coalesced interrupts (x86 apic only)",2011-05-20T07:13:19,1

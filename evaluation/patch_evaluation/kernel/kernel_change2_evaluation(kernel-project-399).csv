@@ -1,0 +1,696 @@
+,id,change2_original_id,patch_original_id,patch_name,date,is_correct
+0,0,kernel-change2-1077795,kernel-patch-12346571,Fix possible memory leak in function cfg80211_bss_update,2021-06-26T20:57:51,1
+1,,kernel-change2-1077795,kernel-patch-12348015,[V2] cfg80211: Fix possible memory leak in function cfg80211_bss_update,2021-06-28T13:23:34,1
+2,1,kernel-change2-1081406,kernel-patch-12456569,"[net-next,3/5] ethtool: add support to set/get rx buf len",2021-08-25T06:40:53,1
+3,,kernel-change2-1081406,kernel-patch-12687341,"[ethtool-next,1/2] ethtool: netlink: add support to set/get rx buf len",2021-12-20T08:31:54,1
+4,2,kernel-change2-1077980,kernel-patch-12049947,HSR/PRP sequence counter issue with Cisco Redbox,2021-01-27T12:15:34,1
+5,,kernel-change2-1077980,kernel-patch-12088107,AW: HSR/PRP sequence counter issue with Cisco Redbox,2021-02-15T12:29:48,1
+6,,kernel-change2-1077980,kernel-patch-12091595,AW: HSR/PRP sequence counter issue with Cisco Redbox,2021-02-17T13:14:14,1
+7,3,kernel-change2-1073780,kernel-patch-12725907,[6/6] net: page_pool: Add a stat tracking waived pages.,2022-01-26T22:48:20,1
+8,,kernel-change2-1073780,kernel-patch-12729700,"[net-next,v2,09/10] page_pool: Add a stat tracking waived pages",2022-01-29T23:38:59,1
+9,,kernel-change2-1073780,kernel-patch-12732488,"[net-next,v3,09/10] page_pool: Add a stat tracking waived pages",2022-02-02T01:12:15,1
+10,,kernel-change2-1073780,kernel-patch-12734736,"[net-next,v4,10/11] page_pool: Add a stat tracking waived pages",2022-02-04T00:09:32,1
+11,4,kernel-change2-1090787,kernel-patch-12818189,[ethtool-next] ethtool: netlink: add support to get/set tx push by ethtool -G/g,2022-04-19T12:50:30,1
+12,,kernel-change2-1090787,kernel-patch-12821321,"[ethtool-next,v2,2/2] ethtool: add support to get/set tx push by ethtool -G/g",2022-04-21T08:46:46,1
+13,,kernel-change2-1090787,kernel-patch-12831669,"[ethtool-next,v3,2/2] ethtool: add support to get/set tx push by ethtool -G/g",2022-04-29T09:17:04,1
+14,5,kernel-change2-1088089,kernel-patch-12548225,"[net-next,v3,13/13] drivers: net: dsa: qca8k: set internal delay also for sgmii",2021-10-10T01:56:03,1
+15,,kernel-change2-1088089,kernel-patch-12548427,"[net-next,v4,13/13] drivers: net: dsa: qca8k: set internal delay also for sgmii",2021-10-10T11:15:56,1
+16,,kernel-change2-1088089,kernel-patch-12548917,"[net-next,v5,13/14] drivers: net: dsa: qca8k: set internal delay also for sgmii",2021-10-11T01:30:23,1
+17,,kernel-change2-1088089,kernel-patch-12554187,"[net-next,v6,13/16] net: dsa: qca8k: set internal delay also for sgmii",2021-10-13T01:16:19,1
+18,,kernel-change2-1088089,kernel-patch-12557459,"[net-next,v7,13/16] net: dsa: qca8k: set internal delay also for sgmii",2021-10-13T22:39:18,1
+19,6,kernel-change2-1074747,kernel-patch-12611581,[1/5] net: stmmac: dwmac-mediatek: add platform level clocks management,2021-11-10T08:39:44,1
+20,,kernel-change2-1074747,kernel-patch-12614299,"[v2,1/5] net: stmmac: dwmac-mediatek: add platform level clocks management",2021-11-11T07:12:10,1
+21,,kernel-change2-1074747,kernel-patch-12616427,"[v3,1/7] net-next: stmmac: dwmac-mediatek: add platform level clocks management",2021-11-12T09:39:12,1
+22,,kernel-change2-1074747,kernel-patch-12654333,"[v4,1/7] net-next: stmmac: dwmac-mediatek: add platform level clocks management",2021-12-03T06:34:12,1
+23,,kernel-change2-1074747,kernel-patch-12660775,"[v5,1/7] net-next: stmmac: dwmac-mediatek: add platform level clocks management",2021-12-07T01:54:59,1
+24,,kernel-change2-1074747,kernel-patch-12663351,"[net-next,v6,1/6] stmmac: dwmac-mediatek: add platform level clocks management",2021-12-08T03:03:49,1
+25,,kernel-change2-1074747,kernel-patch-12663603,"[net-next,v7,1/6] stmmac: dwmac-mediatek: add platform level clocks management",2021-12-08T05:47:11,1
+26,,kernel-change2-1074747,kernel-patch-12668495,"[net-next,v8,1/6] stmmac: dwmac-mediatek: add platform level clocks management",2021-12-10T01:31:24,1
+27,,kernel-change2-1074747,kernel-patch-12677255,"[net-next,v9,1/6] stmmac: dwmac-mediatek: add platform level clocks management",2021-12-15T02:16:47,1
+28,,kernel-change2-1074747,kernel-patch-12680025,"[net-next,v10,1/6] stmmac: dwmac-mediatek: add platform level clocks management",2021-12-16T05:53:23,1
+29,,kernel-change2-1074747,kernel-patch-12702964,"[net-next,v11,1/6] stmmac: dwmac-mediatek: add platform level clocks management",2022-01-04T03:39:35,1
+30,,kernel-change2-1074747,kernel-patch-12714844,"[net-next,v12,1/7] stmmac: dwmac-mediatek: add platform level clocks management",2022-01-17T07:07:00,1
+31,,kernel-change2-1074747,kernel-patch-12779812,"[net-next,v13,1/7] stmmac: dwmac-mediatek: add platform level clocks management",2022-03-14T07:57:07,1
+32,7,kernel-change2-1092490,kernel-patch-12949628,"[bpf-next,2/2] bpftool: Fix cgroup attach flags being assigned to effective progs",2022-08-20T12:02:34,1
+33,,kernel-change2-1092490,kernel-patch-12969708,"[bpf-next,v2,2/2] bpftool: Fix cgroup attach flags being assigned to effective progs",2022-09-08T14:53:04,1
+34,,kernel-change2-1092490,kernel-patch-12975768,"[bpf-next,v3,2/2] bpftool: Fix wrong cgroup attach flags being assigned to effective progs",2022-09-14T16:17:42,1
+35,,kernel-change2-1092490,kernel-patch-12981523,"[bpf,v4,2/2] bpftool: Fix wrong cgroup attach flags being assigned to effective progs",2022-09-20T15:42:33,1
+36,,kernel-change2-1092490,kernel-patch-12983046,"[bpf,v5,2/3] bpftool: Fix wrong cgroup attach flags being assigned to effective progs",2022-09-21T10:46:03,1
+37,8,kernel-change2-1063802,kernel-patch-12133795,"[-tip,v2,05/10] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-03-12T06:42:39,1
+38,,kernel-change2-1063802,kernel-patch-12150935,"[-tip,v3,05/11] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-03-19T12:22:39,1
+39,,kernel-change2-1063802,kernel-patch-12153883,"[-tip,v4,05/12] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-03-22T06:40:41,1
+40,,kernel-change2-1063802,kernel-patch-12166509,"[-tip,v5,05/12] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-03-26T12:29:22,1
+41,,kernel-change2-1063802,kernel-patch-12280827,"[-tip,v6,05/13] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-05-26T08:03:00,1
+42,,kernel-change2-1063802,kernel-patch-12283543,"[-tip,v7,05/13] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-05-27T06:39:51,1
+43,,kernel-change2-1063802,kernel-patch-12330371,"[-tip,v8,05/13] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline code",2021-06-18T07:06:09,1
+44,,kernel-change2-1063802,kernel-patch-12369137,"[-tip,v9,06/14] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline()",2021-07-11T13:35:46,1
+45,,kernel-change2-1063802,kernel-patch-12408845,"[-tip,v10,08/16] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline()",2021-07-29T14:07:11,1
+46,,kernel-change2-1063802,kernel-patch-12493707,"[-tip,v11,19/27] x86/kprobes: Add UNWIND_HINT_FUNC on kretprobe_trampoline()",2021-09-14T14:41:32,1
+47,9,kernel-change2-1064509,kernel-patch-11824059,"[net,096/117] b43legacy: set B43legacy_DEBUGFS_FOPS.owner to THIS_MODULE",2020-10-08T15:51:48,1
+48,,kernel-change2-1064509,kernel-patch-11889245,"[net,v2,18/21] b43legacy: set .owner to THIS_MODULE",2020-11-07T17:21:49,1
+49,10,kernel-change2-1094134,kernel-patch-12118409,iavf: do not override the adapter state in the watchdog task,2021-03-05T12:38:56,0
+50,,kernel-change2-1094134,kernel-patch-12386293,"[net-next,2/3] iavf: do not override the adapter state in the watchdog task",2021-07-19T16:31:53,0
+51,,kernel-change2-1094134,kernel-patch-12649501,[net] iavf: do not override the adapter state in the watchdog task (again),2021-12-01T08:14:34,0
+52,,kernel-change2-1094134,kernel-patch-12674877,"[net,2/2] iavf: do not override the adapter state in the watchdog task (again)",2021-12-13T23:37:50,0
+53,11,kernel-change2-1072693,kernel-patch-12427631,"[bpf-next,2/5] Support glob matching for test selector.",2021-08-09T23:36:30,1
+54,,kernel-change2-1072693,kernel-patch-12429501,"[v3,bpf-next,3/4] selftests/bpf: Support glob matching for test selector.",2021-08-10T21:21:06,1
+55,,kernel-change2-1072693,kernel-patch-12439713,"[v4,bpf-next,4/4] selftests/bpf: Support glob matching for test selector.",2021-08-17T01:03:10,1
+56,,kernel-change2-1072693,kernel-patch-12440467,"[v5,bpf-next,4/4] selftests/bpf: Support glob matching for test selector.",2021-08-17T04:47:32,1
+57,12,kernel-change2-1086312,kernel-patch-12548205,"[net-next,v3,04/13] drivers: net: dsa: qca8k: add support for cpu port 6",2021-10-10T01:55:54,1
+58,,kernel-change2-1086312,kernel-patch-12548405,"[net-next,v4,04/13] drivers: net: dsa: qca8k: add support for cpu port 6",2021-10-10T11:15:47,1
+59,,kernel-change2-1086312,kernel-patch-12548899,"[net-next,v5,05/14] drivers: net: dsa: qca8k: add support for cpu port 6",2021-10-11T01:30:15,1
+60,,kernel-change2-1086312,kernel-patch-12554171,"[net-next,v6,05/16] net: dsa: qca8k: add support for cpu port 6",2021-10-13T01:16:11,1
+61,,kernel-change2-1086312,kernel-patch-12557441,"[net-next,v7,05/16] net: dsa: qca8k: add support for cpu port 6",2021-10-13T22:39:10,1
+62,13,kernel-change2-1086226,kernel-patch-12085843,[4/4] amd-xgbe: Fix network fluctuations when using 1G BELFUSE SFP,2021-02-12T18:00:10,1
+63,,kernel-change2-1086226,kernel-patch-12090525,"[net,v2,4/4] net: amd-xgbe: Fix network fluctuations when using 1G BELFUSE SFP",2021-02-16T19:07:10,1
+64,14,kernel-change2-1072686,kernel-patch-12736090,"[iproute2-next,0/2] Support for the IOAM insertion frequency",2022-02-05T15:52:06,0
+65,,kernel-change2-1072686,kernel-patch-12736091,"[iproute2-next,1/2] Add support for the IOAM insertion frequency",2022-02-05T15:52:07,0
+66,15,kernel-change2-1066900,kernel-patch-11823487,"[net,002/117] mac80211: set rcname_ops.owner to THIS_MODULE",2020-10-08T15:50:14,0
+67,,kernel-change2-1066900,kernel-patch-11823493,"[net,003/117] mac80211: set minstrel_ht_stat_fops.owner to THIS_MODULE",2020-10-08T15:50:15,0
+68,,kernel-change2-1066900,kernel-patch-11823495,"[net,004/117] mac80211: set minstrel_ht_stat_csv_fops.owner to THIS_MODULE",2020-10-08T15:50:16,0
+69,,kernel-change2-1066900,kernel-patch-11823497,"[net,005/117] mac80211: set KEY_OPS.owner to THIS_MODULE",2020-10-08T15:50:17,0
+70,,kernel-change2-1066900,kernel-patch-11823499,"[net,006/117] mac80211: set KEY_OPS_W.owner to THIS_MODULE",2020-10-08T15:50:18,0
+71,,kernel-change2-1066900,kernel-patch-11823501,"[net,007/117] mac80211: set KEY_CONF_OPS.owner to THIS_MODULE",2020-10-08T15:50:19,0
+72,,kernel-change2-1066900,kernel-patch-11823503,"[net,008/117] mac80211: set STA_OPS.owner to THIS_MODULE",2020-10-08T15:50:20,0
+73,,kernel-change2-1066900,kernel-patch-11823505,"[net,009/117] mac80211: set STA_OPS_RW.owner to THIS_MODULE",2020-10-08T15:50:21,0
+74,,kernel-change2-1066900,kernel-patch-11823575,"[net,010/117] mac80211: set DEBUGFS_READONLY_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:50:22,0
+75,,kernel-change2-1066900,kernel-patch-11823507,"[net,011/117] mac80211: set aqm_ops.owner to THIS_MODULE",2020-10-08T15:50:23,0
+76,,kernel-change2-1066900,kernel-patch-11823581,"[net,013/117] mac80211: set aql_txq_limit_ops.owner to THIS_MODULE",2020-10-08T15:50:25,0
+77,,kernel-change2-1066900,kernel-patch-11823571,"[net,014/117] mac80211: set force_tx_status_ops.owner to THIS_MODULE",2020-10-08T15:50:26,0
+78,,kernel-change2-1066900,kernel-patch-11823567,"[net,015/117] mac80211: set reset_ops.owner to THIS_MODULE",2020-10-08T15:50:27,0
+79,,kernel-change2-1066900,kernel-patch-11823573,"[net,016/117] mac80211: set DEBUGFS_DEVSTATS_FILE.owner to THIS_MODULE",2020-10-08T15:50:28,0
+80,,kernel-change2-1066900,kernel-patch-11889127,"[net,v2,02/21] mac80211: set .owner to THIS_MODULE",2020-11-07T17:21:33,0
+81,16,kernel-change2-1068876,kernel-patch-12142485,drivers: qlge: Fixed an alignment issue.,2021-03-16T15:29:34,1
+82,,kernel-change2-1068876,kernel-patch-12142727,drivers: staging: qlge: Fixed an alignment issue.,2021-03-16T15:56:34,1
+83,17,kernel-change2-1066862,kernel-patch-11823669,"[net,039/117] iwlwifi: set rs_sta_dbgfs_scale_table_ops.owner to THIS_MODULE",2020-10-08T15:50:51,0
+84,,kernel-change2-1066862,kernel-patch-11823671,"[net,040/117] iwlwifi: set rs_sta_dbgfs_stats_table_ops.owner to THIS_MODULE",2020-10-08T15:50:52,0
+85,,kernel-change2-1066862,kernel-patch-11823673,"[net,041/117] iwlwifi: set DEBUGFS_READ_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:50:53,0
+86,,kernel-change2-1066862,kernel-patch-11823751,"[net,042/117] iwlwifi: set DEBUGFS_WRITE_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:50:54,0
+87,,kernel-change2-1066862,kernel-patch-11823677,"[net,043/117] iwlwifi: set DEBUGFS_READ_WRITE_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:50:55,0
+88,,kernel-change2-1066862,kernel-patch-11823679,"[net,044/117] iwlwifi: set rs_sta_dbgfs_scale_table_ops.owner to THIS_MODULE",2020-10-08T15:50:56,0
+89,,kernel-change2-1066862,kernel-patch-11823681,"[net,045/117] iwlwifi: set rs_sta_dbgfs_stats_table_ops.owner to THIS_MODULE",2020-10-08T15:50:57,0
+90,,kernel-change2-1066862,kernel-patch-11823757,"[net,052/117] iwlwifi: set DEBUGFS_READ_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:51:04,0
+91,,kernel-change2-1066862,kernel-patch-11823743,"[net,053/117] iwlwifi: set DEBUGFS_WRITE_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:51:05,0
+92,,kernel-change2-1066862,kernel-patch-11823735,"[net,054/117] iwlwifi: set DEBUGFS_READ_WRITE_FILE_OPS.owner to THIS_MODULE",2020-10-08T15:51:06,0
+93,,kernel-change2-1066862,kernel-patch-11823739,"[net,055/117] iwlwifi: set rs_sta_dbgfs_stats_table_ops.owner to THIS_MODULE",2020-10-08T15:51:07,0
+94,,kernel-change2-1066862,kernel-patch-11823749,"[net,056/117] iwlwifi: set rs_sta_dbgfs_scale_table_ops.owner to THIS_MODULE",2020-10-08T15:51:08,0
+95,,kernel-change2-1066862,kernel-patch-11823745,"[net,057/117] iwlwifi: set rs_sta_dbgfs_stats_table_ops.owner to THIS_MODULE",2020-10-08T15:51:09,0
+96,,kernel-change2-1066862,kernel-patch-11823741,"[net,058/117] iwlwifi: set rs_sta_dbgfs_rate_scale_data_ops.owner to THIS_MODULE",2020-10-08T15:51:10,0
+97,,kernel-change2-1066862,kernel-patch-11889175,"[net,v2,09/21] iwlwifi: set .owner to THIS_MODULE",2020-11-07T17:21:40,0
+98,18,kernel-change2-1092738,kernel-patch-12931963,[bpf-next] remove BPF_OBJ_NAME_LEN restriction when looking up bpf program by name,2022-07-29T06:18:17,1
+99,,kernel-change2-1092738,kernel-patch-12933189,"[bpf-next,v2] bpftool: Remove BPF_OBJ_NAME_LEN restriction when looking up bpf program by name",2022-07-31T18:10:07,1
+100,,kernel-change2-1092738,kernel-patch-12933784,"[bpf-next,v3] bpftool: Remove BPF_OBJ_NAME_LEN restriction when looking up bpf program by name",2022-08-01T13:24:09,1
+101,19,kernel-change2-1060576,kernel-patch-12531721,"[net-next,02/11] net: use eth_hw_addr_set()",2021-10-01T21:32:19,0
+102,,kernel-change2-1060576,kernel-patch-12572621,"[net-next,01/12] net: xen: use eth_hw_addr_set()",2021-10-20T15:56:06,0
+103,,kernel-change2-1060576,kernel-patch-12572639,"[net-next,10/12] net: plip: use eth_hw_addr_set()",2021-10-20T15:56:15,0
+104,,kernel-change2-1060576,kernel-patch-12575015,"[net-next,v2,01/12] net: xen: use eth_hw_addr_set()",2021-10-21T13:12:03,0
+105,,kernel-change2-1060576,kernel-patch-12575023,"[net-next,v2,10/12] net: plip: use eth_hw_addr_set()",2021-10-21T13:12:12,0
+106,,kernel-change2-1060576,kernel-patch-12585383,[net-next] net: thunderbolt: use eth_hw_addr_set(),2021-10-26T17:55:47,0
+107,,kernel-change2-1060576,kernel-patch-12585385,[net-next] net: virtio: use eth_hw_addr_set(),2021-10-26T17:56:34,0
+108,,kernel-change2-1060576,kernel-patch-12587535,"[net-next,v2] net: virtio: use eth_hw_addr_set()",2021-10-27T15:20:12,0
+109,,kernel-change2-1060576,kernel-patch-12591403,"[net-next,1/3] net: sgi-xp: use eth_hw_addr_set()",2021-10-29T02:47:05,0
+110,,kernel-change2-1060576,kernel-patch-12591399,"[net-next,2/3] net: um: use eth_hw_addr_set()",2021-10-29T02:47:06,0
+111,,kernel-change2-1060576,kernel-patch-12591401,"[net-next,3/3] net: xtensa: use eth_hw_addr_set()",2021-10-29T02:47:07,0
+112,20,kernel-change2-1067719,kernel-patch-12742437,[3/4] octeon_ep: add Tx/Rx and interrupt support.,2022-02-10T21:33:05,1
+113,,kernel-change2-1067719,kernel-patch-12764094,"[v2,6/7] octeon_ep: add Tx/Rx processing and interrupt support",2022-03-01T05:03:58,1
+114,,kernel-change2-1067719,kernel-patch-12771439,"[v3,6/7] octeon_ep: add Tx/Rx processing and interrupt support",2022-03-07T09:26:45,1
+115,,kernel-change2-1067719,kernel-patch-12786845,"[net-next,v4,6/7] octeon_ep: add Tx/Rx processing and interrupt support",2022-03-21T05:53:36,1
+116,,kernel-change2-1067719,kernel-patch-12811442,"[net-next,v5,6/7] octeon_ep: add Tx/Rx processing and interrupt support",2022-04-13T03:35:02,1
+117,21,kernel-change2-1076173,kernel-patch-12728070,dvm: use struct_size over open coded arithmetic,2022-01-28T08:02:06,1
+118,,kernel-change2-1076173,kernel-patch-12728168,[v2] iwlwifi: dvm: use struct_size over open coded arithmetic,2022-01-28T09:31:47,1
+119,,kernel-change2-1076173,kernel-patch-12741388,[V2] iwlwifi: dvm: use struct_size over open coded arithmetic,2022-02-10T06:09:26,1
+120,22,kernel-change2-1062575,kernel-patch-11979255,Modify hardcode 2 to SECCOMP_MODE_FILTER,2020-12-17T07:54:13,1
+121,,kernel-change2-1062575,kernel-patch-11979347,Modify hardcode to SECCOMP_MODE_FILTER,2020-12-17T08:46:32,1
+122,23,kernel-change2-1091181,kernel-patch-12437707,"[net-next,2/3] selftests: Remove the polling code to read a NCI frame",2021-08-16T04:05:59,1
+123,,kernel-change2-1091181,kernel-patch-12441489,"[v2,net-next,2/8] selftests: nci: Remove the polling code to read a NCI frame",2021-08-17T13:28:12,1
+124,24,kernel-change2-1064549,kernel-patch-12831743,Fix le16_to_cpu warning for beacon_interval,2022-04-29T10:20:11,1
+125,,kernel-change2-1064549,kernel-patch-12831802,[v2] plfxlc: fix le16_to_cpu warning for beacon_interval,2022-04-29T10:44:22,1
+126,,kernel-change2-1064549,kernel-patch-12831838,[v3] plfxlc: fix le16_to_cpu warning for beacon_interval,2022-04-29T11:16:54,1
+127,,kernel-change2-1064549,kernel-patch-12834281,[v4] plfxlc: fix le16_to_cpu warning for beacon_interval,2022-05-02T15:01:32,1
+128,25,kernel-change2-1061393,kernel-patch-12899148,"[RFC,1/2] vmxnet3: Add basic XDP support.",2022-06-29T01:49:26,1
+129,,kernel-change2-1061393,kernel-patch-12909602,"[RFC,v2] vmxnet3: Add XDP support.",2022-07-07T13:33:35,1
+130,,kernel-change2-1061393,kernel-patch-12917945,"[RFC,v3] vmxnet3: Add XDP support.",2022-07-14T13:08:00,1
+131,26,kernel-change2-1067480,kernel-patch-12725582,[bpf-next] selftests/bpf: fix a clang compilation error,2022-01-26T18:19:40,0
+132,,kernel-change2-1067480,kernel-patch-12727058,[bpf-next] selftests/bpf: fix a clang compilation error,2022-01-27T16:37:26,0
+133,,kernel-change2-1067480,kernel-patch-12750611,[bpf-next] selftests/bpf: fix a clang deprecated-declarations compilation error,2022-02-17T19:40:05,0
+134,27,kernel-change2-1065637,kernel-patch-12642871,[4/5] net: wwan: iosm: make debugfs optional,2021-11-28T12:38:36,0
+135,,kernel-change2-1065637,kernel-patch-12642873,[5/5] net: wwan: core: make debugfs optional,2021-11-28T12:38:37,0
+136,,kernel-change2-1065637,kernel-patch-12642895,"[RESEND,net-next,4/5] net: wwan: iosm: make debugfs optional",2021-11-28T12:55:21,0
+137,,kernel-change2-1065637,kernel-patch-12642897,"[RESEND,net-next,5/5] net: wwan: core: make debugfs optional",2021-11-28T12:55:22,0
+138,,kernel-change2-1065637,kernel-patch-12660535,"[net-next,v2,4/4] net: wwan: make debugfs optional",2021-12-06T23:41:55,0
+139,,kernel-change2-1065637,kernel-patch-12661375,"[RESEND,net-next,v2,4/4] net: wwan: make debugfs optional",2021-12-07T09:21:40,0
+140,28,kernel-change2-1083145,kernel-patch-12540715,"[net-next,01/13] drivers: net: phy: at803x: fix resume for QCA8327 phy",2021-10-06T22:35:51,1
+141,,kernel-change2-1083145,kernel-patch-12543923,"[net,v2,01/15] drivers: net: phy: at803x: fix resume for QCA8327 phy",2021-10-08T00:22:11,1
+142,,kernel-change2-1083145,kernel-patch-12546703,"[net,1/2] drivers: net: phy: at803x: fix resume for QCA8327 phy",2021-10-08T23:34:25,1
+143,,kernel-change2-1083145,kernel-patch-12548187,"[net-next,1/4] net: phy: at803x: fix resume for QCA8327 phy",2021-10-09T22:46:15,1
+144,29,kernel-change2-1096240,kernel-patch-12062849,"[net-next,3/4] PCI/VPD: Change Chelsio T4 quirk to provide access to full virtual EEPROM address space",2021-02-02T20:38:41,1
+145,,kernel-change2-1096240,kernel-patch-12071125,"[net-next,v2,2/3] PCI/VPD: Change Chelsio T4 quirk to provide access to full virtual address space",2021-02-05T14:26:25,1
+146,,kernel-change2-1096240,kernel-patch-12070827,"[resend,net-next,v2,2/3] PCI/VPD: Change Chelsio T4 quirk to provide access to full virtual address space",2021-02-05T19:29:45,1
+147,30,kernel-change2-1094214,kernel-patch-12439657,"[RFC,13/15] arm64: dts: qcom: sdm845-db845c: add second channel support to qca power sequencer",2021-08-17T00:55:05,1
+148,,kernel-change2-1094214,kernel-patch-12464003,"[RFC,v2,11/13] arm64: dts: qcom: sdm845-db845c: add second channel to qca power sequencer",2021-08-29T13:13:03,1
+149,,kernel-change2-1094214,kernel-patch-12538455,"[v1,13/15] arm64: dts: qcom: sdm845-db845c: add second channel to qca power sequencer",2021-10-06T03:54:05,1
+150,31,kernel-change2-1075017,kernel-patch-12543949,"[net-next,v2,14/15] drivers: net: dsa: qca8k: add support for QCA8328",2021-10-08T00:22:24,1
+151,,kernel-change2-1075017,kernel-patch-12548219,"[net-next,v3,11/13] drivers: net: dsa: qca8k: add support for QCA8328",2021-10-10T01:56:01,1
+152,,kernel-change2-1075017,kernel-patch-12548415,"[net-next,v4,11/13] drivers: net: dsa: qca8k: add support for QCA8328",2021-10-10T11:15:54,1
+153,,kernel-change2-1075017,kernel-patch-12548915,"[net-next,v5,12/14] drivers: net: dsa: qca8k: add support for QCA8328",2021-10-11T01:30:22,1
+154,,kernel-change2-1075017,kernel-patch-12554183,"[net-next,v6,12/16] net: dsa: qca8k: add support for QCA8328",2021-10-13T01:16:18,1
+155,,kernel-change2-1075017,kernel-patch-12557457,"[net-next,v7,12/16] net: dsa: qca8k: add support for QCA8328",2021-10-13T22:39:17,1
+156,32,kernel-change2-1085071,kernel-patch-11873677,[12/30] net: wimax: i2400m: netdev: Demote non-conformant function header,2020-11-02T11:44:54,1
+157,,kernel-change2-1085071,kernel-patch-11900199,[4/6] staging: net: wimax: i2400m: netdev: Demote non-conformant function header,2020-11-12T13:19:57,1
+158,33,kernel-change2-1062368,kernel-patch-12815314,[1/2] Fix race in igc_xdp_xmit_zc,2022-04-15T21:04:21,1
+159,,kernel-change2-1062368,kernel-patch-12819558,"[v2,1/2] igc: Fix race in igc_xdp_xmit_zc",2022-04-20T01:26:34,1
+160,34,kernel-change2-1062973,kernel-patch-12029437,octeontx2-af: Remove unneeded semicolon,2021-01-19T07:50:59,1
+161,,kernel-change2-1062973,kernel-patch-12029439,octeontx2-af: debugfs: Remove unneeded semicolon,2021-01-19T07:55:07,1
+162,,kernel-change2-1062973,kernel-patch-12063201,octeontx2-af: remove unneeded semicolon,2021-02-03T02:17:11,1
+163,35,kernel-change2-1086694,kernel-patch-12426171,"[RFC,net-next,1/8] ethtool: Add ability to control transceiver modules' low power mode",2021-08-09T10:21:45,0
+164,,kernel-change2-1086694,kernel-patch-12426193,"[RFC,ethtool-next,2/6] ethtool: Add ability to control transceiver modules' low power mode",2021-08-09T10:22:52,0
+165,,kernel-change2-1086694,kernel-patch-12444795,"[RFC,net-next,v2,1/6] ethtool: Add ability to control transceiver modules' power mode",2021-08-18T15:51:57,0
+166,,kernel-change2-1086694,kernel-patch-12444809,"[RFC,ethtool-next,v2,2/6] ethtool: Add ability to control transceiver modules' power mode",2021-08-18T15:53:02,0
+167,,kernel-change2-1086694,kernel-patch-12454975,"[RFC,net-next,v3,1/6] ethtool: Add ability to control transceiver modules' power mode",2021-08-24T13:03:39,0
+168,,kernel-change2-1086694,kernel-patch-12454991,"[RFC,ethtool-next,v3,2/6] ethtool: Add ability to control transceiver modules' power mode",2021-08-24T13:05:11,0
+169,,kernel-change2-1086694,kernel-patch-12532543,"[net-next,1/6] ethtool: Add ability to control transceiver modules' power mode",2021-10-03T07:32:14,0
+170,,kernel-change2-1086694,kernel-patch-12539065,"[net-next,v2,1/6] ethtool: Add ability to control transceiver modules' power mode",2021-10-06T10:46:42,0
+171,,kernel-change2-1086694,kernel-patch-12661385,"[ethtool-next,2/3] ethtool: Add ability to control transceiver modules' power mode",2021-12-07T09:33:58,0
+172,36,kernel-change2-1082223,kernel-patch-12219401,[12/14] drivers: net: dsa: qca8k: clear MASTER_EN after phy read/write,2021-04-23T01:47:38,1
+173,,kernel-change2-1082223,kernel-patch-12235475,"[RFC,net-next,v2,11/17] net: dsa: qca8k: clear MASTER_EN after phy read/write",2021-05-02T23:07:03,1
+174,,kernel-change2-1082223,kernel-patch-12238619,"[RFC,net-next,v3,14/20] net: dsa: qca8k: clear MASTER_EN after phy read/write",2021-05-04T22:29:08,1
+175,,kernel-change2-1082223,kernel-patch-12245443,"[RFC,net-next,v4,20/28] net: dsa: qca8k: clear MASTER_EN after phy read/write",2021-05-08T00:29:10,1
+176,,kernel-change2-1082223,kernel-patch-12249513,"[RFC,net-next,v5,17/25] net: dsa: qca8k: clear MASTER_EN after phy read/write",2021-05-11T02:04:52,1
+177,,kernel-change2-1082223,kernel-patch-12258987,"[net-next,v6,17/25] net: dsa: qca8k: clear MASTER_EN after phy read/write",2021-05-14T21:00:07,1
+178,37,kernel-change2-1084261,kernel-patch-12881101,"[net-next,01/11] devlink: introduce nested devlink entity for line card",2022-06-14T12:33:16,1
+179,,kernel-change2-1084261,kernel-patch-12922148,"[net-next,v2,02/12] net: devlink: introduce nested devlink entity for line card",2022-07-19T06:48:37,1
+180,,kernel-change2-1084261,kernel-patch-12924115,"[net-next,v3,02/11] net: devlink: introduce nested devlink entity for line card",2022-07-20T15:12:25,1
+181,,kernel-change2-1084261,kernel-patch-12927876,"[net-next,v4,03/12] net: devlink: introduce nested devlink entity for line card",2022-07-25T08:29:16,1
+182,38,kernel-change2-1060963,kernel-patch-12551317,"[bpf-next,3/3] libbpf: Fix dumping __int128",2021-10-12T02:32:18,1
+183,,kernel-change2-1060963,kernel-patch-12556295,"[bpf-next,v2,3/4] libbpf: Fix dumping non-aligned __int128",2021-10-13T16:09:01,1
+184,39,kernel-change2-1064508,kernel-patch-11824053,"[net,097/117] b43: set B43_DEBUGFS_FOPS.owner to THIS_MODULE",2020-10-08T15:51:49,1
+185,,kernel-change2-1064508,kernel-patch-11889253,"[net,v2,19/21] b43: set .owner to THIS_MODULE",2020-11-07T17:21:50,1
+186,40,kernel-change2-1088130,kernel-patch-12085841,[3/4] amd-xgbe: Reset link when the link never comes back,2021-02-12T18:00:09,1
+187,,kernel-change2-1088130,kernel-patch-12090527,"[net,v2,3/4] net: amd-xgbe: Reset link when the link never comes back",2021-02-16T19:07:09,1
+188,41,kernel-change2-1068934,kernel-patch-12283315,"[net-next,17/17] net/mlx5: Improve performance in SF allocation",2021-05-27T04:36:09,1
+189,,kernel-change2-1068934,kernel-patch-12346287,"[net-next,4/6] net/mlx5: SF, Improve performance in SF allocation",2021-06-26T07:44:15,1
+190,42,kernel-change2-1064078,kernel-patch-11971079,allow UDP cmsghdrs through io_uring,2020-12-13T20:31:12,1
+191,,kernel-change2-1064078,kernel-patch-11971083,[v3] Allow UDP cmsghdrs through io_uring,2020-12-13T20:43:39,1
+192,,kernel-change2-1064078,kernel-patch-11978187,"[net-next,v4] udp:allow UDP cmsghdrs through io_uring",2020-12-16T18:03:13,1
+193,,kernel-change2-1064078,kernel-patch-11978727,"[net-next,v5] udp:allow UDP cmsghdrs through io_uring",2020-12-16T22:56:48,1
+194,43,kernel-change2-1088645,kernel-patch-12691702,"[net-next,01/18] ieee802154: hwsim: Ensure proper channel selection at probe time",2021-12-22T15:57:26,1
+195,,kernel-change2-1088645,kernel-patch-12715214,"[v3,02/41] net: ieee802154: hwsim: Ensure proper channel selection at probe time",2022-01-17T11:54:01,1
+196,,kernel-change2-1088645,kernel-patch-12718025,"[wpan-next,1/9] net: ieee802154: hwsim: Ensure proper channel selection at probe time",2022-01-20T00:36:37,1
+197,,kernel-change2-1088645,kernel-patch-12718527,"[wpan-next,v2,1/9] net: ieee802154: hwsim: Ensure proper channel selection at probe time",2022-01-20T11:21:07,1
+198,,kernel-change2-1088645,kernel-patch-12723724,"[wpan,v3,1/6] net: ieee802154: hwsim: Ensure proper channel selection at probe time",2022-01-25T12:14:21,1
+199,44,kernel-change2-1062970,kernel-patch-11847439,"[RFC,v3,3/3] Rename nla_strlcpy to nla_strscpy.",2020-10-20T16:47:07,1
+200,,kernel-change2-1062970,kernel-patch-11870125,"[v4,3/3] treewide: rename nla_strlcpy to nla_strscpy.",2020-10-30T15:36:47,1
+201,,kernel-change2-1062970,kernel-patch-11903065,"[v5,3/3] treewide: rename nla_strlcpy to nla_strscpy.",2020-11-13T11:11:33,1
+202,,kernel-change2-1062970,kernel-patch-11906537,"[RESEND,net-next,v5,3/3] treewide: rename nla_strlcpy to nla_strscpy.",2020-11-15T17:08:06,1
+203,45,kernel-change2-1092589,kernel-patch-12336005,[net-next] ip: avoid OOM kills with large UDP sends over loopback,2021-06-21T23:13:07,1
+204,,kernel-change2-1092589,kernel-patch-12338703,"[net-next,v2,2/2] net: ip: avoid OOM kills with large UDP sends over loopback",2021-06-22T22:50:57,1
+205,,kernel-change2-1092589,kernel-patch-12340123,"[net-next,v3] net: ip: avoid OOM kills with large UDP sends over loopback",2021-06-23T16:23:28,1
+206,,kernel-change2-1092589,kernel-patch-12340547,"[net-next,v4] net: ip: avoid OOM kills with large UDP sends over loopback",2021-06-23T21:44:38,1
+207,,kernel-change2-1092589,kernel-patch-12342707,"[net-next,v5] net: ip: avoid OOM kills with large UDP sends over loopback",2021-06-24T17:57:24,1
+208,46,kernel-change2-1065316,kernel-patch-12664153,samples/bpf: fix swap.cocci warning,2021-12-08T11:34:07,1
+209,,kernel-change2-1065316,kernel-patch-12666197,[v2] samples/bpf: xdpsock: fix swap.cocci warning,2021-12-09T09:22:50,1
+210,47,kernel-change2-1077928,kernel-patch-12687935,sfc: Check null pointer of rx_queue->page_ring,2021-12-20T13:56:03,0
+211,,kernel-change2-1077928,kernel-patch-12687937,sfc: falcon: Check null pointer of rx_queue->page_ring,2021-12-20T14:03:44,0
+212,48,kernel-change2-1094547,kernel-patch-12085851,[1/4] amd-xgbe: Reset the PHY rx data path when mailbox command timeout,2021-02-12T18:00:07,1
+213,,kernel-change2-1094547,kernel-patch-12090519,"[net,v2,1/4] net: amd-xgbe: Reset the PHY rx data path when mailbox command timeout",2021-02-16T19:07:07,1
+214,49,kernel-change2-1067522,kernel-patch-11924511,"[net-next,2/2] net: nfc: s3fwrn5: Support a UART interface",2020-11-23T07:56:58,1
+215,,kernel-change2-1067522,kernel-patch-11940317,"[v2,net-next,4/4] net: nfc: s3fwrn5: Support a UART interface",2020-11-30T12:05:45,1
+216,,kernel-change2-1067522,kernel-patch-11943033,"[v4,net-next,4/4] nfc: s3fwrn5: Support a UART interface",2020-12-01T13:50:28,1
+217,,kernel-change2-1067522,kernel-patch-11945745,"[v5,net-next,4/4] nfc: s3fwrn5: Support a UART interface",2020-12-02T11:47:41,1
+218,50,kernel-change2-1067011,kernel-patch-11823601,"[net,022/117] netdevsim: set nsim_dev_health_break_fops.owner to THIS_MODULE",2020-10-08T15:50:34,0
+219,,kernel-change2-1067011,kernel-patch-11823589,"[net,023/117] netdevsim: set nsim_udp_tunnels_info_reset_fops.owner to THIS_MODULE",2020-10-08T15:50:35,0
+220,,kernel-change2-1067011,kernel-patch-11823597,"[net,024/117] netdevsim: set nsim_dev_take_snapshot_fops.owner to THIS_MODULE",2020-10-08T15:50:36,0
+221,,kernel-change2-1067011,kernel-patch-11823593,"[net,025/117] netdevsim: set nsim_dev_trap_fa_cookie_fops.owner to THIS_MODULE",2020-10-08T15:50:37,0
+222,,kernel-change2-1067011,kernel-patch-11889123,"[net,v2,04/21] netdevsim: set .owner to THIS_MODULE",2020-11-07T17:21:35,0
+223,,kernel-change2-1067011,kernel-patch-11906021,"[v3,net] netdevsim: set .owner to THIS_MODULE",2020-11-15T10:30:41,0
+224,51,kernel-change2-1090994,kernel-patch-12748267,[bpf] bpf: Fix crash due to OOB access when reg->type > __BPF_REG_TYPE_MAX,2022-02-16T09:13:23,1
+225,,kernel-change2-1090994,kernel-patch-12749006,"[bpf,v2] Fix crash due to OOB access when reg->type > __BPF_REG_TYPE_MAX",2022-02-16T20:19:43,1
+226,52,kernel-change2-1067950,kernel-patch-12703220,[11/13] libbpf: Add bpf_program__attach_kprobe_opts for multi kprobes,2022-01-04T08:09:41,1
+227,,kernel-change2-1067950,kernel-patch-12732938,[6/8] libbpf: Add bpf_program__attach_kprobe_opts for multi kprobes,2022-02-02T13:53:31,1
+228,,kernel-change2-1067950,kernel-patch-12755697,[08/10] libbpf: Add bpf_program__attach_kprobe_opts support for multi kprobes,2022-02-22T17:05:58,1
+229,53,kernel-change2-1071982,kernel-patch-12041929,dsa: mv88e6xxx: Make global2 support mandatory,2021-01-23T20:51:48,1
+230,,kernel-change2-1071982,kernel-patch-12049159,"[net-next,v2] net: dsa: mv88e6xxx: Make global2 support mandatory",2021-01-27T00:32:10,1
+231,54,kernel-change2-1071023,kernel-patch-11961545,"[wireless,-next] mt76: mt7915: convert comma to semicolon",2020-12-09T13:57:17,1
+232,,kernel-change2-1071023,kernel-patch-11967659,"[wireless,-next] wireless: mt76: mt7915: convert comma to semicolon",2020-12-11T08:53:38,1
+233,55,kernel-change2-1064396,kernel-patch-11823769,"[net,064/117] ath11k: set fops_extd_tx_stats.owner to THIS_MODULE",2020-10-08T15:51:16,0
+234,,kernel-change2-1064396,kernel-patch-11823823,"[net,065/117] ath11k: set fops_extd_rx_stats.owner to THIS_MODULE",2020-10-08T15:51:17,0
+235,,kernel-change2-1064396,kernel-patch-11823819,"[net,066/117] ath11k: set fops_pktlog_filter.owner to THIS_MODULE",2020-10-08T15:51:18,0
+236,,kernel-change2-1064396,kernel-patch-11823767,"[net,067/117] ath11k: set fops_simulate_radar.owner to THIS_MODULE",2020-10-08T15:51:19,0
+237,,kernel-change2-1064396,kernel-patch-11889183,"[net,v2,12/21] ath11k: set .owner to THIS_MODULE",2020-11-07T17:21:43,0
+238,56,kernel-change2-1062195,kernel-patch-12742847,[net-next] net: dsa: OF-ware slave_mii_bus (RFC),2022-02-11T05:11:41,1
+239,,kernel-change2-1062195,kernel-patch-12750982,"[net-next,v2] net: dsa: OF-ware slave_mii_bus",2022-02-18T06:21:47,1
+240,,kernel-change2-1062195,kernel-patch-12754103,"[net-next,v3,2/2] net: dsa: OF-ware slave_mii_bus",2022-02-21T20:04:07,1
+241,,kernel-change2-1062195,kernel-patch-12858390,"[net-next,RESEND] net: dsa: OF-ware slave_mii_bus",2022-05-23T01:32:34,1
+242,57,kernel-change2-1076941,kernel-patch-12278393,[01/12] Bluetooth: use inclusive language in HCI role,2021-05-25T10:29:30,1
+243,,kernel-change2-1076941,kernel-patch-12288871,"[v2,1/8] Bluetooth: use inclusive language in HCI role",2021-05-31T08:37:20,1
+244,,kernel-change2-1076941,kernel-patch-12299113,"[v3,1/3] Bluetooth: use inclusive language in HCI role comments",2021-06-04T08:26:25,1
+245,58,kernel-change2-1083027,kernel-patch-12715247,"[v3,41/41] net: ieee802154: ca8210: Flag the driver as being limited",2022-01-17T11:54:40,1
+246,,kernel-change2-1083027,kernel-patch-12903434,"[wpan-next,18/20] ieee802154: ca8210: Flag the driver as being limited",2022-07-01T14:30:50,1
+247,59,kernel-change2-1065618,kernel-patch-12004551,"[net,1/3] s390/qeth: fix deadlock during recovery",2021-01-07T17:24:40,0
+248,,kernel-change2-1065618,kernel-patch-12508001,"[net,3/3] s390/qeth: fix deadlock during failing recovery",2021-09-21T14:52:17,0
+249,60,kernel-change2-1072223,kernel-patch-12774850,ethtool: Fix refcount leak in gfar_get_ts_info,2022-03-09T09:11:49,1
+250,,kernel-change2-1072223,kernel-patch-12775792,"[net,v2] gianfar: ethtool: Fix refcount leak in gfar_get_ts_info",2022-03-10T01:53:13,1
+251,61,kernel-change2-1063357,kernel-patch-12749109,[1/5] dt-bindings: bluetooth: broadcom: add BCM43430A0,2022-02-16T21:24:28,1
+252,,kernel-change2-1063357,kernel-patch-12760899,"[v2,1/2] dt-bindings: bluetooth: broadcom: add BCM43430A0 & BCM43430A1",2022-02-25T20:41:37,1
+253,,kernel-change2-1063357,kernel-patch-12987708,[v3] dt-bindings: bluetooth: broadcom: add BCM43430A0 & BCM43430A1,2022-09-24T14:21:55,1
+254,62,kernel-change2-1085140,kernel-patch-12525237,"[net-next,4/5] net/mlx5: Register separate reload devlink ops for multiport device",2021-09-29T10:16:38,1
+255,,kernel-change2-1085140,kernel-patch-12525361,"[net-next,v1,4/5] net/mlx5: Register separate reload devlink ops for multiport device",2021-09-29T12:00:45,1
+256,,kernel-change2-1085140,kernel-patch-12532959,"[net-next,v2,4/5] net/mlx5: Register separate reload devlink ops for multiport device",2021-10-03T18:12:05,1
+257,,kernel-change2-1085140,kernel-patch-12541013,"[net-next,v3,4/5] net/mlx5: Separate reload devlink ops for multiport device",2021-10-07T06:55:18,1
+258,63,kernel-change2-1078916,kernel-patch-12662945,[next] net: hinic: Use devm_kcalloc() instead of devm_kzalloc(),2021-12-08T00:35:27,0
+259,,kernel-change2-1078916,kernel-patch-12663445,[next] net: huawei: hinic: Use devm_kcalloc() instead of devm_kzalloc(),2021-12-08T04:03:11,0
+260,64,kernel-change2-1073047,kernel-patch-12806277,wlcore: using pm_runtime_resume_and_get instead of pm_runtime_get_sync,2022-04-08T08:12:05,0
+261,,kernel-change2-1073047,kernel-patch-12810352,wlcore: using pm_runtime_resume_and_get instead of pm_runtime_get_sync,2022-04-12T09:17:42,0
+262,,kernel-change2-1073047,kernel-patch-12817804,wlcore: sdio: using pm_runtime_resume_and_get instead of pm_runtime_get_sync,2022-04-19T11:04:45,0
+263,,kernel-change2-1073047,kernel-patch-12819957,wlcore: cmd: using pm_runtime_resume_and_get instead of pm_runtime_get_sync,2022-04-20T09:01:41,0
+264,65,kernel-change2-1071096,kernel-patch-12611579,[2/5] net: stmmac: dwmac-mediatek: Reuse more common features,2021-11-10T08:39:45,1
+265,,kernel-change2-1071096,kernel-patch-12614301,"[v2,2/5] net: stmmac: dwmac-mediatek: Reuse more common features",2021-11-11T07:12:11,1
+266,,kernel-change2-1071096,kernel-patch-12616429,"[v3,2/7] net-next: stmmac: dwmac-mediatek: Reuse more common features",2021-11-12T09:39:13,1
+267,,kernel-change2-1071096,kernel-patch-12654337,"[v4,2/7] net-next: stmmac: dwmac-mediatek: Reuse more common features",2021-12-03T06:34:13,1
+268,,kernel-change2-1071096,kernel-patch-12660779,"[v5,2/7] net-next: stmmac: dwmac-mediatek: Reuse more common features",2021-12-07T01:55:00,1
+269,,kernel-change2-1071096,kernel-patch-12663353,"[net-next,v6,2/6] stmmac: dwmac-mediatek: Reuse more common features",2021-12-08T03:03:50,1
+270,,kernel-change2-1071096,kernel-patch-12663605,"[net-next,v7,2/6] stmmac: dwmac-mediatek: Reuse more common features",2021-12-08T05:47:12,1
+271,,kernel-change2-1071096,kernel-patch-12668501,"[net-next,v8,2/6] stmmac: dwmac-mediatek: Reuse more common features",2021-12-10T01:31:25,1
+272,,kernel-change2-1071096,kernel-patch-12677259,"[net-next,v9,2/6] stmmac: dwmac-mediatek: Reuse more common features",2021-12-15T02:16:48,1
+273,,kernel-change2-1071096,kernel-patch-12680027,"[net-next,v10,2/6] stmmac: dwmac-mediatek: Reuse more common features",2021-12-16T05:53:24,1
+274,,kernel-change2-1071096,kernel-patch-12702965,"[net-next,v11,2/6] stmmac: dwmac-mediatek: Reuse more common features",2022-01-04T03:39:36,1
+275,,kernel-change2-1071096,kernel-patch-12714843,"[net-next,v12,2/7] stmmac: dwmac-mediatek: Reuse more common features",2022-01-17T07:07:01,1
+276,,kernel-change2-1071096,kernel-patch-12779811,"[net-next,v13,2/7] stmmac: dwmac-mediatek: Reuse more common features",2022-03-14T07:57:08,1
+277,66,kernel-change2-1095368,kernel-patch-12464447,linux-next: manual merge of the net-next tree with the staging tree,2021-08-30T01:42:38,1
+278,,kernel-change2-1095368,kernel-patch-12772765,linux-next: manual merge of the net-next tree with the staging.current tree,2022-03-08T00:10:43,1
+279,67,kernel-change2-1071432,kernel-patch-12501501,MAINTAINERS: zd1211rw: Move Daniel Drake to credits,2021-09-17T09:32:36,1
+280,,kernel-change2-1071432,kernel-patch-12501633,[v2] MAINTAINERS: Move Daniel Drake to credits,2021-09-17T10:28:34,1
+281,68,kernel-change2-1064988,kernel-patch-12792558,[01/22] orion5x: Replace comments with C99 initializers,2022-03-26T16:58:48,0
+282,,kernel-change2-1064988,kernel-patch-12792821,[00/22] Replace comments with C99 initializers,2022-03-27T12:46:00,0
+283,,kernel-change2-1064988,kernel-patch-12794112,"[20/22,v2] ray_cs: Replace comments with C99 initializers",2022-03-28T18:21:56,0
+284,69,kernel-change2-1065919,kernel-patch-11902397,[net-next] net: DSCP in IPv4 routing,2020-11-13T02:06:37,1
+285,,kernel-change2-1065919,kernel-patch-11923303,[net-next] net: DSCP in IPv4 routing v2,2020-11-21T08:24:46,1
+286,70,kernel-change2-1081227,kernel-patch-12536541,"[v18,1/2] nl80211: Add LC placeholder band definition to enum nl80211_band",2021-10-05T12:30:54,1
+287,,kernel-change2-1081227,kernel-patch-12552449,"[1/2,v19,1/2] nl80211: Add LC placeholder band definition to enum nl80211_band",2021-10-12T12:50:11,1
+288,,kernel-change2-1081227,kernel-patch-12565511,"[v20,1/2] nl80211: Add LC placeholder band definition to nl80211_band",2021-10-18T10:00:54,1
+289,,kernel-change2-1081227,kernel-patch-12595129,[1/2] nl80211: Add LC placeholder band definition to nl80211_band,2021-10-31T13:10:33,1
+290,,kernel-change2-1081227,kernel-patch-12759112,"[v22,1/2] nl80211: Add LC placeholder band definition to nl80211_band",2022-02-24T18:20:06,1
+291,71,kernel-change2-1062979,kernel-patch-12850960,"[v5,12/15] seltests/landlock: rules overlapping test",2022-05-16T15:20:35,1
+292,,kernel-change2-1062979,kernel-patch-12888818,"[v6,14/17] seltests/landlock: adds rules overlapping test",2022-06-21T08:23:10,1
+293,,kernel-change2-1062979,kernel-patch-12958231,"[v7,14/18] seltests/landlock: add rules overlapping test",2022-08-29T17:03:57,1
+294,72,kernel-change2-1076095,kernel-patch-12992161,[net-next] net: bonding: Convert to use sysfs_emit() APIs,2022-09-28T11:40:22,1
+295,,kernel-change2-1076095,kernel-patch-12992192,"[net-next,v2] net: bonding: Convert to use sysfs_emit()/sysfs_emit_at() APIs",2022-09-28T12:30:14,1
+296,73,kernel-change2-1068361,kernel-patch-12301443,[17/19] selftests/bpf: Add fexit multi func test,2021-06-05T11:10:32,1
+297,,kernel-change2-1068361,kernel-patch-12460585,"[bpf-next,v4,23/27] selftests/bpf: Add fexit multi func test",2021-08-26T19:39:18,1
+298,,kernel-change2-1068361,kernel-patch-12626701,"[bpf-next,25/29] selftests/bpf: Add fexit multi func test",2021-11-18T11:24:51,1
+299,,kernel-change2-1068361,kernel-patch-12938837,"[RFC,bpf-next,15/17] selftests/bpf: Add fexit tracing multi func test",2022-08-08T14:06:24,1
+300,74,kernel-change2-1065361,kernel-patch-12923804,docs: bpf: Fix typo in comment,2022-07-20T11:13:33,1
+301,,kernel-change2-1065361,kernel-patch-12924683,[v2] docs: Fix typo in comment,2022-07-21T01:56:05,1
+302,75,kernel-change2-1085331,kernel-patch-12788026,"[net-next,1/4] drivers: net: dsa: qca8k: drop MTU tracking from qca8k_priv",2022-03-22T01:45:03,1
+303,,kernel-change2-1085331,kernel-patch-12811034,"[net-next,v2,1/4] drivers: net: dsa: qca8k: drop MTU tracking from qca8k_priv",2022-04-12T17:30:16,1
+304,,kernel-change2-1085331,kernel-patch-12815503,"[net-next,v3,1/6] net: dsa: qca8k: drop MTU tracking from qca8k_priv",2022-04-15T23:30:12,1
+305,76,kernel-change2-1075453,kernel-patch-12454965,net: tcp_drop adds `reason` parameter for tracing,2021-08-24T12:51:40,1
+306,,kernel-change2-1075453,kernel-patch-12458197,net: tcp_drop adds `reason` parameter for tracing v2,2021-08-25T15:40:43,1
+307,77,kernel-change2-1095170,kernel-patch-11873673,[04/30] net: wimax: i2400m: control: Fix some misspellings in i2400m_set_init_config()'s docs,2020-11-02T11:44:46,1
+308,,kernel-change2-1095170,kernel-patch-11900185,[1/6] staging: net: wimax: i2400m: control: Fix some misspellings in i2400m_set_init_config()'s docs,2020-11-12T13:19:54,1
+309,78,kernel-change2-1060836,kernel-patch-12292279,"[net-next,08/16] netfilter: use nfnetlink_unicast()",2021-06-01T22:06:21,0
+310,,kernel-change2-1060836,kernel-patch-12430433,"[net-next,01/10] netfilter: nft_compat: use nfnetlink_unicast()",2021-08-11T08:48:59,0
+311,79,kernel-change2-1071086,kernel-patch-12895247,sfc: fix repeated words in comments,2022-06-25T06:12:23,0
+312,,kernel-change2-1071086,kernel-patch-12895249,sfc:falcon: fix repeated words in comments,2022-06-25T06:32:40,0
+313,,kernel-change2-1071086,kernel-patch-12976983,sfc: fix repeated words in comments,2022-09-15T07:54:11,0
+314,80,kernel-change2-1094044,kernel-patch-12254763,net: mdio: Fix a double free issue in the .remove function,2021-05-12T21:35:38,1
+315,,kernel-change2-1094044,kernel-patch-12255273,[V2] net: mdio: thunder: Fix a double free issue in the .remove function,2021-05-13T07:44:49,1
+316,81,kernel-change2-1060185,kernel-patch-12135859,[net] ibmvnic: update MAINTAINERS,2021-03-12T18:45:30,0
+317,,kernel-change2-1060185,kernel-patch-12212731,[net] MAINTAINERS: update,2021-04-19T21:25:25,0
+318,82,kernel-change2-1071289,kernel-patch-11845551,"[iproute2-next,05/15] ip: iplink: Convert to use parse_on_off(), parse_flag_on_off()",2020-10-20T00:58:13,1
+319,,kernel-change2-1071289,kernel-patch-11905885,"[iproute2-next,3/7] ip: iplink: Convert to use parse_on_off()",2020-11-14T22:53:57,1
+320,83,kernel-change2-1065337,kernel-patch-12467933,"[net-next,5/9] ibmvnic: init_tx_pools move loop-invariant code out",2021-09-01T00:08:08,1
+321,,kernel-change2-1065337,kernel-patch-12470071,"[net-next,v2,5/9] ibmvnic: init_tx_pools move loop-invariant code",2021-09-01T18:05:47,1
+322,,kernel-change2-1065337,kernel-patch-12495443,"[net-next,RESEND,v2,5/9] ibmvnic: init_tx_pools move loop-invariant code",2021-09-15T03:52:55,1
+323,84,kernel-change2-1091644,kernel-patch-12737120,"[net-next,2/4] net: bridge: dsa: Add support for offloading of locked port flag",2022-02-07T10:07:40,1
+324,,kernel-change2-1091644,kernel-patch-12740258,"[net-next,v2,2/5] net: bridge: Add support for offloading of locked port flag",2022-02-09T13:05:34,1
+325,,kernel-change2-1091644,kernel-patch-12751617,"[net-next,v3,2/5] net: bridge: Add support for offloading of locked port flag",2022-02-18T15:51:45,1
+326,,kernel-change2-1091644,kernel-patch-12755074,"[net-next,v4,2/5] net: bridge: Add support for offloading of locked port flag",2022-02-22T13:28:15,1
+327,,kernel-change2-1091644,kernel-patch-12756646,"[net-next,v5,2/5] net: bridge: Add support for offloading of locked port flag",2022-02-23T10:16:47,1
+328,85,kernel-change2-1066688,kernel-patch-12815315,[2/2] Trigger proper interrupts in igc_xsk_wakeup,2022-04-15T21:05:46,1
+329,,kernel-change2-1066688,kernel-patch-12819559,"[v2,2/2] igc: Trigger proper interrupts in igc_xsk_wakeup",2022-04-20T01:26:35,1
+330,86,kernel-change2-1069855,kernel-patch-12630517,"[v5,1/2] bluetooth: Handle MSFT Monitor Device Event",2021-11-20T16:40:46,1
+331,,kernel-change2-1069855,kernel-patch-12631017,"[v6,1/2] bluetooth: Handle MSFT Monitor Device Event",2021-11-21T19:12:17,1
+332,,kernel-change2-1069855,kernel-patch-12654421,"[v7,1/2] bluetooth: Handle MSFT Monitor Device Event",2021-12-03T07:16:17,1
+333,,kernel-change2-1069855,kernel-patch-12679921,"[v8,1/3] bluetooth: msft: Handle MSFT Monitor Device Event",2021-12-16T04:39:45,1
+334,,kernel-change2-1069855,kernel-patch-12680985,"[v9,1/3] bluetooth: msft: Handle MSFT Monitor Device Event",2021-12-16T12:49:54,1
+335,,kernel-change2-1069855,kernel-patch-12710000,"[v10,1/2] bluetooth: msft: Handle MSFT Monitor Device Event",2022-01-11T16:14:25,1
+336,87,kernel-change2-1081078,kernel-patch-12081541,"[v10,15/20] dlb: add queue map, unmap, and pending unmap operations",2021-02-10T17:54:18,1
+337,,kernel-change2-1081078,kernel-patch-12689139,"[RFC,v12,15/17] dlb: add queue map, unmap, and pending unmap",2021-12-21T06:50:45,1
+338,88,kernel-change2-1063623,kernel-patch-12540733,"[net-next,05/13] net: dsa: qca8k: add mac_power_sel support",2021-10-06T22:35:55,1
+339,,kernel-change2-1063623,kernel-patch-12543931,"[net-next,v2,05/15] net: dsa: qca8k: add mac_power_sel support",2021-10-08T00:22:15,1
+340,,kernel-change2-1063623,kernel-patch-12548201,"[net-next,v3,01/13] net: dsa: qca8k: add mac_power_sel support",2021-10-10T01:55:51,1
+341,,kernel-change2-1063623,kernel-patch-12548403,"[net-next,v4,01/13] net: dsa: qca8k: add mac_power_sel support",2021-10-10T11:15:44,1
+342,,kernel-change2-1063623,kernel-patch-12548893,"[net-next,v5,01/14] net: dsa: qca8k: add mac_power_sel support",2021-10-11T01:30:11,1
+343,,kernel-change2-1063623,kernel-patch-12554163,"[net-next,v6,01/16] dsa: qca8k: add mac_power_sel support",2021-10-13T01:16:07,1
+344,,kernel-change2-1063623,kernel-patch-12557435,"[net-next,v7,01/16] dsa: qca8k: add mac_power_sel support",2021-10-13T22:39:06,1
+345,89,kernel-change2-1080083,kernel-patch-12938196,AX25 rose_call - replacing carriage return by newlines,2022-08-07T18:04:39,1
+346,,kernel-change2-1080083,kernel-patch-12938197,Resend : [PATCH] AX25 rose_call - replacing carriage return by newlines,2022-08-07T18:21:34,1
+347,90,kernel-change2-1083720,kernel-patch-12392247,"[bpf-next,v2,5/8] samples: bpf: Convert xdp_redirect to use XDP samples helper",2021-07-21T21:28:30,1
+348,,kernel-change2-1083720,kernel-patch-12406415,"[bpf-next,v3,5/8] samples: bpf: Convert xdp_redirect to use XDP samples helper",2021-07-28T16:55:49,1
+349,,kernel-change2-1083720,kernel-patch-12450735,"[bpf-next,v4,16/22] samples: bpf: Convert xdp_redirect to XDP samples helper",2021-08-21T00:20:04,1
+350,91,kernel-change2-1080650,kernel-patch-12740788,nfp: flower: Fix a potential theorical leak in nfp_tunnel_add_shared_mac(),2022-02-09T18:58:47,1
+351,,kernel-change2-1080650,kernel-patch-12742462,"[v2,1/2] nfp: flower: Fix a potential leak in nfp_tunnel_add_shared_mac()",2022-02-10T22:34:52,1
+352,,kernel-change2-1080650,kernel-patch-12751431,[net] nfp: flower: Fix a potential leak in nfp_tunnel_add_shared_mac(),2022-02-18T13:15:35,1
+353,92,kernel-change2-1063375,kernel-patch-12786730,[1/2] Bluetooth: Add support for devcoredump,2022-03-21T01:34:00,1
+354,,kernel-change2-1063375,kernel-patch-12893134,"[v2,1/2] Bluetooth: Add support for devcoredump",2022-06-23T19:37:36,1
+355,,kernel-change2-1063375,kernel-patch-12910301,"[v3,1/3] Bluetooth: Add support for devcoredump",2022-07-07T22:15:14,1
+356,,kernel-change2-1063375,kernel-patch-12939698,"[v4,3/5] Bluetooth: Add support for hci devcoredump",2022-08-09T15:35:25,1
+357,,kernel-change2-1063375,kernel-patch-12940737,"[v5,3/5] Bluetooth: Add support for hci devcoredump",2022-08-10T16:00:36,1
+358,,kernel-change2-1063375,kernel-patch-12986131,"[v6,1/3] Bluetooth: Add support for hci devcoredump",2022-09-23T05:12:03,1
+359,93,kernel-change2-1078504,kernel-patch-12709390,[09/14] ipv6: hand away dst refs to cork setup,2022-01-11T01:21:41,1
+360,,kernel-change2-1078504,kernel-patch-12709389,[09/14] ipv6: hand dst refs to cork setup,2022-01-11T01:21:42,1
+361,94,kernel-change2-1076282,kernel-patch-12747427,[next] treewide: Replace zero-length arrays with flexible-array members,2022-02-15T17:47:43,0
+362,,kernel-change2-1076282,kernel-patch-12896949,[next] treewide: uapi: Replace zero-length arrays with flexible-array members,2022-06-27T18:04:32,0
+363,95,kernel-change2-1073973,kernel-patch-12362435,[2/4] net: add an accept helper not installing fd,2021-07-07T11:39:44,1
+364,,kernel-change2-1073973,kernel-patch-12435843,"[v2,1/4] net: add accept helper not installing fd",2021-08-13T16:43:10,1
+365,,kernel-change2-1073973,kernel-patch-12450969,"[v3,1/4] net: add accept helper not installing fd",2021-08-21T15:52:37,1
+366,,kernel-change2-1073973,kernel-patch-12457327,"[v4,1/4] net: add accept helper not installing fd",2021-08-25T11:25:44,1
+367,96,kernel-change2-1080350,kernel-patch-12198647,[net-next] icmp: pass RFC 8335 reply messages to ping_rcv,2021-04-12T19:08:45,1
+368,,kernel-change2-1080350,kernel-patch-12198877,"[net-next,V2] icmp: ICMPV6: pass RFC 8335 reply messages to ping_rcv",2021-04-12T21:23:56,1
+369,97,kernel-change2-1087479,kernel-patch-12590243,[1/3] net: ocelot: add support to get mac from device-tree,2021-10-28T13:49:30,1
+370,,kernel-change2-1087479,kernel-patch-12600453,"[v2,1/6] net: ocelot: add support to get port mac from device-tree",2021-11-03T09:19:38,1
+371,,kernel-change2-1087479,kernel-patch-12641189,"[net-next,v3,2/4] net: ocelot: add support to get port mac from device-tree",2021-11-26T17:27:37,1
+372,,kernel-change2-1087479,kernel-patch-12675735,[net-next] net: ocelot: add support to get port mac from device-tree,2021-12-14T09:55:34,1
+373,98,kernel-change2-1065811,kernel-patch-12812078,usbnet: Fix use-after-free on disconnect,2022-04-13T14:16:19,1
+374,,kernel-change2-1065811,kernel-patch-12892334,"[net-next,v2] usbnet: Fix linkwatch use-after-free on disconnect",2022-06-23T12:50:59,1
+375,99,kernel-change2-1077921,kernel-patch-12102045,[next] mt76: mt7921: remove redundant check on variable type,2021-02-24T15:22:25,1
+376,,kernel-change2-1077921,kernel-patch-12135541,mt76: mt7921: remove redundant check on type,2021-03-12T17:29:49,1
+377,100,kernel-change2-1066644,kernel-patch-11824151,"[net,027/117] i2400m: set i2400m_rx_stats_fops.owner to THIS_MODULE",2020-10-08T15:50:39,1
+378,,kernel-change2-1066644,kernel-patch-11824149,"[net,028/117] i2400m: set i2400m_tx_stats_fops.owner to THIS_MODULE",2020-10-08T15:50:40,1
+379,,kernel-change2-1066644,kernel-patch-11889129,"[net,v2,06/21] i2400m: set .owner to THIS_MODULE",2020-11-07T17:21:37,1
+380,101,kernel-change2-1062281,kernel-patch-12638391,"[net-next,2/2] ifb: support ethtools stats",2021-11-25T02:01:55,1
+381,,kernel-change2-1062281,kernel-patch-12640091,"[net-next,v2] net: ifb: support ethtools stats",2021-11-26T03:23:05,1
+382,,kernel-change2-1062281,kernel-patch-12642581,"[net-next,v3] net: ifb: support ethtools stats",2021-11-28T01:46:31,1
+383,102,kernel-change2-1061190,kernel-patch-12699870,"[RFC,17/32] net: Kconfig: add HAS_IOPORT dependencies",2021-12-27T16:43:02,1
+384,,kernel-change2-1061190,kernel-patch-12832113,[20/37] net: add HAS_IOPORT dependencies,2022-04-29T13:50:32,1
+385,103,kernel-change2-1069168,kernel-patch-12513005,"[RFC/PATCH,02/18] ravb: Rename the variables ""no_ptp_cfg_active"" and ""ptp_cfg_active""",2021-09-23T14:07:57,1
+386,,kernel-change2-1069168,kernel-patch-12530821,"[02/10] ravb: Rename ""no_ptp_cfg_active"" and ""ptp_cfg_active"" variables",2021-10-01T15:06:28,1
+387,104,kernel-change2-1091098,kernel-patch-12809939,selftests: net: add support to select a test to run,2022-04-12T01:20:12,1
+388,,kernel-change2-1091098,kernel-patch-12809954,"[net-next,v2] selftests: net: fib_rule_tests: add support to select a test to run",2022-04-12T02:04:31,1
+389,105,kernel-change2-1068946,kernel-patch-11969855,"[bpf-next,2/4] bpf: allow bpf_d_path in sleepable bpf_iter program",2020-12-12T02:48:08,1
+390,,kernel-change2-1068946,kernel-patch-11976057,"[v2,bpf-next,2/4] bpf: allow bpf_d_path in sleepable bpf_iter program",2020-12-15T23:37:00,1
+391,,kernel-change2-1068946,kernel-patch-12068745,"[v4,bpf-next,2/4] bpf: allow bpf_d_path in sleepable bpf_iter program",2021-02-04T20:49:59,1
+392,,kernel-change2-1068946,kernel-patch-12076689,"[v5,bpf-next,2/4] bpf: allow bpf_d_path in sleepable bpf_iter program",2021-02-08T22:52:53,1
+393,,kernel-change2-1068946,kernel-patch-12084595,"[v6,bpf-next,2/4] bpf: allow bpf_d_path in sleepable bpf_iter program",2021-02-12T01:42:30,1
+394,,kernel-change2-1068946,kernel-patch-12085881,"[v7,bpf-next,2/3] bpf: allow bpf_d_path in bpf_iter program",2021-02-12T18:31:06,1
+395,106,kernel-change2-1069473,kernel-patch-12912174,wifi: ath9k: fix repeated words in comments,2022-07-09T12:37:24,0
+396,,kernel-change2-1069473,kernel-patch-12976794,ath9k: fix repeated words in comments,2022-09-15T03:05:59,0
+397,,kernel-change2-1069473,kernel-patch-12976798,ath9k: fix repeated words in comments,2022-09-15T03:08:59,0
+398,107,kernel-change2-1091822,kernel-patch-12776345,"[iproute2-next,2/3] net: switchdev: add support for offloading of fdb locked flag",2022-03-10T13:36:16,1
+399,,kernel-change2-1091822,kernel-patch-12776465,"[net-next,2/3] net: switchdev: add support for offloading of fdb locked flag",2022-03-10T14:23:19,1
+400,,kernel-change2-1091822,kernel-patch-12783800,"[v2,net-next,2/4] net: switchdev: add support for offloading of fdb locked flag",2022-03-17T09:39:00,1
+401,,kernel-change2-1091822,kernel-patch-12860270,"[V3,net-next,2/4] net: switchdev: add support for offloading of fdb locked flag",2022-05-24T15:21:42,1
+402,,kernel-change2-1091822,kernel-patch-12909839,"[v4,net-next,2/6] net: switchdev: add support for offloading of fdb locked flag",2022-07-07T15:29:26,1
+403,,kernel-change2-1091822,kernel-patch-12955963,"[v5,net-next,2/6] net: switchdev: add support for offloading of fdb locked flag",2022-08-26T11:45:34,1
+404,,kernel-change2-1091822,kernel-patch-12992339,"[v6,net-next,3/9] net: switchdev: add support for offloading of the FDB locked flag",2022-09-28T15:02:50,1
+405,108,kernel-change2-1085679,kernel-patch-12963769,net: sunplus: Fix return type for implementation of,2022-09-02T07:59:52,1
+406,,kernel-change2-1085679,kernel-patch-12963808,[RESEND] net: sunplus: Fix return type for implementation of ndo_start_xmit,2022-09-02T08:15:50,1
+407,109,kernel-change2-1088213,kernel-patch-12040991,[07/22] RDMA/irdma: Register an auxiliary driver and implement private channel OPs,2021-01-22T23:48:12,1
+408,,kernel-change2-1088213,kernel-patch-12159867,"[v2,08/23] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-03-23T23:59:52,1
+409,,kernel-change2-1088213,kernel-patch-12173181,"[v3,08/23] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-03-30T16:59:07,1
+410,,kernel-change2-1088213,kernel-patch-12185895,"[v4,08/23] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-04-06T21:01:10,1
+411,,kernel-change2-1088213,kernel-patch-12186285,"[v4,resend,08/23] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-04-07T00:14:47,1
+412,,kernel-change2-1088213,kernel-patch-12257883,"[v5,07/22] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-05-14T14:11:59,1
+413,,kernel-change2-1088213,kernel-patch-12270607,"[v6,07/22] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-05-20T14:37:54,1
+414,,kernel-change2-1088213,kernel-patch-12295643,"[v7,01/16] RDMA/irdma: Register auxiliary driver and implement private channel OPs",2021-06-02T20:51:23,1
+415,110,kernel-change2-1067120,kernel-patch-12910008,net: ipv4: fix clang -Wformat warning,2022-07-07T17:30:40,0
+416,,kernel-change2-1067120,kernel-patch-12910035,net: ipv4: esp4: fix clang -Wformat warning,2022-07-07T18:15:32,0
+417,111,kernel-change2-1081256,kernel-patch-12533029,"[bpf-next,v3,10/10] tools: bpftool: add install-bin target to install binary only",2021-10-03T19:22:08,1
+418,,kernel-change2-1081256,kernel-patch-12542893,"[bpf-next,v4,12/12] bpftool: add install-bin target to install binary only",2021-10-07T19:44:38,1
+419,112,kernel-change2-1094493,kernel-patch-12758369,"[bpf-next,v1,2/6] HID: bpf: allow to change the report descriptor from an eBPF program",2022-02-24T11:08:24,1
+420,,kernel-change2-1094493,kernel-patch-12769588,"[bpf-next,v2,08/28] HID: allow to change the report descriptor from an eBPF program",2022-03-04T17:28:32,1
+421,,kernel-change2-1094493,kernel-patch-12785616,"[bpf-next,v3,06/17] HID: allow to change the report descriptor from an eBPF program",2022-03-18T16:15:17,1
+422,113,kernel-change2-1060572,kernel-patch-12531725,"[net-next,03/11] ethernet: use eth_hw_addr_set()",2021-10-01T21:32:20,0
+423,,kernel-change2-1060572,kernel-patch-12562859,"[net-next,01/12] ethernet: adaptec: use eth_hw_addr_set()",2021-10-15T22:16:41,0
+424,,kernel-change2-1060572,kernel-patch-12562861,"[net-next,02/12] ethernet: aeroflex: use eth_hw_addr_set()",2021-10-15T22:16:42,0
+425,,kernel-change2-1060572,kernel-patch-12562863,"[net-next,03/12] ethernet: alteon: use eth_hw_addr_set()",2021-10-15T22:16:43,0
+426,,kernel-change2-1060572,kernel-patch-12562865,"[net-next,04/12] ethernet: amd: use eth_hw_addr_set()",2021-10-15T22:16:44,0
+427,,kernel-change2-1060572,kernel-patch-12562867,"[net-next,05/12] ethernet: aquantia: use eth_hw_addr_set()",2021-10-15T22:16:45,0
+428,,kernel-change2-1060572,kernel-patch-12562869,"[net-next,06/12] ethernet: bnx2x: use eth_hw_addr_set()",2021-10-15T22:16:46,0
+429,,kernel-change2-1060572,kernel-patch-12562871,"[net-next,07/12] ethernet: bcmgenet: use eth_hw_addr_set()",2021-10-15T22:16:47,0
+430,,kernel-change2-1060572,kernel-patch-12562873,"[net-next,08/12] ethernet: enic: use eth_hw_addr_set()",2021-10-15T22:16:48,0
+431,,kernel-change2-1060572,kernel-patch-12562875,"[net-next,09/12] ethernet: ec_bhf: use eth_hw_addr_set()",2021-10-15T22:16:49,0
+432,,kernel-change2-1060572,kernel-patch-12562879,"[net-next,10/12] ethernet: enetc: use eth_hw_addr_set()",2021-10-15T22:16:50,0
+433,,kernel-change2-1060572,kernel-patch-12562881,"[net-next,12/12] ethernet: ixgb: use eth_hw_addr_set()",2021-10-15T22:16:52,0
+434,,kernel-change2-1060572,kernel-patch-12566617,"[net-next,01/12] ethernet: mv643xx: use eth_hw_addr_set()",2021-10-18T14:29:21,0
+435,,kernel-change2-1060572,kernel-patch-12566619,"[net-next,02/12] ethernet: sky2/skge: use eth_hw_addr_set()",2021-10-18T14:29:22,0
+436,,kernel-change2-1060572,kernel-patch-12566621,"[net-next,03/12] ethernet: lpc: use eth_hw_addr_set()",2021-10-18T14:29:23,0
+437,,kernel-change2-1060572,kernel-patch-12566625,"[net-next,04/12] ethernet: netxen: use eth_hw_addr_set()",2021-10-18T14:29:24,0
+438,,kernel-change2-1060572,kernel-patch-12566623,"[net-next,05/12] ethernet: r8169: use eth_hw_addr_set()",2021-10-18T14:29:25,0
+439,,kernel-change2-1060572,kernel-patch-12566627,"[net-next,06/12] ethernet: renesas: use eth_hw_addr_set()",2021-10-18T14:29:26,0
+440,,kernel-change2-1060572,kernel-patch-12566631,"[net-next,07/12] ethernet: rocker: use eth_hw_addr_set()",2021-10-18T14:29:27,0
+441,,kernel-change2-1060572,kernel-patch-12566633,"[net-next,08/12] ethernet: sxgbe: use eth_hw_addr_set()",2021-10-18T14:29:28,0
+442,,kernel-change2-1060572,kernel-patch-12566629,"[net-next,09/12] ethernet: sis190: use eth_hw_addr_set()",2021-10-18T14:29:29,0
+443,,kernel-change2-1060572,kernel-patch-12566635,"[net-next,10/12] ethernet: sis900: use eth_hw_addr_set()",2021-10-18T14:29:30,0
+444,,kernel-change2-1060572,kernel-patch-12566637,"[net-next,11/12] ethernet: smc91x: use eth_hw_addr_set()",2021-10-18T14:29:31,0
+445,,kernel-change2-1060572,kernel-patch-12566639,"[net-next,12/12] ethernet: smsc: use eth_hw_addr_set()",2021-10-18T14:29:32,0
+446,,kernel-change2-1060572,kernel-patch-12570193,"[net-next,1/6] ethernet: netsec: use eth_hw_addr_set()",2021-10-19T15:00:06,0
+447,,kernel-change2-1060572,kernel-patch-12570195,"[net-next,2/6] ethernet: stmmac: use eth_hw_addr_set()",2021-10-19T15:00:07,0
+448,,kernel-change2-1060572,kernel-patch-12570197,"[net-next,3/6] ethernet: tehuti: use eth_hw_addr_set()",2021-10-19T15:00:08,0
+449,,kernel-change2-1060572,kernel-patch-12570199,"[net-next,4/6] ethernet: tlan: use eth_hw_addr_set()",2021-10-19T15:00:09,0
+450,,kernel-change2-1060572,kernel-patch-12570201,"[net-next,5/6] ethernet: via-rhine: use eth_hw_addr_set()",2021-10-19T15:00:10,0
+451,,kernel-change2-1060572,kernel-patch-12570203,"[net-next,6/6] ethernet: via-velocity: use eth_hw_addr_set()",2021-10-19T15:00:11,0
+452,114,kernel-change2-1068120,kernel-patch-12957469,[1/2] dt-bindings: net: rockchip-dwmac: add rv1126 compatible string,2022-08-29T06:50:41,1
+453,,kernel-change2-1068120,kernel-patch-12969385,"[v2,1/2] dt-bindings: net: rockchip-dwmac: add rv1126 compatible",2022-09-07T21:06:45,1
+454,,kernel-change2-1068120,kernel-patch-12982262,"[net-next,v3,1/2] dt-bindings: net: rockchip-dwmac: add rv1126 compatible",2022-09-20T14:09:40,1
+455,115,kernel-change2-1080965,kernel-patch-11890895,"[v4,7/7] can-dev: add len8_dlc support for various CAN USB adapters",2020-11-09T10:26:18,1
+456,,kernel-change2-1080965,kernel-patch-11891719,"[v5,8/8] can-dev: add len8_dlc support for various CAN USB adapters",2020-11-09T15:36:57,1
+457,,kernel-change2-1080965,kernel-patch-11893759,"[v6,8/8] can-dev: add len8_dlc support for various CAN USB adapters",2020-11-10T10:18:52,1
+458,,kernel-change2-1080965,kernel-patch-11897319,[v8] can-dev: add len8_dlc support for various CAN adapters,2020-11-11T09:59:23,1
+459,116,kernel-change2-1072606,kernel-patch-12823223,nfc: nfcmrvl: spi: Fix irq_of_parse_and_map() return value,2022-04-22T10:47:58,1
+460,,kernel-change2-1072606,kernel-patch-12896611,[v2] nfc: nfcmrvl: Fix irq_of_parse_and_map() return value,2022-06-27T12:40:48,1
+461,117,kernel-change2-1087531,kernel-patch-12540721,"[net-next,07/13] net: dsa: qca8k: add support for mac6_exchange, sgmii falling edge",2021-10-06T22:35:57,1
+462,,kernel-change2-1087531,kernel-patch-12543927,"[net-next,v2,07/15] net: dsa: qca8k: add support for mac6_exchange, sgmii falling edge",2021-10-08T00:22:17,1
+463,,kernel-change2-1087531,kernel-patch-12548203,"[net-next,v3,02/13] net: dsa: qca8k: add support for sgmii falling edge",2021-10-10T01:55:52,1
+464,,kernel-change2-1087531,kernel-patch-12548425,"[net-next,v4,02/13] net: dsa: qca8k: add support for sgmii falling edge",2021-10-10T11:15:45,1
+465,,kernel-change2-1087531,kernel-patch-12548897,"[net-next,v5,03/14] net: dsa: qca8k: add support for sgmii falling edge",2021-10-11T01:30:13,1
+466,,kernel-change2-1087531,kernel-patch-12554167,"[net-next,v6,03/16] net: dsa: qca8k: add support for sgmii falling edge",2021-10-13T01:16:09,1
+467,,kernel-change2-1087531,kernel-patch-12557447,"[net-next,v7,03/16] net: dsa: qca8k: add support for sgmii falling edge",2021-10-13T22:39:08,1
+468,118,kernel-change2-1074467,kernel-patch-12852335,"[v2,bpf-next,2/2] selftests/bpf: add tests verifying unprivileged bpf disabled behaviour",2022-05-17T11:59:40,1
+469,,kernel-change2-1074467,kernel-patch-12853682,"[v3,bpf-next,2/2] selftests/bpf: add tests verifying unprivileged bpf behaviour",2022-05-18T13:34:21,1
+470,,kernel-change2-1074467,kernel-patch-12855153,"[v4,bpf-next,2/2] selftests/bpf: add tests verifying unprivileged bpf behaviour",2022-05-19T14:25:34,1
+471,119,kernel-change2-1094505,kernel-patch-12356971,"[RFC,v2,net-next,04/10] net: bridge: switchdev: allow the data plane forwarding to be offloaded",2021-07-03T11:56:59,1
+472,,kernel-change2-1094505,kernel-patch-12371419,"[RFC,v3,net-next,20/24] net: bridge: switchdev: allow the TX data plane forwarding to be offloaded",2021-07-12T15:21:38,1
+473,,kernel-change2-1094505,kernel-patch-12384509,"[v4,net-next,11/15] net: bridge: switchdev: allow the TX data plane forwarding to be offloaded",2021-07-18T21:44:30,1
+474,,kernel-change2-1094505,kernel-patch-12394317,"[v5,net-next,1/5] net: bridge: switchdev: allow the TX data plane forwarding to be offloaded",2021-07-22T15:55:38,1
+475,120,kernel-change2-1066852,kernel-patch-12377333,ipv6: remove unused local variable,2021-07-14T15:15:33,1
+476,,kernel-change2-1066852,kernel-patch-12378715,[v2] net: ipv6: remove unused local variable,2021-07-15T04:20:34,1
+477,121,kernel-change2-1081770,kernel-patch-12219399,[09/14] drivers: net: dsa: qca8k: add support for switch rev,2021-04-23T01:47:35,1
+478,,kernel-change2-1081770,kernel-patch-12235473,"[RFC,net-next,v2,09/17] net: dsa: qca8k: add support for switch rev",2021-05-02T23:07:01,1
+479,,kernel-change2-1081770,kernel-patch-12238615,"[RFC,net-next,v3,12/20] net: dsa: qca8k: add support for switch rev",2021-05-04T22:29:06,1
+480,,kernel-change2-1081770,kernel-patch-12245437,"[RFC,net-next,v4,17/28] net: dsa: qca8k: add support for switch rev",2021-05-08T00:29:07,1
+481,,kernel-change2-1081770,kernel-patch-12249505,"[RFC,net-next,v5,14/25] net: dsa: qca8k: add support for switch rev",2021-05-11T02:04:49,1
+482,,kernel-change2-1081770,kernel-patch-12258975,"[net-next,v6,14/25] net: dsa: qca8k: add support for switch rev",2021-05-14T21:00:04,1
+483,122,kernel-change2-1092879,kernel-patch-12302945,[net-next] net: use BUG_ON instead of if condition followed by BUG,2021-06-07T09:11:12,0
+484,,kernel-change2-1092879,kernel-patch-12302949,[net-next] net: ipv4: use BUG_ON instead of if condition followed by BUG,2021-06-07T09:11:31,0
+485,123,kernel-change2-1063632,kernel-patch-12913996,"[RFC,net-next,1/9] dt-bindings: net: Add lynx PCS",2022-07-11T16:05:11,1
+486,,kernel-change2-1063632,kernel-patch-12989317,"[net-next,v5,2/9] dt-bindings: net: Add Lynx PCS binding",2022-09-26T19:03:14,1
+487,,kernel-change2-1063632,kernel-patch-12995948,"[net-next,v6,2/9] dt-bindings: net: Add Lynx PCS binding",2022-09-30T20:09:26,1
+488,124,kernel-change2-1061899,kernel-patch-12941377,iwlwifi: mvm: Fix comment typo,2022-08-11T11:58:56,0
+489,,kernel-change2-1061899,kernel-patch-12941372,wifi: iwlwifi: Fix comment typo,2022-08-11T11:59:58,0
+490,,kernel-change2-1061899,kernel-patch-12941376,iwlwifi: Fix comment typo,2022-08-11T12:00:45,0
+491,125,kernel-change2-1079945,kernel-patch-12806281,net: stmmac: using pm_runtime_resume_and_get instead of pm_runtime_get_sync,2022-04-08T08:12:50,0
+492,,kernel-change2-1079945,kernel-patch-12811811,net: stmmac: stmmac_main: using pm_runtime_resume_and_get instead of pm_runtime_get_sync,2022-04-13T09:38:01,0
+493,126,kernel-change2-1088955,kernel-patch-12117055,"[net-next,4/6] net: qualcomm: rmnet: use field masks instead of C bit-fields",2021-03-04T22:34:29,1
+494,,kernel-change2-1088955,kernel-patch-12119727,"[net-next,v2,4/6] net: qualcomm: rmnet: use field masks instead of C bit-fields",2021-03-06T03:15:48,1
+495,,kernel-change2-1088955,kernel-patch-12124953,"[net-next,v3,4/6] net: qualcomm: rmnet: use field masks instead of C bit-fields",2021-03-09T12:48:46,1
+496,,kernel-change2-1088955,kernel-patch-12139517,"[net-next,v4,4/6] net: qualcomm: rmnet: use masks instead of C bit-fields",2021-03-15T13:34:53,1
+497,,kernel-change2-1088955,kernel-patch-12140463,"[net-next,v5,4/6] net: qualcomm: rmnet: use masks instead of C bit-fields",2021-03-15T18:49:26,1
+498,,kernel-change2-1088955,kernel-patch-12140747,"[net-next,v6,4/6] net: qualcomm: rmnet: use masks instead of C bit-fields",2021-03-15T21:51:49,1
+499,127,kernel-change2-1074348,kernel-patch-12172629,"[net-next,v1,2/3] net: phy: at803x: AR8085: add loopback support",2021-03-30T13:54:06,1
+500,,kernel-change2-1074348,kernel-patch-12205457,"[v2,3/7] net: phy: at803x: AR8085 & AR9331: add loopback support",2021-04-15T13:07:34,1
+501,128,kernel-change2-1064932,kernel-patch-12576355,"[bpf-next,3/5] selftests/bpf: test deduplication for BTF_KIND_DECL_TAG typedef",2021-10-21T19:56:38,1
+502,,kernel-change2-1064932,kernel-patch-12611359,"[bpf-next,06/10] selftests/bpf: Test BTF_KIND_DECL_TAG for deduplication",2021-11-10T05:20:12,1
+503,,kernel-change2-1064932,kernel-patch-12615871,"[bpf-next,v2,06/10] selftests/bpf: Test BTF_KIND_DECL_TAG for deduplication",2021-11-11T23:26:18,1
+504,,kernel-change2-1064932,kernel-patch-12616013,"[bpf-next,v3,06/10] selftests/bpf: Test BTF_KIND_DECL_TAG for deduplication",2021-11-12T01:26:35,1
+505,129,kernel-change2-1090596,kernel-patch-12983091,"[net-next] rtnetlink: Honour NLM_F_ECHO flag in rtnl_{new, set}link",2022-09-21T03:07:21,1
+506,,kernel-change2-1090596,kernel-patch-12988299,"[PATCHv2,net-next] rtnetlink: Honour NLM_F_ECHO flag in rtnl_{new, set, del}link",2022-09-26T07:12:46,1
+507,,kernel-change2-1090596,kernel-patch-12989850,"[PATCHv3,net-next] rtnetlink: Honour NLM_F_ECHO flag in rtnl_{new, set, del}link",2022-09-27T04:13:03,1
+508,130,kernel-change2-1065121,kernel-patch-11823583,"[net,018/117] cfg80211: set ht40allow_map_ops.owner to THIS_MODULE",2020-10-08T15:50:30,1
+509,,kernel-change2-1065121,kernel-patch-11889117,"[net,v2,03/21] cfg80211: set .owner to THIS_MODULE",2020-11-07T17:21:34,1
+510,131,kernel-change2-1063943,kernel-patch-12452093,[NET-NEXT] ipv6: skb_expand_head() adjust skb->truesize incorrectly,2021-08-23T07:56:49,1
+511,,kernel-change2-1063943,kernel-patch-12463937,[v2] skb_expand_head() adjust skb->truesize incorrectly,2021-08-29T12:59:56,1
+512,,kernel-change2-1063943,kernel-patch-12467469,"[net-next,v3,RFC] skb_expand_head() adjust skb->truesize incorrectly",2021-08-31T14:34:19,1
+513,,kernel-change2-1063943,kernel-patch-12468597,"[net-next,v4] skb_expand_head() adjust skb->truesize incorrectly",2021-09-01T08:11:38,1
+514,,kernel-change2-1063943,kernel-patch-12471285,"[net-next,v5] skb_expand_head() adjust skb->truesize incorrectly",2021-09-02T11:12:20,1
+515,,kernel-change2-1063943,kernel-patch-12477177,"[net,v6] skb_expand_head() adjust skb->truesize incorrectly",2021-09-06T18:01:10,1
+516,,kernel-change2-1063943,kernel-patch-12506439,"[net,v8] skb_expand_head() adjust skb->truesize incorrectly",2021-09-20T21:41:34,1
+517,,kernel-change2-1063943,kernel-patch-12533865,"[net,v9] skb_expand_head() adjust skb->truesize incorrectly",2021-10-04T13:00:06,1
+518,,kernel-change2-1063943,kernel-patch-12577511,"[net,v10] skb_expand_head() adjust skb->truesize incorrectly",2021-10-22T10:28:37,1
+519,132,kernel-change2-1076065,kernel-patch-11939331,mlxsw: switch from 'pci_' to 'dma_' API,2020-11-29T21:17:33,1
+520,,kernel-change2-1076065,kernel-patch-12018891,mlxsw: pci: switch from 'pci_' to 'dma_' API,2021-01-14T08:47:57,1
+521,133,kernel-change2-1072645,kernel-patch-11886401,trace: Fix passing zero to 'PTR_ERR' warning,2020-11-06T08:47:32,1
+522,,kernel-change2-1072645,kernel-patch-11888543,[V2] trace: Fix passing zero to PTR_ERR(),2020-11-07T06:34:56,1
+523,,kernel-change2-1072645,kernel-patch-11888577,"[v3,bpf] trace: bpf: Fix passing zero to PTR_ERR()",2020-11-07T07:45:44,1
+524,134,kernel-change2-1090979,kernel-patch-12540711,"[net-next,03/13] drivers: net: phy: at803x: enable prefer master for 83xx internal phy",2021-10-06T22:35:53,1
+525,,kernel-change2-1090979,kernel-patch-12543925,"[net-next,v2,03/15] drivers: net: phy: at803x: enable prefer master for 83xx internal phy",2021-10-08T00:22:13,1
+526,,kernel-change2-1090979,kernel-patch-12548191,"[net-next,3/4] net: phy: at803x: enable prefer master for 83xx internal phy",2021-10-09T22:46:17,1
+527,135,kernel-change2-1086150,kernel-patch-12581601,ipvs: Fix reuse connection if RS weight is 0,2021-10-25T11:59:10,1
+528,,kernel-change2-1086150,kernel-patch-12591427,[v2] ipvs: Fix reuse connection if RS weight is 0,2021-10-29T03:26:04,1
+529,,kernel-change2-1086150,kernel-patch-12594207,"[net-next,v3] ipvs: Fix reuse connection if RS weight is 0",2021-10-30T06:31:48,1
+530,,kernel-change2-1086150,kernel-patch-12594209,"[nf-next,v4] netfilter: ipvs: Fix reuse connection if RS weight is 0",2021-10-30T06:40:49,1
+531,,kernel-change2-1086150,kernel-patch-12595589,"[nf-next,v5] netfilter: ipvs: Fix reuse connection if RS weight is 0",2021-11-01T02:04:16,1
+532,,kernel-change2-1086150,kernel-patch-12602393,"[nf-next,v6] netfilter: ipvs: Fix reuse connection if RS weight is 0",2021-11-04T03:10:29,1
+533,,kernel-change2-1086150,kernel-patch-12627827,"[net,08/11] netfilter: ipvs: Fix reuse connection if RS weight is 0",2021-11-18T22:26:15,1
+534,136,kernel-change2-1065393,kernel-patch-12857767,net: qed: fix typos in comments,2022-05-21T11:10:53,0
+535,,kernel-change2-1065393,kernel-patch-12857775,qed: fix typos in comments,2022-05-21T11:11:28,0
+536,137,kernel-change2-1060937,kernel-patch-12384765,"[net-next,4/4] igb: support EXTTS on 82580/i354/i350",2021-07-19T06:25:54,1
+537,,kernel-change2-1060937,kernel-patch-12385639,"[net-next,4/4,resend] igb: support EXTTS on 82580/i354/i350",2021-07-19T11:33:33,1
+538,,kernel-change2-1060937,kernel-patch-12539381,"[net-next,4/4] support EXTTS on 82580/i354/i350",2021-10-06T12:58:25,1
+539,,kernel-change2-1060937,kernel-patch-12554961,"[net-next,RESEND,4/4] igb: support EXTTS on 82580/i354/i350",2021-10-13T07:15:31,1
+540,,kernel-change2-1060937,kernel-patch-12590379,"[net-next,v2,4/4] igb: support EXTTS on 82580/i354/i350",2021-10-28T14:34:59,1
+541,,kernel-change2-1060937,kernel-patch-12701069,"[net-next,4/4] igb: support EXTTS on 82580/i354/i350",2021-12-29T18:40:53,1
+542,138,kernel-change2-1067048,kernel-patch-11824143,"[net,038/117] wl1251: set tx_queue_status_ops.owner to THIS_MODULE",2020-10-08T15:50:50,1
+543,,kernel-change2-1067048,kernel-patch-11889181,"[net,v2,08/21] wl1251: set .owner to THIS_MODULE",2020-11-07T17:21:39,1
+544,139,kernel-change2-1067045,kernel-patch-11823759,"[net,063/117] rtlwifi: set file_ops_common.owner to THIS_MODULE",2020-10-08T15:51:15,1
+545,,kernel-change2-1067045,kernel-patch-11889177,"[net,v2,11/21] rtlwifi: set .owner to THIS_MODULE",2020-11-07T17:21:42,1
+546,140,kernel-change2-1085495,kernel-patch-11999895,[net-next] net: mvpp2: increase MTU limit when XDP enabled,2021-01-05T17:19:21,1
+547,,kernel-change2-1085495,kernel-patch-12632751,[net] net: marvell: mvpp2: increase MTU limit when XDP enabled,2021-11-22T20:08:34,1
+548,141,kernel-change2-1082086,kernel-patch-12299669,[net-next] net: enetc: use get/put_unaligned() for mac address handling,2021-06-04T12:30:18,1
+549,,kernel-change2-1082086,kernel-patch-12299785,"[net-next,v2] net: enetc: use get/put_unaligned helpers for MAC address handling",2021-06-04T13:42:12,1
+550,142,kernel-change2-1075776,kernel-patch-11809451,"[v3,seccomp,3/5] seccomp/cache: Lookup syscall allowlist for fast path",2020-09-30T15:19:14,1
+551,,kernel-change2-1075776,kernel-patch-11826959,"[v4,seccomp,1/5] seccomp/cache: Lookup syscall allowlist bitmap for fast path",2020-10-09T17:14:29,1
+552,,kernel-change2-1075776,kernel-patch-11830925,"[v5,seccomp,1/5] seccomp/cache: Lookup syscall allowlist bitmap for fast path",2020-10-11T15:47:42,1
+553,143,kernel-change2-1072573,kernel-patch-12085215,[next] octeontx2-pf: Fix out-of-bounds read in otx2_get_fecparam(),2021-02-12T12:23:10,1
+554,,kernel-change2-1072573,kernel-patch-12085435,"[v2,next] octeontx2-pf: Fix out-of-bounds read warning in otx2_get_fecparam()",2021-02-12T15:06:19,1
+555,144,kernel-change2-1066667,kernel-patch-11823595,"[net,026/117] ieee802154: set test_int_fops.owner to THIS_MODULE",2020-10-08T15:50:38,1
+556,,kernel-change2-1066667,kernel-patch-11889125,"[net,v2,05/21] ieee802154: set .owner to THIS_MODULE",2020-11-07T17:21:36,1
+557,145,kernel-change2-1078554,kernel-patch-12141619,"[net,8/9] octeontx2-af: fix infinite loop in unmapping counter",2021-03-16T09:27:12,1
+558,,kernel-change2-1078554,kernel-patch-12148353,"[net,v2,7/8] octeontx2-af: fix infinite loop in unmapping NPC counter",2021-03-18T14:15:48,1
+559,146,kernel-change2-1092151,kernel-patch-12792727,dsa: bcm_sf2_cfp: fix an incorrect NULL check on list iterator,2022-03-27T05:55:47,1
+560,,kernel-change2-1092151,kernel-patch-12793136,net: dsa: bcm_sf2_cfp: fix an incorrect NULL check on list iterator,2022-03-28T03:24:31,1
+561,147,kernel-change2-1081334,kernel-patch-12952287,[bpf-next] Add table of BPF program types to docs,2022-08-23T13:22:36,1
+562,,kernel-change2-1081334,kernel-patch-12954011,"[bpf-next,v2,2/2] Add table of BPF program types to libbpf docs",2022-08-24T22:10:18,1
+563,,kernel-change2-1081334,kernel-patch-12957577,"[bpf-next,v3,2/2] Add table of BPF program types to libbpf docs",2022-08-29T09:15:00,1
+564,,kernel-change2-1081334,kernel-patch-12985049,"[bpf-next,v4,2/2] Add table of BPF program types to libbpf docs",2022-09-22T11:52:57,1
+565,148,kernel-change2-1079138,kernel-patch-12772112,[net-next] net: dsa: tag_rtl8_4: typo in modalias name,2022-03-07T17:09:27,1
+566,,kernel-change2-1079138,kernel-patch-12774673,"[net-next,v2] net: dsa: tag_rtl8_4: fix typo in modalias name",2022-03-09T02:27:58,1
+567,,kernel-change2-1079138,kernel-patch-12775401,"[net-next,v3] net: dsa: tag_rtl8_4: fix typo in modalias name",2022-03-09T17:56:42,1
+568,149,kernel-change2-1062293,kernel-patch-12285331,"[RFC,net-next,4/8] net: pcs: export xpcs_config_eee",2021-05-27T20:45:24,1
+569,,kernel-change2-1062293,kernel-patch-12290203,"[RFC,v2,net-next,5/9] net: pcs: xpcs: export xpcs_config_eee",2021-06-01T00:33:21,1
+570,,kernel-change2-1062293,kernel-patch-12295253,"[v3,net-next,5/9] net: pcs: xpcs: export xpcs_config_eee",2021-06-02T16:20:15,1
+571,150,kernel-change2-1075359,kernel-patch-12524861,[net-next] octeontx2-pf: Add XDP support to RVU netdev PF,2021-09-29T08:16:40,1
+572,,kernel-change2-1075359,kernel-patch-12525169,"[net-next,v2] octeontx2-pf: Add XDP support to netdev PF",2021-09-29T09:54:56,1
+573,151,kernel-change2-1066842,kernel-patch-12770108,Transparently receive IP over LLC/SNAP,2022-03-04T23:11:21,1
+574,,kernel-change2-1066842,kernel-patch-12770148,[1/1] eth: Transparently receive IP over LLC/SNAP,2022-03-05T00:33:25,1
+575,152,kernel-change2-1072047,kernel-patch-11841829,"[iproute2-next,v3,2/2] tc: implement support for terse dump",2020-10-16T14:42:05,0
+576,,kernel-change2-1072047,kernel-patch-11853585,"[iproute2-next,v4,2/2] tc: implement support for terse dump",2020-10-23T14:55:36,0
+577,,kernel-change2-1072047,kernel-patch-11871777,[iproute2-next] tc: implement support for action terse dump,2020-10-31T20:25:22,0
+578,,kernel-change2-1072047,kernel-patch-11941207,"[iproute2-next,2/2] tc: implement support for action terse dump",2020-11-30T19:32:50,0
+579,153,kernel-change2-1077240,kernel-patch-12528043,"[bpf-next,1/9] tools: bpftool: remove unused includes to <bpf/bpf_gen_internal.h>",2021-09-30T11:32:58,1
+580,,kernel-change2-1077240,kernel-patch-12530301,"[bpf-next,v2,1/9] tools: bpftool: remove unused includes to <bpf/bpf_gen_internal.h>",2021-10-01T11:08:48,1
+581,,kernel-change2-1077240,kernel-patch-12533013,"[bpf-next,v3,01/10] tools: bpftool: remove unused includes to <bpf/bpf_gen_internal.h>",2021-10-03T19:21:59,1
+582,,kernel-change2-1077240,kernel-patch-12542875,"[bpf-next,v4,02/12] bpftool: remove unused includes to <bpf/bpf_gen_internal.h>",2021-10-07T19:44:28,1
+583,154,kernel-change2-1070410,kernel-patch-12089645,fix coding style in driver/staging/qlge/qlge_main.c,2021-02-16T07:18:49,1
+584,,kernel-change2-1070410,kernel-patch-12089653,[v2] fix coding style in driver/staging/qlge/qlge_main.c,2021-02-16T07:35:26,1
+585,,kernel-change2-1070410,kernel-patch-12089687,[v3] staging: fix coding style in driver/staging/qlge/qlge_main.c,2021-02-16T08:53:26,1
+586,155,kernel-change2-1089059,kernel-patch-11905627,"[bpf,perf] ] bpf,perf: return EOPNOTSUPP for attaching bpf handler on PERF_COUNT_SW_DUMMY",2020-11-14T13:51:26,1
+587,,kernel-change2-1089059,kernel-patch-11910473,"[FIX,bpf,perf] bpf,perf: return EOPNOTSUPP for bpf handler on PERF_COUNT_SW_DUMMY",2020-11-16T18:37:52,1
+588,156,kernel-change2-1089143,kernel-patch-11925765,[1/7] bpf: Factor out emission of ModR/M for *(reg + off),2020-11-23T17:31:56,1
+589,,kernel-change2-1089143,kernel-patch-11937011,"[v2,bpf-next,01/13] bpf: x86: Factor out emission of ModR/M for *(reg + off)",2020-11-27T17:57:26,1
+590,,kernel-change2-1089143,kernel-patch-11949053,"[bpf-next,v3,01/14] bpf: x86: Factor out emission of ModR/M for *(reg + off)",2020-12-03T16:02:32,1
+591,,kernel-change2-1089143,kernel-patch-11956267,"[bpf-next,v4,01/11] bpf: x86: Factor out emission of ModR/M for *(reg + off)",2020-12-07T16:07:24,1
+592,,kernel-change2-1089143,kernel-patch-11974743,"[bpf-next,v5,01/11] bpf: x86: Factor out emission of ModR/M for *(reg + off)",2020-12-15T12:18:05,1
+593,,kernel-change2-1089143,kernel-patch-12013819,"[bpf-next,v6,01/11] bpf: x86: Factor out emission of ModR/M for *(reg + off)",2021-01-12T15:42:25,1
+594,,kernel-change2-1089143,kernel-patch-12020577,"[bpf-next,v7,01/11] bpf: x86: Factor out emission of ModR/M for *(reg + off)",2021-01-14T18:17:41,1
+595,157,kernel-change2-1065328,kernel-patch-12663823,[net-next] net: bridge: netfilter: fix code indentation,2021-12-08T07:20:21,0
+596,,kernel-change2-1065328,kernel-patch-12663827,[net-next] net: netfilter: fix code indentation,2021-12-08T07:20:23,0
+597,158,kernel-change2-1079130,kernel-patch-12009829,"[net-next,2/2] drivers: net: dsa: mt7530: MT7530 optional GPIO support",2021-01-11T05:44:28,1
+598,,kernel-change2-1079130,kernel-patch-12042919,"[net-next,v2,2/2] net: dsa: mt7530: MT7530 optional GPIO support",2021-01-25T04:43:22,1
+599,159,kernel-change2-1064216,kernel-patch-12171605,"[net-next,08/12] net/mlx5e: Introduce Flow Steering UDP API",2021-03-30T04:27:37,0
+600,,kernel-change2-1064216,kernel-patch-12171607,"[net-next,09/12] net/mlx5e: Introduce Flow Steering ANY API",2021-03-30T04:27:38,0
+601,,kernel-change2-1064216,kernel-patch-12951728,"[net-next,01/15] net/mlx5e: Introduce flow steering API",2022-08-23T05:55:19,0
+602,160,kernel-change2-1070461,kernel-patch-12259637,[07/34] net: cadence: macb_ptp: Demote non-compliant kernel-doc headers,2021-05-15T10:53:32,1
+603,,kernel-change2-1070461,kernel-patch-12261067,"[v2,07/24] net: cadence: Demote non-compliant kernel-doc headers",2021-05-17T04:45:18,1
+604,161,kernel-change2-1085228,kernel-patch-11945237,[1/4] net: stmmac: dwmac4_lib: increase the timeout for dma reset,2020-12-02T08:59:46,1
+605,,kernel-change2-1085228,kernel-patch-11950457,"[V2,1/5] net: stmmac: increase the timeout for dma reset",2020-12-04T02:46:34,1
+606,,kernel-change2-1085228,kernel-patch-11955285,"[V3,1/5] net: stmmac: increase the timeout for dma reset",2020-12-07T10:51:37,1
+607,162,kernel-change2-1066948,kernel-patch-12729893,"[V6,mlx5-next,10/15] vfio: Remove migration protocol v1",2022-01-30T16:08:21,1
+608,,kernel-change2-1066948,kernel-patch-12737719,"[V7,mlx5-next,10/15] vfio: Remove migration protocol v1 documentation",2022-02-07T17:22:11,1
+609,,kernel-change2-1066948,kernel-patch-12752667,"[V8,mlx5-next,11/15] vfio: Remove migration protocol v1 documentation",2022-02-20T09:57:12,1
+610,,kernel-change2-1066948,kernel-patch-12758666,"[V9,mlx5-next,11/15] vfio: Remove migration protocol v1 documentation",2022-02-24T14:20:20,1
+611,163,kernel-change2-1085678,kernel-patch-12963768,net: lantiq_etop: Fix return type for implementation of,2022-09-02T07:58:45,1
+612,,kernel-change2-1085678,kernel-patch-12963807,[RESEND] net: lantiq_etop: Fix return type for implementation of ndo_start_xmit,2022-09-02T08:15:21,1
+613,164,kernel-change2-1086696,kernel-patch-12426181,"[RFC,net-next,7/8] mlxsw: Add ability to control transceiver modules' low power mode",2021-08-09T10:21:51,1
+614,,kernel-change2-1086696,kernel-patch-12444801,"[RFC,net-next,v2,4/6] mlxsw: Add ability to control transceiver modules' power mode",2021-08-18T15:52:00,1
+615,,kernel-change2-1086696,kernel-patch-12454981,"[RFC,net-next,v3,4/6] mlxsw: Add ability to control transceiver modules' power mode",2021-08-24T13:03:42,1
+616,,kernel-change2-1086696,kernel-patch-12532549,"[net-next,4/6] mlxsw: Add ability to control transceiver modules' power mode",2021-10-03T07:32:17,1
+617,,kernel-change2-1086696,kernel-patch-12539071,"[net-next,v2,4/6] mlxsw: Add ability to control transceiver modules' power mode",2021-10-06T10:46:45,1
+618,165,kernel-change2-1063073,kernel-patch-12042495,[iproute2] iproute get: force rtm_dst_len to 32/128,2021-01-24T15:53:47,1
+619,,kernel-change2-1063073,kernel-patch-12042567,"[iproute2,v2] iproute: force rtm_dst_len to 32/128",2021-01-24T17:36:58,1
+620,166,kernel-change2-1090165,kernel-patch-12841151,drivers: net: vmxnet3: fix possible NULL pointer dereference in vmxnet3_rq_cleanup(),2022-05-06T13:37:48,1
+621,,kernel-change2-1090165,kernel-patch-12845051,[v2] drivers: net: vmxnet3: fix possible NULL pointer dereference in vmxnet3_rq_cleanup(),2022-05-10T13:17:27,1
+622,,kernel-change2-1090165,kernel-patch-12849714,[v3] net: vmxnet3: fix possible NULL pointer dereference in vmxnet3_rq_cleanup(),2022-05-14T05:07:11,1
+623,167,kernel-change2-1061692,kernel-patch-12063289,samples: bpf: remove unneeded semicolon,2021-02-03T03:17:28,0
+624,,kernel-change2-1061692,kernel-patch-12074793,selftests: bpf: remove unneeded semicolon,2021-02-08T10:30:13,0
+625,,kernel-change2-1061692,kernel-patch-12928492,[-next] bpf: remove unneeded semicolon,2022-07-25T22:27:33,0
+626,168,kernel-change2-1061490,kernel-patch-12789680,"[iproute2-next,2/2] Check args with num_of_vlans",2022-03-23T10:58:08,1
+627,,kernel-change2-1061490,kernel-patch-12809111,"[iproute2-next,2/2] Check args with num_of_vlans",2022-04-11T13:32:02,1
+628,,kernel-change2-1061490,kernel-patch-12810518,"[iproute2-next,v2,2/2] f_flower: Check args with num_of_vlans",2022-04-12T10:03:43,1
+629,,kernel-change2-1061490,kernel-patch-12826747,"[iproute2-next,v3,2/2] f_flower: Check args with num_of_vlans",2022-04-26T09:14:17,1
+630,169,kernel-change2-1064389,kernel-patch-11823763,"[net,068/117] ath10k: set fops_pktlog_filter.owner to THIS_MODULE",2020-10-08T15:51:20,1
+631,,kernel-change2-1064389,kernel-patch-11823817,"[net,069/117] ath10k: set fops_quiet_period.owner to THIS_MODULE",2020-10-08T15:51:21,1
+632,,kernel-change2-1064389,kernel-patch-11824083,"[net,070/117] ath10k: set fops_btcoex.owner to THIS_MODULE",2020-10-08T15:51:22,1
+633,,kernel-change2-1064389,kernel-patch-11824081,"[net,071/117] ath10k: set fops_enable_extd_tx_stats.owner to THIS_MODULE",2020-10-08T15:51:23,1
+634,,kernel-change2-1064389,kernel-patch-11824077,"[net,072/117] ath10k: set fops_peer_stats.owner to THIS_MODULE",2020-10-08T15:51:24,1
+635,,kernel-change2-1064389,kernel-patch-11889179,"[net,v2,13/21] ath10k: set .owner to THIS_MODULE",2020-11-07T17:21:44,1
+636,170,kernel-change2-1089190,kernel-patch-12528047,"[bpf-next,2/9] tools: bpftool: install libbpf headers instead of including the dir",2021-09-30T11:32:59,1
+637,,kernel-change2-1089190,kernel-patch-12530303,"[bpf-next,v2,2/9] tools: bpftool: install libbpf headers instead of including the dir",2021-10-01T11:08:49,1
+638,,kernel-change2-1089190,kernel-patch-12533017,"[bpf-next,v3,02/10] tools: bpftool: install libbpf headers instead of including the dir",2021-10-03T19:22:00,1
+639,,kernel-change2-1089190,kernel-patch-12542877,"[bpf-next,v4,03/12] bpftool: install libbpf headers instead of including the dir",2021-10-07T19:44:29,1
+640,171,kernel-change2-1081769,kernel-patch-12219395,[05/14] drivers: net: dsa: qca8k: add support for qca8327 switch,2021-04-23T01:47:31,1
+641,,kernel-change2-1081769,kernel-patch-12235459,"[RFC,net-next,v2,05/17] net: dsa: qca8k: add support for qca8327 switch",2021-05-02T23:06:57,1
+642,,kernel-change2-1081769,kernel-patch-12238607,"[RFC,net-next,v3,08/20] net: dsa: qca8k: add support for qca8327 switch",2021-05-04T22:29:02,1
+643,,kernel-change2-1081769,kernel-patch-12245423,"[RFC,net-next,v4,12/28] net: dsa: qca8k: add support for qca8327 switch",2021-05-08T00:29:02,1
+644,,kernel-change2-1081769,kernel-patch-12249497,"[RFC,net-next,v5,09/25] net: dsa: qca8k: add support for qca8327 switch",2021-05-11T02:04:44,1
+645,,kernel-change2-1081769,kernel-patch-12258965,"[net-next,v6,09/25] net: dsa: qca8k: add support for qca8327 switch",2021-05-14T20:59:59,1
+646,172,kernel-change2-1064243,kernel-patch-12369363,"[net,atlantic] Fix buff_ring OOB in aq_ring_rx_clean",2021-07-11T21:04:28,1
+647,,kernel-change2-1064243,kernel-patch-12699550,[v2] atlantic: Fix buff_ring OOB in aq_ring_rx_clean,2021-12-27T02:32:45,1
+648,173,kernel-change2-1078047,kernel-patch-12440277,[External] ovs: datapath: clear skb->tstamp in forwarding path,2021-08-17T02:25:24,1
+649,,kernel-change2-1078047,kernel-patch-12442511,ovs: clear skb->tstamp in forwarding path,2021-08-18T02:22:15,1
+650,174,kernel-change2-1077220,kernel-patch-11956357,"[v5,bpf-next,14/14] bpf: update xdp_adjust_tail selftest to include multi-buffer",2020-12-07T16:32:43,1
+651,,kernel-change2-1077220,kernel-patch-12152009,"[v7,bpf-next,14/14] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-03-19T21:47:28,1
+652,,kernel-change2-1077220,kernel-patch-12190989,"[v8,bpf-next,14/14] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-04-08T12:51:06,1
+653,,kernel-change2-1077220,kernel-patch-12318885,"[v9,bpf-next,14/14] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-06-14T12:49:52,1
+654,,kernel-change2-1077220,kernel-patch-12405289,"[v10,bpf-next,16/18] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-07-28T09:38:21,1
+655,,kernel-change2-1077220,kernel-patch-12435353,"[v11,bpf-next,16/18] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-08-13T11:47:57,1
+656,,kernel-change2-1077220,kernel-patch-12449645,"[v12,bpf-next,16/18] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-08-20T15:40:29,1
+657,,kernel-change2-1077220,kernel-patch-12478611,"[v13,bpf-next,16/18] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-09-07T12:35:20,1
+658,,kernel-change2-1077220,kernel-patch-12485573,"[v14,bpf-next,16/18] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-09-10T16:14:22,1
+659,,kernel-change2-1077220,kernel-patch-12545305,"[v15,bpf-next,16/18] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-10-08T12:49:54,1
+660,,kernel-change2-1077220,kernel-patch-12561499,"[v16,bpf-next,17/20] bpf: update xdp_adjust_tail selftest to include multi-buffer",2021-10-15T13:08:54,1
+661,,kernel-change2-1077220,kernel-patch-12603611,"[v17,bpf-next,17/23] bpf: selftests: update xdp_adjust_tail selftest to include multi-buffer",2021-11-04T17:35:37,1
+662,,kernel-change2-1077220,kernel-patch-12620545,"[v18,bpf-next,17/23] bpf: selftests: update xdp_adjust_tail selftest to include multi-buffer",2021-11-15T22:33:11,1
+663,,kernel-change2-1077220,kernel-patch-12647081,"[v19,bpf-next,17/23] bpf: selftests: update xdp_adjust_tail selftest to include multi-buffer",2021-11-30T11:53:01,1
+664,,kernel-change2-1077220,kernel-patch-12670773,"[v20,bpf-next,17/23] bpf: selftests: update xdp_adjust_tail selftest to include multi-buffer",2021-12-10T19:14:24,1
+665,,kernel-change2-1077220,kernel-patch-12707480,"[v21,bpf-next,17/23] bpf: selftests: update xdp_adjust_tail selftest to include multi-buffer",2022-01-08T11:53:20,1
+666,175,kernel-change2-1086096,kernel-patch-12427625,"[bpf-next,1/5] Skip loading bpf_testmod when using -l to list tests.",2021-08-09T23:36:29,1
+667,,kernel-change2-1086096,kernel-patch-12427653,"[v2,bpf-next,1/5] Skip loading bpf_testmod when using -l to list tests.",2021-08-10T00:16:21,1
+668,,kernel-change2-1086096,kernel-patch-12429499,"[v3,bpf-next,1/4] selftests/bpf: skip loading bpf_testmod when using -l to list tests.",2021-08-10T21:21:04,1
+669,,kernel-change2-1086096,kernel-patch-12439709,"[v4,bpf-next,1/4] selftests/bpf: skip loading bpf_testmod when using -l to list tests.",2021-08-17T01:03:07,1
+670,,kernel-change2-1086096,kernel-patch-12440465,"[v5,bpf-next,1/4] selftests/bpf: skip loading bpf_testmod when using -l to list tests.",2021-08-17T04:47:29,1
+671,176,kernel-change2-1065543,kernel-patch-12427633,"[bpf-next,3/5] Correctly display subtest skip status",2021-08-09T23:36:31,1
+672,,kernel-change2-1065543,kernel-patch-12427647,"[v2,bpf-next,3/5] Correctly display subtest skip status",2021-08-10T00:16:23,1
+673,,kernel-change2-1065543,kernel-patch-12429505,"[v3,bpf-next,2/4] selftests/bpf: correctly display subtest skip status",2021-08-10T21:21:05,1
+674,,kernel-change2-1065543,kernel-patch-12439711,"[v4,bpf-next,2/4] selftests/bpf: correctly display subtest skip status",2021-08-17T01:03:08,1
+675,,kernel-change2-1065543,kernel-patch-12440461,"[v5,bpf-next,2/4] selftests/bpf: correctly display subtest skip status",2021-08-17T04:47:30,1
+676,177,kernel-change2-1083949,kernel-patch-12841057,driver: net: vmxnet3: fix possible use-after-free bugs in vmxnet3_rq_alloc_rx_buf(),2022-05-06T12:31:18,1
+677,,kernel-change2-1083949,kernel-patch-12845050,[v2] drivers: net: vmxnet3: fix possible use-after-free bugs in vmxnet3_rq_alloc_rx_buf(),2022-05-10T13:17:16,1
+678,,kernel-change2-1083949,kernel-patch-12849713,[v3] net: vmxnet3: fix possible use-after-free bugs in vmxnet3_rq_alloc_rx_buf(),2022-05-14T05:06:56,1
+679,178,kernel-change2-1064285,kernel-patch-12907338,"[v1,net,14/16] cipso: Fix data-races around boolean sysctl.",2022-07-06T05:21:28,1
+680,,kernel-change2-1064285,kernel-patch-12908916,"[v2,net,10/12] cipso: Fix data-races around sysctl.",2022-07-06T23:40:01,1
+681,179,kernel-change2-1079062,kernel-patch-12788025,"[net-next,2/4] drivers: net: dsa: qca8k: drop port_sts from qca8k_priv",2022-03-22T01:45:04,1
+682,,kernel-change2-1079062,kernel-patch-12811035,"[net-next,v2,2/4] drivers: net: dsa: qca8k: drop port_sts from qca8k_priv",2022-04-12T17:30:17,1
+683,,kernel-change2-1079062,kernel-patch-12815504,"[net-next,v3,2/6] net: dsa: qca8k: drop port_sts from qca8k_priv",2022-04-15T23:30:13,1
+684,180,kernel-change2-1094408,kernel-patch-11932351,"[RFC,3/4] net: imx: l2switch: Adjust fec_main.c to provide support for L2 switch",2020-11-25T23:24:58,1
+685,,kernel-change2-1094408,kernel-patch-12337737,"[RFC,3/3] net: imx: Adjust fec_main.c to provide support for L2 switch",2021-06-22T14:41:11,1
+686,181,kernel-change2-1083693,kernel-patch-12406371,bpf: Fix off-by-one in tail call count limiting,2021-07-28T16:47:41,0
+687,,kernel-change2-1083693,kernel-patch-12426055,"[bpf-next,1/7] arm: bpf: Fix off-by-one in tail call count limiting",2021-08-09T09:34:31,0
+688,,kernel-change2-1083693,kernel-patch-12426059,"[bpf-next,2/7] arm64: bpf: Fix off-by-one in tail call count limiting",2021-08-09T09:34:32,0
+689,,kernel-change2-1083693,kernel-patch-12426057,"[bpf-next,3/7] powerpc: bpf: Fix off-by-one in tail call count limiting",2021-08-09T09:34:33,0
+690,,kernel-change2-1083693,kernel-patch-12426061,"[bpf-next,4/7] s390: bpf: Fix off-by-one in tail call count limiting",2021-08-09T09:34:34,0
+691,,kernel-change2-1083693,kernel-patch-12426063,"[bpf-next,5/7] sparc: bpf: Fix off-by-one in tail call count limiting",2021-08-09T09:34:35,0
+692,,kernel-change2-1083693,kernel-patch-12426065,"[bpf-next,6/7] mips: bpf: Fix off-by-one in tail call count limiting",2021-08-09T09:34:36,0
+693,182,kernel-change2-1086309,kernel-patch-11932185,"[net-next,2/6] net: ipa: update IPA registers for IPA v4.5",2020-11-25T20:45:18,0
+694,,kernel-change2-1086309,kernel-patch-11941547,"[net-next,1/4] net: ipa: update IPA aggregation registers for IPA v4.5",2020-11-30T23:37:09,0

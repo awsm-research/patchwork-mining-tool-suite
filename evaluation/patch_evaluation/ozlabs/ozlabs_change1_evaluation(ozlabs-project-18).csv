@@ -1,0 +1,1205 @@
+,id,change1_original_id,patch_original_id,patch_name,date,is_correct
+0,0,ozlabs-change1-547538,ozlabs-patch-262923,"[U-Boot,v2,6/6] sf: Fix code cleanups",2013-07-29T17:24:53,1
+1,,ozlabs-change1-547538,ozlabs-patch-264463,"[U-Boot,RESEND,v2,6/6] sf: Fix code cleanups",2013-08-04T05:48:38,1
+2,1,ozlabs-change1-558719,ozlabs-patch-654683,"[U-Boot,2/7] net/ethoc: use priv instead of dev internally",2016-08-02T11:31:05,0
+3,,ozlabs-change1-558719,ozlabs-patch-656238,"[U-Boot,v2,2/7] net/ethoc: use priv instead of dev internally",2016-08-05T15:26:16,0
+4,2,ozlabs-change1-548613,ozlabs-patch-325243,"[U-Boot,2/2] cmd:gpt: randomly generate each partition uuid if undefined",2014-02-28T15:18:32,1
+5,,ozlabs-change1-548613,ozlabs-patch-327079,"[U-Boot,V2,3/3] cmd:gpt: randomly generate each partition uuid if undefined",2014-03-05T16:45:22,1
+6,,ozlabs-change1-548613,ozlabs-patch-330333,"[U-Boot,v3,3/3] cmd:gpt: randomly generate each partition uuid if undefined",2014-03-14T14:37:28,1
+7,,ozlabs-change1-548613,ozlabs-patch-331819,"[U-Boot,v4,5/6] cmd:gpt: randomly generate each partition uuid if undefined",2014-03-19T17:58:30,1
+8,,ozlabs-change1-548613,ozlabs-patch-335953,"[U-Boot,v5,5/6] cmd:gpt: randomly generate each partition uuid if undefined",2014-04-01T14:30:42,1
+9,,ozlabs-change1-548613,ozlabs-patch-336274,"[U-Boot,v6,5/6] cmd:gpt: randomly generate each partition uuid if undefined",2014-04-02T08:20:06,1
+10,3,ozlabs-change1-535696,ozlabs-patch-1106201,"[U-Boot,6/6] riscv: ax25: use CCTL to flush d-cache",2019-05-28T09:39:14,1
+11,,ozlabs-change1-535696,ozlabs-patch-1129655,"[U-Boot,v2,7/7] riscv: ax25: use CCTL to flush d-cache",2019-07-09T09:28:14,1
+12,4,ozlabs-change1-538611,ozlabs-patch-764151,"[U-Boot,09/10] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2017-05-18T19:29:47,1
+13,,ozlabs-change1-538611,ozlabs-patch-765546,"[U-Boot,v2,09/10] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2017-05-22T18:21:36,1
+14,,ozlabs-change1-538611,ozlabs-patch-770768,"[U-Boot,v3,09/10] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2017-06-03T09:57:44,1
+15,,ozlabs-change1-538611,ozlabs-patch-775712,"[U-Boot,v4,09/10] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2017-06-14T09:57:58,1
+16,,ozlabs-change1-538611,ozlabs-patch-795334,"[U-Boot,v5,09/10] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2017-07-30T12:13:46,1
+17,,ozlabs-change1-538611,ozlabs-patch-854693,"[U-Boot,v6,10/11] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2018-01-02T19:01:10,1
+18,,ozlabs-change1-538611,ozlabs-patch-858543,"[U-Boot,v7,12/13] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2018-01-10T20:26:46,1
+19,,ozlabs-change1-538611,ozlabs-patch-859218,"[U-Boot,v8,11/12] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2018-01-11T17:11:32,1
+20,,ozlabs-change1-538611,ozlabs-patch-863886,"[U-Boot,v9,11/12] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2018-01-20T01:11:44,1
+21,,ozlabs-change1-538611,ozlabs-patch-864893,"[U-Boot,v10,11/12] mips: bmips: enable the SPI flash on the Sagem F@ST1704",2018-01-23T16:15:04,1
+22,5,ozlabs-change1-500965,ozlabs-patch-1221669,[07/10] arm: mvebu: clearfog: add SPI offsets,2020-01-11T19:36:36,1
+23,,ozlabs-change1-500965,ozlabs-patch-1225377,"[v2,07/10] arm: mvebu: clearfog: add SPI offsets",2020-01-19T07:52:46,1
+24,,ozlabs-change1-500965,ozlabs-patch-1226682,"[v3,07/10] arm: mvebu: clearfog: add SPI offsets",2020-01-21T17:32:21,1
+25,,ozlabs-change1-500965,ozlabs-patch-1229432,"[v4,07/12] arm: mvebu: clearfog: add SPI offsets",2020-01-26T22:50:04,1
+26,,ozlabs-change1-500965,ozlabs-patch-1230032,"[v5,08/12] arm: mvebu: clearfog: add SPI offsets",2020-01-27T20:01:52,1
+27,,ozlabs-change1-500965,ozlabs-patch-1260274,"[v6,08/12] arm: mvebu: clearfog: add SPI offsets",2020-03-23T20:21:36,1
+28,6,ozlabs-change1-504275,ozlabs-patch-178958,"[U-Boot,02/13] Blackfin: bf60x: add serial support",2012-08-21T05:27:02,1
+29,,ozlabs-change1-504275,ozlabs-patch-198866,"[U-Boot,V3,02/12] Blackfin: bf60x: add serial support",2012-11-14T10:24:36,1
+30,,ozlabs-change1-504275,ozlabs-patch-218854,"[U-Boot,03/11] Blackfin: bf60x: add serial support",2013-02-07T07:47:30,1
+31,,ozlabs-change1-504275,ozlabs-patch-221628,"[U-Boot,v2,03/11] Blackfin: bf60x: add serial support",2013-02-19T07:00:58,1
+32,,ozlabs-change1-504275,ozlabs-patch-221992,"[U-Boot,v3,03/11] Blackfin: bf60x: add serial support",2013-02-20T08:50:09,1
+33,,ozlabs-change1-504275,ozlabs-patch-222249,"[U-Boot,v4,03/11] blackfin: bf60x: add serial support",2013-02-21T11:06:41,1
+34,7,ozlabs-change1-532777,ozlabs-patch-264338,"[U-Boot,09/10] TI:armv7: Enable CONFIG_CMD_SPI",2013-08-02T20:26:14,1
+35,,ozlabs-change1-532777,ozlabs-patch-266093,"[U-Boot,v2,8/9] TI:armv7: Enable CONFIG_CMD_SPI",2013-08-09T15:22:19,1
+36,8,ozlabs-change1-532050,ozlabs-patch-1228298,[1/4] arm64: dts: rk3399-u-boot: Delete vop assigned-clocks/rates,2020-01-23T16:28:42,1
+37,,ozlabs-change1-532050,ozlabs-patch-1264188,"[v2,1/4] arm64: dts: rk3399-u-boot: Delete vop assigned-clocks/rates",2020-03-30T18:16:10,1
+38,9,ozlabs-change1-511270,ozlabs-patch-258018,"[U-Boot,RFC/PATCH,6/7] driver: spi: Add memory mapped read support",2013-07-10T11:25:40,1
+39,,ozlabs-change1-511270,ozlabs-patch-260996,"[U-Boot,PATCHv2,7/8] driver: spi: Add memory mapped read support",2013-07-23T08:59:38,1
+40,10,ozlabs-change1-519456,ozlabs-patch-113943,"[U-Boot,08/11] FEC: Allow registering MII postconfiguration callback",2011-09-08T20:37:19,1
+41,,ozlabs-change1-519456,ozlabs-patch-114273,"[U-Boot,08/11] FEC: Allow registering MII postconfiguration callback",2011-09-12T04:05:36,1
+42,11,ozlabs-change1-511139,ozlabs-patch-142823,"[U-Boot,01/11] st_smi: Add support for SPEAr SMI driver",2012-02-24T12:23:04,1
+43,,ozlabs-change1-511139,ozlabs-patch-157235,"[U-Boot,V1,RESEND,01/12] st_smi: Add support for SPEAr SMI driver",2012-05-07T07:30:19,1
+44,12,ozlabs-change1-488474,ozlabs-patch-1502574,"[u-boot-mvebu,03/31] tools: kwbimage: Align SPI and NAND images to 256 bytes",2021-07-08T17:30:04,1
+45,,ozlabs-change1-488474,ozlabs-patch-1506968,"[u-boot-mvebu,v2,03/41] tools: kwbimage: Align SPI and NAND images to 256 bytes",2021-07-19T12:20:26,1
+46,,ozlabs-change1-488474,ozlabs-patch-1509046,"[u-boot-mvebu,v3,03/41] tools: kwbimage: Align SPI and NAND images to 256 bytes",2021-07-23T09:13:57,1
+47,13,ozlabs-change1-515652,ozlabs-patch-721560,"[U-Boot,u-boot,v2,6/8] ARM: Use Kconfig for board EEPROM's I2C bus and chip address",2017-01-30T15:15:14,1
+48,,ozlabs-change1-515652,ozlabs-patch-724407,"[U-Boot,u-boot,v3,6/8] ARM: Use Kconfig for board EEPROM's I2C bus and chip address",2017-02-06T09:36:13,1
+49,,ozlabs-change1-515652,ozlabs-patch-734763,"[U-Boot,10/31] ARM: Use Kconfig for board EEPROM's I2C bus and chip address",2017-03-02T19:04:14,1
+50,,ozlabs-change1-515652,ozlabs-patch-738120,"[U-Boot,u-boot,v4,08/10] ARM: Use Kconfig for board EEPROM's I2C bus and chip address",2017-03-13T13:04:31,1
+51,14,ozlabs-change1-543755,ozlabs-patch-851911,"[U-Boot,08/11] net: regex: Disable by default on sunXi",2017-12-21T12:40:27,1
+52,,ozlabs-change1-543755,ozlabs-patch-861334,"[U-Boot,v2,09/12] net: regex: Disable by default on sunXi",2018-01-16T08:44:21,1
+53,15,ozlabs-change1-496935,ozlabs-patch-144811,"[U-Boot,3/6] IXP: Fix missing MACH_TYPE_{ACTUX?, PNB3, DVLHOST}",2012-03-06T00:12:58,1
+54,,ozlabs-change1-496935,ozlabs-patch-144907,"[U-Boot,3/7,RESEND] IXP: Fix missing MACH_TYPE_{ACTUX?, PNB3, DVLHOST}",2012-03-06T11:05:24,1
+55,16,ozlabs-change1-504515,ozlabs-patch-1235525,[02/11] video: omap: add missing bitfield masks,2020-02-09T18:47:35,1
+56,,ozlabs-change1-504515,ozlabs-patch-1238764,"[v2,02/13] video: omap: add missing bitfield masks",2020-02-16T15:09:31,1
+57,,ozlabs-change1-504515,ozlabs-patch-1242499,"[v3,02/13] video: omap: add missing bitfield masks",2020-02-22T13:05:38,1
+58,17,ozlabs-change1-492256,ozlabs-patch-356574,"[U-Boot,4/4] test: Add a test for command repeat",2014-06-05T18:27:52,1
+59,,ozlabs-change1-492256,ozlabs-patch-389099,"[U-Boot,v2,4/4] test: Add a test for command repeat",2014-09-14T18:40:17,1
+60,18,ozlabs-change1-514068,ozlabs-patch-1018187,"[U-Boot,09/10] misc: imx8: scu: add i.MX8QM support",2018-12-24T04:04:27,1
+61,,ozlabs-change1-514068,ozlabs-patch-1051597,"[U-Boot,RESEND,09/10] misc: imx8: scu: add i.MX8QM support",2019-03-05T02:32:45,1
+62,19,ozlabs-change1-508282,ozlabs-patch-500024,"[U-Boot,04/16] linux/kconfig.h: add CPP macros useful for per-image config options",2015-07-26T08:26:48,1
+63,,ozlabs-change1-508282,ozlabs-patch-502811,"[U-Boot,v2,03/15] linux/kconfig.h: add CPP macros useful for per-image config options",2015-08-01T13:14:33,1
+64,,ozlabs-change1-508282,ozlabs-patch-506239,"[U-Boot,v3,03/15] linux/kconfig.h: add CPP macros useful for per-image config options",2015-08-11T22:31:43,1
+65,20,ozlabs-change1-564013,ozlabs-patch-1292292,[3/3] x86: spl: Print the error on SPL failure,2020-05-18T03:00:59,1
+66,,ozlabs-change1-564013,ozlabs-patch-1298913,"[v2,3/4] x86: spl: Print the error on SPL failure",2020-05-27T12:58:48,1
+67,21,ozlabs-change1-558787,ozlabs-patch-1476138,"[v3,12/14] dfu_mtd: Ignore non-implemented lock device failure",2021-05-10T06:33:02,1
+68,,ozlabs-change1-558787,ozlabs-patch-1480692,"[v4,12/14] dfu_mtd: Ignore non-implemented lock device failure",2021-05-19T05:46:34,1
+69,22,ozlabs-change1-539416,ozlabs-patch-469797,"[U-Boot,3/5] moveconfig: Continue moving even if one board fails",2015-05-07T21:22:58,1
+70,,ozlabs-change1-539416,ozlabs-patch-470969,"[U-Boot,v2,3/7] moveconfig: Continue moving even if one board fails",2015-05-11T17:23:14,1
+71,,ozlabs-change1-539416,ozlabs-patch-472129,"[U-Boot,v3,02/10] moveconfig: Continue moving even if one board fails",2015-05-13T22:28:48,1
+72,23,ozlabs-change1-568120,ozlabs-patch-464573,"[U-Boot,2/4] x86: ivybridge: Use reset_cpu()",2015-04-25T15:04:33,1
+73,,ozlabs-change1-568120,ozlabs-patch-465837,"[U-Boot,v2,2/4] x86: ivybridge: Use reset_cpu()",2015-04-29T02:11:30,1
+74,24,ozlabs-change1-496326,ozlabs-patch-146359,[U-Boot] mmc:fix: Set mmc width according to MMC host capabilities,2012-03-13T08:07:18,1
+75,,ozlabs-change1-496326,ozlabs-patch-153743,"[U-Boot,RESEND,1/2] mmc:fix: Set mmc width according to MMC host capabilities",2012-04-19T12:39:17,1
+76,25,ozlabs-change1-497780,ozlabs-patch-954083,"[U-Boot,13/42] clk: sunxi: Add Allwinner V3S CLK driver",2018-08-06T17:37:34,1
+77,,ozlabs-change1-497780,ozlabs-patch-955964,"[U-Boot,v2,13/53] clk: sunxi: Add Allwinner V3S CLK driver",2018-08-10T06:06:31,1
+78,,ozlabs-change1-497780,ozlabs-patch-959335,"[U-Boot,v3,12/58] clk: sunxi: Add Allwinner V3S CLK driver",2018-08-19T13:56:29,1
+79,,ozlabs-change1-497780,ozlabs-patch-962244,"[U-Boot,v4,12/17] clk: sunxi: Add Allwinner V3S CLK driver",2018-08-26T12:38:21,1
+80,,ozlabs-change1-497780,ozlabs-patch-1019662,"[U-Boot,v5,10/26] clk: sunxi: Add Allwinner V3S CLK driver",2018-12-31T16:59:11,1
+81,,ozlabs-change1-497780,ozlabs-patch-1023166,"[U-Boot,v6,10/20] clk: sunxi: Add Allwinner V3S CLK driver",2019-01-10T18:40:06,1
+82,26,ozlabs-change1-561066,ozlabs-patch-118516,"[U-Boot,02/11] MX5: efikamx/efikasb: use new pmic driver",2011-10-08T10:06:59,1
+83,,ozlabs-change1-561066,ozlabs-patch-118554,"[U-Boot,V2,04/13] MX5: efikamx/efikasb: use new pmic driver",2011-10-08T16:36:00,1
+84,27,ozlabs-change1-567379,ozlabs-patch-363193,"[U-Boot,1/2] usb: host: xhci: make sure to power up PHY",2014-06-23T21:25:38,1
+85,,ozlabs-change1-567379,ozlabs-patch-368440,"[U-Boot,1/2] usb: host: xhci: make sure to power up PHY",2014-07-10T04:02:42,1
+86,28,ozlabs-change1-491175,ozlabs-patch-1023309,"[U-Boot,2/3] arm: introduce _relaxed MMIO accessors",2019-01-11T00:31:20,1
+87,,ozlabs-change1-491175,ozlabs-patch-1039447,"[U-Boot,RESEND,2/3] arm: introduce _relaxed MMIO accessors",2019-02-10T16:17:25,1
+88,29,ozlabs-change1-504109,ozlabs-patch-764146,"[U-Boot,04/10] mips: bmips: add bcm63xx-spi driver support for BCM6338",2017-05-18T19:29:42,1
+89,,ozlabs-change1-504109,ozlabs-patch-765538,"[U-Boot,v2,04/10] mips: bmips: add bcm63xx-spi driver support for BCM6338",2017-05-22T18:21:31,1
+90,,ozlabs-change1-504109,ozlabs-patch-770765,"[U-Boot,v3,04/10] mips: bmips: add bcm63xx-spi driver support for BCM6338",2017-06-03T09:57:39,1
+91,,ozlabs-change1-504109,ozlabs-patch-775707,"[U-Boot,v4,04/10] mips: bmips: add bcm63xx-spi driver support for BCM6338",2017-06-14T09:57:53,1
+92,,ozlabs-change1-504109,ozlabs-patch-795326,"[U-Boot,v5,04/10] mips: bmips: add bcm63xx-spi driver support for BCM6338",2017-07-30T12:13:41,1
+93,,ozlabs-change1-504109,ozlabs-patch-854699,"[U-Boot,v6,05/11] mips: bmips: add bcm63xx-spi driver support for BCM6338",2018-01-02T19:01:05,1
+94,,ozlabs-change1-504109,ozlabs-patch-858538,"[U-Boot,v7,07/13] mips: bmips: add bcm63xx-spi driver support for BCM6338",2018-01-10T20:26:41,1
+95,,ozlabs-change1-504109,ozlabs-patch-859217,"[U-Boot,v8,06/12] mips: bmips: add bcm63xx-spi driver support for BCM6338",2018-01-11T17:11:27,1
+96,,ozlabs-change1-504109,ozlabs-patch-863883,"[U-Boot,v9,06/12] mips: bmips: add bcm63xx-spi driver support for BCM6338",2018-01-20T01:11:39,1
+97,,ozlabs-change1-504109,ozlabs-patch-864892,"[U-Boot,v10,06/12] mips: bmips: add bcm63xx-spi driver support for BCM6338",2018-01-23T16:14:59,1
+98,30,ozlabs-change1-520169,ozlabs-patch-184226,"[U-Boot,39/71] serial: arm: Implement CONFIG_SERIAL_MULTI into altera_jtag serial driver",2012-09-16T23:21:04,1
+99,,ozlabs-change1-520169,ozlabs-patch-187949,"[U-Boot,39/70] serial: arm: Implement CONFIG_SERIAL_MULTI into altera_jtag serial driver",2012-09-29T00:30:56,1
+100,,ozlabs-change1-520169,ozlabs-patch-188101,"[U-Boot,39/72] serial: arm: Implement CONFIG_SERIAL_MULTI into altera_jtag serial driver",2012-09-29T21:52:32,1
+101,,ozlabs-change1-520169,ozlabs-patch-188286,"[U-Boot,39/71] serial: arm: Implement CONFIG_SERIAL_MULTI into altera_jtag serial driver",2012-10-01T12:33:28,1
+102,,ozlabs-change1-520169,ozlabs-patch-188305,"[U-Boot,39/72,V2] serial: arm: Implement CONFIG_SERIAL_MULTI into altera_jtag serial driver",2012-10-01T14:45:44,1
+103,31,ozlabs-change1-501950,ozlabs-patch-1093093,"[U-Boot,v3,2/3] arm: dts: Stratix10: Add SDRAM node",2019-04-30T09:20:00,1
+104,,ozlabs-change1-501950,ozlabs-patch-1094675,"[U-Boot,v4,2/3] arm: dts: Stratix10: Add SDRAM node",2019-05-03T06:27:13,1
+105,,ozlabs-change1-501950,ozlabs-patch-1095663,"[U-Boot,v5,2/3] arm: dts: Stratix10: Add SDRAM node",2019-05-06T01:56:00,1
+106,32,ozlabs-change1-497393,ozlabs-patch-1624892,[2/5] phy: adin: add support for clock output,2022-05-01T12:41:28,1
+107,,ozlabs-change1-497393,ozlabs-patch-1633135,"[v2,2/5] phy: adin: add support for clock output",2022-05-19T09:31:57,1
+108,33,ozlabs-change1-496753,ozlabs-patch-131048,"[U-Boot,V10,7/7] devkit8000: Implement and activate direct OS boot",2011-12-13T10:20:48,1
+109,,ozlabs-change1-496753,ozlabs-patch-131851,"[U-Boot,V11,07/13] devkit8000: Implement and activate direct OS boot",2011-12-16T15:37:07,1
+110,,ozlabs-change1-496753,ozlabs-patch-134233,"[U-Boot,V12,07/14] devkit8000: Implement and activate direct OS boot",2012-01-04T08:25:11,1
+111,,ozlabs-change1-496753,ozlabs-patch-139570,"[U-Boot,V13,07/12] devkit8000: Implement and activate direct OS boot",2012-02-04T10:22:38,1
+112,,ozlabs-change1-496753,ozlabs-patch-147015,"[U-Boot,V14,07/13] devkit8000: Implement and activate direct OS boot",2012-03-15T14:01:40,1
+113,34,ozlabs-change1-506459,ozlabs-patch-312841,[U-Boot] ext4fs: Add ext4 extent cache for read operations,2014-01-21T09:58:39,1
+114,,ozlabs-change1-506459,ozlabs-patch-316602,"[U-Boot,v2] ext4fs: Add ext4 extent cache for read operations",2014-02-04T14:48:10,1
+115,35,ozlabs-change1-548337,ozlabs-patch-667123,"[U-Boot,7/9] MIPS: Map CM Global Control Registers",2016-09-07T17:48:39,1
+116,,ozlabs-change1-548337,ozlabs-patch-668057,"[U-Boot,v2,08/10] MIPS: Map CM Global Control Registers",2016-09-09T13:44:10,1
+117,,ozlabs-change1-548337,ozlabs-patch-672781,"[U-Boot,v3,08/14] MIPS: Map CM Global Control Registers",2016-09-21T10:18:53,1
+118,36,ozlabs-change1-564028,ozlabs-patch-240220,"[U-Boot,RFC,14/15] Show stdout on error in fit-test",2013-04-28T02:17:51,1
+119,,ozlabs-change1-564028,ozlabs-patch-250590,"[U-Boot,v2,04/21] Show stdout on error in fit-test",2013-06-11T18:14:36,1
+120,37,ozlabs-change1-514513,ozlabs-patch-1510384,"[v2,2/9] tools: mkeficapsule: add man page",2021-07-27T09:10:47,1
+121,,ozlabs-change1-514513,ozlabs-patch-1522389,"[v3,2/5] tools: mkeficapsule: add man page",2021-08-31T02:46:56,1
+122,,ozlabs-change1-514513,ozlabs-patch-1537532,"[v4,06/11] tools: mkeficapsule: add man page",2021-10-07T06:23:35,1
+123,,ozlabs-change1-514513,ozlabs-patch-1547338,"[v5,03/11] tools: mkeficapsule: add man page",2021-10-28T06:23:48,1
+124,,ozlabs-change1-514513,ozlabs-patch-1549455,"[v6,04/12] tools: mkeficapsule: add man page",2021-11-02T00:55:04,1
+125,,ozlabs-change1-514513,ozlabs-patch-1555620,"[v7,04/12] tools: mkeficapsule: add man page",2021-11-16T04:32:30,1
+126,,ozlabs-change1-514513,ozlabs-patch-1570825,"[v8,04/12] tools: mkeficapsule: add man page",2021-12-20T05:02:45,1
+127,,ozlabs-change1-514513,ozlabs-patch-1581086,"[v9,05/11] tools: mkeficapsule: add man page",2022-01-18T04:39:48,1
+128,,ozlabs-change1-514513,ozlabs-patch-1587047,"[v10,3/9] tools: mkeficapsule: add man page",2022-02-01T01:27:34,1
+129,,ozlabs-change1-514513,ozlabs-patch-1590300,"[v11,3/9] tools: mkeficapsule: add man page",2022-02-09T10:10:36,1
+130,38,ozlabs-change1-511775,ozlabs-patch-1051737,"[U-Boot,3/6] net: dwc_eth_qos: add Ethernet stm32mp1 support",2019-03-05T10:09:08,1
+131,,ozlabs-change1-511775,ozlabs-patch-1091489,"[U-Boot,2/5] net: dwc_eth_qos: add Ethernet stm32mp1 support",2019-04-26T10:13:36,1
+132,39,ozlabs-change1-515800,ozlabs-patch-317349,"[U-Boot,RFC,2/2] ARM: rpi_b: query internal MAC address from firmware",2014-02-06T05:30:18,1
+133,,ozlabs-change1-515800,ozlabs-patch-392727,[U-Boot] ARM: rpi_b: query internal MAC address from firmware,2014-09-24T03:45:03,1
+134,,ozlabs-change1-515800,ozlabs-patch-394011,"[U-Boot,V2,1/2] ARM: rpi_b: query internal MAC address from firmware",2014-09-27T02:51:39,1
+135,40,ozlabs-change1-529928,ozlabs-patch-440085,"[U-Boot,v2,04/12] ARM: Put target PC for PSCI CPU_ON on per-CPU stack",2015-02-16T12:54:41,1
+136,,ozlabs-change1-529928,ozlabs-patch-440820,"[U-Boot,v3,04/12] ARM: Put target PC for PSCI CPU_ON on per-CPU stack",2015-02-18T08:13:58,1
+137,,ozlabs-change1-529928,ozlabs-patch-444581,"[U-Boot,v4,06/14] ARM: Put target PC for PSCI CPU_ON on per-CPU stack",2015-02-27T13:28:05,1
+138,,ozlabs-change1-529928,ozlabs-patch-447926,"[U-Boot,v5,06/14] ARM: Put target PC for PSCI CPU_ON on per-CPU stack",2015-03-09T07:00:16,1
+139,,ozlabs-change1-529928,ozlabs-patch-460626,"[U-Boot,v6,06/15] ARM: Put target PC for PSCI CPU_ON on per-CPU stack",2015-04-13T04:48:11,1
+140,,ozlabs-change1-529928,ozlabs-patch-463000,"[U-Boot,v7,07/17] ARM: Put target PC for PSCI CPU_ON on per-CPU stack",2015-04-21T05:18:30,1
+141,41,ozlabs-change1-525676,ozlabs-patch-1293473,[2/7] imx: Remove ARCH= references from documentation,2020-05-19T14:51:06,1
+142,,ozlabs-change1-525676,ozlabs-patch-1298328,"[PATCHv2,2/8] imx: Remove ARCH= references from documentation",2020-05-26T18:36:49,1
+143,42,ozlabs-change1-503741,ozlabs-patch-1030952,"[U-Boot,3/3] sunxi: Add Bananapi M2+ H5 board",2019-01-25T10:38:24,1
+144,,ozlabs-change1-503741,ozlabs-patch-1042743,"[U-Boot,v2,3/3] sunxi: Add Bananapi M2+ H5 board",2019-02-15T11:03:18,1
+145,43,ozlabs-change1-494722,ozlabs-patch-512516,"[U-Boot,12/13] sunxi: A13-Olinuxino: Enable the USB OTG controller",2015-08-31T14:46:12,1
+146,,ozlabs-change1-494722,ozlabs-patch-530655,"[U-Boot,v2,13/14] sunxi: A13-Olinuxino: Enable the USB OTG controller",2015-10-15T12:34:21,1
+147,44,ozlabs-change1-545875,ozlabs-patch-819974,"[U-Boot,059/080] cfi_flash: Fix long lines",2017-09-29T12:52:17,1
+148,,ozlabs-change1-545875,ozlabs-patch-847886,"[U-Boot,v2,57/78] cfi_flash: Fix long lines",2017-12-13T07:19:25,1
+149,,ozlabs-change1-545875,ozlabs-patch-860764,"[U-Boot,RESEND,v2,24/27] cfi_flash: Fix long lines",2018-01-15T10:02:30,1
+150,,ozlabs-change1-545875,ozlabs-patch-866345,"[U-Boot,v3,24/26] cfi_flash: Fix long lines",2018-01-26T13:43:54,1
+151,45,ozlabs-change1-563271,ozlabs-patch-1168965,"[U-Boot,5/5] sifive: fu540: Enable spi-nor flash support",2019-09-29T07:42:39,1
+152,,ozlabs-change1-563271,ozlabs-patch-1177979,"[U-Boot,v2,5/5] sifive: fu540: Enable spi-nor flash support",2019-10-16T14:58:14,1
+153,,ozlabs-change1-563271,ozlabs-patch-1273330,"[v3,3/3] sifive: fu540: Enable spi-nor flash support",2020-04-20T12:52:38,1
+154,,ozlabs-change1-563271,ozlabs-patch-1275894,"[v4,5/5] sifive: fu540: Enable spi-nor flash support",2020-04-23T17:00:57,1
+155,46,ozlabs-change1-508124,ozlabs-patch-197763,"[U-Boot,3/5] EXYNOS5: FDT: Add compatible strings for sound",2012-11-08T05:37:17,1
+156,,ozlabs-change1-508124,ozlabs-patch-202369,"[U-Boot,4/7,V2] EXYNOS5: FDT: Add compatible strings for sound",2012-11-28T06:10:10,1
+157,,ozlabs-change1-508124,ozlabs-patch-202677,"[U-Boot,3/6,V3] EXYNOS5: FDT: Add compatible strings for sound",2012-11-29T07:55:49,1
+158,,ozlabs-change1-508124,ozlabs-patch-206406,"[U-Boot,09/16] EXYNOS5: FDT: Add compatible strings for sound",2012-12-14T11:56:22,1
+159,,ozlabs-change1-508124,ozlabs-patch-208263,"[U-Boot,09/16,V2] EXYNOS5: FDT: Add compatible strings for sound",2012-12-27T06:03:16,1
+160,47,ozlabs-change1-530648,ozlabs-patch-731178,"[U-Boot,02/20] arm: socfpga: restructure reset manager driver",2017-02-22T09:47:20,1
+161,,ozlabs-change1-530648,ozlabs-patch-736774,"[U-Boot,v2,03/20] arm: socfpga: Restructure reset manager driver",2017-03-09T00:26:41,1
+162,,ozlabs-change1-530648,ozlabs-patch-745050,"[U-Boot,v3,02/19] arm: socfpga: Restructure reset manager driver",2017-03-30T13:08:39,1
+163,,ozlabs-change1-530648,ozlabs-patch-747177,"[U-Boot,v4,02/19] arm: socfpga: Restructure reset manager driver",2017-04-05T09:32:37,1
+164,,ozlabs-change1-530648,ozlabs-patch-750346,"[U-Boot,v5,02/16] arm: socfpga: Restructure reset manager driver",2017-04-13T17:41:11,1
+165,,ozlabs-change1-530648,ozlabs-patch-752150,"[U-Boot,v6,02/16] arm: socfpga: Restructure reset manager driver",2017-04-19T09:29:41,1
+166,,ozlabs-change1-530648,ozlabs-patch-754716,"[U-Boot,v7,02/16] arm: socfpga: Restructure reset manager driver",2017-04-25T18:44:34,1
+167,48,ozlabs-change1-499380,ozlabs-patch-921487,"[U-Boot,15/41] imx8: add mmu and dram related functiions",2018-05-28T12:25:00,1
+168,,ozlabs-change1-499380,ozlabs-patch-945456,"[U-Boot,V2,18/32] imx8: add mmu and dram related functiions",2018-07-18T01:35:48,1
+169,,ozlabs-change1-499380,ozlabs-patch-953666,"[U-Boot,V3,18/32] imx8: add mmu and dram related functiions",2018-08-06T02:50:33,1
+170,,ozlabs-change1-499380,ozlabs-patch-966184,"[U-Boot,V4,18/32] imx8: add mmu and dram related functiions",2018-09-05T02:12:05,1
+171,,ozlabs-change1-499380,ozlabs-patch-975157,"[U-Boot,V5,18/32] imx8: add mmu and dram related functiions",2018-09-26T13:52:42,1
+172,49,ozlabs-change1-568469,ozlabs-patch-72717,"[U-Boot,2/6] mpc83xx: Make start.S true PIC",2010-11-23T18:48:47,1
+173,,ozlabs-change1-568469,ozlabs-patch-76178,"[U-Boot,1/4] mpc83xx: Make start.S true PIC",2010-12-20T09:47:12,1
+174,50,ozlabs-change1-551337,ozlabs-patch-1257968,[12/12] configs: ls208xa: Enable GIC_V3_ITS config,2020-03-19T05:38:46,1
+175,,ozlabs-change1-551337,ozlabs-patch-1260512,"[PATCHv2,9/9] configs: ls208xa: Enable GIC_V3_ITS config",2020-03-24T08:12:09,1
+176,,ozlabs-change1-551337,ozlabs-patch-1278175,"[PATCHv3,8/8] configs: ls208xa: Enable GIC_V3_ITS config",2020-04-28T02:19:35,1
+177,51,ozlabs-change1-534644,ozlabs-patch-202273,"[U-Boot,3/4] at91sam9x5ek: regroup FAT/DOS features",2012-11-27T16:37:52,1
+178,,ozlabs-change1-534644,ozlabs-patch-202437,"[U-Boot,PATCHv2,3/4] at91sam9x5ek: regroup FAT/DOS features",2012-11-28T11:48:08,1
+179,,ozlabs-change1-534644,ozlabs-patch-202893,"[U-Boot,PATCHv3,3/4] at91sam9x5ek: regroup FAT/DOS features",2012-11-30T09:18:33,1
+180,52,ozlabs-change1-526852,ozlabs-patch-797535,"[U-Boot,3/5] ARM: at91: Remove hardware.h included in configs",2017-08-04T01:20:03,1
+181,,ozlabs-change1-526852,ozlabs-patch-810477,"[U-Boot,v2,3/5] ARM: at91: Remove hardware.h included in configs",2017-09-06T09:47:53,1
+182,,ozlabs-change1-526852,ozlabs-patch-813691,"[U-Boot,v3,3/5] ARM: at91: Remove hardware.h included in configs",2017-09-14T03:07:42,1
+183,53,ozlabs-change1-535440,ozlabs-patch-1601695,"[v4,03/33] lib: Correct comment formatting to avoid sphinx problems",2022-03-06T12:49:46,1
+184,,ozlabs-change1-535440,ozlabs-patch-1621682,"[v5,03/34] lib: Correct comment formatting to avoid sphinx problems",2022-04-25T05:30:56,1
+185,54,ozlabs-change1-528390,ozlabs-patch-911171,"[U-Boot,1/1] arm: print instructions pointed to by pc",2018-05-09T20:16:53,1
+186,,ozlabs-change1-528390,ozlabs-patch-911389,"[U-Boot,v2,1/1] arm: print instructions pointed to by pc",2018-05-10T14:38:30,1
+187,,ozlabs-change1-528390,ozlabs-patch-913844,"[U-Boot,v3,1/2] arm: print instructions pointed to by pc",2018-05-15T17:42:23,1
+188,55,ozlabs-change1-505646,ozlabs-patch-1008368,"[U-Boot,v2,5/7] defconfigs: Add config for DRA7xx High Security EVM with USB Boot support",2018-12-05T17:51:34,1
+189,,ozlabs-change1-505646,ozlabs-patch-1026945,"[U-Boot,v3,5/7] defconfigs: Add config for DRA7xx High Security EVM with USB Boot support",2019-01-17T19:43:06,1
+190,,ozlabs-change1-505646,ozlabs-patch-1032094,"[U-Boot,v4,3/5] defconfigs: Add config for DRA7xx High Security EVM with USB Boot support",2019-01-28T17:43:24,1
+191,56,ozlabs-change1-508954,ozlabs-patch-1622253,[v1] spi: npcm-fiu: add NPCM7xx FIU controller driver,2022-04-26T08:52:45,1
+192,,ozlabs-change1-508954,ozlabs-patch-1625528,[v2] spi: npcm-fiu: add NPCM7xx FIU controller driver,2022-05-03T12:21:22,1
+193,57,ozlabs-change1-557232,ozlabs-patch-196650,"[U-Boot,RFC,13/50] net: dc2114x: Pull out init of struct eth_ops",2012-11-02T17:18:05,1
+194,,ozlabs-change1-557232,ozlabs-patch-200703,"[U-Boot,v2,12/67] net: dc2114x: Pull out init of struct eth_ops",2012-11-21T13:23:03,1
+195,58,ozlabs-change1-498025,ozlabs-patch-132628,"[U-Boot,2/3] ARM:AM33XX: Add mmc/sd support",2011-12-21T13:03:20,1
+196,,ozlabs-change1-498025,ozlabs-patch-133635,"[U-Boot,v2,2/3] ARM:AM33XX: Add mmc/sd support",2011-12-30T10:55:59,1
+197,,ozlabs-change1-498025,ozlabs-patch-133980,"[U-Boot,v3,2/3] ARM:AM33XX: Add mmc/sd support",2012-01-03T06:42:55,1
+198,,ozlabs-change1-498025,ozlabs-patch-135154,"[U-Boot,v4,4/5] ARM:AM33XX: Add mmc/sd support",2012-01-10T06:38:58,1
+199,59,ozlabs-change1-542612,ozlabs-patch-1420706,[4/4] usb: musb: Ensure that we set musb dynamic FIFO buffer for every endpoint,2020-12-26T18:28:51,1
+200,,ozlabs-change1-542612,ozlabs-patch-1436847,"[RESEND,10/16] usb: musb: Ensure that we set musb dynamic FIFO buffer for every endpoint",2021-02-05T19:12:06,1
+201,,ozlabs-change1-542612,ozlabs-patch-1437166,"[RESEND,v2,10/16] usb: musb: Ensure that we set musb dynamic FIFO buffer for every endpoint",2021-02-07T13:50:10,1
+202,60,ozlabs-change1-518612,ozlabs-patch-895191,[U-Boot] x86: Use microcode update from device tree for all processors,2018-04-04T23:07:00,1
+203,,ozlabs-change1-518612,ozlabs-patch-930144,"[U-Boot,v2] x86: Use microcode update from device tree for all processors",2018-06-15T18:01:20,1
+204,,ozlabs-change1-518612,ozlabs-patch-933064,"[U-Boot,v3] x86: Use microcode update from device tree for all processors",2018-06-22T04:16:16,1
+205,61,ozlabs-change1-506985,ozlabs-patch-1018183,"[U-Boot,07/10] clk: imx8: add i.MX8QM clk driver",2018-12-24T04:04:21,1
+206,,ozlabs-change1-506985,ozlabs-patch-1051596,"[U-Boot,RESEND,07/10] clk: imx8: add i.MX8QM clk driver",2019-03-05T02:32:35,1
+207,62,ozlabs-change1-540703,ozlabs-patch-1394818,[10/18] common: board_r: Drop initr_addr_map wrapper,2020-11-05T09:09:47,1
+208,,ozlabs-change1-540703,ozlabs-patch-1548486,[4/7] common: board_r: drop initr_addr_map wrapper,2021-10-30T06:51:37,1
+209,,ozlabs-change1-540703,ozlabs-patch-1573187,"[RESEND,4/7] common: board_r: drop initr_addr_map wrapper",2021-12-25T19:57:20,1
+210,,ozlabs-change1-540703,ozlabs-patch-1574495,"[v2,4/7] common: board_r: drop initr_addr_map wrapper",2022-01-01T17:13:28,1
+211,63,ozlabs-change1-503525,ozlabs-patch-224526,"[U-Boot,3/3] mx6qsabre{sd,auto}: Add boot mode select",2013-03-02T21:49:05,1
+212,,ozlabs-change1-503525,ozlabs-patch-224544,"[U-Boot,v2,3/3] mx6qsabre{sd,auto}: Add boot mode select",2013-03-03T13:05:12,1
+213,,ozlabs-change1-503525,ozlabs-patch-225535,"[U-Boot,v3,3/3] mx6qsabre{sd,auto}: Add boot mode select",2013-03-06T15:46:07,1
+214,,ozlabs-change1-503525,ozlabs-patch-227963,"[U-Boot,v4,3/3] mx6qsabre{sd,auto}: Add boot mode select",2013-03-15T12:05:30,1
+215,,ozlabs-change1-503525,ozlabs-patch-228234,"[U-Boot,v5,3/3] mx6qsabre{sd,auto}: Add boot mode select",2013-03-16T18:05:07,1
+216,64,ozlabs-change1-489362,ozlabs-patch-707344,"[U-Boot,3/5] typecheck: import include/linux/typecheck.h from Linux 4.9",2016-12-20T06:53:30,1
+217,,ozlabs-change1-489362,ozlabs-patch-708997,"[U-Boot,v2,3/5] typecheck: import include/linux/typecheck.h from Linux 4.9",2016-12-27T15:36:01,1
+218,65,ozlabs-change1-526329,ozlabs-patch-654648,[U-Boot] mkimage: Fix argument parsing with signature comment,2016-08-02T08:49:55,1
+219,,ozlabs-change1-526329,ozlabs-patch-654650,[U-Boot] mkimage: Fix argument parsing with signature comment,2016-08-02T10:36:28,1
+220,,ozlabs-change1-526329,ozlabs-patch-655088,"[U-Boot,v2] mkimage: Fix argument parsing with signature comment",2016-08-02T18:57:14,1
+221,66,ozlabs-change1-511362,ozlabs-patch-487874,"[U-Boot,v3,17/25] rockchip: rk3288: Add pinctrl driver",2015-06-23T23:29:02,1
+222,,ozlabs-change1-511362,ozlabs-patch-510113,"[U-Boot,v4,25/33] rockchip: rk3288: Add pinctrl driver",2015-08-24T15:12:43,1
+223,,ozlabs-change1-511362,ozlabs-patch-512298,"[U-Boot,v5,24/41] rockchip: rk3288: Add pinctrl driver",2015-08-30T22:55:35,1
+224,67,ozlabs-change1-485496,ozlabs-patch-723480,[U-Boot] regulator: palmas: Fix smps6 - smps9 indices,2017-02-03T08:41:58,1
+225,,ozlabs-change1-485496,ozlabs-patch-723582,"[U-Boot,v2] regulator: palmas: Fix smps6 - smps9 indices",2017-02-03T11:34:08,1
+226,68,ozlabs-change1-527925,ozlabs-patch-1448608,"[u-boot,38/39] ARM: enable LTO for some boards",2021-03-07T04:25:37,1
+227,,ozlabs-change1-527925,ozlabs-patch-1451901,"[u-boot,v2,38/38] ARM: enable LTO for some boards",2021-03-12T10:34:29,1
+228,,ozlabs-change1-527925,ozlabs-patch-1452066,"[u-boot,v2.1,38/38] ARM: enable LTO for some boards",2021-03-12T13:46:55,1
+229,,ozlabs-change1-527925,ozlabs-patch-1453904,"[u-boot,v3,39/39] ARM: enable LTO for some boards",2021-03-16T12:26:09,1
+230,,ozlabs-change1-527925,ozlabs-patch-1481563,"[u-boot,v4,36/36] ARM: enable LTO for some boards",2021-05-20T11:24:25,1
+231,69,ozlabs-change1-506735,ozlabs-patch-494629,"[U-Boot,14/16] cgtqmx6eval: Add splash screen support",2015-07-13T15:23:16,1
+232,,ozlabs-change1-506735,ozlabs-patch-494683,"[U-Boot,v2,13/15] cgtqmx6eval: Add splash screen support",2015-07-13T19:01:08,1
+233,,ozlabs-change1-506735,ozlabs-patch-499419,"[U-Boot,v3,12/15] cgtqmx6eval: Add splash screen support",2015-07-23T14:02:30,1
+234,70,ozlabs-change1-514130,ozlabs-patch-1152317,"[U-Boot,1/5] rockchip, Makefile: add idbloader.img target",2019-08-23T17:29:25,1
+235,,ozlabs-change1-514130,ozlabs-patch-1157119,"[U-Boot,v2,1/3] rockchip, Makefile: add idbloader.img target",2019-09-03T16:29:01,1
+236,71,ozlabs-change1-510227,ozlabs-patch-424506,"[U-Boot,04/10] x86: spi: Add device tree support",2014-12-30T01:12:31,1
+237,,ozlabs-change1-510227,ozlabs-patch-426905,"[U-Boot,v2,05/11] x86: spi: Add device tree support",2015-01-09T03:30:49,1
+238,,ozlabs-change1-510227,ozlabs-patch-430850,"[U-Boot,v3,06/12] x86: spi: Add device tree support",2015-01-20T05:16:11,1
+239,72,ozlabs-change1-522725,ozlabs-patch-393508,[U-Boot] exynos: update maintainer of Snow and SMDK5420 board,2014-09-26T01:28:31,1
+240,,ozlabs-change1-522725,ozlabs-patch-393638,"[U-Boot,v2] exynos: update maintainer of Snow and SMDK5420 board",2014-09-26T09:54:43,1
+241,73,ozlabs-change1-556490,ozlabs-patch-513488,"[U-Boot,4/6] drivers: net: cpsw: prepare driver for device model migration",2015-09-02T11:15:40,1
+242,,ozlabs-change1-556490,ozlabs-patch-515039,"[U-Boot,v2,3/6] drivers: net: cpsw: prepare driver for device model migration",2015-09-07T08:52:20,1
+243,74,ozlabs-change1-500211,ozlabs-patch-376599,"[U-Boot,v2,20/25] arm: armada-xp: Add basic support for the maxBCM board",2014-08-05T07:10:06,1
+244,,ozlabs-change1-500211,ozlabs-patch-385102,"[U-Boot,v3,20/25] arm: armada-xp: Add basic support for the maxBCM board",2014-09-02T12:03:08,1
+245,,ozlabs-change1-500211,ozlabs-patch-402025,"[U-Boot,v4,15/20] arm: armada-xp: Add basic support for the maxBCM board",2014-10-22T10:13:19,1
+246,75,ozlabs-change1-554833,ozlabs-patch-515426,[U-Boot] sunxi: Fix wrong serial console setup in Forfun Q88DB tablet,2015-09-08T14:49:08,1
+247,,ozlabs-change1-554833,ozlabs-patch-515434,[U-Boot] sunxi: Fix wrong serial console setup in Forfun Q88DB tablet,2015-09-08T15:08:51,1
+248,76,ozlabs-change1-565809,ozlabs-patch-1630591,[v1] sunxi: psci: Fix sunxi_power_switch on sun8i-r40 platform,2022-05-13T09:24:46,1
+249,,ozlabs-change1-565809,ozlabs-patch-1631039,[v2] sunxi: psci: Fix sunxi_power_switch on sun8i-r40 platform,2022-05-14T03:19:23,1
+250,77,ozlabs-change1-555492,ozlabs-patch-912785,"[U-Boot,RFC] usb: fastboot: Convert USB f_fastboot to shared fastboot",2018-05-14T09:11:00,1
+251,,ozlabs-change1-555492,ozlabs-patch-915559,"[U-Boot,RFC,v2,1/2] usb: fastboot: Convert USB f_fastboot to shared fastboot",2018-05-17T16:13:43,1
+252,,ozlabs-change1-555492,ozlabs-patch-918115,"[U-Boot,v6,17/18] usb: fastboot: Convert USB f_fastboot to shared fastboot",2018-05-22T09:23:51,1
+253,,ozlabs-change1-555492,ozlabs-patch-919874,"[U-Boot,v7,17/18] usb: fastboot: Convert USB f_fastboot to shared fastboot",2018-05-24T13:29:12,1
+254,,ozlabs-change1-555492,ozlabs-patch-922204,"[U-Boot,v8,17/18] usb: fastboot: Convert USB f_fastboot to shared fastboot",2018-05-29T15:30:55,1
+255,78,ozlabs-change1-499420,ozlabs-patch-386746,[U-Boot] e1000: add i211 and unprogrammed i210/i211 support,2014-09-07T22:03:50,1
+256,,ozlabs-change1-499420,ozlabs-patch-387979,[U-Boot] e1000: add i211 and unprogrammed i210/i211 support,2014-09-10T21:18:20,1
+257,79,ozlabs-change1-534622,ozlabs-patch-102825,"[U-Boot,7/8] Updates the at91sam9m10g45ek.h config file.",2011-06-30T19:14:58,1
+258,,ozlabs-change1-534622,ozlabs-patch-102816,"[U-Boot,7/8] Updates the at91sam9m10g45ek.h config file.",2011-06-30T19:33:06,1
+259,80,ozlabs-change1-537715,ozlabs-patch-1666694,"[v3,13/13] binman: Support missing compression tools",2022-08-16T06:41:51,1
+260,,ozlabs-change1-537715,ozlabs-patch-1666741,"[v4,13/13] binman: Support missing compression tools",2022-08-16T08:42:10,1
+261,,ozlabs-change1-537715,ozlabs-patch-1668132,"[v5,14/21] binman: Support missing compression tools",2022-08-19T14:00:28,1
+262,,ozlabs-change1-537715,ozlabs-patch-1668179,"[v6,14/21] binman: Support missing compression tools",2022-08-19T14:25:31,1
+263,81,ozlabs-change1-503473,ozlabs-patch-1587577,[1/3] timer: atmel_tcb_timer: add atmel_tcb driver,2022-02-02T09:46:35,1
+264,,ozlabs-change1-503473,ozlabs-patch-1587635,"[v2,1/3] timer: atmel_tcb_timer: add atmel_tcb driver",2022-02-02T14:42:59,1
+265,,ozlabs-change1-503473,ozlabs-patch-1600903,"[v3,1/3] timer: atmel_tcb_timer: add atmel_tcb driver",2022-03-04T09:12:20,1
+266,,ozlabs-change1-503473,ozlabs-patch-1600911,"[v4,1/3] timer: atmel_tcb_timer: add atmel_tcb driver",2022-03-04T09:45:20,1
+267,,ozlabs-change1-503473,ozlabs-patch-1600946,"[v5,1/4] timer: atmel_tcb_timer: add atmel_tcb driver",2022-03-04T11:05:37,1
+268,,ozlabs-change1-503473,ozlabs-patch-1603303,"[v6,1/4] timer: atmel_tcb_timer: add atmel_tcb driver",2022-03-09T09:22:56,1
+269,,ozlabs-change1-503473,ozlabs-patch-1604304,"[v7,1/4] timer: atmel_tcb_timer: add atmel_tcb driver",2022-03-11T09:35:36,1
+270,,ozlabs-change1-503473,ozlabs-patch-1611636,"[v8,1/5] timer: atmel_tcb_timer: add atmel_tcb driver",2022-03-31T08:55:06,1
+271,82,ozlabs-change1-496599,ozlabs-patch-1229582,[084/108] x86: acpi: Support generation of the DBG2 table,2020-01-27T05:06:31,1
+272,,ozlabs-change1-496599,ozlabs-patch-1336633,"[v1,23/54] x86: acpi: Support generation of the DBG2 table",2020-07-27T03:44:55,1
+273,,ozlabs-change1-496599,ozlabs-patch-1353825,"[v2,25/57] x86: acpi: Support generation of the DBG2 table",2020-08-29T23:31:44,1
+274,,ozlabs-change1-496599,ozlabs-patch-1358481,"[v3,25/57] x86: acpi: Support generation of the DBG2 table",2020-09-06T21:43:33,1
+275,,ozlabs-change1-496599,ozlabs-patch-1369196,"[v4,25/59] x86: acpi: Support generation of the DBG2 table",2020-09-22T18:45:10,1
+276,83,ozlabs-change1-565045,ozlabs-patch-1502147,[5/5] stm32mp1: stm32prog: remove stm32prog_get_tee_partitions with FIP,2021-07-08T09:17:47,1
+277,,ozlabs-change1-565045,ozlabs-patch-1505758,"[v2,5/5] stm32mp1: stm32prog: remove stm32prog_get_tee_partitions with FIP",2021-07-15T15:22:07,1
+278,,ozlabs-change1-565045,ozlabs-patch-1509943,"[v3,5/5] stm32mp1: stm32prog: remove stm32prog_get_tee_partitions with FIP",2021-07-26T09:21:38,1
+279,84,ozlabs-change1-563620,ozlabs-patch-1021179,"[U-Boot,3/3] mmc: omap_hsmmc: Use regulator_set_enable_if_allowed for enabling regulator",2019-01-07T06:13:15,1
+280,,ozlabs-change1-563620,ozlabs-patch-1023473,"[U-Boot,v2,3/3] mmc: omap_hsmmc: Use regulator_set_enable_if_allowed for enabling regulator",2019-01-11T09:45:52,1
+281,85,ozlabs-change1-565856,ozlabs-patch-878692,"[U-Boot,1/3] test/py: README: fix typo",2018-02-27T04:17:44,1
+282,,ozlabs-change1-565856,ozlabs-patch-881289,"[U-Boot,v2,3/7] test/py: README: fix typo",2018-03-05T04:22:02,1
+283,,ozlabs-change1-565856,ozlabs-patch-885584,"[U-Boot,v3,3/7] test/py: README: fix typo",2018-03-14T02:03:03,1
+284,,ozlabs-change1-565856,ozlabs-patch-886080,"[U-Boot,v4,3/7] test/py: README: fix typo",2018-03-14T23:15:12,1
+285,86,ozlabs-change1-497824,ozlabs-patch-424842,"[U-Boot,06/12] arm: socfpga: Add Altera Arria V DK support",2014-12-31T19:14:54,1
+286,,ozlabs-change1-497824,ozlabs-patch-435039,"[U-Boot,V2,08/10] arm: socfpga: Add Altera Arria V DK support",2015-01-30T22:08:48,1
+287,87,ozlabs-change1-548368,ozlabs-patch-753931,"[U-Boot,03/11] i2c: cm5200: Drop use of CONFIG_I2C_HARD",2017-04-23T15:35:17,1
+288,,ozlabs-change1-548368,ozlabs-patch-761379,"[U-Boot,v2,03/12] i2c: cm5200: Drop use of CONFIG_I2C_HARD",2017-05-12T00:23:52,1
+289,,ozlabs-change1-548368,ozlabs-patch-761930,"[U-Boot,v3,03/12] i2c: cm5200: Drop use of CONFIG_I2C_HARD",2017-05-13T03:09:51,1
+290,88,ozlabs-change1-521849,ozlabs-patch-300928,"[U-Boot] arm: put .hash, .got.plt and .machine_param back in binaries",2013-12-13T07:44:10,1
+291,,ozlabs-change1-521849,ozlabs-patch-308247,"[U-Boot] arm: put .hash, .got.plt and .machine_param back in binaries",2014-01-08T13:21:01,1
+292,,ozlabs-change1-521849,ozlabs-patch-309846,"[U-Boot,v3] arm: put .hash, .got.plt and .machine_param back in binaries",2014-01-13T13:57:05,1
+293,89,ozlabs-change1-490722,ozlabs-patch-514897,[U-Boot] imx: mx6ul: support mx6ul 9x9 evk board,2015-09-06T04:49:21,1
+294,,ozlabs-change1-490722,ozlabs-patch-514899,"[U-Boot,V2] imx: mx6ul: support mx6ul 9x9 evk board",2015-09-06T07:02:34,1
+295,90,ozlabs-change1-555581,ozlabs-patch-731950,"[U-Boot,06/10] sunxi: Convert SUNXI_EMAC to Kconfig",2017-02-23T15:44:15,1
+296,,ozlabs-change1-555581,ozlabs-patch-744647,"[U-Boot,v2,06/10] sunxi: Convert SUNXI_EMAC to Kconfig",2017-03-29T07:26:33,1
+297,,ozlabs-change1-555581,ozlabs-patch-746155,"[U-Boot,v3,5/9] sunxi: Convert SUNXI_EMAC to Kconfig",2017-04-02T10:59:07,1
+298,91,ozlabs-change1-514204,ozlabs-patch-1323155,imx: Add MYiR Tech MYS-6ULX support,2020-07-05T15:47:55,1
+299,,ozlabs-change1-514204,ozlabs-patch-1337291,[v2] imx: Add MYiR Tech MYS-6ULX support,2020-07-27T14:48:41,1
+300,92,ozlabs-change1-541538,ozlabs-patch-409514,"[U-Boot] spl: Change debug to printf for ""Unsupported boot-device""",2014-11-11T15:59:13,1
+301,,ozlabs-change1-541538,ozlabs-patch-409604,"[U-Boot,v2] spl: Change debug to printf for ""Unsupported boot-device""",2014-11-11T18:03:55,1
+302,93,ozlabs-change1-491730,ozlabs-patch-1554807,[1/3] watchdog: Add a driver for the Apple watchdog,2021-11-14T11:19:40,1
+303,,ozlabs-change1-491730,ozlabs-patch-1579291,"[v2,1/3] watchdog: Add a driver for the Apple watchdog",2022-01-12T18:55:15,1
+304,94,ozlabs-change1-513230,ozlabs-patch-1377622,[10/18] test: Add test for LOGFF_MIN,2020-10-06T19:16:02,1
+305,,ozlabs-change1-513230,ozlabs-patch-1380110,"[v2,11/22] test: Add test for LOGFF_MIN",2020-10-10T19:43:36,1
+306,,ozlabs-change1-513230,ozlabs-patch-1383748,"[v3,13/23] test: Add test for LOGFF_MIN",2020-10-17T18:07:38,1
+307,,ozlabs-change1-513230,ozlabs-patch-1389060,"[v4,12/22] test: Add test for LOGFF_MIN",2020-10-27T23:55:31,1
+308,95,ozlabs-change1-500670,ozlabs-patch-975692,[U-Boot] arm: zynq: Add support for DLC20 board,2018-09-27T11:46:22,1
+309,,ozlabs-change1-500670,ozlabs-patch-977655,"[U-Boot,v2] arm: zynq: Add support for DLC20 board",2018-10-02T06:49:03,1
+310,96,ozlabs-change1-496894,ozlabs-patch-1383976,[23/25] binman: Use the actual contents in CheckSize(),2020-10-19T02:41:36,1
+311,,ozlabs-change1-496894,ozlabs-patch-1388224,"[v2,26/28] binman: Use the actual contents in CheckSize()",2020-10-26T23:40:24,1
+312,97,ozlabs-change1-525349,ozlabs-patch-563220,"[U-Boot,1/3] phy: atheros: Use ar8035_config for AR8031",2016-01-05T18:20:19,1
+313,,ozlabs-change1-525349,ozlabs-patch-563263,"[U-Boot,v2,1/3] phy: atheros: Use ar8035_config for AR8031",2016-01-05T19:02:52,1
+314,98,ozlabs-change1-511370,ozlabs-patch-1181116,"[U-Boot,3/9] ram: px30: add sdram driver",2019-10-22T08:04:09,1
+315,,ozlabs-change1-511370,ozlabs-patch-1183706,"[U-Boot,v2,11/17] ram: px30: add sdram driver",2019-10-25T01:33:58,1
+316,,ozlabs-change1-511370,ozlabs-patch-1195293,"[U-Boot,v3,12/22] ram: px30: add sdram driver",2019-11-15T03:04:43,1
+317,99,ozlabs-change1-527013,ozlabs-patch-1410251,[15/34] ARM: dts: sama7g5: enable autoboot,2020-12-03T09:28:31,1
+318,,ozlabs-change1-527013,ozlabs-patch-1411412,"[v2,15/34] ARM: dts: sama7g5: enable autoboot",2020-12-05T10:02:57,1
+319,100,ozlabs-change1-515128,ozlabs-patch-135951,"[U-Boot,V3,4/4] ARM: omap3: Added Teejet mt_ventoux",2012-01-13T18:06:10,1
+320,,ozlabs-change1-515128,ozlabs-patch-139536,"[U-Boot,V4] ARM: omap3: Added Teejet mt_ventoux",2012-02-04T08:22:40,1
+321,,ozlabs-change1-515128,ozlabs-patch-140085,"[U-Boot,V5] ARM: omap3: Added Teejet mt_ventoux",2012-02-08T09:29:34,1
+322,101,ozlabs-change1-492726,ozlabs-patch-869799,"[U-Boot,v4,20/34] phy: sun4i-usb: Add a sunxi specific function for setting squelch-detect",2018-02-06T14:25:50,1
+323,,ozlabs-change1-492726,ozlabs-patch-902408,"[U-Boot,v5,20/34] phy: sun4i-usb: Add a sunxi specific function for setting squelch-detect",2018-04-21T12:19:31,1
+324,,ozlabs-change1-492726,ozlabs-patch-909579,"[U-Boot,v7,21/35] phy: sun4i-usb: Add a sunxi specific function for setting squelch-detect",2018-05-07T07:33:37,1
+325,,ozlabs-change1-492726,ozlabs-patch-921456,"[U-Boot,v10,21/35] phy: sun4i-usb: Add a sunxi specific function for setting squelch-detect",2018-05-28T11:18:32,1
+326,102,ozlabs-change1-530592,ozlabs-patch-512160,"[U-Boot,13/13] arm: zynq: Move serial driver to driver model",2015-08-29T15:10:22,1
+327,,ozlabs-change1-530592,ozlabs-patch-531918,"[U-Boot,v2,14/14] arm: zynq: Move serial driver to driver model",2015-10-18T01:41:27,1
+328,103,ozlabs-change1-493516,ozlabs-patch-786693,"[U-Boot,5/5] mmc: omap_hsmmc: Fix incorrect bit operations for disabling a bit",2017-07-11T16:20:14,1
+329,,ozlabs-change1-493516,ozlabs-patch-816928,"[U-Boot,v2,5/5] mmc: omap_hsmmc: Fix incorrect bit operations for disabling a bit",2017-09-21T14:51:36,1
+330,104,ozlabs-change1-547056,ozlabs-patch-624709,"[U-Boot,5/5] fastboot: sparse: improve CHUNK_TYPE_FILL write performance",2016-05-21T01:05:58,1
+331,,ozlabs-change1-547056,ozlabs-patch-631758,"[U-Boot,v2,5/5] fastboot: sparse: improve CHUNK_TYPE_FILL write performance",2016-06-07T18:19:39,1
+332,105,ozlabs-change1-545078,ozlabs-patch-953628,"[U-Boot,5/5] malloc_simple: calloc: don't call memset if malloc failed",2018-08-05T19:35:00,1
+333,,ozlabs-change1-545078,ozlabs-patch-955768,"[U-Boot,6/6] malloc_simple: calloc: don't call memset if malloc failed",2018-08-09T19:04:20,1
+334,,ozlabs-change1-545078,ozlabs-patch-956867,"[U-Boot,v3,8/8] malloc_simple: calloc: don't call memset if malloc failed",2018-08-13T07:33:51,1
+335,,ozlabs-change1-545078,ozlabs-patch-957250,"[U-Boot,v4,5/5] malloc_simple: calloc: don't call memset if malloc failed",2018-08-13T19:34:37,1
+336,,ozlabs-change1-545078,ozlabs-patch-958127,"[U-Boot,v1] malloc_simple: calloc: don't call memset if malloc failed",2018-08-16T07:50:32,1
+337,106,ozlabs-change1-550615,ozlabs-patch-749103,"[U-Boot,PATCHv2,14/21] net: sunxi: Have sunxi common functions together",2017-04-10T15:33:49,1
+338,,ozlabs-change1-550615,ozlabs-patch-762452,"[U-Boot,PATCHv6,21/28] net: sunxi: Have sunxi common functions together",2017-05-15T08:02:37,1
+339,107,ozlabs-change1-490665,ozlabs-patch-780007,"[U-Boot,3/4] powerpc, 8xx: Properly set CPM frequency in the device tree",2017-06-23T12:57:42,1
+340,,ozlabs-change1-490665,ozlabs-patch-782378,"[U-Boot,3/7] powerpc, 8xx: Properly set CPM frequency in the device tree",2017-06-29T16:54:24,1
+341,,ozlabs-change1-490665,ozlabs-patch-785038,"[U-Boot,v2,06/10] powerpc, 8xx: Properly set CPM frequency in the device tree",2017-07-06T08:33:19,1
+342,108,ozlabs-change1-537947,ozlabs-patch-407716,"[U-Boot,31/39] x86: ivybridge: Check BIST value on boot",2014-11-06T20:20:23,1
+343,,ozlabs-change1-537947,ozlabs-patch-409149,"[U-Boot,v2,24/33] x86: ivybridge: Check BIST value on boot",2014-11-11T01:00:41,1
+344,,ozlabs-change1-537947,ozlabs-patch-410256,"[U-Boot,v3,17/26] x86: ivybridge: Check BIST value on boot",2014-11-13T05:42:20,1
+345,109,ozlabs-change1-522608,ozlabs-patch-334247,"[U-Boot,5/9] mmc: remove the unnecessary define and fix the wrong bit control",2014-03-27T08:54:42,1
+346,,ozlabs-change1-522608,ozlabs-patch-336249,"[U-Boot,PATCHv2,05/10] mmc: remove the unnecessary define and fix the wrong bit control",2014-04-02T06:17:26,1
+347,,ozlabs-change1-522608,ozlabs-patch-338360,"[U-Boot,PATCHv3,07/13] mmc: remove the unnecessary define and fix the wrong bit control",2014-04-11T05:55:21,1
+348,,ozlabs-change1-522608,ozlabs-patch-349116,"[U-Boot,PATCHv4,07/13] mmc: remove the unnecessary define and fix the wrong bit control",2014-05-15T08:49:44,1
+349,,ozlabs-change1-522608,ozlabs-patch-349131,"[U-Boot,RESEND,PATCHv4,08/14] mmc: remove the unnecessary define and fix the wrong bit control",2014-05-15T08:57:04,1
+350,,ozlabs-change1-522608,ozlabs-patch-349444,"[U-Boot,PATCHv5,08/14] mmc: remove the unnecessary define and fix the wrong bit control",2014-05-16T04:59:53,1
+351,110,ozlabs-change1-503980,ozlabs-patch-819128,"[U-Boot,2/8] rockchip: rk3128: add soc basic support",2017-09-27T12:39:23,1
+352,,ozlabs-change1-503980,ozlabs-patch-841545,"[U-Boot,v2,2/7] rockchip: rk3128: add soc basic support",2017-11-27T09:51:19,1
+353,,ozlabs-change1-503980,ozlabs-patch-842019,"[U-Boot,v3,2/7] rockchip: rk3128: add soc basic support",2017-11-28T08:04:16,1
+354,,ozlabs-change1-503980,ozlabs-patch-842025,"[U-Boot,RESEND,v3,2/7] rockchip: rk3128: add soc basic support",2017-11-28T08:09:52,1
+355,111,ozlabs-change1-540003,ozlabs-patch-244645,"[U-Boot,v3,12/12] board:smdk5250: switch to new i2c framework",2013-05-17T12:55:55,1
+356,,ozlabs-change1-540003,ozlabs-patch-290950,"[U-Boot,4/6] board:smdk5250: switch to new i2c framework",2013-11-13T14:31:50,1
+357,112,ozlabs-change1-504120,ozlabs-patch-758026,"[U-Boot,2/5] mips: bmips: add bcm6345-gpio driver support for BCM6358",2017-05-03T13:07:24,1
+358,,ozlabs-change1-504120,ozlabs-patch-759453,"[U-Boot,v2,2/5] mips: bmips: add bcm6345-gpio driver support for BCM6358",2017-05-07T18:09:31,1
+359,113,ozlabs-change1-527150,ozlabs-patch-1028167,"[U-Boot,v2,10/21] ARM: DTS: Update pcm052 based dts files (bk4r1/pcm052)",2019-01-20T13:34:14,1
+360,,ozlabs-change1-527150,ozlabs-patch-1035542,"[U-Boot,v3,11/22] ARM: DTS: Update pcm052 based dts files (bk4r1/pcm052)",2019-02-02T23:02:13,1
+361,,ozlabs-change1-527150,ozlabs-patch-1041615,"[U-Boot,v4,11/22] ARM: DTS: Update pcm052 based dts files (bk4r1/pcm052)",2019-02-13T21:46:48,1
+362,114,ozlabs-change1-528136,ozlabs-patch-825273,"[U-Boot,v3,20/20] arm: socfpga: Enable SPL booting U-boot",2017-10-13T08:08:57,1
+363,,ozlabs-change1-528136,ozlabs-patch-832350,"[U-Boot,v4,20/20] arm: socfpga: Enable SPL booting U-boot",2017-10-31T10:42:21,1
+364,,ozlabs-change1-528136,ozlabs-patch-844640,"[U-Boot,v5,20/20] arm: socfpga: Enable SPL booting U-boot",2017-12-05T07:58:10,1
+365,,ozlabs-change1-528136,ozlabs-patch-846895,"[U-Boot,v6,20/20] arm: socfpga: Enable SPL booting U-boot",2017-12-11T10:06:26,1
+366,115,ozlabs-change1-492394,ozlabs-patch-208228,"[U-Boot,05/15] sf: Add spi_flash_alloc() to create a new SPI flash struct",2012-12-26T22:28:23,1
+367,,ozlabs-change1-492394,ozlabs-patch-226577,"[U-Boot,v2,04/15] sf: Add spi_flash_alloc() to create a new SPI flash struct",2013-03-11T16:08:02,1
+368,116,ozlabs-change1-517424,ozlabs-patch-80748,"[U-Boot,2/2] at91sam9261ek: make operational again",2011-01-27T22:46:18,1
+369,,ozlabs-change1-517424,ozlabs-patch-80893,"[U-Boot,PATCH-v2] at91sam9261ek: make operational again",2011-01-28T20:47:06,1
+370,,ozlabs-change1-517424,ozlabs-patch-81359,"[U-Boot,2/2] at91sam9261ek: make operational again",2011-02-01T19:11:28,1
+371,,ozlabs-change1-517424,ozlabs-patch-81999,"[U-Boot,1/2,V3] at91sam9261ek: make operational again",2011-02-05T12:43:29,1
+372,117,ozlabs-change1-515557,ozlabs-patch-562256,"[U-Boot,v5,1/8] x86: adjust ramdisk load address",2016-01-04T08:00:48,1
+373,,ozlabs-change1-515557,ozlabs-patch-564215,"[U-Boot,v6,1/8] x86: adjust ramdisk load address",2016-01-07T09:31:59,1
+374,118,ozlabs-change1-543247,ozlabs-patch-608620,"[U-Boot,22/23] dm: sandbox: mmc: Enable building MMC code for sandbox",2016-04-11T01:12:42,1
+375,,ozlabs-change1-543247,ozlabs-patch-617262,"[U-Boot,v2,22/24] dm: sandbox: mmc: Enable building MMC code for sandbox",2016-05-01T19:52:43,1
+376,119,ozlabs-change1-528885,ozlabs-patch-504753,"[U-Boot,13/21] ARM: OMAP5/AM43xx: remove enabling USB clocks from enable_basic_clocks()",2015-08-06T16:16:03,1
+377,,ozlabs-change1-528885,ozlabs-patch-505573,"[U-Boot,6/6] ARM: OMAP5/AM43xx: remove enabling USB clocks from enable_basic_clocks()",2015-08-10T11:28:38,1
+378,,ozlabs-change1-528885,ozlabs-patch-508696,"[U-Boot,v2,4/4] ARM: OMAP5/AM43xx: remove enabling USB clocks from enable_basic_clocks()",2015-08-19T10:46:28,1
+379,120,ozlabs-change1-508077,ozlabs-patch-649381,"[U-Boot,10/13] i2c: mvtwsi: Add compatibility to DM",2016-07-18T08:27:59,1
+380,,ozlabs-change1-508077,ozlabs-patch-651118,"[U-Boot,v2,10/13] i2c: mvtwsi: Add compatibility to DM",2016-07-21T09:57:10,1
+381,121,ozlabs-change1-508694,ozlabs-patch-1025323,"[U-Boot,4/4] configs: mscc_ocelot: add network support",2019-01-15T16:56:43,1
+382,,ozlabs-change1-508694,ozlabs-patch-1025824,"[U-Boot,v2,4/4] configs: mscc_ocelot: add network support",2019-01-16T13:07:43,1
+383,,ozlabs-change1-508694,ozlabs-patch-1026780,"[U-Boot,v3,4/4] configs: mscc_ocelot: add network support",2019-01-17T16:07:15,1
+384,122,ozlabs-change1-499146,ozlabs-patch-1443680,[v2] Makefile: socfpga: Add target to generate hex output for combined spl and dtb,2021-02-24T01:53:43,1
+385,,ozlabs-change1-499146,ozlabs-patch-1444995,"[v4,7/7] Makefile: socfpga: Add target to generate hex output for combined spl and dtb",2021-02-26T16:11:05,1
+386,,ozlabs-change1-499146,ozlabs-patch-1445031,"[RESEND,v4,7/7] Makefile: socfpga: Add target to generate hex output for combined spl and dtb",2021-02-26T16:57:33,1
+387,,ozlabs-change1-499146,ozlabs-patch-1445550,"[v5,7/7] Makefile: socfpga: Add target to generate hex output for combined spl and dtb",2021-03-01T12:04:16,1
+388,123,ozlabs-change1-498380,ozlabs-patch-444834,"[U-Boot,28/29] rockchip: Add the beginnings of an image tool",2015-02-28T05:06:52,1
+389,,ozlabs-change1-498380,ozlabs-patch-471557,"[U-Boot,v2,16/18] rockchip: Add the beginnings of an image tool",2015-05-12T20:55:17,1
+390,124,ozlabs-change1-519451,ozlabs-patch-144465,[U-Boot] i.MX: fsl_esdhc: allow use with cache enabled.,2012-03-03T22:37:56,1
+391,,ozlabs-change1-519451,ozlabs-patch-155144,"[U-Boot,V2] i.MX: fsl_esdhc: allow use with cache enabled.",2012-04-26T00:28:48,1
+392,,ozlabs-change1-519451,ozlabs-patch-172176,"[U-Boot,V2] i.MX: fsl_esdhc: allow use with cache enabled.",2012-07-20T08:53:27,1
+393,125,ozlabs-change1-506002,ozlabs-patch-433134,"[U-Boot,10/23] x86: bootstage: Add time measurement for vesa start-up",2015-01-27T01:23:08,1
+394,,ozlabs-change1-506002,ozlabs-patch-433792,"[U-Boot,v2,10/22] x86: bootstage: Add time measurement for vesa start-up",2015-01-28T05:13:35,1
+395,126,ozlabs-change1-518036,ozlabs-patch-1535166,"[RFC,20/22] efi_driver: align with efi_disk-dm integration",2021-10-01T05:02:23,1
+396,,ozlabs-change1-518036,ozlabs-patch-1535936,"[resent,RFC,20/22] efi_driver: align with efi_disk-dm integration",2021-10-04T03:44:28,1
+397,,ozlabs-change1-518036,ozlabs-patch-1566213,"[RFC,v2,20/20] efi_driver: align with efi_disk-dm integration",2021-12-10T06:49:47,1
+398,,ozlabs-change1-518036,ozlabs-patch-1587523,[19/19] efi_driver: align with efi_disk-dm integration,2022-02-02T01:08:53,1
+399,,ozlabs-change1-518036,ozlabs-patch-1590917,"[v2,20/20] efi_driver: align with efi_disk-dm integration",2022-02-10T08:11:24,1
+400,,ozlabs-change1-518036,ozlabs-patch-1602929,"[v3,19/19] efi_driver: align with efi_disk-dm integration",2022-03-08T11:36:57,1
+401,127,ozlabs-change1-504240,ozlabs-patch-741614,"[U-Boot,v1,33/41] net: mvpp2: Add remove function that is called before the OS is started",2017-03-21T14:27:54,1
+402,,ozlabs-change1-504240,ozlabs-patch-742752,"[U-Boot,v2,33/45] net: mvpp2: Add remove function that is called before the OS is started",2017-03-23T16:01:59,1
+403,128,ozlabs-change1-531845,ozlabs-patch-177828,"[U-Boot,05/17] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-08-15T21:30:42,1
+404,,ozlabs-change1-531845,ozlabs-patch-178879,"[U-Boot,v2,05/18] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-08-20T16:45:40,1
+405,,ozlabs-change1-531845,ozlabs-patch-179431,"[U-Boot,v3,05/19] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-08-22T23:19:31,1
+406,,ozlabs-change1-531845,ozlabs-patch-179924,"[U-Boot,v4,05/20] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-08-24T23:58:19,1
+407,,ozlabs-change1-531845,ozlabs-patch-180292,"[U-Boot,v5,05/25] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-08-27T23:18:27,1
+408,,ozlabs-change1-531845,ozlabs-patch-181008,"[U-Boot,v6,06/29] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-08-31T18:02:53,1
+409,,ozlabs-change1-531845,ozlabs-patch-186646,"[U-Boot,v7,06/29] ARM: SPL: Rename omap_boot_device to spl_boot_device",2012-09-25T00:30:44,1
+410,129,ozlabs-change1-519022,ozlabs-patch-1245211,[15/18] ARM: dts: imxrt1050: allow this dtsi file to be compiled in Linux,2020-02-26T17:15:58,1
+411,,ozlabs-change1-519022,ozlabs-patch-1259795,"[v2,16/19] ARM: dts: imxrt1050: allow this dtsi file to be compiled in Linux",2020-03-22T22:44:59,1
+412,,ozlabs-change1-519022,ozlabs-patch-1268108,"[v3,16/19] ARM: dts: imxrt1050: allow this dtsi file to be compiled in Linux",2020-04-08T15:11:05,1
+413,130,ozlabs-change1-493444,ozlabs-patch-588604,"[U-Boot,1/9] cbfs: Update a function to be static",2016-02-26T04:00:48,1
+414,,ozlabs-change1-493444,ozlabs-patch-596881,"[U-Boot,v2,1/9] cbfs: Update a function to be static",2016-03-14T01:07:27,1
+415,131,ozlabs-change1-506328,ozlabs-patch-1611064,[26/52] mips: octeon: Add cvmx-fau-compat.c,2022-03-30T10:07:02,1
+416,,ozlabs-change1-506328,ozlabs-patch-1614283,"[v2,26/52] mips: octeon: Add cvmx-fau-compat.c",2022-04-07T07:11:28,1
+417,132,ozlabs-change1-534616,ozlabs-patch-108406,"[U-Boot,1/2] atmel: update at91sam9m10g45 SoC support to new style",2011-08-04T10:10:24,1
+418,,ozlabs-change1-534616,ozlabs-patch-108561,"[U-Boot,1/2] atmel: update at91sam9m10g45 SoC support to new style",2011-08-04T18:53:29,1
+419,133,ozlabs-change1-563098,ozlabs-patch-1329945,[3/9] mmc: fsl_esdhc: support tuning for eMMC HS200,2020-07-16T02:29:48,1
+420,,ozlabs-change1-563098,ozlabs-patch-1330954,"[v2,03/11] mmc: fsl_esdhc: support tuning for eMMC HS200",2020-07-17T08:50:16,1
+421,,ozlabs-change1-563098,ozlabs-patch-1334403,"[v3,03/11] mmc: fsl_esdhc: support tuning for eMMC HS200",2020-07-23T04:30:08,1
+422,,ozlabs-change1-563098,ozlabs-patch-1354816,"[v4,03/11] mmc: fsl_esdhc: support tuning for eMMC HS200",2020-09-01T08:58:01,1
+423,134,ozlabs-change1-555124,ozlabs-patch-684679,"[U-Boot,2/4] ti_omap5_common: Respect USB controller number in fastboot",2016-10-20T15:58:29,1
+424,,ozlabs-change1-555124,ozlabs-patch-685954,"[U-Boot,v2,2/4] ti_omap5_common: Respect USB controller number in fastboot",2016-10-24T15:41:11,1
+425,135,ozlabs-change1-526282,ozlabs-patch-1448736,[12/20] Makefile: Pass new entry args to binman,2021-03-07T19:31:39,1
+426,,ozlabs-change1-526282,ozlabs-patch-1453040,"[v2,12/21] Makefile: Pass new entry args to binman",2021-03-15T07:26:17,1
+427,,ozlabs-change1-526282,ozlabs-patch-1455148,"[v3,18/27] Makefile: Pass new entry args to binman",2021-03-18T07:25:08,1
+428,136,ozlabs-change1-563744,ozlabs-patch-1137991,"[U-Boot,17/39] env: Move env_get() to env.h",2019-07-28T14:03:34,1
+429,,ozlabs-change1-563744,ozlabs-patch-1140558,"[U-Boot,v2,17/40] env: Move env_get() to env.h",2019-08-01T15:46:52,1
+430,137,ozlabs-change1-502271,ozlabs-patch-1465194,[28/37] arm: imx8ulp: add trdc release request,2021-04-12T12:12:57,1
+431,,ozlabs-change1-502271,ozlabs-patch-1498177,"[V2,28/46] arm: imx8ulp: add trdc release request",2021-06-29T02:32:22,1
+432,,ozlabs-change1-502271,ozlabs-patch-1506790,"[V3,28/44] arm: imx8ulp: add trdc release request",2021-07-19T07:47:18,1
+433,,ozlabs-change1-502271,ozlabs-patch-1508227,"[V4,28/44] arm: imx8ulp: add trdc release request",2021-07-21T14:17:09,1
+434,,ozlabs-change1-502271,ozlabs-patch-1514614,"[V5,28/44] arm: imx8ulp: add trdc release request",2021-08-07T08:00:57,1
+435,138,ozlabs-change1-515292,ozlabs-patch-180370,"[U-Boot,v1,8/8] OMAP3: mt_ventoux: added video support",2012-08-28T07:46:47,1
+436,,ozlabs-change1-515292,ozlabs-patch-180457,"[U-Boot,v2,9/9] OMAP3: mt_ventoux: added video support",2012-08-28T12:21:53,1
+437,,ozlabs-change1-515292,ozlabs-patch-180694,"[U-Boot,v3,9/9] OMAP3: mt_ventoux: added video support",2012-08-29T11:22:07,1
+438,139,ozlabs-change1-492379,ozlabs-patch-1250960,"[v3,6/7] x86: Add a way to detect running from coreboot",2020-03-07T23:22:19,1
+439,,ozlabs-change1-492379,ozlabs-patch-1268249,"[RESEND,v3,6/7] x86: Add a way to detect running from coreboot",2020-04-08T18:57:54,1
+440,,ozlabs-change1-492379,ozlabs-patch-1277078,"[v4,7/9] x86: Add a way to detect running from coreboot",2020-04-26T15:12:59,1
+441,140,ozlabs-change1-549688,ozlabs-patch-1021110,"[U-Boot,v1,4/9] configs: colibri_imx7: use separate device tree",2019-01-06T21:00:44,1
+442,,ozlabs-change1-549688,ozlabs-patch-1021850,"[U-Boot,v2,04/11] configs: colibri_imx7: use separate device tree",2019-01-08T11:42:31,1
+443,141,ozlabs-change1-510126,ozlabs-patch-470100,"[U-Boot,09/12] sandbox: add: sandbox PMIC device drivers: I2C emul, pmic, regulator",2015-05-08T16:20:37,1
+444,,ozlabs-change1-510126,ozlabs-patch-471826,"[U-Boot,V2,09/13] sandbox: add: sandbox PMIC device drivers: I2C emul, pmic, regulator",2015-05-13T11:38:32,1
+445,142,ozlabs-change1-498359,ozlabs-patch-1548932,[14/31] arm: qemu: Add an SPL build,2021-11-01T01:17:16,1
+446,,ozlabs-change1-498359,ozlabs-patch-1580823,"[v2,02/16] arm: qemu: Add an SPL build",2022-01-17T15:04:14,1
+447,143,ozlabs-change1-493186,ozlabs-patch-1004912,"[U-Boot,v2,06/24] mtd: ensure MTD/the raw NAND core are compiled when there is a NAND flash",2018-11-28T23:07:42,1
+448,,ozlabs-change1-493186,ozlabs-patch-1007920,"[U-Boot,v3,06/28] mtd: ensure MTD/the raw NAND core are compiled when there is a NAND flash",2018-12-04T23:56:52,1
+449,,ozlabs-change1-493186,ozlabs-patch-1010036,"[U-Boot,v4,05/25] mtd: ensure MTD/the raw NAND core are compiled when there is a NAND flash",2018-12-09T18:07:27,1
+450,,ozlabs-change1-493186,ozlabs-patch-1171308,"[U-Boot,v5,05/26] mtd: ensure MTD/the raw NAND core are compiled when there is a NAND flash",2019-10-03T17:50:07,1
+451,144,ozlabs-change1-563806,ozlabs-patch-786010,"[U-Boot,01/30] Makefile: Rename 'env' target to 'environ'",2017-07-09T20:52:44,1
+452,,ozlabs-change1-563806,ozlabs-patch-792619,"[U-Boot,v2,02/34] Makefile: Rename 'env' target to 'environ'",2017-07-24T03:19:37,1
+453,,ozlabs-change1-563806,ozlabs-patch-794034,"[U-Boot,v3,01/24] Makefile: Rename 'env' target to 'environ'",2017-07-26T17:19:25,1
+454,,ozlabs-change1-563806,ozlabs-patch-795812,"[U-Boot,v4,01/29] Makefile: Rename 'env' target to 'environ'",2017-07-31T14:46:01,1
+455,,ozlabs-change1-563806,ozlabs-patch-797374,"[U-Boot,v5,01/30] Makefile: Rename 'env' target to 'environ'",2017-08-03T18:21:48,1
+456,145,ozlabs-change1-505526,ozlabs-patch-227073,"[U-Boot,1/4] Tegra114: fdt: Add SDMMC (sdhci) nodes for T114 boards (Dalmore for now)",2013-03-12T16:17:08,1
+457,,ozlabs-change1-505526,ozlabs-patch-228834,"[U-Boot,v2,1/4] Tegra114: fdt: Add SDMMC (sdhci) nodes for T114 boards (Dalmore for now)",2013-03-18T23:25:33,1
+458,146,ozlabs-change1-555461,ozlabs-patch-870872,"[U-Boot,2/2] pinctrl-uclass: convert to use live dt",2018-02-08T13:01:49,1
+459,,ozlabs-change1-555461,ozlabs-patch-870875,"[U-Boot,RESENT,2/2] pinctrl-uclass: convert to use live dt",2018-02-08T13:13:24,1
+460,,ozlabs-change1-555461,ozlabs-patch-871190,"[U-Boot,v2,2/2] pinctrl-uclass: convert to use live dt",2018-02-09T02:56:24,1
+461,147,ozlabs-change1-536367,ozlabs-patch-1129871,[U-Boot] env: ti: boot: Handle reboot reason from BCB,2019-07-09T14:45:43,1
+462,,ozlabs-change1-536367,ozlabs-patch-1131495,"[U-Boot,v2] env: ti: boot: Handle reboot reason from BCB",2019-07-12T17:35:36,1
+463,,ozlabs-change1-536367,ozlabs-patch-1136893,"[U-Boot,v3] env: ti: boot: Handle reboot reason from BCB",2019-07-25T13:20:41,1
+464,148,ozlabs-change1-545203,ozlabs-patch-247950,"[U-Boot,v2,08/16] sf: Use spi_flash_addr() in write call",2013-05-31T12:52:21,1
+465,,ozlabs-change1-545203,ozlabs-patch-250622,"[U-Boot,v3,10/17] sf: Use spi_flash_addr() in write call",2013-06-11T19:23:15,1
+466,,ozlabs-change1-545203,ozlabs-patch-251164,"[U-Boot,v4,07/14] sf: Use spi_flash_addr() in write call",2013-06-13T20:55:29,1
+467,,ozlabs-change1-545203,ozlabs-patch-253246,"[U-Boot,PATH,v5,07/14] sf: Use spi_flash_addr() in write call",2013-06-21T14:42:29,1
+468,149,ozlabs-change1-521794,ozlabs-patch-1153293,"[U-Boot,32/38] x86: fsp: Save usable RAM and hob_list in the handoff area",2019-08-26T15:59:37,1
+469,,ozlabs-change1-521794,ozlabs-patch-1167294,"[U-Boot,v2,32/38] x86: fsp: Save usable RAM and hob_list in the handoff area",2019-09-25T14:11:41,1
+470,150,ozlabs-change1-512976,ozlabs-patch-911877,[U-Boot] net: include/phy.h: add new mode for internal phy,2018-05-11T09:51:19,1
+471,,ozlabs-change1-512976,ozlabs-patch-915965,"[U-Boot,v2] net: include/phy.h: add new mode for internal phy",2018-05-18T02:12:04,1
+472,151,ozlabs-change1-503580,ozlabs-patch-1004930,"[U-Boot,v2,17/24] mtd: nand: add includes in NAND core to avoid warnings",2018-11-28T23:07:53,1
+473,,ozlabs-change1-503580,ozlabs-patch-1007943,"[U-Boot,v3,19/28] mtd: nand: add includes in NAND core to avoid warnings",2018-12-04T23:57:05,1
+474,,ozlabs-change1-503580,ozlabs-patch-1010048,"[U-Boot,v4,18/25] mtd: nand: add includes in NAND core to avoid warnings",2018-12-09T18:07:40,1
+475,,ozlabs-change1-503580,ozlabs-patch-1171326,"[U-Boot,v5,19/26] mtd: nand: add includes in NAND core to avoid warnings",2019-10-03T17:50:21,1
+476,152,ozlabs-change1-491670,ozlabs-patch-442978,"[U-Boot,04/16] dm: x86: Add a uclass for an Low Pin Count (LPC) device",2015-02-24T13:23:59,1
+477,,ozlabs-change1-491670,ozlabs-patch-455086,"[U-Boot,v2,04/17] dm: x86: Add a uclass for an Low Pin Count (LPC) device",2015-03-26T15:29:28,1
+478,153,ozlabs-change1-568463,ozlabs-patch-1031696,"[U-Boot,07/13] mmc: sdhci: Make sdhci_set_clock() non static",2019-01-28T06:45:25,1
+479,,ozlabs-change1-568463,ozlabs-patch-1036789,"[U-Boot,v2,07/13] mmc: sdhci: Make sdhci_set_clock() non static",2019-02-05T14:12:55,1
+480,,ozlabs-change1-568463,ozlabs-patch-1040469,"[U-Boot,v3,07/13] mmc: sdhci: Make sdhci_set_clock() non static",2019-02-12T08:58:13,1
+481,,ozlabs-change1-568463,ozlabs-patch-1104325,"[U-Boot,v4,05/15] mmc: sdhci: Make sdhci_set_clock() non static",2019-05-23T17:37:42,1
+482,,ozlabs-change1-568463,ozlabs-patch-1107023,"[U-Boot,v5,05/15] mmc: sdhci: Make sdhci_set_clock() non static",2019-05-29T09:45:05,1
+483,,ozlabs-change1-568463,ozlabs-patch-1109900,"[U-Boot,v6,05/15] mmc: sdhci: Make sdhci_set_clock() non static",2019-06-04T13:16:50,1
+484,,ozlabs-change1-568463,ozlabs-patch-1111151,"[U-Boot,v7,05/15] mmc: sdhci: Make sdhci_set_clock() non static",2019-06-06T13:54:42,1
+485,,ozlabs-change1-568463,ozlabs-patch-1113284,"[U-Boot,v8,05/14] mmc: sdhci: Make sdhci_set_clock() non static",2019-06-10T19:13:35,1
+486,154,ozlabs-change1-547160,ozlabs-patch-1199181,"[U-Boot,1/6] net: introduce DSA class for Ethernet switches",2019-11-22T01:36:54,1
+487,,ozlabs-change1-547160,ozlabs-patch-1200476,"[U-Boot,v2,1/6] net: introduce DSA class for Ethernet switches",2019-11-25T15:53:11,1
+488,,ozlabs-change1-547160,ozlabs-patch-1203754,"[v3,1/6] net: introduce DSA class for Ethernet switches",2019-12-03T14:56:40,1
+489,,ozlabs-change1-547160,ozlabs-patch-1283889,"[v4,1/6] net: introduce DSA class for Ethernet switches",2020-05-05T17:43:03,1
+490,,ozlabs-change1-547160,ozlabs-patch-1425947,[1/5] net: Introduce DSA class for Ethernet switches,2021-01-13T18:05:22,1
+491,,ozlabs-change1-547160,ozlabs-patch-1428740,"[v2,1/5] net: Introduce DSA class for Ethernet switches",2021-01-19T17:01:06,1
+492,,ozlabs-change1-547160,ozlabs-patch-1430496,"[v3,1/5] net: Introduce DSA class for Ethernet switches",2021-01-22T19:16:51,1
+493,,ozlabs-change1-547160,ozlabs-patch-1431180,"[v4,3/7] net: Introduce DSA class for Ethernet switches",2021-01-25T12:23:53,1
+494,,ozlabs-change1-547160,ozlabs-patch-1441117,"[v5,5/9] net: introduce DSA class for Ethernet switches",2021-02-16T21:19:32,1
+495,155,ozlabs-change1-498948,ozlabs-patch-342089,"[U-Boot,03/11] kconfig: add board Kconfig and defconfig files",2014-04-24T05:04:14,1
+496,,ozlabs-change1-498948,ozlabs-patch-352726,"[U-Boot,RFCv2a,03/14] kconfig: add board Kconfig and defconfig files",2014-05-27T06:19:47,1
+497,,ozlabs-change1-498948,ozlabs-patch-352729,"[U-Boot,RFCv2b,03/14] kconfig: add board Kconfig and defconfig files",2014-05-27T06:27:32,1
+498,,ozlabs-change1-498948,ozlabs-patch-353429,"[U-Boot,v2,03/11] kconfig: add board Kconfig and defconfig files",2014-05-28T13:05:04,1
+499,,ozlabs-change1-498948,ozlabs-patch-363302,"[U-Boot,v3,03/11] kconfig: add board Kconfig and defconfig files",2014-06-24T03:53:06,1
+500,,ozlabs-change1-498948,ozlabs-patch-372530,"[U-Boot,v4,03/15] kconfig: add board Kconfig and defconfig files",2014-07-22T15:24:04,1
+501,,ozlabs-change1-498948,ozlabs-patch-373118,"[U-Boot,v5,03/15] kconfig: add board Kconfig and defconfig files",2014-07-24T04:00:10,1
+502,,ozlabs-change1-498948,ozlabs-patch-374016,"[U-Boot,v6,03/15] kconfig: add board Kconfig and defconfig files",2014-07-27T08:33:47,1
+503,,ozlabs-change1-498948,ozlabs-patch-374435,"[U-Boot,v7,03/15] kconfig: add board Kconfig and defconfig files",2014-07-29T10:34:20,1
+504,,ozlabs-change1-498948,ozlabs-patch-374667,"[U-Boot,v8,02/13] kconfig: add board Kconfig and defconfig files",2014-07-30T05:08:14,1
+505,156,ozlabs-change1-550339,ozlabs-patch-1267158,[16/18] common: Drop linux/stringify.h from common header,2020-04-07T02:40:29,1
+506,,ozlabs-change1-550339,ozlabs-patch-1268800,"[v2,18/22] common: Drop linux/stringify.h from common header",2020-04-09T20:15:02,1
+507,,ozlabs-change1-550339,ozlabs-patch-1287270,"[v3,18/22] common: Drop linux/stringify.h from common header",2020-05-10T17:40:09,1
+508,157,ozlabs-change1-559213,ozlabs-patch-168751,"[U-Boot,4/7] dfu: MMC specific routines for DFU operation",2012-07-03T09:38:08,1
+509,,ozlabs-change1-559213,ozlabs-patch-169012,"[U-Boot,v2,4/7] dfu: MMC specific routines for DFU operation",2012-07-04T15:48:39,1
+510,,ozlabs-change1-559213,ozlabs-patch-174159,"[U-Boot,v3,4/7] dfu: MMC specific routines for DFU operation",2012-07-31T06:37:00,1
+511,,ozlabs-change1-559213,ozlabs-patch-174913,"[U-Boot,v4,4/7] dfu: MMC specific routines for DFU operation",2012-08-03T07:45:36,1
+512,,ozlabs-change1-559213,ozlabs-patch-175338,"[U-Boot,v5,4/7] dfu: MMC specific routines for DFU operation",2012-08-06T12:41:08,1
+513,158,ozlabs-change1-511232,ozlabs-patch-114277,"[U-Boot,02/15] iMX28: Add SSP MMC driver",2011-09-12T04:06:36,1
+514,,ozlabs-change1-511232,ozlabs-patch-121074,"[U-Boot,02/17,RESEND] iMX28: Add SSP MMC driver",2011-10-21T22:44:11,1
+515,,ozlabs-change1-511232,ozlabs-patch-124494,"[U-Boot,02/20] iMX28: Add SSP MMC driver",2011-11-09T09:18:09,1
+516,159,ozlabs-change1-520520,ozlabs-patch-626012,"[U-Boot,v1,5/7] am335x, dxr2: get ECC sType from I2C eeprom",2016-05-25T05:07:10,1
+517,,ozlabs-change1-520520,ozlabs-patch-628219,"[U-Boot,v2,5/7] am335x, dxr2: get ECC sType from I2C eeprom",2016-05-31T12:08:10,1
+518,,ozlabs-change1-520520,ozlabs-patch-631344,"[U-Boot,v3,5/7] am335x, dxr2: get ECC sType from I2C eeprom",2016-06-07T06:55:43,1
+519,160,ozlabs-change1-516817,ozlabs-patch-778096,"[U-Boot,1/3] dtoc: Adjust Node to record its parent",2017-06-20T03:34:07,1
+520,,ozlabs-change1-516817,ozlabs-patch-807275,"[U-Boot,v2,02/16] dtoc: Adjust Node to record its parent",2017-08-29T20:15:47,1
+521,161,ozlabs-change1-500327,ozlabs-patch-688202,"[U-Boot,v1,1/2] ARM: at91: dt: add dts files for sama5d3ek board",2016-10-28T07:00:37,1
+522,,ozlabs-change1-500327,ozlabs-patch-689193,"[U-Boot,v2,1/2] ARM: at91: dt: add dts files for sama5d3ek board",2016-10-31T03:44:45,1
+523,,ozlabs-change1-500327,ozlabs-patch-689195,"[U-Boot,RESEND,v2,1/2] ARM: at91: dt: add dts files for sama5d3ek board",2016-10-31T03:48:15,1
+524,,ozlabs-change1-500327,ozlabs-patch-724943,"[U-Boot,v3,1/2] ARM: at91: dt: add dts files for sama5d3ek board",2017-02-07T06:43:40,1
+525,162,ozlabs-change1-560257,ozlabs-patch-1510050,[18/33] pci: msc01: Drop use of DM_PCI,2021-07-26T13:34:24,1
+526,,ozlabs-change1-560257,ozlabs-patch-1512212,"[v2,17/32] pci: msc01: Drop use of DM_PCI",2021-08-02T00:54:30,1
+527,163,ozlabs-change1-492571,ozlabs-patch-1531786,[01/10] reset: dra7: Add a reset driver,2021-09-23T16:46:40,1
+528,,ozlabs-change1-492571,ozlabs-patch-1534936,"[v2,01/10] reset: dra7: Add a reset driver",2021-09-30T16:21:02,1
+529,,ozlabs-change1-492571,ozlabs-patch-1581191,"[v3,02/11] reset: dra7: Add a reset driver",2022-01-18T10:12:40,1
+530,,ozlabs-change1-492571,ozlabs-patch-1585013,"[v4,02/11] reset: dra7: Add a reset driver",2022-01-27T12:16:51,1
+531,164,ozlabs-change1-490490,ozlabs-patch-79295,[U-Boot] Net: Add Intel E1000 82574L PCIe card support,2011-01-18T11:55:19,1
+532,,ozlabs-change1-490490,ozlabs-patch-79788,"[U-Boot,v2] Net: Add Intel E1000 82574L PCIe card support",2011-01-21T03:29:38,1
+533,165,ozlabs-change1-536005,ozlabs-patch-866848,"[U-Boot,v3,10/30] configs: bananapi-m2-plus: Enable USB OTG peripheral mode",2018-01-28T16:19:31,1
+534,,ozlabs-change1-536005,ozlabs-patch-869816,"[U-Boot,v4,29/34] configs: bananapi-m2-plus: Enable USB OTG peripheral mode",2018-02-06T14:25:59,1
+535,,ozlabs-change1-536005,ozlabs-patch-902405,"[U-Boot,v5,29/34] configs: bananapi-m2-plus: Enable USB OTG peripheral mode",2018-04-21T12:19:40,1
+536,,ozlabs-change1-536005,ozlabs-patch-909568,"[U-Boot,v7,30/35] configs: bananapi-m2-plus: Enable USB OTG peripheral mode",2018-05-07T07:33:46,1
+537,,ozlabs-change1-536005,ozlabs-patch-921436,"[U-Boot,v10,30/35] configs: bananapi-m2-plus: Enable USB OTG peripheral mode",2018-05-28T11:18:41,1
+538,166,ozlabs-change1-542688,ozlabs-patch-196488,[U-Boot] generic mmc bug in reading sd card capacity,2012-11-02T07:12:52,1
+539,,ozlabs-change1-542688,ozlabs-patch-197432,[U-Boot] generic mmc bug in reading sd card capacity,2012-11-06T08:41:06,1
+540,167,ozlabs-change1-566633,ozlabs-patch-1639207,[13/49] mmc: fsl_esdhc_imx: Support i.MX9,2022-06-06T11:23:45,1
+541,,ozlabs-change1-566633,ozlabs-patch-1642387,"[V2,13/48] mmc: fsl_esdhc_imx: Support i.MX9",2022-06-11T13:19:59,1
+542,,ozlabs-change1-566633,ozlabs-patch-1648544,"[V2,14/49] mmc: fsl_esdhc_imx: Support i.MX9",2022-06-27T03:24:20,1
+543,,ozlabs-change1-566633,ozlabs-patch-1652248,"[V4,14/49] mmc: fsl_esdhc_imx: Support i.MX9",2022-07-05T06:06:09,1
+544,,ozlabs-change1-566633,ozlabs-patch-1658567,[14/53] mmc: fsl_esdhc_imx: Support i.MX9,2022-07-20T13:17:28,1
+545,,ozlabs-change1-566633,ozlabs-patch-1660666,"[V2,14/53] mmc: fsl_esdhc_imx: Support i.MX9",2022-07-26T08:40:44,1
+546,168,ozlabs-change1-555153,ozlabs-patch-1358975,"[v3,8/8] firmware: smci: sandbox test for SCMI reset controllers",2020-09-07T14:50:00,1
+547,,ozlabs-change1-555153,ozlabs-patch-1360808,"[v4,8/8] firmware: smci: sandbox test for SCMI reset controllers",2020-09-09T16:44:07,1
+548,169,ozlabs-change1-494817,ozlabs-patch-77578,"[U-Boot,2/2] a320evb: replace built-in ftpmu010 related code",2011-01-05T09:02:00,1
+549,,ozlabs-change1-494817,ozlabs-patch-77581,"[U-Boot,v2,2/2] a320evb: replace built-in ftpmu010 related code",2011-01-05T09:12:24,1
+550,170,ozlabs-change1-515735,ozlabs-patch-1460592,"[v1,05/17] arm: socfpga: Get clock manager base address for Intel N5X device",2021-03-31T14:38:56,1
+551,,ozlabs-change1-515735,ozlabs-patch-1472021,"[v2,06/17] arm: socfpga: Get clock manager base address for Intel N5X device",2021-04-30T07:38:03,1
+552,,ozlabs-change1-515735,ozlabs-patch-1491370,"[v3,06/17] arm: socfpga: Get clock manager base address for Intel N5X device",2021-06-13T08:48:41,1
+553,,ozlabs-change1-515735,ozlabs-patch-1503846,"[v4,06/17] arm: socfpga: Get clock manager base address for Intel N5X device",2021-07-12T09:49:10,1
+554,,ozlabs-change1-515735,ozlabs-patch-1514935,"[v5,06/17] arm: socfpga: Get clock manager base address for Intel N5X device",2021-08-09T07:18:30,1
+555,,ozlabs-change1-515735,ozlabs-patch-1515227,"[v6,06/17] arm: socfpga: Get clock manager base address for Intel N5X device",2021-08-10T03:26:31,1
+556,171,ozlabs-change1-550332,ozlabs-patch-1267157,[10/18] common: Drop init.h from common header,2020-04-07T02:40:23,1
+557,,ozlabs-change1-550332,ozlabs-patch-1268807,"[v2,11/22] common: Drop init.h from common header",2020-04-09T20:14:55,1
+558,,ozlabs-change1-550332,ozlabs-patch-1287432,"[v3,11/22] common: Drop init.h from common header",2020-05-10T17:40:02,1
+559,172,ozlabs-change1-550072,ozlabs-patch-1022729,"[U-Boot,03/18] gpio: Use more command-specific enums values",2019-01-10T04:24:42,1
+560,,ozlabs-change1-550072,ozlabs-patch-1028923,"[U-Boot,v2,03/19] gpio: Use more command-specific enums values",2019-01-21T21:53:20,1
+561,173,ozlabs-change1-566427,ozlabs-patch-103274,"[U-Boot,1/2] usb:gadget: Linux USB Gadget framework",2011-07-05T12:53:15,1
+562,,ozlabs-change1-566427,ozlabs-patch-103299,"[U-Boot,1/2] usb:gadget: Linux USB Gadget framework",2011-07-05T13:58:02,1
+563,174,ozlabs-change1-548212,ozlabs-patch-699240,"[U-Boot,v2,2/4] serial: zynq: Remove unused index from get uart clock function",2016-11-25T13:59:52,1
+564,,ozlabs-change1-548212,ozlabs-patch-701960,"[U-Boot,v3,2/4] serial: zynq: Remove unused index from get uart clock function",2016-12-02T13:24:35,1
+565,175,ozlabs-change1-530986,ozlabs-patch-242738,"[U-Boot,RFC] arm: lds: Remove libgcc eabi exception handling tables",2013-05-09T09:35:33,1
+566,,ozlabs-change1-530986,ozlabs-patch-243316,"[U-Boot,RFC] arm: lds: Remove libgcc eabi exception handling tables",2013-05-13T07:45:12,1
+567,,ozlabs-change1-530986,ozlabs-patch-261705,[U-Boot] arm: lds: Remove libgcc eabi exception handling tables,2013-07-25T14:16:46,1
+568,176,ozlabs-change1-524545,ozlabs-patch-1071591,"[U-Boot,6/6] fdt: boot_get_fdt: android: use ENV 'fdtaddr' as fallback",2019-03-31T02:08:38,1
+569,,ozlabs-change1-524545,ozlabs-patch-1072793,"[U-Boot,v2,5/5] fdt: boot_get_fdt: android: use ENV 'fdtaddr' as fallback",2019-04-01T10:52:52,1
+570,177,ozlabs-change1-506857,ozlabs-patch-1597282,[08/10] tpm: Add the RNG child device,2022-02-24T18:05:50,1
+571,,ozlabs-change1-506857,ozlabs-patch-1598833,"[v2,08/10] tpm: Add the RNG child device",2022-02-28T12:06:36,1
+572,,ozlabs-change1-506857,ozlabs-patch-1601043,"[v3,4/8] tpm: Add the RNG child device",2022-03-04T13:34:25,1
+573,,ozlabs-change1-506857,ozlabs-patch-1603376,"[v4,4/8] tpm: Add the RNG child device",2022-03-09T12:27:56,1
+574,,ozlabs-change1-506857,ozlabs-patch-1604779,"[v5,4/9] tpm: Add the RNG child device",2022-03-13T14:47:57,1
+575,,ozlabs-change1-506857,ozlabs-patch-1652024,"[v6,3/7] tpm: Add the RNG child device",2022-07-04T13:34:40,1
+576,,ozlabs-change1-506857,ozlabs-patch-1658544,"[v7,3/7] tpm: Add the RNG child device",2022-07-20T12:29:22,1
+577,,ozlabs-change1-506857,ozlabs-patch-1659635,"[v8,4/8] tpm: Add the RNG child device",2022-07-22T16:02:05,1
+578,178,ozlabs-change1-504024,ozlabs-patch-1277620,"[v1,46/49] cmd: bcm: add nitro boot command",2020-04-27T10:52:04,1
+579,,ozlabs-change1-504024,ozlabs-patch-1292079,"[v1,1/3] cmd: bcm: add nitro boot command",2020-05-17T08:37:03,1
+580,179,ozlabs-change1-533999,ozlabs-patch-1586819,"[v4,04/18] lib: Kconfig: enhance help for ASN1",2022-01-31T14:55:44,1
+581,,ozlabs-change1-533999,ozlabs-patch-1590657,"[v5,02/16] lib: Kconfig: enhance help for ASN1",2022-02-09T18:01:14,1
+582,,ozlabs-change1-533999,ozlabs-patch-1597734,"[v6,02/16] lib: Kconfig: enhance help for ASN1",2022-02-25T14:57:40,1
+583,,ozlabs-change1-533999,ozlabs-patch-1605125,"[v7,02/16] lib: Kconfig: enhance help for ASN1",2022-03-14T14:57:31,1
+584,,ozlabs-change1-533999,ozlabs-patch-1610401,"[v8,02/15] lib: Kconfig: enhance help for ASN1",2022-03-28T20:56:54,1
+585,180,ozlabs-change1-506037,ozlabs-patch-998967,"[U-Boot,RFC,V0,6/7] drivers: nand: brcmnand: add parameter parameter-page-big-endian",2018-11-16T13:57:03,1
+586,,ozlabs-change1-506037,ozlabs-patch-1057064,"[U-Boot,08/18] drivers: nand: brcmnand: add parameter parameter-page-big-endian",2019-03-15T14:14:37,1
+587,181,ozlabs-change1-519725,ozlabs-patch-782924,"[U-Boot,3/5] fdt: Allow stacked overlays phandle references",2017-06-30T16:23:00,1
+588,,ozlabs-change1-519725,ozlabs-patch-800470,"[U-Boot,v2,02/10] fdt: Allow stacked overlays phandle references",2017-08-11T08:52:40,1
+589,,ozlabs-change1-519725,ozlabs-patch-809832,"[U-Boot,v3,04/14] fdt: Allow stacked overlays phandle references",2017-09-04T20:12:13,1
+590,182,ozlabs-change1-557378,ozlabs-patch-1113914,"[U-Boot,52/92] rockchip: dts: rk3399: nanopi-neo4: Use DDR3-1866 dtsi",2019-06-11T14:50:55,1
+591,,ozlabs-change1-557378,ozlabs-patch-1116791,"[U-Boot,v2,53/99] rockchip: dts: rk3399: nanopi-neo4: Use DDR3-1866 dtsi",2019-06-17T07:32:06,1
+592,,ozlabs-change1-557378,ozlabs-patch-1132195,"[U-Boot,v3,18/18] rockchip: dts: rk3399: nanopi-neo4: Use DDR3-1866 dtsi",2019-07-15T18:28:56,1
+593,183,ozlabs-change1-524895,ozlabs-patch-1626955,[1/2] usb: host: ehci-generic: Make usage of clock/reset bulk() API,2022-05-05T13:17:58,1
+594,,ozlabs-change1-524895,ozlabs-patch-1627409,"[v2,1/2] usb: host: ehci-generic: Make usage of clock/reset bulk() API",2022-05-06T06:22:34,1
+595,184,ozlabs-change1-558159,ozlabs-patch-1137863,"[U-Boot,2/4] efi_loader: definition of efi_virtual_address_map()",2019-07-27T21:00:02,1
+596,,ozlabs-change1-558159,ozlabs-patch-1139334,"[U-Boot,v2,2/4] efi_loader: definition of efi_virtual_address_map()",2019-07-30T19:35:15,1
+597,185,ozlabs-change1-536719,ozlabs-patch-761800,"[U-Boot,12/22] mmc: Enable signal voltage to be selected from mmc core",2017-05-12T18:16:30,1
+598,,ozlabs-change1-536719,ozlabs-patch-816907,"[U-Boot,v2,13/26] mmc: Enable signal voltage to be selected from mmc core",2017-09-21T14:30:00,1
+599,186,ozlabs-change1-495914,ozlabs-patch-819984,"[U-Boot,058/080] cfi_flash: Bound-check index before array access",2017-09-29T12:52:16,1
+600,,ozlabs-change1-495914,ozlabs-patch-847872,"[U-Boot,v2,56/78] cfi_flash: Bound-check index before array access",2017-12-13T07:19:24,1
+601,,ozlabs-change1-495914,ozlabs-patch-860757,"[U-Boot,RESEND,v2,23/27] cfi_flash: Bound-check index before array access",2018-01-15T10:02:29,1
+602,,ozlabs-change1-495914,ozlabs-patch-866340,"[U-Boot,v3,23/26] cfi_flash: Bound-check index before array access",2018-01-26T13:43:53,1
+603,187,ozlabs-change1-555551,ozlabs-patch-240046,"[U-Boot,5/6] imx: zmx25: Convert to iomux-v3",2013-04-26T20:56:37,1
+604,,ozlabs-change1-555551,ozlabs-patch-241082,"[U-Boot,v2,5/6] imx: zmx25: Convert to iomux-v3",2013-05-02T20:47:30,1
+605,,ozlabs-change1-555551,ozlabs-patch-241386,"[U-Boot,v3,05/25] imx: zmx25: Convert to iomux-v3",2013-05-03T20:32:17,1
+606,188,ozlabs-change1-523571,ozlabs-patch-806922,"[U-Boot] omap3: evm: Fixes for CONFIG_NAND, SPL_OS_BOOT, USB, and environment",2017-08-29T02:39:31,1
+607,,ozlabs-change1-523571,ozlabs-patch-809173,"[U-Boot,PATCHi,v2] omap3: evm: Fixes for CONFIG_NAND, SPL_OS_BOOT, USB, and environment",2017-09-02T22:37:41,1
+608,,ozlabs-change1-523571,ozlabs-patch-809174,"[U-Boot,v3] omap3: evm: Fixes for CONFIG_NAND, SPL_OS_BOOT, USB, and environment",2017-09-02T22:43:05,1
+609,189,ozlabs-change1-487456,ozlabs-patch-709166,"[U-Boot,v2,23/30] arm: socfpga: arria10: Added some hardware base address for Arria 10",2016-12-28T06:34:34,1
+610,,ozlabs-change1-487456,ozlabs-patch-711867,"[U-Boot,v3,23/30] arm: socfpga: arria10: Added some hardware base address for Arria 10",2017-01-06T11:19:52,1
+611,,ozlabs-change1-487456,ozlabs-patch-712604,"[U-Boot,v4,22/29] arm: socfpga: arria10: Added some hardware base address for Arria 10",2017-01-09T11:31:47,1
+612,,ozlabs-change1-487456,ozlabs-patch-713099,"[U-Boot,v4,21/28] arm: socfpga: arria10: Added some hardware base address for Arria 10",2017-01-10T05:20:34,1
+613,190,ozlabs-change1-503563,ozlabs-patch-1314338,[1/5] dt-bindings: prci: add indexes for reset signals available in prci,2020-06-22T12:27:52,1
+614,,ozlabs-change1-503563,ozlabs-patch-1316867,"[v2,1/5] dt-bindings: prci: add indexes for reset signals available in prci",2020-06-25T12:25:37,1
+615,,ozlabs-change1-503563,ozlabs-patch-1326550,"[v3,1/5] dt-bindings: prci: add indexes for reset signals available in prci",2020-07-10T08:38:24,1
+616,,ozlabs-change1-503563,ozlabs-patch-1335489,"[v4,1/5] dt-bindings: prci: add indexes for reset signals available in prci",2020-07-24T08:47:17,1
+617,,ozlabs-change1-503563,ozlabs-patch-1338219,"[v5,1/5] dt-bindings: prci: add indexes for reset signals available in prci",2020-07-29T09:36:10,1
+618,191,ozlabs-change1-529357,ozlabs-patch-168868,"[U-Boot,02/12] ARM: rpi_b: enable CONFIG_ARCH_CPU_INIT for icache",2012-07-04T02:02:45,1
+619,,ozlabs-change1-529357,ozlabs-patch-174370,"[U-Boot,V2,05/13] ARM: rpi_b: enable CONFIG_ARCH_CPU_INIT for icache",2012-08-01T04:13:35,1
+620,192,ozlabs-change1-486326,ozlabs-patch-162214,"[U-Boot,v7,2/4] net: use common rand()/srand() functions",2012-05-31T18:12:43,1
+621,,ozlabs-change1-486326,ozlabs-patch-162370,"[U-Boot,v8,2/4] net: use common rand()/srand() functions",2012-06-01T20:39:38,1
+622,,ozlabs-change1-486326,ozlabs-patch-163175,"[U-Boot,v9,2/4] net: use common rand()/srand() functions",2012-06-05T21:33:15,1
+623,,ozlabs-change1-486326,ozlabs-patch-169279,"[U-Boot,v8,2/4] net: use common rand()/srand() functions",2012-07-05T21:37:43,1
+624,193,ozlabs-change1-499094,ozlabs-patch-744136,"[U-Boot,1/8] rockchip: clk: rk3399: add clock support for SCLK_SPI1 and SCLK_SPI5",2017-03-28T08:58:30,1
+625,,ozlabs-change1-499094,ozlabs-patch-744719,"[U-Boot,v2,1/6] rockchip: clk: rk3399: add clock support for SCLK_SPI1 and SCLK_SPI5",2017-03-29T11:31:26,1
+626,,ozlabs-change1-499094,ozlabs-patch-751373,"[U-Boot,v3,1/7] rockchip: clk: rk3399: add clock support for SCLK_SPI1 and SCLK_SPI5",2017-04-17T15:43:46,1
+627,,ozlabs-change1-499094,ozlabs-patch-752992,"[U-Boot,v4,1/7] rockchip: clk: rk3399: add clock support for SCLK_SPI1 and SCLK_SPI5",2017-04-20T20:05:49,1
+628,194,ozlabs-change1-519108,ozlabs-patch-1108194,[U-Boot] regulator: Allow autosetting fixed regulators,2019-05-31T07:27:29,1
+629,,ozlabs-change1-519108,ozlabs-patch-1114308,"[U-Boot,v2] regulator: Allow autosetting fixed regulators",2019-06-12T06:32:38,1
+630,195,ozlabs-change1-497206,ozlabs-patch-418570,"[U-Boot,07/13] ARM: atmel: sama5d4: add matrix1 base addr definition",2014-12-08T06:09:12,1
+631,,ozlabs-change1-497206,ozlabs-patch-420964,"[U-Boot,v2,07/13] ARM: atmel: sama5d4: add matrix1 base addr definition",2014-12-15T05:24:33,1
+632,196,ozlabs-change1-519220,ozlabs-patch-1312358,[2/4] net: fec: Allow the PHY node to be retrieved,2020-06-18T19:05:22,1
+633,,ozlabs-change1-519220,ozlabs-patch-1312406,"[v2,2/4] net: fec: Allow the PHY node to be retrieved",2020-06-18T21:16:23,1
+634,,ozlabs-change1-519220,ozlabs-patch-1312510,"[v3,2/4] net: fec: Allow the PHY node to be retrieved",2020-06-18T23:21:18,1
+635,197,ozlabs-change1-503510,ozlabs-patch-290086,"[U-Boot,30/32] sandbox: Add SDL library for LCD, keyboard, audio",2013-11-10T17:27:16,1
+636,,ozlabs-change1-503510,ozlabs-patch-324934,"[U-Boot,v2,23/31] sandbox: Add SDL library for LCD, keyboard, audio",2014-02-27T20:26:17,1
+637,198,ozlabs-change1-523280,ozlabs-patch-944351,"[U-Boot,RFC,33/35] phy: sun4i-usb: Use CLK and RESET support",2018-07-16T11:28:48,1
+638,,ozlabs-change1-523280,ozlabs-patch-954085,"[U-Boot,16/42] phy: sun4i-usb: Use CLK and RESET support",2018-08-06T17:37:37,1
+639,,ozlabs-change1-523280,ozlabs-patch-955998,"[U-Boot,v2,16/53] phy: sun4i-usb: Use CLK and RESET support",2018-08-10T06:06:34,1
+640,,ozlabs-change1-523280,ozlabs-patch-959345,"[U-Boot,v3,15/58] phy: sun4i-usb: Use CLK and RESET support",2018-08-19T13:56:32,1
+641,,ozlabs-change1-523280,ozlabs-patch-962241,"[U-Boot,v4,14/17] phy: sun4i-usb: Use CLK and RESET support",2018-08-26T12:38:23,1
+642,,ozlabs-change1-523280,ozlabs-patch-1019669,"[U-Boot,v5,17/26] phy: sun4i-usb: Use CLK and RESET support",2018-12-31T16:59:18,1
+643,,ozlabs-change1-523280,ozlabs-patch-1023169,"[U-Boot,v6,16/20] phy: sun4i-usb: Use CLK and RESET support",2019-01-10T18:40:12,1
+644,199,ozlabs-change1-536587,ozlabs-patch-1283096,[21/36] bdinfo: Drop print_bi_boot_params(),2020-05-04T23:17:17,1
+645,,ozlabs-change1-536587,ozlabs-patch-1287336,"[v2,25/39] bdinfo: Drop print_bi_boot_params()",2020-05-10T20:16:48,1
+646,200,ozlabs-change1-550471,ozlabs-patch-602429,[U-Boot] common: env: support sata device,2016-03-28T09:37:16,1
+647,,ozlabs-change1-550471,ozlabs-patch-603939,"[U-Boot,V2] common: env: support sata device",2016-03-31T05:13:25,1
+648,,ozlabs-change1-550471,ozlabs-patch-605578,"[U-Boot,V3] common: env: support sata device",2016-04-03T13:52:13,1
+649,201,ozlabs-change1-510619,ozlabs-patch-468498,"[U-Boot,15/16] usb: ohci: Add dm support",2015-05-05T21:56:18,1
+650,,ozlabs-change1-510619,ozlabs-patch-470445,"[U-Boot,v5,13/15] usb: ohci: Add dm support",2015-05-10T12:10:25,1
+651,202,ozlabs-change1-541626,ozlabs-patch-857439,"[U-Boot,V3,15/31] imx: cleanup bootaux",2018-01-09T12:11:35,1
+652,,ozlabs-change1-541626,ozlabs-patch-857911,"[U-Boot,V4,16/32] imx: cleanup bootaux",2018-01-10T03:05:47,1
+653,,ozlabs-change1-541626,ozlabs-patch-857956,"[U-Boot,V5,15/31] imx: cleanup bootaux",2018-01-10T05:20:32,1
+654,203,ozlabs-change1-495653,ozlabs-patch-472931,"[U-Boot,v2,2/4] mkimage will now report information about loadable",2015-05-15T21:13:12,1
+655,,ozlabs-change1-495653,ozlabs-patch-473616,"[U-Boot,v3,1/4] mkimage will now report information about loadable",2015-05-18T22:27:32,1
+656,,ozlabs-change1-495653,ozlabs-patch-475044,"[U-Boot,v4,1/4] mkimage will now report information about loadable",2015-05-21T13:52:47,1
+657,204,ozlabs-change1-539359,ozlabs-patch-1163148,"[U-Boot,v1,12/20] configs: enable eSDHC device module for P2020RDB board",2019-09-17T02:55:55,1
+658,,ozlabs-change1-539359,ozlabs-patch-1163719,"[U-Boot,v2,12/20] configs: enable eSDHC device module for P2020RDB board",2019-09-18T02:52:11,1
+659,,ozlabs-change1-539359,ozlabs-patch-1176859,"[U-Boot,v3,12/20] configs: enable eSDHC device module for P2020RDB board",2019-10-15T09:20:51,1
+660,205,ozlabs-change1-530974,ozlabs-patch-526570,"[U-Boot,1/6] ARM: tegra: rename dummy XUSB padctl implementation",2015-10-05T22:59:16,1
+661,,ozlabs-change1-530974,ozlabs-patch-535073,"[U-Boot,V2,1/7] ARM: tegra: rename dummy XUSB padctl implementation",2015-10-23T16:50:47,1
+662,206,ozlabs-change1-500084,ozlabs-patch-881520,"[U-Boot,08/16] arm: stm32: add new architecture for STM32MP family",2018-03-05T14:24:35,1
+663,,ozlabs-change1-500084,ozlabs-patch-884380,"[U-Boot,v2,07/15] arm: stm32: add new architecture for STM32MP family",2018-03-12T09:46:10,1
+664,207,ozlabs-change1-548961,ozlabs-patch-77743,"[U-Boot,7/7] powerpc/86xx: Convert SBC8641 to use common SRIO init code",2011-01-06T16:58:52,1
+665,,ozlabs-change1-548961,ozlabs-patch-78291,"[U-Boot,v3,7/8] powerpc/86xx: Convert SBC8641 to use common SRIO init code",2011-01-11T08:10:35,1
+666,208,ozlabs-change1-488793,ozlabs-patch-1064118,"[U-Boot,v1,3/5] mmc: fsl_esdhc: ppc: adopt 32 bit address",2019-03-25T10:48:57,1
+667,,ozlabs-change1-488793,ozlabs-patch-1065075,"[U-Boot,v2,3/5] mmc: fsl_esdhc: ppc: adopt 32 bit address",2019-03-26T03:08:59,1
+668,,ozlabs-change1-488793,ozlabs-patch-1083921,"[U-Boot,v3,3/8] mmc: fsl_esdhc: ppc: adopt 32 bit address",2019-04-11T11:01:50,1
+669,209,ozlabs-change1-485701,ozlabs-patch-1192045,"[U-Boot,6/7] phy: phy-mtk-tphy: remove the check of -ENOSYS",2019-11-08T10:20:30,1
+670,,ozlabs-change1-485701,ozlabs-patch-1211359,"[RESEND,6/7] phy: phy-mtk-tphy: remove the check of -ENOSYS",2019-12-16T03:13:56,1
+671,,ozlabs-change1-485701,ozlabs-patch-1220137,"[v2,6/7] phy: phy-mtk-tphy: remove the check of -ENOSYS",2020-01-09T03:35:09,1
+672,210,ozlabs-change1-558751,ozlabs-patch-1240470,[05/10] usb: dwc3-generic: Use dev_read_addr() instead of devfdt_get_addr(),2020-02-19T01:54:42,1
+673,,ozlabs-change1-558751,ozlabs-patch-1241128,"[v2,5/9] usb: dwc3-generic: Use dev_read_addr() instead of devfdt_get_addr()",2020-02-20T02:32:20,1
+674,211,ozlabs-change1-504814,ozlabs-patch-1314732,"[v1,7/7] verdin-imx8mm: add EEPROM support for carrier board",2020-06-22T20:28:00,1
+675,,ozlabs-change1-504814,ozlabs-patch-1329366,"[v2,08/14] verdin-imx8mm: add EEPROM support for carrier board",2020-07-15T10:30:59,1
+676,212,ozlabs-change1-547313,ozlabs-patch-299994,"[U-Boot,33/34] Kbuild: use scripts/Makefile.clean",2013-12-11T11:01:55,1
+677,,ozlabs-change1-547313,ozlabs-patch-302677,"[U-Boot,v2,33/35] Kbuild: use scripts/Makefile.clean",2013-12-18T06:17:51,1
+678,,ozlabs-change1-547313,ozlabs-patch-305382,"[U-Boot,v3,33/36] Kbuild: use scripts/Makefile.clean",2013-12-27T05:36:01,1
+679,,ozlabs-change1-547313,ozlabs-patch-309130,"[U-Boot,v4,33/37] kbuild: use scripts/Makefile.clean",2014-01-10T06:44:30,1
+680,,ozlabs-change1-547313,ozlabs-patch-312035,"[U-Boot,v5,33/38] kbuild: use scripts/Makefile.clean",2014-01-17T11:11:02,1
+681,,ozlabs-change1-547313,ozlabs-patch-313525,"[U-Boot,v6,33/38] kbuild: use scripts/Makefile.clean",2014-01-23T11:16:05,1
+682,,ozlabs-change1-547313,ozlabs-patch-313851,"[U-Boot,v7,33/38] kbuild: use scripts/Makefile.clean",2014-01-24T10:38:14,1
+683,,ozlabs-change1-547313,ozlabs-patch-314979,"[U-Boot,v8,33/38] kbuild: use scripts/Makefile.clean",2014-01-29T12:26:30,1
+684,,ozlabs-change1-547313,ozlabs-patch-316441,"[U-Boot,v9,33/38] kbuild: use scripts/Makefile.clean",2014-02-04T08:24:40,1
+685,213,ozlabs-change1-525652,ozlabs-patch-1208056,[23/35] common: Move reset_misc() function to arch header,2019-12-12T00:47:42,1
+686,,ozlabs-change1-525652,ozlabs-patch-1215875,"[v2,23/35] common: Move reset_misc() function to arch header",2019-12-28T17:45:00,1
+687,214,ozlabs-change1-559223,ozlabs-patch-943243,"[U-Boot,2/3] dfu: Fix memory leak in dfu_init_env_entities()",2018-07-12T21:52:52,1
+688,,ozlabs-change1-559223,ozlabs-patch-943586,"[U-Boot,v2,2/3] dfu: Fix memory leak in dfu_init_env_entities()",2018-07-13T13:35:46,1
+689,215,ozlabs-change1-499799,ozlabs-patch-1199237,"[U-Boot,v4,087/100] x86: apl: Add systemagent driver",2019-11-22T04:18:52,1
+690,,ozlabs-change1-499799,ozlabs-patch-1200217,"[U-Boot,v5,088/101] x86: apl: Add systemagent driver",2019-11-25T04:10:38,1
+691,,ozlabs-change1-499799,ozlabs-patch-1205422,"[v6,088/102] x86: apl: Add systemagent driver",2019-12-07T04:43:01,1
+692,,ozlabs-change1-499799,ozlabs-patch-1205798,"[v7,03/17] x86: apl: Add systemagent driver",2019-12-09T00:32:10,1
+693,216,ozlabs-change1-503181,ozlabs-patch-81188,[U-Boot] Add support for ASIX's AX88783 ethernet chip,2011-01-31T17:35:03,1
+694,,ozlabs-change1-503181,ozlabs-patch-81189,[U-Boot] Add support for ASIX's AX88783 ethernet chip,2011-01-31T17:42:38,1
+695,217,ozlabs-change1-497896,ozlabs-patch-166522,"[U-Boot,1/3] AM335x : Add USB support for AM335x in u-boot",2012-06-22T06:17:14,1
+696,,ozlabs-change1-497896,ozlabs-patch-166539,"[U-Boot,v2,1/3] AM335x : Add USB support for AM335x in u-boot",2012-06-22T08:06:33,1
+697,,ozlabs-change1-497896,ozlabs-patch-167360,"[U-Boot,v3,1/3] AM335x : Add USB support for AM335x in u-boot",2012-06-26T09:38:01,1
+698,,ozlabs-change1-497896,ozlabs-patch-168050,"[U-Boot,v4,1/3] AM335x : Add USB support for AM335x in u-boot",2012-06-29T11:33:24,1
+699,218,ozlabs-change1-565993,ozlabs-patch-405757,"[U-Boot,v2,07/12] sf: Update GigaDevice flash params",2014-11-01T08:54:51,1
+700,,ozlabs-change1-565993,ozlabs-patch-419636,"[U-Boot,v3,4/9] sf: Update GigaDevice flash params",2014-12-10T12:51:27,1
+701,219,ozlabs-change1-503033,ozlabs-patch-530575,"[U-Boot,2/2] armv8: ls2085a: Add support of LS2085A SoC",2015-10-15T09:14:24,1
+702,,ozlabs-change1-503033,ozlabs-patch-541712,"[U-Boot,2/2,v2] armv8: ls2085a: Add support of LS2085A SoC",2015-11-09T11:12:20,1
+703,220,ozlabs-change1-495657,ozlabs-patch-608607,"[U-Boot,04/23] dm: mmc: Move mmc_switch_part() above its callers",2016-04-11T01:12:24,1
+704,,ozlabs-change1-495657,ozlabs-patch-617245,"[U-Boot,v2,04/24] dm: mmc: Move mmc_switch_part() above its callers",2016-05-01T19:52:25,1
+705,221,ozlabs-change1-510917,ozlabs-patch-183534,"[U-Boot,2/6] drivers: video: Add ld9040 video driver",2012-09-13T07:45:38,1
+706,,ozlabs-change1-510917,ozlabs-patch-185030,"[U-Boot,v2,2/5] drivers: video: Add ld9040 video driver",2012-09-19T13:01:11,1
+707,,ozlabs-change1-510917,ozlabs-patch-186399,"[U-Boot,v3,2/5] drivers: video: Add ld9040 video driver",2012-09-24T13:04:17,1
+708,,ozlabs-change1-510917,ozlabs-patch-187763,"[U-Boot,v4,2/4] drivers: video: Add ld9040 video driver",2012-09-28T10:34:36,1
+709,,ozlabs-change1-510917,ozlabs-patch-192739,"[U-Boot,v5,3/5] drivers: video: Add ld9040 video driver",2012-10-19T15:34:05,1
+710,222,ozlabs-change1-515724,ozlabs-patch-1387253,[7/7] ARM: dts: at91: sama5d3xmb: fix I2C bus unit address,2020-10-25T18:56:25,1
+711,,ozlabs-change1-515724,ozlabs-patch-1387540,"[v2,7/9] ARM: dts: at91: sama5d3xmb: fix I2C bus unit address",2020-10-26T08:39:52,1
+712,223,ozlabs-change1-523944,ozlabs-patch-1572158,usb: ehci-mx6: Enable OTG detection on imx8mm and imx8mn,2021-12-22T12:52:13,1
+713,,ozlabs-change1-523944,ozlabs-patch-1572688,[V2] usb: ehci-mx6: Enable OTG detection on imx8mm and imx8mn,2021-12-23T14:07:56,1
+714,,ozlabs-change1-523944,ozlabs-patch-1581008,[V3] usb: ehci-mx6: Enable OTG detection on imx8mm and imx8mn,2022-01-18T00:21:03,1
+715,,ozlabs-change1-523944,ozlabs-patch-1588207,[V4] usb: ehci-mx6: Enable OTG detection on imx8mm and imx8mn,2022-02-03T21:20:11,1
+716,224,ozlabs-change1-547119,ozlabs-patch-882167,"[U-Boot,1/2] spi: omap3: Skip set_mode, set_speed from claim",2018-03-06T18:03:29,1
+717,,ozlabs-change1-547119,ozlabs-patch-882402,"[U-Boot,v2,1/2] spi: omap3: Skip set_mode, set_speed from claim",2018-03-07T05:00:45,1
+718,225,ozlabs-change1-559075,ozlabs-patch-1033258,"[U-Boot,39/40] x86: Fix device-tree indentation",2019-01-30T03:59:34,1
+719,,ozlabs-change1-559075,ozlabs-patch-1091217,"[U-Boot,v2,43/50] x86: Fix device-tree indentation",2019-04-26T03:59:15,1
+720,,ozlabs-change1-559075,ozlabs-patch-1094466,"[U-Boot,v3,11/18] x86: Fix device-tree indentation",2019-05-02T16:52:21,1
+721,226,ozlabs-change1-530580,ozlabs-patch-1126053,"[U-Boot,15/18] ARM: uniphier: make dram_init() independent of SG_MEMCONF",2019-07-02T08:32:25,1
+722,,ozlabs-change1-530580,ozlabs-patch-1130343,"[U-Boot,v2,15/22] ARM: uniphier: make dram_init() independent of SG_MEMCONF",2019-07-10T11:07:43,1
+723,227,ozlabs-change1-527676,ozlabs-patch-462960,"[U-Boot,3/6] ARM: socfpga: move board select into mach-socfpga/Kconfig",2015-04-21T02:09:55,1
+724,,ozlabs-change1-527676,ozlabs-patch-463059,"[U-Boot,v2,3/6] ARM: socfpga: move board select into mach-socfpga/Kconfig",2015-04-21T11:38:20,1
+725,228,ozlabs-change1-560513,ozlabs-patch-1200030,"[U-Boot,RFC,1/1] doc: net: Rewrite network driver documentation",2019-11-25T01:32:15,1
+726,,ozlabs-change1-560513,ozlabs-patch-1215844,doc: net: Rewrite network driver documentation,2019-12-28T15:18:42,1
+727,229,ozlabs-change1-514959,ozlabs-patch-1608774,sandbox: sdl: Add stub sandbox_sdl_remove_display(),2022-03-23T18:03:42,1
+728,,ozlabs-change1-514959,ozlabs-patch-1608788,[v2] sandbox: sdl: Add stub sandbox_sdl_remove_display(),2022-03-23T20:20:37,1
+729,230,ozlabs-change1-540693,ozlabs-patch-139029,"[U-Boot,v3,4/5] net: phy: make board_phy_config responsible for calling drv->config",2012-02-02T01:14:46,1
+730,,ozlabs-change1-540693,ozlabs-patch-139255,"[U-Boot,v4,4/5] net: phy: make board_phy_config responsible for calling drv->config",2012-02-03T00:22:48,1
+731,,ozlabs-change1-540693,ozlabs-patch-140037,"[U-Boot,v5,4/5] net: phy: make board_phy_config responsible for calling drv->config",2012-02-08T00:08:49,1
+732,231,ozlabs-change1-527637,ozlabs-patch-836676,"[U-Boot,5/9] arm: zynq: Get rid of ps7_reset_apu() for syzygy board",2017-11-10T10:58:28,1
+733,,ozlabs-change1-527637,ozlabs-patch-837876,"[U-Boot,v2,5/9] arm: zynq: Get rid of ps7_reset_apu() for syzygy board",2017-11-14T14:15:36,1
+734,232,ozlabs-change1-543321,ozlabs-patch-376230,"[U-Boot,v3,5/8] buildman: Sort command line options",2014-08-04T10:36:59,1
+735,,ozlabs-change1-543321,ozlabs-patch-376712,"[U-Boot,v4,05/13] buildman: Sort command line options",2014-08-05T14:46:55,1
+736,,ozlabs-change1-543321,ozlabs-patch-378186,"[U-Boot,v5,05/13] buildman: Sort command line options",2014-08-08T11:10:22,1
+737,,ozlabs-change1-543321,ozlabs-patch-378797,"[U-Boot,v6,05/20] buildman: Sort command line options",2014-08-09T21:33:01,1
+738,233,ozlabs-change1-507338,ozlabs-patch-454902,"[U-Boot,3/4] mmc: fsl_esdhc: Add peripheral clock support for kernel",2015-03-26T05:53:52,1
+739,,ozlabs-change1-507338,ozlabs-patch-461923,"[U-Boot,v2,3/4] mmc: fsl_esdhc: Add peripheral clock support for kernel",2015-04-17T04:52:15,1
+740,234,ozlabs-change1-519368,ozlabs-patch-1516920,Allow colon in PXE bootfile URLs,2021-08-15T11:43:38,1
+741,,ozlabs-change1-519368,ozlabs-patch-1583450,[v2] Allow colon in PXE bootfile URLs,2022-01-22T15:16:36,1
+742,,ozlabs-change1-519368,ozlabs-patch-1618079,[v3] Allow colon in PXE bootfile URLs,2022-04-16T15:36:43,1
+743,235,ozlabs-change1-516102,ozlabs-patch-217352,"[U-Boot,1/1] Davinci: Make MAC address offset in EEPROM configurable CONFIG_SYS_I2C_EEPROM_MAC_OFFSET",2013-02-01T07:18:58,1
+744,,ozlabs-change1-516102,ozlabs-patch-221442,"[U-Boot,1/1] Davinci: Make MAC address offset in EEPROM configurable CONFIG_SYS_I2C_EEPROM_MAC_OFFSET",2013-02-18T18:39:45,1
+745,236,ozlabs-change1-566911,ozlabs-patch-199789,"[U-Boot,49/57] mips: Use generic global_data",2012-11-16T21:20:34,1
+746,,ozlabs-change1-566911,ozlabs-patch-206339,"[U-Boot,v2,50/58] mips: Use generic global_data",2012-12-14T06:49:19,1
+747,237,ozlabs-change1-526037,ozlabs-patch-987060,"[U-Boot,04/30] riscv: rename CPU_RISCV_32/64 to match architecture names ARCH_RV32I/64I",2018-10-19T22:07:17,1
+748,,ozlabs-change1-526037,ozlabs-patch-990813,"[U-Boot,v2,03/29] riscv: rename CPU_RISCV_32/64 to match architecture names ARCH_RV32I/64I",2018-10-30T12:55:26,1
+749,,ozlabs-change1-526037,ozlabs-patch-995487,"[U-Boot,v3,03/28] riscv: rename CPU_RISCV_32/64 to match architecture names ARCH_RV32I/64I",2018-11-09T12:58:58,1
+750,,ozlabs-change1-526037,ozlabs-patch-1001666,"[U-Boot,v4,03/28] riscv: rename CPU_RISCV_32/64 to match architecture names ARCH_RV32I/64I",2018-11-22T10:26:12,1
+751,238,ozlabs-change1-524933,ozlabs-patch-1014438,"[U-Boot,2/3] net: macb: Fix clk API usage for RISC-V systems",2018-12-17T11:51:42,1
+752,,ozlabs-change1-524933,ozlabs-patch-1016024,"[U-Boot,v2,2/3] net: macb: Fix clk API usage for RISC-V systems",2018-12-19T12:31:56,1
+753,,ozlabs-change1-524933,ozlabs-patch-1026601,"[U-Boot,04/11] net: macb: Fix clk API usage for RISC-V systems",2019-01-17T10:35:20,1
+754,,ozlabs-change1-524933,ozlabs-patch-1026600,"[U-Boot,04/11] net: macb: Fix clk API usage for RISC-V systems",2019-01-17T10:38:39,1
+755,,ozlabs-change1-524933,ozlabs-patch-1026527,"[U-Boot,04/11] net: macb: Fix clk API usage for RISC-V systems",2019-01-17T11:03:49,1
+756,,ozlabs-change1-524933,ozlabs-patch-1027217,"[U-Boot,v2,04/11] net: macb: Fix clk API usage for RISC-V systems",2019-01-18T11:19:02,1
+757,,ozlabs-change1-524933,ozlabs-patch-1029647,"[U-Boot,v3,04/12] net: macb: Fix clk API usage for RISC-V systems",2019-01-23T04:25:40,1
+758,,ozlabs-change1-524933,ozlabs-patch-1030061,"[U-Boot,v4,07/15] net: macb: Fix clk API usage for RISC-V systems",2019-01-23T16:49:18,1
+759,,ozlabs-change1-524933,ozlabs-patch-1036737,"[U-Boot,v5,07/15] net: macb: Fix clk API usage for RISC-V systems",2019-02-05T13:05:02,1
+760,,ozlabs-change1-524933,ozlabs-patch-1039131,"[U-Boot,v6,07/16] net: macb: Fix clk API usage for RISC-V systems",2019-02-09T06:32:10,1
+761,,ozlabs-change1-524933,ozlabs-patch-1039633,"[U-Boot,v7,06/15] net: macb: Fix clk API usage for RISC-V systems",2019-02-11T05:41:56,1
+762,,ozlabs-change1-524933,ozlabs-patch-1045102,"[U-Boot,v8,06/15] net: macb: Fix clk API usage for RISC-V systems",2019-02-20T05:46:44,1
+763,,ozlabs-change1-524933,ozlabs-patch-1045741,"[U-Boot,v9,06/15] net: macb: Fix clk API usage for RISC-V systems",2019-02-21T04:30:47,1
+764,,ozlabs-change1-524933,ozlabs-patch-1047617,"[U-Boot,v10,06/15] net: macb: Fix clk API usage for RISC-V systems",2019-02-25T08:14:36,1
+765,239,ozlabs-change1-527750,ozlabs-patch-999853,"[U-Boot,04/93] arm: Remove s32v234evb board",2018-11-19T15:52:44,1
+766,,ozlabs-change1-527750,ozlabs-patch-1098453,"[U-Boot,06/11] arm: Remove s32v234evb board",2019-05-11T19:23:51,1
+767,,ozlabs-change1-527750,ozlabs-patch-1438361,[19/25] arm: Remove s32v234evb board,2021-02-09T13:03:11,1
+768,,ozlabs-change1-527750,ozlabs-patch-1442695,[12/57] arm: Remove s32v234evb board,2021-02-21T01:05:49,1
+769,240,ozlabs-change1-556292,ozlabs-patch-858883,"[U-Boot,08/17] efi_loader: efi_disk_register: correctly determine if_type_name",2018-01-11T08:06:59,1
+770,,ozlabs-change1-556292,ozlabs-patch-862527,"[U-Boot,v2,08/18] efi_loader: efi_disk_register: correctly determine if_type_name",2018-01-17T19:16:02,1
+771,,ozlabs-change1-556292,ozlabs-patch-863763,"[U-Boot,v3,08/18] efi_loader: efi_disk_register: correctly determine if_type_name",2018-01-19T19:24:44,1
+772,241,ozlabs-change1-569055,ozlabs-patch-1113974,"[U-Boot,32/92] ram: rk3399: s/ca_tsel_wr_select_p/tsel_wr_select_ca_p",2019-06-11T14:50:35,1
+773,,ozlabs-change1-569055,ozlabs-patch-1116832,"[U-Boot,v2,33/99] ram: rk3399: s/ca_tsel_wr_select_p/tsel_wr_select_ca_p",2019-06-17T07:31:46,1
+774,,ozlabs-change1-569055,ozlabs-patch-1132166,"[U-Boot,v3,08/15] ram: rk3399: s/ca_tsel_wr_select_p/tsel_wr_select_ca_p",2019-07-15T18:21:03,1
+775,242,ozlabs-change1-513399,ozlabs-patch-78906,"[U-Boot,1/7] Add support for MX35 processor",2011-01-14T13:35:18,1
+776,,ozlabs-change1-513399,ozlabs-patch-79653,"[U-Boot,V2,01/11] Add support for MX35 processor",2011-01-20T08:46:24,1
+777,,ozlabs-change1-513399,ozlabs-patch-79737,"[U-Boot,V3,01/11] Add support for MX35 processor",2011-01-20T17:49:52,1
+778,243,ozlabs-change1-543681,ozlabs-patch-1043240,"[U-Boot,v1,21/22] colibri_vf: use leveling evaluated by DDR validation tools",2019-02-15T22:20:37,1
+779,,ozlabs-change1-543681,ozlabs-patch-1064554,"[U-Boot,v2,21/22] colibri_vf: use leveling evaluated by DDR validation tools",2019-03-25T16:25:11,1
+780,244,ozlabs-change1-507712,ozlabs-patch-1069572,"[U-Boot,v1,01/14] tdx-cfg-block: add support for new colibri iMX6ull skus",2019-03-29T12:34:32,1
+781,,ozlabs-change1-507712,ozlabs-patch-1082381,"[U-Boot,v2,01/14] tdx-cfg-block: add support for new colibri iMX6ull skus",2019-04-09T15:24:07,1
+782,,ozlabs-change1-507712,ozlabs-patch-1087307,"[U-Boot,v3,01/14] tdx-cfg-block: add support for new colibri iMX6ull skus",2019-04-17T23:57:19,1
+783,245,ozlabs-change1-542346,ozlabs-patch-1033251,"[U-Boot,19/40] x86: broadwell: Split CPU init",2019-01-30T03:59:14,1
+784,,ozlabs-change1-542346,ozlabs-patch-1091243,"[U-Boot,v2,19/50] x86: broadwell: Split CPU init",2019-04-26T03:58:51,1
+785,246,ozlabs-change1-561366,ozlabs-patch-1432859,[23/30] test: Use ut_run_test() to run driver model tests,2021-01-28T15:12:04,1
+786,,ozlabs-change1-561366,ozlabs-patch-1433794,"[v2,23/40] test: Use ut_run_test() to run driver model tests",2021-01-31T03:32:31,1
+787,,ozlabs-change1-561366,ozlabs-patch-1435287,"[v3,24/41] test: Use ut_run_test() to run driver model tests",2021-02-03T12:44:30,1
+788,,ozlabs-change1-561366,ozlabs-patch-1447340,"[v4,25/42] test: Use ut_run_test() to run driver model tests",2021-03-04T13:51:01,1
+789,,ozlabs-change1-561366,ozlabs-patch-1448801,"[v5,25/41] test: Use ut_run_test() to run driver model tests",2021-03-08T00:35:01,1
+790,247,ozlabs-change1-500861,ozlabs-patch-389284,"[U-Boot,26/35] arm: socfpga: reset: Add function to reset FPGA bridges",2014-09-15T11:06:19,1
+791,,ozlabs-change1-500861,ozlabs-patch-391679,"[U-Boot,35/51] arm: socfpga: reset: Add function to reset FPGA bridges",2014-09-21T13:12:16,1
+792,248,ozlabs-change1-509819,ozlabs-patch-816969,"[U-Boot,03/23] mmc: omap_hsmmc: add support to set default io voltage",2017-09-21T15:22:06,1
+793,,ozlabs-change1-509819,ozlabs-patch-865827,"[U-Boot,v2,03/24] mmc: omap_hsmmc: add support to set default io voltage",2018-01-25T10:51:29,1
+794,,ozlabs-change1-509819,ozlabs-patch-867526,"[U-Boot,v3,03/24] mmc: omap_hsmmc: add support to set default io voltage",2018-01-30T15:01:32,1
+795,249,ozlabs-change1-497445,ozlabs-patch-133267,"[U-Boot,01/14] Add AES crypto library",2011-12-26T19:32:54,1
+796,,ozlabs-change1-497445,ozlabs-patch-136004,"[U-Boot,v2,03/20] Add AES crypto library",2012-01-13T21:35:18,1
+797,,ozlabs-change1-497445,ozlabs-patch-150282,"[U-Boot,v3,05/23] Add AES crypto library",2012-04-02T23:18:45,1
+798,,ozlabs-change1-497445,ozlabs-patch-151027,"[U-Boot,v4,05/23] Add AES crypto library",2012-04-05T21:54:58,1
+799,250,ozlabs-change1-491767,ozlabs-patch-1540077,[10/16] arm: octeontx: Add a fake devicetree file,2021-10-13T01:01:14,1
+800,,ozlabs-change1-491767,ozlabs-patch-1546156,"[v5,11/26] arm: octeontx: Add a fake devicetree file",2021-10-26T00:23:29,1
+801,,ozlabs-change1-491767,ozlabs-patch-1562841,"[v6,10/25] arm: octeontx: Add a fake devicetree file",2021-12-02T15:59:04,1
+802,251,ozlabs-change1-524294,ozlabs-patch-1414820,fsp: Move and rename fsp_types.h file,2020-12-11T10:06:28,1
+803,,ozlabs-change1-524294,ozlabs-patch-1415812,[v2] fsp: Move and rename fsp_types.h file,2020-12-14T06:22:44,1
+804,,ozlabs-change1-524294,ozlabs-patch-1418989,"[v2,06/14] fsp: Move and rename fsp_types.h file",2020-12-21T11:43:06,1
+805,,ozlabs-change1-524294,ozlabs-patch-1419649,"[v3,06/14] fsp: Move and rename fsp_types.h file",2020-12-23T07:03:22,1
+806,,ozlabs-change1-524294,ozlabs-patch-1421363,"[v4,06/14] fsp: Move and rename fsp_types.h file",2020-12-30T13:57:04,1
+807,252,ozlabs-change1-546273,ozlabs-patch-197759,"[U-Boot,5/6] I2C: Driver changes for FDT support",2012-11-08T05:30:02,1
+808,,ozlabs-change1-546273,ozlabs-patch-198836,"[U-Boot,5/6,V2] I2C: Driver changes for FDT support",2012-11-14T09:11:18,1
+809,,ozlabs-change1-546273,ozlabs-patch-201300,"[U-Boot,5/6,V3] I2C: Driver changes for FDT support",2012-11-23T12:01:46,1
+810,,ozlabs-change1-546273,ozlabs-patch-202671,"[U-Boot,5/6,V4] I2C: Driver changes for FDT support",2012-11-29T07:09:50,1
+811,,ozlabs-change1-546273,ozlabs-patch-206402,"[U-Boot,05/16] I2C: Driver changes for FDT support",2012-12-14T11:56:18,1
+812,,ozlabs-change1-546273,ozlabs-patch-208256,"[U-Boot,05/16,V2] I2C: Driver changes for FDT support",2012-12-27T06:03:12,1
+813,253,ozlabs-change1-523983,ozlabs-patch-762389,"[U-Boot,09/47] Drop digital thermometer and thermostat (DTT) drivers",2017-05-15T10:57:24,1
+814,,ozlabs-change1-523983,ozlabs-patch-763247,"[U-Boot,v2,09/48] Drop digital thermometer and thermostat (DTT) drivers",2017-05-16T23:38:29,1
+815,,ozlabs-change1-523983,ozlabs-patch-763442,"[U-Boot,v3,09/48] Drop digital thermometer and thermostat (DTT) drivers",2017-05-17T09:25:05,1
+816,254,ozlabs-change1-505472,ozlabs-patch-112104,"[U-Boot,1/2] Add board_panic_no_console to deal with early critical errors",2011-08-29T16:05:09,1
+817,,ozlabs-change1-505472,ozlabs-patch-120358,"[U-Boot,v2] Add board_panic_no_console to deal with early critical errors",2011-10-18T02:16:26,1
+818,,ozlabs-change1-505472,ozlabs-patch-147620,"[U-Boot,2/5] Add board_panic_no_console() to deal with early critical errors",2012-03-19T20:27:01,1
+819,,ozlabs-change1-505472,ozlabs-patch-147742,"[U-Boot,v2,2/5] Add board_panic_no_console() to deal with early critical errors",2012-03-20T04:59:15,1
+820,255,ozlabs-change1-523574,ozlabs-patch-188973,"[U-Boot,9/9] x86: coreboot: Enable LPC TPM and CONFIG_NO_RESET_CODE",2012-10-04T00:39:28,1
+821,,ozlabs-change1-523574,ozlabs-patch-190813,"[U-Boot,v2,09/10] x86: coreboot: Enable LPC TPM and CONFIG_NO_RESET_CODE",2012-10-10T23:13:00,1
+822,256,ozlabs-change1-501863,ozlabs-patch-1410257,[21/34] ARM: dts: sama7g5: add GMAC1,2020-12-03T09:28:37,1
+823,,ozlabs-change1-501863,ozlabs-patch-1411418,"[v2,21/34] ARM: dts: sama7g5: add GMAC1",2020-12-05T10:03:03,1
+824,257,ozlabs-change1-509505,ozlabs-patch-1245015,[15/15] mtd: spi-nor-core: Add support for Cypress Semper flash,2020-02-26T12:56:05,1
+825,,ozlabs-change1-509505,ozlabs-patch-1260268,"[v2,16/16] mtd: spi-nor-core: Add support for Cypress Semper flash",2020-03-23T20:15:18,1
+826,,ozlabs-change1-509505,ozlabs-patch-1264041,"[v3,16/17] mtd: spi-nor-core: Add support for Cypress Semper flash",2020-03-30T15:45:49,1
+827,,ozlabs-change1-509505,ozlabs-patch-1296252,"[v4,19/20] mtd: spi-nor-core: Add support for Cypress Semper flash",2020-05-22T12:45:08,1
+828,,ozlabs-change1-509505,ozlabs-patch-1303518,"[v5,20/21] mtd: spi-nor-core: Add support for Cypress Semper flash",2020-06-04T12:44:37,1
+829,,ozlabs-change1-509505,ozlabs-patch-1304142,"[v6,20/21] mtd: spi-nor-core: Add support for Cypress Semper flash",2020-06-05T12:44:59,1
+830,,ozlabs-change1-509505,ozlabs-patch-1357679,"[v7,20/21] mtd: spi-nor-core: Add support for Cypress Semper flash",2020-09-04T15:34:59,1
+831,,ozlabs-change1-509505,ozlabs-patch-1461405,"[v8,27/28] mtd: spi-nor-core: Add support for Cypress Semper flash",2021-04-01T19:31:32,1
+832,,ozlabs-change1-509505,ozlabs-patch-1474247,"[v9,27/28] mtd: spi-nor-core: Add support for Cypress Semper flash",2021-05-05T09:41:37,1
+833,,ozlabs-change1-509505,ozlabs-patch-1497420,"[v10,26/27] mtd: spi-nor-core: Add support for Cypress Semper flash",2021-06-25T19:17:28,1
+834,258,ozlabs-change1-545477,ozlabs-patch-148915,"[U-Boot,1/2] FSL/eSDHC: enable the peripheral clock to detect the card",2012-03-27T10:25:00,1
+835,,ozlabs-change1-545477,ozlabs-patch-149348,"[U-Boot,1/2,v2] FSL/eSDHC: enable the peripheral clock to detect the card",2012-03-29T02:10:54,1
+836,259,ozlabs-change1-538741,ozlabs-patch-1042930,"[U-Boot,v1,3/4] board: stm32mp1: Force pinctrl driver probe in board_init()",2019-02-15T14:48:28,1
+837,,ozlabs-change1-538741,ozlabs-patch-1054327,"[U-Boot,v2,3/4] board: stm32mp1: Force pinctrl driver probe in board_init()",2019-03-11T10:13:17,1
+838,260,ozlabs-change1-507211,ozlabs-patch-1397442,[12/26] clk: add support for TI K3 SoC PLL,2020-11-10T09:05:48,1
+839,,ozlabs-change1-507211,ozlabs-patch-1403639,"[PATCHv2,13/25] clk: add support for TI K3 SoC PLL",2020-11-20T11:23:14,1
+840,,ozlabs-change1-507211,ozlabs-patch-1474499,"[PATCHv3,12/26] clk: add support for TI K3 SoC PLL",2021-05-05T17:55:26,1
+841,,ozlabs-change1-507211,ozlabs-patch-1476938,"[PATCHv4,12/26] clk: add support for TI K3 SoC PLL",2021-05-11T08:30:50,1
+842,,ozlabs-change1-507211,ozlabs-patch-1487010,"[PATCHv5,12/26] clk: add support for TI K3 SoC PLL",2021-06-03T06:32:41,1
+843,,ozlabs-change1-507211,ozlabs-patch-1490815,"[PATCHv6,12/26] clk: add support for TI K3 SoC PLL",2021-06-11T08:45:13,1
+844,261,ozlabs-change1-566598,ozlabs-patch-800487,"[U-Boot,RFC/WIP,1/2] fs/fat: split out helper to init fsdata",2017-08-11T09:59:44,1
+845,,ozlabs-change1-566598,ozlabs-patch-800975,"[U-Boot,1/8] fs/fat: split out helper to init fsdata",2017-08-13T10:45:21,1
+846,,ozlabs-change1-566598,ozlabs-patch-801203,"[U-Boot,v2,1/8] fs/fat: split out helper to init fsdata",2017-08-14T13:16:13,1
+847,,ozlabs-change1-566598,ozlabs-patch-809105,"[U-Boot,v2,1/8] fs/fat: split out helper to init fsdata",2017-09-02T16:37:56,1
+848,,ozlabs-change1-566598,ozlabs-patch-811968,"[U-Boot,v3,1/9] fs/fat: split out helper to init fsdata",2017-09-09T17:15:52,1
+849,,ozlabs-change1-566598,ozlabs-patch-812097,"[U-Boot,v3,1/9] fs/fat: split out helper to init fsdata",2017-09-10T11:21:18,1
+850,262,ozlabs-change1-520935,ozlabs-patch-664816,"[U-Boot,2/2] spi: ti_qspi: Remove unnecessary udelay for AM437x",2016-09-01T07:54:40,1
+851,,ozlabs-change1-520935,ozlabs-patch-666865,"[U-Boot,v2,2/2] spi: ti_qspi: Remove unnecessary udelay for AM437x",2016-09-07T09:48:23,1
+852,263,ozlabs-change1-514862,ozlabs-patch-464663,[U-Boot] stm32f4: add serial print port,2015-04-25T05:32:42,1
+853,,ozlabs-change1-514862,ozlabs-patch-465202,"[U-Boot,v2] stm32f4: add serial print port",2015-04-27T19:01:19,1
+854,264,ozlabs-change1-493297,ozlabs-patch-1147906,[U-Boot] armv8: fsl-layerscape: Fix a typo of Layerscape PCIe config entry,2019-08-16T02:33:06,1
+855,,ozlabs-change1-493297,ozlabs-patch-1153058,"[U-Boot,PATCHv2] armv8: fsl-layerscape: Fix a typo of Layerscape PCIe config entry",2019-08-26T08:36:24,1
+856,,ozlabs-change1-493297,ozlabs-patch-1153555,"[U-Boot,PATCHv3] armv8: fsl-layerscape: Fix a typo of Layerscape PCIe config entry",2019-08-27T03:30:03,1
+857,265,ozlabs-change1-562296,ozlabs-patch-415103,[U-Boot] sata: fix reset_sata for dwc_ahsata,2014-11-26T11:40:47,1
+858,,ozlabs-change1-562296,ozlabs-patch-415412,"[U-Boot,v2] sata: fix reset_sata for dwc_ahsata",2014-11-27T09:11:41,1
+859,266,ozlabs-change1-529688,ozlabs-patch-871892,"[U-Boot,RFC,3/3] ARM: omap3: evm: Sync with omap3_beagle configuration",2018-02-12T05:13:29,1
+860,,ozlabs-change1-529688,ozlabs-patch-877417,"[U-Boot,v2,3/3] ARM: omap3: evm: Sync with omap3_beagle configuration",2018-02-24T14:09:42,1
+861,,ozlabs-change1-529688,ozlabs-patch-878225,"[U-Boot,v3,3/3] ARM: omap3: evm: Sync with omap3_beagle configuration",2018-02-26T23:52:59,1
+862,267,ozlabs-change1-566281,ozlabs-patch-1456272,[2/2] test: unit test for longjmp,2021-03-21T10:19:47,1
+863,,ozlabs-change1-566281,ozlabs-patch-1456497,"[v2,2/2] test: unit test for longjmp",2021-03-22T11:02:49,1
+864,,ozlabs-change1-566281,ozlabs-patch-1457413,"[v3,2/2] test: unit test for longjmp",2021-03-23T18:11:27,1
+865,,ozlabs-change1-566281,ozlabs-patch-1458202,"[v4,2/2] test: unit test for longjmp",2021-03-25T07:31:50,1
+866,268,ozlabs-change1-539654,ozlabs-patch-320057,"[U-Boot,V2,10/12] board:universal: Enable device tree on Universal",2014-02-13T14:10:28,1
+867,,ozlabs-change1-539654,ozlabs-patch-323990,"[U-Boot,V3,10/12] board:universal: Enable device tree on Universal",2014-02-25T14:33:25,1
+868,,ozlabs-change1-539654,ozlabs-patch-326315,"[U-Boot,V4,10/12] board:universal: Enable device tree on Universal",2014-03-04T13:55:14,1
+869,,ozlabs-change1-539654,ozlabs-patch-327992,"[U-Boot,V5,10/12] board:universal: Enable device tree on Universal",2014-03-07T13:59:47,1
+870,269,ozlabs-change1-486246,ozlabs-patch-1271484,[1/3] kbuild: add FORCE to dependency of $(obj)/dts/dt-platdata.o,2020-04-16T04:38:24,1
+871,,ozlabs-change1-486246,ozlabs-patch-1272078,"[v2,1/3] kbuild: add FORCE to dependency of $(obj)/dts/dt-platdata.o",2020-04-17T07:21:35,1
+872,270,ozlabs-change1-557881,ozlabs-patch-830470,"[U-Boot,7/8] rockchip: evb-rk3328: enable defconfig options for TPL/SPL",2017-10-26T07:11:35,1
+873,,ozlabs-change1-557881,ozlabs-patch-1139836,"[U-Boot,5/7] rockchip: evb-rk3328: enable defconfig options for TPL/SPL",2019-07-31T16:01:06,1
+874,,ozlabs-change1-557881,ozlabs-patch-1141010,"[U-Boot,v2,5/7] rockchip: evb-rk3328: enable defconfig options for TPL/SPL",2019-08-02T07:40:02,1
+875,271,ozlabs-change1-487055,ozlabs-patch-303154,"[U-Boot,3/6] mx6: soc: Set the VDDSOC at 1.175 V",2013-12-19T03:16:26,1
+876,,ozlabs-change1-487055,ozlabs-patch-305292,"[U-Boot,v2,3/6] mx6: soc: Set the VDDSOC at 1.175 V",2013-12-26T16:51:32,1
+877,272,ozlabs-change1-539685,ozlabs-patch-150879,"[U-Boot,7/7] EXYNOS: support TRATS board display function",2012-04-05T06:29:34,1
+878,,ozlabs-change1-539685,ozlabs-patch-151080,"[U-Boot,v2,7/7] EXYNOS: support TRATS board display function",2012-04-06T05:36:27,1
+879,273,ozlabs-change1-536143,ozlabs-patch-114437,"[U-Boot,07/26] net: emaclite: Use unsigned long for baseaddr",2011-09-13T07:10:02,1
+880,,ozlabs-change1-536143,ozlabs-patch-119393,"[U-Boot,1/3,v2] net: emaclite: Use unsigned long for baseaddr",2011-10-13T09:23:21,1
+881,274,ozlabs-change1-507046,ozlabs-patch-1026611,"[U-Boot,07/11] clk: Add fixed-factor clock driver",2019-01-17T10:39:06,1
+882,,ozlabs-change1-507046,ozlabs-patch-1026537,"[U-Boot,07/11] clk: Add fixed-factor clock driver",2019-01-17T11:03:52,1
+883,,ozlabs-change1-507046,ozlabs-patch-1027221,"[U-Boot,v2,07/11] clk: Add fixed-factor clock driver",2019-01-18T11:19:16,1
+884,,ozlabs-change1-507046,ozlabs-patch-1029649,"[U-Boot,v3,07/12] clk: Add fixed-factor clock driver",2019-01-23T04:25:57,1
+885,,ozlabs-change1-507046,ozlabs-patch-1030066,"[U-Boot,v4,10/15] clk: Add fixed-factor clock driver",2019-01-23T16:49:43,1
+886,,ozlabs-change1-507046,ozlabs-patch-1036738,"[U-Boot,v5,10/15] clk: Add fixed-factor clock driver",2019-02-05T13:05:22,1
+887,,ozlabs-change1-507046,ozlabs-patch-1039135,"[U-Boot,v6,10/16] clk: Add fixed-factor clock driver",2019-02-09T06:32:40,1
+888,,ozlabs-change1-507046,ozlabs-patch-1039638,"[U-Boot,v7,09/15] clk: Add fixed-factor clock driver",2019-02-11T05:42:30,1
+889,,ozlabs-change1-507046,ozlabs-patch-1045099,"[U-Boot,v8,09/15] clk: Add fixed-factor clock driver",2019-02-20T05:47:13,1
+890,,ozlabs-change1-507046,ozlabs-patch-1045745,"[U-Boot,v9,09/15] clk: Add fixed-factor clock driver",2019-02-21T04:31:07,1
+891,,ozlabs-change1-507046,ozlabs-patch-1047621,"[U-Boot,v10,09/15] clk: Add fixed-factor clock driver",2019-02-25T08:14:55,1
+892,275,ozlabs-change1-521671,ozlabs-patch-1164774,"[U-Boot,7/7] arm: ti: boot: Use correct dtb and dtbo on Android boot",2019-09-19T17:28:22,1
+893,,ozlabs-change1-521671,ozlabs-patch-1182214,"[U-Boot,v2,8/8] arm: ti: boot: Use correct dtb and dtbo on Android boot",2019-10-23T14:34:27,1
+894,,ozlabs-change1-521671,ozlabs-patch-1215291,"[v3,9/9] arm: ti: boot: Use correct dtb and dtbo on Android boot",2019-12-24T19:54:55,1
+895,,ozlabs-change1-521671,ozlabs-patch-1228884,"[v4,10/10] arm: ti: boot: Use correct dtb and dtbo on Android boot",2020-01-24T15:53:49,1
+896,276,ozlabs-change1-505326,ozlabs-patch-187484,"[U-Boot,2/2] tegra: nand: add board pinmux",2012-09-27T21:52:04,1
+897,,ozlabs-change1-505326,ozlabs-patch-188049,"[U-Boot,v2,2/2] tegra: nand: add board pinmux",2012-09-29T20:02:09,1
+898,277,ozlabs-change1-503275,ozlabs-patch-959782,"[U-Boot,v3,24/34] board: sama5d4_xplained: add pda detect call at init time",2018-08-20T14:26:03,1
+899,,ozlabs-change1-503275,ozlabs-patch-970988,"[U-Boot,v4,24/34] board: sama5d4_xplained: add pda detect call at init time",2018-09-18T07:35:47,1
+900,278,ozlabs-change1-523967,ozlabs-patch-143165,[U-Boot] Enable high speed support for USB device framework and usbtty,2012-02-27T09:35:53,1
+901,,ozlabs-change1-523967,ozlabs-patch-148684,"[U-Boot,V2] Enable high speed support for USB device framework and usbtty",2012-03-26T10:08:06,1
+902,279,ozlabs-change1-555314,ozlabs-patch-549747,"[U-Boot,1/1] stm32: Convert serial driver to DM",2015-11-29T10:49:59,1
+903,,ozlabs-change1-555314,ozlabs-patch-550728,"[U-Boot,1/1,v2] stm32: Convert serial driver to DM",2015-12-01T08:08:19,1
+904,280,ozlabs-change1-488512,ozlabs-patch-510603,[U-Boot] Don't wrap to negative after 2G sectors,2015-08-25T19:24:13,1
+905,,ozlabs-change1-488512,ozlabs-patch-548732,[U-Boot] Don't wrap to negative after 2G sectors,2015-11-25T17:08:48,1
+906,281,ozlabs-change1-504956,ozlabs-patch-1277606,"[v1,32/49] board: ns3: add development keys used in FIT",2020-04-27T10:51:50,1
+907,,ozlabs-change1-504956,ozlabs-patch-1292069,"[v1,3/3] board: ns3: add development keys used in FIT",2020-05-17T08:24:41,1
+908,,ozlabs-change1-504956,ozlabs-patch-1306788,"[v2,3/3] board: ns3: add development keys used in FIT",2020-06-10T11:02:52,1
+909,,ozlabs-change1-504956,ozlabs-patch-1326646,"[v3,3/3] board: ns3: add development keys used in FIT",2020-07-10T10:18:25,1
+910,,ozlabs-change1-504956,ozlabs-patch-1329731,"[v4,3/3] board: ns3: add development keys used in FIT",2020-07-15T17:25:41,1
+911,282,ozlabs-change1-567665,ozlabs-patch-1592483,[17/27] imx: imx8ulp_evk: Update LPDDR4 PHY settings,2022-02-14T12:47:25,1
+912,,ozlabs-change1-567665,ozlabs-patch-1613719,"[V2,17/26] imx: imx8ulp_evk: Update LPDDR4 PHY settings",2022-04-06T06:30:22,1
+913,283,ozlabs-change1-508214,ozlabs-patch-119643,"[U-Boot,2/5] mmc: Tegra2: Add data transfer completion timeout",2011-10-13T21:57:05,1
+914,,ozlabs-change1-508214,ozlabs-patch-124686,"[U-Boot,v2,3/4] Tegra2: mmc: Add data transfer completion timeout",2011-11-09T19:45:44,1
+915,,ozlabs-change1-508214,ozlabs-patch-125015,"[U-Boot,v3,3/4] Tegra2: mmc: Add data transfer completion timeout",2011-11-10T21:56:51,1
+916,284,ozlabs-change1-555567,ozlabs-patch-273411,"[U-Boot,17/19] sandbox: convert makefiles to Kbuild style",2013-09-08T01:42:18,1
+917,,ozlabs-change1-555567,ozlabs-patch-278176,"[U-Boot,v2,17/19] sandbox: convert makefiles to Kbuild style",2013-09-26T11:51:24,1
+918,,ozlabs-change1-555567,ozlabs-patch-284140,"[U-Boot,v3,17/19] sandbox: convert makefiles to Kbuild style",2013-10-17T08:35:03,1
+919,285,ozlabs-change1-564345,ozlabs-patch-674093,[U-Boot] fs-test.sh: Update expected results,2016-09-23T13:31:32,0
+920,,ozlabs-change1-564345,ozlabs-patch-691617,"[U-Boot,2/2] fs-test.sh: Update expected results",2016-11-06T00:32:15,0
+921,286,ozlabs-change1-509745,ozlabs-patch-752235,"[U-Boot,v3,01/11] rockchip: include: grf: Add GRF register declaration for mipi dsi",2017-04-19T12:39:40,1
+922,,ozlabs-change1-509745,ozlabs-patch-752631,"[U-Boot,v4,01/11] rockchip: include: grf: Add GRF register declaration for mipi dsi",2017-04-20T04:45:49,1
+923,,ozlabs-change1-509745,ozlabs-patch-755985,"[U-Boot,v5,01/10] rockchip: include: grf: Add GRF register declaration for mipi dsi",2017-04-27T11:43:54,1
+924,,ozlabs-change1-509745,ozlabs-patch-757435,"[U-Boot,v7,1/9] rockchip: include: grf: Add GRF register declaration for mipi dsi",2017-05-02T08:19:42,1
+925,,ozlabs-change1-509745,ozlabs-patch-757528,"[U-Boot,v8,1/9] rockchip: include: grf: Add GRF register declaration for mipi dsi",2017-05-02T10:23:49,1
+926,287,ozlabs-change1-540918,ozlabs-patch-556097,"[U-Boot,06/11] drivers/pci/pci_mvebu: Fix for boards with X4 lanes",2015-12-13T00:29:54,1
+927,,ozlabs-change1-540918,ozlabs-patch-559815,"[U-Boot,v2,5/8] drivers/pci/pci_mvebu: Fix for boards with X4 lanes",2015-12-21T23:25:55,1
+928,,ozlabs-change1-540918,ozlabs-patch-561027,"[U-Boot,v3,04/10] drivers/pci/pci_mvebu: Fix for boards with X4 lanes",2015-12-25T13:41:20,1
+929,288,ozlabs-change1-567989,ozlabs-patch-674903,"[U-Boot,40/82] x86: Use X86_16BIT_INIT instead of X86_RESET_VECTOR",2016-09-26T03:33:43,1
+930,,ozlabs-change1-567989,ozlabs-patch-696913,"[U-Boot,v2,21/63] x86: Use X86_16BIT_INIT instead of X86_RESET_VECTOR",2016-11-19T20:25:10,1
+931,,ozlabs-change1-567989,ozlabs-patch-715735,"[U-Boot,v3,20/62] x86: Use X86_16BIT_INIT instead of X86_RESET_VECTOR",2017-01-16T14:03:45,1
+932,289,ozlabs-change1-552715,ozlabs-patch-582600,"[U-Boot,v6,49/76] defconfig: ls1021aqds_qspi: Enable CONFIG_MTD_DATAFLASH",2016-02-14T20:48:48,1
+933,,ozlabs-change1-552715,ozlabs-patch-600452,"[U-Boot,v7,45/87] defconfig: ls1021aqds_qspi: Enable CONFIG_MTD_DATAFLASH",2016-03-22T07:37:57,1
+934,290,ozlabs-change1-564339,ozlabs-patch-1006843,"[U-Boot,02/30] snow: Expand U-Boot size",2018-12-03T11:37:18,1
+935,,ozlabs-change1-564339,ozlabs-patch-1010209,"[U-Boot,1/4] snow: Expand U-Boot size",2018-12-10T01:44:37,1
+936,291,ozlabs-change1-558290,ozlabs-patch-1675182,[RFC] lib: efi_loader: don't delete invalid handles,2022-09-07T08:20:13,1
+937,,ozlabs-change1-558290,ozlabs-patch-1675436,"[v2,1/1] lib: efi_loader: don't delete invalid handles",2022-09-08T06:18:13,1
+938,292,ozlabs-change1-510935,ozlabs-patch-92344,"[U-Boot,v3] OMAP3: Add DSS driver for OMAP3",2011-04-20T23:52:48,1
+939,,ozlabs-change1-510935,ozlabs-patch-110487,"[U-Boot,v4] OMAP3: Add DSS driver for OMAP3",2011-08-18T00:59:38,1
+940,293,ozlabs-change1-561980,ozlabs-patch-1421122,[28/49] dtoc: Support scanning of structs in header files,2020-12-29T03:35:14,1
+941,,ozlabs-change1-561980,ozlabs-patch-1435333,"[v2,07/33] dtoc: Support scanning of structs in header files",2021-02-03T13:00:55,1
+942,294,ozlabs-change1-554727,ozlabs-patch-230163,"[U-Boot,15/21] powerpc/t4qds: Fix disabling remote I2C connection",2013-03-22T17:24:06,1
+943,,ozlabs-change1-554727,ozlabs-patch-230856,"[U-Boot,v2,batch,3,15/17] powerpc/t4qds: Fix disabling remote I2C connection",2013-03-25T17:39:37,1
+944,295,ozlabs-change1-498672,ozlabs-patch-491003,"[U-Boot,05/11] ARM: OMAP5: Add functions to enable and disable EDMA3 clocks",2015-07-03T11:16:07,1
+945,,ozlabs-change1-498672,ozlabs-patch-501925,"[U-Boot,U-Boot,v2,05/10] ARM: OMAP5: Add functions to enable and disable EDMA3 clocks",2015-07-30T05:34:38,1
+946,,ozlabs-change1-498672,ozlabs-patch-507884,"[U-Boot,U-Boot,RESEND,v2,05/10] ARM: OMAP5: Add functions to enable and disable EDMA3 clocks",2015-08-17T07:59:52,1
+947,296,ozlabs-change1-520289,ozlabs-patch-1407843,[03/13] usb: musb: Always clear the data toggle bit when configuring ep,2020-11-29T16:46:08,1
+948,,ozlabs-change1-520289,ozlabs-patch-1436833,"[RESEND,04/16] usb: musb: Always clear the data toggle bit when configuring ep",2021-02-05T19:12:00,1
+949,,ozlabs-change1-520289,ozlabs-patch-1437162,"[RESEND,v2,04/16] usb: musb: Always clear the data toggle bit when configuring ep",2021-02-07T13:50:04,1
+950,297,ozlabs-change1-517148,ozlabs-patch-573920,"[U-Boot,13/14] SECURE BOOT: Halt execution when secure boot fail after reset request",2016-01-27T10:01:10,1
+951,,ozlabs-change1-517148,ozlabs-patch-574726,"[U-Boot,v2,13/15] SECURE BOOT: Halt execution when secure boot fail after reset request",2016-01-28T13:20:14,1
+952,,ozlabs-change1-517148,ozlabs-patch-576497,"[U-Boot,v3,13/15] SECURE BOOT: Halt execution when secure boot fail after reset request",2016-02-01T11:43:52,1
+953,,ozlabs-change1-517148,ozlabs-patch-580653,"[U-Boot,v4,13/14] SECURE BOOT: Halt execution when secure boot fail after reset request",2016-02-09T05:23:41,1
+954,298,ozlabs-change1-516881,ozlabs-patch-1304675,nvme: Invalidate dcache before submitting admin cmd,2020-06-07T11:22:26,1
+955,,ozlabs-change1-516881,ozlabs-patch-1307161,[V2] nvme: Invalidate dcache before submitting admin cmd,2020-06-10T19:18:23,1
+956,299,ozlabs-change1-495214,ozlabs-patch-1549755,"[V2,11/17] arm: dts: k3-j721e-sk: Add initial A72 specific dts support",2021-11-02T14:05:52,1
+957,,ozlabs-change1-495214,ozlabs-patch-1590278,"[V3,10/16] arm: dts: k3-j721e-sk: Add initial A72 specific dts support",2022-02-09T09:36:55,1
+958,300,ozlabs-change1-515376,ozlabs-patch-256146,"[U-Boot,v3,1/1] socfpga: Adding configuration for development kit",2013-07-01T14:05:44,1
+959,,ozlabs-change1-515376,ozlabs-patch-256226,"[U-Boot,v4,1/1] socfpga: Adding configuration for development kit",2013-07-01T21:05:20,1
+960,,ozlabs-change1-515376,ozlabs-patch-263015,"[U-Boot,v5,1/1] socfpga: Adding configuration for development kit",2013-07-29T20:40:17,1
+961,,ozlabs-change1-515376,ozlabs-patch-265061,"[U-Boot,RESEND,v5,1/1] socfpga: Adding configuration for development kit",2013-08-06T14:08:35,1
+962,,ozlabs-change1-515376,ozlabs-patch-265523,"[U-Boot,v6,1/1] socfpga: Adding configuration for development kit",2013-08-07T15:06:56,1
+963,301,ozlabs-change1-491323,ozlabs-patch-1564438,"[v7,29/31] fdt: Add a Kconfig for boards with a prior stage",2021-12-07T00:12:07,1
+964,,ozlabs-change1-491323,ozlabs-patch-1569734,"[v8,28/32] fdt: Add a Kconfig for boards with a prior stage",2021-12-17T03:59:35,1
+965,302,ozlabs-change1-501203,ozlabs-patch-734749,"[U-Boot,24/31] ARM: k2g: Add DDR3 configuration for K2G ICE evm",2017-03-02T19:04:28,1
+966,,ozlabs-change1-501203,ozlabs-patch-766161,"[U-Boot,v2,21/30] ARM: k2g: Add DDR3 configuration for K2G ICE evm",2017-05-23T17:42:50,1
+967,,ozlabs-change1-501203,ozlabs-patch-766538,"[U-Boot,v3,21/30] ARM: k2g: Add DDR3 configuration for K2G ICE evm",2017-05-24T15:43:01,1
+968,,ozlabs-change1-501203,ozlabs-patch-777246,"[U-Boot,v4,21/30] ARM: k2g: Add DDR3 configuration for K2G ICE evm",2017-06-16T22:25:24,1
+969,303,ozlabs-change1-539310,ozlabs-patch-656384,"[U-Boot,06/12] sh: define CONFIG_DISPLAY_BOARDINFO to print board information",2016-08-06T18:21:06,1
+970,,ozlabs-change1-539310,ozlabs-patch-699788,"[U-Boot,RESEND,18/24] sh: define CONFIG_DISPLAY_BOARDINFO to print board information",2016-11-27T22:15:30,1
+971,304,ozlabs-change1-529505,ozlabs-patch-1331808,"[v4,1/2] arm: move CONFIG_PREBOOT=""usb start"" to KConfig",2020-07-19T13:56:31,1
+972,,ozlabs-change1-529505,ozlabs-patch-1332826,"[v4,1/2] arm: move CONFIG_PREBOOT=""usb start"" to KConfig",2020-07-21T07:32:20,1
+973,305,ozlabs-change1-526065,ozlabs-patch-690638,"[U-Boot,RFC,02/10] Makefile: use ""arm64"" architecture for U-Boot image files",2016-11-03T01:36:33,1
+974,,ozlabs-change1-526065,ozlabs-patch-697042,"[U-Boot,21/24] Makefile: use ""arm64"" architecture for U-Boot image files",2016-11-20T14:57:15,1
+975,,ozlabs-change1-526065,ozlabs-patch-702543,"[U-Boot,v2,20/23] Makefile: use ""arm64"" architecture for U-Boot image files",2016-12-05T01:52:27,1
+976,,ozlabs-change1-526065,ozlabs-patch-706897,"[U-Boot,v3,23/26] Makefile: use ""arm64"" architecture for U-Boot image files",2016-12-19T01:50:13,1
+977,,ozlabs-change1-526065,ozlabs-patch-710160,"[U-Boot,v4,23/26] Makefile: use ""arm64"" architecture for U-Boot image files",2017-01-02T11:48:47,1
+978,,ozlabs-change1-526065,ozlabs-patch-1045705,"[U-Boot,2/9] Makefile: use ""arm64"" architecture for U-Boot image files",2019-02-21T01:30:27,1
+979,306,ozlabs-change1-504333,ozlabs-patch-930484,[U-Boot] eth: dm: fec: Add gpio phy reset binding,2018-06-17T11:18:03,1
+980,,ozlabs-change1-504333,ozlabs-patch-930509,"[U-Boot,V2] eth: dm: fec: Add gpio phy reset binding",2018-06-17T13:22:39,1
+981,307,ozlabs-change1-537877,ozlabs-patch-1519195,"[v1,5/7] verdin-imx8mm: switch to use binman to pack images",2021-08-20T20:52:28,1
+982,,ozlabs-change1-537877,ozlabs-patch-1519764,"[v2,4/9] verdin-imx8mm: switch to use binman to pack images",2021-08-23T15:03:52,1
+983,,ozlabs-change1-537877,ozlabs-patch-1520825,"[v3,04/10] verdin-imx8mm: switch to use binman to pack images",2021-08-25T15:14:35,1
+984,,ozlabs-change1-537877,ozlabs-patch-1537401,"[v4,04/10] verdin-imx8mm: switch to use binman to pack images",2021-10-06T21:27:50,1
+985,,ozlabs-change1-537877,ozlabs-patch-1538083,"[v5,04/10] verdin-imx8mm: switch to use binman to pack images",2021-10-08T00:28:09,1
+986,,ozlabs-change1-537877,ozlabs-patch-1538876,"[v6,05/11] verdin-imx8mm: switch to use binman to pack images",2021-10-09T20:41:07,1
+987,308,ozlabs-change1-527199,ozlabs-patch-467833,"[U-Boot,3/4] ARM: mmc: bcm283x: Remove get_timer_us() from mmc driver",2015-05-04T20:54:36,1
+988,,ozlabs-change1-527199,ozlabs-patch-485376,"[U-Boot,3/4] ARM: mmc: bcm283x: Remove get_timer_us() from mmc driver",2015-06-17T10:44:15,1
+989,309,ozlabs-change1-501757,ozlabs-patch-896186,"[U-Boot,v1,2/2] ARM: dts: stm32mp157: Add SoC pwr regulator entry",2018-04-09T09:05:26,1
+990,,ozlabs-change1-501757,ozlabs-patch-905112,"[U-Boot,RESEND,v1,2/2] ARM: dts: stm32mp157: Add SoC pwr regulator entry",2018-04-26T14:45:19,1
+991,310,ozlabs-change1-498775,ozlabs-patch-503879,"[U-Boot,1/2] arm/ls1021a: Add sata support on qds and twr board",2015-08-05T03:31:35,1
+992,,ozlabs-change1-498775,ozlabs-patch-507918,"[U-Boot,v2] arm/ls1021a: Add sata support on qds and twr board",2015-08-17T09:42:17,1
+993,311,ozlabs-change1-539217,ozlabs-patch-274248,"[U-Boot,v3,04/11] KM: define CONFIG_SYS_I2C_INIT_BOARD only for concerned board",2013-09-11T11:17:38,1
+994,,ozlabs-change1-539217,ozlabs-patch-284505,"[U-Boot,v4,04/11] KM: define CONFIG_SYS_I2C_INIT_BOARD only for concerned board",2013-10-18T09:47:17,1
+995,312,ozlabs-change1-513879,ozlabs-patch-842132,"[U-Boot,17/23] gpio: mxc: add i.MX8M support",2017-11-28T12:31:59,1
+996,,ozlabs-change1-513879,ozlabs-patch-844105,"[U-Boot,V2,17/23] gpio: mxc: add i.MX8M support",2017-12-04T04:31:30,1
+997,,ozlabs-change1-513879,ozlabs-patch-857454,"[U-Boot,V3,25/31] gpio: mxc: add i.MX8M support",2018-01-09T12:11:45,1
+998,,ozlabs-change1-513879,ozlabs-patch-857920,"[U-Boot,V4,26/32] gpio: mxc: add i.MX8M support",2018-01-10T03:05:57,1
+999,,ozlabs-change1-513879,ozlabs-patch-857967,"[U-Boot,V5,25/31] gpio: mxc: add i.MX8M support",2018-01-10T05:20:42,1
+1000,313,ozlabs-change1-556261,ozlabs-patch-1169418,"[U-Boot,14/41] serial: usb: Correct the usbtty_...() prototypes",2019-09-30T14:40:45,1
+1001,,ozlabs-change1-556261,ozlabs-patch-1192139,"[U-Boot,v2,14/41] serial: usb: Correct the usbtty_...() prototypes",2019-11-08T19:53:21,1
+1002,,ozlabs-change1-556261,ozlabs-patch-1193810,"[U-Boot,v3,14/42] serial: usb: Correct the usbtty_...() prototypes",2019-11-12T19:42:23,1
+1003,,ozlabs-change1-556261,ozlabs-patch-1195172,"[U-Boot,v4,14/42] serial: usb: Correct the usbtty_...() prototypes",2019-11-14T19:57:22,1
+1004,314,ozlabs-change1-507483,ozlabs-patch-1420275,cmd: mmc: add mmcboot command,2020-12-23T19:57:17,1
+1005,,ozlabs-change1-507483,ozlabs-patch-1422221,[v2] cmd: mmc: add mmcboot command,2021-01-04T18:40:56,1
+1006,315,ozlabs-change1-495498,ozlabs-patch-1638373,[16/22] microblaze: Add comment about reset location,2022-06-02T13:57:40,1
+1007,,ozlabs-change1-495498,ozlabs-patch-1639855,"[v2,17/23] microblaze: Add comment about reset location",2022-06-07T08:10:34,1
+1008,,ozlabs-change1-495498,ozlabs-patch-1643581,"[v3,17/23] microblaze: Add comment about reset location",2022-06-15T10:03:54,1
+1009,,ozlabs-change1-495498,ozlabs-patch-1643761,"[v4,17/23] microblaze: Add comment about reset location",2022-06-15T13:21:13,1
+1010,316,ozlabs-change1-500294,ozlabs-patch-1645262,[02/10] ARM: dts: ast2600: Add I2C reset properties,2022-06-20T07:24:49,1
+1011,,ozlabs-change1-500294,ozlabs-patch-1646885,"[v2,02/11] ARM: dts: ast2600: Add I2C reset properties",2022-06-23T05:10:32,1
+1012,317,ozlabs-change1-567329,ozlabs-patch-134731,"[U-Boot,RFC,v2,20/28] x86: Use sections header to obtain link symbols",2012-01-07T00:24:55,1
+1013,,ozlabs-change1-567329,ozlabs-patch-141635,"[U-Boot,v3,20/28] x86: Use sections header to obtain link symbols",2012-02-16T14:49:07,1
+1014,,ozlabs-change1-567329,ozlabs-patch-146812,"[U-Boot,v4,19/27] x86: Use sections header to obtain link symbols",2012-03-15T02:16:16,1
+1015,,ozlabs-change1-567329,ozlabs-patch-219189,"[U-Boot,v5,21/23] x86: Use sections header to obtain link symbols",2013-02-08T15:12:17,1
+1016,,ozlabs-change1-567329,ozlabs-patch-225222,"[U-Boot,v6,20/31] x86: Use sections header to obtain link symbols",2013-03-06T00:39:54,1
+1017,318,ozlabs-change1-559483,ozlabs-patch-1614754,"[v1,04/24] toradex: globally disable video support",2022-04-08T08:06:59,1
+1018,,ozlabs-change1-559483,ozlabs-patch-1616658,"[v2,02/11] toradex: globally disable video support",2022-04-13T09:33:26,1
+1019,319,ozlabs-change1-510070,ozlabs-patch-1214551,[12/12] i2c: designware_i2c: Add spike supression,2019-12-21T16:15:25,1
+1020,,ozlabs-change1-510070,ozlabs-patch-1217562,"[v2,12/19] i2c: designware_i2c: Add spike supression",2020-01-03T22:26:43,1
+1021,,ozlabs-change1-510070,ozlabs-patch-1228447,"[v3,12/23] i2c: designware_i2c: Add spike supression",2020-01-23T18:48:15,1
+1022,320,ozlabs-change1-498694,ozlabs-patch-288945,"[U-Boot,3/5] ARM: OMAP5: Add PRCM and Control information for SATA",2013-11-06T14:47:24,1
+1023,,ozlabs-change1-498694,ozlabs-patch-290275,"[U-Boot,v2,4/8] ARM: OMAP5: Add PRCM and Control information for SATA",2013-11-11T13:31:18,1
+1024,,ozlabs-change1-498694,ozlabs-patch-290347,"[U-Boot,v3,4/8] ARM: OMAP5: Add PRCM and Control information for SATA",2013-11-11T14:56:40,1
+1025,321,ozlabs-change1-548531,ozlabs-patch-630453,"[U-Boot,3/6] cmd: mtdparts: consolidate mtdparts reading from env",2016-06-05T17:41:32,1
+1026,,ozlabs-change1-548531,ozlabs-patch-637845,"[U-Boot,6/6] cmd: mtdparts: consolidate mtdparts reading from env",2016-06-20T07:51:47,1
+1027,,ozlabs-change1-548531,ozlabs-patch-647550,"[U-Boot,v5,16/26] cmd: mtdparts: consolidate mtdparts reading from env",2016-07-12T18:28:24,1
+1028,322,ozlabs-change1-557092,ozlabs-patch-1476599,[2/7] firmware: ti_sci: Implement GET_RANGE with static data,2021-05-10T17:24:37,1
+1029,,ozlabs-change1-557092,ozlabs-patch-1488683,"[v2,2/7] firmware: ti_sci: Implement GET_RANGE with static data",2021-06-07T14:17:48,1
+1030,323,ozlabs-change1-518057,ozlabs-patch-257931,[U-Boot] video: Allocate the MXSFB framebuffer aligned,2013-07-10T00:52:05,1
+1031,,ozlabs-change1-518057,ozlabs-patch-263530,"[U-Boot,02/11] video: Allocate the MXSFB framebuffer aligned",2013-07-30T21:37:52,1
+1032,324,ozlabs-change1-491579,ozlabs-patch-409729,"[U-Boot,14/33] pci: Add functions to read and write a BAR address",2014-11-12T00:18:02,1
+1033,,ozlabs-change1-491579,ozlabs-patch-411092,"[U-Boot,v2,12/30] pci: Add functions to read and write a BAR address",2014-11-15T01:18:30,1
+1034,325,ozlabs-change1-559436,ozlabs-patch-929568,"[U-Boot,09/11] efi_loader: Disable miniapps on sandbox",2018-06-14T16:33:32,1
+1035,,ozlabs-change1-559436,ozlabs-patch-929620,"[U-Boot,v2,09/11] efi_loader: Disable miniapps on sandbox",2018-06-14T18:22:30,1
+1036,,ozlabs-change1-559436,ozlabs-patch-929916,"[U-Boot,v3,09/17] efi_loader: Disable miniapps on sandbox",2018-06-15T12:42:21,1
+1037,,ozlabs-change1-559436,ozlabs-patch-930928,"[U-Boot,v8,28/30] efi_loader: Disable miniapps on sandbox",2018-06-18T14:08:33,1
+1038,,ozlabs-change1-559436,ozlabs-patch-931001,"[U-Boot,v4,09/21] efi_loader: Disable miniapps on sandbox",2018-06-18T15:23:03,1
+1039,326,ozlabs-change1-522528,ozlabs-patch-206564,"[U-Boot,03/10] x86: Permit bootstage and timer data to be used prior to relocation",2012-12-14T21:13:07,1
+1040,,ozlabs-change1-522528,ozlabs-patch-224235,"[U-Boot,v2,3/9] x86: Permit bootstage and timer data to be used prior to relocation",2013-03-01T05:26:12,1
+1041,327,ozlabs-change1-492437,ozlabs-patch-776740,"[U-Boot,18/20] x86: minnowmax: Add a environment variable for USB power-on delay",2017-06-16T13:31:47,1
+1042,,ozlabs-change1-492437,ozlabs-patch-779356,"[U-Boot,v2,17/18] x86: minnowmax: Add a environment variable for USB power-on delay",2017-06-22T07:14:11,1
+1043,,ozlabs-change1-492437,ozlabs-patch-786905,"[U-Boot,v3,17/18] x86: minnowmax: Add a environment variable for USB power-on delay",2017-07-12T01:27:16,1
+1044,,ozlabs-change1-492437,ozlabs-patch-791045,"[U-Boot,v4,17/18] x86: minnowmax: Add a environment variable for USB power-on delay",2017-07-19T13:50:09,1
+1045,328,ozlabs-change1-542806,ozlabs-patch-382784,"[U-Boot,12/15] buildman: Correct counting of build failures on retry",2014-08-25T16:01:17,1
+1046,,ozlabs-change1-542806,ozlabs-patch-384233,"[U-Boot,v2,12/16] buildman: Correct counting of build failures on retry",2014-08-28T15:56:20,1
+1047,,ozlabs-change1-542806,ozlabs-patch-386564,"[U-Boot,v3,12/18] buildman: Correct counting of build failures on retry",2014-09-06T01:00:17,1
+1048,329,ozlabs-change1-543397,ozlabs-patch-676880,"[U-Boot,[RFC] 1/2] tools: buildmand: Remove duplicated code",2016-09-29T21:12:20,1
+1049,,ozlabs-change1-543397,ozlabs-patch-678250,"[U-Boot,v2,1/2] tools: buildmand: Remove duplicated code",2016-10-04T21:33:50,1
+1050,330,ozlabs-change1-493594,ozlabs-patch-1438783,[14/16] boards: Disable CMD_SATA on platforms that no longer have a SATA driver enabled,2021-02-10T02:42:55,1
+1051,,ozlabs-change1-493594,ozlabs-patch-1468829,[1/3] boards: Disable CMD_SATA on platforms that no longer have a SATA driver enabled,2021-04-21T19:32:25,1
+1052,331,ozlabs-change1-530425,ozlabs-patch-1095621,"[U-Boot,3/6] ARM: imx: novena: Enable DM GPIO",2019-05-05T23:13:33,1
+1053,,ozlabs-change1-530425,ozlabs-patch-1101187,"[U-Boot,V2,3/7] ARM: imx: novena: Enable DM GPIO",2019-05-17T18:32:16,1
+1054,332,ozlabs-change1-511603,ozlabs-patch-288618,"[U-Boot,34/34] dts: zynq: Add more zynq dts files",2013-11-05T17:46:55,1
+1055,,ozlabs-change1-511603,ozlabs-patch-302934,"[U-Boot,v2,34/35] dts: zynq: Add more zynq dts files",2013-12-18T15:30:19,1
+1056,,ozlabs-change1-511603,ozlabs-patch-303650,"[U-Boot,v3,28/29] dts: zynq: Add more zynq dts files",2013-12-19T18:09:19,1
+1057,,ozlabs-change1-511603,ozlabs-patch-308179,"[U-Boot,v4,28/29] dts: zynq: Add more zynq dts files",2014-01-08T10:23:35,1
+1058,,ozlabs-change1-511603,ozlabs-patch-308443,"[U-Boot,v5,28/30] dts: zynq: Add more zynq dts files",2014-01-08T20:18:29,1
+1059,333,ozlabs-change1-564365,ozlabs-patch-423659,"[U-Boot,1/9,v3] rsa: Split the rsa-verify to separate the modular exponentiation",2014-12-23T11:32:51,1
+1060,,ozlabs-change1-564365,ozlabs-patch-424584,"[U-Boot,1/9,v4] rsa: Split the rsa-verify to separate the modular exponentiation",2014-12-30T09:30:08,1
+1061,,ozlabs-change1-564365,ozlabs-patch-430411,"[U-Boot,01/10,v5] rsa: Split the rsa-verify to separate the modular exponentiation",2015-01-19T11:36:38,1
+1062,,ozlabs-change1-564365,ozlabs-patch-432126,"[U-Boot,01/10,v6] rsa: Split the rsa-verify to separate the modular exponentiation",2015-01-23T10:31:50,1
+1063,334,ozlabs-change1-565966,ozlabs-patch-492718,"[U-Boot,RFC,10/12] linux_compat: introduce GFP_DMA flag for kmalloc()",2015-07-08T04:29:40,1
+1064,,ozlabs-change1-565966,ozlabs-patch-494222,"[U-Boot,v2,10/14] linux_compat: introduce GFP_DMA flag for kmalloc()",2015-07-13T04:17:13,1
+1065,335,ozlabs-change1-511235,ozlabs-patch-596782,"[U-Boot,4/5] rockchip: video: Add LVDS support in vop driver",2016-03-12T13:13:35,1
+1066,,ozlabs-change1-511235,ozlabs-patch-596932,"[U-Boot,v3,5/6] rockchip: video: Add LVDS support in vop driver",2016-03-14T03:20:18,1
+1067,336,ozlabs-change1-521615,ozlabs-patch-743590,"[U-Boot,3/3] Makefile: Provide an option to select SPL or TPL",2017-03-26T23:38:17,1
+1068,,ozlabs-change1-521615,ozlabs-patch-746194,"[U-Boot,v2,3/5] Makefile: Provide an option to select SPL or TPL",2017-04-02T15:50:30,1
+1069,337,ozlabs-change1-493074,ozlabs-patch-205710,"[U-Boot,01/11] usb: net: asix: Do a fast init if link already established",2012-12-13T01:55:21,1
+1070,,ozlabs-change1-493074,ozlabs-patch-206275,"[U-Boot,v2,1/7] usb: net: asix: Do a fast init if link already established",2012-12-14T02:21:26,1
+1071,338,ozlabs-change1-492568,ozlabs-patch-992398,"[U-Boot,v3,17/18] doc: README.mediatek: Add a simple README for MediaTek",2018-11-02T15:15:45,1
+1072,,ozlabs-change1-492568,ozlabs-patch-993546,"[U-Boot,v4,17/18] doc: README.mediatek: Add a simple README for MediaTek",2018-11-06T08:47:25,1
+1073,,ozlabs-change1-492568,ozlabs-patch-998049,"[U-Boot,v5,17/18] doc: README.mediatek: Add a simple README for MediaTek",2018-11-15T02:08:05,1
+1074,339,ozlabs-change1-505439,ozlabs-patch-1556154,[03/10] microblaze: spl: add board_boot_order() implementation,2021-11-17T12:40:19,1
+1075,,ozlabs-change1-505439,ozlabs-patch-1561736,"[v2,03/10] microblaze: spl: add board_boot_order() implementation",2021-11-30T16:33:50,1
+1076,340,ozlabs-change1-537600,ozlabs-patch-1672355,binman: bintool: bzip2: fix version function on non-Debian-based systems,2022-08-31T14:32:08,1
+1077,,ozlabs-change1-537600,ozlabs-patch-1672421,"[v2,7/7] binman: bintool: bzip2: fix version function on non-Debian-based systems",2022-08-31T17:39:36,1
+1078,,ozlabs-change1-537600,ozlabs-patch-1673013,"[v3,7/7] binman: bintool: bzip2: fix version function on non-Debian-based systems",2022-09-01T15:51:43,1
+1079,341,ozlabs-change1-547217,ozlabs-patch-289729,[U-Boot] configs: clean up unused macro CONFIG_L2_OFF,2013-11-08T09:50:07,1
+1080,,ozlabs-change1-547217,ozlabs-patch-290114,"[U-Boot,v2] configs: clean up unused macro CONFIG_L2_OFF",2013-11-11T00:49:36,1
+1081,342,ozlabs-change1-532651,ozlabs-patch-1682564,"[v4,10/10] arm_ffa: corstone1000: enable EFI MM communication",2022-09-26T10:17:23,1
+1082,,ozlabs-change1-532651,ozlabs-patch-1682668,"[v5,10/10] arm_ffa: corstone1000: enable EFI MM communication",2022-09-26T14:08:27,1
+1083,343,ozlabs-change1-550018,ozlabs-patch-684439,"[U-Boot,RFC,v1,5/6] mtd: nand: pxa3xx-nand: fix random command timeouts",2016-10-20T04:31:26,1
+1084,,ozlabs-change1-550018,ozlabs-patch-686840,"[U-Boot,RFC,v2,05/10] mtd: nand: pxa3xx-nand: fix random command timeouts",2016-10-26T01:26:07,1
+1085,,ozlabs-change1-550018,ozlabs-patch-845147,"[U-Boot,RFC,v3,05/10] mtd: nand: pxa3xx-nand: fix random command timeouts",2017-12-06T06:55:43,1
+1086,,ozlabs-change1-550018,ozlabs-patch-963320,"[U-Boot,05/19] mtd: nand: pxa3xx-nand: fix random command timeouts",2018-08-29T08:56:04,1
+1087,344,ozlabs-change1-507743,ozlabs-patch-999198,"[U-Boot,RFC,3/4] command: commands: Add macros to declare commands with subcmds",2018-11-16T22:38:11,1
+1088,,ozlabs-change1-507743,ozlabs-patch-1004942,"[U-Boot,v2,4/6] command: commands: Add macros to declare commands with subcmds",2018-11-28T23:39:19,1
+1089,,ozlabs-change1-507743,ozlabs-patch-1007222,"[U-Boot,v3,4/6] command: commands: Add macros to declare commands with subcmds",2018-12-03T21:14:56,1
+1090,,ozlabs-change1-507743,ozlabs-patch-1007299,"[U-Boot,v4,4/6] command: commands: Add macros to declare commands with subcmds",2018-12-03T21:54:21,1
+1091,345,ozlabs-change1-538968,ozlabs-patch-257605,"[U-Boot,1/3] omap5: uevm: Change the board name to correct name",2013-07-08T20:59:33,1
+1092,,ozlabs-change1-538968,ozlabs-patch-258226,"[U-Boot,[PATCH,v2,1/6] omap5: uevm: Change the board name to correct name",2013-07-10T20:05:04,1
+1093,,ozlabs-change1-538968,ozlabs-patch-259749,"[U-Boot,v3,1/7] omap5: uevm: Change the board name to correct name",2013-07-17T20:16:01,1
+1094,,ozlabs-change1-538968,ozlabs-patch-264086,"[U-Boot,v4,1/7] omap5: uevm: Change the board name to correct name",2013-08-01T19:05:56,1
+1095,346,ozlabs-change1-509693,ozlabs-patch-1276793,[1/8] iopoll: Add dealy to read poll,2020-04-25T11:03:47,1
+1096,,ozlabs-change1-509693,ozlabs-patch-1279969,"[v2,1/8] iopoll: Add dealy to read poll",2020-04-30T07:04:05,1
+1097,,ozlabs-change1-509693,ozlabs-patch-1281539,"[v3,2/3] iopoll: Add dealy to read poll",2020-05-02T07:15:02,1
+1098,347,ozlabs-change1-532449,ozlabs-patch-1031689,"[U-Boot,01/13] arm64: dts: k3: Sync sdhci0 node from kernel",2019-01-28T06:45:19,1
+1099,,ozlabs-change1-532449,ozlabs-patch-1036780,"[U-Boot,v2,01/13] arm64: dts: k3: Sync sdhci0 node from kernel",2019-02-05T14:12:49,1
+1100,,ozlabs-change1-532449,ozlabs-patch-1040458,"[U-Boot,v3,01/13] arm64: dts: k3: Sync sdhci0 node from kernel",2019-02-12T08:58:07,1
+1101,348,ozlabs-change1-533864,ozlabs-patch-184210,"[U-Boot,21/71] serial: mips: Implement CONFIG_SERIAL_MULTI into asc serial driver",2012-09-16T23:20:46,1
+1102,,ozlabs-change1-533864,ozlabs-patch-187958,"[U-Boot,21/70] serial: mips: Implement CONFIG_SERIAL_MULTI into asc serial driver",2012-09-29T00:30:38,1
+1103,,ozlabs-change1-533864,ozlabs-patch-188083,"[U-Boot,21/72] serial: mips: Implement CONFIG_SERIAL_MULTI into asc serial driver",2012-09-29T21:52:14,1
+1104,349,ozlabs-change1-547780,ozlabs-patch-1442178,[2/2] clk: imx8mp Enable EQOS clock,2021-02-19T12:35:18,1
+1105,,ozlabs-change1-547780,ozlabs-patch-1442642,"[v2,2/2] clk: imx8mp Enable EQOS clock",2021-02-20T14:34:54,1
+1106,350,ozlabs-change1-506746,ozlabs-patch-437112,"[U-Boot,u-boot,32/40] usb: dwc3: Add chained TRB support for ep0",2015-02-06T08:48:09,1
+1107,,ozlabs-change1-506746,ozlabs-patch-442526,"[U-Boot,u-boot,v2,32/40] usb: dwc3: Add chained TRB support for ep0",2015-02-23T13:10:15,1
+1108,351,ozlabs-change1-558822,ozlabs-patch-998981,"[U-Boot,4/4] mtd: sf: Make sure we don't register the same device twice",2018-11-16T14:40:26,1
+1109,,ozlabs-change1-558822,ozlabs-patch-999758,"[U-Boot,4/9] mtd: sf: Make sure we don't register the same device twice",2018-11-19T11:51:16,1
+1110,,ozlabs-change1-558822,ozlabs-patch-1000093,"[U-Boot,v3,04/11] mtd: sf: Make sure we don't register the same device twice",2018-11-19T20:59:48,1
+1111,,ozlabs-change1-558822,ozlabs-patch-1006476,"[U-Boot,v4,04/11] mtd: sf: Make sure we don't register the same device twice",2018-12-02T09:54:25,1
+1112,352,ozlabs-change1-502784,ozlabs-patch-607885,"[U-Boot,v2,05/11] ARMv7: PSCI: add codes to save context ID for CPU_ON",2016-04-08T06:23:09,1
+1113,,ozlabs-change1-502784,ozlabs-patch-623458,"[U-Boot,v3,05/11] ARMv7: PSCI: add codes to save context ID for CPU_ON",2016-05-18T09:10:28,1
+1114,,ozlabs-change1-502784,ozlabs-patch-629104,"[U-Boot,v4,4/9] ARMv7: PSCI: add codes to save context ID for CPU_ON",2016-06-02T08:07:11,1
+1115,,ozlabs-change1-502784,ozlabs-patch-635074,"[U-Boot,v5,4/8] ARMv7: PSCI: add codes to save context ID for CPU_ON",2016-06-14T07:01:19,1
+1116,353,ozlabs-change1-488455,ozlabs-patch-403167,"[U-Boot,1/5] imx: gpt: Add 24Mhz OSC clock source support for GPT",2014-10-24T07:44:42,1
+1117,,ozlabs-change1-488455,ozlabs-patch-403233,"[U-Boot,1/5] imx: gpt: Add 24Mhz OSC clock source support for GPT",2014-10-24T12:32:59,1
+1118,354,ozlabs-change1-516431,ozlabs-patch-403193,"[U-Boot,04/14] exynos4/4x12: gpio: use gpio extra base addresses",2014-10-24T15:44:59,1
+1119,,ozlabs-change1-516431,ozlabs-patch-404289,"[U-Boot,2/3] exynos4/4x12: gpio: use gpio extra base addresses",2014-10-28T16:31:06,1
+1120,355,ozlabs-change1-501363,ozlabs-patch-117855,"[U-Boot,v2,04/10] arm, davinci: add support for new spl framework",2011-10-05T14:28:10,1
+1121,,ozlabs-change1-501363,ozlabs-patch-120938,"[U-Boot,v3,04/10] arm, davinci: add support for new spl framework",2011-10-21T06:32:12,1
+1122,,ozlabs-change1-501363,ozlabs-patch-121287,"[U-Boot,v4,05/11] arm, davinci: add support for new spl framework",2011-10-24T07:38:27,1
+1123,,ozlabs-change1-501363,ozlabs-patch-122720,"[U-Boot,v5,05/11] arm, davinci: add support for new spl framework",2011-10-31T04:53:04,1
+1124,,ozlabs-change1-501363,ozlabs-patch-123219,"[U-Boot,v6,05/11] arm, davinci: add support for new spl framework",2011-11-02T06:00:29,1
+1125,,ozlabs-change1-501363,ozlabs-patch-123403,"[U-Boot,v7,05/11] arm, davinci: add support for new spl framework",2011-11-03T05:31:41,1
+1126,356,ozlabs-change1-566376,ozlabs-patch-486140,"[U-Boot,v2,13/15] x86: Update README.x86 for SMP support",2015-06-18T08:17:45,1
+1127,,ozlabs-change1-566376,ozlabs-patch-487492,"[U-Boot,RESPIN,v2,13/15] x86: Update README.x86 for SMP support",2015-06-23T04:18:53,1
+1128,357,ozlabs-change1-537336,ozlabs-patch-85775,"[U-Boot,09/21] blackfin: Replace ""bfin_reset_or_hang()"" with ""panic()""",2011-03-07T17:37:30,1
+1129,,ozlabs-change1-537336,ozlabs-patch-89498,"[U-Boot,31/34] Blackfin: replace ""bfin_reset_or_hang()"" with ""panic()""",2011-04-03T08:58:38,1
+1130,358,ozlabs-change1-560893,ozlabs-patch-859513,[U-Boot] driver: fsl-mc: Perform fsl-mc fdt fixup for lazyapply dpl,2018-01-12T05:19:24,1
+1131,,ozlabs-change1-560893,ozlabs-patch-861235,"[U-Boot,v1] driver: fsl-mc: Perform fsl-mc fdt fixup for lazyapply dpl",2018-01-16T04:38:24,1
+1132,359,ozlabs-change1-531921,ozlabs-patch-1364637,[3/5] arm/dts: k3-j7200-r5-common: Hook buck1_reg to vtm supply,2020-09-15T11:36:31,1
+1133,,ozlabs-change1-531921,ozlabs-patch-1496285,"[v2,4/5] arm/dts: k3-j7200-r5-common: Hook buck1_reg to vtm supply",2021-06-23T21:14:53,1
+1134,,ozlabs-change1-531921,ozlabs-patch-1505418,"[v3,4/5] arm/dts: k3-j7200-r5-common: Hook buck1_reg to vtm supply",2021-07-14T20:52:59,1
+1135,360,ozlabs-change1-541701,ozlabs-patch-745798,[U-Boot] Inherit default value for bootdelay from distro_bootcmd on odroid-xu3.,2017-03-31T20:41:55,1
+1136,,ozlabs-change1-541701,ozlabs-patch-759189,"[U-Boot,RESEND] Inherit default value for bootdelay from distro_bootcmd on odroid-xu3.",2017-05-05T20:55:36,1
+1137,,ozlabs-change1-541701,ozlabs-patch-813635,"[U-Boot,v2] Inherit default value for bootdelay from distro_bootcmd on odroid-xu3.",2017-09-13T21:44:53,1
+1138,,ozlabs-change1-541701,ozlabs-patch-924737,"[U-Boot,RESEND] Inherit default value for bootdelay from distro_bootcmd on odroid-xu3.",2018-06-03T18:56:05,1
+1139,361,ozlabs-change1-553963,ozlabs-patch-1308410,"[v4,3/5] configs: Enable support for reset controllers on RPi4",2020-06-12T16:46:31,1
+1140,,ozlabs-change1-553963,ozlabs-patch-1314564,"[v5,3/4] configs: Enable support for reset controllers on RPi4",2020-06-22T15:30:50,1
+1141,,ozlabs-change1-553963,ozlabs-patch-1318921,"[v6,3/4] configs: Enable support for reset controllers on RPi4",2020-06-29T16:37:24,1
+1142,362,ozlabs-change1-534993,ozlabs-patch-486616,[U-Boot] pci: Configure expansion ROM during auto config process,2015-06-19T08:15:04,1
+1143,,ozlabs-change1-534993,ozlabs-patch-487473,"[U-Boot,v2,1/2] pci: Configure expansion ROM during auto config process",2015-06-23T03:45:20,1
+1144,,ozlabs-change1-534993,ozlabs-patch-492723,"[U-Boot,v3,1/2] pci: Configure expansion ROM during auto config process",2015-07-08T05:06:40,1
+1145,363,ozlabs-change1-536581,ozlabs-patch-1283112,[34/36] bdinfo: Update the file comments,2020-05-04T23:17:30,1
+1146,,ozlabs-change1-536581,ozlabs-patch-1287348,"[v2,37/39] bdinfo: Update the file comments",2020-05-10T20:17:00,1
+1147,364,ozlabs-change1-546994,ozlabs-patch-1308114,"[RFC,2/4] linux/kconfig.h: simplify logic for choosing CONFIG_{SPL_, TPL_, }*",2020-06-12T11:02:14,1
+1148,,ozlabs-change1-546994,ozlabs-patch-1322519,"[v2,1/8] linux/kconfig.h: simplify logic for choosing CONFIG_{SPL_, TPL_, }*",2020-07-03T16:37:04,1
+1149,365,ozlabs-change1-517367,ozlabs-patch-1092932,"[U-Boot,u-boot-marvell,v2,15/15] i2c: mvtwsi: fix reading status register after interrupt",2019-04-30T01:48:25,1
+1150,,ozlabs-change1-517367,ozlabs-patch-1093833,"[U-Boot,u-boot-marvell,v2.1,15/15] i2c: mvtwsi: fix reading status register after interrupt",2019-05-01T21:09:01,1
+1151,,ozlabs-change1-517367,ozlabs-patch-1094332,"[U-Boot,u-boot-marvell,v3,15/17] i2c: mvtwsi: fix reading status register after interrupt",2019-05-02T14:53:38,1
+1152,366,ozlabs-change1-521986,ozlabs-patch-1060301,"[U-Boot,1/2] ARM: tegra: Fix mux type for disp1 and disp2 clocks on Tegra210",2019-03-21T17:14:21,1
+1153,,ozlabs-change1-521986,ozlabs-patch-1085517,"[U-Boot,v5,03/27] ARM: tegra: Fix mux type for disp1 and disp2 clocks on Tegra210",2019-04-15T09:32:15,1
+1154,367,ozlabs-change1-521951,ozlabs-patch-236627,"[U-Boot,3/5] ARM: OMAP: Correct save_boot_params and replace with 'C' function",2013-04-15T15:08:38,1
+1155,,ozlabs-change1-521951,ozlabs-patch-239156,"[U-Boot,V2,3/5] ARM: OMAP: Correct save_boot_params and replace with 'C' function",2013-04-24T10:41:23,1
+1156,368,ozlabs-change1-500057,ozlabs-patch-1538193,"[v1,3/3] rockchip: rk3568: add arch_cpu_init()",2021-10-08T02:21:03,1
+1157,,ozlabs-change1-500057,ozlabs-patch-1545557,"[v2,3/3] rockchip: rk3568: add arch_cpu_init()",2021-10-25T06:33:43,1
+1158,,ozlabs-change1-500057,ozlabs-patch-1546181,"[v3,3/3] rockchip: rk3568: add arch_cpu_init()",2021-10-26T02:42:21,1
+1159,369,ozlabs-change1-537279,ozlabs-patch-405762,"[U-Boot,v2,12/12] sf: Give proper spacing between flash table params",2014-11-01T08:55:41,1
+1160,,ozlabs-change1-537279,ozlabs-patch-419641,"[U-Boot,v3,9/9] sf: Give proper spacing between flash table params",2014-12-10T12:51:32,1
+1161,370,ozlabs-change1-504097,ozlabs-patch-1003368,"[U-Boot,v8,09/31] bmips: bcm6328: add bcm6348-iudma support",2018-11-26T18:00:17,1
+1162,,ozlabs-change1-504097,ozlabs-patch-1004728,"[U-Boot,v9,06/28] bmips: bcm6328: add bcm6348-iudma support",2018-11-28T18:23:27,1
+1163,,ozlabs-change1-504097,ozlabs-patch-1005700,"[U-Boot,v10,06/28] bmips: bcm6328: add bcm6348-iudma support",2018-11-29T22:25:24,1
+1164,,ozlabs-change1-504097,ozlabs-patch-1006383,"[U-Boot,v11,06/28] bmips: bcm6328: add bcm6348-iudma support",2018-12-01T18:00:20,1
+1165,371,ozlabs-change1-560695,ozlabs-patch-1450708,[6/7] Kconfig: Document the limitations of the simple SPL_LOAD_FIT path,2021-03-10T18:04:41,1
+1166,,ozlabs-change1-560695,ozlabs-patch-1459728,"[v2,6/7] Kconfig: Document the limitations of the simple SPL_LOAD_FIT path",2021-03-29T17:05:15,1
+1167,372,ozlabs-change1-492594,ozlabs-patch-856049,"[U-Boot,v1,3/6] phy: Add a new driver for OMAP's USB2 PHYs",2018-01-05T13:50:40,1
+1168,,ozlabs-change1-492594,ozlabs-patch-885895,"[U-Boot,v2,04/10] phy: Add a new driver for OMAP's USB2 PHYs",2018-03-14T16:18:40,1
+1169,,ozlabs-change1-492594,ozlabs-patch-890978,"[U-Boot,v3,04/10] phy: Add a new driver for OMAP's USB2 PHYs",2018-03-26T13:50:27,1
+1170,,ozlabs-change1-492594,ozlabs-patch-897543,"[U-Boot,v4,05/11] phy: Add a new driver for OMAP's USB2 PHYs",2018-04-12T08:41:14,1
+1171,,ozlabs-change1-492594,ozlabs-patch-908793,"[U-Boot,v5,3/9] phy: Add a new driver for OMAP's USB2 PHYs",2018-05-04T14:34:45,1
+1172,,ozlabs-change1-492594,ozlabs-patch-920542,"[U-Boot,v6,03/11] phy: Add a new driver for OMAP's USB2 PHYs",2018-05-25T13:51:46,1
+1173,,ozlabs-change1-492594,ozlabs-patch-922058,"[U-Boot,v7,03/11] phy: Add a new driver for OMAP's USB2 PHYs",2018-05-29T12:42:09,1
+1174,,ozlabs-change1-492594,ozlabs-patch-965927,"[U-Boot,v7,03/11] phy: Add a new driver for OMAP's USB2 PHYs",2018-09-04T13:56:07,1
+1175,,ozlabs-change1-492594,ozlabs-patch-998983,"[U-Boot,v7,03/11] phy: Add a new driver for OMAP's USB2 PHYs",2018-11-16T14:54:52,1
+1176,,ozlabs-change1-492594,ozlabs-patch-1001766,"[U-Boot,v8,04/12] phy: Add a new driver for OMAP's USB2 PHYs",2018-11-22T13:22:14,1
+1177,,ozlabs-change1-492594,ozlabs-patch-1005268,"[U-Boot,v9,03/11] phy: Add a new driver for OMAP's USB2 PHYs",2018-11-29T09:57:39,1
+1178,373,ozlabs-change1-546441,ozlabs-patch-674936,"[U-Boot,54/82] x86: Fix up CONFIG_X86_64 check",2016-09-26T03:33:57,1
+1179,,ozlabs-change1-546441,ozlabs-patch-696926,"[U-Boot,v2,35/63] x86: Fix up CONFIG_X86_64 check",2016-11-19T20:25:24,1
+1180,,ozlabs-change1-546441,ozlabs-patch-715755,"[U-Boot,v3,35/62] x86: Fix up CONFIG_X86_64 check",2017-01-16T14:04:00,1
+1181,374,ozlabs-change1-513521,ozlabs-patch-313830,[U-Boot] Powerpc/QE: Add QE support for T1040,2014-01-24T09:05:49,1
+1182,,ozlabs-change1-513521,ozlabs-patch-314323,"[U-Boot,v2,2/2] Powerpc/QE: Add QE support for T1040",2014-01-27T08:14:20,1
+1183,,ozlabs-change1-513521,ozlabs-patch-318694,"[U-Boot,v3,2/2] Powerpc/QE: Add QE support for T1040",2014-02-10T08:17:11,1
+1184,,ozlabs-change1-513521,ozlabs-patch-321283,"[U-Boot,v4,2/2] Powerpc/QE: Add QE support for T1040",2014-02-18T05:52:37,1
+1185,,ozlabs-change1-513521,ozlabs-patch-328452,"[U-Boot,v5,2/2] Powerpc/QE: Add QE support for T1040",2014-03-10T01:58:03,1
+1186,,ozlabs-change1-513521,ozlabs-patch-330169,"[U-Boot,v6,2/2] Powerpc/QE: Add QE support for T1040",2014-03-14T02:00:04,1
+1187,375,ozlabs-change1-514921,ozlabs-patch-740374,"[U-Boot,01/21] reset: Add STi reset support",2017-03-17T16:25:12,1
+1188,,ozlabs-change1-514921,ozlabs-patch-741946,"[U-Boot,v2,01/14] reset: Add STi reset support",2017-03-22T09:54:03,1
+1189,376,ozlabs-change1-562111,ozlabs-patch-1620362,mips: dts: mt7620: rename nodes to generic names,2022-04-21T17:51:28,1
+1190,,ozlabs-change1-562111,ozlabs-patch-1670566,mips: dts: mt7620: rename nodes to generic names,2022-08-26T08:00:39,1
+1191,377,ozlabs-change1-503047,ozlabs-patch-628174,"[U-Boot,2/3] armv8/fsl-layerscape: add dwc3 gadget driver support",2016-05-31T11:32:49,1
+1192,,ozlabs-change1-503047,ozlabs-patch-630730,"[U-Boot,v2,3/4] armv8/fsl-layerscape: add dwc3 gadget driver support",2016-06-06T09:16:35,1
+1193,,ozlabs-change1-503047,ozlabs-patch-655716,"[U-Boot,v3,3/4] armv8/fsl-layerscape: add dwc3 gadget driver support",2016-08-04T09:26:55,1
+1194,,ozlabs-change1-503047,ozlabs-patch-757962,"[U-Boot,5/5] armv8/fsl-layerscape: add dwc3 gadget driver support",2017-05-03T11:03:11,1
+1195,,ozlabs-change1-503047,ozlabs-patch-758868,"[U-Boot,13/14] armv8/fsl-layerscape: add dwc3 gadget driver support",2017-05-05T06:07:31,1
+1196,,ozlabs-change1-503047,ozlabs-patch-762206,"[U-Boot,13/15] armv8/fsl-layerscape: add dwc3 gadget driver support",2017-05-15T02:34:29,1
+1197,,ozlabs-change1-503047,ozlabs-patch-762993,"[U-Boot,12/14] armv8/fsl-layerscape: add dwc3 gadget driver support",2017-05-16T12:16:32,1
+1198,,ozlabs-change1-503047,ozlabs-patch-763564,"[U-Boot,12/14] armv8/fsl-layerscape: add dwc3 gadget driver support",2017-05-17T11:06:41,1
+1199,,ozlabs-change1-503047,ozlabs-patch-763582,"[U-Boot,12/14] armv8/fsl-layerscape: add dwc3 gadget driver support",2017-05-17T12:05:04,1
+1200,378,ozlabs-change1-506808,ozlabs-patch-851915,"[U-Boot,10/11] Makefile: Add size check to the u-boot.itb make target",2017-12-21T12:40:29,1
+1201,,ozlabs-change1-506808,ozlabs-patch-861330,"[U-Boot,v2,11/12] Makefile: Add size check to the u-boot.itb make target",2018-01-16T08:44:23,1
+1202,379,ozlabs-change1-544347,ozlabs-patch-208202,"[U-Boot,15/20] image: Use crc header file instead of C prototypes",2012-12-26T18:57:08,1
+1203,,ozlabs-change1-544347,ozlabs-patch-222832,"[U-Boot,v3,15/22] image: Use crc header file instead of C prototypes",2013-02-25T03:33:25,1
