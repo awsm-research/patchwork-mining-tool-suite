@@ -3,7 +3,7 @@ import requests
 from tqdm import tqdm
 from copy import deepcopy
 from django.core.serializers.json import DjangoJSONEncoder
-from helpers.exceptions import InvalidFileException, InvalidItemTypeException, PostRequestException
+from application.helpers.exceptions import InvalidFileException, InvalidItemTypeException, PostRequestException
 
 SIZE_LIMIT = 16793600
 
@@ -170,7 +170,7 @@ class AccessData():
                     'msg_id',
                     'subject',
                     'content',
-                    'date'
+                    'date',
                     'sender_name',
                     'web_url',
                     'project'
@@ -425,6 +425,24 @@ class AccessData():
                                 individual_relation_data, "newseriesindividualrelation")
                             self.__post_data(
                                 series_relation_data, "newseriesseriesrelation")
+
+                        # mailing list
+                        elif item_type == self.__item_types[8]:
+
+                            standard_data = list()
+                            large_content_data = list()
+
+                            for data_item in json_data_batch:
+                                if data_item['content'] and len(data_item['content']) > SIZE_LIMIT:
+                                    large_content_data.append(data_item)
+                                else:
+                                    standard_data.append(data_item)
+
+                            if standard_data:
+                                self.__post_data(standard_data, item_type)
+                            if large_content_data:
+                                self.__post_data(
+                                    large_content_data, item_type, 'large_content/')
 
                         # individual
                         elif item_type == self.__item_types[9]:

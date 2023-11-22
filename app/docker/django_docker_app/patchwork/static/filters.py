@@ -5,6 +5,7 @@ from patchwork.serializers import *
 from django.db import models as django_models
 from djongo import models as djongo_models
 
+
 class FileFilter(django_filters.Filter):
     field_class = djongo_models.FileField
 
@@ -34,9 +35,12 @@ class ProjectFilter(django_filters.FilterSet):
 
 
 class SeriesFilter(django_filters.FilterSet):
-    date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
-    date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
-    cover_letter_content_contain = django_filters.CharFilter(field_name='cover_letter_content', method='filter_file')
+    date__lt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='lt')
+    date__gt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='gt')
+    cover_letter_content_contain = django_filters.CharFilter(
+        field_name='cover_letter_content', method='filter_file')
 
     def filter_file(self, queryset, name, value):
         lookup = '__'.join([name, 'icontains'])
@@ -64,13 +68,19 @@ class SeriesFilter(django_filters.FilterSet):
 
 
 class PatchFilter(django_filters.FilterSet):
-    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
-    name__icontains = django_filters.CharFilter(field_name='name', lookup_expr='icontains')
+    original_id__icontains = django_filters.CharFilter(
+        field_name='original_id', lookup_expr='icontains')
+    name__icontains = django_filters.CharFilter(
+        field_name='name', lookup_expr='icontains')
 
-    date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
-    date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
-    msg_content_contain = django_filters.CharFilter(field_name='msg_content', method='filter_file')
-    code_diff_contain = django_filters.CharFilter(field_name='code_diff', method='filter_file')
+    date__lt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='lt')
+    date__gt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='gt')
+    msg_content_contain = django_filters.CharFilter(
+        field_name='msg_content', method='filter_file')
+    code_diff_contain = django_filters.CharFilter(
+        field_name='code_diff', method='filter_file')
 
     def filter_file(self, queryset, name, value):
         lookup = '__'.join([name, 'icontains'])
@@ -108,11 +118,15 @@ class PatchFilter(django_filters.FilterSet):
 
 
 class CommentFilter(django_filters.FilterSet):
-    subject__icontains = django_filters.CharFilter(field_name='subject', lookup_expr='icontains')
+    subject__icontains = django_filters.CharFilter(
+        field_name='subject', lookup_expr='icontains')
 
-    date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
-    date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
-    msg_content_contain = django_filters.CharFilter(field_name='msg_content', method='filter_file')
+    date__lt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='lt')
+    date__gt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='gt')
+    msg_content_contain = django_filters.CharFilter(
+        field_name='msg_content', method='filter_file')
 
     def filter_file(self, queryset, name, value):
         lookup = '__'.join([name, 'icontains'])
@@ -146,7 +160,8 @@ class CommentFilter(django_filters.FilterSet):
 
 class NewSeriesFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
+    original_id__icontains = django_filters.CharFilter(
+        field_name='original_id', lookup_expr='icontains')
 
     class Meta:
         model = NewSeries
@@ -163,12 +178,13 @@ class NewSeriesFilter(django_filters.FilterSet):
         ]
 
 
-class Change1Filter(django_filters.FilterSet):
+class ExactBoWGroupFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
+    original_id__icontains = django_filters.CharFilter(
+        field_name='original_id', lookup_expr='icontains')
 
     class Meta:
-        model = Change1
+        model = ExactBoWGroup
         fields = [
             'id',
             'original_id',
@@ -186,12 +202,13 @@ class Change1Filter(django_filters.FilterSet):
         ]
 
 
-class Change2Filter(django_filters.FilterSet):
+class OWDiffGroupFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
+    original_id__icontains = django_filters.CharFilter(
+        field_name='original_id', lookup_expr='icontains')
 
     class Meta:
-        model = Change2
+        model = OWDiffGroup
         fields = [
             'id',
             'original_id',
@@ -211,7 +228,8 @@ class Change2Filter(django_filters.FilterSet):
 
 class IndividualFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
+    original_id__icontains = django_filters.CharFilter(
+        field_name='original_id', lookup_expr='icontains')
 
     class Meta:
         model = Individual
@@ -221,13 +239,16 @@ class IndividualFilter(django_filters.FilterSet):
             'original_id__icontains',
             # 'identity',
         ]
-    
+
 
 class MailingListFilter(django_filters.FilterSet):
 
-    original_id__icontains = django_filters.CharFilter(field_name='original_id', lookup_expr='icontains')
-    date__lt = django_filters.DateTimeFilter(field_name="date", lookup_expr='lt')
-    date__gt = django_filters.DateTimeFilter(field_name="date", lookup_expr='gt')
+    original_id__icontains = django_filters.CharFilter(
+        field_name='original_id', lookup_expr='icontains')
+    date__lt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='lt')
+    date__gt = django_filters.DateTimeFilter(
+        field_name="date", lookup_expr='gt')
 
     class Meta:
         model = MailingList

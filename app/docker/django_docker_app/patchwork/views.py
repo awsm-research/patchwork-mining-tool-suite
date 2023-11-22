@@ -18,8 +18,11 @@ from rest_framework.decorators import api_view
 SIZE_LIMIT = 16793600
 
 # Create your views here.
+
+
 def home_view(request):
     return render(request, 'patchwork/home.html')
+
 
 class APIRootView(APIView):
     name = 'Index'
@@ -35,7 +38,7 @@ class APIRootView(APIView):
             'change1': 'http://localhost:8000/patchwork/change1/',
             'change2': 'http://localhost:8000/patchwork/change2/',
             'individual': 'http://localhost:8000/patchwork/individual/',
-            })
+        })
 
 
 class IdentityListView(generics.ListAPIView):
@@ -46,6 +49,7 @@ class IdentityListView(generics.ListAPIView):
     search_fields = ['original_id', 'email', 'name']
     ordering_fields = '__all__'
     # name = 'account-list'
+
 
 class IdentityCreateView(generics.CreateAPIView):
 
@@ -143,13 +147,13 @@ class PatchListView(generics.ListAPIView):
     # serializer_class = embedded.PatchSerializer
 
     queryset = Patch.objects.all().select_related(
-        "change1", 
-        "change2", 
-        "mailinglist", 
-        "series", 
-        "newseries", 
-        "submitter_identity", 
-        "submitter_individual", 
+        "change1",
+        "change2",
+        "mailinglist",
+        "series",
+        "newseries",
+        "submitter_identity",
+        "submitter_individual",
         "project"
     )
     serializer_class = PatchListSerializer
@@ -209,12 +213,12 @@ class PatchFileCreateView(generics.CreateAPIView):
 class CommentListView(generics.ListAPIView):
 
     queryset = Comment.objects.all().select_related(
-        "change1", 
-        "change2", 
-        "mailinglist", 
-        "submitter_identity", 
-        "submitter_individual", 
-        "patch", 
+        "change1",
+        "change2",
+        "mailinglist",
+        "submitter_identity",
+        "submitter_individual",
+        "patch",
         "project"
     )
     serializer_class = CommentListSerializer
@@ -260,44 +264,46 @@ class CommentUpdateView(generics.UpdateAPIView):
             return CommentStandardSerializer
 
 
-class Change1ListView(generics.ListAPIView):
+class ExactBoWGroupListView(generics.ListAPIView):
 
-    queryset = Change1.objects.all().prefetch_related("project", "submitter_identity", "submitter_individual", "series", "newseries", "patches", "comments")
-    serializer_class = Change1ListSerializer
-    filterset_class = Change1Filter
+    queryset = ExactBoWGroup.objects.all().prefetch_related("project", "submitter_identity",
+                                                            "submitter_individual", "series", "newseries", "patches", "comments")
+    serializer_class = ExactBoWGroupListSerializer
+    filterset_class = ExactBoWGroupFilter
     ordering_fields = '__all__'
 
 
-class Change1CreateView(generics.CreateAPIView):
+class ExactBoWGroupCreateView(generics.CreateAPIView):
 
-    queryset = Change1.objects.all()
-    serializer_class = Change1CreateSerializer
+    queryset = ExactBoWGroup.objects.all()
+    serializer_class = ExactBoWGroupCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(Change1CreateView, self).get_serializer(*args, **kwargs)
+        return super(ExactBoWGroupCreateView, self).get_serializer(*args, **kwargs)
 
 
-class Change2ListView(generics.ListAPIView):
+class OWDiffGroupListView(generics.ListAPIView):
 
-    queryset = Change2.objects.all().prefetch_related("project", "submitter_identity", "submitter_individual", "series", "newseries", "patches", "comments")
-    serializer_class = Change2ListSerializer
-    filterset_class = Change2Filter
+    queryset = OWDiffGroup.objects.all().prefetch_related("project", "submitter_identity",
+                                                          "submitter_individual", "series", "newseries", "patches", "comments")
+    serializer_class = OWDiffGroupListSerializer
+    filterset_class = OWDiffGroupFilter
     ordering_fields = '__all__'
 
 
-class Change2CreateView(generics.CreateAPIView):
+class OWDiffGroupCreateView(generics.CreateAPIView):
 
-    queryset = Change2.objects.all()
-    serializer_class = Change2CreateSerializer
+    queryset = OWDiffGroup.objects.all()
+    serializer_class = OWDiffGroupCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(Change2CreateView, self).get_serializer(*args, **kwargs)
+        return super(OWDiffGroupCreateView, self).get_serializer(*args, **kwargs)
 
 
 class IndividualListView(generics.ListAPIView):
@@ -318,10 +324,10 @@ class IndividualCreateView(generics.CreateAPIView):
             kwargs["many"] = True
 
         return super(IndividualCreateView, self).get_serializer(*args, **kwargs)
-    
+
     # def create(self, request, *args, **kwargs):
     #     serializer = self.get_serializer(data=request.data)
-        
+
     #     return super().create(request, *args, **kwargs)
 
 
@@ -388,117 +394,129 @@ class NewSeriesSeriesRelationCreateView(generics.CreateAPIView):
         return super(NewSeriesSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
 
 
-class Change1IdentityRelationCreateView(generics.CreateAPIView):
+class ExactBoWGroupIdentityRelationCreateView(generics.CreateAPIView):
 
-    queryset = Change1IdentityRelation.objects.all()
-    serializer_class = Change1IdentityRelationCreateSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get("data", {}), list):
-            kwargs["many"] = True
-
-        return super(Change1IdentityRelationCreateView, self).get_serializer(*args, **kwargs)
-
-
-class Change1IndividualRelationCreateView(generics.CreateAPIView):
-
-    queryset = Change1IndividualRelation.objects.all()
-    serializer_class = Change1IndividualRelationCreateSerializer
+    queryset = ExactBoWGroupIdentityRelation.objects.all()
+    serializer_class = ExactBoWGroupIdentityRelationCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(Change1IndividualRelationCreateView, self).get_serializer(*args, **kwargs)
+        return super(ExactBoWGroupIdentityRelationCreateView, self).get_serializer(*args, **kwargs)
 
 
-class Change1SeriesRelationCreateView(generics.CreateAPIView):
+class ExactBoWGroupIndividualRelationCreateView(generics.CreateAPIView):
 
-    queryset = Change1SeriesRelation.objects.all()
-    serializer_class = Change1SeriesRelationCreateSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get("data", {}), list):
-            kwargs["many"] = True
-
-        return super(Change1SeriesRelationCreateView, self).get_serializer(*args, **kwargs)
-
-
-class Change1NewSeriesRelationCreateView(generics.CreateAPIView):
-
-    queryset = Change1NewSeriesRelation.objects.all()
-    serializer_class = Change1NewSeriesRelationCreateSerializer
+    queryset = ExactBoWGroupIndividualRelation.objects.all()
+    serializer_class = ExactBoWGroupIndividualRelationCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(Change1NewSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
+        return super(ExactBoWGroupIndividualRelationCreateView, self).get_serializer(*args, **kwargs)
 
 
-class Change2IdentityRelationCreateView(generics.CreateAPIView):
+class ExactBoWGroupSeriesRelationCreateView(generics.CreateAPIView):
 
-    queryset = Change2IdentityRelation.objects.all()
-    serializer_class = Change2IdentityRelationCreateSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get("data", {}), list):
-            kwargs["many"] = True
-
-        return super(Change2IdentityRelationCreateView, self).get_serializer(*args, **kwargs)
-
-
-class Change2IndividualRelationCreateView(generics.CreateAPIView):
-
-    queryset = Change2IndividualRelation.objects.all()
-    serializer_class = Change2IndividualRelationCreateSerializer
+    queryset = ExactBoWGroupSeriesRelation.objects.all()
+    serializer_class = ExactBoWGroupSeriesRelationCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(Change2IndividualRelationCreateView, self).get_serializer(*args, **kwargs)
+        return super(ExactBoWGroupSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
 
 
-class Change2SeriesRelationCreateView(generics.CreateAPIView):
+class ExactBoWGroupNewSeriesRelationCreateView(generics.CreateAPIView):
 
-    queryset = Change2SeriesRelation.objects.all()
-    serializer_class = Change2SeriesRelationCreateSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get("data", {}), list):
-            kwargs["many"] = True
-
-        return super(Change2SeriesRelationCreateView, self).get_serializer(*args, **kwargs)
-
-
-class Change2NewSeriesRelationCreateView(generics.CreateAPIView):
-
-    queryset = Change2NewSeriesRelation.objects.all()
-    serializer_class = Change2NewSeriesRelationCreateSerializer
+    queryset = ExactBoWGroupNewSeriesRelation.objects.all()
+    serializer_class = ExactBoWGroupNewSeriesRelationCreateSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(Change2NewSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
+        return super(ExactBoWGroupNewSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
+
+
+class OWDiffGroupIdentityRelationCreateView(generics.CreateAPIView):
+
+    queryset = OWDiffGroupIdentityRelation.objects.all()
+    serializer_class = OWDiffGroupIdentityRelationCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(OWDiffGroupIdentityRelationCreateView, self).get_serializer(*args, **kwargs)
+
+
+class OWDiffGroupIndividualRelationCreateView(generics.CreateAPIView):
+
+    queryset = OWDiffGroupIndividualRelation.objects.all()
+    serializer_class = OWDiffGroupIndividualRelationCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(OWDiffGroupIndividualRelationCreateView, self).get_serializer(*args, **kwargs)
+
+
+class OWDiffGroupSeriesRelationCreateView(generics.CreateAPIView):
+
+    queryset = OWDiffGroupSeriesRelation.objects.all()
+    serializer_class = OWDiffGroupSeriesRelationCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(OWDiffGroupSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
+
+
+class OWDiffGroupNewSeriesRelationCreateView(generics.CreateAPIView):
+
+    queryset = OWDiffGroupNewSeriesRelation.objects.all()
+    serializer_class = OWDiffGroupNewSeriesRelationCreateSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(OWDiffGroupNewSeriesRelationCreateView, self).get_serializer(*args, **kwargs)
 
 
 class MailingListListView(generics.ListAPIView):
 
     queryset = MailingList.objects.all()
-    serializer_class = MailingListSerializer
+    serializer_class = MailingListListSerializer
     filterset_class = MailingListFilter
     ordering_fields = '__all__'
 
 
-class MailingListCreateView(generics.CreateAPIView):
+class MailingListStandardCreateView(generics.CreateAPIView):
 
     queryset = MailingList.objects.all()
-    serializer_class = MailingListSerializer
+    serializer_class = MailingListStandardSerializer
 
     def get_serializer(self, *args, **kwargs):
         if isinstance(kwargs.get("data", {}), list):
             kwargs["many"] = True
 
-        return super(MailingListCreateView, self).get_serializer(*args, **kwargs)
+        return super(MailingListStandardCreateView, self).get_serializer(*args, **kwargs)
+
+
+class MailingListFileCreateView(generics.CreateAPIView):
+
+    queryset = MailingList.objects.all()
+    serializer_class = MailingListFileSerializer
+
+    def get_serializer(self, *args, **kwargs):
+        if isinstance(kwargs.get("data", {}), list):
+            kwargs["many"] = True
+
+        return super(MailingListFileCreateView, self).get_serializer(*args, **kwargs)
