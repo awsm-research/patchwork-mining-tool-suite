@@ -19,8 +19,8 @@
 17,,ozlabs-people-8097,Wei Liu,liuw@liuw.name,1
 18,ozlabs-individual-21386,ozlabs-people-76508,Stefan Ring,1701835@bugs.launchpad.net,1
 19,,ozlabs-people-2764,Stefan Ring,stefanrin@gmail.com,1
-20,ozlabs-individual-23067,ozlabs-people-19450,Petar Jovanovic,petar.jovanovic@rt-rk.com,1
-21,,ozlabs-people-22694,Petar Jovanovic,Petar.Jovanovic@imgtec.com,1
+20,ozlabs-individual-23067,ozlabs-people-19450,Petar Jovanovic,petar.jovanovic@rt-rk.com,0
+21,,ozlabs-people-22694,Petar Jovanovic,Petar.Jovanovic@imgtec.com,0
 22,,ozlabs-people-81604,Petar Jovanovic,mips32r2@gmail.com,0
 23,ozlabs-individual-23037,ozlabs-people-17007,Peter Crosthwaite,peter.crosthwaite@xilinx.com,1
 24,,ozlabs-people-64561,Peter Crosthwaite,crosthwaitepeter@gmail.com,1
@@ -143,9 +143,9 @@
 141,,ozlabs-people-24449,Eiichi Tsukata,eiichi.tsukata.xh@hitachi.com,1
 142,ozlabs-individual-20663,ozlabs-people-183,Michael Tokarev,mjt@tls.msk.ru,1
 143,,ozlabs-people-4241,Michael Tokarev,mjt+launchpad@tls.msk.ru,1
-144,ozlabs-individual-20497,ozlabs-people-70402,David Hildenbrand,david@redhat.com,1
-145,,ozlabs-people-64223,David Hildenbrand,dahi@linux.vnet.ibm.com,1
-146,,ozlabs-people-77850,David Hildenbrand,dhildenb@redhat.com,1
+144,ozlabs-individual-20497,ozlabs-people-70402,David Hildenbrand,david@redhat.com,0
+145,,ozlabs-people-64223,David Hildenbrand,dahi@linux.vnet.ibm.com,0
+146,,ozlabs-people-77850,David Hildenbrand,dhildenb@redhat.com,0
 147,,ozlabs-people-70125,David Hildenbrand,dahi@daveh.de,0
 148,ozlabs-individual-21811,ozlabs-people-80631,John Levon,john.levon@nutanix.com,1
 149,,ozlabs-people-80479,John Levon,levon@movementarian.org,1
@@ -345,8 +345,8 @@
 343,ozlabs-individual-22304,ozlabs-people-397,Dave Hansen,dave@linux.vnet.ibm.com,1
 344,,ozlabs-people-685,Dave Hansen,dave@sr71.net,1
 345,,ozlabs-people-26962,Dave Hansen,dave.hansen@intel.com,1
-346,ozlabs-individual-20456,ozlabs-people-7621,Alexey Kardashevskiy,aik@ozlabs.ru,1
-347,,ozlabs-people-6418,Alexey Kardashevskiy,aik@au1.ibm.com,1
+346,ozlabs-individual-20456,ozlabs-people-7621,Alexey Kardashevskiy,aik@ozlabs.ru,0
+347,,ozlabs-people-6418,Alexey Kardashevskiy,aik@au1.ibm.com,0
 348,,ozlabs-people-68124,Alexey Kardashevskiy,aikbox@gmail.com,0
 349,,ozlabs-people-76350,Alexey Kardashevskiy,aik@linux.ibm.com,0
 350,ozlabs-individual-21496,ozlabs-people-77695,Alexander Shopov,lists@kambanaria.org,1
@@ -376,13 +376,13 @@
 374,,ozlabs-people-22088,Evgeny Voevodin,evgenyvoevodin@gmail.com,1
 375,ozlabs-individual-20745,ozlabs-people-72611,Minwoo Im,minwoo.im.dev@gmail.com,1
 376,,ozlabs-people-76503,Minwoo Im,minwoo.im@samsung.com,1
-377,ozlabs-individual-20433,ozlabs-people-1212,Alexander Graf,agraf@suse.de,1
-378,,ozlabs-people-65661,Alexander Graf,agraf@csgraf.de,1
-379,,ozlabs-people-76572,Alexander Graf,graf@amazon.com,1
-380,,ozlabs-people-2759,Alexander Graf,alex@csgraf.de,1
+377,ozlabs-individual-20433,ozlabs-people-1212,Alexander Graf,agraf@suse.de,0
+378,,ozlabs-people-65661,Alexander Graf,agraf@csgraf.de,0
+379,,ozlabs-people-76572,Alexander Graf,graf@amazon.com,0
+380,,ozlabs-people-2759,Alexander Graf,alex@csgraf.de,0
 381,,ozlabs-people-23152,Alexander Graf,awwward@gmail.com,0
-382,,ozlabs-people-62747,Alexander Graf,agraf@suse.com,1
-383,,ozlabs-people-80375,Alexander Graf,graf@amazon.de,1
+382,,ozlabs-people-62747,Alexander Graf,agraf@suse.com,0
+383,,ozlabs-people-80375,Alexander Graf,graf@amazon.de,0
 384,ozlabs-individual-20923,ozlabs-people-64502,Rafael David Tinoco,rafael.tinoco@canonical.com,1
 385,,ozlabs-people-77358,Rafael David Tinoco,rafaeldtinoco@ubuntu.com,1
 386,,ozlabs-people-77441,Rafael David Tinoco,rafaeldtinoco@kernelpath.com,1
@@ -399,8 +399,8 @@
 397,,ozlabs-people-77556,Sam Eiderman,sameid@google.com,1
 398,ozlabs-individual-20842,ozlabs-people-71996,Anton Ivanov,anton.ivanov@cambridgegreys.com,1
 399,,ozlabs-people-61518,Anton Ivanov,anton.ivanov@kot-begemot.co.uk,1
-400,ozlabs-individual-22716,ozlabs-people-7607,John Baboval,john.baboval@virtualcomputer.com,1
-401,,ozlabs-people-25510,John Baboval,john.baboval@citrix.com,1
+400,ozlabs-individual-22716,ozlabs-people-7607,John Baboval,john.baboval@virtualcomputer.com,0
+401,,ozlabs-people-25510,John Baboval,john.baboval@citrix.com,0
 402,,ozlabs-people-47055,John Baboval,baboval@spineless.org,0
 403,ozlabs-individual-20680,ozlabs-people-6589,Mathieu Desnoyers,mathieu.desnoyers@efficios.com,1
 404,,ozlabs-people-425,Mathieu Desnoyers,compudj@krystal.dyndns.org,1
@@ -519,8 +519,8 @@
 517,,ozlabs-people-1650,Dustin Kirkland,kirkland@canonical.com,1
 518,ozlabs-individual-23034,ozlabs-people-16891,Erik de Castro Lopo,mle+tools@mega-nerd.com,1
 519,,ozlabs-people-44080,Erik de Castro Lopo,erikd@mega-nerd.com,1
-520,ozlabs-individual-20495,ozlabs-people-71914,Cornelia Huck,cohuck@redhat.com,1
-521,,ozlabs-people-214,Cornelia Huck,cornelia.huck@de.ibm.com,1
+520,ozlabs-individual-20495,ozlabs-people-71914,Cornelia Huck,cohuck@redhat.com,0
+521,,ozlabs-people-214,Cornelia Huck,cornelia.huck@de.ibm.com,0
 522,,ozlabs-people-71907,Cornelia Huck,cohuck@kernel.org,0
 523,,ozlabs-people-72442,Cornelia Huck,cornelia.huck@mailbox.org,0
 524,ozlabs-individual-21326,ozlabs-people-75916,Mark,alnyan@airmail.cc,0
@@ -578,8 +578,8 @@
 576,,ozlabs-people-81115,Roman Bolshakov,1914849@bugs.launchpad.net,1
 577,,ozlabs-people-83241,Roman Bolshakov,roman@roolebo.dev,1
 578,ozlabs-individual-20924,ozlabs-people-72265,Izik Eidus,izik@veertu.com,0
-579,,ozlabs-people-1240,Izik Eidus,ieidus@redhat.com,1
-580,,ozlabs-people-12334,Izik Eidus,izik.eidus@ravellosystems.com,1
+579,,ozlabs-people-1240,Izik Eidus,ieidus@redhat.com,0
+580,,ozlabs-people-12334,Izik Eidus,izik.eidus@ravellosystems.com,0
 581,ozlabs-individual-20472,ozlabs-people-72104,Richard Henderson,richard.henderson@linaro.org,1
 582,,ozlabs-people-2222,Richard Henderson,rth@twiddle.net,1
 583,,ozlabs-people-3368,Richard Henderson,rth7680@gmail.com,1
@@ -592,8 +592,8 @@
 590,,ozlabs-people-4144,Jens Axboe,qemu@kernel.dk,0
 591,ozlabs-individual-21419,ozlabs-people-76858,Cosmin Marin,cosmin@nutanix.com,1
 592,,ozlabs-people-76880,Cosmin Marin,cosmin.marin@nutanix.com,1
-593,ozlabs-individual-20595,ozlabs-people-68181,Wei Xu,wexu@redhat.com,1
-594,,ozlabs-people-64381,Wei Xu,xuwei5@hisilicon.com,1
+593,ozlabs-individual-20595,ozlabs-people-68181,Wei Xu,wexu@redhat.com,0
+594,,ozlabs-people-64381,Wei Xu,xuwei5@hisilicon.com,0
 595,,ozlabs-people-5048,Wei Xu,wexu2@cisco.com,0
 596,ozlabs-individual-20664,ozlabs-people-71028,Guo Ren,ren_guo@c-sky.com,1
 597,,ozlabs-people-75626,Guo Ren,guoren@kernel.org,1

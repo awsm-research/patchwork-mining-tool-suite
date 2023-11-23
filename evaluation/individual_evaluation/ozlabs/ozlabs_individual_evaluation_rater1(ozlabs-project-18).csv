@@ -190,9 +190,9 @@
 188,,ozlabs-people-79920,Pragnesh Patel,pragnesh.patel@openfive.com,1
 189,ozlabs-individual-28050,ozlabs-people-5910,Gray Remlin,g_remlin@rocketmail.com,0
 190,,ozlabs-people-6037,Gray Remlin,gryrmln@gmail.com,0
-191,ozlabs-individual-26354,ozlabs-user-56511,bmeng,bmeng.cn@gmail.com,1
-192,,ozlabs-people-64981,Bin Meng,bmeng.cn@gmail.com,1
-193,,ozlabs-people-66513,Bin Meng,bmeng.cn at gmail.com,1
+191,ozlabs-individual-26354,ozlabs-user-56511,bmeng,bmeng.cn@gmail.com,0
+192,,ozlabs-people-64981,Bin Meng,bmeng.cn@gmail.com,0
+193,,ozlabs-people-66513,Bin Meng,bmeng.cn at gmail.com,0
 194,,ozlabs-people-76079,Bin Meng,chiang77@gmail.com,0
 195,ozlabs-individual-26838,ozlabs-people-1737,Marcel Ziswiler,marcel@ziswiler.com,1
 196,,ozlabs-people-66168,Marcel Ziswiler,marcel.ziswiler@toradex.com,1
@@ -222,8 +222,8 @@
 220,,ozlabs-people-64021,Jon Loeliger,loeliger@gmail.com,0
 221,ozlabs-individual-26717,ozlabs-people-70398,Greentime Hu,green.hu@gmail.com,0
 222,,ozlabs-people-76715,Greentime Hu,greentime@andestech.com,0
-223,ozlabs-individual-26636,ozlabs-people-65948,Bryan O'Donoghue,pure.logic@nexus-software.ie,1
-224,,ozlabs-people-73098,Bryan O'Donoghue,bryan.odonoghue@linaro.org,1
+223,ozlabs-individual-26636,ozlabs-people-65948,Bryan O'Donoghue,pure.logic@nexus-software.ie,0
+224,,ozlabs-people-73098,Bryan O'Donoghue,bryan.odonoghue@linaro.org,0
 225,,ozlabs-people-78174,Bryan O'Donoghue,bod@denx.de,0
 226,ozlabs-individual-28934,ozlabs-people-73970,Jocelyn Bohr,bohr@google.com,1
 227,,ozlabs-people-73925,Jocelyn Bohr,bohr@verily.com,1
@@ -252,8 +252,8 @@
 250,,ozlabs-people-26963,Vincent Stehlé,vincent.stehle@freescale.com,1
 251,ozlabs-individual-27262,ozlabs-people-76776,Biwen Li,biwen.li@nxp.com,1
 252,,ozlabs-people-78798,Biwen Li,biwen.li@oss.nxp.com,1
-253,ozlabs-individual-26565,ozlabs-people-8164,Richard Weinberger,richard@nod.at,1
-254,,ozlabs-people-6133,Richard Weinberger,richard.weinberger@gmail.com,1
+253,ozlabs-individual-26565,ozlabs-people-8164,Richard Weinberger,richard@nod.at,0
+254,,ozlabs-people-6133,Richard Weinberger,richard.weinberger@gmail.com,0
 255,,ozlabs-people-64483,Richard Weinberger,richard@sigma-star.at,0
 256,ozlabs-individual-26455,ozlabs-people-63120,Boris Brezillon,boris.brezillon@free-electrons.com,1
 257,,ozlabs-people-73370,Boris Brezillon,boris.brezillon@bootlin.com,1
@@ -451,8 +451,8 @@
 449,,ozlabs-people-78690,Punit Agrawal,punit1.agrawal@toshiba.co.jp,1
 450,ozlabs-individual-28190,ozlabs-people-9419,Vadim Bendebury,vbendeb@chromium.org,1
 451,,ozlabs-people-25449,Vadim Bendebury,vbendeb@gmail.com,1
-452,ozlabs-individual-26470,ozlabs-people-69532,Wenyou Yang,Wenyou.Yang@microchip.com,1
-453,,ozlabs-people-16102,Wenyou Yang,wenyou.yang@atmel.com,1
+452,ozlabs-individual-26470,ozlabs-people-69532,Wenyou Yang,Wenyou.Yang@microchip.com,0
+453,,ozlabs-people-16102,Wenyou Yang,wenyou.yang@atmel.com,0
 454,,ozlabs-people-73570,Wenyou Yang,wenyouya@gmail.com,0
 455,ozlabs-individual-27230,ozlabs-people-76557,Luka Kovacic,me@lukakovacic.xyz,1
 456,,ozlabs-people-78214,Luka Kovacic,luka.kovacic@sartura.hr,1
@@ -461,8 +461,8 @@
 459,ozlabs-individual-26374,ozlabs-people-67942,Romain Naour,romain.naour@gmail.com,1
 460,,ozlabs-people-69397,Romain Naour,romain.naour@smile.fr,1
 461,ozlabs-individual-28745,ozlabs-people-66269,Nicolae Rosia,nicolae.rosia@gmail.com,0
-462,,ozlabs-people-70158,Nicolae Rosia,nicolae.rosia.oss@gmail.com,1
-463,,ozlabs-people-70305,Nicolae Rosia,Nicolae_Rosia@mentor.com,1
+462,,ozlabs-people-70158,Nicolae Rosia,nicolae.rosia.oss@gmail.com,0
+463,,ozlabs-people-70305,Nicolae Rosia,Nicolae_Rosia@mentor.com,0
 464,ozlabs-individual-26448,ozlabs-people-1476,Uwe Kleine-König,u.kleine-koenig@pengutronix.de,1
 465,,ozlabs-people-65228,Uwe Kleine-König,uwe@kleine-koenig.org,1
 466,ozlabs-individual-26560,ozlabs-people-33698,Paul Burton,paul.burton@imgtec.com,1
@@ -501,8 +501,8 @@
 499,ozlabs-individual-27460,ozlabs-people-79366,Nico Becker,u-boot@ic-automation.de,1
 500,,ozlabs-people-79405,Nico Becker,n.becker@ic-automation.de,1
 501,ozlabs-individual-27358,ozlabs-people-78053,Sughosh Ganu,sughosh.ganu@linaro.org,0
-502,,ozlabs-people-5812,Sughosh Ganu,urwithsughosh@gmail.com,1
-503,,ozlabs-people-11370,Sughosh Ganu,urwithsughosh@Hardy,1
+502,,ozlabs-people-5812,Sughosh Ganu,urwithsughosh@gmail.com,0
+503,,ozlabs-people-11370,Sughosh Ganu,urwithsughosh@Hardy,0
 504,ozlabs-individual-26883,ozlabs-people-64677,Sjoerd Simons,sjoerd.simons@collabora.co.uk,1
 505,,ozlabs-people-82380,Sjoerd Simons,sjoerd@collabora.com,1
 506,ozlabs-individual-28089,ozlabs-people-6475,Iain Paton,selsinork@gmail.com,0
