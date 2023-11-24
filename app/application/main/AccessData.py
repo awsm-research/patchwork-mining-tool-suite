@@ -4,6 +4,7 @@ from tqdm import tqdm
 from copy import deepcopy
 from django.core.serializers.json import DjangoJSONEncoder
 from application.helpers.exceptions import InvalidFileException, InvalidItemTypeException, PostRequestException
+from application.helpers.constants import *
 
 SIZE_LIMIT = 16793600
 
@@ -43,147 +44,54 @@ class AccessData():
 
         return unique_accounts
 
-    # This function is to guarantee the data to be posted contain the required fields
+    # This function is to guarantee the data to be imported to the database contain the required fields
 
     def __validate_items(self, json_data, item_type):
 
         # identity
         if item_type == self.__item_types[0]:
             for item in json_data:
-                assert {'original_id', 'email', 'name', 'api_url',
-                        'is_maintainer'}.issubset(set(item.keys()))
+                assert IDENTITY.issubset(set(item.keys()))
 
         # project
         elif item_type == self.__item_types[1]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'name',
-                    'repository_url',
-                    'api_url',
-                    'web_url',
-                    'list_id',
-                    'list_address',
-                    'maintainer_identity',
-                    # 'maintainer_individual'
-                }.issubset(set(item.keys()))
+                assert PROJECT.issubset(set(item.keys()))
 
         # series
         elif item_type == self.__item_types[2]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'name',
-                    'date',
-                    'version',
-                    'total',
-                    'received_total',
-                    'cover_letter_msg_id',
-                    'cover_letter_content',
-                    'api_url',
-                    'web_url',
-                    'project',
-                    'submitter_identity',
-                    'submitter_individual'
-                }.issubset(set(item.keys()))
+                assert SERIES.issubset(set(item.keys()))
 
         # patch
         elif item_type == self.__item_types[3]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'name',
-                    'state',
-                    'date',
-                    'msg_id',
-                    'msg_content',
-                    'code_diff',
-                    'api_url',
-                    'web_url',
-                    'commit_ref',
-                    'in_reply_to',
-                    'change1',
-                    'change2',
-                    'mailinglist',
-                    'series',
-                    'newseries',
-                    'submitter_identity',
-                    'submitter_individual',
-                    'project'
-                }.issubset(set(item.keys()))
+                assert PATCH.issubset(set(item.keys()))
 
         # comment
         elif item_type == self.__item_types[4]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'msg_id',
-                    'msg_content',
-                    'date',
-                    'subject',
-                    'in_reply_to',
-                    'web_url',
-                    'change1',
-                    'change2',
-                    'mailinglist',
-                    'submitter_identity',
-                    'submitter_individual',
-                    'patch',
-                    'project'
-                }.issubset(set(item.keys()))
+                assert COMMENT.issubset(set(item.keys()))
 
         # change
         elif item_type == self.__item_types[5] or item_type == self.__item_types[6]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'is_accepted',
-                    'parent_commit_id',
-                    'merged_commit_id',
-                    'commit_date',
-                    'project',
-                    # 'submitter_identity',
-                    # 'submitter_individual',
-                    # 'series',
-                    # 'newseries',
-                    'inspection_needed'
-                }.issubset(set(item.keys()))
+                assert CHANGE.issubset(set(item.keys()))
 
         # newseries
         elif item_type == self.__item_types[7]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'cover_letter_msg_id',
-                    'project',
-                    'submitter_identity',
-                    'submitter_individual',
-                    'series',
-                    'inspection_needed'
-                }.issubset(set(item.keys()))
+                assert NEWSERIES.issubset(set(item.keys()))
 
         # mailing list
         elif item_type == self.__item_types[8]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'msg_id',
-                    'subject',
-                    'content',
-                    'date',
-                    'sender_name',
-                    'web_url',
-                    'project'
-                }.issubset(set(item.keys()))
+                assert MAILINGLIST.issubset(set(item.keys()))
 
         # individual
         elif item_type == self.__item_types[9]:
             for item in json_data:
-                assert {
-                    'original_id',
-                    'project',
-                    'identity'
-                }.issubset(set(item.keys()))
+                assert INDIVIDUAL.issubset(set(item.keys()))
 
     # This function is to post data through the Django REST API
 
