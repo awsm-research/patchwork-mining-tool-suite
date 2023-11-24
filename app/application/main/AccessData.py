@@ -26,23 +26,23 @@ class AccessData():
         ]
         self.__endpoint = endpoint
         self.__base_url = self.__endpoint + "/patchwork"
-        self.__occurred_accounts = list()
+        self.__occurred_identities = list()
         self.__batch_size = batch_size
 
-    # This function is to speed up the insertion of accounts by removing duplicate accounts in the data
+    # This function is to speed up the insertion of identities by removing duplicate identities in the data
 
-    def __filter_unique_accounts(self, json_data, reset_account_cache):
-        if reset_account_cache:
-            self.reset_occurred_accounts()
+    def __filter_unique_identities(self, json_data, reset_identity_cache):
+        if reset_identity_cache:
+            self.reset_occurred_identities()
 
-        unique_accounts = list()
+        unique_identities = list()
 
-        for account in json_data:
-            if account['original_id'] not in self.__occurred_accounts:
-                unique_accounts.append(account)
-                self.__occurred_accounts.append(account['original_id'])
+        for identitiy in json_data:
+            if identitiy['original_id'] not in self.__occurred_identities:
+                unique_identities.append(identitiy)
+                self.__occurred_identities.append(identitiy['original_id'])
 
-        return unique_accounts
+        return unique_identities
 
     # This function is to guarantee the data to be imported to the database contain the required fields
 
@@ -78,7 +78,7 @@ class AccessData():
             for item in json_data:
                 assert CHANGE.issubset(set(item.keys()))
 
-        # newseries
+        # new series
         elif item_type == self.__item_types[7]:
             for item in json_data:
                 assert NEWSERIES.issubset(set(item.keys()))
@@ -93,7 +93,7 @@ class AccessData():
             for item in json_data:
                 assert INDIVIDUAL.issubset(set(item.keys()))
 
-    # This function is to post data through the Django REST API
+    # This function is to import data to the database through the Django REST API
 
     def __post_data(self, json_data, item_type, size_type=''):
         url = f"{self.__base_url}/{item_type}/create/{size_type}"
@@ -101,15 +101,12 @@ class AccessData():
         headers = {'Content-Type': 'application/json'}
         response = requests.post(url, headers=headers, data=payload)
 
-        # and not (response.status_code == 400 and 'original_id' in [list(e.keys())[0] for e in json.loads(response.text) if e]):
         if response.status_code not in [201]:
             raise PostRequestException(response)
 
-        # return response
+    # This function is to preprocess data and import data to the database
 
-    # Input: data can be json objects or the file path
-
-    def insert_data(self, data, item_type, reset_account_cache=False):
+    def insert_data(self, data, item_type, reset_identity_cache=False):
         try:
             if type(data) == str:
                 json_data = self.load_json(data)
@@ -124,27 +121,25 @@ class AccessData():
                 self.__validate_items(json_data, item_type)
 
                 if item_type == self.__item_types[0]:
-                    json_data = self.__filter_unique_accounts(
-                        json_data, reset_account_cache)
+                    json_data = self.__filter_unique_identities(
+                        json_data, reset_identity_cache)
 
                 n_batches = len(json_data) // self.__batch_size + 1
 
                 print(f"The data contains {len(json_data)} items.")
                 print(
                     f"It will be divided into {n_batches} batches with each containing {self.__batch_size} items (or less).")
-                # print(f"It will take around 1.5 minutes to insert one batch.")
 
                 for i in tqdm(range(0, n_batches * self.__batch_size, self.__batch_size)):
                     json_data_batch = json_data[i:i + self.__batch_size]
 
                     if json_data_batch:
-                        # print(f"Start to insert batch {int(i / self.__batch_size + 1)}")
-                        # st = time.time()
 
                         # project
                         if item_type == self.__item_types[1]:
                             relation_data = []
 
+                            # store many to many relation between project and identity
                             for data_item in json_data_batch:
                                 maintainer_info = data_item['maintainer_identity']
 
@@ -157,7 +152,9 @@ class AccessData():
 
                                 data_item['maintainer_identity'] = []
 
+                            # import project data to database
                             self.__post_data(json_data_batch, item_type)
+                            # import many to many relation between project and identity to database
                             self.__post_data(
                                 relation_data, "projectidentityrelation")
 
@@ -167,14 +164,17 @@ class AccessData():
                             standard_data = list()
                             large_content_data = list()
 
+                            # sort out items whose sizes exceed the limit
                             for data_item in json_data_batch:
                                 if data_item['cover_letter_content'] and len(data_item['cover_letter_content']) > SIZE_LIMIT:
                                     large_content_data.append(data_item)
                                 else:
                                     standard_data.append(data_item)
 
+                            # import standard data (data within size limit) to database
                             if standard_data:
                                 self.__post_data(standard_data, item_type)
+                            # import large data (data exceed size limit) to database
                             if large_content_data:
                                 self.__post_data(
                                     large_content_data, item_type, 'large_content/')
@@ -187,16 +187,25 @@ class AccessData():
                             large_content_data = list()
                             large_diff_data = list()
 
+                            # travers patch data to see if any of them contains fields exceeding size limit
                             for data_item in json_data_batch:
+                                # store data with msg_content and code_diff exceed size limit in large_data
                                 if (data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT) and (data_item['code_diff'] and len(data_item['code_diff']) > SIZE_LIMIT):
                                     large_data.append(data_item)
+
+                                # store data with only msg_content exceeds size limit in large_content_data
                                 elif data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT:
                                     large_content_data.append(data_item)
+
+                                # store data with only code_diff exceeds size limit in large_diff_data
                                 elif data_item['code_diff'] and len(data_item['code_diff']) > SIZE_LIMIT:
                                     large_diff_data.append(data_item)
+
+                                # store data within size limit in standard_data
                                 else:
                                     standard_data.append(data_item)
 
+                            # import each type of data to database
                             if standard_data:
                                 self.__post_data(standard_data, item_type)
                             if large_data:
@@ -215,12 +224,17 @@ class AccessData():
                             standard_data = list()
                             large_content_data = list()
 
+                            # travers comment data to see if any of them contains fields exceeding size limit
                             for data_item in json_data_batch:
+                                # store data with msg_content exceeds size limit in large_content_data
                                 if data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT:
                                     large_content_data.append(data_item)
+
+                                # store data within size limit in standard_data
                                 else:
                                     standard_data.append(data_item)
 
+                            # import each type of data to database
                             if standard_data:
                                 self.__post_data(standard_data, item_type)
                             if large_content_data:
@@ -242,6 +256,7 @@ class AccessData():
                                 series_info = data_item['series']
                                 newseries_info = data_item['newseries']
 
+                                # store many to many relation between change and identity
                                 for identity_item in identity_info:
                                     temp_relation = {
                                         f'{change_type}_original_id': data_item['original_id'],
@@ -250,6 +265,7 @@ class AccessData():
                                     identity_relation_data.append(
                                         temp_relation)
 
+                                # store many to many relation between change and individual
                                 for individual_item in individual_info:
                                     temp_relation = {
                                         f'{change_type}_original_id': data_item['original_id'],
@@ -258,6 +274,7 @@ class AccessData():
                                     individual_relation_data.append(
                                         temp_relation)
 
+                                # store many to many relation between change and series
                                 for series_item in series_info:
                                     temp_relation = {
                                         f'{change_type}_original_id': data_item['original_id'],
@@ -265,6 +282,7 @@ class AccessData():
                                     }
                                     series_relation_data.append(temp_relation)
 
+                                # store many to many relation between change and new series
                                 for newseries_item in newseries_info:
                                     temp_relation = {
                                         f'{change_type}_original_id': data_item['original_id'],
@@ -278,13 +296,22 @@ class AccessData():
                                 data_item['series'] = []
                                 data_item['newseries'] = []
 
+                            # import change data to database
                             self.__post_data(json_data_batch, item_type)
+
+                            # import many to many relation between change and identity to database
                             self.__post_data(
                                 identity_relation_data, f"{change_type}identityrelation")
+
+                            # import many to many relation between change and individual to database
                             self.__post_data(
                                 individual_relation_data, f"{change_type}individualrelation")
+
+                            # import many to many relation between change and series to database
                             self.__post_data(
                                 series_relation_data, f"{change_type}seriesrelation")
+
+                            # import many to many relation between change and new series to database
                             self.__post_data(
                                 newseries_relation_data, f"{change_type}newseriesrelation")
 
@@ -299,6 +326,7 @@ class AccessData():
                                 individual_info = data_item['submitter_individual']
                                 series_info = data_item['series']
 
+                                # store many to many relation between new series and identity
                                 for identity_item in identity_info:
                                     temp_relation = {
                                         'newseries_original_id': data_item['original_id'],
@@ -307,6 +335,7 @@ class AccessData():
                                     identity_relation_data.append(
                                         temp_relation)
 
+                                # store many to many relation between new series and individual
                                 for individual_item in individual_info:
                                     temp_relation = {
                                         'newseries_original_id': data_item['original_id'],
@@ -315,6 +344,7 @@ class AccessData():
                                     individual_relation_data.append(
                                         temp_relation)
 
+                                # store many to many relation between new series and series
                                 for series_item in series_info:
                                     temp_relation = {
                                         'newseries_original_id': data_item['original_id'],
@@ -326,11 +356,18 @@ class AccessData():
                                 data_item['submitter_individual'] = []
                                 data_item['series'] = []
 
+                            # import new series data to database
                             self.__post_data(json_data_batch, item_type)
+
+                            # import many to many relation between new series and identity to database
                             self.__post_data(
                                 identity_relation_data, "newseriesidentityrelation")
+
+                            # import many to many relation between new series and individual to database
                             self.__post_data(
                                 individual_relation_data, "newseriesindividualrelation")
+
+                            # import many to many relation between new series and series to database
                             self.__post_data(
                                 series_relation_data, "newseriesseriesrelation")
 
@@ -340,12 +377,18 @@ class AccessData():
                             standard_data = list()
                             large_content_data = list()
 
+                            # travers mailing list data to see if any of them contains fields exceeding size limit
                             for data_item in json_data_batch:
+
+                                # store data with content exceeds size limit in large_content_data
                                 if data_item['content'] and len(data_item['content']) > SIZE_LIMIT:
                                     large_content_data.append(data_item)
+
+                                # store data within size limit in standard_data
                                 else:
                                     standard_data.append(data_item)
 
+                            # import each type of data to database
                             if standard_data:
                                 self.__post_data(standard_data, item_type)
                             if large_content_data:
@@ -359,6 +402,7 @@ class AccessData():
                             for data_item in json_data_batch:
                                 identity_info = data_item['identity']
 
+                                # store many to many relation between individual and identity
                                 for identity_item in identity_info:
                                     temp_relation = {
                                         'individual_original_id': data_item['original_id'],
@@ -368,16 +412,16 @@ class AccessData():
 
                                 data_item['identity'] = []
 
+                            # import individual data to database
                             self.__post_data(json_data_batch, item_type)
+
+                            # import many to many relation between individual and identity to database
                             self.__post_data(
                                 relation_data, "individualidentityrelation")
 
                         # others
                         else:
                             self.__post_data(json_data_batch, item_type)
-
-                        # et = time.time()
-                        # print(f"Insertion of batch {i / self.__batch_size + 1} is completed in {(et - st) / 60: .2f} minutes.")
 
         except FileNotFoundError as e:
             print(e)
@@ -395,7 +439,7 @@ class AccessData():
             print(
                 f"Status: {e.response.status_code}\nReason: {e.response.reason}\nText: {e.response.text}")
 
-    # This funcion is to retrieve data through REST API
+    # This funcion is to retrieve data through Django REST API
 
     def retrieve_data(self, item_type, filter=''):
         filter = f"?{filter}" if filter else ''
@@ -410,8 +454,8 @@ class AccessData():
             print(
                 f"Requests status: {response.status_code}\nReason: {response.reason}\nText: {response.text}")
 
-    def reset_occurred_accounts(self):
-        self.__occurred_accounts = list()
+    def reset_occurred_identities(self):
+        self.__occurred_identities = list()
 
     def get_item_types(self):
         return deepcopy(self.__item_types)
