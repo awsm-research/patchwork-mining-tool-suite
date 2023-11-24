@@ -3,6 +3,7 @@ import time
 import jsonlines
 from application.main.ProcessPatch import ProcessPatch
 from application.main.ProcessIdentity import ProcessIdentity
+from application.main.ProcessMailingList import ProcessMailingList
 from application.helpers.utils import *
 
 # add arguments
@@ -24,6 +25,19 @@ def output_data(target_data, target_data_type):
 
 
 if __name__ == '__main__':
+    ###############
+    # process mailing list data
+    ###############
+
+    raw_data_mailinglist = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_mailinglist.jl'
+
+    process_mailinglist = ProcessMailingList()
+
+    processed_data_mailinglist = process_mailinglist.organise_data(
+        raw_data_mailinglist)
+
+    output_data(processed_data_mailinglist, 'mailinglist')
+
     ###############
     # group identities
     ###############
@@ -66,7 +80,7 @@ if __name__ == '__main__':
 
     # get file paths
     processed_data_individual_path = f'{RESULTS_DIR}{ECOSYSTEM}/{ECOSYSTEM}_individual.jl'
-    data_mailinglist_path = f'{RESULTS_DIR}{ECOSYSTEM}/{ECOSYSTEM}_mailinglist.jl'
+    processed_data_mailinglist_path = f'{RESULTS_DIR}{ECOSYSTEM}/{ECOSYSTEM}_mailinglist.jl'
 
     raw_data_patch_path = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_patch.jl'
     raw_data_comment_path = f'{RAW_DATA_DIR}{ECOSYSTEM}/{ECOSYSTEM}_comment.jl'
@@ -76,7 +90,8 @@ if __name__ == '__main__':
     processed_data_individual = load_json(processed_data_individual_path)
     raw_data_patch = load_json(raw_data_patch_path)
     raw_data_comment = load_json(raw_data_comment_path)
-    data_mailinglist = load_json(data_mailinglist_path)
+    processed_data_mailinglist = process_mailinglist.organise_data_by_project(
+        load_json(processed_data_mailinglist_path))
 
     # instantiate process_patch class
     process_patch = ProcessPatch()
@@ -106,17 +121,20 @@ if __name__ == '__main__':
         results = process_patch.patch_grouping(
             current_data_patch, current_data_comment, current_data_individual)
 
+        # insert mailing list orginal id to patch data
+        process_patch.insert_mailinglist_id(
+            processed_data_mailinglist[project_oid], results[1])
+
+        # insert mailing list orginal id to comment data
+        process_patch.insert_mailinglist_id(
+            processed_data_mailinglist[project_oid], results[2])
+
         # store newly processed project data
         [processed_data[i].extend(results[i]) for i in range(len(results))]
 
         end_time = time.time()
         print(f'{project_oid}: {(end_time - start_time) / 60: .2f} min')
         print()
-
-    # insert mailing list orginal id to patch data
-    process_patch.insert_mailinglist_id(data_mailinglist, processed_data[1])
-    # insert mailing list orginal id to comment data
-    process_patch.insert_mailinglist_id(data_mailinglist, processed_data[2])
 
     et = time.time()
     print(f'total time: {(et - st) / 60: .2f} min')
