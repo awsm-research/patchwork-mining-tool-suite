@@ -1,10 +1,9 @@
-from collections import Counter, defaultdict
-from copy import deepcopy
-from application.helpers.utils import insert_individual_original_id
-
 import re
 import nltk
 
+from collections import Counter, defaultdict
+from copy import deepcopy
+from application.helpers.utils import insert_individual_original_id
 from nltk.tokenize import word_tokenize
 from tqdm import tqdm
 
@@ -27,32 +26,41 @@ class ProcessPatch():
 
         return organised_data
 
+    # This function is to create new series for patches, complementing missing series information
+    # Patches that replied to the same email are considered as a new series of patches
     def series_grouping(self, patch_data: list):
         patch_data = deepcopy(patch_data)
 
-        # map msg_id to newseries_original_id
         msgid_newseries_map = dict()
-
         newseries_collection = dict()
         ecosystem = patch_data[0]['original_id'].split('-')[0]
 
         for patch in patch_data:
+            # skip if the patch does not contain in-reply-to id and its name does not indicate itself as in a series
             if patch['in_reply_to'] and self.__is_series_patch(patch['name']):
+
                 in_reply_to = patch['in_reply_to']
 
+                # Check if the patch contain multiple in-reply-to ids
                 if type(in_reply_to) == list:
+                    # Check if one of the in-reply-to ids has been associated with a new series id
+                    # If so, associate that new series id to the rest of the in-reply-to id
                     for msg_id in in_reply_to:
                         if msg_id in msgid_newseries_map.keys():
+                            # create a new original id
                             current_original_id = f'{ecosystem}-newseries-{msgid_newseries_map[msg_id]}'
                             patch['newseries'] = current_original_id
                             for msg_id2 in in_reply_to:
                                 msgid_newseries_map[msg_id2] = msgid_newseries_map[msg_id]
                             break
 
+                    # If not, associate a new new series id to all in-reply-to ids
                     if not patch['newseries']:
+                        # create a new original id
                         current_original_id = f'{ecosystem}-newseries-{self.newseries_original_id}'
+                        # associate new series original id to the patch
                         patch['newseries'] = current_original_id
-
+                        # create a new new series
                         newseries = {
                             'original_id': current_original_id,
                             'cover_letter_msg_id': in_reply_to,
@@ -63,35 +71,48 @@ class ProcessPatch():
                         }
                         newseries_collection[current_original_id] = newseries
 
+                        # associate the new series id to all in-reply-to ids
                         for msg_id in in_reply_to:
                             msgid_newseries_map[msg_id] = self.newseries_original_id
 
                         self.newseries_original_id += 1
 
                     else:
+                        # retrieve corresponding new series original id
                         current_original_id = f'{ecosystem}-newseries-{msgid_newseries_map[in_reply_to[0]]}'
-
+                        # add new in-reply-to id to the new series
                         newseries_collection[current_original_id]['cover_letter_msg_id'].extend(
                             in_reply_to)
 
+                        # add additional submitter identity to the new series
                         if patch['submitter_identity'] not in newseries_collection[current_original_id]['submitter_identity']:
                             newseries_collection[current_original_id]['submitter_identity'].append(
                                 patch['submitter_identity'])
 
+                        # add additional submitter individual to the new series
                         if patch['submitter_individual'] and patch['submitter_individual'] not in newseries_collection[current_original_id]['submitter_individual']:
                             newseries_collection[current_original_id]['submitter_individual'].append(
                                 patch['submitter_individual'])
 
+                        # add additional related series original id of the new series
                         if patch['series'] and patch['series'] not in newseries_collection[current_original_id]['series']:
                             newseries_collection[current_original_id]['series'].append(
                                 patch['series'])
 
+                # When the patch contain only one in-reply-to id
+                # Check if the in-reply-to id has been associated with a new series id
+                # If not, associate a new new series id to the in-reply-to id
                 else:
 
+                    # Check if the in-reply-to id has been associated with a new series original id
                     if in_reply_to in msgid_newseries_map.keys():
+                        # retrieve corresponding new series original id
                         current_original_id = f'{ecosystem}-newseries-{msgid_newseries_map[in_reply_to]}'
 
+                        # associate the new series original id to the patch
                         patch['newseries'] = current_original_id
+
+                        # add additional submitter identity and individual and related series original id to the new series
                         if patch['submitter_identity'] not in newseries_collection[current_original_id]['submitter_identity']:
                             newseries_collection[current_original_id]['submitter_identity'].append(
                                 patch['submitter_identity'])
@@ -104,10 +125,16 @@ class ProcessPatch():
                             newseries_collection[current_original_id]['series'].append(
                                 patch['series'])
                     else:
+                        # create a new new series original id
                         current_original_id = f'{ecosystem}-newseries-{self.newseries_original_id}'
+
+                        # associate the new series original id to the patch
                         patch['newseries'] = current_original_id
+
+                        # associate in-reply-to id to the new series original id
                         msgid_newseries_map[in_reply_to] = self.newseries_original_id
 
+                        # create a new new series
                         newseries = {
                             'original_id': current_original_id,
                             'cover_letter_msg_id': [in_reply_to],
@@ -120,8 +147,8 @@ class ProcessPatch():
 
                         self.newseries_original_id += 1
 
+        # Create new series collection
         newseries_data = list(newseries_collection.values())
-
         for s in newseries_data:
             s['series'] = [] if s['series'] == [None] else s['series']
             s['inspection_needed'] = True if len(
