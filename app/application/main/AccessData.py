@@ -30,7 +30,6 @@ class AccessData():
         self.__batch_size = batch_size
 
     # This function is to speed up the insertion of identities by removing duplicate identities in the data
-
     def __filter_unique_identities(self, json_data, reset_identity_cache):
         if reset_identity_cache:
             self.reset_occurred_identities()
@@ -45,7 +44,6 @@ class AccessData():
         return unique_identities
 
     # This function is to guarantee the data to be imported to the database contain the required fields
-
     def __validate_items(self, json_data, item_type):
 
         # identity
@@ -94,7 +92,6 @@ class AccessData():
                 assert INDIVIDUAL.issubset(set(item.keys()))
 
     # This function is to import data to the database through the Django REST API
-
     def __post_data(self, json_data, item_type, size_type=''):
         url = f"{self.__base_url}/{item_type}/create/{size_type}"
         payload = json.dumps(json_data, cls=DjangoJSONEncoder)
@@ -105,7 +102,6 @@ class AccessData():
             raise PostRequestException(response)
 
     # This function is to preprocess data and import data to the database
-
     def insert_data(self, data, item_type, reset_identity_cache=False):
         try:
             if type(data) == str:
@@ -440,7 +436,6 @@ class AccessData():
                 f"Status: {e.response.status_code}\nReason: {e.response.reason}\nText: {e.response.text}")
 
     # This funcion is to retrieve data through Django REST API
-
     def retrieve_data(self, item_type, filter=''):
         filter = f"?{filter}" if filter else ''
         url = f"{self.__base_url}/{item_type}/{filter}"
