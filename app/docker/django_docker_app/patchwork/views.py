@@ -17,8 +17,6 @@ from rest_framework.decorators import api_view
 
 SIZE_LIMIT = 16793600
 
-# Create your views here.
-
 
 def home_view(request):
     return render(request, 'patchwork/home.html')
@@ -324,11 +322,6 @@ class IndividualCreateView(generics.CreateAPIView):
             kwargs["many"] = True
 
         return super(IndividualCreateView, self).get_serializer(*args, **kwargs)
-
-    # def create(self, request, *args, **kwargs):
-    #     serializer = self.get_serializer(data=request.data)
-
-    #     return super().create(request, *args, **kwargs)
 
 
 class NewSeriesListView(generics.ListAPIView):
