@@ -411,8 +411,78 @@ class ProcessPatch():
     # Relaxed grouping
     ##################################
 
+    # This function is to execute relaxed patch grouping
+    def relaxed_grouping(self, raw_data_patch, progress_bar=True):
+        # Identify the ecosystem of the patch data
+        ecosystem = raw_data_patch[0]['original_id'].split('-')[0]
+        # Execute conservative patch grouping
+        patch_data, conservative_groups, conservative_changes = self.conservative_grouping(
+            raw_data_patch)
+
+        # Preprocess conservative patch groups before relaxed grouping
+        organised_conservative_groups = self.__organise_patch_groups_by_token_len(
+            conservative_groups)
+
+        relaxed_groups = list()
+        visited_groups = dict()
+
+        token_lengths = sorted(organised_conservative_groups.keys())
+
+        if progress_bar:
+            pbar = tqdm(total=len(token_lengths) - 1)
+
+        # This while loop is to compare groups with token length n and groups with token length n + 1 (one word difference)
+        i = 0
+        while i < len(token_lengths) - 1:
+            # Patch groups with token length 0 will not be changed; consecutive token lengths are required
+            if token_lengths[i] == 0 or token_lengths[i] + 1 != token_lengths[i + 1]:
+                i += 1
+                if progress_bar:
+                    pbar.update(1)
+                continue
+
+            # Patch groups with token length n & patch groups with token length n + 1
+            group_collection1 = organised_conservative_groups[token_lengths[i]]
+            group_collection2 = organised_conservative_groups[token_lengths[i] + 1]
+
+            # Comparison
+            self.__relaxed_comparison(
+                group_collection1, group_collection2, visited_groups, relaxed_groups, conservative_groups)
+
+            i += 1
+            if progress_bar:
+                pbar.update(1)
+
+        if progress_bar:
+            pbar.close()
+
+        # Create relaxed change collection
+        relaxed_changes = self.__create_relaxed_change(
+            ecosystem, patch_data, relaxed_groups)
+
+        return patch_data, conservative_groups, relaxed_groups, conservative_changes, relaxed_changes
+
+    # This funciton is to organise conservative patch groups (i.e. conservative changes) by their token length
+    # Patch groups are temporarily stored together in one list if their token lengths are the same (patches in the same patch group share the same tokens)
+    def __organise_patch_groups_by_token_len(self, groups):
+        sorted_groups = defaultdict(list)
+        for i in range(len(groups)):
+            group_i = groups[i]
+            group_token_length = len(group_i['tokens'])
+            sorted_groups[group_token_length].append(deepcopy(group_i))
+        return sorted_groups
+
+    # This function is to organise patch groups with the same first/second token together
+    def __organise_patch_groups_by_token(self, group_collection, token_position):
+        orgainsed_collection = defaultdict(list)
+
+        for group in group_collection:
+            orgainsed_collection[group['tokens'][token_position]].append(group)
+
+        return orgainsed_collection
+
+    # This function executes the comparison logic of relaxed grouping
     def __relaxed_compare_patch_groups(self, orgainsed_collection, group_i, conservative_groups, visited_groups, relaxed_groups):
-        # print(len(conservative_groups))
         group_i_idx = conservative_groups.index(group_i)
         token0_i = group_i['tokens'][0]
         bag_of_words_i = group_i['bag_of_words']
@@ -439,7 +509,8 @@ class ProcessPatch():
 
             target_group_idx = visited_groups[group_i_idx]
 
-            # the first condition is to avoid repetitively merged the same group when comparing the second token
+            # Merge two patch groups if the grouping criteria are met
+            # The first condition is to avoid repetitively merged the same group when comparing the second token
             if (not set(group_j['patch_indexes']).issubset(set(relaxed_groups[target_group_idx]['patch_indexes']))
                 and len(token_diff) == 1
                 and bool(set(individual_i) & set(individual_j))
@@ -448,9 +519,10 @@ class ProcessPatch():
                 and not self.__is_series_intersected(newseries_original_id_i, newseries_original_id_j)
                     and not self.__is_version_intersected(versions_i, versions_j)):
 
-                # remove the merged group from the group collection being compared
+                # Remove the merged group from the group collection being compared
                 orgainsed_collection[token0_i].pop(j)
 
+                # Update corresponding relaxed group information
                 relaxed_groups[target_group_idx]['patch_indexes'].extend(
                     group_j['patch_indexes'])
                 relaxed_groups[target_group_idx]['versions'].extend(
@@ -472,19 +544,22 @@ class ProcessPatch():
                 relaxed_groups[target_group_idx]['individuals'].extend(
                     group_j['individuals'])
 
+                # Mark this patch group as visited
                 group_j_idx = conservative_groups.index(group_j)
                 visited_groups[group_j_idx] = target_group_idx
             else:
                 j += 1
 
+    # This function is to compare patch groups with token length n and patch groups with token length n + 1
     def __relaxed_comparison(self, group_collection1, group_collection2, visited_groups, relaxed_groups, conservative_groups):
 
+        # Sort patch groups by tokens
         group_collection1 = sorted(
             deepcopy(group_collection1), key=lambda x: x['tokens'])
         group_collection2 = sorted(
             deepcopy(group_collection2), key=lambda x: x['tokens'])
 
-        # each patch is organised into a group with the same 1st/2nd token
+        # Each patch group is organised into a group with the same 1st/2nd token
         orgainsed_collection2_token0 = self.__organise_patch_groups_by_token(
             group_collection2, 0)
         orgainsed_collection2_token1 = self.__organise_patch_groups_by_token(
@@ -493,6 +568,7 @@ class ProcessPatch():
         for group_i in group_collection1:
             group_i_idx = conservative_groups.index(group_i)
 
+            # If this group has not been compared and merged with other groups, create a new relaxed group for it
             if group_i_idx not in visited_groups.keys():
                 relaxed_groups.append(
                     {
@@ -500,7 +576,6 @@ class ProcessPatch():
                         'versions': deepcopy(group_i['versions']),
                         'bag_of_words': [deepcopy(group_i['bag_of_words'])],
                         'tokens': [deepcopy(group_i['tokens'])],
-                        # 'tokens2': [tokens2_i],
                         'series_original_ids': deepcopy(group_i['series_original_ids']),
                         'newseries_original_ids': deepcopy(group_i['newseries_original_ids']),
 
@@ -513,72 +588,17 @@ class ProcessPatch():
                 )
                 visited_groups[group_i_idx] = len(relaxed_groups) - 1
 
+            # We only need to compare the patch group with other patch groups whose token length is the same and whose first/second token is the same
+            # First token is the same: they may have only one different token after the first token
+            # Second token is the same: they may have only one different token as the first token
+            # Third token is the same: they have two different tokens as the first and second tokens, which is over one word difference
             self.__relaxed_compare_patch_groups(
                 orgainsed_collection2_token0, group_i, conservative_groups, visited_groups, relaxed_groups)
 
             self.__relaxed_compare_patch_groups(
                 orgainsed_collection2_token1, group_i, conservative_groups, visited_groups, relaxed_groups)
 
-    def relaxed_grouping(self, raw_data_patch, progress_bar=True):
-        ecosystem = raw_data_patch[0]['original_id'].split('-')[0]
-
-        patch_data, conservative_groups, conservative_changes = self.conservative_grouping(
-            raw_data_patch)
-        organised_conservative_groups = self.__organise_patch_groups_by_token_len(
-            conservative_groups)
-
-        relaxed_groups = list()
-        visited_groups = dict()
-
-        token_lengths = sorted(organised_conservative_groups.keys())
-
-        if progress_bar:
-            pbar = tqdm(total=len(token_lengths) - 1)
-        i = 0
-        while i < len(token_lengths) - 1:
-            # groups with tokens length 0 will not be changed; consecutive token lengths are required
-            if token_lengths[i] == 0 or token_lengths[i] + 1 != token_lengths[i + 1]:
-                i += 1
-                if progress_bar:
-                    pbar.update(1)
-                continue
-
-            # group with token length x & group with token length x + 1
-            group_collection1 = organised_conservative_groups[token_lengths[i]]
-            group_collection2 = organised_conservative_groups[token_lengths[i] + 1]
-
-            # compare these two groups
-            self.__relaxed_comparison(
-                group_collection1, group_collection2, visited_groups, relaxed_groups, conservative_groups)
-
-            i += 1
-            if progress_bar:
-                pbar.update(1)
-
-        if progress_bar:
-            pbar.close()
-
-        relaxed_changes = self.__create_relaxed_change(
-            ecosystem, patch_data, relaxed_groups)
-
-        return patch_data, conservative_groups, relaxed_groups, conservative_changes, relaxed_changes
-
-    def __organise_patch_groups_by_token_len(self, groups):
-        sorted_groups = defaultdict(list)
-        for i in range(len(groups)):
-            group_i = groups[i]
-            group_token_length = len(group_i['tokens'])
-            sorted_groups[group_token_length].append(deepcopy(group_i))
-        return sorted_groups
-
-    def __organise_patch_groups_by_token(self, group_collection, token_position):
-        orgainsed_collection = defaultdict(list)
-
-        for group in group_collection:
-            orgainsed_collection[group['tokens'][token_position]].append(group)
-
-        return orgainsed_collection
-
+    # This function is to create the relaxed change collection
     def __create_relaxed_change(self, ecosystem, patch_data, relaxed_groups):
         relaxed_changes = list()
         tmp_id_map = dict()
@@ -644,8 +664,7 @@ class ProcessPatch():
 
         return relaxed_changes
 
-    # Update change1 and change2 id in each comment
-
+    # Update conservative change (change1) and relaxed change (change2) original id in each comment
     def update_changeid_in_comment(self, change1_collection: list, change2_collection: list, comment_collection: list):
 
         change1_collection = deepcopy(change1_collection)
@@ -670,7 +689,6 @@ class ProcessPatch():
         return comment_collection
 
     # This function processes raw data of patch and comment and then does relaxed grouping, on a project level
-
     def patch_grouping(self, raw_data_patch: list, raw_data_comment: list, processed_data_individual: list, progress_bar=True):
         raw_data_patch = deepcopy(raw_data_patch)
         raw_data_comment = deepcopy(raw_data_comment)
@@ -694,15 +712,18 @@ class ProcessPatch():
 
         return processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
 
+    # This function is to check if the patch name indicates the patch belongs to a series
     def __is_series_patch(self, patch_name):
         series_number = re.search('\d+/\d+', patch_name, re.IGNORECASE)
         return bool(series_number)
 
+    # This function is to check if the version numbers in two patch groups are intersected
     def __is_version_intersected(self, list_i, list_j):
         if set(list_i) & set(list_j) == {-1}:
             return False
         return bool(set(list_i) & set(list_j))
 
+    # This function is to check if the series original ids in two patch groups are intersected
     def __is_series_intersected(self, list_i, list_j):
         if set(list_i) & set(list_j) == {None}:
             return False
