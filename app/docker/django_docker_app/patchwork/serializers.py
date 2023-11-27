@@ -1051,7 +1051,7 @@ class MailingListFileSerializer(serializers.ModelSerializer):
         return super().to_internal_value(data)
 
 
-class MailingListListSerializer(serializers.ModelSerializer):
+class MailingListListSerializer(MailingListStandardSerializer):
 
     project = serializers.SlugRelatedField(
         slug_field="original_id", read_only=True)
