@@ -131,8 +131,6 @@ class PatchworkSeriesSpider(scrapy.Spider):
     def parse(self, response):
         if response.status == 200:
 
-            # get a single series json
-            # item = self.base_func.get_page_json(response)
             try:
                 item = self.base_func.get_page_json(response)
             except json.decoder.JSONDecodeError as e:
@@ -202,7 +200,6 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
     def parse_cover_letter(self, response):
         
-        # item = self.base_func.get_page_json(response)
         try:
             item = self.base_func.get_page_json(response)
         except json.decoder.JSONDecodeError as e:
@@ -240,8 +237,6 @@ class PatchworkPatchSpider(scrapy.Spider):
     def parse(self, response):
         if response.status == 200:
 
-            # get a single patch json
-            # item = self.base_func.get_page_json(response)
             try:
                 item = self.base_func.get_page_json(response)
             except json.decoder.JSONDecodeError as e:
@@ -268,7 +263,6 @@ class PatchworkPatchSpider(scrapy.Spider):
 
             yield identity_item
 
-            # patch_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
             
             if item['series']:
                 patch_series_api_id = item['series'][0]['id']
