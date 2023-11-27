@@ -158,6 +158,7 @@ class ProcessPatch():
 
         return patch_data, newseries_data
 
+    # This function is to insert mailing list original id to patch or comment data
     def insert_mailinglist_id(self, mailinglist_data, target_data):
         msgid_to_orgid = {}
 
@@ -169,23 +170,147 @@ class ProcessPatch():
             if item['msg_id'] in msgid_to_orgid.keys():
                 item['mailinglist'] = msgid_to_orgid[item['msg_id']]
 
-    # This function is to group patches based on the criteria in step 1
-    # It should be called after newseries collection is created
+    ##################################
+    # Conservative grouping
+    ##################################
 
+    # This function is to execute conservative patch grouping
+    def conservative_grouping(self, raw_data_patch):
+        # Create a deep copy of inputted patch data so that the original one is not modified
+        raw_data_patch = deepcopy(raw_data_patch)
+        # Identify the ecosystem of the patch data
+        ecosystem = raw_data_patch[0]['original_id'].split('-')[0]
+        # Create bags of words and tokens of patch names and sort patches by their tokens and dates
+        patch_data = self.__preprocess_raw_data_patch(raw_data_patch)
+
+        # Patches of the same review process will be saved in the same group in the list
+        conservative_groups = list()
+        # Each visited patch is saved with the index number of the group in patch_groups
+        visited_patches = dict()
+
+        i = 0
+        while i < len(patch_data):
+            # Currenty visited patch
+            patch_i = patch_data[i]
+
+            # Skip if this patch contain no code changes, it will not be in the Change collection
+            if not patch_i['code_diff']:
+                i += 1
+                continue
+
+            # Get patch information
+            bag_of_words_i = patch_i['bag_of_words']
+            series_original_id_i = patch_i['series']
+            newseries_original_id_i = patch_i['newseries']
+            version_i = self.__extract_version_number(patch_i['name'])
+
+            # Create new group for firstly visited patch
+            new_conservative_group = {
+                'patch_indexes': [i],
+                'versions': [version_i],
+                'bag_of_words': bag_of_words_i,
+                'tokens': sorted(patch_i['tokens']),
+                'state': [patch_i['state']],
+                'commit_id': [patch_i['commit_ref']],
+                'project': patch_i['project'],
+                'submitters': [patch_i['submitter_identity']],
+                'individuals': [patch_i['submitter_individual']],
+                'series_original_ids': [series_original_id_i],
+                'newseries_original_ids': [newseries_original_id_i],
+            }
+            conservative_groups.append(new_conservative_group)
+
+            # Record visited patch
+            original_id_i = patch_i['original_id']
+            visited_patches[original_id_i] = len(conservative_groups) - 1
+
+            # Patch with 0 token will not be grouped with other patches
+            if len(patch_i['tokens']) == 0:
+                i += 1
+                continue
+
+            # Compare patch_i with the remaining patches
+            j = i + 1
+            while j < len(patch_data):
+                patch_j = patch_data[j]
+
+                # Skip if this patch contain no code changes, it will not be in the Change collection
+                if not patch_j['code_diff']:
+                    j += 1
+                    continue
+
+                # Get patch information
+                bag_of_words_j = patch_j['bag_of_words']
+                series_original_id_j = patch_j['series']
+                newseries_original_id_j = patch_j['newseries']
+
+                # Compute token differences between patch i and patch j
+                token_diff = (bag_of_words_i | bag_of_words_j) - \
+                    (bag_of_words_i & bag_of_words_j)
+
+                # Group patch i and patch j if the grouping criteria are met
+                if (
+                    len(token_diff) == 0
+                    and self.__is_diff_series(series_original_id_i, series_original_id_j)
+                    and self.__is_diff_series(newseries_original_id_i, newseries_original_id_j)
+                ):
+                    target_group_idx = visited_patches[original_id_i]
+                    version_j = self.__extract_version_number(patch_j['name'])
+
+                    conservative_groups[target_group_idx]['patch_indexes'].append(
+                        j)
+                    conservative_groups[target_group_idx]['versions'].append(
+                        version_j)
+                    conservative_groups[target_group_idx]['submitters'].append(
+                        patch_j['submitter_identity'])
+                    conservative_groups[target_group_idx]['individuals'].append(
+                        patch_j['submitter_individual'])
+                    conservative_groups[target_group_idx]['series_original_ids'].append(
+                        series_original_id_j)
+                    conservative_groups[target_group_idx]['newseries_original_ids'].append(
+                        newseries_original_id_j)
+                    conservative_groups[target_group_idx]['state'].append(
+                        patch_j['state'])
+                    conservative_groups[target_group_idx]['commit_id'].append(
+                        patch_j['commit_ref'])
+
+                    j += 1
+
+                else:
+                    break
+
+            # The while loop has traversed to and stopped at patch j, and found that patch j is not in the same review process as patch i,
+            # so the loop will start at patch j, and compare it with the remaining patches
+            i = j
+
+        # Create conservative change collection
+        conservative_changes = self.__create_conservative_change(
+            ecosystem, patch_data, conservative_groups)
+
+        return patch_data, conservative_groups, conservative_changes
+
+    # This function is to extract the version number of a patch (i.e. which version of the patch is)
+    def __extract_version_number(self, patch_name):
+        patch_name = patch_name.lower()
+        indicator_part = re.findall(
+            "^\[.*?\]\s*v\d+|\[.*?[,\s]+v\d+[,\s]+.*?\]|\[.*?[,\s]+v\d+\]|\[v\d+[,\s]+.*?\]|\(v\d+\)|\[v\d+\]|[\(\[]*patchv\d+[\)\]]*", patch_name)
+        for item in indicator_part:
+            indicator = re.search("v\d+", item)
+            if indicator:
+                version_number = re.search("\d+", indicator.group())
+                return int(version_number.group())
+        return -1
+
+    # This function is to create bags of words for patch names
     def __create_bag_of_words(self, patch_name):
         patch_name = patch_name.lower()
 
-        # case 1: [<header>]v1<main title>
         if re.findall("^\[.*?\]\s*v\d+.+", patch_name):
-            # replace the content in the first bracket
             patch_name = re.sub(r'\[.*?\]\s*v\d+', ' ', patch_name, 1)
 
-        # case 2: [<header>]<main title>
         elif re.findall("^\[.*?\].+", patch_name):
-            # replace the content in the first bracket
             patch_name = re.sub(r'\[.*?\]', ' ', patch_name, 1)
 
-        # replace patchv1, <series number>, [v1], (v1), <punctuations>
         patch_words = re.sub(
             r'[\(\[]patch[\)\]]|\[*patchv\d+\]*|\d+/\d+\W|\[v\d+\]|\(v\d+\)|[^\w\s/-]', ' ', patch_name)
 
@@ -195,8 +320,10 @@ class ProcessPatch():
 
         return tokens, bag_of_words
 
+    # This function is to preprocess patches before they are being grouped,
+    # by creating bags of words for patches and sorting them by token and date
     def __preprocess_raw_data_patch(self, raw_data_patch):
-        # create bag of word for each patch title
+        # create bag of words for each patch name
         for i in range(len(raw_data_patch)):
             patch_i = raw_data_patch[i]
             patch_i['tokens'], patch_i['bag_of_words'] = self.__create_bag_of_words(
@@ -205,12 +332,14 @@ class ProcessPatch():
         # sort patches
         return sorted(raw_data_patch, key=lambda x: (x['tokens'], x['date']))
 
+    # This function is to check whether two patches belong to the same series
     def __is_diff_series(self, series_id1, series_id2):
         if series_id1 is None and series_id2 is None:
             return True
 
         return series_id1 != series_id2
 
+    # This function is to create the conservative change collection
     def __create_conservative_change(self, ecosystem, patch_data, conservative_results):
         change1_collection = list()
         tmp_id_map = dict()
@@ -278,128 +407,9 @@ class ProcessPatch():
 
         return change1_collection
 
-    def conservative_grouping(self, raw_data_patch):
-        raw_data_patch = deepcopy(raw_data_patch)
-        ecosystem = raw_data_patch[0]['original_id'].split('-')[0]
-        patch_data = self.__preprocess_raw_data_patch(raw_data_patch)
-
-        # patches of the same review process will be saved in the same group in the list
-        conservative_groups = list()
-        # each visited patch is saved with the index number of the group in patch_groups
-        visited_patches = dict()
-
-        i = 0
-        while i < len(patch_data):
-            # currenty visited patch
-            patch_i = patch_data[i]
-
-            # skip if this patch contain no code changes, it will not be in the Change dataset
-            if not patch_i['code_diff']:
-                i += 1
-                continue
-
-            # create a new conservative group for the visited patch
-            bag_of_words_i = patch_i['bag_of_words']
-            series_original_id_i = patch_i['series']
-            newseries_original_id_i = patch_i['newseries']
-            version_i = self.__extract_version_number(patch_i['name'])
-
-            # create new group for firstly visited patch
-            new_conservative_group = {
-                'patch_indexes': [i],
-                'versions': [version_i],
-                'bag_of_words': bag_of_words_i,
-                'tokens': sorted(patch_i['tokens']),
-                # 'tokens2': tokens_i[1:],
-                'state': [patch_i['state']],
-                'commit_id': [patch_i['commit_ref']],
-                'project': patch_i['project'],
-                'submitters': [patch_i['submitter_identity']],
-                'individuals': [patch_i['submitter_individual']],
-                'series_original_ids': [series_original_id_i],
-                'newseries_original_ids': [newseries_original_id_i],
-            }
-            conservative_groups.append(new_conservative_group)
-
-            # record visited patch
-            original_id_i = patch_i['original_id']
-            visited_patches[original_id_i] = len(conservative_groups) - 1
-
-            # patch with 0 token will not be grouped with other patches
-            if len(patch_i['tokens']) == 0:
-                i += 1
-                continue
-
-            # compare patch_i with the remaining patches
-            j = i + 1
-            while j < len(patch_data):
-                patch_j = patch_data[j]
-
-                if not patch_j['code_diff']:
-                    j += 1
-                    continue
-
-                bag_of_words_j = patch_j['bag_of_words']
-                series_original_id_j = patch_j['series']
-                newseries_original_id_j = patch_j['newseries']
-
-                # compute token differences
-                token_diff = (bag_of_words_i | bag_of_words_j) - \
-                    (bag_of_words_i & bag_of_words_j)
-
-                # check grouping criteria
-                if (
-                    len(token_diff) == 0
-                    and self.__is_diff_series(series_original_id_i, series_original_id_j)
-                    and self.__is_diff_series(newseries_original_id_i, newseries_original_id_j)
-                ):
-                    target_group_idx = visited_patches[original_id_i]
-                    version_j = self.__extract_version_number(patch_j['name'])
-
-                    conservative_groups[target_group_idx]['patch_indexes'].append(
-                        j)
-                    conservative_groups[target_group_idx]['versions'].append(
-                        version_j)
-                    conservative_groups[target_group_idx]['submitters'].append(
-                        patch_j['submitter_identity'])
-                    conservative_groups[target_group_idx]['individuals'].append(
-                        patch_j['submitter_individual'])
-                    conservative_groups[target_group_idx]['series_original_ids'].append(
-                        series_original_id_j)
-                    conservative_groups[target_group_idx]['newseries_original_ids'].append(
-                        newseries_original_id_j)
-                    conservative_groups[target_group_idx]['state'].append(
-                        patch_j['state'])
-                    conservative_groups[target_group_idx]['commit_id'].append(
-                        patch_j['commit_ref'])
-
-                    j += 1
-
-                else:
-                    break
-
-            i = j
-
-        conservative_changes = self.__create_conservative_change(
-            ecosystem, patch_data, conservative_groups)
-
-        return patch_data, conservative_groups, conservative_changes
-
-    def __organise_patch_groups_by_token_len(self, groups):
-        sorted_groups = defaultdict(list)
-        for i in range(len(groups)):
-            group_i = groups[i]
-            group_token_length = len(group_i['tokens'])
-            sorted_groups[group_token_length].append(deepcopy(group_i))
-        return sorted_groups
-
-    def __organise_patch_groups_by_token(self, group_collection, token_position):
-        orgainsed_collection = defaultdict(list)
-
-        for group in group_collection:
-            orgainsed_collection[group['tokens'][token_position]].append(group)
-
-        return orgainsed_collection
+    ##################################
+    # Relaxed grouping
+    ##################################
 
     def __relaxed_compare_patch_groups(self, orgainsed_collection, group_i, conservative_groups, visited_groups, relaxed_groups):
         # print(len(conservative_groups))
@@ -553,6 +563,22 @@ class ProcessPatch():
 
         return patch_data, conservative_groups, relaxed_groups, conservative_changes, relaxed_changes
 
+    def __organise_patch_groups_by_token_len(self, groups):
+        sorted_groups = defaultdict(list)
+        for i in range(len(groups)):
+            group_i = groups[i]
+            group_token_length = len(group_i['tokens'])
+            sorted_groups[group_token_length].append(deepcopy(group_i))
+        return sorted_groups
+
+    def __organise_patch_groups_by_token(self, group_collection, token_position):
+        orgainsed_collection = defaultdict(list)
+
+        for group in group_collection:
+            orgainsed_collection[group['tokens'][token_position]].append(group)
+
+        return orgainsed_collection
+
     def __create_relaxed_change(self, ecosystem, patch_data, relaxed_groups):
         relaxed_changes = list()
         tmp_id_map = dict()
@@ -671,18 +697,6 @@ class ProcessPatch():
     def __is_series_patch(self, patch_name):
         series_number = re.search('\d+/\d+', patch_name, re.IGNORECASE)
         return bool(series_number)
-
-    def __extract_version_number(self, patch_name):
-        patch_name = patch_name.lower()
-        # [<...>,v1,<...>]
-        indicator_part = re.findall(
-            "^\[.*?\]\s*v\d+|\[.*?[,\s]+v\d+[,\s]+.*?\]|\[.*?[,\s]+v\d+\]|\[v\d+[,\s]+.*?\]|\(v\d+\)|\[v\d+\]|[\(\[]*patchv\d+[\)\]]*", patch_name)
-        for item in indicator_part:
-            indicator = re.search("v\d+", item)
-            if indicator:
-                version_number = re.search("\d+", indicator.group())
-                return int(version_number.group())
-        return -1
 
     def __is_version_intersected(self, list_i, list_j):
         if set(list_i) & set(list_j) == {-1}:
