@@ -36,6 +36,7 @@ class APIRootView(APIView):
             'change1': 'http://localhost:8000/patchwork/change1/',
             'change2': 'http://localhost:8000/patchwork/change2/',
             'individual': 'http://localhost:8000/patchwork/individual/',
+            'mailinglist': "http://localhost:8000/patchwork/mailinglist/"
         })
 
 
@@ -46,7 +47,6 @@ class IdentityListView(generics.ListAPIView):
     filterset_class = IdentityFilter
     search_fields = ['original_id', 'email', 'name']
     ordering_fields = '__all__'
-    # name = 'account-list'
 
 
 class IdentityCreateView(generics.CreateAPIView):
