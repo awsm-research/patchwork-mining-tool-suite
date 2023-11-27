@@ -17,6 +17,7 @@ class ProcessPatch():
         self.change1_original_id = change1_original_id
         self.change2_original_id = change2_original_id
 
+    # This function is to organise target data by projects
     def organise_data_by_project(self, data):
         organised_data = defaultdict(list)
 
@@ -26,8 +27,25 @@ class ProcessPatch():
 
         return organised_data
 
+    # This function is to insert mailing list original id to patch or comment data
+    def insert_mailinglist_id(self, mailinglist_data, target_data):
+        msgid_to_orgid = {}
+
+        for item in mailinglist_data:
+
+            msgid_to_orgid[item['msg_id']] = item["original_id"]
+
+        for item in target_data:
+            if item['msg_id'] in msgid_to_orgid.keys():
+                item['mailinglist'] = msgid_to_orgid[item['msg_id']]
+
+    ##################################
+    # New series grouping
+    ##################################
+
     # This function is to create new series for patches, complementing missing series information
     # Patches that replied to the same email are considered as a new series of patches
+
     def series_grouping(self, patch_data: list):
         patch_data = deepcopy(patch_data)
 
@@ -158,23 +176,17 @@ class ProcessPatch():
 
         return patch_data, newseries_data
 
-    # This function is to insert mailing list original id to patch or comment data
-    def insert_mailinglist_id(self, mailinglist_data, target_data):
-        msgid_to_orgid = {}
-
-        for item in mailinglist_data:
-
-            msgid_to_orgid[item['msg_id']] = item["original_id"]
-
-        for item in target_data:
-            if item['msg_id'] in msgid_to_orgid.keys():
-                item['mailinglist'] = msgid_to_orgid[item['msg_id']]
+    # This function is to check if the patch name indicates the patch belongs to a series
+    def __is_series_patch(self, patch_name):
+        series_number = re.search('\d+/\d+', patch_name, re.IGNORECASE)
+        return bool(series_number)
 
     ##################################
     # Conservative grouping
     ##################################
 
     # This function is to execute conservative patch grouping
+
     def conservative_grouping(self, raw_data_patch):
         # Create a deep copy of inputted patch data so that the original one is not modified
         raw_data_patch = deepcopy(raw_data_patch)
@@ -412,6 +424,7 @@ class ProcessPatch():
     ##################################
 
     # This function is to execute relaxed patch grouping
+
     def relaxed_grouping(self, raw_data_patch, progress_bar=True):
         # Identify the ecosystem of the patch data
         ecosystem = raw_data_patch[0]['original_id'].split('-')[0]
@@ -664,6 +677,18 @@ class ProcessPatch():
 
         return relaxed_changes
 
+    # This function is to check if the version numbers in two patch groups are intersected
+    def __is_version_intersected(self, list_i, list_j):
+        if set(list_i) & set(list_j) == {-1}:
+            return False
+        return bool(set(list_i) & set(list_j))
+
+    # This function is to check if the series original ids in two patch groups are intersected
+    def __is_series_intersected(self, list_i, list_j):
+        if set(list_i) & set(list_j) == {None}:
+            return False
+        return bool(set(list_i) & set(list_j))
+
     # Update conservative change (change1) and relaxed change (change2) original id in each comment
     def update_changeid_in_comment(self, change1_collection: list, change2_collection: list, comment_collection: list):
 
@@ -711,20 +736,3 @@ class ProcessPatch():
             conservative_changes, relaxed_changes, raw_data_comment)
 
         return processed_data_newseries, processed_data_patch, processed_data_comment, conservative_changes, relaxed_changes
-
-    # This function is to check if the patch name indicates the patch belongs to a series
-    def __is_series_patch(self, patch_name):
-        series_number = re.search('\d+/\d+', patch_name, re.IGNORECASE)
-        return bool(series_number)
-
-    # This function is to check if the version numbers in two patch groups are intersected
-    def __is_version_intersected(self, list_i, list_j):
-        if set(list_i) & set(list_j) == {-1}:
-            return False
-        return bool(set(list_i) & set(list_j))
-
-    # This function is to check if the series original ids in two patch groups are intersected
-    def __is_series_intersected(self, list_i, list_j):
-        if set(list_i) & set(list_j) == {None}:
-            return False
-        return bool(set(list_i) & set(list_j))
