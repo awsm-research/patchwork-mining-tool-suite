@@ -86,10 +86,9 @@ class MailingListFormat1Spider(scrapy.Spider):
     def parse_email(self, response):
 
         email_subject = response.xpath("//h1/text()").get()
-        # email_full_content = html.unescape(re.sub(r'</*a.*?>|</*pre>', '', response.xpath("//pre").get()))
         email_raw_content = response.xpath("//pre").get()
 
-        # if the email subject contain the word "PATCH", then consider it related to patch submission and discussion
+        # if the email subject contains the word "PATCH", then consider it related to patch submission and discussion
         # few cases exists where some emails related to patch submission do not have the word "PATCH" in their titles
         if self.base_func.is_patch_related(email_subject, email_raw_content):
 
