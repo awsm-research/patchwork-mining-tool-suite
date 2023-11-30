@@ -33,7 +33,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 The provided dataset contains data of all sub-projects in [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Kernel](https://patchwork.kernel.org) until 30/09/2022. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing. 
 
 ### 1.1. Get provided dataset
-The compressed complete dataset can be downloaded [here](https://drive.google.com/file/d/1JDsV73i5qqsl2yfmbCBizhIMw9VGn1BH/view?usp=share_link). Decompress the downloaded file in root folder of the project to use in the folowing step.
+The compressed complete dataset can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the folowing step.
 
 ### 1.2. Use provided dataset
 To use the provided dataset, simply run docker containers without migrating database by using following commands in the terminal. 
