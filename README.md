@@ -12,30 +12,54 @@ This project provides a suite of tools for mining and further processing Patchwo
 - MongoDB database for storing the data
 
 ## Table of Content
-1. [Provided dataset](#1-provided-dataset)
-    1. [Get provided dataset](#11-get-provided-dataset)
-    2. [Analyse provided dataset](#12-analyse-provided-dataset)
-2. [Data crawling](#2-data-crawling)
-    1. [Basic steps for crawling](#21-basic-steps-for-crawling)
-        1. [Schedule spiders on scrapyd](#211-schedule-spiders-on-scrapyd)
-        2. [Run spiders from script](#212-run-spiders-from-script)
-        3. [Run spiders using commands](#213-run-spiders-using-commands)
-    2. [Customise spiders](#22-customise-spiders)
-        1. [Customise spiders in scrapyd](#221-customise-spiders-in-scrapyd)
-        2. [Customise spiders from script](#222-customise-spiders-from-script)
-        3. [Customise spiders run using commands](#223-customise-spiders-run-using-commands)
-    3. [Insert data to database](#23-insert-data-to-database)
-3. [Data dictionary](#3-data-dictionary)
-    1. [Application filter](#31-application-filter)
+1. [Patch grouping heuristics and results](#1-patch-grouping-heuristics-and-results)
+2. [Provided dataset](#2-provided-dataset)
+    1. [Get provided dataset](#21-get-provided-dataset)
+    2. [Analyse provided dataset](#22-analyse-provided-dataset)
+3. [Data crawling](#3-data-crawling)
+    1. [Basic steps for crawling](#31-basic-steps-for-crawling)
+        1. [Schedule spiders on scrapyd](#311-schedule-spiders-on-scrapyd)
+        2. [Run spiders from script](#312-run-spiders-from-script)
+        3. [Run spiders using commands](#313-run-spiders-using-commands)
+    2. [Customise spiders](#32-customise-spiders)
+        1. [Customise spiders in scrapyd](#321-customise-spiders-in-scrapyd)
+        2. [Customise spiders from script](#322-customise-spiders-from-script)
+        3. [Customise spiders run using commands](#323-customise-spiders-run-using-commands)
+    3. [Insert data to database](#33-insert-data-to-database)
+4. [Data dictionary](#4-data-dictionary)
+    1. [Application filter](#41-application-filter)
 
 
-## 1. Provided dataset
+## 1. Heuristics and evaluation results
+### 1.1 Patch grouping heuristics
+
+**Exact Bags-of-Words (BoW) Grouping**
+* The bag-of-words of the summary phrases of the patches are the same
+* The patches do not belong to the same series
+
+**One-word Difference Grouping**
+* The bag of words of a group should be different from that of another group by one word
+* The different word should not be "revert"
+* Version references of both groups should not be intersected
+* Both groups contain at least one common patch submitter
+
+### 1.2 Evaluation results -accuracy of grouping
+
+| Projects         | Exact BoW grouping | One-word difference grouping | Individual grouping |
+| :--------------- | :----------------- | :--------------------------- | :------------------ |
+| FFmpeg           | 96.68%(&plusmn;5%) | 81.68%(&plusmn;5%) | 89.29%(&plusmn;5%) |
+| QEMU             | 100.00%(&plusmn;5%)| 90.94%(&plusmn;5%) | 88.41%(&plusmn;5%) |
+| U-Boot           | 99.47%(&plusmn;5%) | 92.48%(&plusmn;5%) | 86.45%(&plusmn;5%) |
+| Linux Arm Kernel | 99.74%(&plusmn;5%) | 87.77%(&plusmn;5%) | 90.91%(&plusmn;5%) |
+| Netdev + BPF     | 99.47%(&plusmn;5%) | 82.51%(&plusmn;5%) | 94.01%(&plusmn;5%) |
+
+## 2. Provided dataset
 The provided dataset contains data of all sub-projects in [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Kernel](https://patchwork.kernel.org) until 30/09/2022. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing. 
 
-### 1.1. Get provided dataset
+### 2.1. Get provided dataset
 The compressed complete dataset can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the folowing step.
 
-### 1.2. Use provided dataset
+### 2.2. Use provided dataset
 To use the provided dataset, simply run docker containers without migrating database by using following commands in the terminal. 
 ```command
 cd docker
@@ -56,10 +80,10 @@ docker exec -i mongodb_docker_container sh -c 'exec mongorestore --archive --nsI
 
 After restoration process is done, Mongodb database will be available for local access at `mongodb://localhost:27017`. 
 
-#### 1.2.1. Access database directly
+#### 2.2.1. Access database directly
 The sample analyses on code review metrics in a Jupyter [notebook](./analysis/review-analysis.ipynb) and their outputs can be found in folder analysis.
 
-#### 1.2.2. Access database via Python application
+#### 2.2.2. Access database via Python application
 
 Data stored in the MongoDB database can be retrieved through Django REST API by simply using the `retrieve_data` method in the Python application either as the whole set of data in a collection or as a specific set by using the filters.
 
@@ -91,7 +115,7 @@ retrieved_data = access_data.retrieve_data(item_type, filter)
 
 All available filters can be found in section [Application filter](#31-application-filter).
 
-## 2. Data crawling
+## 3. Data crawling
 To crawl new data from the source, apply the Scrapy framework in the suite. Retrieved data will be first stored in jsonlines files. The file content can be inserted into the database with the help of the application layer. 
 
 There are three spiders for crawling patchwork data. Their **spider names** are **patchwork_project**, **patchwork_series**, and **patchwork_patch**.
@@ -101,13 +125,13 @@ There are three spiders for crawling patchwork data. Their **spider names** are 
 
 The retrieved data will be stored under `/docker/scrapy_docker_app/retrieved_data`.
 
-### 2.1. Basic steps for crawling
+### 3.1. Basic steps for crawling
 There are three ways to run spiders.
 * Schedule spiders on scrapyd
 * Run spiders from a script
 * Run spiders using commands.
 
-#### 2.1.1. Schedule spiders on scrapyd
+#### 3.1.1. Schedule spiders on scrapyd
 Run the docker containers by entering following commands in terminal. 
 ```command
 cd docker
@@ -125,7 +149,7 @@ Then, run the following command to schedule and run a spider in scapyd. Multiple
 curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name>
 ```
 
-#### 2.1.2. Run spiders from script
+#### 3.1.2. Run spiders from script
 
 A basic structure for running from the script is provided in `/docker/scrapy_docker_app/patchwork_crawler/spiders/patchwork_api.py`.
 
@@ -159,19 +183,19 @@ python -m patchwork_crawler.spiders.patchwork_api
 
 For more information, visit the [scrapy documentation](https://docs.scrapy.org/en/latest/topics/practices.html)
 
-#### 2.1.3. Run spiders using commands
+#### 3.1.3. Run spiders using commands
 
 Run the following command in the **container terminal**.
 ```command
 scrapy crawl <spider-name>
 ```
 
-### 2.2. Customise spiders
+### 3.2. Customise spiders
 
 Each spider crawls patchwork api web page by item id (e.g. patch id -> `https://patchwork.ffmpeg.org/api/patches/1/`). It automatically increases the item id to crawl the next web page until the id number reaches the default limit or the specified limit. The start id and the endpoint to be crawled can be specified, if necessary.
 
 
-#### 2.2.1. Customise spiders in scrapyd
+#### 3.2.1. Customise spiders in scrapyd
 
 Pass arguments in the command. **Each argument should follow an option `-d`.**
 
@@ -186,7 +210,7 @@ curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-na
 curl http://localhost:6800/schedule.json -d project=default -d spider=<spider-name> -d start_patch_id=<specified-id> -d end_patch_id=<specified-id> -d endpoint_type =<endpoint-name>
 ```
 
-#### 2.2.2. Customise spiders from script
+#### 3.2.2. Customise spiders from script
 
 In the provided structure, specify the argument in the crawlers.
 
@@ -199,7 +223,7 @@ In the provided structure, specify the argument in the crawlers.
         reactor.stop()
 ```
 
-#### 2.2.3. Customise spiders run using commands
+#### 3.2.3. Customise spiders run using commands
 
 Similar to customisation in scrapyd, with the argument option `-a`
 ```command
@@ -207,10 +231,10 @@ Similar to customisation in scrapyd, with the argument option `-a`
 scrapy crawl <spider-name> -a start_project_id=<specified-id> -a end_project_id=<specified-id> -a endpoint_type=<endpoint-name>
 ```
 
-### 2.3. Insert data to database
+### 3.3. Insert data to database
 After crawling data from Patchwork, relevant data can be inserted to the database with the help of the application layer.
 
-#### 2.3.1. Process data
+#### 3.3.1. Process data
 
 Two classes are provided in the application layer to assist with access and process data.
 
@@ -280,7 +304,7 @@ To run the two approaches, simply run the ```process_data()``` function.
 individual_data, updated_series_data, updated_patch_data, updated_comment_data, newseries_data, change1_data, change2_data = process_data.process_data(identity_data, series_data, patch_data, comment_data)
 ```
 
-#### 2.3.2. Insert data
+#### 3.3.2. Insert data
 Data can be inserted to the database by using the ```insert_data()``` function provided in ```AccessData```. Specifically, you should specify the data to be inserted or the location of the data to be inserted, and its corresponding item type. The item type include identity, project, individual, series, newseries, change1, change2, patch, and comment.
 
 ```python
@@ -294,7 +318,7 @@ access_data.insert_data(data="path/to/project/data", item_type="project")
 
 However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the [complete ER diagram](#3-data-dictionary)).
 
-## 3. Data dictionary
+## 4. Data dictionary
 <!-- TODO add high-level ER diagram -->
 ![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/ERD-complete.png)
 This section describes the high-level structure of the dataset.
@@ -469,7 +493,7 @@ This section describes the high-level structure of the dataset.
 | web_url     | URL of the original email in the mailing list |
 | project | Referencing the `original_id` in the projects collection |
 
-### 3.1. Application filter
+### 4.1. Application filter
 
 When accessing dataset via Python application, the fields that are available for filtering in each collection are different.
 
