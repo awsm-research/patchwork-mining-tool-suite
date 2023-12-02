@@ -12,7 +12,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 - MongoDB database for storing the data
 
 ## Table of Content
-1. [Patch grouping heuristics and results](#1-patch-grouping-heuristics-and-results)
+1. [Heuristics and evaluation results](#1-heuristics-and-evaluation-results)
 2. [Provided dataset](#2-provided-dataset)
     1. [Get provided dataset](#21-get-provided-dataset)
     2. [Analyse provided dataset](#22-analyse-provided-dataset)
