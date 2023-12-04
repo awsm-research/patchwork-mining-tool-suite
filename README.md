@@ -31,7 +31,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 
 
 ## 1. Heuristics and evaluation results
-### 1.1 Patch grouping heuristics
+### 1.1 Patch grouping heuristics constraints
 
 **Exact Bags-of-Words (BoW) Grouping**
 * The bag-of-words of the summary phrases of the patches are the same
@@ -54,7 +54,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 | Netdev + BPF     | 99.47%(&plusmn;5%) | 82.51%(&plusmn;5%) | 94.01%(&plusmn;5%) |
 
 ## 2. Provided dataset
-The provided dataset contains data of all sub-projects in [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Kernel](https://patchwork.kernel.org) until 30/09/2022. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing. 
+The provided dataset contains data of all projects from the three OSS communities, including [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Linux Kernel](https://patchwork.kernel.org), until 30/09/2022. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing. 
 
 ### 2.1. Get provided dataset
 The compressed complete dataset can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the folowing step.
