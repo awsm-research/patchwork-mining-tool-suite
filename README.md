@@ -31,9 +31,11 @@ This project provides a suite of tools for mining and further processing Patchwo
 
 
 ## 1. Heuristics and evaluation results
-### 1.1 Patch grouping heuristics constraints
+### 1.1 Patch grouping heuristic constraints
 
-**Exact Bags-of-Words (BoW) Grouping**
+Two heuristics, Exact Bags-of-Words (BoW) Grouping and One-word Difference Grouping, are implemented for patch grouping. Below are the constraints for the heuristics.
+
+**Exact BoW Grouping**
 * The bag-of-words of the summary phrases of the patches are the same
 * The patches do not belong to the same series
 
@@ -43,7 +45,20 @@ This project provides a suite of tools for mining and further processing Patchwo
 * Version references of both groups should not be intersected
 * Both groups contain at least one common patch submitter
 
-### 1.2 Evaluation results -accuracy of grouping
+### 1.2 Evaluation results
+
+**Accuracy of grouping**
+
+For our manual evaluation, a patch grouping is considered correct if all patches in the group are related to the same review process by investigating the content of each patch (e.g., commit message, related comments, code changes).
+Similarly, we consider an individual identification as correct if all the identities in the group are certainly from the same individual by examining whether 1) the identities have submitted patches in the same group, 2) the identities have commented on the same patches, and 3) the identities share other characteristics such as the organisation email addresses.
+Finally, we compute the grouping accuracy using the following calculation:
+% The metric used in the evaluation is accuracy, which is calculated in the following manner:
+
+$`Accuracy = \frac{\text{\#Correct groups}}{\text{\#Evaluated groups}}`$
+
+where correct groups refer to 1) groups of patches that belong to the same code review process or 2) groups of identities that belong to the same individual that are correctly identified; and evaluated groups refer to the sampled groups that are manually evaluated.
+
+Below is the accuracy of each heuristic applied to the selected five projects.
 
 | Projects         | Exact BoW grouping | One-word difference grouping | Individual grouping |
 | :--------------- | :----------------- | :--------------------------- | :------------------ |
