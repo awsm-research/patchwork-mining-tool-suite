@@ -31,9 +31,13 @@ This project provides a suite of tools for mining and further processing Patchwo
 
 
 ## 1. Heuristics and evaluation results
+
+A [sample](./implementation.ipynb) for processing the raw crawled data, including identity grouping and patch grouping, and [another](./import_data.ipynb) for importing processed data to the database are provided in Jupyter notebook.
+
 ### 1.1 Patch grouping heuristic constraints
 
-Two heuristics, Exact Bags-of-Words (BoW) Grouping and One-word Difference Grouping, are implemented for patch grouping. Below are the constraints for the heuristics.
+Two heuristics, Exact Bags-of-Words (BoW) Grouping and One-word Difference Grouping, are implemented for patch grouping. 
+Below are the constraints for the heuristics.
 
 **Exact BoW Grouping**
 * The bag-of-words of the summary phrases of the patches are the same
