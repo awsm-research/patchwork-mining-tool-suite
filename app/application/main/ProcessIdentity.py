@@ -171,4 +171,4 @@ class ProcessIdentity():
                 idx += 1
 
         # create individual collection
-        self.__create_individual(individual_dict, ecosystem, project_oid)
+        return self.__create_individual(individual_dict, ecosystem, project_oid)
