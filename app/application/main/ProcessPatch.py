@@ -3,7 +3,7 @@ import nltk
 
 from collections import Counter, defaultdict
 from copy import deepcopy
-from application.helpers.utils import insert_individual_original_id
+from ..helpers.utils import insert_individual_original_id
 from nltk.tokenize import word_tokenize
 from tqdm import tqdm
 
@@ -32,7 +32,6 @@ class ProcessPatch():
         msgid_to_orgid = {}
 
         for item in mailinglist_data:
-
             msgid_to_orgid[item['msg_id']] = item["original_id"]
 
         for item in target_data:
