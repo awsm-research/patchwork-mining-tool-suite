@@ -339,7 +339,7 @@ However, the insertion of each item type should follow a specific order: identit
 
 ## 4. Data dictionary
 <!-- TODO add high-level ER diagram -->
-![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/ERD-complete.png)
+![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/dbdiagram-io-complete.png)
 This section describes the high-level structure of the dataset. (**Note that fields named change1 refer to ExactBoWGroup and those named change2 refer to OWDiffGroup**)
 
 ### Collections
