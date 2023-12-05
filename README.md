@@ -338,10 +338,12 @@ access_data.insert_data(data="path/to/project/data", item_type="project")
 However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the [complete ER diagram](#3-data-dictionary)).
 
 ## 4. Data dictionary
-<!-- TODO add high-level ER diagram -->
-![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/dbdiagram-io-complete.png)
 
 This section describes the high-level structure of the dataset. (**Note that fields named change1 refer to ExactBoWGroup and those named change2 refer to OWDiffGroup**)
+
+Below is a complete ER diagram depicting the database structure, which can also be accessed in [dbdiagram](https://dbdiagram.io/d/dbdiagram-io-complete-656eb11f56d8064ca0638684).
+
+![text](https://github.com/MingzhaoLiang/Code-Review-Mining/blob/main/figures/dbdiagram-io-complete.png)
 
 ### Collections
 - [Identity](#Identity)
