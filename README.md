@@ -32,7 +32,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 
 ## 1. Heuristics and evaluation results
 
-A [sample](./implementation.ipynb) for processing the raw crawled data, including identity grouping and patch grouping, and [another](./import_data.ipynb) for importing processed data to the database are provided in Jupyter notebook.
+A [sample](./app/implementation.ipynb) for processing the raw crawled data, including identity grouping and patch grouping, and [another](./app/import_data.ipynb) for importing processed data to the database are provided in Jupyter notebook, which can be founf in folder app.
 
 ### 1.1 Patch grouping heuristic constraints
 
