@@ -351,7 +351,7 @@ Below is a complete ER diagram depicting the database structure, which can also 
 - [Patch](#Patch)
 - [Comment](#Comment)
 - [NewSeries](#NewSerie)
-- [Change1/Change2](#Change1Change2)
+- [ExactBoWGroup / OWDiffGroup](#ExactBoWGroupOWDiffGroup)
 - [MailingList](#MailingList)
 
 
