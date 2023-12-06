@@ -1,5 +1,10 @@
 .DS_Store
 
+twistd.pid
+
+code_review_JSON_files/
+code_review_db.archive
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
