@@ -79,7 +79,7 @@ The compressed complete dataset can be downloaded [here](https://figshare.com/s/
 ### 2.2. Use provided dataset
 To use the provided dataset, simply run docker containers without migrating database by using following commands in the terminal. 
 ```command
-cd docker
+cd app/docker
 
 # build docker images
 docker-compose -f docker-compose-non-migrate.yml build 
