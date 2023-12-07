@@ -10,7 +10,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 - MongoDB database for storing the data
 
 ## Table of Content
-1. [Heuristics and evaluation results](#1-heuristics-and-evaluation-results)
+1. [Approaches and evaluation results](#1-approaches-and-evaluation-results)
 2. [Provided dataset](#2-provided-dataset)
     1. [Get provided dataset](#21-get-provided-dataset)
     2. [Analyse provided dataset](#22-analyse-provided-dataset)
@@ -28,11 +28,11 @@ This project provides a suite of tools for mining and further processing Patchwo
     1. [Application filter](#41-application-filter)
 
 
-## 1. Heuristics and evaluation results
+## 1. Approaches and evaluation results
 
-A [sample](./app/implementation.ipynb) for processing the raw crawled data, including identity grouping and patch grouping, and [another](./app/import_data.ipynb) for importing processed data to the database are provided in Jupyter notebook, which can be founf in folder app.
+A [sample](./app/implementation.ipynb) for processing the raw crawled data, including identity grouping and patch grouping, and [another](./app/import_data.ipynb) for importing processed data to the database are provided in Jupyter notebook, which can be found in folder app.
 
-### 1.1 Patch grouping heuristic constraints
+### 1.1 Patch grouping approach constraints
 
 Two heuristics, Exact Bags-of-Words (BoW) Grouping and One-word Difference Grouping, are implemented for patch grouping. 
 Below are the constraints for the heuristics.
