@@ -34,8 +34,8 @@ A [sample](./app/implementation.ipynb) for processing the raw crawled data, incl
 
 ### 1.1 Patch grouping approach constraints
 
-Two heuristics, Exact Bags-of-Words (BoW) Grouping and One-word Difference Grouping, are implemented for patch grouping. 
-Below are the constraints for the heuristics.
+Two approaches, Exact Bags-of-Words (BoW) Grouping and One-word Difference Grouping, are implemented for patch grouping. 
+Below are the constraints for the approaches.
 
 **Exact BoW Grouping**
 * The bag-of-words of the summary phrases of the patches are the same
@@ -59,7 +59,7 @@ $`Accuracy = \frac{\text{\#Correct groups}}{\text{\#Evaluated groups}}`$
 
 where correct groups refer to 1) groups of patches that belong to the same code review process or 2) groups of identities that belong to the same individual that are correctly identified; and evaluated groups refer to the sampled groups that are manually evaluated.
 
-Below is the accuracy of each heuristic applied to the selected five projects.
+Below is the accuracy of each approach applied to the selected five projects.
 
 | Projects         | Exact BoW grouping | One-word difference grouping | Individual grouping |
 | :--------------- | :----------------- | :--------------------------- | :------------------ |
