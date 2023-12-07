@@ -54,7 +54,6 @@ Below are the constraints for the heuristics.
 For our manual evaluation, a patch grouping is considered correct if all patches in the group are related to the same review process by investigating the content of each patch (e.g., commit message, related comments, code changes).
 Similarly, we consider an individual identification as correct if all the identities in the group are certainly from the same individual by examining whether 1) the identities have submitted patches in the same group, 2) the identities have commented on the same patches, and 3) the identities share other characteristics such as the organisation email addresses.
 Finally, we compute the grouping accuracy using the following calculation:
-% The metric used in the evaluation is accuracy, which is calculated in the following manner:
 
 $`Accuracy = \frac{\text{\#Correct groups}}{\text{\#Evaluated groups}}`$
 
