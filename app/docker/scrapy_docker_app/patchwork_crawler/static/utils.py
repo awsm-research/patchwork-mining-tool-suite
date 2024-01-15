@@ -1,9 +1,14 @@
-import re, requests, json, dateutil
+import re
+import requests
+import json
+import dateutil
 from html.parser import HTMLParser
 from dateutil import parser
 
+
 class HTMLFilter(HTMLParser):
     text = ""
+
     def handle_data(self, data):
         self.text += data
 
@@ -52,20 +57,20 @@ class MailingListBase():
         for base_url, org_id in project_mapping.items():
             if base_url in response_url:
                 return org_id
-        
-        return None
 
+        return None
 
     def is_patch_related(self, email_title, email_content):
         is_git_commit = re.findall(r'git commit', email_title, re.IGNORECASE)
-        title_keywords = re.findall(r'\[.*?patch.*?\]|\d+/\d+|v\d+', email_title, re.IGNORECASE)
-        content_keywords = re.findall(r'diff --git', email_content, re.IGNORECASE)
+        title_keywords = re.findall(
+            r'\[.*?patch.*?\]|\d+/\d+|v\d+', email_title, re.IGNORECASE)
+        content_keywords = re.findall(
+            r'diff --git', email_content, re.IGNORECASE)
 
         if (title_keywords or content_keywords) and not is_git_commit:
             return True
         else:
             return False
-
 
     def convert_datetime(self, datetime_string):
         timezone_str = '''-12 Y
@@ -119,7 +124,6 @@ class MailingListBase():
         return utc_time
 
 
-
 class PatchworkCrawlerBase():
     def get_page_json(self, res):
         raw_data = res.xpath('//*[@id="content"]/div[2]/div[4]/pre').get()
@@ -136,9 +140,9 @@ class PatchworkCrawlerBase():
 
     def get_request(self, url):
         counter = 0
-        while counter <= 5:
+        while counter <= 10:
             try:
-                json_data = requests.get(url, timeout=10).json()
+                json_data = requests.get(url, timeout=20).json()
                 return json_data
             except (requests.exceptions.JSONDecodeError, json.decoder.JSONDecodeError) as e:
                 print(f"{url}: json decoder error")
@@ -147,5 +151,5 @@ class PatchworkCrawlerBase():
                 print(f"{url}: other errors; counter: {counter}")
                 print(e)
                 counter += 1
-        
+
         return None
