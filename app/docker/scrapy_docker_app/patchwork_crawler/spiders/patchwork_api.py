@@ -1,4 +1,7 @@
-import scrapy, json, re, requests
+import scrapy
+import json
+import re
+import requests
 from gc import callbacks
 from html.parser import HTMLParser
 from scrapy.exceptions import CloseSpider
@@ -27,6 +30,7 @@ MAX_PATCH_ID = BUFFER + 12982205
 
 ENDPOINT_TYPE = 'kernel'
 
+
 class PatchworkProjectSpider(scrapy.Spider):
     name = "patchwork_project"
 
@@ -34,7 +38,6 @@ class PatchworkProjectSpider(scrapy.Spider):
         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
         'HTTPERROR_ALLOWED_CODES': [404, 500]
     }
-
 
     def __init__(self, start_project_id=1, end_project_id=MAX_PROJECT_ID, endpoint_type=ENDPOINT_TYPE, fileidx=1, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -46,8 +49,8 @@ class PatchworkProjectSpider(scrapy.Spider):
 
         self.base_func = PatchworkCrawlerBase()
 
-        self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/projects/{self.current_project_id}"]
-
+        self.start_urls = [
+            f"https://patchwork.{self.endpoint_type}.org/api/projects/{self.current_project_id}"]
 
     def parse(self, response):
         if response.status == 200:
@@ -56,39 +59,41 @@ class PatchworkProjectSpider(scrapy.Spider):
                 item = self.base_func.get_page_json(response)
             except json.decoder.JSONDecodeError as e:
                 item = requests.get(response.url).json()
-            
+
             maintainers = item['maintainers']
             maintainer_list = list()
 
             for maintainer in maintainers:
-                maintainer_original_id = '-'.join([self.endpoint_type, 'user', str(maintainer['id'])])
+                maintainer_original_id = '-'.join(
+                    [self.endpoint_type, 'user', str(maintainer['id'])])
                 maintainer_api_url = maintainer['url']
                 maintainer_email = maintainer['email']
                 maintainer_username = maintainer['username']
 
                 identity_item = ProjectIdentityItem(
-                    original_id = maintainer_original_id,
-                    email = maintainer_email,
-                    name = maintainer_username,
-                    api_url = maintainer_api_url,
-                    project = '-'.join([self.endpoint_type, 'project', str(item['id'])]),
-                    is_maintainer = True,
+                    original_id=maintainer_original_id,
+                    email=maintainer_email,
+                    name=maintainer_username,
+                    api_url=maintainer_api_url,
+                    project='-'.join([self.endpoint_type,
+                                     'project', str(item['id'])]),
+                    is_maintainer=True,
                 )
 
                 yield identity_item
 
                 maintainer_list.append(maintainer_original_id)
-                
 
             project_item = ProjectItem(
-                original_id = '-'.join([self.endpoint_type, 'project', str(item['id'])]),
-                name = item['name'],
-                repository_url = item['webscm_url'],
-                api_url = item['url'],
-                web_url = item['web_url'],
-                list_id = item['list_id'],
-                list_address = item['list_email'],
-                maintainer_identity = maintainer_list,
+                original_id='-'.join([self.endpoint_type,
+                                     'project', str(item['id'])]),
+                name=item['name'],
+                repository_url=item['webscm_url'],
+                api_url=item['url'],
+                web_url=item['web_url'],
+                list_id=item['list_id'],
+                list_address=item['list_email'],
+                maintainer_identity=maintainer_list,
             )
 
             yield project_item
@@ -102,7 +107,7 @@ class PatchworkProjectSpider(scrapy.Spider):
         if self.current_project_id < self.max_project_id:
             self.current_project_id += 1
             yield scrapy.Request(
-                url = f"https://patchwork.{self.endpoint_type}.org/api/projects/{self.current_project_id}",
+                url=f"https://patchwork.{self.endpoint_type}.org/api/projects/{self.current_project_id}",
                 callback=self.parse
             )
 
@@ -126,7 +131,8 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
         self.base_func = PatchworkCrawlerBase()
 
-        self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}"]
+        self.start_urls = [
+            f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}"]
 
     def parse(self, response):
         if response.status == 200:
@@ -138,68 +144,69 @@ class PatchworkSeriesSpider(scrapy.Spider):
 
             submitter = item['submitter']
 
-            series_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
+            series_project_original_id = '-'.join(
+                [self.endpoint_type, 'project', str(item['project']['id'])])
 
-            submitter_original_id = '-'.join([self.endpoint_type, 'people', str(submitter['id'])])
+            submitter_original_id = '-'.join(
+                [self.endpoint_type, 'people', str(submitter['id'])])
             submitter_api_url = submitter['url']
             submitter_email = submitter['email']
             submitter_username = submitter['name']
 
             identity_item = SeriesIdentityItem(
-                original_id = submitter_original_id,
-                email = submitter_email,
-                name = submitter_username,
-                api_url = submitter_api_url,
-                project = series_project_original_id,
-                is_maintainer = False,
+                original_id=submitter_original_id,
+                email=submitter_email,
+                name=submitter_username,
+                api_url=submitter_api_url,
+                project=series_project_original_id,
+                is_maintainer=False,
             )
 
             yield identity_item
-            
+
             series_cover_letter_msg_id = None
             series_cover_letter_content = None
             if item['cover_letter']:
                 series_cover_letter_msg_id = item['cover_letter']['msgid']
                 cover_letter_url = item['cover_letter']['url']
-                
+
                 cover_detail = self.base_func.get_request(cover_letter_url)
                 series_cover_letter_content = cover_detail['content']
-                
 
             series_item = SeriesItem(
-                original_id = '-'.join([self.endpoint_type, 'series', str(item['id'])]),
-                name = item['name'],
-                date = item['date'],
-                version = item['version'],
-                total = item['total'],
-                received_total = item['received_total'],
-                cover_letter_msg_id = series_cover_letter_msg_id,
-                cover_letter_content = series_cover_letter_content,
-                api_url = item['url'],
-                web_url = item['web_url'],
-                project = series_project_original_id,
-                submitter_identity = submitter_original_id,
-                submitter_individual = None,
+                original_id='-'.join([self.endpoint_type,
+                                     'series', str(item['id'])]),
+                name=item['name'],
+                date=item['date'],
+                version=item['version'],
+                total=item['total'],
+                received_total=item['received_total'],
+                cover_letter_msg_id=series_cover_letter_msg_id,
+                cover_letter_content=series_cover_letter_content,
+                api_url=item['url'],
+                web_url=item['web_url'],
+                project=series_project_original_id,
+                submitter_identity=submitter_original_id,
+                submitter_individual=None,
             )
 
             yield series_item
-        
+
         elif response.status == 404:
             print(f'invalid page: {response.url}')
 
         elif response.status == 500:
             print(f"server error: {response.url}")
-        
-        
+
         if self.current_series_id < self.max_series_id:
             self.current_series_id += 1
             yield scrapy.Request(
-                url = f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}",
+                url=f"https://patchwork.{self.endpoint_type}.org/api/series/{self.current_series_id}",
                 callback=self.parse
             )
 
     def parse_cover_letter(self, response):
-        
+
         try:
             item = self.base_func.get_page_json(response)
         except json.decoder.JSONDecodeError as e:
@@ -210,7 +217,6 @@ class PatchworkSeriesSpider(scrapy.Spider):
         return cover_letter_content
 
 
-
 class PatchworkPatchSpider(scrapy.Spider):
 
     name = "patchwork_patch"
@@ -219,7 +225,6 @@ class PatchworkPatchSpider(scrapy.Spider):
         'ITEM_PIPELINES': {'patchwork_crawler.pipelines.PatchworkExporterPipeline': 300},
         'HTTPERROR_ALLOWED_CODES': [404, 500]
     }
-    
 
     def __init__(self, start_patch_id=1, end_patch_id=MAX_PATCH_ID, endpoint_type=ENDPOINT_TYPE, fileidx=1, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -231,8 +236,8 @@ class PatchworkPatchSpider(scrapy.Spider):
 
         self.base_func = PatchworkCrawlerBase()
 
-        self.start_urls = [f"https://patchwork.{self.endpoint_type}.org/api/patches/{self.current_patch_id}"]
-
+        self.start_urls = [
+            f"https://patchwork.{self.endpoint_type}.org/api/patches/{self.current_patch_id}"]
 
     def parse(self, response):
         if response.status == 200:
@@ -242,67 +247,69 @@ class PatchworkPatchSpider(scrapy.Spider):
             except json.decoder.JSONDecodeError as e:
                 item = requests.get(response.url).json()
 
-            patch_project_original_id = '-'.join([self.endpoint_type, 'project', str(item['project']['id'])])
+            patch_project_original_id = '-'.join(
+                [self.endpoint_type, 'project', str(item['project']['id'])])
 
             submitter = item['submitter']
 
-            submitter_original_id = '-'.join([self.endpoint_type, 'people', str(submitter['id'])])
+            submitter_original_id = '-'.join(
+                [self.endpoint_type, 'people', str(submitter['id'])])
             submitter_api_url = submitter['url']
             submitter_email = submitter['email']
             submitter_username = submitter['name']
 
-
             identity_item = PatchIdentityItem(
-                original_id = submitter_original_id,
-                email = submitter_email,
-                name = submitter_username,
-                api_url = submitter_api_url,
-                project = patch_project_original_id,
-                is_maintainer = False,
+                original_id=submitter_original_id,
+                email=submitter_email,
+                name=submitter_username,
+                api_url=submitter_api_url,
+                project=patch_project_original_id,
+                is_maintainer=False,
             )
 
             yield identity_item
 
-            
             if item['series']:
                 patch_series_api_id = item['series'][0]['id']
-                patch_series_original_id = '-'.join([self.endpoint_type, 'series', str(patch_series_api_id)])
+                patch_series_original_id = '-'.join(
+                    [self.endpoint_type, 'series', str(patch_series_api_id)])
             else:
                 patch_series_original_id = None
-            
-            patch_original_id = '-'.join([self.endpoint_type, 'patch', str(item['id'])])
+
+            patch_original_id = '-'.join([self.endpoint_type,
+                                         'patch', str(item['id'])])
 
             patch_in_reply_to = None
             if 'In-Reply-To' in item['headers'].keys():
                 patch_in_reply_to = item['headers']['In-Reply-To']
 
             patch_item = PatchItem(
-                original_id = patch_original_id,
-                name = item['name'],
-                state = item['state'],
-                date = item['date'],
-                msg_id = item['msgid'],
-                msg_content = item['content'],
-                code_diff = item['diff'],
-                api_url = item['url'],
-                web_url = item['web_url'],
-                commit_ref = item['commit_ref'],
-                in_reply_to = patch_in_reply_to,
-                change1 = None,
-                change2 = None,
-                mailinglist = None,
-                series = patch_series_original_id,
-                newseries = None,
-                submitter_identity = submitter_original_id,
-                submitter_individual = None,
-                project = patch_project_original_id
+                original_id=patch_original_id,
+                name=item['name'],
+                state=item['state'],
+                date=item['date'],
+                msg_id=item['msgid'],
+                msg_content=item['content'],
+                code_diff=item['diff'],
+                api_url=item['url'],
+                web_url=item['web_url'],
+                commit_ref=item['commit_ref'],
+                in_reply_to=patch_in_reply_to,
+                change1=None,
+                change2=None,
+                mailinglist=None,
+                series=patch_series_original_id,
+                newseries=None,
+                submitter_identity=submitter_original_id,
+                submitter_individual=None,
+                project=patch_project_original_id
             )
 
             yield patch_item
 
             comment_url = item['comments']
             comment_list = self.base_func.get_request(comment_url)
-            
+
             if comment_list:
                 for comment in comment_list:
 
@@ -314,53 +321,53 @@ class PatchworkPatchSpider(scrapy.Spider):
 
                     comment_submitter = comment['submitter']
 
-                    comment_submitter_original_id = '-'.join([self.endpoint_type, 'people', str(comment_submitter['id'])])
+                    comment_submitter_original_id = '-'.join(
+                        [self.endpoint_type, 'people', str(comment_submitter['id'])])
                     comment_submitter_api_url = comment_submitter['url']
                     comment_submitter_email = comment_submitter['email']
                     comment_submitter_username = comment_submitter['name']
 
                     comment_identity_item = PatchIdentityItem(
-                        original_id = comment_submitter_original_id,
-                        email = comment_submitter_email,
-                        name = comment_submitter_username,
-                        api_url = comment_submitter_api_url,
-                        project = patch_project_original_id,
-                        is_maintainer = False,
+                        original_id=comment_submitter_original_id,
+                        email=comment_submitter_email,
+                        name=comment_submitter_username,
+                        api_url=comment_submitter_api_url,
+                        project=patch_project_original_id,
+                        is_maintainer=False,
                     )
 
                     yield comment_identity_item
 
-
                     comment_item = CommentItem(
-                        original_id = '-'.join([self.endpoint_type, 'comment', str(comment['id'])]),
-                        msg_id = comment['msgid'],
-                        msg_content = comment['content'],
-                        date = comment['date'],
-                        subject = comment['subject'],
-                        in_reply_to = comment_in_reply_to,
-                        web_url = comment['web_url'],
-                        change1 = None,
-                        change2 = None,
-                        mailinglist = None,
-                        submitter_identity = comment_submitter_original_id,
-                        submitter_individual = None,
-                        patch = patch_original_id,
-                        project = patch_project_original_id
+                        original_id='-'.join([self.endpoint_type,
+                                             'comment', str(comment['id'])]),
+                        msg_id=comment['msgid'],
+                        msg_content=comment['content'],
+                        date=comment['date'],
+                        subject=comment['subject'],
+                        in_reply_to=comment_in_reply_to,
+                        web_url=comment['web_url'],
+                        change1=None,
+                        change2=None,
+                        mailinglist=None,
+                        submitter_identity=comment_submitter_original_id,
+                        submitter_individual=None,
+                        patch=patch_original_id,
+                        project=patch_project_original_id
                     )
 
                     yield comment_item
-        
+
         elif response.status == 404:
             print(f'invalid page: {response.url}')
 
         elif response.status == 500:
             print(f"server error: {response.url}")
 
-        
         if self.current_patch_id < self.max_patch_id:
             self.current_patch_id += 1
             yield scrapy.Request(
-                url = f"https://patchwork.{self.endpoint_type}.org/api/patches/{self.current_patch_id}",
+                url=f"https://patchwork.{self.endpoint_type}.org/api/patches/{self.current_patch_id}",
                 callback=self.parse
             )
 
