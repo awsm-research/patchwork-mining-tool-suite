@@ -6,7 +6,7 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-from scrapy.exporters import JsonLinesItemExporter #, JsonItemExporter
+from scrapy.exporters import JsonLinesItemExporter  # , JsonItemExporter
 from scrapy import signals
 from pydispatch import dispatcher
 from pathlib import Path
@@ -17,7 +17,7 @@ def get_item_type(item):
     # The JSON file names are used (imported) from the scrapy spider.
     if isinstance(item, items.ProjectItem):
         return 'project'
-    
+
     elif isinstance(item, items.IdentityItem):
         return f"{item.source}_identity"
 
@@ -32,6 +32,7 @@ def get_item_type(item):
 
     return type(item)
 
+
 class PatchworkCrawlerPipeline:
     def process_item(self, item, spider):
         return item
@@ -39,7 +40,8 @@ class PatchworkCrawlerPipeline:
 
 class PatchworkExporterPipeline(object):
 
-    fileNamesJson = ['project_identity', 'project', 'series_identity', 'series', 'patch_identity', 'patch', 'comment']
+    fileNamesJson = ['project_identity', 'project', 'series_identity',
+                     'series', 'patch_identity', 'patch', 'comment']
 
     def __init__(self):
         self.files = {}
@@ -48,7 +50,7 @@ class PatchworkExporterPipeline(object):
         dispatcher.connect(self.close_spider, signal=signals.spider_closed)
 
     def open_spider(self, spider):
-        
+
         if spider.name == 'patchwork_project':
             start_idx = 0
             end_idx = 1
@@ -60,12 +62,14 @@ class PatchworkExporterPipeline(object):
         elif spider.name == 'patchwork_patch':
             start_idx = 4
             end_idx = 6
-        
+
         try:
-            self.files |= dict([ (name, open(f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}{spider.fileidx}.jl",'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1] ])
+            self.files |= dict([(name, open(
+                f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}{spider.fileidx}.jl", 'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1]])
         except FileNotFoundError:
             Path("./retrieved_data/patchwork").mkdir(parents=True, exist_ok=True)
-            self.files |= dict([ (name, open(f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}{spider.fileidx}.jl",'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1] ])
+            self.files |= dict([(name, open(
+                f"./retrieved_data/patchwork/{spider.endpoint_type}_patchwork_{name}{spider.fileidx}.jl", 'ab')) for name in self.fileNamesJson[start_idx:end_idx + 1]])
 
         # self.files = dict([ (name, f"./retrieved_data/kernel_{name}.jl") for name in self.fileNamesJson ])
 
@@ -73,7 +77,7 @@ class PatchworkExporterPipeline(object):
             self.exporters[name] = JsonLinesItemExporter(self.files[name])
 
             # identity
-            if name in [self.fileNamesJson[i] for i in range (0, 5, 2)]:
+            if name in [self.fileNamesJson[i] for i in range(0, 5, 2)]:
                 self.exporters[name].fields_to_export = [
                     'original_id',
                     'email',
@@ -130,7 +134,7 @@ class PatchworkExporterPipeline(object):
                     'api_url',
                     'web_url',
                     'commit_ref',
-                    'reply_to_msg_id',
+                    'in_reply_to',
                     'change1',
                     'change2',
                     'mailinglist',
@@ -150,7 +154,7 @@ class PatchworkExporterPipeline(object):
                     'msg_content',
                     'date',
                     'subject',
-                    'reply_to_msg_id',
+                    'in_reply_to',
                     'web_url',
                     'change1',
                     'change2',
@@ -161,12 +165,11 @@ class PatchworkExporterPipeline(object):
                     'project'
                 ]
                 self.exporters[name].start_exporting()
-    
 
     def close_spider(self, spider):
         # for exporter in self.exporters.values():
         #     exporter.finish_exporting()
-        
+
         # for json_file in self.files.values():
         #     json_file.close()
 
@@ -193,10 +196,9 @@ class PatchworkExporterPipeline(object):
             self.files[self.fileNamesJson[5]].close()
             self.files[self.fileNamesJson[6]].close()
 
-
     def process_item(self, item, spider):
         item_type = get_item_type(item)
-        
+
         if item_type in self.fileNamesJson:
             self.exporters[item_type].export_item(item)
 
