@@ -12,6 +12,7 @@ from twisted.internet import reactor, defer
 from scrapy.crawler import CrawlerRunner
 from scrapy.utils.log import configure_logging
 from scrapy.utils.project import get_project_settings
+from scrapy.downloadermiddlewares.retry import get_retry_request
 
 
 """
@@ -170,7 +171,9 @@ class PatchworkSeriesSpider(scrapy.Spider):
                 series_cover_letter_msg_id = item['cover_letter']['msgid']
                 cover_letter_url = item['cover_letter']['url']
 
-                cover_detail = self.base_func.get_request(cover_letter_url)
+                cover_detail = None
+                while cover_detail is None:
+                    cover_detail = self.base_func.get_request(cover_letter_url)
                 series_cover_letter_content = cover_detail['content']
 
             series_item = SeriesItem(
@@ -191,6 +194,13 @@ class PatchworkSeriesSpider(scrapy.Spider):
             )
 
             yield series_item
+
+        elif response.status == 503:
+            new_request_or_none = get_retry_request(response.request,
+                                                    spider=self,
+                                                    reason="empty")
+
+            return new_request_or_none
 
         elif response.status == 404:
             print(f'invalid page: {response.url}')
@@ -357,6 +367,13 @@ class PatchworkPatchSpider(scrapy.Spider):
                     )
 
                     yield comment_item
+
+        elif response.status == 503:
+            new_request_or_none = get_retry_request(response.request,
+                                                    spider=self,
+                                                    reason="empty")
+
+            return new_request_or_none
 
         elif response.status == 404:
             print(f'invalid page: {response.url}')
