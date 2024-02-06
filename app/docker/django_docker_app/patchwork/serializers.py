@@ -460,74 +460,6 @@ class PatchStandardSerializer(serializers.ModelSerializer):
         return data
 
 
-class PatchContentFileSerializer(serializers.ModelSerializer):
-    code_diff = serializers.CharField(allow_blank=True, allow_null=True)
-
-    change1 = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.ExactBoWGroup.objects.all(), read_only=False, allow_null=True)
-    change2 = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.OWDiffGroup.objects.all(), read_only=False, allow_null=True)
-    mailinglist = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.MailingList.objects.all(), read_only=False, allow_null=True)
-    series = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Series.objects.all(), read_only=False, allow_null=True)
-    newseries = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False, allow_null=True)
-    submitter_identity = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
-    submitter_individual = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Individual.objects.all(), read_only=False, allow_null=True)
-    project = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Project.objects.all(), read_only=False)
-
-    class Meta:
-        model = models.Patch
-        fields = '__all__'
-        list_serializer_class = PatchBulkCreateSerializer
-
-    def to_internal_value(self, data):
-        if type(data['in_reply_to']) == list:
-            data['in_reply_to'] = json.dumps(data['in_reply_to'])
-
-        data['msg_content'] = TextFile(
-            data['msg_content'].encode(), name=f"{data['original_id']}-msg_content.txt")
-        return super().to_internal_value(data)
-
-
-class PatchDiffFileSerializer(serializers.ModelSerializer):
-    msg_content = serializers.CharField(allow_blank=True, allow_null=True)
-
-    change1 = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.ExactBoWGroup.objects.all(), read_only=False, allow_null=True)
-    change2 = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.OWDiffGroup.objects.all(), read_only=False, allow_null=True)
-    mailinglist = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.MailingList.objects.all(), read_only=False, allow_null=True)
-    series = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Series.objects.all(), read_only=False, allow_null=True)
-    newseries = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.NewSeries.objects.all(), read_only=False, allow_null=True)
-    submitter_identity = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Identity.objects.all(), read_only=False)
-    submitter_individual = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Individual.objects.all(), read_only=False, allow_null=True)
-    project = serializers.SlugRelatedField(
-        slug_field="original_id", queryset=models.Project.objects.all(), read_only=False)
-
-    class Meta:
-        model = models.Patch
-        fields = '__all__'
-        list_serializer_class = PatchBulkCreateSerializer
-
-    def to_internal_value(self, data):
-        if type(data['in_reply_to']) == list:
-            data['in_reply_to'] = json.dumps(data['in_reply_to'])
-
-        data['code_diff'] = TextFile(
-            data['code_diff'].encode(), name=f"{data['original_id']}-code_diff.txt")
-        return super().to_internal_value(data)
-
-
 class PatchFileSerializer(serializers.ModelSerializer):
 
     change1 = serializers.SlugRelatedField(
@@ -725,11 +657,6 @@ class ExactBoWGroupCreateSerializer(serializers.ModelSerializer):
     comments = serializers.SlugRelatedField(
         slug_field="original_id", many=True, read_only=True)
 
-    # submitter_identity = serializers.PrimaryKeyRelatedField(many=True, queryset=models.Identity.objects.all(), read_only=False)
-    # submitter_individual = serializers.PrimaryKeyRelatedField(many=True, queryset=models.Individual.objects.all(), read_only=False, allow_null=True)
-    # series = serializers.PrimaryKeyRelatedField(many=True, queryset=models.Series.objects.all(), read_only=False, allow_null=True)
-    # newseries = serializers.PrimaryKeyRelatedField(many=True, queryset=models.NewSeries.objects.all(), read_only=False, allow_null=True)
-
     class Meta:
         model = models.ExactBoWGroup
         fields = (
@@ -760,11 +687,6 @@ class OWDiffGroupCreateSerializer(serializers.ModelSerializer):
         slug_field="original_id", many=True, read_only=True)
     comments = serializers.SlugRelatedField(
         slug_field="original_id", many=True, read_only=True)
-
-    # submitter_identity = serializers.PrimaryKeyRelatedField(many=True, queryset=models.Identity.objects.all(), read_only=False)
-    # submitter_individual = serializers.PrimaryKeyRelatedField(many=True, queryset=models.Individual.objects.all(), read_only=False, allow_null=True)
-    # series = serializers.PrimaryKeyRelatedField(many=True, queryset=models.Series.objects.all(), read_only=False, allow_null=True)
-    # newseries = serializers.PrimaryKeyRelatedField(many=True, queryset=models.NewSeries.objects.all(), read_only=False, allow_null=True)
 
     class Meta:
         model = models.OWDiffGroup

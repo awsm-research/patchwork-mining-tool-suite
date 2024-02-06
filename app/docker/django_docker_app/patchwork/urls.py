@@ -58,10 +58,7 @@ urlpatterns = [
          views.OWDiffGroupNewSeriesRelationCreateView.as_view()),
 
     path('series/create/large_content/', views.SeriesFileCreateView.as_view()),
-    path('patch/create/large_content/',
-         views.PatchContentFileCreateView.as_view()),
-    path('patch/create/large_diff/', views.PatchDiffFileCreateView.as_view()),
-    path('patch/create/large/', views.PatchFileCreateView.as_view()),
+    path('patch/create/large_content/', views.PatchFileCreateView.as_view()),
     path('comment/create/large_content/',
          views.CommentFileCreateView.as_view()),
     path('mailinglist/create/large_content/',

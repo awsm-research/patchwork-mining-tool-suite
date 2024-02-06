@@ -172,30 +172,6 @@ class PatchStandardCreateView(generics.CreateAPIView):
         return super(PatchStandardCreateView, self).get_serializer(*args, **kwargs)
 
 
-class PatchContentFileCreateView(generics.CreateAPIView):
-
-    queryset = Patch.objects.all()
-    serializer_class = PatchContentFileSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get("data", {}), list):
-            kwargs["many"] = True
-
-        return super(PatchContentFileCreateView, self).get_serializer(*args, **kwargs)
-
-
-class PatchDiffFileCreateView(generics.CreateAPIView):
-
-    queryset = Patch.objects.all()
-    serializer_class = PatchDiffFileSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        if isinstance(kwargs.get("data", {}), list):
-            kwargs["many"] = True
-
-        return super(PatchDiffFileCreateView, self).get_serializer(*args, **kwargs)
-
-
 class PatchFileCreateView(generics.CreateAPIView):
 
     queryset = Patch.objects.all()

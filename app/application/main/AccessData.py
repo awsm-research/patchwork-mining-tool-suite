@@ -179,24 +179,19 @@ class AccessData():
                         elif item_type == self.__item_types[3]:
 
                             standard_data = list()
-                            large_data = list()
                             large_content_data = list()
-                            large_diff_data = list()
 
                             # travers patch data to see if any of them contains fields exceeding size limit
                             for data_item in json_data_batch:
-                                # store data with msg_content and code_diff exceed size limit in large_data
-                                if (data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT) and (data_item['code_diff'] and len(data_item['code_diff']) > SIZE_LIMIT):
-                                    large_data.append(data_item)
+                                msg_content_size = len(
+                                    data_item['msg_content']) if data_item['msg_content'] else 0
+                                code_diff_size = len(
+                                    data_item['code_diff']) if data_item['code_diff'] else 0
+                                total_size = msg_content_size + code_diff_size
 
-                                # store data with only msg_content exceeds size limit in large_content_data
-                                elif data_item['msg_content'] and len(data_item['msg_content']) > SIZE_LIMIT:
+                                # store data exceed size limit in large_data
+                                if total_size > SIZE_LIMIT:
                                     large_content_data.append(data_item)
-
-                                # store data with only code_diff exceeds size limit in large_diff_data
-                                elif data_item['code_diff'] and len(data_item['code_diff']) > SIZE_LIMIT:
-                                    large_diff_data.append(data_item)
-
                                 # store data within size limit in standard_data
                                 else:
                                     standard_data.append(data_item)
@@ -204,15 +199,9 @@ class AccessData():
                             # import each type of data to database
                             if standard_data:
                                 self.__post_data(standard_data, item_type)
-                            if large_data:
-                                self.__post_data(
-                                    large_data, item_type, 'large/')
                             if large_content_data:
                                 self.__post_data(
                                     large_content_data, item_type, 'large_content/')
-                            if large_diff_data:
-                                self.__post_data(
-                                    large_diff_data, item_type, 'large_diff/')
 
                         # comments
                         elif item_type == self.__item_types[4]:
