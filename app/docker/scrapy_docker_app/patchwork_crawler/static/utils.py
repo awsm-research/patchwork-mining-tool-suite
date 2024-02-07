@@ -4,6 +4,9 @@ import json
 import dateutil
 from html.parser import HTMLParser
 from dateutil import parser
+from urllib.parse import urlencode
+
+API_KEY = "e6c6e57c-953d-408c-999a-bbb02221503c"
 
 
 class HTMLFilter(HTMLParser):
@@ -140,9 +143,14 @@ class PatchworkCrawlerBase():
 
     def get_request(self, url):
         counter = 0
-        while counter <= 10:
+        while counter <= 5:
             try:
-                json_data = requests.get(url, timeout=20).json()
+                response = requests.get(url, timeout=30)
+
+                if response.status_code == 503:
+                    return self.get_request(url)
+
+                json_data = response.json()
                 return json_data
             except (requests.exceptions.JSONDecodeError, json.decoder.JSONDecodeError) as e:
                 print(f"{url}: json decoder error")
@@ -153,3 +161,8 @@ class PatchworkCrawlerBase():
                 counter += 1
 
         return None
+
+    def get_scrapeops_url(url):
+        payload = {'api_key': API_KEY, 'url': url}
+        proxy_url = 'https://proxy.scrapeops.io/v1/?' + urlencode(payload)
+        return proxy_url
