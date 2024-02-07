@@ -1,0 +1,298 @@
+change1_original_id,patch_original_id,patch_name,date,is_correct
+kernel-change1-635516,kernel-patch-4078811,[4/7] mfd: sun6i-prcm: document DT bindings,2014-04-28T14:58:47,yes
+kernel-change1-635516,kernel-patch-4130921,"[v2,4/7] mfd: sun6i-prcm: document DT bindings",2014-05-07T17:25:51,yes
+kernel-change1-635516,kernel-patch-4141701,"[v3,4/7] mfd: sun6i-prcm: document DT bindings",2014-05-09T11:11:48,yes
+kernel-change1-635516,kernel-patch-4174441,"[v4,4/7] mfd: sun6i-prcm: document DT bindings",2014-05-14T12:38:18,yes
+kernel-change1-635516,kernel-patch-4179991,"[v5,2/5] mfd: sun6i-prcm: document DT bindings",2014-05-15T08:55:10,yes
+kernel-change1-651760,kernel-patch-4361711,"[v2,01/10] mfd: max77686: Convert to use regmap_irq",2014-06-16T18:02:29,yes
+kernel-change1-651760,kernel-patch-4385541,"[v3,01/14] mfd: max77686: Convert to use regmap_irq",2014-06-19T18:20:27,yes
+kernel-change1-651760,kernel-patch-4423641,"[v4,01/14] mfd: max77686: Convert to use regmap_irq",2014-06-25T19:03:25,yes
+kernel-change1-651760,kernel-patch-4429811,"[v5,01/14] mfd: max77686: Convert to use regmap_irq",2014-06-26T18:15:33,yes
+kernel-change1-651760,kernel-patch-4479601,"[v6,01/23] mfd: max77686: Convert to use regmap_irq",2014-07-04T09:55:00,yes
+kernel-change1-651760,kernel-patch-4483501,"[v7,01/24] mfd: max77686: Convert to use regmap_irq",2014-07-04T20:24:04,yes
+kernel-change1-637677,kernel-patch-8774971,mtd: nand: s3c2410: fix bug in s3c2410_nand_correct_data(),2016-04-07T16:48:17,yes
+kernel-change1-637677,kernel-patch-8807691,mtd: nand: s3c2410: fix bug in s3c2410_nand_correct_data(),2016-04-12T07:30:35,yes
+kernel-change1-598380,kernel-patch-2471661,[08/23] ARM: u300: register I2C bus drivers from device tree,2013-04-22T09:53:20,yes
+kernel-change1-598380,kernel-patch-2642181,[07/39] ARM: u300: register I2C bus drivers from device tree,2013-05-31T09:18:42,yes
+kernel-change1-540469,kernel-patch-13022924,"[3/3,RFC] ARM: dts: stm32: Add nvmem-syscon node to TAMP to expose boot count on DHSOM",2022-10-27T22:50:20,yes
+kernel-change1-540469,kernel-patch-13245199,"[v2,3/3] ARM: dts: stm32: Add nvmem-syscon node to TAMP to expose boot count on DHSOM",2023-05-17T15:25:13,yes
+kernel-change1-626860,kernel-patch-3628331,[3/3] mfd: vexpress: Define the device as MFD cells,2014-02-11T16:53:30,yes
+kernel-change1-626860,kernel-patch-4080581,[04/10] mfd: vexpress: Define the device as MFD cells,2014-04-28T17:57:51,yes
+kernel-change1-636232,kernel-patch-10530115,[2/3] mtd: spi-nor: unlock global block protection on sst26vf064b,2018-07-17T16:28:30,yes
+kernel-change1-636232,kernel-patch-10595243,"[v2,2/3] mtd: spi-nor: unlock global block protection on sst26vf064b",2018-09-11T08:22:31,yes
+kernel-change1-636232,kernel-patch-11149139,[23/23] mtd: spi-nor: Unlock global block protection on sst26vf064b,2019-09-17T15:55:54,yes
+kernel-change1-565309,kernel-patch-2269021,[1/3] pwm: davinci: Add Kconfig support for ECAP & EHRPWM devices,2013-03-14T10:32:36,yes
+kernel-change1-565309,kernel-patch-2305431,[v2] pwm: davinci: Add Kconfig support for ECAP & EHRPWM devices,2013-03-20T06:39:24,yes
+kernel-change1-563446,kernel-patch-9886619,[2/4] usb: xhci-mtk: add generic compatible string,2017-08-08T05:42:50,yes
+kernel-change1-563446,kernel-patch-9903065,"[v2,2/4] usb: xhci-mtk: add generic compatible string",2017-08-16T06:08:11,yes
+kernel-change1-563446,kernel-patch-9926965,"[RESEND,v2,1/3] usb: xhci-mtk: add generic compatible string",2017-08-29T09:20:41,yes
+kernel-change1-563446,kernel-patch-9929331,"[v3,1/3] usb: xhci-mtk: add generic compatible string",2017-08-30T11:34:09,yes
+kernel-change1-550158,kernel-patch-11881903,"[RFC,21/26] kvm: arm64: Add function to enter host from KVM nVHE hyp code",2020-11-04T18:36:25,yes
+kernel-change1-550158,kernel-patch-11891261,"[v1,14/24] kvm: arm64: Add function to enter host from KVM nVHE hyp code",2020-11-09T11:32:23,yes
+kernel-change1-550158,kernel-patch-11910937,"[v2,18/24] kvm: arm64: Add function to enter host from KVM nVHE hyp code",2020-11-16T20:43:12,yes
+kernel-change1-550158,kernel-patch-11934331,"[v3,18/23] kvm: arm64: Add function to enter host from KVM nVHE hyp code",2020-11-26T15:54:16,yes
+kernel-change1-550158,kernel-patch-11946811,"[v4,20/26] kvm: arm64: Add function to enter host from KVM nVHE hyp code",2020-12-02T18:41:16,yes
+kernel-change1-529502,kernel-patch-10760973,[3/6] ARM: dts: meson8b: add the temperature calibration data for the SAR ADC,2019-01-12T13:06:46,yes
+kernel-change1-529502,kernel-patch-10771775,"[v2,4/7] ARM: dts: meson8b: add the temperature calibration data for the SAR ADC",2019-01-18T22:52:24,yes
+kernel-change1-536956,kernel-patch-5003291,"[v2,3/4] ARM: dts: apq8064: Add USB OTG support",2014-09-30T14:10:10,yes
+kernel-change1-536956,kernel-patch-5010441,"[v3,3/4] ARM: dts: apq8064: Add USB OTG support",2014-10-01T09:06:49,yes
+kernel-change1-536956,kernel-patch-5863121,[03/12] ARM: dts: apq8064: Add USB OTG support,2015-02-23T07:55:08,yes
+kernel-change1-536956,kernel-patch-6184181,[03/10] ARM: dts: apq8064: Add USB OTG support,2015-04-09T08:23:02,yes
+kernel-change1-536956,kernel-patch-6195181,"[v2,04/12] ARM: dts: apq8064: Add USB OTG support",2015-04-10T12:34:16,yes
+kernel-change1-536956,kernel-patch-6199251,"[v3,04/11] ARM: dts: apq8064: Add USB OTG support",2015-04-10T20:43:42,yes
+kernel-change1-520700,kernel-patch-2854095,[01/12] ARM: exynos4: create a DT header defining CLK IDs,2013-09-05T12:36:19,yes
+kernel-change1-520700,kernel-patch-2854481,"[v2,01/12] ARM: exynos4: create a DT header defining CLK IDs",2013-09-06T10:12:30,yes
+kernel-change1-520700,kernel-patch-3448741,"[RESEND,v2,01/12] ARM: exynos4: create a DT header defining CLK IDs",2014-01-07T14:47:29,yes
+kernel-change1-586915,kernel-patch-2827514,[1/2] net: mvneta: move the RX and TX desc macros outside of the structs,2013-07-15T13:27:25,yes
+kernel-change1-586915,kernel-patch-2834956,"[PATCHv2,1/2] net: mvneta: move the RX and TX desc macros outside of the structs",2013-07-29T13:21:27,yes
+kernel-change1-577029,kernel-patch-12875421,"[v2,21/48] arm64: dts: mediatek: align gpio-key node names with dtschema",2022-06-09T11:39:54,yes
+kernel-change1-577029,kernel-patch-12883199,"[v3,15/40] arm64: dts: mediatek: align gpio-key node names with dtschema",2022-06-16T00:53:08,yes
+kernel-change1-528559,kernel-patch-3329481,[2/3] regulator: act8865: add device tree binding doc,2013-12-12T01:18:50,yes
+kernel-change1-528559,kernel-patch-3359321,"[2/3,v2] regulator: act8865: add device tree binding doc",2013-12-17T05:36:36,yes
+kernel-change1-528559,kernel-patch-3367561,"[v3,2/3] regulator: act8865: add device tree binding doc",2013-12-18T05:14:50,yes
+kernel-change1-528559,kernel-patch-3395721,"[v4,2/3] regulator: act8865: add device tree binding doc",2013-12-23T05:26:15,yes
+kernel-change1-528559,kernel-patch-3399971,"[v5,2/3] regulator: act8865: add device tree binding doc",2013-12-24T02:35:14,yes
+kernel-change1-530251,kernel-patch-12715208,"drm/panel: Add panel-edp: add lcd innolux,n140hca-eac",2022-01-17T11:21:24,yes
+kernel-change1-530251,kernel-patch-12750984,"drm/panel: Add panel-edp: add lcd innolux,n140hca-eac",2022-02-18T06:36:10,yes
+kernel-change1-647916,kernel-patch-12380533,"[v1,13/16] xen: swiotlb: return error code from xen_swiotlb_map_sg()",2021-07-15T16:45:41,yes
+kernel-change1-647916,kernel-patch-12396575,"[v2,17/21] xen: swiotlb: return error code from xen_swiotlb_map_sg()",2021-07-23T17:50:04,yes
+kernel-change1-647916,kernel-patch-12409743,"[v3,17/21] xen: swiotlb: return error code from xen_swiotlb_map_sg()",2021-07-29T20:15:35,yes
+kernel-change1-658562,kernel-patch-10453795,"[v2,3/5] dmaengine: imx-sdma: remove usless lock",2018-06-08T13:44:48,yes
+kernel-change1-658562,kernel-patch-10457273,"[v3,4/6] dmaengine: imx-sdma: remove usless lock",2018-06-11T14:59:31,yes
+kernel-change1-650671,kernel-patch-10858987,"[v5,07/14] soc: mediatek: Refactor sram control",2019-03-19T08:01:33,yes
+kernel-change1-650671,kernel-patch-11005761,"[v6,07/14] soc: mediatek: Refactor sram control",2019-06-20T02:37:59,yes
+kernel-change1-650671,kernel-patch-11118341,"[v7,06/13] soc: mediatek: Refactor sram control",2019-08-28T09:11:39,yes
+kernel-change1-650671,kernel-patch-11214511,"[v8,06/14] soc: mediatek: Refactor sram control",2019-10-28T02:48:10,yes
+kernel-change1-535882,kernel-patch-13026411,[1/2] thermal: mediatek: add support for MT7986 and MT7981,2022-10-31T22:15:15,yes
+kernel-change1-535882,kernel-patch-13059818,"[v2,1/2] thermal: mediatek: add support for MT7986 and MT7981",2022-11-30T13:19:39,yes
+kernel-change1-535882,kernel-patch-13067571,[v3] thermal: mediatek: add support for MT7986 and MT7981,2022-12-07T20:07:01,yes
+kernel-change1-535882,kernel-patch-13105513,"[v4,2/2] thermal: mediatek: add support for MT7986 and MT7981",2023-01-18T03:55:41,yes
+kernel-change1-535882,kernel-patch-13106556,"[v5,2/2] thermal: mediatek: add support for MT7986 and MT7981",2023-01-18T15:40:58,yes
+kernel-change1-665042,kernel-patch-1363351,mxs/spi: Fix misuse of init_completion,2012-08-22T20:57:45,yes
+kernel-change1-665042,kernel-patch-1369591,[V2] mxs/spi: Fix misuse of init_completion,2012-08-24T02:33:44,yes
+kernel-change1-665042,kernel-patch-1369641,[V3] mxs/spi: Fix misuse of init_completion,2012-08-24T02:56:27,yes
+kernel-change1-563085,kernel-patch-12900979,"[v2,1/4] dt-bindings: soc: samsung: usi: add exynosautov9-usi compatible",2022-06-30T02:16:53,yes
+kernel-change1-563085,kernel-patch-12902529,"[v3,1/5] dt-bindings: soc: samsung: usi: add exynosautov9-usi compatible",2022-07-01T01:52:22,yes
+kernel-change1-622549,kernel-patch-12961669,"[V4,4/4] arm64: dts: imx8mq: update sdma node name format",2022-09-01T02:08:50,yes
+kernel-change1-622549,kernel-patch-12961670,"[V4,4/4] arm64: dts: imx8mq: update sdma node name format",2022-09-01T02:08:51,yes
+kernel-change1-622549,kernel-patch-12967203,"[v6,4/4] arm64: dts: imx8mq: update sdma node name format",2022-09-06T09:42:56,yes
+kernel-change1-537372,kernel-patch-9516757,"[v1,2/3] MAINTAINERS: add zx2967 reset controller driver to ARM ZTE architecture",2017-01-14T07:05:29,yes
+kernel-change1-537372,kernel-patch-9518481,"[v2,2/3] MAINTAINERS: add zx2967 reset controller driver to ARM ZTE architecture",2017-01-16T10:56:33,yes
+kernel-change1-537372,kernel-patch-9519851,"[v3,2/3] MAINTAINERS: add zx2967 reset controller driver to ARM ZTE architecture",2017-01-17T03:22:56,yes
+kernel-change1-531065,kernel-patch-10070323,[3/8] ASoC: uniphier: add DT bindings documentation for UniPhier AIO,2017-11-22T11:43:16,yes
+kernel-change1-531065,kernel-patch-10174861,"[v2,1/9] ASoC: uniphier: add DT bindings documentation for UniPhier AIO",2018-01-19T09:25:28,yes
+kernel-change1-531065,kernel-patch-10204755,"[RESEND,v2,1/9] ASoC: uniphier: add DT bindings documentation for UniPhier AIO",2018-02-07T09:10:41,yes
+kernel-change1-609240,kernel-patch-2847100,[4/8] ARM: dts: exynos4: Simplify MCT interrupt map,2013-08-20T13:52:44,yes
+kernel-change1-609240,kernel-patch-3333051,"[v3,4/6] ARM: dts: exynos4: Simplify MCT interrupt map",2013-12-12T16:12:16,yes
+kernel-change1-518578,kernel-patch-5067671,"[v3,3/6] ARM: rockchip: add option to access the pmu via a phandle in smp_operations",2014-10-10T21:26:07,yes
+kernel-change1-518578,kernel-patch-5077261,"[v4,2/6] ARM: rockchip: add option to access the pmu via a phandle in smp_operations",2014-10-13T20:11:58,yes
+kernel-change1-518578,kernel-patch-5086461,"[v5,2/6] ARM: rockchip: add option to access the pmu via a phandle in smp_operations",2014-10-15T17:23:01,yes
+kernel-change1-534964,kernel-patch-2830451,[4/6] ASoC: sirf-soc-inner: add drivers for both CPU and Codec DAIs,2013-07-19T11:07:20,yes
+kernel-change1-534964,kernel-patch-3104861,"[v2,4/6] ASoC: sirf-soc-inner: add drivers for both CPU and Codec DAIs",2013-10-28T23:05:34,yes
+kernel-change1-633976,kernel-patch-11112269,"[v3,4/7] serial: fsl_linflexuart: Be consistent with the name",2019-08-23T19:11:37,yes
+kernel-change1-633976,kernel-patch-11132865,"[v4,3/6] serial: fsl_linflexuart: Be consistent with the name",2019-09-05T11:58:36,yes
+kernel-change1-633976,kernel-patch-11171049,"[v5,3/5] serial: fsl_linflexuart: Be consistent with the name",2019-10-02T13:04:42,yes
+kernel-change1-633976,kernel-patch-11183951,"[v6,3/5] serial: fsl_linflexuart: Be consistent with the name",2019-10-10T16:52:26,yes
+kernel-change1-633976,kernel-patch-11193305,"[v7,3/5] serial: fsl_linflexuart: Be consistent with the name",2019-10-16T12:48:25,yes
+kernel-change1-583092,kernel-patch-11107153,"[net-next,v2,3/3] dt-bindings: net: ethernet: Update mt7622 docs and dts to reflect the new phylink API",2019-08-21T14:43:36,yes
+kernel-change1-583092,kernel-patch-11111779,"[net-next,v3,3/3] dt-bindings: net: ethernet: Update mt7622 docs and dts to reflect the new phylink API",2019-08-23T13:45:16,yes
+kernel-change1-583092,kernel-patch-11113577,"[net-next,v4,3/3] dt-bindings: net: ethernet: Update mt7622 docs and dts to reflect the new phylink API",2019-08-25T17:43:41,yes
+kernel-change1-538845,kernel-patch-8188661,[07/11] ARM: dts: sunxi: Add dtsi file for AXP809 PMIC,2016-02-02T10:27:40,yes
+kernel-change1-538845,kernel-patch-8312561,"[v2,06/10] ARM: dts: sunxi: Add dtsi file for AXP809 PMIC",2016-02-15T10:31:24,yes
+kernel-change1-538845,kernel-patch-8684511,"[resend,v2,5/9] ARM: dts: sunxi: Add dtsi file for AXP809 PMIC",2016-03-29T09:22:28,yes
+kernel-change1-538845,kernel-patch-9145135,"[resend,v2,2/6] ARM: dts: sunxi: Add dtsi file for AXP809 PMIC",2016-05-31T16:23:20,yes
+kernel-change1-600230,kernel-patch-10704457,[1/2] ARM: shmobile: R-Mobile: Clean up struct rmobile_pm_domain,2018-11-29T11:09:30,yes
+kernel-change1-600230,kernel-patch-10717115,[8/9] ARM: shmobile: R-Mobile: Clean up struct rmobile_pm_domain,2018-12-06T21:59:33,yes
+kernel-change1-640948,kernel-patch-12777581,[3/5] media: imx-jpeg: Propagate the output frame size to the capture side,2022-03-11T07:51:45,yes
+kernel-change1-640948,kernel-patch-12785043,"[v2,3/5] media: imx-jpeg: Propagate the output frame size to the capture side",2022-03-18T08:16:53,yes
+kernel-change1-640948,kernel-patch-12789584,"[v3,3/5] media: imx-jpeg: Propagate the output frame size to the capture side",2022-03-23T09:05:56,yes
+kernel-change1-583189,kernel-patch-13246476,[1/3] Documentation/arm64: Update ARM and arch reference,2023-05-18T10:52:00,yes
+kernel-change1-583189,kernel-patch-13268817,"[1/3,v2] Documentation/arm64: Update ARM and arch reference",2023-06-06T09:35:26,yes
+kernel-change1-541658,kernel-patch-10115125,[7/8] ARM: dts: keystone-k2e-clocks: Add missing unit name to clock nodes that have regs,2017-12-15T13:21:01,yes
+kernel-change1-541658,kernel-patch-10117429,"[V2,7/8] ARM: dts: keystone-k2e-clocks: Add missing unit name to clock nodes that have regs",2017-12-16T20:40:39,yes
+kernel-change1-546604,kernel-patch-7281221,"[v7,3/7] ARM: dts: imx: imx7d-sbd add usb_otg2_vbus pinctrl settings",2015-09-28T21:56:37,yes
+kernel-change1-546604,kernel-patch-7300311,"[v8,3/7] ARM: dts: imx: imx7d-sbd add usb_otg2_vbus pinctrl settings",2015-09-30T16:11:05,yes
+kernel-change1-544624,kernel-patch-3130041,[3/3] ARM: dts: imx6: Add support for imx6q dmo edmqmx6,2013-11-02T07:29:06,yes
+kernel-change1-544624,kernel-patch-3149241,[2/2] ARM: dts: imx6: Add support for imx6q dmo edmqmx6,2013-11-06T21:04:42,yes
+kernel-change1-544624,kernel-patch-3152851,[2/2] ARM: dts: imx6: Add support for imx6q dmo edmqmx6,2013-11-07T13:54:27,yes
+kernel-change1-651800,kernel-patch-12692693,"[RFC,v4,net-next,12/23] pinctrl: ocelot: convert pinctrl to regmap",2021-11-16T06:23:17,yes
+kernel-change1-651800,kernel-patch-12693152,"[v1,net-next,3/4] pinctrl: ocelot: convert pinctrl to regmap",2021-11-19T19:59:27,yes
+kernel-change1-580133,kernel-patch-11643535,[09/16] arm64: dts: allwinner: h6: Enable HDMI sound for Beelink GS1,2020-07-04T11:38:55,yes
+kernel-change1-580133,kernel-patch-11754837,"[v2,09/20] arm64: dts: allwinner: h6: Enable HDMI sound for Beelink GS1",2020-09-03T20:30:23,yes
+kernel-change1-580133,kernel-patch-11787997,"[v3,08/19] arm64: dts: allwinner: h6: Enable HDMI sound for Beelink GS1",2020-09-20T18:07:47,yes
+kernel-change1-580133,kernel-patch-11789173,"[v4,10/22] arm64: dts: allwinner: h6: Enable HDMI sound for Beelink GS1",2020-09-21T10:27:19,yes
+kernel-change1-580133,kernel-patch-11802323,"[v5,10/20] arm64: dts: allwinner: h6: Enable HDMI sound for Beelink GS1",2020-09-27T19:29:02,yes
+kernel-change1-563821,kernel-patch-10457115,[13/28] drm/mediatek: add connection from RDMA0 to DSI3,2018-06-11T03:26:05,yes
+kernel-change1-563821,kernel-patch-10473605,"[v6,15/29] drm/mediatek: add connection from RDMA0 to DSI3",2018-06-19T07:34:16,yes
+kernel-change1-563821,kernel-patch-10476365,"[v7,15/29] drm/mediatek: add connection from RDMA0 to DSI3",2018-06-20T08:19:17,yes
+kernel-change1-635329,kernel-patch-13210297,[3/4] dt-bindings: power: reset: convert nvmem-reboot-mode bindings to YAML,2023-04-13T13:17:04,yes
+kernel-change1-635329,kernel-patch-13214173,"[v2,2/3] dt-bindings: power: reset: convert nvmem-reboot-mode bindings to YAML",2023-04-17T14:55:35,yes
+kernel-change1-509403,kernel-patch-5495141,[02/27] ARM: mvebu: armada-370: Relicense the device tree under GPLv2+/X11,2014-12-15T15:38:10,yes
+kernel-change1-509403,kernel-patch-5709691,"[v2,02/27] ARM: mvebu: armada-370: Relicense the device tree under GPLv2+/X11",2015-01-26T14:15:46,yes
+kernel-change1-582220,kernel-patch-11394491,[4/4] drm/meson: crtc: handle commit of Amlogic FBC frames,2020-02-20T16:27:58,yes
+kernel-change1-582220,kernel-patch-11395887,[4/4] drm/meson: crtc: handle commit of Amlogic FBC frames,2020-02-21T09:08:45,yes
+kernel-change1-582220,kernel-patch-11455601,"[v3,4/7] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-03-24T14:20:13,yes
+kernel-change1-582220,kernel-patch-11457215,"[v4,4/8] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-03-25T08:50:21,yes
+kernel-change1-582220,kernel-patch-11493185,"[v5,4/8] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-04-16T15:24:56,yes
+kernel-change1-582220,kernel-patch-11501921,"[v6,6/6] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-04-21T16:15:59,yes
+kernel-change1-582220,kernel-patch-11579079,"[v7,6/6] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-05-29T15:19:35,yes
+kernel-change1-582220,kernel-patch-11638069,"[v8,6/6] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-07-02T07:47:59,yes
+kernel-change1-582220,kernel-patch-11641137,"[v9,6/6] drm/meson: crtc: handle commit of Amlogic FBC frames",2020-07-03T08:07:28,yes
+kernel-change1-636920,kernel-patch-11558783,[12/15] PCI: brcmstb: Set internal memory viewport sizes,2020-05-19T20:34:10,yes
+kernel-change1-636920,kernel-patch-11571083,"[v2,11/14] PCI: brcmstb: Set internal memory viewport sizes",2020-05-26T19:12:50,yes
+kernel-change1-636920,kernel-patch-11586191,"[v3,10/13] PCI: brcmstb: Set internal memory viewport sizes",2020-06-03T19:20:42,yes
+kernel-change1-636920,kernel-patch-11590541,"[v4,09/12] PCI: brcmstb: Set internal memory viewport sizes",2020-06-05T21:26:49,yes
+kernel-change1-636920,kernel-patch-11608659,"[v5,09/12] PCI: brcmstb: Set internal memory viewport sizes",2020-06-16T20:55:16,yes
+kernel-change1-658014,kernel-patch-6936701,[1/2] i2c: mediatek: Reset DMA engine in hardware init function,2015-08-04T11:44:52,yes
+kernel-change1-658014,kernel-patch-6956741,"[v2,1/2] i2c: mediatek: Reset DMA engine in hardware init function",2015-08-06T07:22:10,yes
+kernel-change1-655977,kernel-patch-11859583,"[PATCHv2,5/7] dt-bindings: pci: layerscape-pci: Update the description of SCFG property",2020-10-27T07:29:59,yes
+kernel-change1-655977,kernel-patch-12006165,"[PATCHv3,5/7] dt-bindings: pci: layerscape-pci: Update the description of SCFG property",2021-01-08T09:36:08,yes
+kernel-change1-655977,kernel-patch-12184557,"[PATCHv4,4/6] dt-bindings: pci: layerscape-pci: Update the description of SCFG property",2021-04-06T09:04:47,yes
+kernel-change1-655977,kernel-patch-12186609,"[PATCHv5,4/6] dt-bindings: pci: layerscape-pci: Update the description of SCFG property",2021-04-07T03:09:46,yes
+kernel-change1-547965,kernel-patch-2619291,[07/12] ARM: shmobile: r8a7740: Add OF support to initialze the GIC,2013-05-27T08:59:48,yes
+kernel-change1-547965,kernel-patch-2664841,[1/7] ARM: shmobile: r8a7740: Add OF support to initialze the GIC,2013-06-05T04:32:10,yes
+kernel-change1-527294,kernel-patch-8134281,[4/9] net: moxart: use correct accessors for DMA memory,2016-01-27T14:04:54,yes
+kernel-change1-527294,kernel-patch-8152551,[PATCHv2] net: moxart: use correct accessors for DMA memory,2016-01-28T16:54:33,yes
+kernel-change1-527294,kernel-patch-8162581,"[v2,1/7] net: moxart: use correct accessors for DMA memory",2016-01-29T11:39:09,yes
+kernel-change1-557064,kernel-patch-9140321,[3/7] binding: mdio-mux: Add DT binding doc for Broadcom MDIO bus mutiplexer,2016-05-30T07:10:47,yes
+kernel-change1-557064,kernel-patch-9144843,"[v2,3/7] binding: mdio-mux: Add DT binding doc for Broadcom MDIO bus mutiplexer",2016-05-31T13:36:37,yes
+kernel-change1-557064,kernel-patch-9153363,"[v3,3/7] binding: mdio-mux: Add DT binding doc for Broadcom MDIO bus mutiplexer",2016-06-03T15:26:04,yes
+kernel-change1-557064,kernel-patch-9153447,"[v3,RESEND,3/7] binding: mdio-mux: Add DT binding doc for Broadcom MDIO bus mutiplexer",2016-06-03T16:03:02,yes
+kernel-change1-580683,kernel-patch-8162081,"[v4,1/9] ARM: dts: alt: Enable SCIF_CLK frequency and pins",2016-01-29T10:17:18,yes
+kernel-change1-580683,kernel-patch-8224311,[63/70] ARM: dts: alt: Enable SCIF_CLK frequency and pins,2016-02-04T14:29:57,yes
+kernel-change1-580683,kernel-patch-8296581,[61/68] ARM: dts: alt: Enable SCIF_CLK frequency and pins,2016-02-12T19:05:51,yes
+kernel-change1-636698,kernel-patch-11797791,[6/6] drm/vc4: hdmi: Enable 10/12 bpc output,2020-09-24T15:31:01,yes
+kernel-change1-636698,kernel-patch-11822887,"[v2,6/6] drm/vc4: hdmi: Enable 10/12 bpc output",2020-10-08T12:44:13,yes
+kernel-change1-636698,kernel-patch-11942909,"[v3,7/7] drm/vc4: hdmi: Enable 10/12 bpc output",2020-12-01T13:12:49,yes
+kernel-change1-636698,kernel-patch-11955903,"[v4,8/8] drm/vc4: hdmi: Enable 10/12 bpc output",2020-12-07T13:39:48,yes
+kernel-change1-636698,kernel-patch-11956257,"[v5,9/9] drm/vc4: hdmi: Enable 10/12 bpc output",2020-12-07T15:57:19,yes
+kernel-change1-636698,kernel-patch-11964911,"[v6,9/9] drm/vc4: hdmi: Enable 10/12 bpc output",2020-12-10T14:23:29,yes
+kernel-change1-636698,kernel-patch-11975045,"[v7,9/9] drm/vc4: hdmi: Enable 10/12 bpc output",2020-12-15T15:42:43,yes
+kernel-change1-518973,kernel-patch-10108005,[1/3] ARM: dts: stm32: add DMA memory pool on MCU which embed a cortex-M7,2017-12-12T18:02:24,yes
+kernel-change1-518973,kernel-patch-10247495,"[v2,1/4] ARM: dts: stm32: add DMA memory pool on MCU which embed a cortex-M7",2018-02-28T13:10:55,yes
+kernel-change1-579055,kernel-patch-2835979,ARM: allow DEBUG_UNCOMPRESS for Tegra,2013-07-30T22:28:13,yes
+kernel-change1-579055,kernel-patch-2837195,[V2] ARM: allow DEBUG_UNCOMPRESS for Tegra,2013-08-01T17:51:11,yes
+kernel-change1-649434,kernel-patch-1583281,"[RFC,v2,01/16] dmaengine: edma: fix slave config dependency on direction",2012-10-11T19:04:26,yes
+kernel-change1-649434,kernel-patch-1610701,"[RFC,v3,01/16] dmaengine: edma: fix slave config dependency on direction",2012-10-18T13:26:40,yes
+kernel-change1-524253,kernel-patch-10104365,[2/4] arm: dts: sun8i: a83t: Add registers needed for MCPM,2017-12-11T07:49:59,yes
+kernel-change1-524253,kernel-patch-10136983,"[v2,3/5] arm: dts: sun8i: a83t: Add registers needed for MCPM",2017-12-29T10:55:04,yes
+kernel-change1-529100,kernel-patch-11729903,"[v2,7/9] spi: spi-s3c64xx: Ensure cur_speed holds actual clock value",2020-08-21T16:13:59,yes
+kernel-change1-529100,kernel-patch-11811729,"[v2,RESEND,7/9] spi: spi-s3c64xx: Ensure cur_speed holds actual clock value",2020-10-01T15:21:46,yes
+kernel-change1-529100,kernel-patch-11813329,"[v3,7/9] spi: spi-s3c64xx: Ensure cur_speed holds actual clock value",2020-10-02T12:22:41,yes
+kernel-change1-639088,kernel-patch-9254089,"[v2,3/7] clk: rockchip: rk3399: fix incorrect parent for rk3399's {c, g}pll_aclk_perihp_src",2016-08-01T09:33:32,yes
+kernel-change1-639088,kernel-patch-9254165,"[RESEND,v2,3/8] clk: rockchip: rk3399: fix incorrect parent for rk3399's {c, g}pll_aclk_perihp_src",2016-08-01T09:53:38,yes
+kernel-change1-519644,kernel-patch-12942582,[3/6] media: sun6i-csi: Add a Kconfig dependency on RESET_CONTROLLER,2022-08-12T22:00:42,yes
+kernel-change1-519644,kernel-patch-12954493,"[v2,3/7] media: sun6i-csi: Add a Kconfig dependency on RESET_CONTROLLER",2022-08-25T10:20:31,yes
+kernel-change1-538002,kernel-patch-12695129,"[v4,6/6] arm:boot:dts:aspeed-g6 Add more gfx reset control",2021-12-07T10:27:49,yes
+kernel-change1-538002,kernel-patch-12695213,"[v5,6/7] arm:boot:dts:aspeed-g6 Add more gfx reset control",2021-12-08T01:33:36,yes
+kernel-change1-669935,kernel-patch-11791131,[42/42] mfd: wm8994: use PLATFORM_DEVID_NONE,2020-09-21T20:50:16,yes
+kernel-change1-669935,kernel-patch-11863963,"[RESEND,42/42] mfd: wm8994: use PLATFORM_DEVID_NONE",2020-10-28T22:30:09,yes
+kernel-change1-544965,kernel-patch-5504551,"[PATCHv4,6/8] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2014-12-16T23:26:55,yes
+kernel-change1-544965,kernel-patch-5530101,"[PATCHv5,6/9] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2014-12-23T03:18:14,yes
+kernel-change1-544965,kernel-patch-5546191,"[PATCHv6,6/9] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2014-12-29T00:04:10,yes
+kernel-change1-544965,kernel-patch-5589201,"[PATCHv7,07/10] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2015-01-07T23:51:14,yes
+kernel-change1-544965,kernel-patch-5610181,"[PATCHv8,6/9] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2015-01-12T12:34:54,yes
+kernel-change1-544965,kernel-patch-5665631,"[v9,5/7] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2015-01-20T07:10:07,yes
+kernel-change1-544965,kernel-patch-5706301,"[v10,5/7] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2015-01-26T04:16:31,yes
+kernel-change1-544965,kernel-patch-5765791,"[v11,2/4] ARM: dts: Add PPMU dt node for Exynos4 SoCs",2015-02-03T00:49:09,yes
+kernel-change1-603949,kernel-patch-9765473,[1/2] ARM: sunxi: h3-h5: Convert R_CCU raw numbers to macros,2017-06-05T04:32:23,yes
+kernel-change1-603949,kernel-patch-9765915,"[v2,1/2] ARM: sunxi: h3-h5: Convert R_CCU raw numbers to macros",2017-06-05T09:00:32,yes
+kernel-change1-529032,kernel-patch-12944273,[6/7] watchdog: imx7ulp_wdt: init wdog when it was active,2022-08-16T04:36:42,yes
+kernel-change1-529032,kernel-patch-12954381,"[v2,6/7] watchdog: imx7ulp_wdt: init wdog when it was active",2022-08-25T08:32:55,yes
+kernel-change1-541421,kernel-patch-2798501,[03/04] ARM: shmobile: Add r8a73a4 CMT10 clock event,2013-06-28T11:27:23,yes
+kernel-change1-541421,kernel-patch-2832459,[11/16] ARM: shmobile: Add r8a73a4 CMT10 clock event,2013-07-24T00:34:04,yes
+kernel-change1-638394,kernel-patch-3127491,"[v2,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-11-01T19:45:55,yes
+kernel-change1-638394,kernel-patch-3233851,"[v3,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-11-25T18:16:04,yes
+kernel-change1-638394,kernel-patch-3331601,"[v4,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-12-12T11:18:34,yes
+kernel-change1-638394,kernel-patch-3332051,"[v5,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-12-12T13:26:07,yes
+kernel-change1-638394,kernel-patch-3342021,"[v6,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-12-13T16:51:20,yes
+kernel-change1-638394,kernel-patch-3364831,"[v7,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-12-17T19:42:33,yes
+kernel-change1-638394,kernel-patch-3381411,"[v8,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-12-19T14:23:07,yes
+kernel-change1-638394,kernel-patch-3398011,"[v9,6/9] usb: gadget: s3c-hsotg: get phy bus width from phy subsystem",2013-12-23T18:36:35,yes
+kernel-change1-573721,kernel-patch-12484015,"[4/8] dt-bindings: clock: arm, syscon-icst: Use 'reg' instead of 'vco-offset' for VCO register address",2021-09-09T21:31:14,yes
+kernel-change1-573721,kernel-patch-12490671,"[v2,4/8] dt-bindings: clock: arm, syscon-icst: Use 'reg' instead of 'vco-offset' for VCO register address",2021-09-13T19:28:12,yes
+kernel-change1-518837,kernel-patch-4650171,Documentation: dmaengine: Add a documentation for the dma controller API,2014-07-30T16:03:13,yes
+kernel-change1-518837,kernel-patch-4986311,"[v2,2/2] Documentation: dmaengine: Add a documentation for the dma controller API",2014-09-26T15:40:35,yes
+kernel-change1-518837,kernel-patch-5179921,"[v3,2/2] Documentation: dmaengine: Add a documentation for the dma controller API",2014-10-28T20:55:50,yes
+kernel-change1-564004,kernel-patch-4939211,[2/4] serial: mxs-auart: add interrupts for modem control lines,2014-09-19T18:13:17,yes
+kernel-change1-564004,kernel-patch-4989731,[3/4] serial: mxs-auart: add interrupts for modem control lines,2014-09-27T09:46:36,yes
+kernel-change1-564004,kernel-patch-4990511,[2/2] serial: mxs-auart: add interrupts for modem control lines,2014-09-27T20:32:49,yes
+kernel-change1-564004,kernel-patch-5066601,"[v4,3/4] serial: mxs-auart: add interrupts for modem control lines",2014-10-10T16:53:26,yes
+kernel-change1-633633,kernel-patch-10103687,"[V3,1/2] dt-bindings: bcm283x: Fix register ranges of bcm2835-i2s",2017-12-09T11:26:34,yes
+kernel-change1-633633,kernel-patch-10224429,"[V3,1/2,RESEND] dt-bindings: bcm283x: Fix register ranges of bcm2835-i2s",2018-02-16T10:55:33,yes
+kernel-change1-508394,kernel-patch-11844433,"[v3,1/4] PM / EM: Add a flag indicating units of power values in Energy Model",2020-10-19T14:05:58,yes
+kernel-change1-508394,kernel-patch-11876361,"[v4,1/4] PM / EM: Add a flag indicating units of power values in Energy Model",2020-11-03T09:05:57,yes
+kernel-change1-508394,kernel-patch-11884341,"[RESEND,v4,1/4] PM / EM: Add a flag indicating units of power values in Energy Model",2020-11-05T12:50:01,yes
+kernel-change1-617278,kernel-patch-7574821,arm64: bpf: fix JIT stack setup,2015-11-07T05:36:17,yes
+kernel-change1-617278,kernel-patch-7579641,arm64: bpf: fix JIT stack setup,2015-11-08T22:29:48,yes
+kernel-change1-614174,kernel-patch-4753841,[9/9] ARM: zynq: Rename 'zynq_platform_cpu_die',2014-08-20T20:41:55,yes
+kernel-change1-614174,kernel-patch-4828431,"[v2,9/9] ARM: zynq: Rename 'zynq_platform_cpu_die'",2014-09-02T21:19:14,yes
+kernel-change1-521127,kernel-patch-13123669,"[v1,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-02-01T02:50:43,yes
+kernel-change1-521127,kernel-patch-13137609,"[v2,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-02-12T21:58:25,yes
+kernel-change1-521127,kernel-patch-13154434,"[v3,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-02-28T06:22:41,yes
+kernel-change1-521127,kernel-patch-13178536,"[v4,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-03-17T05:06:32,yes
+kernel-change1-521127,kernel-patch-13197544,"[v5,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-04-02T18:37:30,yes
+kernel-change1-521127,kernel-patch-13199095,"[v6,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-04-04T03:53:39,yes
+kernel-change1-521127,kernel-patch-13222726,"[v7,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-04-24T23:46:59,yes
+kernel-change1-521127,kernel-patch-13230409,"[v8,1/6] KVM: arm64: Move CPU ID feature registers emulation into a separate file",2023-05-03T17:16:13,yes
+kernel-change1-547271,kernel-patch-11603695,[4/4] arm: dts: owl-s500: Add RoseapplePi,2020-06-15T00:19:11,yes
+kernel-change1-547271,kernel-patch-11742893,"[v2,4/4] arm: dts: owl-s500: Add RoseapplePi",2020-08-28T13:53:20,yes
+kernel-change1-631275,kernel-patch-12558805,[7/7] drm/meson: encoder_cvbs: switch to bridge with ATTACH_NO_CONNECTOR,2021-10-14T15:26:06,yes
+kernel-change1-631275,kernel-patch-12562091,"[v2,6/6] drm/meson: encoder_cvbs: switch to bridge with ATTACH_NO_CONNECTOR",2021-10-15T14:11:07,yes
+kernel-change1-631275,kernel-patch-12572305,"[v3,6/6] drm/meson: encoder_cvbs: switch to bridge with ATTACH_NO_CONNECTOR",2021-10-20T12:39:47,yes
+kernel-change1-540327,kernel-patch-12813176,"[v1,10/14] ARM: dts: imx6ull-colibri: add support for toradex iris carrier boards",2022-04-14T08:51:02,yes
+kernel-change1-540327,kernel-patch-12825924,"[v2,09/14] ARM: dts: imx6ull-colibri: add support for toradex iris carrier boards",2022-04-25T16:23:51,yes
+kernel-change1-540327,kernel-patch-12841139,"[v3,08/13] ARM: dts: imx6ull-colibri: add support for toradex iris carrier boards",2022-05-06T13:24:11,yes
+kernel-change1-534013,kernel-patch-6305451,"[v2,5/5] ARM: dts: sun9i: Add TODO comments for the main and low power clocks",2015-04-30T16:10:06,yes
+kernel-change1-534013,kernel-patch-7688761,"[v3,5/5] ARM: dts: sun9i: Add TODO comments for the main and low power clocks",2015-11-24T09:32:16,yes
+kernel-change1-534013,kernel-patch-7717851,"[v4,5/5] ARM: dts: sun9i: Add TODO comments for the main and low power clocks",2015-11-29T03:03:10,yes
+kernel-change1-620151,kernel-patch-12808887,"[v3,10/30] arm64: mm: provide idmap pointer to cpu_replace_ttbr1()",2022-04-11T09:48:04,yes
+kernel-change1-620151,kernel-patch-12879630,"[v4,10/26] arm64: mm: provide idmap pointer to cpu_replace_ttbr1()",2022-06-13T14:45:34,yes
+kernel-change1-620151,kernel-patch-12894750,"[v5,10/21] arm64: mm: provide idmap pointer to cpu_replace_ttbr1()",2022-06-24T15:06:40,yes
+kernel-change1-619224,kernel-patch-10319385,"[v5,10/10] arm64: defconfig: update config for Rockchip PCIe",2018-04-02T01:04:28,yes
+kernel-change1-619224,kernel-patch-10367377,"[v6,7/7] arm64: defconfig: update config for Rockchip PCIe",2018-04-27T02:40:01,yes
+kernel-change1-619224,kernel-patch-10387937,"[v7,7/7] arm64: defconfig: update config for Rockchip PCIe",2018-05-09T01:13:37,yes
+kernel-change1-523771,kernel-patch-10545031,"[v2,06/18] arm64: dts: allwinner: a64: Orange Pi Win: Add UARTs",2018-07-26T00:35:20,yes
+kernel-change1-523771,kernel-patch-10549007,"[v3,07/19] arm64: dts: allwinner: a64: Orange Pi Win: Add UARTs",2018-07-30T12:31:25,yes
+kernel-change1-644946,kernel-patch-10654019,[6/6] clk: rockchip: use pre_rate_req for cpuclk,2018-10-24T01:31:32,yes
+kernel-change1-644946,kernel-patch-10838961,"[v2,6/6] clk: rockchip: use pre_rate_req for cpuclk",2019-03-05T04:49:36,yes
+kernel-change1-573451,kernel-patch-13199313,"[v3,11/11] PCI: rockchip: Set address alignment for endpoint mode",2023-04-04T08:24:24,yes
+kernel-change1-573451,kernel-patch-13213549,"[v4,11/11] PCI: rockchip: Set address alignment for endpoint mode",2023-04-17T09:26:29,yes
+kernel-change1-573451,kernel-patch-13215168,"[v5,11/11] PCI: rockchip: Set address alignment for endpoint mode",2023-04-18T07:46:58,yes
+kernel-change1-583400,kernel-patch-6153481,"[2/7] ARM: socfpga: disable the sdmmc, and uart nodes in the base arria10",2015-04-03T04:39:53,yes
+kernel-change1-583400,kernel-patch-6243961,"[PATCHv2,2/4] ARM: socfpga: disable the sdmmc, and uart nodes in the base arria10",2015-04-20T18:50:23,yes
+kernel-change1-560117,kernel-patch-9449247,"[net-next,v3,2/4] dt-bindings: net: add EEE capability constants",2016-11-28T09:46:47,yes
+kernel-change1-560117,kernel-patch-9449717,"[net-next,v4,2/4] dt-bindings: net: add EEE capability constants",2016-11-28T15:50:26,yes
+kernel-change1-596738,kernel-patch-9785773,"[v5,4/4] ARM: dts: meson6: use stable UART bindings",2017-06-14T08:29:17,yes
+kernel-change1-596738,kernel-patch-9802059,"[v5.1,2/2] ARM: dts: meson6: use stable UART bindings",2017-06-21T14:42:12,yes
+kernel-change1-520933,kernel-patch-9814631,"[v2,51/52] KVM: arm/arm64: GICv4: Use pending_last as a scheduling hint",2017-06-28T15:04:10,yes
+kernel-change1-520933,kernel-patch-9872881,"[v3,50/59] KVM: arm/arm64: GICv4: Use pending_last as a scheduling hint",2017-07-31T17:26:28,yes
+kernel-change1-520933,kernel-patch-9989775,"[v4,18/26] KVM: arm/arm64: GICv4: Use pending_last as a scheduling hint",2017-10-06T15:33:53,yes
+kernel-change1-520933,kernel-patch-10030011,"[v5,18/26] KVM: arm/arm64: GICv4: Use pending_last as a scheduling hint",2017-10-27T14:28:47,yes
+kernel-change1-520933,kernel-patch-10055369,"[PULL,17/27] KVM: arm/arm64: GICv4: Use pending_last as a scheduling hint",2017-11-13T09:17:42,yes
+kernel-change1-570052,kernel-patch-4585321,[2/6] net/macb: add scatter-gather hw feature,2014-07-18T14:21:14,yes
+kernel-change1-570052,kernel-patch-4617121,"[v2,2/6] net/macb: add scatter-gather hw feature",2014-07-24T11:50:59,yes
+kernel-change1-589784,kernel-patch-9775069,[34/44] arm: remove arch specific dma_supported implementation,2017-06-08T13:25:59,yes
+kernel-change1-589784,kernel-patch-9792931,[34/44] arm: remove arch specific dma_supported implementation,2017-06-16T18:10:49,yes
+kernel-change1-568156,kernel-patch-9796761,[1/2] drm/exynos/decon: Add include guard to the Exynos7 header,2017-06-19T16:31:09,yes
+kernel-change1-568156,kernel-patch-9799729,"[v2,2/2] drm/exynos/decon: Add include guard to the Exynos7 header",2017-06-20T15:09:07,yes
+kernel-change1-568156,kernel-patch-9862595,"[RESEND,v2,2/2] drm/exynos/decon: Add include guard to the Exynos7 header",2017-07-25T17:38:52,yes
+kernel-change1-568156,kernel-patch-10133105,"[RESEND,v2,2/2] drm/exynos/decon: Add include guard to the Exynos7 header",2017-12-26T13:07:19,yes
+kernel-change1-665384,kernel-patch-9574001,reset-socfpga: Fix nr_resets property,2017-02-15T13:06:08,yes
+kernel-change1-665384,kernel-patch-9574691,[v2] reset-socfpga: Fix nr_resets property,2017-02-15T18:10:58,yes
+kernel-change1-617732,kernel-patch-7844631,"[RFC,2/2] arm64: Use PoU cache instr for I/D coherency",2015-12-14T13:27:44,yes
+kernel-change1-617732,kernel-patch-7854321,"[v2,2/2] arm64: Use PoU cache instr for I/D coherency",2015-12-15T12:56:18,yes
+kernel-change1-617732,kernel-patch-7860651,"[v3,2/2] arm64: Use PoU cache instr for I/D coherency",2015-12-16T10:11:30,yes
+kernel-change1-617732,kernel-patch-7871411,"[v4,2/2] arm64: Use PoU cache instr for I/D coherency",2015-12-17T09:38:32,yes
+kernel-change1-646538,kernel-patch-1435781,[7/9] mtd: gpmi: do not set the default values for the extra clocks,2012-09-11T06:17:09,yes
+kernel-change1-646538,kernel-patch-1450661,"[v2,7/9] mtd: gpmi: do not set the default values for the extra clocks",2012-09-13T06:57:58,yes
+kernel-change1-506620,kernel-patch-11122487,"[v2,05/11] coresight: etm4x: Improve usability of sysfs - include/exclude addr.",2019-08-29T21:33:15,yes
+kernel-change1-506620,kernel-patch-11191753,"[v3,05/11] coresight: etm4x: Improve usability of sysfs - include/exclude addr.",2019-10-15T21:19:58,yes
+kernel-change1-506620,kernel-patch-11226223,[08/14] coresight: etm4x: Improve usability of sysfs - include/exclude addr.,2019-11-04T18:12:45,yes
+kernel-change1-609634,kernel-patch-2826916,arm: omap5: dts: fix reg property size,2013-07-12T11:58:05,yes
+kernel-change1-609634,kernel-patch-2827664,[1/4] arm: omap5: dts: fix reg property size,2013-07-15T15:33:40,yes
+kernel-change1-609634,kernel-patch-2828112,"[v2,1/5] arm: omap5: dts: fix reg property size",2013-07-16T12:50:33,yes
+kernel-change1-594199,kernel-patch-5643301,[1/5] ARM: at91: switch to multiplatform,2015-01-15T22:16:45,yes
+kernel-change1-594199,kernel-patch-5937051,[1/6] ARM: at91: switch to multiplatform,2015-03-04T14:47:21,yes
+kernel-change1-594199,kernel-patch-5948881,"[v2,1/7] ARM: at91: switch to multiplatform",2015-03-05T19:17:42,yes
+kernel-change1-594199,kernel-patch-6009861,"[v3,1/7] ARM: at91: switch to multiplatform",2015-03-13T21:57:18,yes

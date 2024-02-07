@@ -1,0 +1,442 @@
+individual,identity_original_id,name,email,is_correct
+kernel-individual-24859,kernel-people-189411,SeongJae Park,sjpark@amazon.com,1
+kernel-individual-24859,kernel-people-202157,SeongJae Park,sj@kernel.org,1
+kernel-individual-26302,kernel-people-206047,Hyunwoo Kim,imv4bel@gmail.com,1
+kernel-individual-26302,kernel-people-207864,Hyunwoo Kim,v4bel@theori.io,1
+kernel-individual-25090,kernel-people-181617,Vasyl Vavrychuk,vvavrychuk@gmail.com,1
+kernel-individual-25090,kernel-people-196109,Vasyl Vavrychuk,vasyl.vavrychuk@opensynergy.com,1
+kernel-individual-24879,kernel-people-391,Stanislaw Gruszka,stf_xl@wp.pl,3
+kernel-individual-24879,kernel-people-206754,Stanislaw Gruszka,stanislaw.gruszka@linux.intel.com,3
+kernel-individual-24680,kernel-people-109291,Bryan O'Donoghue,pure.logic@nexus-software.ie,1
+kernel-individual-24680,kernel-people-176969,Bryan O'Donoghue,bryan.odonoghue@linaro.org,1
+kernel-individual-25622,kernel-people-199085,zhaoxiao,zhaoxiao@uniontech.com,1
+kernel-individual-25622,kernel-people-201915,zhaoxiao,long870912@gmail.com,1
+kernel-individual-25480,kernel-people-197465,Andreas Oetken,ennoerlangen@googlemail.com,1
+kernel-individual-25480,kernel-people-197469,Andreas Oetken,ennoerlangen@gmail.com,1
+kernel-individual-24731,kernel-people-84021,Florian Weimer,fweimer@redhat.com,1
+kernel-individual-24731,kernel-people-59521,Florian Weimer,fw@deneb.enyo.de,1
+kernel-individual-25820,kernel-people-201943,Chenyuan Mi,cymi20@fudan.edu.cn,3
+kernel-individual-25820,kernel-people-209152,Chenyuan Mi,michenyuan@huawei.com,3
+kernel-individual-24140,kernel-people-151501,Peter Chen,peter.chen@nxp.com,1
+kernel-individual-24140,kernel-people-190717,Peter Chen,peter.chen@kernel.org,1
+kernel-individual-24186,kernel-people-37111,Dan Carpenter,dan.carpenter@oracle.com,1
+kernel-individual-24186,kernel-people-744,Dan Carpenter,error27@gmail.com,1
+kernel-individual-24186,kernel-people-209373,Dan Carpenter,dan.carpenter@linaro.org,1
+kernel-individual-25938,kernel-people-203487,Yeqi Fu,fufuyqqqqqq@gmail.com,3
+kernel-individual-25938,kernel-people-209651,Yeqi Fu,asuk4.q@gmail.com,3
+kernel-individual-24630,kernel-people-175235,Luca Weiss,luca@z3ntu.xyz,1
+kernel-individual-24630,kernel-people-203977,Luca Weiss,luca.weiss@fairphone.com,1
+kernel-individual-26239,kernel-people-205564,Carlos Fernandez,carlos.escuin@gmail.com,1
+kernel-individual-26239,kernel-people-205603,Carlos Fernandez,carlos.fernandez@technica-engineering.de,1
+kernel-individual-25322,kernel-people-181431,Martin Habets,mhabets@solarflare.com,1
+kernel-individual-25322,kernel-people-196503,Martin Habets,habetsm.xilinx@gmail.com,1
+kernel-individual-25322,kernel-people-204449,Martin Habets,martin.habets@xilinx.com,1
+kernel-individual-26479,kernel-people-43331,Jani Nikula,jani.nikula@linux.intel.com,1
+kernel-individual-26479,kernel-people-44451,Jani Nikula,jani.nikula@intel.com,1
+kernel-individual-25318,kernel-people-195983,Wedson Almeida Filho,wedsonaf@google.com,1
+kernel-individual-25318,kernel-people-69721,Wedson Almeida Filho,wedsonaf@gmail.com,1
+kernel-individual-24616,kernel-people-152201,Claudiu Manoil,claudiu.manoil@nxp.com,1
+kernel-individual-24616,kernel-people-198681,Claudiu Manoil,claudiu.manoil@gmail.com,1
+kernel-individual-24290,kernel-people-99071,Johan Hovold,johan@kernel.org,1
+kernel-individual-24290,kernel-people-205270,Johan Hovold,johan+linaro@kernel.org,1
+kernel-individual-24407,kernel-people-177219,Ioana Ciornei,ioana.ciornei@nxp.com,1
+kernel-individual-24407,kernel-people-125161,Ioana Ciornei,ciorneiioana@gmail.com,1
+kernel-individual-24280,kernel-people-171295,Moritz Fischer,mdf@kernel.org,1
+kernel-individual-24280,kernel-people-209760,Moritz Fischer,moritzf@google.com,1
+kernel-individual-24280,kernel-people-171247,Moritz Fischer,moritz.fischer.private@gmail.com,1
+kernel-individual-25845,kernel-people-202233,Arınç ÜNAL,arinc.unal@arinc9.com,1
+kernel-individual-25845,kernel-people-208475,Arınç ÜNAL,arinc9.unal@gmail.com,1
+kernel-individual-24022,kernel-people-143601,William Breathitt Gray,vilhelm.gray@gmail.com,1
+kernel-individual-24022,kernel-people-205551,William Breathitt Gray,william.gray@linaro.org,1
+kernel-individual-24357,kernel-people-677,Sascha Hauer,s.hauer@pengutronix.de,1
+kernel-individual-24357,kernel-people-38381,Sascha Hauer,sha@pengutronix.de,1
+kernel-individual-24816,kernel-people-185187,Keith Busch,kbusch@kernel.org,1
+kernel-individual-24816,kernel-people-207317,Keith Busch,kbusch@meta.com,1
+kernel-individual-24104,kernel-people-169439,Raju Rangoju,rajur@chelsio.com,1
+kernel-individual-24104,kernel-people-204135,Raju Rangoju,rrangoju@amd.com,1
+kernel-individual-24104,kernel-people-204183,Raju Rangoju,Raju.Rangoju@amd.com,1
+kernel-individual-25771,kernel-people-130741,Tom Herbert,tom@herbertland.com,1
+kernel-individual-25771,kernel-people-201897,Tom Herbert,tom@sipanda.io,1
+kernel-individual-24189,kernel-people-176565,Dennis Zhou,dennisszhou@gmail.com,1
+kernel-individual-24189,kernel-people-182627,Dennis Zhou,dennis@kernel.org,1
+kernel-individual-26312,kernel-people-206105,Donald Hunter,donald.hunter@gmail.com,1
+kernel-individual-26312,kernel-people-209020,Donald Hunter,donald.hunter@redhat.com,1
+kernel-individual-24050,kernel-people-171237,Waiman Long,longman@redhat.com,1
+kernel-individual-24050,kernel-people-199019,Waiman Long,llong@redhat.com,1
+kernel-individual-24342,kernel-people-143191,kernel test robot,lkp@intel.com,1
+kernel-individual-24342,kernel-people-187601,kernel test robot,oliver.sang@intel.com,1
+kernel-individual-24342,kernel-people-200337,kernel test robot,yujie.liu@intel.com,1
+kernel-individual-24242,kernel-people-35462,Vladimir Zapolskiy,vz@mleia.com,2
+kernel-individual-24242,kernel-people-202265,Vladimir Zapolskiy,vladimir.zapolskiy@linaro.org,2
+kernel-individual-25168,kernel-people-194949,Jonathan Lemon,jonathan.lemon@gmail.com,2
+kernel-individual-25168,kernel-people-201437,Jonathan Lemon,bsd@fb.com,2
+kernel-individual-25168,kernel-people-205898,Jonathan Lemon,jlemon@flugsvamp.com,2
+kernel-individual-27280,kernel-people-206364,Günther Noack,gnoack3000@gmail.com,1
+kernel-individual-27280,kernel-people-209802,Günther Noack,gnoack@google.com,1
+kernel-individual-26917,kernel-people-208232,Mirsad Todorovac,mirsad.todorovac@alu.unizg.hr,1
+kernel-individual-26917,kernel-people-208264,Mirsad Todorovac,mirsad.todorovac@alu.hr,1
+kernel-individual-24741,kernel-people-169707,Ido Schimmel,idosch@idosch.org,1
+kernel-individual-24741,kernel-people-197163,Ido Schimmel,idosch@nvidia.com,1
+kernel-individual-24741,kernel-people-199759,Ido Schimmel,idosch@OSS.NVIDIA.COM,1
+kernel-individual-25225,kernel-people-195321,Neal Cardwell,ncardwell.kernel@gmail.com,1
+kernel-individual-25225,kernel-people-45431,Neal Cardwell,ncardwell@google.com,1
+kernel-individual-25225,kernel-people-209703,Neal Cardwell,ncardwell.sw@gmail.com,1
+kernel-individual-24100,kernel-people-94301,Geert Uytterhoeven,geert+renesas@glider.be,1
+kernel-individual-24100,kernel-people-70,Geert Uytterhoeven,geert@linux-m68k.org,1
+kernel-individual-24109,kernel-people-91481,Arnaldo Carvalho de Melo,acme@kernel.org,1
+kernel-individual-24109,kernel-people-142,Arnaldo Carvalho de Melo,acme@redhat.com,1
+kernel-individual-24109,kernel-people-70491,Arnaldo Carvalho de Melo,arnaldo.melo@gmail.com,1
+kernel-individual-25335,kernel-people-196081,Bongsu Jeon,bongsu.jeon2@gmail.com,1
+kernel-individual-25335,kernel-people-195891,Bongsu Jeon,bs.jeon87@gmail.com,1
+kernel-individual-25136,kernel-people-123431,Daniel Borkmann,daniel@iogearbox.net,1
+kernel-individual-25136,kernel-people-59541,Daniel Borkmann,borkmann@iogearbox.net,1
+kernel-individual-25218,kernel-people-104321,Edward Cree,ecree@solarflare.com,1
+kernel-individual-25218,kernel-people-196121,Edward Cree,ecree.xilinx@gmail.com,1
+kernel-individual-25218,kernel-people-205661,Edward Cree,edward.cree@xilinx.com,1
+kernel-individual-25218,kernel-people-207457,Edward Cree,ecree@amd.com,1
+kernel-individual-24035,kernel-people-162531,Leon Romanovsky,leon@kernel.org,1
+kernel-individual-24035,kernel-people-193861,Leon Romanovsky,leonro@nvidia.com,1
+kernel-individual-24035,kernel-people-205018,Leon Romanovsky,leon@ikernel.org,1
+kernel-individual-24035,kernel-people-168305,Leon Romanovsky,leonro@mellanox.com,1
+kernel-individual-24184,kernel-people-122581,Georgi Djakov,georgi.djakov@linaro.org,1
+kernel-individual-24184,kernel-people-197207,Georgi Djakov,djakov@kernel.org,1
+kernel-individual-25490,kernel-people-196473,Shai Malin,smalin@marvell.com,1
+kernel-individual-25490,kernel-people-196545,Shai Malin,malin1024@gmail.com,1
+kernel-individual-25490,kernel-people-207565,Shai Malin,smalin@nvidia.com,1
+kernel-individual-24416,kernel-people-48191,Eric Dumazet,edumazet@google.com,1
+kernel-individual-24416,kernel-people-2423,Eric Dumazet,eric.dumazet@gmail.com,1
+kernel-individual-24416,kernel-people-55391,Eric Dumazet,erdnetdev@gmail.com,1
+kernel-individual-24416,kernel-people-205323,Eric Dumazet,edumazet@gmail.com,1
+kernel-individual-25643,kernel-people-199917,gushengxian,13145886936@163.com,1
+kernel-individual-25643,kernel-people-200617,gushengxian,gushengxian507419@gmail.com,1
+kernel-individual-26727,kernel-people-202007,Jose E. Marchesi,jose.marchesi@oracle.com,1
+kernel-individual-26727,kernel-people-208743,Jose E. Marchesi,jemarch@gnu.org,1
+kernel-individual-24148,kernel-people-345,Chuck Lever,chuck.lever@oracle.com,1
+kernel-individual-24148,kernel-people-208125,Chuck Lever,cel@kernel.org,1
+kernel-individual-25517,kernel-people-197897,Alexander Aring,aahringo@redhat.com,1
+kernel-individual-25517,kernel-people-66981,Alexander Aring,alex.aring@gmail.com,1
+kernel-individual-24107,kernel-people-179269,Stephen Boyd,sboyd@kernel.org,1
+kernel-individual-24107,kernel-people-179285,Stephen Boyd,swboyd@chromium.org,1
+kernel-individual-26647,kernel-people-201065,Yasushi SHOJI,yasushi.shoji@gmail.com,1
+kernel-individual-26647,kernel-people-203931,Yasushi SHOJI,yashi@spacecubics.com,1
+kernel-individual-24207,kernel-people-2154,Jason Wang,jasowang@redhat.com,2
+kernel-individual-24207,kernel-people-200149,Jason Wang,wangborong@cdjrlc.com,2
+kernel-individual-24876,kernel-people-188635,Christian Schoenebeck,qemu_oss@crudebyte.com,1
+kernel-individual-24876,kernel-people-201901,Christian Schoenebeck,linux_oss@crudebyte.com,1
+kernel-individual-26536,kernel-people-72544,Christoph Paasch,christoph.paasch@gmail.com,1
+kernel-individual-26536,kernel-people-202389,Christoph Paasch,cpaasch@apple.com,1
+kernel-individual-25885,kernel-people-202691,Paul Chaignon,paul@isovalent.com,1
+kernel-individual-25885,kernel-people-202041,Paul Chaignon,paul@cilium.io,1
+kernel-individual-24351,kernel-people-560,Uwe Kleine-König,u.kleine-koenig@pengutronix.de,1
+kernel-individual-24351,kernel-people-112451,Uwe Kleine-König,uwe@kleine-koenig.org,1
+kernel-individual-25597,kernel-people-198783,Dave Marchevsky,davemarchevsky@fb.com,1
+kernel-individual-25597,kernel-people-207243,Dave Marchevsky,davemarchevsky@meta.com,1
+kernel-individual-25819,kernel-people-201935,Feiyang Chen,chris.chenfeiyang@gmail.com,1
+kernel-individual-25819,kernel-people-209813,Feiyang Chen,chenfeiyang@loongson.cn,1
+kernel-individual-24295,kernel-people-86391,Rob Herring,robh@kernel.org,1
+kernel-individual-24295,kernel-people-144521,Rob Herring,robh+dt@kernel.org,1
+kernel-individual-26517,kernel-people-163471,Thorsten Leemhuis,linux@leemhuis.info,1
+kernel-individual-26517,kernel-people-168819,Thorsten Leemhuis,regressions@leemhuis.info,1
+kernel-individual-24358,kernel-people-19741,Lee Jones,lee.jones@linaro.org,1
+kernel-individual-24358,kernel-people-98371,Lee Jones,lee@kernel.org,1
+kernel-individual-24588,kernel-people-184427,"Enrico Weigelt, metux IT consult",info@metux.net,1
+kernel-individual-24588,kernel-people-178947,"Enrico Weigelt, metux IT consult",lkml@metux.net,1
+kernel-individual-24526,kernel-people-183723,Gal Pressman,galpress@amazon.com,1
+kernel-individual-24526,kernel-people-204093,Gal Pressman,gal@nvidia.com,1
+kernel-individual-24526,kernel-people-201061,Gal Pressman,gal.pressman@linux.dev,1
+kernel-individual-27056,kernel-people-209095,Shinu Chandran,s4superuser@gmail.com,3
+kernel-individual-27056,kernel-people-209096,Shinu Chandran,shinucha@cisco.com,3
+kernel-individual-24174,kernel-people-174271,Roman Gushchin,guro@fb.com,1
+kernel-individual-24174,kernel-people-204840,Roman Gushchin,roman.gushchin@linux.dev,1
+kernel-individual-25502,kernel-people-197749,Dario Binacchi,dariobin@libero.it,1
+kernel-individual-25502,kernel-people-204147,Dario Binacchi,dario.binacchi@amarulasolutions.com,1
+kernel-individual-24076,kernel-people-41111,Jiri Pirko,jiri@resnulli.us,1
+kernel-individual-24076,kernel-people-206360,Jiri Pirko,jiri@nvidia.com,1
+kernel-individual-24847,kernel-people-189027,Paul Durrant,pdurrant@amazon.com,1
+kernel-individual-24847,kernel-people-190913,Paul Durrant,xadimgnik@gmail.com,1
+kernel-individual-25158,kernel-people-194901,Caleb Connolly,caleb@connolly.tech,1
+kernel-individual-25158,kernel-people-201159,Caleb Connolly,caleb.connolly@linaro.org,1
+kernel-individual-24240,kernel-people-174477,Bartosz Golaszewski,brgl@bgdev.pl,1
+kernel-individual-24240,kernel-people-115851,Bartosz Golaszewski,bgolaszewski@baylibre.com,1
+kernel-individual-24593,kernel-people-168563,Geliang Tang,geliangtang@gmail.com,1
+kernel-individual-24593,kernel-people-202801,Geliang Tang,geliang.tang@suse.com,1
+kernel-individual-24122,kernel-people-68541,Rafael J. Wysocki,rjw@rjwysocki.net,1
+kernel-individual-24122,kernel-people-99561,Rafael J. Wysocki,rafael@kernel.org,1
+kernel-individual-24122,kernel-people-53951,Rafael J. Wysocki,rafael.j.wysocki@intel.com,1
+kernel-individual-25226,kernel-people-187993,Shannon Nelson,snelson@pensando.io,1
+kernel-individual-25226,kernel-people-207572,Shannon Nelson,shnelson@amd.com,1
+kernel-individual-24944,kernel-people-184127,Jinpu Wang,jinpu.wang@cloud.ionos.com,1
+kernel-individual-24944,kernel-people-198599,Jinpu Wang,jinpu.wang@ionos.com,1
+kernel-individual-26063,kernel-people-204606,Delyan Kratunov,delyank@fb.com,1
+kernel-individual-26063,kernel-people-207505,Delyan Kratunov,delyank@meta.com,1
+kernel-individual-24661,kernel-people-185513,Vladimir Oltean,vladimir.oltean@nxp.com,1
+kernel-individual-24661,kernel-people-185829,Vladimir Oltean,olteanv@gmail.com,1
+kernel-individual-24541,kernel-people-181269,Frank Wunderlich,frank-w@public-files.de,1
+kernel-individual-24541,kernel-people-193723,Frank Wunderlich,linux@fw-web.de,1
+kernel-individual-27164,kernel-people-209714,Michal Smulski,msmulski2@gmail.com,1
+kernel-individual-27164,kernel-people-209715,Michal Smulski,michal.smulski@ooma.com,1
+kernel-individual-24569,kernel-people-173995,Thomas Bogendoerfer,tbogendoerfer@suse.de,1
+kernel-individual-24569,kernel-people-1935,Thomas Bogendoerfer,tsbogend@alpha.franken.de,1
+kernel-individual-24204,kernel-people-40001,Philipp Zabel,p.zabel@pengutronix.de,1
+kernel-individual-24204,kernel-people-83851,Philipp Zabel,pza@pengutronix.de,1
+kernel-individual-24244,kernel-people-61541,Matwey V. Kornilov,matwey@sai.msu.ru,1
+kernel-individual-24244,kernel-people-103701,Matwey V. Kornilov,matwey.kornilov@gmail.com,1
+kernel-individual-25055,kernel-people-176993,Bixuan Cui,cuibixuan@huawei.com,1
+kernel-individual-25055,kernel-people-203003,Bixuan Cui,cuibixuan@linux.alibaba.com,1
+kernel-individual-24113,kernel-people-178291,Dmitry Safonov,dima@arista.com,1
+kernel-individual-24113,kernel-people-137481,Dmitry Safonov,0x7f454c46@gmail.com,1
+kernel-individual-24793,kernel-people-188327,George Cherian,george.cherian@marvell.com,3
+kernel-individual-24793,kernel-people-126731,George Cherian,gcherianv@gmail.com,3
+kernel-individual-25387,kernel-people-196581,Danielle Ratson,danieller@mellanox.com,1
+kernel-individual-25387,kernel-people-195027,Danielle Ratson,danieller@nvidia.com,1
+kernel-individual-24393,kernel-people-3600,Maciej Żenczykowski,zenczykowski@gmail.com,1
+kernel-individual-24393,kernel-people-44921,Maciej Żenczykowski,maze@google.com,1
+kernel-individual-24222,kernel-people-175079,Jeff Layton,jlayton@kernel.org,1
+kernel-individual-24222,kernel-people-440,Jeff Layton,jlayton@redhat.com,1
+kernel-individual-25246,kernel-people-168347,Greg Ungerer,gerg@linux-m68k.org,1
+kernel-individual-25246,kernel-people-181139,Greg Ungerer,gerg@kernel.org,1
+kernel-individual-24775,kernel-people-188089,Mike Rapoport,rppt@kernel.org,1
+kernel-individual-24775,kernel-people-4005,Mike Rapoport,mike.rapoport@gmail.com,1
+kernel-individual-25380,kernel-people-196517,Shmulik Ladkani,shmulik@metanetworks.com,1
+kernel-individual-25380,kernel-people-4277,Shmulik Ladkani,shmulik.ladkani@gmail.com,1
+kernel-individual-26066,kernel-people-204652,Jacques de Laval,Jacques.De.Laval@westermo.com,3
+kernel-individual-26066,kernel-people-205949,Jacques de Laval,jacques.delaval@protonmail.com,3
+kernel-individual-24026,kernel-people-176961,Manivannan Sadhasivam,manivannan.sadhasivam@linaro.org,1
+kernel-individual-24026,kernel-people-191595,Manivannan Sadhasivam,mani@kernel.org,1
+kernel-individual-24535,kernel-people-183815,Takeshi Misawa,jeliantsurux@gmail.com,3
+kernel-individual-24535,kernel-people-209526,Takeshi Misawa,jeantsuru.cumc.mandola@gmail.com,3
+kernel-individual-26821,kernel-people-207727,Noor Azura Ahmad Tarmizi,noor.azura.ahmad.tarmizi@linux.intel.com,1
+kernel-individual-26821,kernel-people-208289,Noor Azura Ahmad Tarmizi,noor.azura.ahmad.tarmizi@intel.com,1
+kernel-individual-23997,kernel-user-123457,netdev,kuba@kernel.org,1
+kernel-individual-23997,kernel-people-190027,Jakub Kicinski,kuba@kernel.org,1
+kernel-individual-23997,kernel-people-49391,Jakub Kicinski,kubakici@wp.pl,1
+kernel-individual-24566,kernel-people-77,Linus Torvalds,torvalds@linux-foundation.org,1
+kernel-individual-24566,kernel-people-200945,Linus Torvalds,torvalds@linuxfoundation.org,1
+kernel-individual-24221,kernel-people-77831,Andrey Konovalov,andreyknvl@google.com,3
+kernel-individual-24221,kernel-people-155111,Andrey Konovalov,andreyknvl@gmail.com,3
+kernel-individual-24221,kernel-people-126341,Andrey Konovalov,andrey.konovalov@linaro.org,3
+kernel-individual-26598,kernel-people-197135,Alexander Duyck,alexanderduyck@fb.com,1
+kernel-individual-26598,kernel-people-209508,Alexander Duyck,alexanderduyck@meta.com,1
+kernel-individual-24262,kernel-people-182021,Ulrich Hecht,uli+renesas@fpond.eu,1
+kernel-individual-24262,kernel-people-181815,Ulrich Hecht,uli@fpond.eu,1
+kernel-individual-24462,kernel-people-142211,Petr Vorel,petr.vorel@gmail.com,1
+kernel-individual-24462,kernel-people-172899,Petr Vorel,pvorel@suse.cz,1
+kernel-individual-25047,kernel-people-193155,Joseph Hwang,josephsih@chromium.org,1
+kernel-individual-25047,kernel-people-194463,Joseph Hwang,josephsih@google.com,1
+kernel-individual-25698,kernel-people-200693,Ryoga Saito,proelbtn@gmail.com,1
+kernel-individual-25698,kernel-people-201851,Ryoga Saito,contact@proelbtn.com,1
+kernel-individual-24134,kernel-people-481,Sebastian Andrzej Siewior,bigeasy@linutronix.de,1
+kernel-individual-24134,kernel-people-1543,Sebastian Andrzej Siewior,sebastian@breakpoint.cc,1
+kernel-individual-25009,kernel-people-192493,Axel Rasmussen,axelrasmussen@google.com,1
+kernel-individual-25009,kernel-people-88881,Axel Rasmussen,axel.rasmussen1@gmail.com,1
+kernel-individual-25187,kernel-people-195071,Pavana Sharma,pavana.sharma@opengear.com,1
+kernel-individual-25187,kernel-people-195093,Pavana Sharma,pavana.sharma@digi.com,1
+kernel-individual-25030,kernel-people-192895,Alexander Lobakin,alobakin@pm.me,3
+kernel-individual-25030,kernel-people-201263,Alexander Lobakin,alexandr.lobakin@intel.com,3
+kernel-individual-25030,kernel-people-208660,Alexander Lobakin,aleksander.lobakin@intel.com,3
+kernel-individual-25030,kernel-people-207882,Alexander Lobakin,alobakin@mailbox.org,3
+kernel-individual-24123,kernel-people-30852,Daniel Lezcano,daniel.lezcano@linaro.org,1
+kernel-individual-24123,kernel-people-205294,Daniel Lezcano,daniel.lezcano@linexp.org,1
+kernel-individual-25880,kernel-people-202637,David Yang,davidcomponentone@gmail.com,3
+kernel-individual-25880,kernel-people-207329,David Yang,mmyangfl@gmail.com,3
+kernel-individual-24725,kernel-people-186869,Puranjay Mohan,puranjay12@gmail.com,1
+kernel-individual-24725,kernel-people-204702,Puranjay Mohan,p-mohan@ti.com,1
+kernel-individual-24173,kernel-people-165511,Russell King (Oracle),rmk+kernel@armlinux.org.uk,1
+kernel-individual-24173,kernel-people-166571,Russell King (Oracle),linux@armlinux.org.uk,1
+kernel-individual-24102,kernel-people-762,Simon Horman,horms@verge.net.au,1
+kernel-individual-24102,kernel-people-141071,Simon Horman,simon.horman@netronome.com,1
+kernel-individual-24102,kernel-people-199903,Simon Horman,simon.horman@corigine.com,1
+kernel-individual-24102,kernel-people-202255,Simon Horman,horms@kernel.org,1
+kernel-individual-25181,kernel-people-193987,Saeed Mahameed,saeedm@nvidia.com,1
+kernel-individual-25181,kernel-people-194567,Saeed Mahameed,saeed@kernel.org,1
+kernel-individual-25181,kernel-people-204248,Saeed Mahameed,saeed.kernel@gmail.com,1
+kernel-individual-25164,kernel-people-130401,Nikolay Aleksandrov,razor@blackwall.org,1
+kernel-individual-25164,kernel-people-194891,Nikolay Aleksandrov,nikolay@nvidia.com,1
+kernel-individual-25542,kernel-people-198247,Manu Bretelle,chantra@fb.com,1
+kernel-individual-25542,kernel-people-206632,Manu Bretelle,chantr4@gmail.com,1
+kernel-individual-26915,kernel-people-207338,Rajat Khandelwal,rajat.khandelwal@linux.intel.com,1
+kernel-individual-26915,kernel-people-207276,Rajat Khandelwal,rajat.khandelwal@intel.com,1
+kernel-individual-25416,kernel-people-969,Jesse Brandeburg,jesse.brandeburg@intel.com,1
+kernel-individual-25416,kernel-people-1179,Jesse Brandeburg,jesse.brandeburg@gmail.com,1
+kernel-individual-26192,kernel-people-205305,lixue liang,lixue.liang5086@gmail.com,1
+kernel-individual-26192,kernel-people-205672,lixue liang,lianglixue@greatwall.com.cn,1
+kernel-individual-24440,kernel-people-182975,Frieder Schrempf,frieder.schrempf@kontron.de,1
+kernel-individual-24440,kernel-people-200875,Frieder Schrempf,frieder@fris.de,1
+kernel-individual-24033,kernel-people-74221,Sakari Ailus,sakari.ailus@linux.intel.com,1
+kernel-individual-24033,kernel-people-22471,Sakari Ailus,sakari.ailus@iki.fi,1
+kernel-individual-25533,kernel-people-198143,Jiri Wiesner,jwiesner@suse.com,1
+kernel-individual-25533,kernel-people-203015,Jiri Wiesner,jwiesner@suse.de,1
+kernel-individual-25591,kernel-people-198731,"GONG, Ruiqi",gongruiqi1@huawei.com,1
+kernel-individual-25591,kernel-people-209676,"GONG, Ruiqi",gongruiqi@huaweicloud.com,1
+kernel-individual-24781,kernel-people-106871,Konstantin Ryabitsev,konstantin@linuxfoundation.org,1
+kernel-individual-24781,kernel-people-181783,Konstantin Ryabitsev,icon@mricon.com,1
+kernel-individual-24046,kernel-people-175177,Jonathan Cameron,Jonathan.Cameron@huawei.com,1
+kernel-individual-24046,kernel-people-39951,Jonathan Cameron,jic23@kernel.org,1
+kernel-individual-24328,kernel-people-153,Michał Mirosław,mirq-linux@rere.qmqm.pl,1
+kernel-individual-24328,kernel-people-4679,Michał Mirosław,mirqus@gmail.com,1
+kernel-individual-24137,kernel-people-148091,Niklas Söderlund,niklas.soderlund@ragnatech.se,3
+kernel-individual-24137,kernel-people-202431,Niklas Söderlund,niklas.soderlund@corigine.com,3
+kernel-individual-26210,kernel-people-205395,Jeff Evanson,jeff.evanson@gmail.com,1
+kernel-individual-26210,kernel-people-205426,Jeff Evanson,Jeff.Evanson@qsc.com,1
+kernel-individual-24509,kernel-people-183561,Stephan Gerhold,stephan@gerhold.net,1
+kernel-individual-24509,kernel-people-206062,Stephan Gerhold,stephan.gerhold@kernkonzept.com,1
+kernel-individual-25617,kernel-people-102741,Michael Brown,mbrown@fensystems.co.uk,1
+kernel-individual-25617,kernel-people-152551,Michael Brown,mcb30@ipxe.org,1
+kernel-individual-25867,kernel-people-202519,Francesco Dolcini,francesco.dolcini@toradex.com,1
+kernel-individual-25867,kernel-people-115351,Francesco Dolcini,francesco@dolcini.it,1
+kernel-individual-24356,kernel-people-176363,Tonghao Zhang,xiangxia.m.yue@gmail.com,2
+kernel-individual-24356,kernel-people-208233,Tonghao Zhang,xxmy@infragraf.org,2
+kernel-individual-24356,kernel-people-208247,Tonghao Zhang,tong@infragraf.org,2
+kernel-individual-24052,kernel-people-157411,Krzysztof Kozlowski,krzk@kernel.org,1
+kernel-individual-24052,kernel-people-198129,Krzysztof Kozlowski,krzysztof.kozlowski@canonical.com,1
+kernel-individual-24052,kernel-people-205187,Krzysztof Kozlowski,krzysztof.kozlowski@linaro.org,1
+kernel-individual-25946,kernel-people-44721,Jamal Hadi Salim,jhs@mojatatu.com,1
+kernel-individual-25946,kernel-people-208473,Jamal Hadi Salim,hadi@mojatatu.com,1
+kernel-individual-24067,kernel-people-170819,Wei Yongjun,weiyongjun1@huawei.com,1
+kernel-individual-24067,kernel-people-207119,Wei Yongjun,weiyongjun@huaweicloud.com,1
+kernel-individual-24853,kernel-people-189309,Srinivas Neeli,srinivas.neeli@xilinx.com,1
+kernel-individual-24853,kernel-people-190617,Srinivas Neeli,sneeli@xilinx.com,1
+kernel-individual-24842,kernel-people-38331,Namhyung Kim,namhyung@kernel.org,1
+kernel-individual-24842,kernel-people-8620,Namhyung Kim,namhyung@gmail.com,1
+kernel-individual-24930,kernel-people-187811,Naveen N. Rao,naveen.n.rao@linux.ibm.com,1
+kernel-individual-24930,kernel-people-39591,Naveen N. Rao,naveen.n.rao@linux.vnet.ibm.com,1
+kernel-individual-25800,kernel-people-201727,Chengfeng Ye,cyeaa@connect.ust.hk,1
+kernel-individual-25800,kernel-people-210001,Chengfeng Ye,dg573847474@gmail.com,1
+kernel-individual-24726,kernel-people-149561,Willem de Bruijn,willemdebruijn.kernel@gmail.com,1
+kernel-individual-24726,kernel-people-67141,Willem de Bruijn,willemb@google.com,1
+kernel-individual-25581,kernel-people-198617,Xu Kuohai,xukuohai@huawei.com,1
+kernel-individual-25581,kernel-people-206532,Xu Kuohai,xukuohai@huaweicloud.com,1
+kernel-individual-26343,kernel-people-206276,Rick Lindsley,ricklind@us.ibm.com,1
+kernel-individual-26343,kernel-people-192459,Rick Lindsley,ricklind@linux.vnet.ibm.com,1
+kernel-individual-24763,kernel-people-187861,Ivan Mikhaylov,i.mikhaylov@yadro.com,1
+kernel-individual-24763,kernel-people-209306,Ivan Mikhaylov,fr0st61te@gmail.com,1
+kernel-individual-25252,kernel-people-195523,Min Li,min.li.xe@renesas.com,3
+kernel-individual-25252,kernel-people-208450,Min Li,lnimi@hotmail.com,3
+kernel-individual-25252,kernel-people-208849,Min Li,lm0963hack@gmail.com,3
+kernel-individual-25261,kernel-people-195569,Zhu Yanjun,yanjunz@nvidia.com,1
+kernel-individual-25261,kernel-people-196405,Zhu Yanjun,yanjun.zhu@intel.com,1
+kernel-individual-25261,kernel-people-72811,Zhu Yanjun,zyjzyj2000@gmail.com,1
+kernel-individual-24552,kernel-people-48431,Vineet Gupta,Vineet.Gupta1@synopsys.com,1
+kernel-individual-24552,kernel-people-201385,Vineet Gupta,vgupta@kernel.org,1
+kernel-individual-24552,kernel-people-86661,Vineet Gupta,vgupta@synopsys.com,1
+kernel-individual-25598,kernel-people-198789,Matt Corallo,linux-net@bluematt.me,3
+kernel-individual-25598,kernel-people-198857,Matt Corallo,netdev-list@mattcorallo.com,3
+kernel-individual-25598,kernel-people-197423,Matt Corallo,linux-wired-list@bluematt.me,3
+kernel-individual-24051,kernel-people-175405,Gustavo A. R. Silva,gustavo@embeddedor.com,1
+kernel-individual-24051,kernel-people-192073,Gustavo A. R. Silva,gustavoars@kernel.org,1
+kernel-individual-24371,kernel-people-320,Dan Williams,dan.j.williams@intel.com,2
+kernel-individual-24371,kernel-people-1027,Dan Williams,dcbw@redhat.com,2
+kernel-individual-24371,kernel-people-199571,Dan Williams,dcbw@gapps.redhat.com,2
+kernel-individual-26669,kernel-people-202755,Bob Briscoe,ietf@bobbriscoe.net,1
+kernel-individual-26669,kernel-people-203077,Bob Briscoe,research@bobbriscoe.net,1
+kernel-individual-24815,kernel-people-179225,Richard Palethorpe,rpalethorpe@suse.com,1
+kernel-individual-24815,kernel-people-178331,Richard Palethorpe,rpalethorpe@suse.de,1
+kernel-individual-24580,kernel-people-168769,Björn Töpel,bjorn.topel@gmail.com,1
+kernel-individual-24580,kernel-people-198739,Björn Töpel,bjorn@kernel.org,1
+kernel-individual-24580,kernel-people-187513,Björn Töpel,bjorn.topel@intel.com,1
+kernel-individual-25816,kernel-people-201895,David Decotigny,decot+git@google.com,1
+kernel-individual-25816,kernel-people-208107,David Decotigny,ddecotig@google.com,1
+kernel-individual-24117,kernel-people-15102,Fabio Estevam,festevam@gmail.com,1
+kernel-individual-24117,kernel-people-199911,Fabio Estevam,festevam@denx.de,1
+kernel-individual-25101,kernel-people-194225,Camel Guo,camel.guo@axis.com,1
+kernel-individual-25101,kernel-people-194597,Camel Guo,camelg@axis.com,1
+kernel-individual-26080,kernel-people-204751,Tian Lan,tilan7663@gmail.com,1
+kernel-individual-26080,kernel-people-204752,Tian Lan,Tian.Lan@twosigma.com,1
+kernel-individual-24055,kernel-people-169689,Wolfram Sang,wsa+renesas@sang-engineering.com,1
+kernel-individual-24055,kernel-people-191985,Wolfram Sang,wsa@kernel.org,1
+kernel-individual-25228,kernel-people-195355,Ricardo Dias,rdias@memsql.com,1
+kernel-individual-25228,kernel-people-195743,Ricardo Dias,rdias@singlestore.com,1
+kernel-individual-24903,kernel-people-190187,Lorenz Bauer,lmb@cloudflare.com,1
+kernel-individual-24903,kernel-people-207118,Lorenz Bauer,oss@lmb.io,1
+kernel-individual-24903,kernel-people-208817,Lorenz Bauer,lorenz.bauer@isovalent.com,1
+kernel-individual-24903,kernel-people-209035,Lorenz Bauer,lmb@isovalent.com,1
+kernel-individual-25509,kernel-people-190201,Joe Stringer,joe@wand.net.nz,1
+kernel-individual-25509,kernel-people-197821,Joe Stringer,joe@cilium.io,1
+kernel-individual-25509,kernel-people-150121,Joe Stringer,joe@ovn.org,1
+kernel-individual-25509,kernel-people-207681,Joe Stringer,joe@isovalent.com,1
+kernel-individual-25551,kernel-people-198305,Jiabing Wan,wanjiabing@vivo.com,3
+kernel-individual-25551,kernel-people-202639,Jiabing Wan,11126903@vivo.com,3
+kernel-individual-25551,kernel-people-205605,Jiabing Wan,jiabing.wan@foxmail.com,3
+kernel-individual-25348,kernel-people-196303,Paolo Lungaroni,paolo.lungaroni@cnit.it,3
+kernel-individual-25348,kernel-people-198901,Paolo Lungaroni,paolo.lungaroni@uniroma2.it,3
+kernel-individual-24604,kernel-people-29952,Michael Walle,michael@walle.cc,1
+kernel-individual-24604,kernel-people-209923,Michael Walle,mwalle@kernel.org,1
+kernel-individual-24160,kernel-people-102291,Oded Gabbay,oded.gabbay@gmail.com,1
+kernel-individual-24160,kernel-people-195757,Oded Gabbay,ogabbay@kernel.org,1
+kernel-individual-24721,kernel-people-59011,Denis Kirjanov,kda@linux-powerpc.org,1
+kernel-individual-24721,kernel-people-202809,Denis Kirjanov,dkirjanov@suse.de,1
+kernel-individual-25033,kernel-people-192927,Reto Schneider,code@reto-schneider.ch,3
+kernel-individual-25033,kernel-people-201311,Reto Schneider,rs@hqv.ch,3
+kernel-individual-25577,kernel-people-198569,Wong Vee Khee,vee.khee.wong@linux.intel.com,1
+kernel-individual-25577,kernel-people-206844,Wong Vee Khee,veekhee@gmail.com,1
+kernel-individual-24082,kernel-people-38541,Kees Cook,keescook@chromium.org,1
+kernel-individual-24082,kernel-people-207544,Kees Cook,kees@kernel.org,1
+kernel-individual-27148,kernel-people-209620,FUJITA Tomonori,tomo@exabit.dev,1
+kernel-individual-27148,kernel-people-209859,FUJITA Tomonori,fujita.tomonori@gmail.com,1
+kernel-individual-24229,kernel-people-155101,Bjorn Andersson,bjorn.andersson@linaro.org,1
+kernel-individual-24229,kernel-people-206963,Bjorn Andersson,andersson@kernel.org,1
+kernel-individual-24229,kernel-people-207172,Bjorn Andersson,quic_bjorande@quicinc.com,1
+kernel-individual-24597,kernel-people-95791,Josh Poimboeuf,jpoimboe@redhat.com,1
+kernel-individual-24597,kernel-people-205610,Josh Poimboeuf,jpoimboe@kernel.org,1
+kernel-individual-24162,kernel-people-325,Joe Perches,joe@perches.com,2
+kernel-individual-24162,kernel-people-170549,Joe Perches,coupons@perches.com,2
+kernel-individual-24030,kernel-people-520,Hans Verkuil,hverkuil@xs4all.nl,1
+kernel-individual-24030,kernel-people-183543,Hans Verkuil,hverkuil-cisco@xs4all.nl,1
+kernel-individual-26824,kernel-people-207758,Thomas Kupper,thomas.kupper@gmail.com,1
+kernel-individual-26824,kernel-people-207769,Thomas Kupper,thomas@kupper.org,1
+kernel-individual-27070,kernel-people-209217,Chen Aotian,chenaotian2@163.com,1
+kernel-individual-27070,kernel-people-209218,Chen Aotian,chenaotian@188.com,1
+kernel-individual-26182,kernel-people-205208,Martin Faltesek,mfaltesek@chromium.org,1
+kernel-individual-26182,kernel-people-138151,Martin Faltesek,mfaltesek@google.com,1
+kernel-individual-25259,kernel-people-195561,Michal Swiatkowski,michal.swiatkowski@intel.com,1
+kernel-individual-25259,kernel-people-205006,Michal Swiatkowski,michal.swiatkowski@linux.intel.com,1
+kernel-individual-24243,kernel-people-1120,Keith Packard,keithp@keithp.com,1
+kernel-individual-24243,kernel-people-201949,Keith Packard,keithpac@amazon.com,1
+kernel-individual-25150,kernel-people-147721,Mika Penttilä,mika.penttila@nextfour.com,1
+kernel-individual-25150,kernel-people-204990,Mika Penttilä,mpenttil@redhat.com,1
+kernel-individual-26620,kernel-people-203217,Slade Watkins,slade@sladewatkins.com,2
+kernel-individual-26620,kernel-people-207337,Slade Watkins,srw@sladewatkins.net,2
+kernel-individual-24365,kernel-people-72696,Jeffrey Hugo,jhugo@codeaurora.org,1
+kernel-individual-24365,kernel-people-199531,Jeffrey Hugo,quic_jhugo@quicinc.com,1
+kernel-individual-26664,kernel-people-205617,Ferenc Fejes,ferenc.fejes@ericsson.com,1
+kernel-individual-26664,kernel-people-208670,Ferenc Fejes,fejes@inf.elte.hu,1
+kernel-individual-26664,kernel-people-208725,Ferenc Fejes,primalgamer@gmail.com,1
+kernel-individual-24963,kernel-people-191437,Drew Fustini,drew@beagleboard.org,1
+kernel-individual-24963,kernel-people-202675,Drew Fustini,dfustini@baylibre.com,1
+kernel-individual-24963,kernel-people-124801,Drew Fustini,pdp7pdp7@gmail.com,1
+kernel-individual-25828,kernel-people-199697,Tao Liu,thomas.liu@ucloud.cn,3
+kernel-individual-25828,kernel-people-208965,Tao Liu,taoliu828@163.com,3
+kernel-individual-25372,kernel-people-187165,Maxim Mikityanskiy,maximmi@mellanox.com,1
+kernel-individual-25372,kernel-people-195673,Maxim Mikityanskiy,maximmi@nvidia.com,1
+kernel-individual-25372,kernel-people-53071,Maxim Mikityanskiy,maxtram95@gmail.com,1
+kernel-individual-24417,kernel-people-88241,Martin Kepplinger,martink@posteo.de,1
+kernel-individual-24417,kernel-people-187277,Martin Kepplinger,martin.kepplinger@puri.sm,1
+kernel-individual-24073,kernel-people-124471,Alexander Sverdlin,alexander.sverdlin@nokia.com,1
+kernel-individual-24073,kernel-people-135301,Alexander Sverdlin,alexander.sverdlin@gmail.com,1
+kernel-individual-24584,kernel-people-184357,Bobby Eshleman,bobbyeshleman@gmail.com,1
+kernel-individual-24584,kernel-people-200791,Bobby Eshleman,bobby.eshleman@gmail.com,1
+kernel-individual-24584,kernel-people-207898,Bobby Eshleman,bobby.eshleman@bytedance.com,1
+kernel-individual-24145,kernel-people-179765,Radhey Shyam Pandey,radhey.shyam.pandey@xilinx.com,1
+kernel-individual-24145,kernel-people-205789,Radhey Shyam Pandey,radhey.shyam.pandey@amd.com,1
+kernel-individual-24145,kernel-people-180037,Radhey Shyam Pandey,radheys@xilinx.com,1
+kernel-individual-25633,kernel-people-116101,Leonard Crestez,cdleonard@gmail.com,1
+kernel-individual-25633,kernel-people-199311,Leonard Crestez,lcrestez@drivenets.com,1
+kernel-individual-25191,kernel-people-176063,Antony Antony,antony@phenome.org,1
+kernel-individual-25191,kernel-people-195155,Antony Antony,antony.antony@secunet.com,1
+kernel-individual-24340,kernel-people-170787,Neeraj Upadhyay,neeraju@codeaurora.org,1
+kernel-individual-24340,kernel-people-203917,Neeraj Upadhyay,quic_neeraju@quicinc.com,1
+kernel-individual-24121,kernel-people-179733,Wen Gong,wgong@codeaurora.org,1
+kernel-individual-24121,kernel-people-202981,Wen Gong,quic_wgong@quicinc.com,1
+kernel-individual-25271,kernel-people-195665,Konrad Dybcio,konrad.dybcio@somainline.org,2
+kernel-individual-25271,kernel-people-207706,Konrad Dybcio,konrad.dybcio@linaro.org,2
+kernel-individual-25271,kernel-people-209740,Konrad Dybcio,konradybcio@kernel.org,2
+kernel-individual-25186,kernel-people-663,Grant Grundler,grundler@google.com,1
+kernel-individual-25186,kernel-people-24271,Grant Grundler,grundler@chromium.org,1
+kernel-individual-24027,kernel-people-79,Stephen Rothwell,sfr@canb.auug.org.au,1
+kernel-individual-24027,kernel-people-198765,Stephen Rothwell,sfr@rothwell.id.au,1
+kernel-individual-24968,kernel-people-191587,Bastian Germann,bage@linutronix.de,1
+kernel-individual-24968,kernel-people-202699,Bastian Germann,bage@debian.org,1
+kernel-individual-24893,kernel-people-190005,Arjun Roy,arjunroy.kdev@gmail.com,1
+kernel-individual-24893,kernel-people-190509,Arjun Roy,arjunroy@google.com,1
+kernel-individual-25034,kernel-people-1383,Rolf Eike Beer,eike-kernel@sf-tec.de,1
+kernel-individual-25034,kernel-people-3374,Rolf Eike Beer,eike@sf-mail.de,1

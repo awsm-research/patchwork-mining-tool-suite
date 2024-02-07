@@ -1,0 +1,256 @@
+change1_original_id,patch_original_id,patch_name,date,is_correct
+ffmpeg-change1-18923,ffmpeg-patch-29805,[FFmpeg-devel] avfilter: Implement gray world color correction Uses log LAB colorspace,2021-08-27T08:06:00,yes
+ffmpeg-change1-18923,ffmpeg-patch-29806,[FFmpeg-devel] avfilter: Implement gray world color correction Uses log LAB colorspace,2021-08-27T08:53:55,yes
+ffmpeg-change1-18923,ffmpeg-patch-29807,"[FFmpeg-devel,1/1] avfilter: Implement gray world color correction Uses log LAB colorspace",2021-08-27T09:17:39,yes
+ffmpeg-change1-25094,ffmpeg-patch-19753,"[FFmpeg-devel,v5,4/9] libavutil/hwcontext_qsv: supporting d3d11va device type",2020-05-18T18:55:03,yes
+ffmpeg-change1-25094,ffmpeg-patch-19759,"[FFmpeg-devel,v6,4/9] libavutil/hwcontext_qsv: supporting d3d11va device type",2020-05-18T20:29:29,yes
+ffmpeg-change1-25094,ffmpeg-patch-23372,"[FFmpeg-devel,v7,2/8] libavutil/hwcontext_qsv: supporting d3d11va device type",2020-11-03T18:45:51,yes
+ffmpeg-change1-25094,ffmpeg-patch-29007,"[FFmpeg-devel,2/8] libavutil/hwcontext_qsv: supporting d3d11va device type",2021-07-22T10:56:29,yes
+ffmpeg-change1-25094,ffmpeg-patch-29653,"[FFmpeg-devel,2/9] libavutil/hwcontext_qsv: supporting d3d11va device type",2021-08-20T21:48:03,yes
+ffmpeg-change1-25351,ffmpeg-patch-27802,"[FFmpeg-devel,v2,19/22] lavfi/deinterlace_qsv: re-use VPPContext for deinterlace_qsv filter",2021-05-17T03:24:23,yes
+ffmpeg-change1-25351,ffmpeg-patch-28309,"[FFmpeg-devel,v3,19/22] lavfi/deinterlace_qsv: re-use VPPContext for deinterlace_qsv filter",2021-06-15T06:14:00,yes
+ffmpeg-change1-25351,ffmpeg-patch-29107,"[FFmpeg-devel,v4,18/21] lavfi/deinterlace_qsv: re-use VPPContext for deinterlace_qsv filter",2021-07-29T05:25:06,yes
+ffmpeg-change1-25351,ffmpeg-patch-29281,"[FFmpeg-devel,v5,18/20] lavfi/deinterlace_qsv: re-use VPPContext for deinterlace_qsv filter",2021-08-05T08:19:08,yes
+ffmpeg-change1-25351,ffmpeg-patch-40175,"[FFmpeg-devel,3/3] lavfi/deinterlace_qsv: re-use VPPContext for deinterlace_qsv filter",2023-01-30T01:37:19,yes
+ffmpeg-change1-6616,ffmpeg-patch-32232,"[FFmpeg-devel,v22,22/23] avutil/ass_split: Add parsing of hard-space tags (\h)",2021-12-09T12:13:06,yes
+ffmpeg-change1-6616,ffmpeg-patch-33583,"[FFmpeg-devel,22/24] avutil/ass_split: Add parsing of hard-space tags (\h)",2022-01-14T01:13:31,yes
+ffmpeg-change1-6616,ffmpeg-patch-33692,"[FFmpeg-devel,v2,22/26] avutil/ass_split: Add parsing of hard-space tags (\h)",2022-01-20T02:48:32,yes
+ffmpeg-change1-6616,ffmpeg-patch-33728,"[FFmpeg-devel,v3,22/26] avutil/ass_split: Add parsing of hard-space tags (\h)",2022-01-20T03:25:30,yes
+ffmpeg-change1-1043,ffmpeg-patch-14832,"[FFmpeg-devel,v3,4/5] avcodec/v210enc: make 8bit and 10bit process consistent",2019-09-01T13:20:22,yes
+ffmpeg-change1-1043,ffmpeg-patch-15113,"[FFmpeg-devel,v4,2/3] avcodec/v210enc: make 8bit and 10bit process consistent",2019-09-17T03:42:27,yes
+ffmpeg-change1-22830,ffmpeg-patch-40694,"[FFmpeg-devel,2/3] lavfi/dnn: fix mem leak in TF backend error handle",2023-03-16T03:00:15,yes
+ffmpeg-change1-22830,ffmpeg-patch-40789,"[FFmpeg-devel,V2,2/3] lavfi/dnn: fix mem leak in TF backend error handle",2023-03-24T07:30:39,yes
+ffmpeg-change1-24439,ffmpeg-patch-31215,"[FFmpeg-devel,2/2] swscale/utils: Improve return codes of sws_setColorspaceDetails()",2021-10-22T21:45:38,yes
+ffmpeg-change1-24439,ffmpeg-patch-31217,"[FFmpeg-devel,1/2] swscale/utils: Improve return codes of sws_setColorspaceDetails()",2021-10-23T08:12:56,yes
+ffmpeg-change1-24395,ffmpeg-patch-14966,[FFmpeg-devel] rtsp: fix wrong codec setup for some sdp,2019-09-07T10:23:13,yes
+ffmpeg-change1-24395,ffmpeg-patch-14980,[FFmpeg-devel] rtsp: fix wrong codec setup for some sdp,2019-09-08T23:51:38,yes
+ffmpeg-change1-8083,ffmpeg-patch-4511,[FFmpeg-devel] mdct15: add inverse transform postrotation SIMD,2017-07-29T20:38:09,yes
+ffmpeg-change1-8083,ffmpeg-patch-4513,"[FFmpeg-devel,v2] mdct15: add inverse transform postrotation SIMD",2017-07-30T00:48:16,yes
+ffmpeg-change1-22741,ffmpeg-patch-21410,[FFmpeg-devel] avutil/opt: Restore NULL input handling to set_string_video_rate(),2020-07-31T14:53:56,yes
+ffmpeg-change1-22741,ffmpeg-patch-21630,[FFmpeg-devel] avutil/opt: Restore NULL input handling to set_string_video_rate(),2020-08-13T11:41:26,yes
+ffmpeg-change1-22547,ffmpeg-patch-41411,"[FFmpeg-devel,v2,3/4] decklink: Convert to using avpriv_packet_list functions",2023-04-28T18:40:53,yes
+ffmpeg-change1-22547,ffmpeg-patch-41597,"[FFmpeg-devel,v3] decklink: Convert to using avpriv_packet_list functions",2023-05-12T16:04:57,yes
+ffmpeg-change1-11099,ffmpeg-patch-40164,"[FFmpeg-devel,4/4] avutil/frame: deprecate AVFrame.coded_picture_number and display_picture_number",2023-01-28T18:15:23,yes
+ffmpeg-change1-11099,ffmpeg-patch-40363,"[FFmpeg-devel,v2,4/4] avutil/frame: deprecate AVFrame.coded_picture_number and display_picture_number",2023-02-10T23:29:13,yes
+ffmpeg-change1-21134,ffmpeg-patch-32834,"[FFmpeg-devel,2/2] avformat/mov: validate box size for stts",2021-12-22T11:30:33,yes
+ffmpeg-change1-21134,ffmpeg-patch-32836,"[FFmpeg-devel,v2,2/2] avformat/mov: validate box size for stts",2021-12-22T12:47:28,yes
+ffmpeg-change1-21134,ffmpeg-patch-32850,"[FFmpeg-devel,v3,2/2] avformat/mov: validate box size for stts",2021-12-23T07:19:13,yes
+ffmpeg-change1-4608,ffmpeg-patch-14098,[FFmpeg-devel] lavu/tx: add support for double precision FFT and MDCT,2019-07-27T18:29:38,yes
+ffmpeg-change1-4608,ffmpeg-patch-14181,[FFmpeg-devel] lavu/tx: add support for double precision FFT and MDCT,2019-08-01T15:54:47,yes
+ffmpeg-change1-8084,ffmpeg-patch-8348,[FFmpeg-devel] Add IRC nicknames to MAINTAINERS?,2018-04-07T12:08:25,yes
+ffmpeg-change1-8084,ffmpeg-patch-8425,[FFmpeg-devel] Add IRC nicknames to MAINTAINERS?,2018-04-12T14:43:48,yes
+ffmpeg-change1-24909,ffmpeg-patch-12371,[FFmpeg-devel] Use packet DTS to correct frame PTS for PTS missing video in nvidia cuvid decoder,2019-03-20T23:18:22,yes
+ffmpeg-change1-24909,ffmpeg-patch-12443,[FFmpeg-devel] Use packet DTS to correct frame PTS for PTS missing video in nvidia cuvid decoder,2019-03-25T21:18:28,yes
+ffmpeg-change1-2516,ffmpeg-patch-14437,"[FFmpeg-devel,v1,2/2] FATE: add a test for freeezedetect",2019-08-12T11:21:46,yes
+ffmpeg-change1-2516,ffmpeg-patch-14440,"[FFmpeg-devel,v2,3/3] FATE: add a test for freeezedetect",2019-08-12T15:39:53,yes
+ffmpeg-change1-2516,ffmpeg-patch-14677,"[FFmpeg-devel,v3,3/3] FATE: add a test for freeezedetect",2019-08-23T12:17:09,yes
+ffmpeg-change1-2516,ffmpeg-patch-14680,"[FFmpeg-devel,v3,3/3] FATE: add a test for freeezedetect",2019-08-23T18:27:22,yes
+ffmpeg-change1-2516,ffmpeg-patch-15881,"[FFmpeg-devel,v4,3/3] FATE: add a test for freeezedetect",2019-10-21T10:12:13,yes
+ffmpeg-change1-15921,ffmpeg-patch-16959,"[FFmpeg-devel,v1] avcodec/h264_metadata_bsf: Fix user data failed to insert in case no SPSs NAL for global headers",2019-12-26T00:55:51,yes
+ffmpeg-change1-15921,ffmpeg-patch-17227,"[FFmpeg-devel,v7,6/8] avcodec/h264_metadata_bsf: Fix user data failed to insert in case no SPSs NAL for global headers",2020-01-07T05:03:53,yes
+ffmpeg-change1-13414,ffmpeg-patch-21735,[FFmpeg-devel] Set AVSTREAM_PARSE_HEADERS flag for AV1 MP4 streams.,2020-08-19T09:50:35,yes
+ffmpeg-change1-13414,ffmpeg-patch-21785,[FFmpeg-devel] Set AVSTREAM_PARSE_HEADERS flag for AV1 MP4 streams,2020-08-21T06:37:18,yes
+ffmpeg-change1-13414,ffmpeg-patch-21872,[FFmpeg-devel] Set AVSTREAM_PARSE_HEADERS flag for AV1 MP4 streams,2020-08-24T06:18:16,yes
+ffmpeg-change1-24220,ffmpeg-patch-21723,"[FFmpeg-devel,3/4] libavcodec/jpeg2000: Modify cleanup",2020-08-18T19:40:36,yes
+ffmpeg-change1-24220,ffmpeg-patch-21738,"[FFmpeg-devel,RFC,3/4] libavcodec/jpeg2000: Modify cleanup",2020-08-19T12:21:01,yes
+ffmpeg-change1-24220,ffmpeg-patch-21835,"[FFmpeg-devel,RFC,v2,3/4] libavcodec/jpeg2000: Modify cleanup",2020-08-23T10:32:22,yes
+ffmpeg-change1-24220,ffmpeg-patch-21886,"[FFmpeg-devel,RFC,v3,3/5] libavcodec/jpeg2000: Modify cleanup",2020-08-24T17:40:32,yes
+ffmpeg-change1-24220,ffmpeg-patch-21900,"[FFmpeg-devel,RFC,v4,3/5] libavcodec/jpeg2000: Modify cleanup",2020-08-25T04:20:05,yes
+ffmpeg-change1-22604,ffmpeg-patch-40048,"[FFmpeg-devel,19/26] avutil: remove FF_API_D2STR",2023-01-16T13:38:33,yes
+ffmpeg-change1-22604,ffmpeg-patch-40255,"[FFmpeg-devel,v2,25/33] avutil: remove FF_API_D2STR",2023-02-04T10:41:56,yes
+ffmpeg-change1-4578,ffmpeg-patch-35625,"[FFmpeg-devel,v2,02/11] libavformat/asfdec: fix get_value return type and add checks for",2022-05-07T09:36:35,yes
+ffmpeg-change1-4578,ffmpeg-patch-35689,"[FFmpeg-devel,v3,02/11] libavformat/asfdec: fix get_value return type and add checks for",2022-05-08T03:01:13,yes
+ffmpeg-change1-4578,ffmpeg-patch-35768,"[FFmpeg-devel,v4,02/10] libavformat/asfdec: fix get_value return type and add checks for",2022-05-14T20:55:14,yes
+ffmpeg-change1-4578,ffmpeg-patch-35861,"[FFmpeg-devel,v5,02/10] libavformat/asfdec: fix get_value return type and add checks for",2022-05-21T05:21:32,yes
+ffmpeg-change1-7892,ffmpeg-patch-37397,"[FFmpeg-devel,1/5] lavc/aarch64: Add neon implementation for vsad16",2022-08-22T15:26:23,yes
+ffmpeg-change1-7892,ffmpeg-patch-37696,"[FFmpeg-devel,1/5] lavc/aarch64: Add neon implementation for vsad16",2022-09-06T10:27:18,yes
+ffmpeg-change1-7892,ffmpeg-patch-37755,"[FFmpeg-devel,1/5] lavc/aarch64: Add neon implementation for vsad16",2022-09-08T09:25:03,yes
+ffmpeg-change1-13641,ffmpeg-patch-39424,"[FFmpeg-devel,16/31] doc/examples/metadata: use av_dict_iterate",2022-11-25T01:30:31,yes
+ffmpeg-change1-13641,ffmpeg-patch-39538,"[FFmpeg-devel,v2,16/31] doc/examples/metadata: use av_dict_iterate",2022-11-26T14:46:33,yes
+ffmpeg-change1-9993,ffmpeg-patch-3714,[FFmpeg-devel] lavc/mpegvideo_enc: allow to force low_delay by increasing strict_std_compliance,2017-05-23T10:28:48,yes
+ffmpeg-change1-9993,ffmpeg-patch-3725,[FFmpeg-devel] lavc/mpegvideo_enc: allow to force low_delay by increasing strict_std_compliance,2017-05-24T08:31:10,yes
+ffmpeg-change1-5515,ffmpeg-patch-29746,"[FFmpeg-devel,2/2] avcodec/libx265: add support for setting chroma sample location",2021-08-23T21:47:30,yes
+ffmpeg-change1-5515,ffmpeg-patch-29850,"[FFmpeg-devel,v2,2/2] avcodec/libx265: add support for setting chroma sample location",2021-08-29T16:43:23,yes
+ffmpeg-change1-5446,ffmpeg-patch-24856,"[FFmpeg-devel,v2,07/11] avcodec/h2645_parse: add nal header parser for h266/vvc",2021-01-09T07:34:17,yes
+ffmpeg-change1-5446,ffmpeg-patch-24904,"[FFmpeg-devel,v3,08/11] avcodec/h2645_parse: add nal header parser for h266/vvc",2021-01-11T16:33:16,yes
+ffmpeg-change1-5446,ffmpeg-patch-25164,"[FFmpeg-devel,v4,5/9] avcodec/h2645_parse: add nal header parser for h266/vvc",2021-01-25T14:15:03,yes
+ffmpeg-change1-5446,ffmpeg-patch-25561,"[FFmpeg-devel,v5,06/10] avcodec/h2645_parse: add nal header parser for h266/vvc",2021-02-11T14:36:07,yes
+ffmpeg-change1-5446,ffmpeg-patch-25682,"[FFmpeg-devel,v6,5/9] avcodec/h2645_parse: add nal header parser for h266/vvc",2021-02-17T01:51:42,yes
+ffmpeg-change1-5446,ffmpeg-patch-26260,"[FFmpeg-devel,v7,5/9] avcodec/h2645_parse: add nal header parser for h266/vvc",2021-03-08T14:05:49,yes
+ffmpeg-change1-817,ffmpeg-patch-33903,"[FFmpeg-devel,03/41] avcodec/mjpegenc: Fix files with slices > 1, but threads == 1",2022-01-30T06:27:11,yes
+ffmpeg-change1-817,ffmpeg-patch-33978,"[FFmpeg-devel,v2,04/69] avcodec/mjpegenc: Fix files with slices > 1, but threads == 1",2022-02-01T13:06:01,yes
+ffmpeg-change1-2948,ffmpeg-patch-25458,"[FFmpeg-devel,3/3] avformat/mov: simplify size code in probing a bit",2021-02-05T19:11:32,yes
+ffmpeg-change1-2948,ffmpeg-patch-25464,"[FFmpeg-devel,3/8] avformat/mov: simplify size code in probing a bit",2021-02-06T17:22:56,yes
+ffmpeg-change1-5428,ffmpeg-patch-18065,[FFmpeg-devel] avcodec/exr: add cineon lin2log trc,2020-03-05T21:50:39,yes
+ffmpeg-change1-5428,ffmpeg-patch-18070,"[FFmpeg-devel,v2] avcodec/exr: add cineon lin2log trc",2020-03-06T04:06:29,yes
+ffmpeg-change1-9784,ffmpeg-patch-1640,"[FFmpeg-devel,4/4] dxva2: allow an empty array of ID3D11VideoDecoderOutputView",2016-12-01T16:22:28,yes
+ffmpeg-change1-9784,ffmpeg-patch-2042,"[FFmpeg-devel,4/4] dxva2: allow an empty array of ID3D11VideoDecoderOutputView",2017-01-04T13:36:44,yes
+ffmpeg-change1-9784,ffmpeg-patch-2166,"[FFmpeg-devel,4/4] dxva2: allow an empty array of ID3D11VideoDecoderOutputView",2017-01-10T10:19:30,yes
+ffmpeg-change1-9784,ffmpeg-patch-2209,"[FFmpeg-devel,3/3] dxva2: allow an empty array of ID3D11VideoDecoderOutputView",2017-01-13T13:01:07,yes
+ffmpeg-change1-20706,ffmpeg-patch-30665,"[FFmpeg-devel,3/5] avformat/imf: Demuxer implementation",2021-09-29T20:47:49,yes
+ffmpeg-change1-20706,ffmpeg-patch-30976,"[FFmpeg-devel,3/5] avformat/imf: Demuxer implementation",2021-10-07T23:41:24,yes
+ffmpeg-change1-20706,ffmpeg-patch-31169,"[FFmpeg-devel,3/5] avformat/imf: Demuxer implementation",2021-10-20T14:53:34,yes
+ffmpeg-change1-20706,ffmpeg-patch-31295,"[FFmpeg-devel,v2,3/4] avformat/imf: Demuxer implementation",2021-11-04T22:29:53,yes
+ffmpeg-change1-20706,ffmpeg-patch-31313,"[FFmpeg-devel,v3,3/4] avformat/imf: Demuxer implementation",2021-11-06T22:05:36,yes
+ffmpeg-change1-20706,ffmpeg-patch-31604,"[FFmpeg-devel,v4,3/4] avformat/imf: Demuxer implementation",2021-11-23T17:04:29,yes
+ffmpeg-change1-20706,ffmpeg-patch-31611,"[FFmpeg-devel,v5,3/4] avformat/imf: Demuxer implementation",2021-11-23T18:42:10,yes
+ffmpeg-change1-20703,ffmpeg-patch-33046,"[FFmpeg-devel,v1] avformat/imf: fix CPL parsing error handling",2022-01-04T06:10:56,yes
+ffmpeg-change1-20703,ffmpeg-patch-33071,"[FFmpeg-devel,v2,1/2] avformat/imf: fix CPL parsing error handling",2022-01-05T02:42:06,yes
+ffmpeg-change1-16168,ffmpeg-patch-36981,"[FFmpeg-devel,01/39] avcodec/hevcdsp: Constify src pointers",2022-07-26T21:47:13,yes
+ffmpeg-change1-16168,ffmpeg-patch-37014,"[FFmpeg-devel,v2,1/3] avcodec/hevcdsp: Constify src pointers",2022-07-27T20:05:44,yes
+ffmpeg-change1-16168,ffmpeg-patch-37032,"[FFmpeg-devel,v3,1/3] avcodec/hevcdsp: Constify src pointers",2022-07-29T04:55:43,yes
+ffmpeg-change1-16168,ffmpeg-patch-37077,"[FFmpeg-devel,1/3] avcodec/hevcdsp: Constify src pointers",2022-08-01T13:08:07,yes
+ffmpeg-change1-16168,ffmpeg-patch-37082,"[FFmpeg-devel,v5,2/4] avcodec/hevcdsp: Constify src pointers",2022-08-02T00:23:10,yes
+ffmpeg-change1-4820,ffmpeg-patch-28247,"[FFmpeg-devel,3/5] avformat/mpegtsenc: Add muxing support for arib_superimpose",2021-06-12T09:30:30,yes
+ffmpeg-change1-4820,ffmpeg-patch-28255,"[FFmpeg-devel,v2,3/5] avformat/mpegtsenc: Add muxing support for arib_superimpose",2021-06-13T02:34:19,yes
+ffmpeg-change1-16682,ffmpeg-patch-39580,"[FFmpeg-devel,4/7] avcodec/mediacodecenc: use bsf to handle crop",2022-12-04T17:12:25,yes
+ffmpeg-change1-16682,ffmpeg-patch-39642,"[FFmpeg-devel,v2,4/7] avcodec/mediacodecenc: use bsf to handle crop",2022-12-07T09:31:19,yes
+ffmpeg-change1-16682,ffmpeg-patch-39663,"[FFmpeg-devel,v3,3/7] avcodec/mediacodecenc: use bsf to handle crop",2022-12-09T17:22:40,yes
+ffmpeg-change1-8407,ffmpeg-patch-6129,[FFmpeg-devel] libavcodec/mpeg12dec: Use atomic addition for value updated in multiple threads.,2017-11-16T20:41:32,yes
+ffmpeg-change1-8407,ffmpeg-patch-6130,[FFmpeg-devel] libavcodec/mpeg12dec: Use atomic addition for value updated in multiple threads.,2017-11-16T23:07:54,yes
+ffmpeg-change1-23388,ffmpeg-patch-3728,[FFmpeg-devel] frame_thread_encoder: extend critical code covered by finished_task_mutex.,2017-05-24T16:15:05,yes
+ffmpeg-change1-23388,ffmpeg-patch-3729,[FFmpeg-devel] frame_thread_encoder: extend critical code covered by finished_task_mutex.,2017-05-24T16:51:27,yes
+ffmpeg-change1-23388,ffmpeg-patch-3733,[FFmpeg-devel] frame_thread_encoder: extend critical code covered by finished_task_mutex.,2017-05-25T12:20:46,yes
+ffmpeg-change1-10178,ffmpeg-patch-23189,[FFmpeg-devel] avformat/dhav: also support ZLAV packets,2020-10-24T00:32:25,yes
+ffmpeg-change1-10178,ffmpeg-patch-23432,"[FFmpeg-devel,v2] avformat/dhav: also support ZLAV packets",2020-11-08T09:41:43,yes
+ffmpeg-change1-18131,ffmpeg-patch-14662,"[FFmpeg-devel,2/8] avcodec/v4l2_m2m: disable info logging during device probe",2019-08-22T21:47:35,yes
+ffmpeg-change1-18131,ffmpeg-patch-14873,"[FFmpeg-devel,02/25] avcodec/v4l2_m2m: disable info logging during device probe",2019-09-03T01:02:07,yes
+ffmpeg-change1-21253,ffmpeg-patch-36069,"[FFmpeg-devel,v2,2/2] avformat/mov: prevent potential use of uninitialized value",2022-06-04T10:35:07,yes
+ffmpeg-change1-21253,ffmpeg-patch-36159,"[FFmpeg-devel,v3,2/2] avformat/mov: prevent potential use of uninitialized value",2022-06-11T07:32:16,yes
+ffmpeg-change1-27552,ffmpeg-patch-39754,"[FFmpeg-devel,EXTERNAL] vaapi: support VAProfileH264High10",2022-12-26T06:34:54,yes
+ffmpeg-change1-27552,ffmpeg-patch-39755,"[FFmpeg-devel,EXTERNAL] vaapi: support VAProfileH264High10",2022-12-26T06:42:42,yes
+ffmpeg-change1-27552,ffmpeg-patch-39756,[FFmpeg-devel] vaapi: support VAProfileH264High10,2022-12-26T06:59:39,yes
+ffmpeg-change1-27552,ffmpeg-patch-39760,"[FFmpeg-devel,v2] vaapi: support VAProfileH264High10",2022-12-27T03:12:51,yes
+ffmpeg-change1-27552,ffmpeg-patch-39964,"[FFmpeg-devel,v3] vaapi: support VAProfileH264High10",2023-01-11T10:46:29,yes
+ffmpeg-change1-27552,ffmpeg-patch-40904,"[FFmpeg-devel,v4] vaapi: support VAProfileH264High10",2023-03-29T08:41:10,yes
+ffmpeg-change1-13088,ffmpeg-patch-17097,"[FFmpeg-devel,20/20] avformat/matroskaenc: Avoid seek when writing Cues at the front",2020-01-01T00:58:37,yes
+ffmpeg-change1-13088,ffmpeg-patch-18568,"[FFmpeg-devel,v2,3/3] avformat/matroskaenc: Avoid seek when writing Cues at the front",2020-04-01T10:46:34,yes
+ffmpeg-change1-20707,ffmpeg-patch-33951,"[FFmpeg-devel,v1,4/4] avformat/imf: document IMFVirtualTrackResourcePlaybackCtx",2022-01-30T22:00:55,yes
+ffmpeg-change1-20707,ffmpeg-patch-34063,"[FFmpeg-devel,v2,4/4] avformat/imf: document IMFVirtualTrackResourcePlaybackCtx",2022-02-02T00:13:02,yes
+ffmpeg-change1-20707,ffmpeg-patch-34091,"[FFmpeg-devel,v3,4/4] avformat/imf: document IMFVirtualTrackResourcePlaybackCtx",2022-02-03T04:07:45,yes
+ffmpeg-change1-20707,ffmpeg-patch-34345,"[FFmpeg-devel,v4,3/3] avformat/imf: document IMFVirtualTrackResourcePlaybackCtx",2022-02-16T16:54:10,yes
+ffmpeg-change1-20519,ffmpeg-patch-5694,"[FFmpeg-devel,2/2] avformat/hlsenc: fix missing first segment bug in fmp4 mode",2017-10-25T23:54:49,yes
+ffmpeg-change1-20519,ffmpeg-patch-5707,"[FFmpeg-devel,1/2] avformat/hlsenc: fix missing first segment bug in fmp4 mode",2017-10-27T00:11:09,yes
+ffmpeg-change1-4065,ffmpeg-patch-34986,"[FFmpeg-devel,03/10] checkasm: Add idctdsp add/put-pixels-clamped tests",2022-03-25T18:52:50,yes
+ffmpeg-change1-4065,ffmpeg-patch-35108,"[FFmpeg-devel,v3,03/10] checkasm: Add idctdsp add/put-pixels-clamped tests",2022-03-31T17:23:44,yes
+ffmpeg-change1-9481,ffmpeg-patch-13324,"[FFmpeg-devel,v2,1/2] lavf/qsvvpp: allocate continuous memory",2019-05-29T17:00:53,yes
+ffmpeg-change1-9481,ffmpeg-patch-13405,"[FFmpeg-devel,v3] lavf/qsvvpp:allocate continuous memory",2019-06-04T15:59:07,yes
+ffmpeg-change1-9481,ffmpeg-patch-13594,"[FFmpeg-devel,v4,1/2] lavf/qsvvpp:allocate continuous memory",2019-06-18T14:51:44,yes
+ffmpeg-change1-24947,ffmpeg-patch-3996,[FFmpeg-devel] Update decode_simple_internal() to get the side data correctly.,2017-06-15T00:04:56,yes
+ffmpeg-change1-24947,ffmpeg-patch-4063,[FFmpeg-devel] Update decode_simple_internal() to get the side data correctly.,2017-06-20T20:09:09,yes
+ffmpeg-change1-4087,ffmpeg-patch-17413,"[FFmpeg-devel,1/2] avcodec: add decoder for argonaut games' adpcm codec",2020-01-19T03:11:30,yes
+ffmpeg-change1-4087,ffmpeg-patch-17418,"[FFmpeg-devel,v2,1/2] avcodec: add decoder for argonaut games' adpcm codec",2020-01-19T08:33:39,yes
+ffmpeg-change1-4087,ffmpeg-patch-17451,"[FFmpeg-devel,v3,1/2] avcodec: add decoder for argonaut games' adpcm codec",2020-01-21T10:09:20,yes
+ffmpeg-change1-4087,ffmpeg-patch-17465,"[FFmpeg-devel,v4,1/2] avcodec: add decoder for argonaut games' adpcm codec",2020-01-22T00:57:25,yes
+ffmpeg-change1-4087,ffmpeg-patch-17546,"[FFmpeg-devel,v5,1/2] avcodec: add decoder for argonaut games' adpcm codec",2020-01-26T03:36:50,yes
+ffmpeg-change1-20889,ffmpeg-patch-14540,"[FFmpeg-devel,02/11] avformat/matroskadec: Remove unnecessary check",2019-08-16T03:05:22,yes
+ffmpeg-change1-20889,ffmpeg-patch-16566,"[FFmpeg-devel,6/8] avformat/matroskadec: Remove unnecessary check",2019-12-03T17:09:08,yes
+ffmpeg-change1-11068,ffmpeg-patch-9352,"[FFmpeg-devel,10/12] avformat/mxfdec: fix indentation and rename mxf_read_packet_old",2018-06-10T10:36:48,yes
+ffmpeg-change1-11068,ffmpeg-patch-9493,"[FFmpeg-devel,2/5] avformat/mxfdec: fix indentation and rename mxf_read_packet_old",2018-06-24T22:12:21,yes
+ffmpeg-change1-5466,ffmpeg-patch-16853,"[FFmpeg-devel,v1,2/5] avcodec/hevc_sei: add support for user data unregistered SEI message",2019-12-17T10:22:14,yes
+ffmpeg-change1-5466,ffmpeg-patch-16870,"[FFmpeg-devel,v2,2/5] avcodec/hevc_sei: add support for user data unregistered SEI message",2019-12-18T11:06:14,yes
+ffmpeg-change1-5466,ffmpeg-patch-16879,"[FFmpeg-devel,v3,2/5] avcodec/hevc_sei: add support for user data unregistered SEI message",2019-12-19T05:09:04,yes
+ffmpeg-change1-4049,ffmpeg-patch-7184,"[FFmpeg-devel,3/6] dashdec: Search for segment timeline inside AdaptionSets too",2018-01-07T18:46:08,yes
+ffmpeg-change1-4049,ffmpeg-patch-7191,"[FFmpeg-devel,3/6] dashdec: Search for segment timeline inside AdaptionSets too",2018-01-08T02:56:14,yes
+ffmpeg-change1-10165,ffmpeg-patch-15123,"[FFmpeg-devel,1/2] avcodec/4xm: Check index in decode_i_block() also in the path where its not used.",2019-09-17T23:43:53,yes
+ffmpeg-change1-10165,ffmpeg-patch-15299,"[FFmpeg-devel,12/12] avcodec/4xm: Check index in decode_i_block() also in the path where its not used.",2019-09-25T20:38:58,yes
+ffmpeg-change1-13638,ffmpeg-patch-39431,"[FFmpeg-devel,23/31] avformat/wtvenc: use av_dict_iterate",2022-11-25T01:30:38,yes
+ffmpeg-change1-13638,ffmpeg-patch-39478,"[FFmpeg-devel,v2,23/31] avformat/wtvenc: use av_dict_iterate",2022-11-26T14:46:40,yes
+ffmpeg-change1-24513,ffmpeg-patch-8560,"[FFmpeg-devel,03/26] vaapi_encode_mjpeg: Move common structure into context",2018-04-22T15:28:58,yes
+ffmpeg-change1-24513,ffmpeg-patch-9287,"[FFmpeg-devel,v2,04/36] vaapi_encode_mjpeg: Move common structure into context",2018-06-07T23:42:59,yes
+ffmpeg-change1-24513,ffmpeg-patch-10062,"[FFmpeg-devel,v3,03/41] vaapi_encode_mjpeg: Move common structure into context",2018-08-22T23:44:36,yes
+ffmpeg-change1-2342,ffmpeg-patch-14156,[FFmpeg-devel] libavformat: Add ZeroMQ as a protocol option,2019-07-30T20:44:01,yes
+ffmpeg-change1-2342,ffmpeg-patch-14232,"[FFmpeg-devel,v2] libavformat: Add ZeroMQ as a protocol option",2019-08-04T18:36:07,yes
+ffmpeg-change1-2342,ffmpeg-patch-14590,"[FFmpeg-devel,v3] libavformat: Add ZeroMQ as a protocol option",2019-08-19T21:28:03,yes
+ffmpeg-change1-1049,ffmpeg-patch-15743,"[FFmpeg-devel,v1,2/4] avfilter/vf_unsharp: add 10bit support",2019-10-14T10:27:05,yes
+ffmpeg-change1-1049,ffmpeg-patch-23272,"[FFmpeg-devel,1/3] avfilter/vf_unsharp: add 10bit support",2020-10-29T10:26:16,yes
+ffmpeg-change1-1049,ffmpeg-patch-23283,"[FFmpeg-devel,v3,1/3] avfilter/vf_unsharp: add 10bit support",2020-10-30T11:10:07,yes
+ffmpeg-change1-1049,ffmpeg-patch-23288,"[FFmpeg-devel,v4,1/3] avfilter/vf_unsharp: add 10bit support",2020-10-30T15:11:32,yes
+ffmpeg-change1-1049,ffmpeg-patch-23320,"[FFmpeg-devel,v5,1/3] avfilter/vf_unsharp: add 10bit support",2020-11-02T02:07:40,yes
+ffmpeg-change1-23070,ffmpeg-patch-1716,[FFmpeg-devel] vaapi_vp9: Do not set bit_depth on old versions,2016-12-08T15:51:38,yes
+ffmpeg-change1-23070,ffmpeg-patch-1740,[FFmpeg-devel] vaapi_vp9: Do not set bit_depth on old versions,2016-12-10T12:50:20,yes
+ffmpeg-change1-13115,ffmpeg-patch-7585,"[FFmpeg-devel,v3,6/8] lavfi/silencedetect: Fix missing log at eos",2018-02-13T17:21:05,yes
+ffmpeg-change1-13115,ffmpeg-patch-7654,"[FFmpeg-devel,v3,6/8] lavfi/silencedetect: Fix missing log at eos",2018-02-19T13:16:30,yes
+ffmpeg-change1-4260,ffmpeg-patch-11748,[FFmpeg-devel] amfenc: Add support for pict_type field,2019-01-14T19:02:20,yes
+ffmpeg-change1-4260,ffmpeg-patch-11763,[FFmpeg-devel] amfenc: Add support for pict_type field,2019-01-15T22:05:52,yes
+ffmpeg-change1-27311,ffmpeg-patch-37975,"[FFmpeg-devel,2/2] lavc/vorbisdec: use intermediate variables",2022-09-17T09:59:36,yes
+ffmpeg-change1-27311,ffmpeg-patch-38050,"[FFmpeg-devel,PATCHv2,2/2] lavc/vorbisdec: use intermediate variables",2022-09-19T15:35:51,yes
+ffmpeg-change1-27311,ffmpeg-patch-38054,"[FFmpeg-devel,PATCHv3,3/3] lavc/vorbisdec: use intermediate variables",2022-09-19T16:10:44,yes
+ffmpeg-change1-13756,ffmpeg-patch-23520,"[FFmpeg-devel,096/114] avcodec/atrac9dec: Replace av_free() by av_freep() in close function",2020-11-10T10:58:18,yes
+ffmpeg-change1-13756,ffmpeg-patch-23868,"[FFmpeg-devel,v2,120/162] avcodec/atrac9dec: Replace av_free() by av_freep() in close function",2020-11-20T07:32:45,yes
+ffmpeg-change1-8060,ffmpeg-patch-37398,"[FFmpeg-devel,2/5] lavc/aarch64: Add neon implementation of vsse16",2022-08-22T15:26:24,yes
+ffmpeg-change1-8060,ffmpeg-patch-37697,"[FFmpeg-devel,2/5] lavc/aarch64: Add neon implementation of vsse16",2022-09-06T10:27:19,yes
+ffmpeg-change1-8060,ffmpeg-patch-37756,"[FFmpeg-devel,2/5] lavc/aarch64: Add neon implementation of vsse16",2022-09-08T09:25:04,yes
+ffmpeg-change1-7474,ffmpeg-patch-10831,"[FFmpeg-devel,1/4] doc/filters: add document for opencl filters",2018-10-29T05:17:59,yes
+ffmpeg-change1-7474,ffmpeg-patch-10833,"[FFmpeg-devel,1/4] doc/filters: add document for opencl filters",2018-10-29T05:56:57,yes
+ffmpeg-change1-1121,ffmpeg-patch-2169,"[FFmpeg-devel,1/3] cmdutils_opencl: fix resource_leak cid 1396852",2017-01-10T11:44:32,yes
+ffmpeg-change1-1121,ffmpeg-patch-2191,[FFmpeg-devel] cmdutils_opencl: fix resource_leak cid 1396852,2017-01-12T05:31:04,yes
+ffmpeg-change1-13021,ffmpeg-patch-3407,[FFmpeg-devel] Enhanced configure to improve compiler options associated with debugging with Visual C++ (MSVC),2017-04-14T00:03:46,yes
+ffmpeg-change1-13021,ffmpeg-patch-3423,[FFmpeg-devel] Enhanced configure to improve compiler options associated with debugging with Visual C++ (MSVC),2017-04-15T02:07:33,yes
+ffmpeg-change1-13015,ffmpeg-patch-38659,"[FFmpeg-devel,06/11] avfilter/overlay_vaapi: remove redundant .get_buffer assignments",2022-10-10T10:54:36,yes
+ffmpeg-change1-13015,ffmpeg-patch-39075,"[FFmpeg-devel,v2,06/11] avfilter/overlay_vaapi: remove redundant .get_buffer assignments",2022-10-31T06:20:02,yes
+ffmpeg-change1-25676,ffmpeg-patch-13266,"[FFmpeg-devel,V1] doc/encoders: Document eld_v2 option for libfdk_aac encoder.",2019-05-24T03:22:28,yes
+ffmpeg-change1-25676,ffmpeg-patch-13285,"[FFmpeg-devel,V2,2/2] doc/encoders: Document eld_v2 option for libfdk_aac encoder.",2019-05-25T02:11:49,yes
+ffmpeg-change1-11060,ffmpeg-patch-18828,"[FFmpeg-devel,4/4] avformat/mpegtsenc: use the correct stream_types and write HDMV descriptors for m2ts",2020-04-10T19:44:53,yes
+ffmpeg-change1-11060,ffmpeg-patch-18901,"[FFmpeg-devel,v2,4/4] avformat/mpegtsenc: use the correct stream_types and write HDMV descriptors for m2ts",2020-04-12T22:37:38,yes
+ffmpeg-change1-20722,ffmpeg-patch-39155,"[FFmpeg-devel,1/2] avformat/imfdec: remove the experimental flag",2022-11-03T21:02:45,yes
+ffmpeg-change1-20722,ffmpeg-patch-39888,"[FFmpeg-devel,v2,1/3] avformat/imfdec: remove the experimental flag",2023-01-05T23:29:44,yes
+ffmpeg-change1-6100,ffmpeg-patch-14493,"[FFmpeg-devel,v2,3/3] avfilter/vf_v360: add dual fisheye format",2019-08-14T01:14:05,yes
+ffmpeg-change1-6100,ffmpeg-patch-14516,"[FFmpeg-devel,v3,3/3] avfilter/vf_v360: add dual fisheye format",2019-08-15T00:56:13,yes
+ffmpeg-change1-1260,ffmpeg-patch-20431,"[FFmpeg-devel,1/5] avutil/channel_layout: add 22.2 layout",2020-06-16T21:02:49,yes
+ffmpeg-change1-1260,ffmpeg-patch-21357,"[FFmpeg-devel,1/5] avutil/channel_layout: add 22.2 layout",2020-07-29T11:39:48,yes
+ffmpeg-change1-1260,ffmpeg-patch-21415,"[FFmpeg-devel,1/7] avutil/channel_layout: add 22.2 layout",2020-08-01T11:07:24,yes
+ffmpeg-change1-22606,ffmpeg-patch-11810,"[FFmpeg-devel,1/2] avutil: Rename RSHIFT macro to ROUNDED_RSHIFT",2019-01-21T17:38:59,yes
+ffmpeg-change1-22606,ffmpeg-patch-11813,[FFmpeg-devel] avutil: Rename RSHIFT macro to ROUNDED_RSHIFT,2019-01-21T19:09:36,yes
+ffmpeg-change1-11935,ffmpeg-patch-21220,"[FFmpeg-devel,2/2] avformat/hlsenc: write temp file for append single file by encryption mode",2020-07-22T08:11:03,yes
+ffmpeg-change1-11935,ffmpeg-patch-21222,"[FFmpeg-devel,v2,2/2] avformat/hlsenc: write temp file for append single file by encryption mode",2020-07-22T09:15:29,yes
+ffmpeg-change1-4429,ffmpeg-patch-32949,"[FFmpeg-devel,1/4] avcodec/jpegxl: add Jpeg XL image codec and parser",2021-12-30T19:10:43,yes
+ffmpeg-change1-4429,ffmpeg-patch-33063,"[FFmpeg-devel,v2,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-01-04T16:26:28,yes
+ffmpeg-change1-4429,ffmpeg-patch-33119,"[FFmpeg-devel,v3,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-01-06T13:30:13,yes
+ffmpeg-change1-4429,ffmpeg-patch-33149,"[FFmpeg-devel,v4,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-01-07T09:01:07,yes
+ffmpeg-change1-4429,ffmpeg-patch-34546,"[FFmpeg-devel,v6,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-02-28T21:12:28,yes
+ffmpeg-change1-4429,ffmpeg-patch-34852,"[FFmpeg-devel,v7,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-03-19T17:26:41,yes
+ffmpeg-change1-4429,ffmpeg-patch-34921,"[FFmpeg-devel,v8,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-03-23T10:39:59,yes
+ffmpeg-change1-4429,ffmpeg-patch-34927,"[FFmpeg-devel,v9,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-03-23T11:03:21,yes
+ffmpeg-change1-4429,ffmpeg-patch-35077,"[FFmpeg-devel,v10,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-03-30T14:53:24,yes
+ffmpeg-change1-4429,ffmpeg-patch-35123,"[FFmpeg-devel,v11,1/5] avcodec/jpegxl: add Jpeg XL image codec and parser",2022-04-01T00:20:02,yes
+ffmpeg-change1-2232,ffmpeg-patch-3738,[FFmpeg-devel] lavc/aarch64: add a few SIMD function for AAC PS,2017-05-25T15:50:52,yes
+ffmpeg-change1-2232,ffmpeg-patch-3778,[FFmpeg-devel] lavc/aarch64: add a few SIMD function for AAC PS,2017-06-01T09:13:19,yes
+ffmpeg-change1-17309,ffmpeg-patch-41977,[FFmpeg-devel] avcodec/noise_bsf: Check for wrapped frames,2023-06-04T18:07:25,yes
+ffmpeg-change1-17309,ffmpeg-patch-41978,"[FFmpeg-devel,v2] avcodec/noise_bsf: Check for wrapped frames",2023-06-04T19:53:22,yes
+ffmpeg-change1-12923,ffmpeg-patch-37633,"[FFmpeg-devel,2/3] riscv: initial common header for assembler macros",2022-09-03T19:01:46,yes
+ffmpeg-change1-12923,ffmpeg-patch-37651,"[FFmpeg-devel,02/10] riscv: initial common header for assembler macros",2022-09-04T13:54:55,yes
+ffmpeg-change1-1924,ffmpeg-patch-6501,[FFmpeg-devel] Fix for ticket 6796 (ffprobe show_frames ts dvbsubs infinate loop),2017-12-01T23:55:28,yes
+ffmpeg-change1-1924,ffmpeg-patch-6502,[FFmpeg-devel] Fix for ticket 6796 (ffprobe show_frames ts dvbsubs infinate loop),2017-12-02T00:42:22,yes
+ffmpeg-change1-21812,ffmpeg-patch-10424,"[FFmpeg-devel,3/4] avformat/rtpproto: use factorized ip functions",2018-09-20T22:12:01,yes
+ffmpeg-change1-21812,ffmpeg-patch-10452,"[FFmpeg-devel,3/7] avformat/rtpproto: use factorized ip functions",2018-09-22T21:53:24,yes
+ffmpeg-change1-4180,ffmpeg-patch-21567,[FFmpeg-devel] doc/encoders: Add all options for JPEG2000 encoder,2020-08-09T17:43:38,yes
+ffmpeg-change1-4180,ffmpeg-patch-21588,"[FFmpeg-devel,v2] doc/encoders: Add all options for JPEG2000 encoder",2020-08-10T16:44:00,yes
+ffmpeg-change1-18112,ffmpeg-patch-28934,"[FFmpeg-devel,v1] avcodec/v4l2_context: don't reinit output queue when dynamic resolution change",2021-07-16T09:47:14,yes
+ffmpeg-change1-18112,ffmpeg-patch-29004,"[FFmpeg-devel,v2,1/2] avcodec/v4l2_context: don't reinit output queue when dynamic resolution change",2021-07-22T03:01:19,yes
+ffmpeg-change1-18112,ffmpeg-patch-29110,"[FFmpeg-devel,v3,1/3] avcodec/v4l2_context: don't reinit output queue when dynamic resolution change",2021-07-29T06:00:25,yes
+ffmpeg-change1-18112,ffmpeg-patch-29613,"[FFmpeg-devel,v4,1/3] avcodec/v4l2_context: don't reinit output queue when dynamic resolution change",2021-08-19T08:55:31,yes
+ffmpeg-change1-18112,ffmpeg-patch-33048,"[FFmpeg-devel,v5,1/7] avcodec/v4l2_context: don't reinit output queue when dynamic resolution change",2022-01-04T09:08:30,yes
+ffmpeg-change1-27202,ffmpeg-patch-9224,"[FFmpeg-devel,2/4] lavfi/opencl: remove redundancy header.",2018-06-02T03:21:01,yes
+ffmpeg-change1-27202,ffmpeg-patch-9235,"[FFmpeg-devel,v2,2/4] lavfi/opencl: remove redundancy header.",2018-06-03T02:58:10,yes
+ffmpeg-change1-27202,ffmpeg-patch-9237,"[FFmpeg-devel,v3,2/4] lavfi/opencl: remove redundancy header.",2018-06-03T03:15:22,yes
+ffmpeg-change1-21038,ffmpeg-patch-40768,"[FFmpeg-devel,6/7] avformat/matroskaenc: support writing Dynamic HDR10+ packet side data",2023-03-21T17:06:36,yes
+ffmpeg-change1-21038,ffmpeg-patch-40771,"[FFmpeg-devel,v2,6/7] avformat/matroskaenc: support writing Dynamic HDR10+ packet side data",2023-03-21T18:00:01,yes
+ffmpeg-change1-21038,ffmpeg-patch-40806,"[FFmpeg-devel,v3,6/7] avformat/matroskaenc: support writing Dynamic HDR10+ packet side data",2023-03-24T15:52:12,yes
+ffmpeg-change1-21038,ffmpeg-patch-40898,"[FFmpeg-devel,v4,6/7] avformat/matroskaenc: support writing Dynamic HDR10+ packet side data",2023-03-28T15:33:42,yes
+ffmpeg-change1-21038,ffmpeg-patch-40916,"[FFmpeg-devel,v5,6/7] avformat/matroskaenc: support writing Dynamic HDR10+ packet side data",2023-03-30T02:04:47,yes
+ffmpeg-change1-5356,ffmpeg-patch-33282,"[FFmpeg-devel,3/5] avcodec/amfenc: Add the new usage presets",2022-01-12T22:49:22,yes
+ffmpeg-change1-5356,ffmpeg-patch-33287,"[FFmpeg-devel,3/5] avcodec/amfenc: Add the new usage presets",2022-01-12T23:17:22,yes
+ffmpeg-change1-11129,ffmpeg-patch-40299,"[FFmpeg-devel,V5,2/3] lavfi/dnn: Modified DNN native backend related tools and docs.",2023-02-06T09:45:49,yes
+ffmpeg-change1-11129,ffmpeg-patch-40601,"[FFmpeg-devel,V6,2/3] lavfi/dnn: Modified DNN native backend related tools and docs.",2023-03-06T13:55:47,yes
+ffmpeg-change1-11129,ffmpeg-patch-41346,"[FFmpeg-devel,V7,2/3] lavfi/dnn: Modified DNN native backend related tools and docs.",2023-04-27T09:43:45,yes
+ffmpeg-change1-9981,ffmpeg-patch-2375,[FFmpeg-devel] Allow borderless playback windows,2017-01-31T00:02:14,yes
+ffmpeg-change1-9981,ffmpeg-patch-2377,[FFmpeg-devel] Allow borderless playback windows,2017-01-31T01:29:06,yes
+ffmpeg-change1-9981,ffmpeg-patch-2387,[FFmpeg-devel] Allow borderless playback windows,2017-02-01T02:49:31,yes
+ffmpeg-change1-25977,ffmpeg-patch-5085,"[FFmpeg-devel,06/14] hwcontext_opencl: DXVA2 to OpenCL mapping",2017-09-10T20:53:30,yes
+ffmpeg-change1-25977,ffmpeg-patch-6061,"[FFmpeg-devel,05/15] hwcontext_opencl: DXVA2 to OpenCL mapping",2017-11-14T19:47:20,yes
+ffmpeg-change1-7507,ffmpeg-patch-3445,"[FFmpeg-devel] HLS, add option to skip down streams",2017-04-18T16:00:38,yes
+ffmpeg-change1-7507,ffmpeg-patch-3454,"[FFmpeg-devel,UPDATE] HLS, add option to skip down streams,",2017-04-20T16:18:37,yes
+ffmpeg-change1-7507,ffmpeg-patch-3457,"[FFmpeg-devel,UPDATE] HLS, add option to skip down streams,",2017-04-21T10:34:39,yes
+ffmpeg-change1-7854,ffmpeg-patch-35258,"[FFmpeg-devel,4/5] lavfi: add vf_iccgen for generating ICC profiles",2022-04-11T15:36:53,yes
+ffmpeg-change1-7854,ffmpeg-patch-35348,"[FFmpeg-devel,v2,4/5] lavfi: add vf_iccgen for generating ICC profiles",2022-04-19T12:46:56,yes

@@ -1,0 +1,555 @@
+individual,identity_original_id,name,email,is_correct
+ozlabs-individual-27998,ozlabs-people-73300,Lukas Auer,lukas.auer@aisec.fraunhofer.de,1
+ozlabs-individual-27998,ozlabs-people-78276,Lukas Auer,lukas@auer.io,1
+ozlabs-individual-29038,ozlabs-people-238,Sergei Shtylyov,sshtylyov@ru.mvista.com,1
+ozlabs-individual-29038,ozlabs-people-3770,Sergei Shtylyov,sshtylyov@mvista.com,1
+ozlabs-individual-30106,ozlabs-people-73970,Jocelyn Bohr,bohr@google.com,1
+ozlabs-individual-30106,ozlabs-people-73925,Jocelyn Bohr,bohr@verily.com,1
+ozlabs-individual-28126,ozlabs-people-74159,Codrin Ciubotariu,codrin.ciubotariu@microchip.com,1
+ozlabs-individual-28126,ozlabs-people-61933,Codrin Ciubotariu,codrin.ciubotariu@freescale.com,1
+ozlabs-individual-28126,ozlabs-people-68479,Codrin Ciubotariu,codrin.ciubotariu@nxp.com,1
+ozlabs-individual-29411,ozlabs-people-9159,Jon Medhurst (Tixy),jon.medhurst@linaro.org,1
+ozlabs-individual-29411,ozlabs-people-11333,Jon Medhurst (Tixy),tixy@linaro.org,1
+ozlabs-individual-28013,ozlabs-people-73377,Alexandre Belloni,alexandre.belloni@bootlin.com,1
+ozlabs-individual-28013,ozlabs-people-11167,Alexandre Belloni,alexandre.belloni@piout.net,1
+ozlabs-individual-27879,ozlabs-people-11222,Sylwester Nawrocki,s.nawrocki@samsung.com,1
+ozlabs-individual-27879,ozlabs-people-71826,Sylwester Nawrocki,snawrocki@kernel.org,1
+ozlabs-individual-28529,ozlabs-people-78043,Benedikt-Alexander Mokroß,benedikt-alexander.mokross@icognize.de,1
+ozlabs-individual-28529,ozlabs-people-79034,Benedikt-Alexander Mokroß,u-boot@bamkrs.de,1
+ozlabs-individual-28529,ozlabs-people-79036,Benedikt-Alexander Mokroß,catchall@bamkrs.de,1
+ozlabs-individual-28424,ozlabs-people-76881,Moses Christopher,BollavarapuMoses.Christopher@in.bosch.com,2
+ozlabs-individual-28424,ozlabs-people-78478,Moses Christopher,moseschristopherb@gmail.com,2
+ozlabs-individual-29880,ozlabs-people-65474,Bhuvanchandra DV,bhuvanchandra.dv@toradex.com,1
+ozlabs-individual-29880,ozlabs-people-68074,Bhuvanchandra DV,bhuvanchandra.dv@gmail.com,1
+ozlabs-individual-27909,ozlabs-people-13206,Peter Robinson,pbrobinson@gmail.com,1
+ozlabs-individual-27909,ozlabs-people-66533,Peter Robinson,pbrobinson at gmail.com,1
+ozlabs-individual-28646,ozlabs-people-79557,Antonio Tessarolo,anthonytexdev@gmail.com,3
+ozlabs-individual-28646,ozlabs-people-79559,Antonio Tessarolo,antoniotex90@gmail.com,3
+ozlabs-individual-27566,ozlabs-people-66152,Thomas Huth,thuth@redhat.com,1
+ozlabs-individual-27566,ozlabs-people-66063,Thomas Huth,huth@tuxfamily.org,1
+ozlabs-individual-29224,ozlabs-people-5808,Macpaul Lin,macpaul@andestech.com,1
+ozlabs-individual-29224,ozlabs-people-5809,Macpaul Lin,macpaul@gmail.com,1
+ozlabs-individual-29224,ozlabs-people-77040,Macpaul Lin,macpaul.lin@mediatek.com,1
+ozlabs-individual-27602,ozlabs-people-69683,Shyam Saini,mayhs11saini@gmail.com,2
+ozlabs-individual-27602,ozlabs-people-75898,Shyam Saini,shyam.saini@amarulasolutions.com,2
+ozlabs-individual-27602,ozlabs-people-75402,Shyam Saini,shyam@amarulasolutions.com,2
+ozlabs-individual-28753,ozlabs-people-1896,Warner Losh,imp@bsdimp.com,1
+ozlabs-individual-28753,ozlabs-people-69299,Warner Losh,wlosh@bsdimp.com,1
+ozlabs-individual-27839,ozlabs-people-71247,Martin Hundebøll,mnhu@prevas.dk,1
+ozlabs-individual-27839,ozlabs-people-74504,Martin Hundebøll,martin@geanix.com,1
+ozlabs-individual-29393,ozlabs-people-8788,Liu Gang,b34182@freescale.com,1
+ozlabs-individual-29393,ozlabs-people-9098,Liu Gang,Gang.Liu@freescale.com,1
+ozlabs-individual-29035,ozlabs-people-5,Kumar Gala,galak@kernel.crashing.org,1
+ozlabs-individual-29035,ozlabs-people-323,Kumar Gala,kumar.gala@freescale.com,1
+ozlabs-individual-28309,ozlabs-people-68775,Po Liu,po.liu@nxp.com,1
+ozlabs-individual-28309,ozlabs-people-21527,Po Liu,po.liu@freescale.com,1
+ozlabs-individual-29049,ozlabs-people-102,Matt Sealey,matt@genesi-usa.com,1
+ozlabs-individual-29049,ozlabs-people-16219,Matt Sealey,neko@genesi-usa.com,1
+ozlabs-individual-28302,ozlabs-people-13527,Ilya Averyanov,averyanovin@gmail.com,1
+ozlabs-individual-28302,ozlabs-people-13535,Ilya Averyanov,averyanovin+uboot@gmail.com,1
+ozlabs-individual-27836,ozlabs-people-66396,Shawn Guo,shawnguo@kernel.org,1
+ozlabs-individual-27836,ozlabs-people-7857,Shawn Guo,shawn.guo@linaro.org,1
+ozlabs-individual-27836,ozlabs-people-6408,Shawn Guo,shawn.guo@freescale.com,1
+ozlabs-individual-27663,ozlabs-people-68184,Enric Balletbo i Serra,enric.balletbo@collabora.com,1
+ozlabs-individual-27663,ozlabs-people-84537,Enric Balletbo i Serra,eballetb@redhat.com,1
+ozlabs-individual-27663,ozlabs-people-5909,Enric Balletbo i Serra,eballetbo@iseebcn.com,1
+ozlabs-individual-27663,ozlabs-people-66529,Enric Balletbo i Serra,eballetbo at gmail.com,1
+ozlabs-individual-27742,ozlabs-people-710,Jan Kiszka,jan.kiszka@siemens.com,1
+ozlabs-individual-27742,ozlabs-people-2455,Jan Kiszka,jan.kiszka@web.de,1
+ozlabs-individual-29773,ozlabs-people-48505,Arnab Basu,arnab.basu@freescale.com,1
+ozlabs-individual-29773,ozlabs-people-65465,Arnab Basu,arnab_basu@rocketmail.com,1
+ozlabs-individual-29848,ozlabs-people-64826,Wills Wang,wills.wang.open@gmail.com,3
+ozlabs-individual-29848,ozlabs-people-67906,Wills Wang,wills.wang@live.com,3
+ozlabs-individual-27661,ozlabs-people-12720,Lee Jones,lee.jones@linaro.org,1
+ozlabs-individual-27661,ozlabs-people-65833,Lee Jones,lee@kernel.org,1
+ozlabs-individual-28694,ozlabs-people-66321,Du Huanpeng,u74147@gmail.com,1
+ozlabs-individual-28694,ozlabs-people-81172,Du Huanpeng,dhu@hodcarrier.org,1
+ozlabs-individual-27506,ozlabs-user-17730,jagan,jagannadh.teki@gmail.com,1
+ozlabs-individual-27506,ozlabs-people-20045,Jagan Teki,jagannadh.teki@gmail.com,1
+ozlabs-individual-27506,ozlabs-people-69820,Jagan Teki,jagan@amarulasolutions.com,1
+ozlabs-individual-27506,ozlabs-people-84518,Jagan Teki,jagan@edgeble.ai,1
+ozlabs-individual-27506,ozlabs-people-66346,Jagan Teki,jteki@openedev.com,1
+ozlabs-individual-27506,ozlabs-people-70159,Jagan Teki,jagan@openedev.com,1
+ozlabs-individual-27712,ozlabs-people-2562,Otavio Salvador,otavio@ossystems.com.br,1
+ozlabs-individual-27712,ozlabs-people-66846,Otavio Salvador,otavio.salvador@ossystems.com.br,1
+ozlabs-individual-27957,ozlabs-people-65046,Paul Kocialkowski,contact@paulk.fr,1
+ozlabs-individual-27957,ozlabs-people-73573,Paul Kocialkowski,paul.kocialkowski@bootlin.com,1
+ozlabs-individual-27957,ozlabs-people-65805,Paul Kocialkowski,paulk@paulk.fr,1
+ozlabs-individual-27534,ozlabs-user-127699,passgat,dario.binacchi@amarulasolutions.com,1
+ozlabs-individual-27534,ozlabs-people-78045,Dario Binacchi,dariobin@libero.it,1
+ozlabs-individual-27534,ozlabs-people-83038,Dario Binacchi,dario.binacchi@amarulasolutions.com,1
+ozlabs-individual-28570,ozlabs-people-78482,Jens Rehsack,sno@netbsd.org,1
+ozlabs-individual-28570,ozlabs-people-78490,Jens Rehsack,rehsack@gmail.com,1
+ozlabs-individual-27604,ozlabs-people-70239,Suresh Gupta,suresh.gupta@nxp.com,1
+ozlabs-individual-27604,ozlabs-people-48117,Suresh Gupta,suresh.gupta@freescale.com,1
+ozlabs-individual-29039,ozlabs-people-19,Grant Likely,grant.likely@secretlab.ca,1
+ozlabs-individual-29039,ozlabs-people-25776,Grant Likely,grant.likely@linaro.org,1
+ozlabs-individual-29039,ozlabs-people-73906,Grant Likely,grant.likely@arm.com,1
+ozlabs-individual-29432,ozlabs-people-9580,Rajeshwari Birje,rajeshwari.s@samsung.com,1
+ozlabs-individual-29432,ozlabs-people-13771,Rajeshwari Birje,rajeshwari.birje@gmail.com,1
+ozlabs-individual-29222,ozlabs-people-5910,Gray Remlin,g_remlin@rocketmail.com,3
+ozlabs-individual-29222,ozlabs-people-6037,Gray Remlin,gryrmln@gmail.com,3
+ozlabs-individual-27517,ozlabs-user-84315,narmstrong,narmstrong@baylibre.com,1
+ozlabs-individual-27517,ozlabs-people-67289,Neil Armstrong,narmstrong@baylibre.com,1
+ozlabs-individual-27517,ozlabs-people-84903,Neil Armstrong,neil.armstrong@linaro.org,1
+ozlabs-individual-27693,ozlabs-people-37,Andreas Schwab,schwab@suse.de,1
+ozlabs-individual-27693,ozlabs-people-2170,Andreas Schwab,schwab@linux-m68k.org,1
+ozlabs-individual-27639,ozlabs-people-68333,Sam Protsenko,semen.protsenko@linaro.org,1
+ozlabs-individual-27639,ozlabs-people-78279,Sam Protsenko,joe.skb7@gmail.com,1
+ozlabs-individual-28198,ozlabs-people-7192,Jon Mason,jdmason@kudzu.us,1
+ozlabs-individual-28198,ozlabs-people-69381,Jon Mason,jon.mason@broadcom.com,1
+ozlabs-individual-29706,ozlabs-people-30578,Oleg Kosheliev,Oleg.Kosheliev@ti.com,1
+ozlabs-individual-29706,ozlabs-people-43020,Oleg Kosheliev,oleg.kosheliev@globallogic.com,1
+ozlabs-individual-30283,ozlabs-people-85592,Ehsan Mohandesi,emohandesi@linux.microsoft.com,1
+ozlabs-individual-30283,ozlabs-people-86065,Ehsan Mohandesi,emohandesi@microsoft.com,1
+ozlabs-individual-30025,ozlabs-people-68554,Chenhui Zhao,chenhui.zhao@nxp.com,1
+ozlabs-individual-30025,ozlabs-people-70168,Chenhui Zhao,z.chenhui@gmail.com,1
+ozlabs-individual-27911,ozlabs-people-67045,Ben Whitten,ben.whitten@gmail.com,1
+ozlabs-individual-27911,ozlabs-people-72776,Ben Whitten,Ben.Whitten@lairdtech.com,1
+ozlabs-individual-28251,ozlabs-people-75131,Nicolas Saenz Julienne,nsaenzjulienne@suse.de,1
+ozlabs-individual-28251,ozlabs-people-81891,Nicolas Saenz Julienne,nsaenzju@redhat.com,1
+ozlabs-individual-27532,ozlabs-user-3648,trini,trini@ti.com,1
+ozlabs-individual-27532,ozlabs-people-65875,Tom Rini,trini@konsulko.com,1
+ozlabs-individual-27532,ozlabs-people-8959,Tom Rini,trini@ti.com,1
+ozlabs-individual-27532,ozlabs-people-8984,Tom Rini,tom.rini@gmail.com,1
+ozlabs-individual-27532,ozlabs-people-66531,Tom Rini,trini at konsulko.com,1
+ozlabs-individual-27537,ozlabs-user-91802,matthias_bgg,matthias.bgg@gmail.com,1
+ozlabs-individual-27537,ozlabs-people-19886,Matthias Brugger,matthias.bgg@gmail.com,1
+ozlabs-individual-27537,ozlabs-people-73909,Matthias Brugger,matthias.bgg@kernel.org,1
+ozlabs-individual-27537,ozlabs-people-68056,Matthias Brugger,mbrugger@suse.com,1
+ozlabs-individual-27537,ozlabs-people-77377,Matthias Brugger,mbrugger@suse.de,1
+ozlabs-individual-28342,ozlabs-people-69359,Ondřej Jirman,megous@megous.com,1
+ozlabs-individual-28342,ozlabs-people-72259,Ondřej Jirman,megi@xff.cz,1
+ozlabs-individual-28152,ozlabs-people-42548,Andrea Merello,andrea.merello@gmail.com,1
+ozlabs-individual-28152,ozlabs-people-84247,Andrea Merello,andrea.merello@iit.it,1
+ozlabs-individual-28245,ozlabs-people-69368,Fabien Lahoudere,fabien.lahoudere@collabora.co.uk,1
+ozlabs-individual-28245,ozlabs-people-75120,Fabien Lahoudere,fabien.lahoudere@collabora.com,1
+ozlabs-individual-27513,ozlabs-user-1691,sbabic,sbabic@denx.de,1
+ozlabs-individual-27513,ozlabs-people-5771,Stefano Babic,sbabic@denx.de,1
+ozlabs-individual-27513,ozlabs-people-2971,Stefano Babic,stefano.babic@babic.homelinux.org,1
+ozlabs-individual-27513,ozlabs-people-66523,Stefano Babic,sbabic at denx.de,1
+ozlabs-individual-27513,ozlabs-people-81584,Stefano Babic,stefano.babic@denx.de,1
+ozlabs-individual-29261,ozlabs-people-6475,Iain Paton,selsinork@gmail.com,3
+ozlabs-individual-29261,ozlabs-people-63643,Iain Paton,ipaton0@gmail.com,3
+ozlabs-individual-27601,ozlabs-people-62529,Rob Herring,robh@kernel.org,1
+ozlabs-individual-27601,ozlabs-people-6227,Rob Herring,robherring2@gmail.com,1
+ozlabs-individual-27601,ozlabs-people-8459,Rob Herring,rob.herring@calxeda.com,1
+ozlabs-individual-27601,ozlabs-people-48132,Rob Herring,rob.herring@linaro.org,1
+ozlabs-individual-27601,ozlabs-people-67416,Rob Herring,robh+dt@kernel.org,1
+ozlabs-individual-28426,ozlabs-people-76897,George Hilliard,thirtythreeforty@gmail.com,1
+ozlabs-individual-28426,ozlabs-people-80222,George Hilliard,ghilliar@amazon.com,1
+ozlabs-individual-27745,ozlabs-people-7303,Luca Ceresoli,luca@lucaceresoli.net,1
+ozlabs-individual-27745,ozlabs-people-7384,Luca Ceresoli,luca.ceresoli@comelit.it,1
+ozlabs-individual-27745,ozlabs-people-7984,Luca Ceresoli,list@lucaceresoli.net,1
+ozlabs-individual-27745,ozlabs-people-83908,Luca Ceresoli,luca.ceresoli@bootlin.com,1
+ozlabs-individual-29091,ozlabs-people-599,Rabin Vincent,rabin@rab.in,3
+ozlabs-individual-29091,ozlabs-people-4237,Rabin Vincent,rabin.vincent@stericsson.com,3
+ozlabs-individual-28555,ozlabs-people-64014,Ash Charles,ashcharles@gmail.com,1
+ozlabs-individual-28555,ozlabs-people-9442,Ash Charles,ash@gumstix.com,1
+ozlabs-individual-29921,ozlabs-people-66294,Daniel Kochmański,dkochmanski@turtle-solutions.eu,1
+ozlabs-individual-29921,ozlabs-people-66329,Daniel Kochmański,jackdaniel@hellsgate.pl,1
+ozlabs-individual-29054,ozlabs-people-337,Greg KH,greg@kroah.com,1
+ozlabs-individual-29054,ozlabs-people-11800,Greg KH,gregkh@linuxfoundation.org,1
+ozlabs-individual-29409,ozlabs-people-9123,Luka Perkov,lists@lukaperkov.net,1
+ozlabs-individual-29409,ozlabs-people-12007,Luka Perkov,uboot@lukaperkov.net,1
+ozlabs-individual-29409,ozlabs-people-13023,Luka Perkov,luka.perkov@lukaperkov.net,1
+ozlabs-individual-29409,ozlabs-people-18839,Luka Perkov,luka@openwrt.org,1
+ozlabs-individual-29409,ozlabs-people-65492,Luka Perkov,luka.perkov@sartura.hr,1
+ozlabs-individual-27580,ozlabs-people-1212,Alexander Graf,agraf@suse.de,1
+ozlabs-individual-27580,ozlabs-people-65661,Alexander Graf,agraf@csgraf.de,1
+ozlabs-individual-27580,ozlabs-people-76572,Alexander Graf,graf@amazon.com,1
+ozlabs-individual-28435,ozlabs-people-76995,Josua Mayer,josua@solid-run.com,1
+ozlabs-individual-28435,ozlabs-people-68888,Josua Mayer,josua.mayer97@gmail.com,1
+ozlabs-individual-27536,ozlabs-user-1694,stroese,sr@denx.de,1
+ozlabs-individual-27536,ozlabs-people-13,Stefan Roese,sr@denx.de,1
+ozlabs-individual-27536,ozlabs-people-69987,Stefan Roese,stefan.roese@mailbox.org,1
+ozlabs-individual-27536,ozlabs-people-15972,Stefan Roese,mail@roese.nl,1
+ozlabs-individual-27536,ozlabs-people-16186,Stefan Roese,stefan.roese@gmail.com,1
+ozlabs-individual-29903,ozlabs-people-65899,Songjun Wu,songjun.wu@atmel.com,1
+ozlabs-individual-29903,ozlabs-people-69515,Songjun Wu,songjun.wu@microchip.com,1
+ozlabs-individual-27620,ozlabs-people-1476,Uwe Kleine-König,u.kleine-koenig@pengutronix.de,1
+ozlabs-individual-27620,ozlabs-people-65228,Uwe Kleine-König,uwe@kleine-koenig.org,1
+ozlabs-individual-28010,ozlabs-people-1737,Marcel Ziswiler,marcel@ziswiler.com,1
+ozlabs-individual-28010,ozlabs-people-66168,Marcel Ziswiler,marcel.ziswiler@toradex.com,1
+ozlabs-individual-29930,ozlabs-people-65159,Mirza Krak,mirza.krak@hostmobility.com,1
+ozlabs-individual-29930,ozlabs-people-69491,Mirza Krak,mirza.krak@gmail.com,1
+ozlabs-individual-28732,ozlabs-people-80745,Alessandro Temil,atemil@waymo.com,1
+ozlabs-individual-28732,ozlabs-people-80794,Alessandro Temil,atemil@google.com,1
+ozlabs-individual-27696,ozlabs-people-67822,York Sun,york.sun@nxp.com,1
+ozlabs-individual-27696,ozlabs-people-3777,York Sun,yorksun@freescale.com,1
+ozlabs-individual-27696,ozlabs-people-66541,York Sun,yorksun at freescale.com,1
+ozlabs-individual-28495,ozlabs-people-76929,Oleksandr Suvorov,oleksandr.suvorov@toradex.com,1
+ozlabs-individual-28495,ozlabs-people-82386,Oleksandr Suvorov,oleksandr.suvorov@foundries.io,1
+ozlabs-individual-28495,ozlabs-people-77017,Oleksandr Suvorov,cryosay@gmail.com,1
+ozlabs-individual-28641,ozlabs-people-79093,Jaiprakash Singh,jaiprakash.singh@nxp.com,1
+ozlabs-individual-28641,ozlabs-people-64929,Jaiprakash Singh,b44839@freescale.com,1
+ozlabs-individual-27674,ozlabs-people-67550,Joakim Tjernlund,Joakim.Tjernlund@infinera.com,1
+ozlabs-individual-27674,ozlabs-people-88,Joakim Tjernlund,joakim.tjernlund@transmode.se,1
+ozlabs-individual-29758,ozlabs-people-47306,Zhiqiang Hou,b48286@freescale.com,1
+ozlabs-individual-29758,ozlabs-people-67580,Zhiqiang Hou,Zhiqiang.Hou@freescale.com,1
+ozlabs-individual-27714,ozlabs-people-70437,Patrick DELAUNAY,patrick.delaunay@st.com,1
+ozlabs-individual-27714,ozlabs-people-80737,Patrick DELAUNAY,patrick.delaunay@foss.st.com,1
+ozlabs-individual-27814,ozlabs-people-7353,Marc Zyngier,marc.zyngier@arm.com,1
+ozlabs-individual-27814,ozlabs-people-77095,Marc Zyngier,maz@kernel.org,1
+ozlabs-individual-27814,ozlabs-people-1149,Marc Zyngier,maz@misterjones.org,1
+ozlabs-individual-27788,ozlabs-people-71741,Chakra Divi,2chakrass@gmail.com,1
+ozlabs-individual-27788,ozlabs-people-66637,Chakra Divi,cdivi@openedev.com,1
+ozlabs-individual-29329,ozlabs-people-7685,Veli-Pekka Peltola,veli-pekka.peltola@bluegiga.com,1
+ozlabs-individual-29329,ozlabs-people-23953,Veli-Pekka Peltola,veli-pekka.peltola@iki.fi,1
+ozlabs-individual-30140,ozlabs-people-80843,Christopher Obbard,obbardc@gmail.com,1
+ozlabs-individual-30140,ozlabs-people-73625,Christopher Obbard,chris@64studio.com,1
+ozlabs-individual-30140,ozlabs-people-80424,Christopher Obbard,chris.obbard@collabora.com,1
+ozlabs-individual-30024,ozlabs-people-68547,Michael Haas,haas@computerlinguist.org,1
+ozlabs-individual-30024,ozlabs-people-68582,Michael Haas,michael.haas@mailbox.org,1
+ozlabs-individual-27594,ozlabs-people-71295,Icenowy Zheng,icenowy@aosc.io,1
+ozlabs-individual-27594,ozlabs-people-82172,Icenowy Zheng,icenowy@sipeed.com,1
+ozlabs-individual-27594,ozlabs-people-84088,Icenowy Zheng,uwu@icenowy.me,1
+ozlabs-individual-27594,ozlabs-people-69328,Icenowy Zheng,icenowy@aosc.xyz,1
+ozlabs-individual-28427,ozlabs-people-5890,Mikhail Kshevetskiy,mikhail.kshevetskiy@gmail.com,3
+ozlabs-individual-28427,ozlabs-people-78656,Mikhail Kshevetskiy,mikhail.kshevetskiy@oktetlabs.ru,3
+ozlabs-individual-28427,ozlabs-people-79610,Mikhail Kshevetskiy,mkshevetskiy@oktetlabs.ru,3
+ozlabs-individual-28427,ozlabs-people-84987,Mikhail Kshevetskiy,mikhail.kshevetskiy@iopsys.eu,3
+ozlabs-individual-29114,ozlabs-people-3152,Thomas Abraham,thomas.ab@samsung.com,3
+ozlabs-individual-29114,ozlabs-people-6893,Thomas Abraham,thomas.abraham@linaro.org,3
+ozlabs-individual-29114,ozlabs-people-47870,Thomas Abraham,ta.omasab@gmail.com,3
+ozlabs-individual-29114,ozlabs-people-80021,Thomas Abraham,tabraham@suse.com,3
+ozlabs-individual-27526,ozlabs-user-56511,bmeng,bmeng.cn@gmail.com,3
+ozlabs-individual-27526,ozlabs-people-64981,Bin Meng,bmeng.cn@gmail.com,3
+ozlabs-individual-27526,ozlabs-people-66513,Bin Meng,bmeng.cn at gmail.com,3
+ozlabs-individual-27526,ozlabs-people-76079,Bin Meng,chiang77@gmail.com,3
+ozlabs-individual-27526,ozlabs-people-85084,Bin Meng,bmeng@tinylab.org,3
+ozlabs-individual-27978,ozlabs-people-36310,Ezequiel Garcia,ezequiel@vanguardiasur.com.ar,1
+ozlabs-individual-27978,ozlabs-people-73739,Ezequiel Garcia,ezequiel@collabora.com,1
+ozlabs-individual-27978,ozlabs-people-20433,Ezequiel Garcia,ezequiel.garcia@free-electrons.com,1
+ozlabs-individual-28186,ozlabs-people-74544,Zubair Lutfullah Kakakhel,zubair@resin.io,1
+ozlabs-individual-28186,ozlabs-people-65130,Zubair Lutfullah Kakakhel,Zubair.Kakakhel@imgtec.com,1
+ozlabs-individual-27637,ozlabs-people-47154,Chen-Yu Tsai,wens@csie.org,1
+ozlabs-individual-27637,ozlabs-people-76129,Chen-Yu Tsai,wens@kernel.org,1
+ozlabs-individual-27637,ozlabs-people-66532,Chen-Yu Tsai,wens at csie.org,1
+ozlabs-individual-27820,ozlabs-people-68123,Calvin Johnson,calvin.johnson@nxp.com,1
+ozlabs-individual-27820,ozlabs-people-19217,Calvin Johnson,linux.cj@gmail.com,1
+ozlabs-individual-27550,ozlabs-people-6978,Fabio Estevam,festevam@gmail.com,1
+ozlabs-individual-27550,ozlabs-people-67998,Fabio Estevam,fabio.estevam@nxp.com,1
+ozlabs-individual-27550,ozlabs-people-81811,Fabio Estevam,festevam@denx.de,1
+ozlabs-individual-27550,ozlabs-people-2409,Fabio Estevam,fabioestevam@yahoo.com,1
+ozlabs-individual-27550,ozlabs-people-5984,Fabio Estevam,fabio.estevam@freescale.com,1
+ozlabs-individual-27550,ozlabs-people-66537,Fabio Estevam,festevam at gmail.com,1
+ozlabs-individual-27550,ozlabs-people-66536,Fabio Estevam,fabio.estevam at freescale.com,1
+ozlabs-individual-28255,ozlabs-people-75134,Paul Walmsley,paul.walmsley@sifive.com,1
+ozlabs-individual-28255,ozlabs-people-26661,Paul Walmsley,pwalmsley@nvidia.com,1
+ozlabs-individual-28048,ozlabs-people-70743,Mark Kettenis,kettenis@openbsd.org,1
+ozlabs-individual-28048,ozlabs-people-8281,Mark Kettenis,mark.kettenis@xs4all.nl,1
+ozlabs-individual-29391,ozlabs-people-8771,Reinhard Arlt,reinhard.arlt@t-online.de,3
+ozlabs-individual-29391,ozlabs-people-8802,Reinhard Arlt,reinhard.arlt@esd.eu,3
+ozlabs-individual-28922,ozlabs-people-62738,Gregory Fong,gregory.0xf0@gmail.com,1
+ozlabs-individual-28922,ozlabs-people-70848,Gregory Fong,Gregory.Fong@virgingalactic.com,1
+ozlabs-individual-27858,ozlabs-people-14779,Stefan Herbrechtsmeier,stefan@herbrechtsmeier.net,1
+ozlabs-individual-27858,ozlabs-people-81285,Stefan Herbrechtsmeier,stefan.herbrechtsmeier-oss@weidmueller.com,1
+ozlabs-individual-27858,ozlabs-people-9721,Stefan Herbrechtsmeier,sherbrec@cit-ec.uni-bielefeld.de,1
+ozlabs-individual-27858,ozlabs-people-10982,Stefan Herbrechtsmeier,stefan@code.herbrechtsmeier.net,1
+ozlabs-individual-27858,ozlabs-people-70436,Stefan Herbrechtsmeier,stefan.herbrechtsmeier@weidmueller.de,1
+ozlabs-individual-27799,ozlabs-people-65908,Petr Vorel,petr.vorel@gmail.com,1
+ozlabs-individual-27799,ozlabs-people-70792,Petr Vorel,pvorel@suse.cz,1
+ozlabs-individual-30266,ozlabs-people-85258,Victor Lim,victorswlim@gmail.com,1
+ozlabs-individual-30266,ozlabs-people-85217,Victor Lim,vlim@gigadevice.com,1
+ozlabs-individual-27810,ozlabs-people-71742,Suniel Mahesh,sunil.m@techveda.org,1
+ozlabs-individual-27810,ozlabs-people-78400,Suniel Mahesh,sunil@amarulasolutions.com,1
+ozlabs-individual-27810,ozlabs-people-71400,Suniel Mahesh,suniel.spartan@gmail.com,1
+ozlabs-individual-27618,ozlabs-people-4220,Jassi Brar,jassisinghbrar@gmail.com,1
+ozlabs-individual-27618,ozlabs-people-10481,Jassi Brar,jaswinder.singh@linaro.org,1
+ozlabs-individual-27642,ozlabs-people-69532,Wenyou Yang,Wenyou.Yang@microchip.com,3
+ozlabs-individual-27642,ozlabs-people-16102,Wenyou Yang,wenyou.yang@atmel.com,3
+ozlabs-individual-27642,ozlabs-people-73570,Wenyou Yang,wenyouya@gmail.com,3
+ozlabs-individual-29062,ozlabs-people-1073,Kim Phillips,kim.phillips@freescale.com,1
+ozlabs-individual-29062,ozlabs-people-36290,Kim Phillips,kim.phillips@linaro.org,1
+ozlabs-individual-28117,ozlabs-people-64053,Daniel Mack,daniel@zonque.org,3
+ozlabs-individual-28117,ozlabs-people-8171,Daniel Mack,zonque@gmail.com,3
+ozlabs-individual-28117,ozlabs-people-11620,Daniel Mack,daniel.mack@lertes.de,3
+ozlabs-individual-27539,ozlabs-people-6125,Chris Packham,judge.packham@gmail.com,1
+ozlabs-individual-27539,ozlabs-people-27499,Chris Packham,chris.packham@alliedtelesis.co.nz,1
+ozlabs-individual-29059,ozlabs-people-907,Ed Swarthout,Ed.Swarthout@freescale.com,1
+ozlabs-individual-29059,ozlabs-people-68088,Ed Swarthout,Ed.Swarthout@nxp.com,1
+ozlabs-individual-27949,ozlabs-people-8878,Vladimir Zapolskiy,vz@mleia.com,3
+ozlabs-individual-27949,ozlabs-people-82621,Vladimir Zapolskiy,vladimir.zapolskiy@linaro.org,3
+ozlabs-individual-28402,ozlabs-people-76557,Luka Kovacic,me@lukakovacic.xyz,1
+ozlabs-individual-28402,ozlabs-people-78214,Luka Kovacic,luka.kovacic@sartura.hr,1
+ozlabs-individual-27732,ozlabs-people-33698,Paul Burton,paul.burton@imgtec.com,1
+ozlabs-individual-27732,ozlabs-people-72610,Paul Burton,paul.burton@mips.com,1
+ozlabs-individual-27626,ozlabs-people-7055,Linus Walleij,linus.walleij@linaro.org,1
+ozlabs-individual-27626,ozlabs-people-11741,Linus Walleij,triad@df.lth.se,1
+ozlabs-individual-28262,ozlabs-people-75172,Frieder Schrempf,frieder.schrempf@kontron.De,1
+ozlabs-individual-28262,ozlabs-people-81883,Frieder Schrempf,frieder@fris.de,1
+ozlabs-individual-27928,ozlabs-people-69723,Emmanuel Vadot,manu@bidouilliste.com,1
+ozlabs-individual-27928,ozlabs-people-69285,Emmanuel Vadot,manu@freebsd.org,1
+ozlabs-individual-28397,ozlabs-people-68316,Han Xu,han.xu@nxp.com,1
+ozlabs-individual-28397,ozlabs-people-65553,Han Xu,xhnjupt@gmail.com,1
+ozlabs-individual-28744,ozlabs-people-80965,Ashok Reddy Soma,ashok.reddy.soma@xilinx.com,1
+ozlabs-individual-28744,ozlabs-people-84486,Ashok Reddy Soma,ashok.reddy.soma@amd.com,1
+ozlabs-individual-28744,ozlabs-people-79364,Ashok Reddy Soma,ashokred@xilinx.com,1
+ozlabs-individual-28744,ozlabs-people-82055,Ashok Reddy Soma,somaashokreddy@gmail.com,1
+ozlabs-individual-30058,ozlabs-people-69325,Walter Schweizer,swwa@hispeed.ch,1
+ozlabs-individual-30058,ozlabs-people-69846,Walter Schweizer,swwa@users.sourceforge.net,1
+ozlabs-individual-27508,ozlabs-user-4304,danielschwierzeck,daniel.schwierzeck@googlemail.com,1
+ozlabs-individual-27508,ozlabs-people-15030,Daniel Schwierzeck,daniel.schwierzeck@gmail.com,1
+ozlabs-individual-27508,ozlabs-people-6499,Daniel Schwierzeck,daniel.schwierzeck@googlemail.com,1
+ozlabs-individual-27508,ozlabs-people-69078,Daniel Schwierzeck,daniel.schwierzeck@sphairon.com,1
+ozlabs-individual-27792,ozlabs-people-8806,Mark Rutland,mark.rutland@arm.com,1
+ozlabs-individual-27792,ozlabs-people-66522,Mark Rutland,mark.rutland at arm.com,1
+ozlabs-individual-29952,ozlabs-people-66875,Sylvain Lemieux,slemieux.tyco@gmail.com,3
+ozlabs-individual-29952,ozlabs-people-80793,Sylvain Lemieux,sylvain.lemieux@jci.com,3
+ozlabs-individual-27497,ozlabs-user-1714,prafulla@marvell.com,prafulla@marvell.com,1
+ozlabs-individual-27497,ozlabs-people-5788,Prafulla Wadaskar,prafulla@marvell.com,1
+ozlabs-individual-27808,ozlabs-people-65948,Bryan O'Donoghue,pure.logic@nexus-software.ie,3
+ozlabs-individual-27808,ozlabs-people-73098,Bryan O'Donoghue,bryan.odonoghue@linaro.org,3
+ozlabs-individual-27808,ozlabs-people-78174,Bryan O'Donoghue,bod@denx.de,3
+ozlabs-individual-27622,ozlabs-people-32296,Tuomas Tynkkynen,tuomas.tynkkynen@iki.fi,1
+ozlabs-individual-27622,ozlabs-people-70706,Tuomas Tynkkynen,tuomas@tuxera.com,1
+ozlabs-individual-27622,ozlabs-people-26797,Tuomas Tynkkynen,ttynkkynen@nvidia.com,1
+ozlabs-individual-27622,ozlabs-people-72276,Tuomas Tynkkynen,dezgeg@gmail.com,1
+ozlabs-individual-29034,ozlabs-people-45,Anton Vorontsov,avorontsov@ru.mvista.com,1
+ozlabs-individual-29034,ozlabs-people-4047,Anton Vorontsov,avorontsov@mvista.com,1
+ozlabs-individual-29784,ozlabs-people-48374,Frank Bormann,fbormann@yahoo.com,3
+ozlabs-individual-29784,ozlabs-people-65648,Frank Bormann,frank.bormann@zoho.com,3
+ozlabs-individual-27649,ozlabs-people-22495,Wolfram Sang,wsa@the-dreams.de,1
+ozlabs-individual-27649,ozlabs-people-263,Wolfram Sang,w.sang@pengutronix.de,1
+ozlabs-individual-28718,ozlabs-people-4615,Alexandre Courbot,gnurou@gmail.com,1
+ozlabs-individual-28718,ozlabs-people-13521,Alexandre Courbot,acourbot@nvidia.com,1
+ozlabs-individual-27763,ozlabs-people-1749,Ricardo Ribalda Delgado,ricardo.ribalda@gmail.com,1
+ozlabs-individual-27763,ozlabs-people-75829,Ricardo Ribalda Delgado,ricardo@ribalda.com,1
+ozlabs-individual-27763,ozlabs-people-66525,Ricardo Ribalda Delgado,ricardo.ribalda at gmail.com,1
+ozlabs-individual-28108,ozlabs-people-64401,Thomas Fitzsimmons,fitzsim@fitzsim.org,2
+ozlabs-individual-28108,ozlabs-people-67688,Thomas Fitzsimmons,fitzsim@cisco.com,2
+ozlabs-individual-29228,ozlabs-people-5916,Renato Frias,renato.frias@gmail.com,1
+ozlabs-individual-29228,ozlabs-people-25814,Renato Frias,b13784@freescale.com,1
+ozlabs-individual-29037,ozlabs-people-25,Ilya Yanok,yanok@emcraft.com,3
+ozlabs-individual-29037,ozlabs-people-14343,Ilya Yanok,ilya.yanok@cogentembedded.com,3
+ozlabs-individual-27563,ozlabs-people-12916,Maxime Ripard,maxime.ripard@free-electrons.com,1
+ozlabs-individual-27563,ozlabs-people-73366,Maxime Ripard,maxime.ripard@bootlin.com,1
+ozlabs-individual-27563,ozlabs-people-77141,Maxime Ripard,mripard@kernel.org,1
+ozlabs-individual-27563,ozlabs-people-77800,Maxime Ripard,maxime@cerno.tech,1
+ozlabs-individual-27563,ozlabs-people-66538,Maxime Ripard,maxime.ripard at free-electrons.com,1
+ozlabs-individual-28092,ozlabs-people-73898,Eugeniu Rosca,roscaeugeniu@gmail.com,1
+ozlabs-individual-28092,ozlabs-people-71744,Eugeniu Rosca,erosca@de.adit-jv.com,1
+ozlabs-individual-29060,ozlabs-people-917,Ira Snyder,iws@ovro.caltech.edu,1
+ozlabs-individual-29060,ozlabs-people-65609,Ira Snyder,ira.snyder@gmail.com,1
+ozlabs-individual-28212,ozlabs-people-74718,Rajan Vaja,rajan.vaja@xilinx.com,2
+ozlabs-individual-28212,ozlabs-people-74118,Rajan Vaja,RAJANV@xilinx.com,2
+ozlabs-individual-29159,ozlabs-people-5080,Vipin Kumar,vipin.kumar@st.com,3
+ozlabs-individual-29159,ozlabs-people-8587,Vipin Kumar,hasherror@gmail.com,3
+ozlabs-individual-28101,ozlabs-people-12917,Trevor Woerner,twoerner@gmail.com,1
+ozlabs-individual-28101,ozlabs-people-75384,Trevor Woerner,trevor@toganlabs.com,1
+ozlabs-individual-27551,ozlabs-people-65124,Andy Yan,andy.yan@rock-chips.com,2
+ozlabs-individual-27551,ozlabs-people-84378,Andy Yan,andyshrk@163.com,2
+ozlabs-individual-29069,ozlabs-people-1615,Mingkai Hu,Mingkai.hu@freescale.com,1
+ozlabs-individual-29069,ozlabs-people-68122,Mingkai Hu,mingkai.hu@nxp.com,1
+ozlabs-individual-30072,ozlabs-people-69553,Steve Arnold,nerdboy422@gmail.com,1
+ozlabs-individual-30072,ozlabs-people-71155,Steve Arnold,nerdboy@gentoo.org,1
+ozlabs-individual-29319,ozlabs-people-7399,Tushar Behera,tushar.behera@linaro.org,1
+ozlabs-individual-29319,ozlabs-people-64256,Tushar Behera,tushar.b@samsung.com,1
+ozlabs-individual-27902,ozlabs-people-67204,Nathan Rossi,nathan@nathanrossi.com,1
+ozlabs-individual-27902,ozlabs-people-47271,Nathan Rossi,nathan.rossi@xilinx.com,1
+ozlabs-individual-27592,ozlabs-people-67983,Scott Wood,oss@buserror.net,2
+ozlabs-individual-27592,ozlabs-people-11,Scott Wood,scottwood@freescale.com,2
+ozlabs-individual-27592,ozlabs-people-66540,Scott Wood,scottwood at freescale.com,2
+ozlabs-individual-27592,ozlabs-people-68058,Scott Wood,scott.wood@nxp.com,2
+ozlabs-individual-27533,ozlabs-user-127535,forty,seanga2@gmail.com,1
+ozlabs-individual-27533,ozlabs-people-64621,Sean Anderson,seanga2@gmail.com,1
+ozlabs-individual-27533,ozlabs-people-80860,Sean Anderson,sean.anderson@seco.com,1
+ozlabs-individual-28205,ozlabs-people-946,Matthieu CASTET,matthieu.castet@parrot.com,1
+ozlabs-individual-28205,ozlabs-people-1679,Matthieu CASTET,castet.matthieu@free.fr,1
+ozlabs-individual-28189,ozlabs-people-14023,Ben Dooks,ben.dooks@codethink.co.uk,3
+ozlabs-individual-28189,ozlabs-people-69219,Ben Dooks,bjdooks@googlemail.com,3
+ozlabs-individual-28189,ozlabs-people-84410,Ben Dooks,ben.dooks@sifive.com,3
+ozlabs-individual-29092,ozlabs-people-2317,John Rigby,jcrigby@gmail.com,1
+ozlabs-individual-29092,ozlabs-people-6119,John Rigby,john.rigby@linaro.org,1
+ozlabs-individual-29714,ozlabs-people-34216,Andrew Ruder,andy@aeruder.net,1
+ozlabs-individual-29714,ozlabs-people-43775,Andrew Ruder,andrew.ruder@elecsyscorp.com,1
+ozlabs-individual-28413,ozlabs-people-75501,Robert Hancock,hancock@sedsystems.ca,1
+ozlabs-individual-28413,ozlabs-people-80393,Robert Hancock,robert.hancock@calian.com,1
+ozlabs-individual-28434,ozlabs-people-76776,Biwen Li,biwen.li@nxp.com,1
+ozlabs-individual-28434,ozlabs-people-78798,Biwen Li,biwen.li@oss.nxp.com,1
+ozlabs-individual-29498,ozlabs-people-13652,Sandeep Singh,B37400@freescale.com,1
+ozlabs-individual-29498,ozlabs-people-15477,Sandeep Singh,sandeep@freescale.com,1
+ozlabs-individual-27761,ozlabs-people-1081,Wolfgang Grandegger,wg@grandegger.com,3
+ozlabs-individual-27761,ozlabs-people-76577,Wolfgang Grandegger,wg@aries-embedded.de,3
+ozlabs-individual-27761,ozlabs-people-10139,Wolfgang Grandegger,wg@denx.de,3
+ozlabs-individual-27512,ozlabs-user-114253,apritzel,andre.przywara@arm.com,1
+ozlabs-individual-27512,ozlabs-people-61837,Andre Przywara,andre.przywara@arm.com,1
+ozlabs-individual-27512,ozlabs-people-24422,Andre Przywara,andre.przywara@linaro.org,1
+ozlabs-individual-27512,ozlabs-people-66235,Andre Przywara,osp@andrep.de,1
+ozlabs-individual-27512,ozlabs-people-66636,Andre Przywara,andre@andrep.de,1
+ozlabs-individual-27512,ozlabs-people-75845,Andre Przywara,andre.przywara@foss.arm.com,1
+ozlabs-individual-29084,ozlabs-people-2104,Alessandro Rubini,rubini-list@gnudd.com,1
+ozlabs-individual-29084,ozlabs-people-5875,Alessandro Rubini,rubini@unipv.it,1
+ozlabs-individual-29084,ozlabs-people-7755,Alessandro Rubini,rubini@gnudd.com,1
+ozlabs-individual-28474,ozlabs-people-77378,Ricardo Salveti,ricardo@foundries.io,1
+ozlabs-individual-28474,ozlabs-people-5533,Ricardo Salveti,rsalveti@rsalveti.net,1
+ozlabs-individual-28453,ozlabs-people-76821,Nevo Hed,nhed+uboot@starry.com,1
+ozlabs-individual-28453,ozlabs-people-76822,Nevo Hed,nhed@starry.com,1
+ozlabs-individual-28837,ozlabs-people-81987,T Karthik Reddy,t.karthik.reddy@xilinx.com,1
+ozlabs-individual-28837,ozlabs-people-77320,T Karthik Reddy,tkarthik@xilinx.com,1
+ozlabs-individual-29157,ozlabs-people-5020,Christian Riesch,christian.riesch@omicron.at,1
+ozlabs-individual-29157,ozlabs-people-5060,Christian Riesch,christian@riesch.at,1
+ozlabs-individual-29157,ozlabs-people-62741,Christian Riesch,christian.riesch@gmail.com,1
+ozlabs-individual-27936,ozlabs-people-3217,Nishanth Menon,nm@ti.com,1
+ozlabs-individual-27936,ozlabs-people-1992,Nishanth Menon,menon.nishanth@gmail.com,1
+ozlabs-individual-27515,ozlabs-user-88479,simongoldschmidt,simon.k.r.goldschmidt@gmail.com,1
+ozlabs-individual-27515,ozlabs-people-72580,Simon Goldschmidt,sgoldschmidt@de.pepperl-fuchs.com,1
+ozlabs-individual-27515,ozlabs-people-74662,Simon Goldschmidt,simon.k.r.goldschmidt@gmail.com,1
+ozlabs-individual-27685,ozlabs-people-47064,Keerthy,j-keerthy@ti.com,1
+ozlabs-individual-27685,ozlabs-people-47067,Keerthy,a0393675@ti.com,1
+ozlabs-individual-27565,ozlabs-people-68498,Rajesh Bhagat,rajesh.bhagat@nxp.com,1
+ozlabs-individual-27565,ozlabs-people-67306,Rajesh Bhagat,rajesh.bhagat@freescale.com,1
+ozlabs-individual-29508,ozlabs-people-13065,Stathis Voukelatos,Stathis.Voukelatos@linn.co.uk,1
+ozlabs-individual-29508,ozlabs-people-15852,Stathis Voukelatos,stathisv@hotmail.com,1
+ozlabs-individual-28787,ozlabs-people-81370,Xiang W,wxjstz@126.com,3
+ozlabs-individual-28787,ozlabs-people-85770,Xiang W,merlew4n6@gmail.com,3
+ozlabs-individual-27786,ozlabs-people-69464,Breno Matheus Lima,breno.lima@nxp.com,1
+ozlabs-individual-27786,ozlabs-people-70750,Breno Matheus Lima,brenomatheus@gmail.com,1
+ozlabs-individual-29189,ozlabs-people-5865,Mark Jackson,mpfj-list@mimc.co.uk,1
+ozlabs-individual-29189,ozlabs-people-24906,Mark Jackson,mpfj-list@newflow.co.uk,1
+ozlabs-individual-29301,ozlabs-people-7124,Jate Sujjavanich,jsujjavanich@syntech-fuelmaster.com,1
+ozlabs-individual-29301,ozlabs-people-7497,Jate Sujjavanich,Jate.Sujjavanich@myfuelmaster.com,1
+ozlabs-individual-27709,ozlabs-people-68530,Jacob Chen,jacob-chen@iotwrt.com,1
+ozlabs-individual-27709,ozlabs-people-69635,Jacob Chen,jacobchen110@gmail.com,1
+ozlabs-individual-27709,ozlabs-people-69649,Jacob Chen,jacob2.chen@rock-chips.com,1
+ozlabs-individual-28491,ozlabs-people-77534,Ovidiu Panait,ovidiu.panait@windriver.com,1
+ozlabs-individual-28491,ozlabs-people-78340,Ovidiu Panait,ovpanait@gmail.com,1
+ozlabs-individual-27519,ozlabs-user-1687,wd,wd@denx.de,1
+ozlabs-individual-27519,ozlabs-people-387,Wolfgang Denk,wd@denx.de,1
+ozlabs-individual-29362,ozlabs-people-9419,Vadim Bendebury,vbendeb@chromium.org,1
+ozlabs-individual-29362,ozlabs-people-25449,Vadim Bendebury,vbendeb@gmail.com,1
+ozlabs-individual-27522,ozlabs-user-1726,prom,promsoft@gmail.com,1
+ozlabs-individual-27522,ozlabs-people-5806,Minkyu Kang,promsoft@gmail.com,1
+ozlabs-individual-27522,ozlabs-people-5807,Minkyu Kang,mk7.kang@samsung.com,1
+ozlabs-individual-27984,ozlabs-people-2296,Edgar E. Iglesias,edgar.iglesias@gmail.com,1
+ozlabs-individual-27984,ozlabs-people-24734,Edgar E. Iglesias,edgar.iglesias@xilinx.com,1
+ozlabs-individual-27965,ozlabs-people-5312,Vincent Stehlé,vincent.stehle@laposte.net,1
+ozlabs-individual-27965,ozlabs-people-77169,Vincent Stehlé,vincent.stehle@arm.com,1
+ozlabs-individual-27965,ozlabs-people-19055,Vincent Stehlé,v-stehle@ti.com,1
+ozlabs-individual-27965,ozlabs-people-26963,Vincent Stehlé,vincent.stehle@freescale.com,1
+ozlabs-individual-28034,ozlabs-people-12942,Jason Kridner,jkridner@gmail.com,1
+ozlabs-individual-28034,ozlabs-people-5918,Jason Kridner,jkridner@beagleboard.org,1
+ozlabs-individual-29041,ozlabs-people-385,Kyungmin Park,kmpark@infradead.org,1
+ozlabs-individual-29041,ozlabs-people-2474,Kyungmin Park,kyungmin.park@samsung.com,1
+ozlabs-individual-28459,ozlabs-people-77290,Aaron Williams,awilliams@marvell.com,1
+ozlabs-individual-28459,ozlabs-people-6679,Aaron Williams,Aaron.Williams@caviumnetworks.com,1
+ozlabs-individual-28459,ozlabs-people-8770,Aaron Williams,Aaron.Williams@cavium.com,1
+ozlabs-individual-27904,ozlabs-people-71667,Jason Rush,jarush@gmail.com,1
+ozlabs-individual-27904,ozlabs-people-71042,Jason Rush,Jason.Rush@gd-ms.com,1
+ozlabs-individual-29147,ozlabs-people-6274,Charles Manning,manningc2@actrix.gen.nz,1
+ozlabs-individual-29147,ozlabs-people-6432,Charles Manning,cdhmanning@gmail.com,1
+ozlabs-individual-29629,ozlabs-people-22347,Harvey Chapman,hchapman@3gfp.com,1
+ozlabs-individual-29629,ozlabs-people-22371,Harvey Chapman,hchapman-uboot@3gfp.com,1
+ozlabs-individual-27919,ozlabs-people-71838,Alan Ott,alan@softiron.com,1
+ozlabs-individual-27919,ozlabs-people-67426,Alan Ott,alan@softiron.co.uk,1
+ozlabs-individual-28449,ozlabs-people-66384,Martin Cerveny,M.Cerveny@computer.org,1
+ozlabs-individual-28449,ozlabs-people-31611,Martin Cerveny,martin@c-home.cz,1
+ozlabs-individual-28263,ozlabs-people-24016,Andreas Naumann,ANaumann@ultratronik.de,1
+ozlabs-individual-28263,ozlabs-people-24030,Andreas Naumann,dev@andin.de,1
+ozlabs-individual-28780,ozlabs-people-81384,Janpieter Sollie,janpieter.sollie@edpnet.be,1
+ozlabs-individual-28780,ozlabs-people-85777,Janpieter Sollie,janpieter.sollie@kabelmail.de,1
+ozlabs-individual-27801,ozlabs-people-67867,Dinh Nguyen,dinguyen@kernel.org,1
+ozlabs-individual-27801,ozlabs-people-14523,Dinh Nguyen,gills702@gmail.com,1
+ozlabs-individual-27801,ozlabs-people-16347,Dinh Nguyen,dinh.linux@gmail.com,1
+ozlabs-individual-27801,ozlabs-people-64685,Dinh Nguyen,dinguyen@opensource.altera.com,1
+ozlabs-individual-27801,ozlabs-people-66539,Dinh Nguyen,dinguyen at opensource.altera.com,1
+ozlabs-individual-29173,ozlabs-people-5767,Albert ARIBAUD,albert.aribaud@free.fr,1
+ozlabs-individual-29173,ozlabs-people-7671,Albert ARIBAUD,albert.u.boot@aribaud.net,1
+ozlabs-individual-29173,ozlabs-people-6062,Albert ARIBAUD,albert@aribaud.net,1
+ozlabs-individual-27518,ozlabs-user-1690,monstr,monstr@monstr.eu,1
+ozlabs-individual-27518,ozlabs-people-18585,Michal Simek,michal.simek@xilinx.com,1
+ozlabs-individual-27518,ozlabs-people-2237,Michal Simek,monstr@monstr.eu,1
+ozlabs-individual-27518,ozlabs-people-84271,Michal Simek,michal.simek@amd.com,1
+ozlabs-individual-27518,ozlabs-people-66517,Michal Simek,michal.simek at xilinx.com,1
+ozlabs-individual-27721,ozlabs-people-67973,Yangbo Lu,yangbo.lu@nxp.com,1
+ozlabs-individual-27721,ozlabs-people-64518,Yangbo Lu,yangbo.lu@freescale.com,1
+ozlabs-individual-28279,ozlabs-people-33417,Anup Patel,anup@brainfault.org,1
+ozlabs-individual-28279,ozlabs-people-75764,Anup Patel,Anup.Patel@wdc.com,1
+ozlabs-individual-28279,ozlabs-people-83189,Anup Patel,apatel@ventanamicro.com,1
+ozlabs-individual-29917,ozlabs-people-66269,Nicolae Rosia,nicolae.rosia@gmail.com,1
+ozlabs-individual-29917,ozlabs-people-70158,Nicolae Rosia,nicolae.rosia.oss@gmail.com,1
+ozlabs-individual-29917,ozlabs-people-70305,Nicolae Rosia,Nicolae_Rosia@mentor.com,1
+ozlabs-individual-27955,ozlabs-people-13010,Alison Wang,b18965@freescale.com,1
+ozlabs-individual-27955,ozlabs-people-68112,Alison Wang,alison.wang@nxp.com,1
+ozlabs-individual-27811,ozlabs-people-21031,Lars Poeschel,poeschel@lemonage.de,1
+ozlabs-individual-27811,ozlabs-people-20983,Lars Poeschel,larsi@wh2.tu-dresden.de,1
+ozlabs-individual-29364,ozlabs-people-8316,Rod Boyce,uboot@teamboyce.co.uk,3
+ozlabs-individual-29364,ozlabs-people-8318,Rod Boyce,rod@teamboyce.co.uk,3
+ozlabs-individual-27640,ozlabs-people-66057,Leo Yan,leo.yan@linaro.org,3
+ozlabs-individual-27640,ozlabs-people-62676,Leo Yan,leoy@marvell.com,3
+ozlabs-individual-28359,ozlabs-people-76169,Manuel Dipolt,mdipolt@robart.cc,2
+ozlabs-individual-28359,ozlabs-people-82009,Manuel Dipolt,manuel.dipolt@robart.cc,2
+ozlabs-individual-29358,ozlabs-people-8387,Joel Fernandes,agnel.joel@gmail.com,1
+ozlabs-individual-29358,ozlabs-people-29484,Joel Fernandes,joelf@ti.com,1
+ozlabs-individual-27546,ozlabs-people-67942,Romain Naour,romain.naour@gmail.com,1
+ozlabs-individual-27546,ozlabs-people-69397,Romain Naour,romain.naour@smile.fr,1
+ozlabs-individual-29940,ozlabs-people-66680,Adrian Alonso,aalonso@freescale.com,1
+ozlabs-individual-29940,ozlabs-people-68909,Adrian Alonso,adrian.alonso@nxp.com,1
+ozlabs-individual-27619,ozlabs-people-68220,Shengzhou Liu,Shengzhou.Liu@nxp.com,1
+ozlabs-individual-27619,ozlabs-people-8045,Shengzhou Liu,Shengzhou.Liu@freescale.com,1
+ozlabs-individual-29856,ozlabs-people-65008,Michael Scott,michael.scott@linaro.org,2
+ozlabs-individual-29856,ozlabs-people-65035,Michael Scott,hashcode0f@gmail.com,2
+ozlabs-individual-27725,ozlabs-people-68083,David Wu,david.wu@rock-chips.com,3
+ozlabs-individual-27725,ozlabs-people-5879,David Wu,davidwu@arcturusnetworks.com,3
+ozlabs-individual-30100,ozlabs-people-72490,Ferry Toth,ftoth@telfort.nl,1
+ozlabs-individual-30100,ozlabs-people-77639,Ferry Toth,fntoth@gmail.com,1
+ozlabs-individual-28383,ozlabs-people-76409,Pablo Sebastián Greco,pgreco@centosproject.org,1
+ozlabs-individual-28383,ozlabs-people-77111,Pablo Sebastián Greco,pablo@fliagreco.com.ar,1
+ozlabs-individual-27834,ozlabs-people-72556,Trent Piepho,tpiepho@impinj.com,1
+ozlabs-individual-27834,ozlabs-people-67588,Trent Piepho,tpiepho@kymetacorp.com,1
+ozlabs-individual-28832,ozlabs-people-76906,qianfan,qianfanguijin@163.com,1
+ozlabs-individual-28832,ozlabs-people-82838,qianfan,qianfanguijin@qq.com,1
+ozlabs-individual-27736,ozlabs-people-12517,Stephen Warren,swarren@wwwdotorg.org,1
+ozlabs-individual-27736,ozlabs-people-7979,Stephen Warren,swarren@nvidia.com,1
+ozlabs-individual-27736,ozlabs-people-66545,Stephen Warren,swarren at wwwdotorg.org,1
+ozlabs-individual-28867,ozlabs-people-82447,Francesco Dolcini,francesco.dolcini@toradex.com,1
+ozlabs-individual-28867,ozlabs-people-84779,Francesco Dolcini,francesco@dolcini.it,1
+ozlabs-individual-29568,ozlabs-people-16285,Jeong-Hyeon Kim,snow.jhkim@gmail.com,1
+ozlabs-individual-29568,ozlabs-people-20152,Jeong-Hyeon Kim,jhkim@insignal.co.kr,1
+ozlabs-individual-29499,ozlabs-people-12648,Maximilian Schwerin,mvs@tigris.de,3
+ozlabs-individual-29499,ozlabs-people-13016,Maximilian Schwerin,Maximilian.Schwerin@tigris.de,3
+ozlabs-individual-29071,ozlabs-people-809,Ian Campbell,Ian.Campbell@citrix.com,1
+ozlabs-individual-29071,ozlabs-people-1109,Ian Campbell,ijc@hellion.org.uk,1
+ozlabs-individual-29071,ozlabs-people-65594,Ian Campbell,ijc+uboot@hellion.org.uk,1
+ozlabs-individual-28184,ozlabs-people-66041,Alex,kallisti5@unixzen.com,3
+ozlabs-individual-28184,ozlabs-people-7593,Alex,awaterman@dawning.com,3
+ozlabs-individual-28096,ozlabs-people-73933,Igor Opaniuk,igor.opaniuk@linaro.org,1
+ozlabs-individual-28096,ozlabs-people-76123,Igor Opaniuk,igor.opaniuk@toradex.com,1
+ozlabs-individual-28096,ozlabs-people-76237,Igor Opaniuk,igor.opaniuk@gmail.com,1
+ozlabs-individual-28096,ozlabs-people-80898,Igor Opaniuk,igor.opaniuk@foundries.io,1
+ozlabs-individual-27790,ozlabs-people-72461,Bernhard Messerklinger,bernhard.messerklinger@br-automation.com,3
+ozlabs-individual-27790,ozlabs-people-73698,Bernhard Messerklinger,messerklingerb@gmail.com,3
+ozlabs-individual-29263,ozlabs-people-6487,Dirk Eibach,eibach@gdsys.de,1
+ozlabs-individual-29263,ozlabs-people-25120,Dirk Eibach,dirk.eibach@gdsys.cc,1
+ozlabs-individual-29263,ozlabs-people-26292,Dirk Eibach,dirk.eibach@googlemail.com,1
+ozlabs-individual-27582,ozlabs-people-1893,Hans de Goede,hdegoede@redhat.com,1
+ozlabs-individual-27582,ozlabs-people-67632,Hans de Goede,j.w.r.degoede@gmail.com,1
+ozlabs-individual-27582,ozlabs-people-66524,Hans de Goede,hdegoede at redhat.com,1
+ozlabs-individual-28431,ozlabs-people-76946,Ralph Siemsen,ralph.siemsen@linaro.org,1
+ozlabs-individual-28431,ozlabs-people-35136,Ralph Siemsen,ralphs@netwinder.org,1
+ozlabs-individual-29320,ozlabs-people-7400,ramneek mehresh,ramneek.mehresh@freescale.com,1
+ozlabs-individual-29320,ozlabs-people-68110,ramneek mehresh,ramneek.mehresh@nxp.com,1
+ozlabs-individual-29148,ozlabs-people-4656,Andreas Bießmann,biessmann@corscience.de,1
+ozlabs-individual-29148,ozlabs-people-5830,Andreas Bießmann,andreas.devel@googlemail.com,1
+ozlabs-individual-29148,ozlabs-people-14489,Andreas Bießmann,andreas@biessmann.de,1
+ozlabs-individual-29148,ozlabs-people-23810,Andreas Bießmann,andreas.biessmann@corscience.de,1
+ozlabs-individual-29148,ozlabs-people-67660,Andreas Bießmann,andreas.devel@gmail.com,1
+ozlabs-individual-29148,ozlabs-people-68913,Andreas Bießmann,andreas@biessmann.org,1
+ozlabs-individual-28581,ozlabs-people-78653,Joao Marcos Costa,joaomarcos.costa@bootlin.com,1
+ozlabs-individual-28581,ozlabs-people-80069,Joao Marcos Costa,jmcosta944@gmail.com,1
+ozlabs-individual-28025,ozlabs-people-73503,Qu Wenruo,wqu@suse.com,1
+ozlabs-individual-28025,ozlabs-people-73504,Qu Wenruo,quwenruo.btrfs@gmx.com,1
+ozlabs-individual-29151,ozlabs-people-4722,Stuart Yoder,stuart.yoder@freescale.com,1
+ozlabs-individual-29151,ozlabs-people-10474,Stuart Yoder,b08248@gmail.com,1
+ozlabs-individual-29151,ozlabs-people-68375,Stuart Yoder,stuart.yoder@nxp.com,1
+ozlabs-individual-29151,ozlabs-people-71132,Stuart Yoder,Stuart.Yoder@arm.com,1
+ozlabs-individual-28569,ozlabs-people-78462,Pratyush Yadav,p.yadav@ti.com,1
+ozlabs-individual-28569,ozlabs-people-84684,Pratyush Yadav,pratyush@kernel.org,1
+ozlabs-individual-28569,ozlabs-people-85640,Pratyush Yadav,ptyadav@amazon.de,1
+ozlabs-individual-27521,ozlabs-user-1698,ag,agust@denx.de,1
+ozlabs-individual-27521,ozlabs-people-872,Anatolij Gustschin,agust@denx.de,1
+ozlabs-individual-27521,ozlabs-people-8109,Anatolij Gustschin,agustschin@t-online.de,1
+ozlabs-individual-29493,ozlabs-people-12296,Ulf Samuelsson,u-boot@emagii.com,1
+ozlabs-individual-29493,ozlabs-people-12355,Ulf Samuelsson,ulf@emagii.com,1
+ozlabs-individual-29493,ozlabs-people-18451,Ulf Samuelsson,arago@emagii.com,1

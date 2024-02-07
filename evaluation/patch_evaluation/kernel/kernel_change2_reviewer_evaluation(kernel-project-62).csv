@@ -1,0 +1,370 @@
+change2_original_id,patch_original_id,patch_name,date,is_correct
+kernel-change2-659013,kernel-patch-2852899,"[1/7] usb: dwc3: get ""usb_phy"" only if the platform indicates the presence of PHY",2013-09-02T15:43:05,yes
+kernel-change2-659013,kernel-patch-3047641,"[v2,1/7] usb: dwc3: get ""usb_phy"" only if the platform indicates the presence of PHY's",2013-10-15T19:54:11,yes
+kernel-change2-655369,kernel-patch-3885681,"[RFC,03/47] mtd: nand: add shared register defines for ST's NAND Controller drivers",2014-03-25T08:19:20,yes
+kernel-change2-655369,kernel-patch-4717471,[6/8] mtd: nand: add shared register defines for ST's NAND Controller drivers,2014-08-13T09:12:05,yes
+kernel-change2-655369,kernel-patch-4735691,[6/8] mtd: nand: add shared register defines for ST's NAND Controller drivers,2014-08-18T10:31:57,yes
+kernel-change2-655369,kernel-patch-4787951,[6/9] mtd: nand: stm_nand_bch: add shared register defines for ST's NAND Controller drivers,2014-08-27T12:42:21,yes
+kernel-change2-655369,kernel-patch-5236441,"[v4,08/11] mtd: nand: stm_nand_bch: add shared register defines for ST's NAND Controller drivers",2014-11-05T16:59:50,yes
+kernel-change2-600803,kernel-patch-6991561,"[RFC,1/3] nvmem: make default user binary file root-access only",2015-08-11T11:03:12,yes
+kernel-change2-600803,kernel-patch-7344331,"[v2,1/3] nvmem: core: make default user binary file root-access only",2015-10-07T11:00:47,yes
+kernel-change2-600803,kernel-patch-7346651,nvmem: core: make default user binary file root-access only,2015-10-07T16:35:14,yes
+kernel-change2-634789,kernel-patch-5463261,"[RFC,PATCHv2,7/7] ARM: dts: exynos: Add PPMU dt node to Exynos3250-based Rinato board",2014-12-09T14:13:06,yes
+kernel-change2-634789,kernel-patch-5481151,"[RFC,PATCHv3,7/7] ARM: dts: exynos: Add PPMU dt node to Exynos3250-based Rinato board",2014-12-12T08:27:32,yes
+kernel-change2-634789,kernel-patch-5504511,"[PATCHv4,8/8] ARM: dts: exynos: Add PPMU dt node to Exynos3250-based Rinato board",2014-12-16T23:26:57,yes
+kernel-change2-634789,kernel-patch-5530081,"[PATCHv5,8/9] ARM: dts: exynos: Add PPMU node to Exynos3250-based Rinato board",2014-12-23T03:18:16,yes
+kernel-change2-613352,kernel-patch-910862,"[v3,01/40] Subject: ARM: mm: proc-macros Add generic proc/cache/tlb struct definition macros",2011-06-23T17:50:09,yes
+kernel-change2-613352,kernel-patch-953022,"[v4,01/40] ARM: mm: proc-macros: Add generic proc/cache/tlb struct definition macros",2011-07-07T14:27:08,yes
+kernel-change2-563262,kernel-patch-12763263,[2/3] dt-bindings: spi: Update clock-names property for ARM pl022,2022-02-28T12:43:44,yes
+kernel-change2-563262,kernel-patch-12772312,[2/2] dt-bindings: spi: Update clock-names property for ARM pl022,2022-03-07T20:37:45,yes
+kernel-change2-563262,kernel-patch-12773146,"[v2,2/2] dt-bindings: spi: Update clock-names property for ARM pl022",2022-03-08T07:21:25,yes
+kernel-change2-563262,kernel-patch-12775348,[v3] spi: Update clock-names property for arm pl022,2022-03-09T17:18:47,yes
+kernel-change2-542883,kernel-patch-12837224,[kernel] KVM: PPC: Make KVM_CAP_IRQFD_RESAMPLE platform dependent,2022-05-04T07:48:07,yes
+kernel-change2-542883,kernel-patch-12982093,"[kernel,v2] KVM: PPC: Make KVM_CAP_IRQFD_RESAMPLE support platform dependent",2022-09-20T12:51:43,yes
+kernel-change2-542883,kernel-patch-12983223,"[kernel,v3] KVM: PPC: Make KVM_CAP_IRQFD_RESAMPLE support platform dependent",2022-09-21T04:49:25,yes
+kernel-change2-542883,kernel-patch-12997890,"[kernel,v4] KVM: PPC: Make KVM_CAP_IRQFD_RESAMPLE support platform dependent",2022-10-03T23:57:22,yes
+kernel-change2-572845,kernel-patch-1552421,"[RFC,v3,4/4] watchdog: WatchDog Timer Driver Core: fix comment",2012-10-05T10:16:09,yes
+kernel-change2-572845,kernel-patch-1569841,"[v4,8/8] watchdog: WatchDog Timer Driver Core - fix comment",2012-10-09T12:04:11,yes
+kernel-change2-572845,kernel-patch-1764931,"[v5,8/8] watchdog: WatchDog Timer Driver Core - fix comment",2012-11-19T14:10:43,yes
+kernel-change2-572845,kernel-patch-1783741,"[v6,7/7] watchdog: WatchDog Timer Driver Core - fix comment",2012-11-22T12:51:56,yes
+kernel-change2-605489,kernel-patch-6827461,[06/14] TEMPORARY: arm: update public headers for GICv3 ITS emulation,2015-07-20T13:02:08,yes
+kernel-change2-605489,kernel-patch-9240069,"[v7,07/15] TEMPORARY: update public headers for GICv3 ITS emulation",2016-07-20T17:04:27,yes
+kernel-change2-655341,kernel-patch-10887977,[02/12] drm: sun4i: Add support for enabling DDC I2C bus to dw_hdmi glue,2019-04-05T23:45:04,yes
+kernel-change2-655341,kernel-patch-10890299,"[v2,08/13] drm: sun4i: Add support for enabling DDC I2C bus to dw_hdmi glue",2019-04-09T00:24:47,yes
+kernel-change2-655341,kernel-patch-10895613,"[v3,07/11] drm: sun4i: Add support for enabling DDC I2C bus power to dw_hdmi glue",2019-04-11T10:19:47,yes
+kernel-change2-655341,kernel-patch-10899551,"[v4,7/9] drm: sun4i: Add support for enabling DDC I2C bus power to dw_hdmi glue",2019-04-13T16:54:16,yes
+kernel-change2-614100,kernel-patch-9562445,arm64: Add support for VMID aware PIPT instruction cache cache,2017-02-08T12:43:27,yes
+kernel-change2-614100,kernel-patch-9584675,[RESEND] arm64: Add support for VMID aware PIPT instruction cache,2017-02-21T14:09:55,yes
+kernel-change2-510362,kernel-patch-9599835,[5/9] mmc: sdhci-of-esdhc: add tuning block support,2017-03-02T09:47:26,yes
+kernel-change2-510362,kernel-patch-9602187,"[v2,3/7] mmc: sdhci-of-esdhc: add tuning support",2017-03-03T08:18:45,yes
+kernel-change2-510362,kernel-patch-9645535,"[v3,3/7] mmc: sdhci-of-esdhc: add tuning support",2017-03-27T07:49:38,yes
+kernel-change2-510331,kernel-patch-9779327,"[v12,02/14] sun4i-codec: Add Mic Playback Volume.",2017-06-09T20:49:31,yes
+kernel-change2-510331,kernel-patch-9807713,"[v13,02/14] ASoC: sun4i-codec: Add Mic Playback Volume.",2017-06-24T06:24:07,yes
+kernel-change2-510331,kernel-patch-10788703,"[v15,2/8] ASoC: sun4i-codec: Add Mic Playback Volume",2019-01-30T10:39:38,yes
+kernel-change2-516350,kernel-patch-10478385,"[v3,01/17] khwasan, mm: change kasan hooks signatures",2018-06-20T17:39:47,yes
+kernel-change2-516350,kernel-patch-10488957,"[v4,01/17] khwasan, mm: change kasan hooks signatures",2018-06-26T13:15:11,yes
+kernel-change2-516350,kernel-patch-10561833,"[v5,01/18] khwasan, mm: change kasan hooks signatures",2018-08-09T19:20:53,yes
+kernel-change2-516350,kernel-patch-10580037,"[v6,01/18] khwasan, mm: change kasan hooks signatures",2018-08-29T11:35:05,yes
+kernel-change2-516350,kernel-patch-10606405,"[v8,01/20] kasan, mm: change hooks signatures",2018-09-19T18:54:40,yes
+kernel-change2-516350,kernel-patch-10610457,"[v9,01/20] kasan, mm: change hooks signatures",2018-09-21T15:13:23,yes
+kernel-change2-516350,kernel-patch-10670929,"[v10,01/22] kasan, mm: change hooks signatures",2018-11-06T17:30:16,yes
+kernel-change2-516350,kernel-patch-10689081,"[v11,01/24] kasan, mm: change hooks signatures",2018-11-19T17:26:17,yes
+kernel-change2-516350,kernel-patch-10700961,"[v12,01/25] kasan, mm: change hooks signatures",2018-11-27T16:55:19,yes
+kernel-change2-516350,kernel-patch-10715751,"[v13,01/25] kasan, mm: change hooks signatures",2018-12-06T12:24:19,yes
+kernel-change2-542107,kernel-patch-9986193,watchdog: lpc18xx_wdt: Convert timers to use,2017-10-05T00:54:02,yes
+kernel-change2-542107,kernel-patch-10010113,watchdog: lpc18xx_wdt: Convert timers to use timer_setup(),2017-10-16T23:20:07,yes
+kernel-change2-559321,kernel-patch-12008037,MAINTAINERS: mark all linux-arm-kernel@infradead as moderated,2021-01-09T08:12:37,yes
+kernel-change2-559321,kernel-patch-12383673,MAINTAINERS: mark all linux-arm-kernel@infradead list as moderated,2021-07-17T15:14:40,yes
+kernel-change2-579296,kernel-patch-7637071,"[RESEND,RFC/PATCH,1/8] dt-bindings: Add a binding for Mediatek Video Processor Unit",2015-11-17T12:54:38,yes
+kernel-change2-579296,kernel-patch-7827891,"[v2,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2015-12-11T09:55:36,yes
+kernel-change2-579296,kernel-patch-7946811,"[v3,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-01-04T10:11:49,yes
+kernel-change2-579296,kernel-patch-8220011,"[v4,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-02-04T11:34:56,yes
+kernel-change2-579296,kernel-patch-8388741,"[v5,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-02-23T08:11:14,yes
+kernel-change2-579296,kernel-patch-8686211,"[v6,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-03-29T11:32:03,yes
+kernel-change2-579296,kernel-patch-8905451,"[v7,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-04-22T04:25:24,yes
+kernel-change2-579296,kernel-patch-8927341,"[v8,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-04-25T12:30:31,yes
+kernel-change2-579296,kernel-patch-8936371,"[v9,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-04-26T08:58:30,yes
+kernel-change2-579296,kernel-patch-9002261,"[v10,1/8] dt-bindings: Add a binding for Mediatek Video Processor",2016-05-03T10:11:20,yes
+kernel-change2-517060,kernel-patch-949592,[06/17] mach-shark: retire custom LED code,2011-07-06T12:34:36,yes
+kernel-change2-517060,kernel-patch-1030852,[05/17] mach-shark: retire custom LED code,2011-08-03T09:34:37,yes
+kernel-change2-517060,kernel-patch-1052882,[06/18] mach-shark: retire custom LED code,2011-08-10T12:05:40,yes
+kernel-change2-517060,kernel-patch-1101412,[06/18] mach-shark: retire custom LED code,2011-08-26T09:03:23,yes
+kernel-change2-517060,kernel-patch-1311081,[05/18] ARM: mach-shark: retire custom LED code,2012-08-13T05:51:29,yes
+kernel-change2-596744,kernel-patch-11379687,[2/5] ARM: dts: imx6sx: imx: make gpt node name generic,2020-02-13T02:52:57,yes
+kernel-change2-596744,kernel-patch-11381535,"[V2,2/5] ARM: dts: imx6sx: make gpt node name generic",2020-02-14T02:10:08,yes
+kernel-change2-511434,kernel-patch-4182831,"[RFC,03/11] sound: ASoC: kirkwood: Remove ARCH_KIRKWOOD dependency",2014-05-15T14:23:47,yes
+kernel-change2-511434,kernel-patch-4526931,"[v2,04/12] ASoC: kirkwood: Remove ARCH_KIRKWOOD dependency",2014-07-10T21:36:24,yes
+kernel-change2-659009,kernel-patch-13203125,net: stmmac: fix system hang when setting up standalone tag_8021q VLAN for DSA ports,2023-04-06T10:04:37,yes
+kernel-change2-659009,kernel-patch-13205053,net: stmmac: fix system hang when setting up standalone tag_8021q VLAN for DSA ports,2023-04-07T16:15:12,yes
+kernel-change2-659009,kernel-patch-13205055,[net] net: stmmac: fix system hang when setting up standalone tag_8021q VLAN for DSA ports,2023-04-07T16:42:56,yes
+kernel-change2-659009,kernel-patch-13205754,net: stmmac:fix system hang when setting up standalone tag_8021q VLAN for DSA ports,2023-04-08T15:09:31,yes
+kernel-change2-659009,kernel-patch-13205771,net: stmmac:fix system hang when setting up standalone tag_8021q VLAN for DSA ports,2023-04-08T15:58:23,yes
+kernel-change2-659009,kernel-patch-13208713,[v1] net: stmmac:fix system hang when setting up standalone tag_8021q VLAN for DSA ports,2023-04-12T09:50:30,yes
+kernel-change2-659009,kernel-patch-13210320,net: stmmac:fix system hang when setting up tag_8021q VLAN for DSA ports,2023-04-13T13:38:32,yes
+kernel-change2-659009,kernel-patch-13210379,"[net-next,v4] net: stmmac:fix system hang when setting up tag_8021q VLAN for DSA ports",2023-04-13T15:06:41,yes
+kernel-change2-659009,kernel-patch-13210873,"[net-next,v2] net: stmmac:fix system hang when setting up tag_8021q VLAN for DSA ports",2023-04-14T02:23:41,yes
+kernel-change2-659009,kernel-patch-13210901,"[net-next,v3] net: stmmac:fix system hang when setting up tag_8021q VLAN for DSA ports",2023-04-14T03:07:10,yes
+kernel-change2-659009,kernel-patch-13214145,"[net-next,v5] net: stmmac:fix system hang when setting up tag_8021q VLAN for DSA ports",2023-04-17T14:11:58,yes
+kernel-change2-659009,kernel-patch-13216961,"[net-next,v6] net: stmmac:fix system hang when setting up tag_8021q VLAN for DSA ports",2023-04-19T14:13:46,yes
+kernel-change2-626414,kernel-patch-10116795,"[RFC,2/5,media] dt: bindings: Update binding documentation for sunxi IR controller",2017-12-16T02:49:11,yes
+kernel-change2-626414,kernel-patch-10117973,[2/5] media: dt: bindings: Update binding documentation for sunxi IR controller,2017-12-17T22:45:44,yes
+kernel-change2-626414,kernel-patch-10119593,"[v2,2/6] media: dt: bindings: Update binding documentation for sunxi IR controller",2017-12-18T14:11:42,yes
+kernel-change2-626414,kernel-patch-10122631,"[v3,2/6] media: dt: bindings: Update binding documentation for sunxi IR controller",2017-12-19T08:07:43,yes
+kernel-change2-626414,kernel-patch-10189891,"[v4,2/6] media: dt: bindings: Update binding documentation for sunxi IR controller",2018-01-29T15:58:06,yes
+kernel-change2-626414,kernel-patch-10192121,"[v5,2/6] media: dt: bindings: Update binding documentation for sunxi IR controller",2018-01-30T17:46:52,yes
+kernel-change2-626414,kernel-patch-10216129,"[RESEND,v5,2/6] media: dt: bindings: Update binding documentation for sunxi IR controller",2018-02-13T12:29:48,yes
+kernel-change2-571549,kernel-patch-2127291,"[v2,12/13] mailbox: check for NULL nb in mailbox_put",2013-02-12T04:57:11,yes
+kernel-change2-571549,kernel-patch-2261191,"[PATCHv3,13/14] mailbox: check for NULL nb in mailbox_put",2013-03-13T03:24:30,yes
+kernel-change2-571549,kernel-patch-2692071,[2/7] omap: mailbox: check for NULL nb in mailbox_put,2013-06-08T01:57:44,yes
+kernel-change2-529002,kernel-patch-10923285,"[RFC,v1,1/3] dt-bindings: soc: add mtk svs dt-bindings",2019-04-30T11:20:10,yes
+kernel-change2-529002,kernel-patch-11001003,"[v2,1/2] dt-bindings: soc: add mtk svs dt-bindings",2019-06-18T07:02:57,yes
+kernel-change2-529002,kernel-patch-11008733,"[v3,1/2] dt-bindings: soc: add mtk svs dt-bindings",2019-06-21T08:43:47,yes
+kernel-change2-529002,kernel-patch-11063455,"[v4,1/2] dt-bindings: soc: add mtk svs dt-bindings",2019-07-29T08:20:31,yes
+kernel-change2-529002,kernel-patch-11134881,"[v5,1/3] dt-bindings: soc: add mtk svs dt-bindings",2019-09-06T10:05:13,yes
+kernel-change2-529002,kernel-patch-11320507,"[v6,1/3] dt-bindings: soc: add mtk svs dt-bindings",2020-01-07T07:01:52,yes
+kernel-change2-529002,kernel-patch-11439841,"[v7,1/3] dt-bindings: soc: add mtk svs dt-bindings",2020-03-16T07:23:15,yes
+kernel-change2-529002,kernel-patch-11990561,"[v10,1/7,v10,1/7] : dt-bindings: soc: mediatek: add mtk svs dt-bindings",2020-12-27T10:54:43,yes
+kernel-change2-529002,kernel-patch-12002627,"[v11,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-01-07T02:43:50,yes
+kernel-change2-529002,kernel-patch-12139547,"[v12,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-03-15T13:30:12,yes
+kernel-change2-529002,kernel-patch-12158061,"[v13,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-03-23T13:56:51,yes
+kernel-change2-529002,kernel-patch-12162751,"[v14,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-03-25T02:51:08,yes
+kernel-change2-529002,kernel-patch-12193477,"[v15,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-04-09T09:28:22,yes
+kernel-change2-529002,kernel-patch-12228159,"[v16,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-04-28T06:54:34,yes
+kernel-change2-529002,kernel-patch-12263563,"[v17,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-05-18T05:18:42,yes
+kernel-change2-529002,kernel-patch-12296441,"[v18,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-06-03T07:23:32,yes
+kernel-change2-529002,kernel-patch-12355389,"[v19,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-07-02T03:12:08,yes
+kernel-change2-529002,kernel-patch-12390237,"[v20,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2021-07-21T07:08:58,yes
+kernel-change2-529002,kernel-patch-12706427,"[v21,1/8] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2022-01-07T09:51:53,yes
+kernel-change2-529002,kernel-patch-12726247,"[v22,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2022-01-27T03:39:50,yes
+kernel-change2-529002,kernel-patch-12753161,"[v23,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2022-02-21T06:39:33,yes
+kernel-change2-529002,kernel-patch-12820016,"[v24,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2022-04-20T10:20:38,yes
+kernel-change2-529002,kernel-patch-12850171,"[v25,1/7] dt-bindings: soc: mediatek: add mtk svs dt-bindings",2022-05-16T00:43:05,yes
+kernel-change2-636269,kernel-patch-7842001,[v4] spi: dts: sun4i: Add support for wait time between word transmissions,2015-12-14T08:11:14,yes
+kernel-change2-636269,kernel-patch-7872261,"[v5,2/2] spi: sun4i: Add support for wait time between word transmissions",2015-12-17T11:40:27,yes
+kernel-change2-636269,kernel-patch-7922121,"[v6,3/3] spi: sun4i: Add support for wait time between word transmissions",2015-12-26T15:53:06,yes
+kernel-change2-600869,kernel-patch-2846985,i2c: imx: use exact SoC revision document binding,2013-08-20T09:42:37,yes
+kernel-change2-600869,kernel-patch-2847392,[v2] i2c: imx: use exact SoC revision to document binding,2013-08-21T02:11:59,yes
+kernel-change2-501458,kernel-patch-1473761,arch/arm/mach-davinci/board-dm646x-evm.c: Remove unecessary,2012-09-18T16:36:09,yes
+kernel-change2-501458,kernel-patch-1473851,[v2] arch/arm/mach-davinci/board-dm646x-evm.c: Remove unecessary semicolon,2012-09-18T16:59:59,yes
+kernel-change2-623672,kernel-patch-911192,"[v3,19/40] Subject: ARM: mm: proc-arm922: Use the new processor struct macros",2011-06-23T17:50:27,yes
+kernel-change2-623672,kernel-patch-953212,"[v4,19/40] ARM: mm: proc-arm922: Use the new processor struct macros",2011-07-07T14:27:26,yes
+kernel-change2-506827,kernel-patch-9989425,"[RFCv2,07/36] iommu: Add a fault handler",2017-10-06T13:31:34,yes
+kernel-change2-506827,kernel-patch-10214093,[07/37] iommu: Add a page fault handler,2018-02-12T18:33:22,yes
+kernel-change2-506827,kernel-patch-10395239,"[v2,07/40] iommu: Add a page fault handler",2018-05-11T19:06:08,yes
+kernel-change2-506827,kernel-patch-11401351,"[v4,03/26] iommu: Add a page fault handler",2020-02-24T18:23:38,yes
+kernel-change2-506827,kernel-patch-11488803,"[v5,03/25] iommu: Add a page fault handler",2020-04-14T17:02:31,yes
+kernel-change2-506827,kernel-patch-11520555,"[v6,04/25] iommu: Add a page fault handler",2020-04-30T14:34:03,yes
+kernel-change2-506827,kernel-patch-11558385,"[v7,04/24] iommu: Add a page fault handler",2020-05-19T17:54:42,yes
+kernel-change2-506827,kernel-patch-11900167,"[v8,1/9] iommu: Add a page fault handler",2020-11-12T12:55:13,yes
+kernel-change2-506827,kernel-patch-12006821,"[v9,06/10] iommu: Add a page fault handler",2021-01-08T14:52:14,yes
+kernel-change2-506827,kernel-patch-12035995,"[v10,06/10] iommu: Add a page fault handler",2021-01-21T12:36:20,yes
+kernel-change2-506827,kernel-patch-12043231,"[v11,06/10] iommu: Add a page fault handler",2021-01-25T11:06:47,yes
+kernel-change2-506827,kernel-patch-12050569,"[v12,06/10] iommu: Add a page fault handler",2021-01-27T15:43:19,yes
+kernel-change2-506827,kernel-patch-12111323,"[v13,06/10] iommu: Add a page fault handler",2021-03-02T09:26:42,yes
+kernel-change2-506827,kernel-patch-12178287,"[v14,06/10] iommu: Add a page fault handler",2021-04-01T15:47:15,yes
+kernel-change2-615600,kernel-patch-11846185,"[v2,2/2] media: dt-bindings: media: st, stm32-dcmi: Add support of BT656",2020-10-20T09:54:06,yes
+kernel-change2-615600,kernel-patch-11846219,"[v3,2/2] media: dt-bindings: media: st, stm32-dcmi: Add support of BT656",2020-10-20T10:02:32,yes
+kernel-change2-615600,kernel-patch-11846253,"[v4,2/2] media: dt-bindings: media: st, stm32-dcmi: Add support of BT656",2020-10-20T10:14:49,yes
+kernel-change2-615600,kernel-patch-11881749,"[v5,2/4] media: dt-bindings: media: st, stm32-dcmi: add support of BT656 bus",2020-11-04T17:32:10,yes
+kernel-change2-550962,kernel-patch-8050531,"[V3,4/4] ARM: bcm2835: add bcm2835-aux-uart support to default DT",2016-01-17T12:15:31,yes
+kernel-change2-550962,kernel-patch-8290221,ARM: bcm2835: add bcm2835-aux-uart support to DT,2016-02-12T11:14:25,yes
+kernel-change2-584101,kernel-patch-5772601,[1/4] ARM: pxa: add memory resource to RTC device,2015-02-03T23:22:52,yes
+kernel-change2-584101,kernel-patch-6307041,"[v2,1/4] ARM: pxa: add memory resource to RTC device",2015-04-30T20:37:10,yes
+kernel-change2-584101,kernel-patch-6384601,"[v3,1/4] ARM: pxa: add memory resource to RTC device",2015-05-11T22:41:26,yes
+kernel-change2-584101,kernel-patch-6391321,"[v3,1/4] ARM: pxa: add memory resource to RTC device",2015-05-12T20:29:08,yes
+kernel-change2-584101,kernel-patch-6398191,"[v4,3/6] ARM: pxa: add memory resource to SA1100 RTC device",2015-05-13T15:02:27,yes
+kernel-change2-629332,kernel-patch-2145611,"[RFC/RFT,2/2] SERIAL: OMAP: Remove the idle handling from the driver",2013-02-15T12:08:55,yes
+kernel-change2-629332,kernel-patch-2167061,[6/8] SERIAL: OMAP: Remove the slave idle handling from the driver,2013-02-20T10:00:44,yes
+kernel-change2-629332,kernel-patch-2268671,[6/8] SERIAL: OMAP: Remove the slave idle handling from the driver,2013-03-14T09:37:01,yes
+kernel-change2-629332,kernel-patch-2492831,"[v2,4/6] SERIAL: OMAP: Remove the slave idle handling from the driver",2013-04-26T10:54:53,yes
+kernel-change2-629332,kernel-patch-2573101,"[v3,5/6] SERIAL: OMAP: Remove the slave idle handling from the driver",2013-05-15T14:48:41,yes
+kernel-change2-589564,kernel-patch-9507003,"[v3,6/9] kvm: arm/arm64: Add host pmu to support VM introspection",2017-01-10T11:38:53,yes
+kernel-change2-589564,kernel-patch-9547847,"[v4,5/9] kvm: Add host pmu to support VM introspection",2017-01-31T17:16:26,yes
+kernel-change2-588452,kernel-patch-10625723,[1/4] spi: add support for octal I/O data transfer,2018-10-04T08:48:37,yes
+kernel-change2-588452,kernel-patch-10641629,"[v2,1/7] spi: add support for octal I/O data transfer",2018-10-15T11:48:01,yes
+kernel-change2-588452,kernel-patch-10641721,"[v2,1/7] spi: add support for octal I/O data transfer",2018-10-15T12:14:03,yes
+kernel-change2-588452,kernel-patch-10708901,"[v5,1/7] spi: add support for octal mode I/O data transfer",2018-12-03T08:39:06,yes
+kernel-change2-588452,kernel-patch-10737015,"[v6,1/7] spi: add support for octal mode I/O data transfer",2018-12-19T10:11:49,yes
+kernel-change2-504177,kernel-patch-10720135,staging: convert to DEFINE_SHOW_ATTRIBUTE,2018-12-09T16:27:42,yes
+kernel-change2-504177,kernel-patch-10732043,[RESEND] staging: vc04_services: convert to DEFINE_SHOW_ATTRIBUTE,2018-12-15T09:01:13,yes
+kernel-change2-589152,kernel-patch-10617589,dts: sun8i-h3: add sy8106a to orange pi plus,2018-09-27T08:36:36,yes
+kernel-change2-589152,kernel-patch-10620819,[v2] ARM: dts: sun8i-h3: add sy8106a to orange pi plus,2018-09-29T13:18:30,yes
+kernel-change2-650954,kernel-patch-9519339,[3/4] ARM: dts: sun8i: enable USB OTG for Orange Pi Zero board,2017-01-16T19:14:48,yes
+kernel-change2-650954,kernel-patch-9607805,"[v3,5/5] ARM: dts: sun8i: h2+: enable USB OTG for Orange Pi Zero board",2017-03-06T22:34:49,yes
+kernel-change2-564034,kernel-patch-5949501,"[v3,3/3] ARM: dts: enable PCIe support for Cygnus",2015-03-06T01:01:38,yes
+kernel-change2-564034,kernel-patch-5972701,"[v4,4/4] ARM: dts: enable PCIe support for Cygnus",2015-03-10T00:21:17,yes
+kernel-change2-564034,kernel-patch-5972841,"[v5,4/4] ARM: dts: enable PCIe support for Cygnus",2015-03-10T00:38:06,yes
+kernel-change2-564034,kernel-patch-5988231,"[v6,4/4] ARM: dts: enable PCIe support for Cygnus",2015-03-11T18:06:09,yes
+kernel-change2-564034,kernel-patch-6000741,"[v7,4/4] ARM: dts: enable PCIe support for Cygnus",2015-03-13T00:48:52,yes
+kernel-change2-564034,kernel-patch-7652001,ARM: dts: enable PCIe PHY support for Cygnus,2015-11-18T18:16:59,no
+kernel-change2-524066,kernel-patch-7493061,arm: dts: qcom: Add board clocks,2015-10-27T01:26:53,yes
+kernel-change2-524066,kernel-patch-7973011,arm: dts: qcom: Add more board clocks,2016-01-07T01:41:51,yes
+kernel-change2-628111,kernel-patch-10785611,[03/10] soc: mediatek: move the CMDQ_IRQ_MASK into cmdq driver data,2019-01-29T07:32:00,yes
+kernel-change2-628111,kernel-patch-10840759,"[v2,05/10] soc: mediatek: cmdq: move the CMDQ_IRQ_MASK into cmdq driver data",2019-03-06T09:50:30,yes
+kernel-change2-628111,kernel-patch-10874391,"[v3,05/12] soc: mediatek: cmdq: move the CMDQ_IRQ_MASK into cmdq driver data",2019-03-28T02:19:26,yes
+kernel-change2-628111,kernel-patch-10900853,"[v4,05/12] soc: mediatek: cmdq: move the CMDQ_IRQ_MASK into cmdq driver data",2019-04-15T12:58:26,yes
+kernel-change2-560371,kernel-patch-974512,[6/6] ARM: S5P6450: Add LCD-LTE480 and enable Framebuffer support,2011-07-14T13:27:16,yes
+kernel-change2-560371,kernel-patch-1004712,"[V2,7/7] ARM: S5P6450: Enable LCD-LTE480 and Framebuffer support",2011-07-25T20:00:25,yes
+kernel-change2-560371,kernel-patch-1011502,"[V3,7/7] ARM: S5P6450: Enable LCD-LTE480 and Framebuffer support",2011-07-27T17:31:18,yes
+kernel-change2-659739,kernel-patch-10529105,"[v4] arm64: dts: r8a77995: Add SCIF {0, 1, 3, 4, 5} and all HSCIF device nodes",2018-07-17T11:38:32,yes
+kernel-change2-659739,kernel-patch-10529125,"[v3] arm64: dts: r8a77995: Add SCIF {0, 1, 3, 4, 5} and all HSCIF device nodes",2018-07-17T11:42:09,yes
+kernel-change2-659739,kernel-patch-10536609,"[7/9] arm64: dts: r8a77995: Add SCIF {0, 1, 3, 4, 5} and all HSCIF device nodes",2018-07-20T12:03:38,yes
+kernel-change2-659739,kernel-patch-10536607,"[7/9] arm64: dts: renesas: r8a77995: Add SCIF {0, 1, 3, 4, 5} and all HSCIF device nodes",2018-07-20T12:03:39,yes
+kernel-change2-529697,kernel-patch-10836633,"[RFC,v2,5/7] i2c: busses: omap: Add the master_xfer_irqless hook",2019-03-02T13:47:33,yes
+kernel-change2-529697,kernel-patch-10883671,[06/12] i2c: omap: Add the master_xfer_irqless hook,2019-04-03T12:40:13,yes
+kernel-change2-578658,kernel-patch-12707403,[2/4] irqchip/meson-gpio: support more than 8 channels gpio irq line,2022-01-08T08:42:16,yes
+kernel-change2-578658,kernel-patch-12717150,"[v2,2/4] irqchip/meson-gpio: support more than 8 channels gpio irq line",2022-01-19T07:08:07,yes
+kernel-change2-578658,kernel-patch-12759692,"[v3,2/4] irqchip/meson-gpio: support more than 8 channels gpio irq",2022-02-25T05:52:04,yes
+kernel-change2-531166,kernel-patch-12234811,drm/rockchip: Fix an error handling path,2021-05-01T15:13:16,no
+kernel-change2-531166,kernel-patch-12886446,drm/rockchip: Fix an error handling path rockchip_dp_probe(),2022-06-18T17:08:05,no
+kernel-change2-624111,kernel-patch-11376387,"[v2,77/94] KVM: arm64: nv: Move sysreg reset check to boot time",2020-02-11T17:49:21,yes
+kernel-change2-624111,kernel-patch-11503733,[12/26] KVM: arm64: Move sysreg reset check to boot time,2020-04-22T12:00:36,yes
+kernel-change2-624111,kernel-patch-11579265,[21/24] KVM: arm64: Move sysreg reset check to boot time,2020-05-29T16:01:18,yes
+kernel-change2-607522,kernel-patch-7055791,"irqchip, gicv3-its, numa: Workaround for Cavium ThunderX erratum 23144",2015-08-22T13:10:50,yes
+kernel-change2-607522,kernel-patch-7070741,"[v2] irqchip, gicv3-its, numa: Workaround for Cavium ThunderX erratum 23144",2015-08-25T10:18:05,yes
+kernel-change2-607522,kernel-patch-7074301,"[v2,RESEND] irqchip, gicv3-its, numa: Workaround for Cavium ThunderX erratum 23144",2015-08-26T04:52:39,no
+kernel-change2-607522,kernel-patch-8325341,"[v3] irqchip, gicv3-its, numa: Workaround for Cavium thunderx erratum 23144",2016-02-16T13:11:22,no
+kernel-change2-607522,kernel-patch-8600141,"[v4] irqchip, gicv3-its, numa: Enable workaround for Cavium thunderx erratum 23144",2016-03-16T13:10:38,no
+kernel-change2-607522,kernel-patch-8855651,"irqchip, gicv3-its, numa: Enable workaround for Cavium thunderx erratum 23144",2016-04-15T19:15:34,no
+kernel-change2-607522,kernel-patch-8857031,"[v5] irqchip, gicv3-its, numa: Enable workaround for Cavium thunderx erratum 23144",2016-04-15T19:30:05,no
+kernel-change2-607522,kernel-patch-9135351,"[v6] irqchip, gicv3-its, numa: Enable workaround for Cavium thunderx erratum 23144",2016-05-25T13:29:20,no
+kernel-change2-600866,kernel-patch-9457935,[10/11] Document: dt: binding: imx: update doc for imx6sll,2016-12-02T06:39:33,yes
+kernel-change2-600866,kernel-patch-9489123,"[v2,03/12] Document: dt: binding: imx: update clock doc for imx6sll",2016-12-27T09:47:41,yes
+kernel-change2-600866,kernel-patch-9489125,"[v2,05/12] Document: dt: binding: imx: update pinctrl doc for imx6sll",2016-12-27T09:47:43,yes
+kernel-change2-600866,kernel-patch-10204531,"[v3,3/4] Document: dt: binding: imx: update clock doc for imx6sll",2018-02-07T02:00:18,no
+kernel-change2-600866,kernel-patch-10204535,"[v3,1/2] Document: dt: binding: imx: update pinctrl doc for imx6sll",2018-02-07T02:07:05,no
+kernel-change2-600866,kernel-patch-10267371,"[v4,3/4] Document: dt: binding: imx: update clock doc for imx6sll",2018-03-08T09:47:24,no
+kernel-change2-610530,kernel-patch-9630823,"[v3,05/11] IIO: ADC: add stm32 DFSDM support for Sigma delta ADC",2017-03-17T14:08:18,yes
+kernel-change2-610530,kernel-patch-10050755,"[v4,08/12] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2017-11-09T10:12:30,yes
+kernel-change2-610530,kernel-patch-10080581,"[v5,09/13] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2017-11-28T15:05:53,yes
+kernel-change2-610530,kernel-patch-10087671,"[v6,09/13] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2017-12-01T17:40:16,yes
+kernel-change2-610530,kernel-patch-10102725,"[v7,09/13] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2017-12-08T14:49:22,yes
+kernel-change2-610530,kernel-patch-10104625,"[v8,09/13] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2017-12-11T10:18:40,yes
+kernel-change2-610530,kernel-patch-10111633,"[v9,09/13] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2017-12-14T08:58:01,yes
+kernel-change2-610530,kernel-patch-10154771,"[RESEND,v9,09/13] IIO: ADC: add STM32 DFSDM sigma delta ADC support",2018-01-10T10:13:11,yes
+kernel-change2-585946,kernel-patch-10662065,arm64: dts: nxp: ls208xa: add more thermal zone support,2018-10-31T04:47:42,no
+kernel-change2-585946,kernel-patch-11633039,[2/2] arm64: dts: ls208xa: add more thermal zone support,2020-06-30T03:20:14,yes
+kernel-change2-585946,kernel-patch-11664307,"[2/2,v2] arm64: dts: ls208xa: add more thermal zone support",2020-07-15T06:49:09,yes
+kernel-change2-519970,kernel-patch-2289781,[118/142] sh-pfc: r8a7779: Remove SCIF function GPIOS,2013-03-18T11:06:54,no
+kernel-change2-519970,kernel-patch-2290701,[119/142] sh-pfc: r8a7779: Remove HSPI function GPIOS,2013-03-18T11:06:55,no
+kernel-change2-519970,kernel-patch-2289731,[120/142] sh-pfc: r8a7779: Remove USB function GPIOS,2013-03-18T11:06:56,no
+kernel-change2-519970,kernel-patch-2291401,[121/142] sh-pfc: r8a7779: Remove LBSC function GPIOS,2013-03-18T11:06:57,no
+kernel-change2-519970,kernel-patch-2290851,[122/142] sh-pfc: r8a7779: Remove INTC function GPIOS,2013-03-18T11:06:58,no
+kernel-change2-519970,kernel-patch-2375681,[03/28] sh-pfc: r8a7779: Remove function GPIOs,2013-04-02T05:09:11,no
+kernel-change2-519970,kernel-patch-2384061,[03/28] sh-pfc: r8a7779: Remove function GPIOs,2013-04-03T02:04:41,no
+kernel-change2-546357,kernel-patch-10771183,"[v7,1/3] arm64: replace -pg with CC_FLAGS_FTRACE in Makefiles",2019-01-18T16:39:04,yes
+kernel-change2-546357,kernel-patch-10803279,"[v8,1/5] arm64: replace -pg with CC_FLAGS_FTRACE in arm64 Makefiles",2019-02-08T15:10:07,yes
+kernel-change2-546357,kernel-patch-10803287,"[v8,2/5] arm64: replace -pg with CC_FLAGS_FTRACE in efi Makefiles",2019-02-08T15:10:11,no
+kernel-change2-623666,kernel-patch-910982,"[v3,10/40] Subject: ARM: mm: proc-arm1020: Use the new processor struct macros",2011-06-23T17:50:18,yes
+kernel-change2-623666,kernel-patch-953042,"[v4,10/40] ARM: mm: proc-arm1020: Use the new processor struct macros",2011-07-07T14:27:17,yes
+kernel-change2-524114,kernel-patch-10674201,dt-bindings: arm: Add missing Xilinx boards,2018-11-08T13:28:54,yes
+kernel-change2-524114,kernel-patch-10710813,"[v2,33/34] dt-bindings: arm: Add missing Xilinx boards",2018-12-03T21:32:22,yes
+kernel-change2-524114,kernel-patch-12058989,dt-bindings: arm: xilinx: Add missing Zturn boards,2021-02-01T13:16:12,no
+kernel-change2-628832,kernel-patch-10871375,[02/10] PCI: perform dbi regs write lock towards the end,2019-03-26T15:13:19,yes
+kernel-change2-628832,kernel-patch-10886197,"[V2,04/16] PCI: dwc: Perform dbi regs write lock towards the end",2019-04-04T19:54:31,yes
+kernel-change2-628832,kernel-patch-10903961,"[V3,04/16] PCI: dwc: Perform dbi regs write lock towards the end",2019-04-16T19:27:18,yes
+kernel-change2-628832,kernel-patch-10912227,"[V4,04/16] PCI: dwc: Perform dbi regs write lock towards the end",2019-04-23T08:27:18,yes
+kernel-change2-628832,kernel-patch-10914105,"[V5,04/16] PCI: dwc: Perform dbi regs write lock towards the end",2019-04-24T05:19:52,yes
+kernel-change2-628832,kernel-patch-10940247,"[V6,03/15] PCI: dwc: Perform dbi regs write lock towards the end",2019-05-13T05:06:14,yes
+kernel-change2-628832,kernel-patch-10947895,"[V7,03/15] PCI: dwc: Perform dbi regs write lock towards the end",2019-05-17T12:38:34,yes
+kernel-change2-628832,kernel-patch-10961249,"[V8,03/15] PCI: dwc: Perform dbi regs write lock towards the end",2019-05-26T04:37:39,yes
+kernel-change2-628832,kernel-patch-10982129,"[V9,03/15] PCI: dwc: Perform dbi regs write lock towards the end",2019-06-07T14:46:28,yes
+kernel-change2-628832,kernel-patch-11012673,"[V11,03/12] PCI: dwc: Perform dbi regs write lock towards the end",2019-06-24T09:14:56,yes
+kernel-change2-628832,kernel-patch-11025813,"[V12,03/12] PCI: dwc: Perform dbi regs write lock towards the end",2019-07-01T12:40:01,yes
+kernel-change2-628832,kernel-patch-11037915,"[V13,03/12] PCI: dwc: Perform dbi regs write lock towards the end",2019-07-10T06:22:03,yes
+kernel-change2-628832,kernel-patch-11057461,"[V14,03/13] PCI: dwc: Perform dbi regs write lock towards the end",2019-07-24T17:48:14,yes
+kernel-change2-628832,kernel-patch-11085299,"[V15,03/13] PCI: dwc: Perform dbi regs write lock towards the end",2019-08-09T04:45:59,yes
+kernel-change2-628832,kernel-patch-11091911,"[V16,03/13] PCI: dwc: Perform dbi regs write lock towards the end",2019-08-13T11:36:17,yes
+kernel-change2-637327,kernel-patch-10811781,[2/3] drm/mediatek: CMDQ reg address of mt8173 is different with mt2701,2019-02-14T04:42:42,yes
+kernel-change2-637327,kernel-patch-10902013,"[v2,2/5] drm/mediatek: CMDQ reg address of mt8173 is different with mt2701",2019-04-16T06:04:58,yes
+kernel-change2-637327,kernel-patch-10949299,"[v3,2/7] drm/mediatek: fixes CMDQ reg address of mt8173 is different with mt2701",2019-05-19T09:25:32,yes
+kernel-change2-637327,kernel-patch-10971345,"[v4,2/7] drm/mediatek: fixes CMDQ reg address of mt8173 is different with mt2701",2019-06-01T09:26:10,yes
+kernel-change2-637327,kernel-patch-11019099,"[v5,2/7] drm/mediatek: fixes CMDQ reg address of mt8173 is different with mt2701",2019-06-27T08:01:10,yes
+kernel-change2-637327,kernel-patch-11088929,"[v6,2/7] drm/mediatek: fixes CMDQ reg address of mt8173 is different with mt2701",2019-08-11T10:40:03,yes
+kernel-change2-615685,kernel-patch-11822049,"[v4,1/4] firmware: keembay: Add support for Arm Trusted Firmware Service call",2020-10-08T02:09:33,yes
+kernel-change2-615685,kernel-patch-11824325,"[v5,1/4] firmware: keembay: Add support for Trusted Firmware Service call",2020-10-08T18:18:41,yes
+kernel-change2-615685,kernel-patch-11944857,"[v6,2/4] firmware: keembay: Add support for Trusted Firmware Service call",2020-12-02T15:02:02,yes
+kernel-change2-581932,kernel-patch-1706071,"ARM: mxs: apf28dev: Add I2C, SPI and spidev support",2012-11-06T18:16:33,yes
+kernel-change2-581932,kernel-patch-1720381,[v2] ARM: mxs: apf28dev: Add I2C and SPI support,2012-11-09T12:42:41,yes
+kernel-change2-655519,kernel-patch-13000659,[1/3] arm64: dts: rockchip: Move most of Odroid Go Advance DTS into DTSI,2022-10-06T17:45:17,yes
+kernel-change2-655519,kernel-patch-13041231,[1/5] arm64: dts: rockchip: Move most of Odroid Go Advance DTS into a DTSI,2022-11-12T14:18:37,yes
+kernel-change2-655519,kernel-patch-13041246,"[v3,1/5] arm64: dts: rockchip: Move most of Odroid Go Advance DTS into a DTSI",2022-11-12T14:34:07,yes
+kernel-change2-655519,kernel-patch-13047365,"[v4,1/5] arm64: dts: rockchip: Move most of Odroid Go Advance DTS into a DTSI",2022-11-17T21:59:50,yes
+kernel-change2-613614,kernel-patch-10480481,[6/7] ARM: dts: s5pv210: Add initial DTS config for SGH-T959P phone,2018-06-21T19:09:58,yes
+kernel-change2-613614,kernel-patch-10492297,"[v2,04/10] ARM: dts: s5pv210: Add initial DTS for SGH-T959P phone",2018-06-27T17:12:18,yes
+kernel-change2-613614,kernel-patch-10512347,"[v3,4/9] ARM: dts: s5pv210: Add initial DTS for SGH-T959P phone",2018-07-06T18:32:45,yes
+kernel-change2-613614,kernel-patch-10512843,"[v4,3/5] ARM: dts: s5pv210: Add initial DTS for SGH-T959P phone",2018-07-07T10:09:41,yes
+kernel-change2-554099,kernel-patch-10495267,[3/3] arm64: dts: qcom: pm8998: Add thermal zone,2018-06-28T21:09:15,yes
+kernel-change2-554099,kernel-patch-10502219,"[v2,2/2] arm64: dts: qcom: pm8998: Add pm8998 thermal zone",2018-07-02T18:10:05,yes
+kernel-change2-554099,kernel-patch-10515781,"[v3,2/2] arm64: dts: qcom: pm8998: Add pm8998 thermal zone",2018-07-09T21:25:22,yes
+kernel-change2-554099,kernel-patch-10530743,"[v4,3/3] arm64: dts: qcom: pm8998: Add pm8998 thermal zone",2018-07-17T21:08:15,yes
+kernel-change2-554099,kernel-patch-10543327,"[v5,3/3] arm64: dts: qcom: pm8998: Add pm8998 thermal zone",2018-07-24T23:46:36,yes
+kernel-change2-554099,kernel-patch-10551195,"[v6,5/5] arm64: dts: qcom: pm8998: Add pm8998 thermal zone",2018-07-31T18:45:56,yes
+kernel-change2-554099,kernel-patch-10551219,"[v6,5/5] arm64: dts: qcom: pm8998: Add pm8998 thermal zone",2018-07-31T18:59:17,yes
+kernel-change2-513943,kernel-patch-12785147,arm64: fix typos in comments,2022-03-18T10:37:05,no
+kernel-change2-513943,kernel-patch-12785159,KVM: arm64: fix typos in comments,2022-03-18T10:37:19,no
+kernel-change2-513943,kernel-patch-12785162,arm64: hw_breakpoint: fix typos in comments,2022-03-18T10:37:23,no
+kernel-change2-513943,kernel-patch-12812857,arm64: fix typos in comments,2022-04-14T02:37:18,no
+kernel-change2-633087,kernel-patch-8025541,"[V3,19/21] pci, acpi: Support for ACPI based generic PCI host controller init",2016-01-13T13:21:05,yes
+kernel-change2-633087,kernel-patch-8226601,"[V4,20/23] pci, acpi: Support for ACPI based generic PCI host controller init",2016-02-04T17:28:58,yes
+kernel-change2-633087,kernel-patch-8326361,"[V5,12/15] pci, acpi: Support for ACPI based generic PCI host controller initialization",2016-02-16T13:53:42,yes
+kernel-change2-633087,kernel-patch-8853341,"[V6,09/13] pci, acpi: Support for ACPI based generic PCI host controller",2016-04-15T17:06:44,no
+kernel-change2-633087,kernel-patch-9059621,"[V7,08/11] pci, acpi: Support for ACPI based generic PCI host controller",2016-05-10T15:19:58,no
+kernel-change2-633087,kernel-patch-9141681,"[V8,9/9] pci, acpi: ARM64 support for ACPI based generic PCI host controller",2016-05-30T15:14:22,no
+kernel-change2-616668,kernel-patch-12465605,[5/6] MAINTAINERS: Add the driver info of the NXP IMX8QXP ADC,2021-08-30T17:21:39,yes
+kernel-change2-616668,kernel-patch-12477103,"[v2,3/3] MAINTAINERS: Add the driver info of the NXP IMX8QXP ADC",2021-09-06T16:32:11,yes
+kernel-change2-616668,kernel-patch-12477509,"[v3,3/3] MAINTAINERS: Add the driver info of the NXP IMX8QXP ADC",2021-09-07T01:57:23,yes
+kernel-change2-616668,kernel-patch-12486705,"[v4,3/3] MAINTAINERS: Add the driver info of the NXP IMX8QXP ADC",2021-09-12T07:13:34,yes
+kernel-change2-616668,kernel-patch-12507243,"[v5,3/3] MAINTAINERS: Add the driver info of the NXP IMX8QXP",2021-09-21T05:28:15,yes
+kernel-change2-616668,kernel-patch-12517193,"[v6,3/3] MAINTAINERS: Add the driver info of the NXP IMX8QXP",2021-09-25T02:05:47,yes
+kernel-change2-501969,kernel-patch-2973081,ARM: shmobile: Genmai defconfig,2013-10-02T06:06:25,yes
+kernel-change2-501969,kernel-patch-3007451,ARM: shmobile: Genmai defconfig,2013-10-09T06:51:34,yes
+kernel-change2-501969,kernel-patch-3253001,[01/16] ARM: shmobile: Genmai defconfig,2013-11-28T09:08:31,no
+kernel-change2-501969,kernel-patch-4551651,ARM: shmobile: genmai: remove defconfig,2014-07-15T07:29:24,no
+kernel-change2-501969,kernel-patch-4579341,[1/2] ARM: shmobile: genmai: remove defconfig,2014-07-17T23:55:48,no
+kernel-change2-523733,kernel-patch-7313481,MAINTAINERS: Add entry Renesas arm64 architecture,2015-10-02T06:42:21,yes
+kernel-change2-523733,kernel-patch-7402421,"[v11,8/8] MAINTAINERS: Add entry Renesas arm64 architecture",2015-10-15T06:24:03,yes
+kernel-change2-523733,kernel-patch-7485551,"[v12,7/7] MAINTAINERS: Add entry Renesas arm64 architecture",2015-10-26T06:01:52,yes
+kernel-change2-523733,kernel-patch-7609881,"[v13,7/7] MAINTAINERS: Add entry Renesas arm64 architecture",2015-11-13T10:10:25,yes
+kernel-change2-523733,kernel-patch-7663381,[6/6] MAINTAINERS: Add entry for Renesas arm64 architecture,2015-11-20T01:05:50,yes
+kernel-change2-611195,kernel-patch-11119217,"[v2,2/3] amlogic: arm: add Amlogic SM1 based Khadas VIM3L bindings",2019-08-28T14:11:56,yes
+kernel-change2-611195,kernel-patch-11119241,"[v3,2/3] dt-bindings: arm: amlogic: add Amlogic SM1 based Khadas VIM3L bindings",2019-08-28T14:18:15,yes
+kernel-change2-525301,kernel-patch-8320181,[2/2] ARM: dts: vf-colibri: add supply regulators,2016-02-16T02:14:14,yes
+kernel-change2-525301,kernel-patch-8333311,"[v2,2/3] ARM: dts: vf-colibri: add basic supply regulators",2016-02-17T00:18:36,yes
+kernel-change2-525301,kernel-patch-8343841,"[v3,2/3] ARM: dts: vf-colibri: add basic supply regulators",2016-02-17T23:40:59,yes
+kernel-change2-584107,kernel-patch-4746531,[05/12] ARM: shmobile: r8a7790: Add DMAC devices to DT,2014-08-20T00:23:56,yes
+kernel-change2-584107,kernel-patch-5293121,[02/25] ARM: shmobile: r8a7790: Add Audio DMAC devices to DT,2014-11-13T01:19:53,yes
+kernel-change2-584107,kernel-patch-5351971,[02/29] ARM: shmobile: r8a7790: Add Audio DMAC devices to DT,2014-11-21T00:54:28,yes
+kernel-change2-512849,kernel-patch-9765437,[1/2] ARM: dts: uniphier: use SPDX-License-Identifier,2017-06-05T03:57:58,yes
+kernel-change2-512849,kernel-patch-9834801,ARM: dts: uniphier: use SPDX-License-Identifier (2nd),2017-07-11T14:08:56,yes
+kernel-change2-627606,kernel-patch-12994110,"[v3,1/2] media: dt-bindings: mediatek: Rename child node names for decoder",2022-09-29T13:13:08,yes
+kernel-change2-627606,kernel-patch-12995260,"[v4,1/2] media: dt-bindings: mediatek: Rename child node names for decoder",2022-09-30T11:22:36,yes
+kernel-change2-627606,kernel-patch-13057660,"[v5,1/3] media: dt-bindings: media: mediatek: Rename child node names for decoder",2022-11-28T14:38:30,yes
+kernel-change2-627606,kernel-patch-13066660,"[v6,1/3] media: dt-bindings: media: mediatek: Rename child node names for decoder",2022-12-07T05:51:05,yes
+kernel-change2-627606,kernel-patch-13158230,"[RESEND,1/6] media: dt-bindings: media: mediatek: Rename child node names for decoder",2023-03-03T01:38:37,yes
+kernel-change2-502039,kernel-patch-2224411,"ARM: drop ""select HAVE_SCHED_CLOCK""",2013-03-06T10:53:51,yes
+kernel-change2-502039,kernel-patch-2827213,"ARM: keystone: drop ""select HAVE_SCHED_CLOCK""",2013-07-14T10:38:05,yes
+kernel-change2-502039,kernel-patch-2827225,"ARM: keystone: drop ""select HAVE_SCHED_CLOCK""",2013-07-14T14:27:38,yes
+kernel-change2-539881,kernel-patch-6668871,"[07/12,media] tsin: c8sectpfe: STiH407/10 Linux DVB demux support",2015-06-24T15:11:05,yes
+kernel-change2-539881,kernel-patch-6905631,"[v2,06/11,media] c8sectpfe: STiH407/10 Linux DVB demux support",2015-07-30T17:08:56,yes
+kernel-change2-553515,kernel-patch-7402371,"[v11,3/8] arm64: renesas: r8a7795 dtsi: Add dummy dma-controller nodes",2015-10-15T06:23:58,yes
+kernel-change2-553515,kernel-patch-7485491,"[v12,2/7] arm64: renesas: r8a7795 dtsi: Add dummy dma-controller nodes",2015-10-26T06:01:47,yes
+kernel-change2-553515,kernel-patch-7609851,"[v13,2/7] arm64: renesas: r8a7795 dtsi: Add dummy dma-controller nodes",2015-11-13T10:10:20,yes
+kernel-change2-553515,kernel-patch-7663511,[2/6] arm64: renesas: r8a7795: Add dummy dma-controller nodes,2015-11-20T01:05:46,yes
+kernel-change2-548457,kernel-patch-10359995,"[RFC,12/13] arm64: dts: allwinner: a64: Add HDMI pipeline",2018-04-24T13:34:24,yes
+kernel-change2-548457,kernel-patch-10371665,[14/21] arm64: dts: allwinner: a64: Add HDMI pipeline,2018-04-30T11:40:51,yes
+kernel-change2-548457,kernel-patch-10409373,"[v2,19/26] arm64: dts: allwinner: a64: Add HDMI pipeline",2018-05-18T09:45:29,yes
+kernel-change2-548457,kernel-patch-10532141,"[v3,07/18] arm64: dts: allwinner: a64: Add tcon1 HDMI pipeline",2018-07-18T10:54:47,yes
+kernel-change2-599109,kernel-patch-12815445,"[RFC,02/17] KVM: arm64: Only read the pte once per visit",2022-04-15T21:58:46,yes
+kernel-change2-599109,kernel-patch-12959798,[04/14] KVM: arm64: Read the PTE once per visit,2022-08-30T19:41:22,yes
+kernel-change2-523356,kernel-patch-4650991,"[PATCHv9,2/3] edac: altera: Add Altera EDAC support.",2014-07-30T18:22:52,yes
+kernel-change2-523356,kernel-patch-4707751,"[PATCHv10,1/2] edac: altera: Add Altera SDRAM EDAC support.",2014-08-11T15:18:12,yes
+kernel-change2-580006,kernel-patch-9662353,[02/11] arm64: allwinner: a64: add NMI controller on A64,2017-04-04T18:01:36,yes
+kernel-change2-580006,kernel-patch-9670211,"[v2,02/11] arm64: allwinner: a64: add NMI controller on A64",2017-04-07T18:34:32,yes
+kernel-change2-580006,kernel-patch-9683763,"[v3,02/12] arm64: allwinner: a64: add NMI controller on A64",2017-04-17T11:57:37,yes
+kernel-change2-580006,kernel-patch-9696783,"[v4,04/10] arm64: allwinner: a64: add NMI (R_INTC) controller on A64",2017-04-24T16:00:57,yes
+kernel-change2-580006,kernel-patch-9701559,"[v5,04/10] arm64: allwinner: a64: add NMI (R_INTC) controller on A64",2017-04-26T15:20:17,yes
+kernel-change2-580006,kernel-patch-9732797,"[v6,3/9] arm64: allwinner: a64: add NMI (R_INTC) controller on A64",2017-05-18T07:16:47,yes
+kernel-change2-580006,kernel-patch-9768075,[10/10] arm64: allwinner: a64: add NMI (R_INTC) controller on A64,2017-06-06T05:59:32,yes
+kernel-change2-498213,kernel-patch-4114261,[2/2] Add 32-bit accesses,2014-05-05T12:08:01,yes
+kernel-change2-498213,kernel-patch-4122041,[PATCHv3] C_CAN: Add 32-bit accesses,2014-05-06T13:57:02,yes
+kernel-change2-508149,kernel-patch-7440661,[13/16] arm64: kdump: add kdump support,2015-10-19T23:38:54,yes
+kernel-change2-508149,kernel-patch-7571851,[12/15] arm64: kdump: add kdump support,2015-11-06T19:14:37,yes
+kernel-change2-508149,kernel-patch-7694371,"[v12,13/16] arm64: kdump: add kdump support",2015-11-24T22:25:34,yes
+kernel-change2-508149,kernel-patch-8044171,[16/19] arm64: kdump: add kdump support,2016-01-15T19:18:38,yes
+kernel-change2-508149,kernel-patch-8508441,"[v14,18/20] arm64: kdump: add kdump support",2016-03-04T23:51:15,yes
+kernel-change2-508149,kernel-patch-8582611,"[v15,18/20] arm64: kdump: add kdump support",2016-03-14T17:48:01,yes
+kernel-change2-508149,kernel-patch-8843271,"[v16,18/20] arm64: kdump: add kdump support",2016-04-14T21:21:37,yes
+kernel-change2-508149,kernel-patch-9153829,"[v17,09/13] arm64: kdump: add kdump support",2016-06-03T18:13:41,yes
+kernel-change2-508149,kernel-patch-9167849,"[v18,09/13] arm64: kdump: add kdump support",2016-06-09T20:08:44,yes
+kernel-change2-508149,kernel-patch-9181897,"[v19,09/13] arm64: kdump: add kdump support",2016-06-16T23:48:28,yes
+kernel-change2-508149,kernel-patch-9195709,"[v20,10/14] arm64: kdump: add kdump support",2016-06-23T17:54:48,yes
+kernel-change2-508149,kernel-patch-9215643,"[v21,4/8] arm64: kdump: add kdump support",2016-07-06T07:52:22,yes
+kernel-change2-508149,kernel-patch-9224565,"[v22,4/8] arm64: kdump: add kdump support",2016-07-12T05:05:10,yes
+kernel-change2-508149,kernel-patch-9247849,"[v23,5/9] arm64: kdump: add kdump support",2016-07-26T07:56:56,yes
+kernel-change2-508149,kernel-patch-9270061,"[v24,5/9] arm64: kdump: add kdump support",2016-08-09T01:56:12,yes
+kernel-change2-508149,kernel-patch-9273231,"[v24,5/9] arm64: kdump: add kdump support",2016-08-10T16:38:05,yes
+kernel-change2-508149,kernel-patch-9286087,fixup! arm64: kdump: add kdump support,2016-08-17T15:33:31,yes
+kernel-change2-508149,kernel-patch-9288979,"[v24,5/9] arm64: kdump: add kdump support",2016-08-19T01:26:52,yes
+kernel-change2-508149,kernel-patch-9304921,[v25] 5/9] arm64: kdump: add kdump support,2016-08-30T06:53:06,yes
+kernel-change2-508149,kernel-patch-9318171,"[v26,3/7] arm64: kdump: add kdump support",2016-09-07T04:29:05,yes
