@@ -15,7 +15,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 1. [Approaches and evaluation results](#1-approaches-and-evaluation-results)
 2. [Provided dataset](#2-provided-dataset)
    1. [Get provided dataset](#21-get-provided-dataset)
-   2. [Analyse provided dataset](#22-use-provided-dataset)
+   2. [Use provided dataset](#22-use-provided-dataset)
 3. [Data crawling](#3-data-crawling)
    1. [Basic steps for crawling](#31-basic-steps-for-crawling)
       1. [Schedule spiders on scrapyd](#311-schedule-spiders-on-scrapyd)
