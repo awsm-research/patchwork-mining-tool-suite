@@ -16,7 +16,7 @@ This project provides a suite of tools for mining and further processing Patchwo
 1. [Approaches and evaluation results](#1-approaches-and-evaluation-results)
 2. [Provided dataset](#2-provided-dataset)
    1. [Get provided dataset](#21-get-provided-dataset)
-   2. [Analyse provided dataset](#22-analyse-provided-dataset)
+   2. [Analyse provided dataset](#22-use-provided-dataset)
 3. [Data crawling](#3-data-crawling)
    1. [Basic steps for crawling](#31-basic-steps-for-crawling)
       1. [Schedule spiders on scrapyd](#311-schedule-spiders-on-scrapyd)
@@ -97,7 +97,7 @@ Below is the correctness and Cohen's Kappa results of each approach applied to t
 
 ## 2. Provided dataset
 
-The provided dataset contains data of all projects from the three OSS communities, including [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Linux Kernel](https://patchwork.kernel.org), until 30/09/2022. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing.
+The provided dataset contains data of all projects from the three OSS communities, including [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Linux Kernel](https://patchwork.kernel.org), until 30/06/2023. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing.
 
 ### 2.1. Get provided dataset
 
@@ -162,7 +162,7 @@ filter = 'project_original_id=ffmpeg-project-1&cover_letter_content_contain=impr
 retrieved_data = access_data.retrieve_data(item_type, filter)
 ```
 
-All available filters can be found in section [Application filter](#31-application-filter).
+All available filters can be found in section [Application filter](#41-application-filter).
 
 ## 3. Data crawling
 
