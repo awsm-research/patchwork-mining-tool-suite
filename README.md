@@ -96,11 +96,11 @@ Below is the correctness and Cohen's Kappa results of each approach applied to t
 
 ## 2. Provided dataset
 
-The provided dataset contains data of all projects from the three OSS communities, including [FFmpeg](https://patchwork.ffmpeg.org/project/ffmpeg/list/), [Ozlabs](http://patchwork.ozlabs.org), and [Linux Kernel](https://patchwork.kernel.org), until 30/06/2023. There are ten collections in which Project, Identity, Series, Patche, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing.
+We provide both database dump and data in a plain JSON format, both of which contain data of all projects from the three OSS communities, including [Linux Kernel](https://patchwork.kernel.org), [Ozlabs](http://patchwork.ozlabs.org), and [FFmpeg](https://patchwork.ffmpeg.org), until 30/06/2023. There are ten collections in which Project, Identity, Series, Patch, Comment, and MailingList store the original crawled data (some fields will be updated during further processing), and Individual, Change1, Change2, and NewSeries record the results of processing.
 
 ### 2.1. Get provided dataset
 
-The compressed complete dataset can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the folowing step.
+The compressed complete datasets and the plain JSON data can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the following step.
 
 ### 2.2. Use provided dataset
 
