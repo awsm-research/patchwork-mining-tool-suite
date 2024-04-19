@@ -25,9 +25,10 @@ This project provides a suite of tools for mining and further processing Patchwo
       1. [Customise spiders in scrapyd](#321-customise-spiders-in-scrapyd)
       2. [Customise spiders from script](#322-customise-spiders-from-script)
       3. [Customise spiders run using commands](#323-customise-spiders-run-using-commands)
-   3. [Insert data to database](#33-insert-data-to-database)
+   3. [Data Process and Import](#33-data-process-and-import)
 4. [Data dictionary](#4-data-dictionary)
    1. [Application filter](#41-application-filter)
+5. [BibTeX Citation](#bibtex-citation)
 
 ## 1. Approaches and evaluation results
 
@@ -100,7 +101,7 @@ We provide both database dump and data in a plain JSON format, both of which con
 
 ### 2.1. Get provided dataset
 
-The compressed complete datasets and the plain JSON data can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the following step.
+The compressed complete datasets and the plain JSON data can be downloaded [here](https://figshare.com/s/457abb97f75656229829). Decompress the downloaded file in root folder of the project to use in the following steps.
 
 ### 2.2. Use provided dataset
 
@@ -136,13 +137,13 @@ Data stored in the MongoDB database can be retrieved through Django REST API by 
 
 ##### Retrieve the whole collection
 
-The item type of the data to be retrieved has to be specified. Available item types include _projects, accounts, series, patches, comments, newseries, changes1, changes2, mailinglists, and users_.
+The item type of the data to be retrieved has to be specified. Available item types include _project, identity, series, patch, comment, newseries, change1, change2, mailinglist, and individual_.
 
 ```python
 from application_layer import AccessData
 
 access_data = AccessData()
-item_type = 'projects'
+item_type = 'project'
 retrieved_data = access_data.retrieve_data(item_type)
 ```
 
@@ -165,7 +166,7 @@ All available filters can be found in section [Application filter](#41-applicati
 
 ## 3. Data crawling
 
-To crawl new data from the source, apply the Scrapy framework in the suite. Retrieved data will be first stored in jsonlines files. The file content can be inserted into the database with the help of the application layer.
+To crawl new data from the source, apply the Scrapy framework in the suite. Retrieved data will be first stored in jsonlines files. The file content can be imported into the database with the help of the application layer.
 
 There are three spiders for crawling patchwork data. Their **spider names** are **patchwork_project**, **patchwork_series**, and **patchwork_patch**.
 
@@ -288,54 +289,21 @@ Similar to customisation in scrapyd, with the argument option `-a`
 scrapy crawl <spider-name> -a start_project_id=<specified-id> -a end_project_id=<specified-id> -a endpoint_type=<endpoint-name>
 ```
 
-### 3.3. Insert data to database
+### 3.3. Data Process and Import
 
-After crawling data from Patchwork, relevant data can be inserted to the database with the help of the application layer.
+After crawling data from Patchwork, data can be processed and imported to the database with the help of the application layer.
 
-#### 3.3.1. Process data
+#### 3.3.1. Data process
 
-Two classes are provided in the application layer to assist with access and process data.
+The application layer falls into two parts - *AccessData* for 1) importing data into the database, 2) accessing JSON files in the local machine, and 3) querying data from the database; *ProcessIdentity*, *ProcessMailingList*, and *ProcessPatch* for processing data, where *ProcessIdentity* identifies individuals (i.e. unique developers) within each project, *ProcessMailingList* sorts the mailing list data, and *ProcessPatch* groups related code review activities of the same proposed patch.
 
-One is AccessData, which helps 1) to insert data into the database; 2) to access json files in your local machine; 3) to query data from the database.
+It is adivised to run the automated approaches, i.e. identity (email aliases) grouping, exact bags-of-words grouping and one-word difference grouping, provided in *ProcessPatch* before data import. An implementation example can be found in [implementation.ipynb](./app/implementation.ipynb).
 
-The other is ProcessInitialData, which helps 1) to identify individual (i.e. unique developers) within each project; and 2) to group related code review activities of the same proposed patch.
+Note that identity data come from multiple sources, including project, series, patch, and comment, and thus they are stored into different files when data crawling is completed. Therefore, separated identity files are supposed to be merged into one befre processing and importing data.
 
-It is adivised to run the two automated approaches provided in ProcessInitialData before data insertion.
+In addition, newseries, change1, change2, and individual are newly generated data and they do not have original id as those crawled from Patchwork (See data attributes in the [data dictionary](#4-data-dictionary)), so their initial original ids are required to be specified **if the approaches are not run at the first time**.
 
-Load the data before running the approaches. Json files can be immediately accessed with the help of `load_json()` provided in AccessData.
-
-```python
-import application_layer
-
-access_data = application_layer.AccessData()
-
-# load identity data
-project_identity_data = access_data.load_json("path/to/crawled/project/identity/data")
-series_identity_data = access_data.load_json("path/to/crawled/series/identity/data")
-patch_identity_data = access_data.load_json("path/to/crawled/patch/identity/data")
-
-# combine identity data
-identity_data = project_identity_data + series_identity_data + patch_identity_data
-
-# load series data
-series_data = access_data.load_json("path/to/crawled/series/data")
-
-# load patch data
-patch_data = access_data.load_json("path/to/crawled/patch/data")
-
-# load comment data
-comment_data = access_data.load_json("path/to/crawled/comment/data")
-```
-
-After loading the data, instantiate ProcessInitialData to run the approaches.
-
-```python
-process_data = application_layer.ProcessInitialData()
-```
-
-However, newseries, change1, change2, and individual data are newly generated data and they do not have original id as those crawled from Patchwork (See data attributes in the [data dictionary](#3-data-dictionary)), so their initial original ids are required to be specified **if the approaches are not run at the first time**.
-
-To specify the original ids, you can retrieve the corresponding maximum original id from the database.
+To specify the original ids, corresponding maximum original id can be retrieved from the database by `db.collection-name.count_documents({})`, which returns the number of records in a collection. *ProcessIdentity* and *ProcessPatch* accept arguments to specify the starting original id.
 
 ```python
 import pymongo, application layer
@@ -343,40 +311,33 @@ import pymongo, application layer
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["code_review_db"]
 
-newseries_original_id = db.patchwork_newseries.count_documents({}) + 1
-change1_original_id = db.patchwork_change1.count_documents({}) + 1
-change2_original_id = db.patchwork_change2.count_documents({}) + 1
 individual_original_id = db.patchwork_individual.count_documents({}) + 1
 
-process_data = application_layer.ProcessInitialData(newseries_original_id, change1_original_id, change2_original_id, individual_original_id)
+process_identity = application_layer.main.ProcessIdentity(individual_original_id)
 ```
 
-Or you can specify a specific number.
+Alternatively a specific number can be specified.
 
 ```python
-process_data = application_layer.ProcessInitialData(newseries_original_id=10, change1_original_id=10, change2_original_id=10, individual_original_id=10)
+process_identity = application_layer.main.ProcessIdentity(individual_original_id=10)
 ```
 
-To run the two approaches, simply run the `process_data()` function.
+#### 3.3.2. Data import
 
-```python
-individual_data, updated_series_data, updated_patch_data, updated_comment_data, newseries_data, change1_data, change2_data = process_data.process_data(identity_data, series_data, patch_data, comment_data)
-```
+Data can be imported to the database by using the `insert_data()` function provided in *AccessData*. Specifically, specify the data to be imported or the location of the data to be imported, and its corresponding item type. The item type include _identity, project, mailinglist, individual, series, newseries, change1, change2, patch, and comment_.
 
-#### 3.3.2. Insert data
-
-Data can be inserted to the database by using the `insert_data()` function provided in `AccessData`. Specifically, specify the data to be inserted or the location of the data to be inserted, and its corresponding item type. The item type include identity, project, individual, series, newseries, change1, change2, patch, and comment.
+Note that for the *msg_content* field in the patch and comment datasets and *content* field in mailinglist dataset, the null character is converted to its unicode, i.e. `\u0000`, when crawling data, and thus it has to be converted back.
 
 ```python
 
-# data has been loaded before insertion
+# data has been loaded before import
 access_data.insert_data(data=project_data, item_type="project")
 
-# data has not been loaded before insertion
+# data has not been loaded before import
 access_data.insert_data(data="path/to/project/data", item_type="project")
 ```
 
-However, the insertion of each item type should follow a specific order: identity -> project -> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless you confirm that related foreign key data in the data to be inserted are already in the database (See the [complete ER diagram](#3-data-dictionary)).
+However, the import of each item type should follow a specific order: identity -> project -> mailinglist-> individual -> series -> newseries -> change1 -> change2 -> patch -> comment, unless it is confirmed that related foreign key data in the data to be imported are already in the database (See the [complete ER diagram](#4-data-dictionary)).
 
 ## 4. Data dictionary
 
@@ -401,13 +362,13 @@ Below is a complete ER diagram depicting the database structure, which can also 
 #### Identity
 
 | Fields      | Description                                                                                                                                                                                                               |
-| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| \_id        | Object id created by MongoDB                                                                                                                                                                                              |
-| id          | Auto-increment id generated by Django                                                                                                                                                                                     |
+| :---------- | :------------------------------------------------- |
+| \_id        | Object id created by MongoDB                       |
+| id          | Auto-increment id generated by Django              |
 | original_id | A combination of OSS community name, item type, and original Django id presented in the api data, e.g. `ffmpeg-people-1`; Note that for maintainer identities of a project, the item type is `user`, e.g. `ffmpeg-user-1` |
-| email       | Email of the identity                                                                                                                                                                                                     |
-| name        | Name of the identity                                                                                                                                                                                                      |
-| api_url     | API URL for retrieving the original data in patchwork (Authentication needed as patchwork blocks the access)                                                                                                              |
+| email       | Email of the identity                              |
+| name        | Name of the identity                               |
+| api_url     | API URL for retrieving the original data in patchwork (Authentication needed as patchwork blocks the access)|
 
 #### Individual
 
@@ -473,12 +434,12 @@ Below is a complete ER diagram depicting the database structure, which can also 
 | in_reply_to          | Message id of the email that the patch replies to (in most cases, it is the msg_id of a cover letter)                   |
 | change1              | Referencing the `original_id ` in the ExactBoWGroup collection (generated by Exact BoW Grouping)                        |
 | change2              | Referencing the `original_id ` in the OWDiffGroup collection (generated by One-word Difference Grouping)                |
-| mailinglist          | Referencing the `original_id` in the mailinglists collection                                                            |
+| mailinglist          | Referencing the `original_id` in the mailinglist collection                                                            |
 | series               | Referencing the `original_id` in the series collection                                                                  |
 | newseries            | Referencing the `original_id ` in the newseries collection                                                              |
-| submitter_identity   | Referencing the `original_id` in the accounts collection                                                                |
-| submitter_individual | Referencing the `original_id ` in the users collection                                                                  |
-| project              | Referencing the `original_id` in the projects collection                                                                |
+| submitter_identity   | Referencing the `original_id` in the identity collection                                                                |
+| submitter_individual | Referencing the `original_id ` in the individual collection                                                                  |
+| project              | Referencing the `original_id` in the project collection                                                                |
 
 #### Comment
 
@@ -491,15 +452,15 @@ Below is a complete ER diagram depicting the database structure, which can also 
 | msg_content          | Content of the comment                                                                                                    |
 | date                 | Date when the comment is submitted                                                                                        |
 | subject              | Email subject of the comment                                                                                              |
-| reply_to_msg_id      | Message id of the patch that the comment replies to                                                                       |
+| in_reply_to      | Message id of the patch that the comment replies to                                                                       |
 | web_url              | URL of the comment in patchwork                                                                                           |
 | change1              | Referencing the `original_id ` in the ExactBoWGroup collection (generated by Exact BoW Grouping)                          |
 | change2              | Referencing the `original_id ` in the OWDiffGroup collection (generated by One-word Difference Grouping)                  |
-| mailinglist          | Referencing the `original_id` in the mailinglists collection                                                              |
-| submitter_identity   | Referencing the `original_id` in the accounts collection                                                                  |
-| submitter_individual | Referencing the `original_id ` in the users collection                                                                    |
-| patch                | Referencing the `original_id` in the patches collection                                                                   |
-| project              | Referencing the `original_id` in the projects collection                                                                  |
+| mailinglist          | Referencing the `original_id` in the mailinglist collection                                                              |
+| submitter_identity   | Referencing the `original_id` in the identity collection                                                                  |
+| submitter_individual | Referencing the `original_id ` in the individual collection                                                                    |
+| patch                | Referencing the `original_id` in the patch collection                                                                   |
+| project              | Referencing the `original_id` in the project collection                                                                  |
 
 #### NewSeries
 
@@ -509,9 +470,9 @@ Below is a complete ER diagram depicting the database structure, which can also 
 | id                   | Auto-increment id generated by Django                                                                  |
 | original_id          | A combination of OSS community name, item type, and an auto-generated index, e.g. `ffmpeg-newseries-1` |
 | cover_letter_msg_id  | In-reply-to id of patches; Referenced by the `reply_to_msg_id` in the patches collection               |
-| project              | Referencing the `original_id` in the projects collection                                               |
-| submitter_identity   | Referencing the `original_id` in the accounts collection                                               |
-| submitter_individual | Referencing the `original_id ` in the users collection                                                 |
+| project              | Referencing the `original_id` in the project collection                                               |
+| submitter_identity   | Referencing the `original_id` in the identity collection                                               |
+| submitter_individual | Referencing the `original_id ` in the individual collection                                                 |
 | series               | Referencing the `original_id` in the series collection                                                 |
 | inspection_needed    | Indicating the corresponding data item might has some problems and manually checking might be needed   |
 
@@ -666,3 +627,20 @@ For filter type _icontains_, _gt_, and _lt_, the filter type with two underlines
 | date                | gt, lt                |
 | sender_name         | exact                 |
 | project_original_id | exact                 |
+
+
+## BibTeX Citation
+```
+@inproceedings{Liang2024,
+  bibtex_show = {true},
+  title = {Curated Email-Based Code Reviews Datasets},
+  author = {Liang, Mingzhao and Charoenwet, Wachiraphan and Thongtanunam, Patanamon},
+  booktitle = {Proceedings of the IEEE/ACM International Conference on Mining Software Repositories},
+  abbr = {MSR},
+  pages = {to appear},
+  year = {2024},
+  doi = {},
+  html = {},
+  pdf = {https://www.researchgate.net/publication/378711871_Curated_Email-Based_Code_Reviews_Datasets}
+}
+```
